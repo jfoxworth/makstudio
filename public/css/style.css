@@ -884,6 +884,11 @@ body.stretched #header.full-header .container {
 }
 
 
+.whiteText {
+	color : #FFFFFF !important;
+}
+
+
 /* ----------------------------------------------------------------
 	Logo
 -----------------------------------------------------------------*/
@@ -10621,7 +10626,7 @@ label.error { display: none !important; }
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #EEE;
+	color: #333;
 }
 
 .emphasis-title h1,
