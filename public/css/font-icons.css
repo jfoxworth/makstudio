@@ -34,7 +34,8 @@
 [class^="icon-"], [class*=" icon-"],
 [class^="icon-line-"], [class*=" icon-line-"],
 [class^="icon-line2-"], [class*=" icon-line2-"],
-.side-header #primary-menu ul > li.sub-menu > a:after {
+.side-header #primary-menu ul > li.sub-menu > a:after,
+.docs-navigation ul ul li.current a:after {
 	display: inline-block;
 	font-family: 'font-icons';
 	speak: none;
@@ -104,7 +105,7 @@
 	margin-right: 5px;
 }
 
-.iconlist-color li i { color: #C0392B; }
+.iconlist-color li i { color: #1ABC9C; }
 
 .icon-border {
   padding: .2em .25em .15em;
