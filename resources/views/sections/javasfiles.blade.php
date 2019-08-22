@@ -6,7 +6,7 @@
 
     <!-- Google Map JavaScripts
     ============================================= -->
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCzkxzbEni5vR_Ugt1De8gBzrLX3236bnA"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyAxicUtwVWWPJ6G0vcJIAoe-Edc8RHmdl8"></script>
     <script src="/js/jquery.gmap.js"></script>
 
 

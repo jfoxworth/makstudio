@@ -1,7 +1,9 @@
 <div id="section-contact" class="page-section notoppadding">
 
 	<div class="row noleftmargin norightmargin bottommargin-lg align-items-stretch">
-		<div id="headquarters-map" class="col-lg-8 col-md-6 gmap d-none d-md-block"></div>
+		<div id="headquarters-map" class="col-lg-8 col-md-6 gmap d-none d-md-block">
+			<img src="https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400&key=AIzaSyAxicUtwVWWPJ6G0vcJIAoe-Edc8RHmdl8">
+		</div>
 		<div class="col-lg-4 col-md-6" style="background-color: #222;">
 			<div class="col-padding">
 				<h3 class="font-body t400 ls1">Our Headquarters</h3>
