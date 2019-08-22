@@ -1,6 +1,6 @@
 <!-- Header
 ============================================= -->
-<header id="header" class="full-header">
+<header id="header" class="transparent-header">
 
     <div id="header-wrap">
 

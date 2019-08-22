@@ -17,7 +17,7 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-        @include('sections.landing.slider')
+        @include('sections.landing.option1.slider')
 
         @include('sections.header')
 
