@@ -914,6 +914,9 @@ body.stretched #header.full-header .container {
 #logo img {
 	display: block;
 	max-width: 100%;
+	width:100px;
+	height:45px !important;
+	margin-top:20px;
 }
 
 #logo a.standard-logo { display: block; }
