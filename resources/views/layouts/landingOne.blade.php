@@ -27,7 +27,8 @@
 
             <div class="">
 
-                @include('sections.contact.contactInfo')
+                @include('sections.contactUs.contactInfo')
+                @include('sections.contactUs.contactForm')
 
 
             </div>
