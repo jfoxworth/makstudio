@@ -81,17 +81,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Mak Studio Options
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="http://makstudio.herokuapp.com/Option1">Option 1</a>
+                    <a href="http://makstudio.herokuapp.com/Option2">Option 2</a>
+                    <a href="http://makstudio.herokuapp.com/Option3">Option 3</a>
+                    <a href="http://makstudio.herokuapp.com/Option4">Option 4</a>
                 </div>
             </div>
         </div>
