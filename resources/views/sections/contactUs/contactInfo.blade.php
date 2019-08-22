@@ -8,21 +8,20 @@
 		</div>
 		<div class="col-lg-4 col-md-6" style="background-color: #222; color:#FFFFFF">
 			<div class="col-padding">
-				<h3 class="font-body t400 ls1" style="color:#FFFFFF">Mak Studion Location</h3>
+				<h3 class="font-body t400 ls1" style="color:#FFFFFF">Mak Studio Location</h3>
 
 				<div style="font-size: 16px; line-height: 1.7;">
 					<address style="line-height: 1.7;">
-						<strong>North America:</strong><br>
-						795 Folsom Ave, Suite 600<br>
-						San Francisco, CA 94107<br>
+						<strong>Wharehouse Location:</strong><br>
+						305 Velasco Steet<br>
+						Houston, Texas 77003<br>
 					</address>
 
 
 					<div class="clear topmargin"></div>
 
-					<abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
-					<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
-					<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+					<abbr title="Phone Number"><strong>Phone:</strong></abbr> (713) 505-1234<br>
+					<abbr title="Email Address"><strong>Email:</strong></abbr> info@makstudio.us
 				</div>
 			</div>
 		</div>
