@@ -8,7 +8,7 @@
 		</div>
 		<div class="col-lg-4 col-md-6" style="background-color: #222; color:#FFFFFF">
 			<div class="col-padding">
-				<h3 class="font-body t400 ls1">Mak Studion Location</h3>
+				<h3 class="font-body t400 ls1" style="color:#FFFFFF">Mak Studion Location</h3>
 
 				<div style="font-size: 16px; line-height: 1.7;">
 					<address style="line-height: 1.7;">
