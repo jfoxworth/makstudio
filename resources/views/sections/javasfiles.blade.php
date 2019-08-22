@@ -4,6 +4,12 @@
     <script type="text/javascript" src="/js/plugins.js"></script>
     <script type="text/javascript" src="/js/plugins/jquery.countdown.js"></script>
 
+    <!-- Google Map JavaScripts
+    ============================================= -->
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCzkxzbEni5vR_Ugt1De8gBzrLX3236bnA"></script>
+    <script src="/js/jquery.gmap.js"></script>
+
+
     <!-- Footer Scripts
     ============================================= -->
     <script type="text/javascript" src="/js/functions.js"></script>

@@ -27,6 +27,7 @@
 
             <div class="">
 
+                @include('sections.landing.option1.founders')
                 @include('sections.contactUs.contactInfo')
                 @include('sections.contactUs.contactForm')
 
