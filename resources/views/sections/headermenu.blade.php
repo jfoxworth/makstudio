@@ -1,6 +1,6 @@
 	<!-- Primary Navigation
 	============================================= -->
-	<nav id="primary-menu">
+	<nav id="primary-menu" class="dark">
 
 		<ul>
 			<li><a href="/products"><div>Products</div></a>
