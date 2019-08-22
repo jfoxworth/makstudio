@@ -27,6 +27,8 @@
 
             <div class="">
 
+                @include('sections.contact.contactInfo')
+
 
             </div>
 
