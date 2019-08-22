@@ -6,7 +6,10 @@
 
 			<div class="container clearfix">
 				<div class="emphasis-title vertical-middle center">
-					<img src="/images/makTextWhite.png">
+					<img src="/images/makTextWhite.png" width="200px">
+				</div>
+				<div class="heading-block title-center nobottomborder">
+					<span>Custom made architectural walls, desks, and more</span>
 				</div>
 			</div>
 

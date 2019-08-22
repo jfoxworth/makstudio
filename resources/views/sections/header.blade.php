@@ -12,8 +12,8 @@
             ============================================= -->
             <div id="logo">
 
-                <a href="/" class="standard-logo" data-dark-logo="/images/makTextWhite.png"><img src="/images/makTextWhite.png" alt="Mak Studio"></a>
-                <a href="/" class="retina-logo" data-dark-logo="/images/makTextWhite.png"><img src="/images/makTextWhite.png" alt="Mak Studio"></a>
+                <a href="/" class="standard-logo" data-dark-logo="/images/makTextWhite.png"><img src="/images/makTextWhite.png" alt="Mak Studio" width="100px"></a>
+                <a href="/" class="retina-logo" data-dark-logo="/images/makTextWhite.png"><img src="/images/makTextWhite.png" alt="Mak Studio" width="100px"></a>
    
             </div><!-- #logo end -->
 
