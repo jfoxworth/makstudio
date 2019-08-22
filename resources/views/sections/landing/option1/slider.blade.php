@@ -10,8 +10,8 @@
 
 					<img src="/images/makTextWhite.png" width="200px">
 
-					<div class="heading-block title-center nobottomborder topmargin whiteText">
-						<h4>Custom made architectural walls, desks, and more</h4>
+					<div class="heading-block title-center nobottomborder topmargin">
+						<h4 class="whiteText">Custom made architectural walls, desks, and more</h4>
 					</div>
 
 				</div>

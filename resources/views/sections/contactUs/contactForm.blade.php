@@ -1,7 +1,7 @@
 <div class="container clearfix">
 
 	<div class="heading-block center">
-		<h2>Want more information</h2>
+		<h2>Want more information?</h2>
 		<span>Contact us for more information or a special request</span>
 	</div>
 
