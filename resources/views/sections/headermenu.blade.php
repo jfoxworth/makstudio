@@ -13,7 +13,7 @@
 		</ul>
 
 		<!-- Top Search
-		============================================= -->
+		============================================= --
 		<div class="social-box fright clearfix">
 			<a href="https://www.facebook.com/" class="social-icon si-small si-borderless si-facebook">
 				<i class="icon-facebook"></i>
