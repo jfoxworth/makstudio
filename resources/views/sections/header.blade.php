@@ -12,12 +12,12 @@
             ============================================= -->
             <div id="logo">
 
-                <a href="/" class="standard-logo" data-dark-logo="/images/makTextWhiteSmall.png">
-                    <img src="/images/makTextBlackSmall.png" alt="Mak Studio" >
+                <a href="/" class="standard-logo" data-dark-logo="https://makstudio.s3.us-east-2.amazonaws.com/makTextWhiteSmall.png">
+                    <img src="https://makstudio.s3.us-east-2.amazonaws.com/makTextBlackSmall.png" alt="Mak Studio" >
                 </a>
                 
-                <a href="/" class="retina-logo" data-dark-logo="/images/makTextWhiteSmall.png">
-                    <img src="/images/makTextBlackSmall.png" alt="Mak Studio" >
+                <a href="/" class="retina-logo" data-dark-logo="https://makstudio.s3.us-east-2.amazonaws.com/makTextWhiteSmall.png">
+                    <img src="https://makstudio.s3.us-east-2.amazonaws.com/makTextBlackSmall.png" alt="Mak Studio" >
                 </a>
    
             </div><!-- #logo end -->
