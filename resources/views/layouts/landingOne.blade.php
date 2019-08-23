@@ -28,6 +28,7 @@
             <div class="">
 
                 @include('sections.landing.option1.introText')
+                @include('sections.landing.option1.demoBreak')
                 @include('sections.landing.option1.productVert')
                 @include('sections.landing.option1.founders')
                 @include('sections.contactUs.contactForm')
