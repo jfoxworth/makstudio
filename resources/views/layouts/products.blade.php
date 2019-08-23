@@ -7,7 +7,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Mak Studios - Who we are</title>
+    <title>Mak Studios - Products</title>
 
 </head>
 

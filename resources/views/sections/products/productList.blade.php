@@ -4,7 +4,7 @@
 
 		<div class="col_half nobottommargin">
 
-			<div class="heading-block" style="padding-top: 40px;">
+			<div class="heading-block bottommargin-sm" style="padding-top: 40px;">
 
 				<h2>Architectural Slat Walls</h2>
 				<span>Beautiful, made to order walls of any shape and size</span>
@@ -13,7 +13,7 @@
 
 			<p>Vertical slat walls, ceiling slats, or somewhere in between. We can design the perfect wall for you or you can build one of your own with our online tool.</p>
 
-			<a href="#" class="button button-border button-large button-rounded topmargin-sm noleftmargin">Build Your Own</a>
+			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Build Your Own</a>
 
 		</div>
 
@@ -32,12 +32,12 @@
 	<div class="container clearfix">
 
 		<div class="col_half nobottommargin center">
-			<img src="images/restaurant/20.png" alt="Image" data-animate="fadeInLeft">
+			<img src="https://makstudio.s3.us-east-2.amazonaws.com/facetedWallDemo.jpg" alt="Faceted Wall" >
 		</div>
 
 		<div class="col_half nobottommargin col_last">
 
-			<div class="heading-block" style="padding-top: 40px;">
+			<div class="heading-block bottommargin-sm" style="padding-top: 40px;">
 
 				<h2>Faceted Walls</h2>
 				<span>Our faceted walls define any office space</span>
@@ -46,7 +46,7 @@
 
 			<p>Faceted walls add depth and texture to any room and define a working or entertainment space. Our tools let you design your own custom wall that we build and install.</p>
 
-			<a href="#" class="button button-border button-large button-rounded topmargin-sm noleftmargin">Customize Your Own</a>
+			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Customize Your Own</a>
 
 		</div>
 
