@@ -161,27 +161,27 @@
 
 
 
-<!-- Planter Wall -->
+<!-- Wall Panels -->
 <div class="section nobg notopmargin nobottommargin">
 
 	<div class="container clearfix">
 
 		<div class="col_half nobottommargin center">
-			<img src="https://makstudio.s3.us-east-2.amazonaws.com/flowerWallDemo.jpg" alt="Planter Wall" >
+			<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelsDemo.jpg" alt="Wall Panels" >
 		</div>
 
 		<div class="col_half nobottommargin col_last">
 
 			<div class="heading-block bottommargin-sm" style="padding-top: 20px;">
 
-				<h2>Planter Walls</h2>
-				<span>Planter walls provide a unique way to add comfort and warmth to you office</span>
+				<h2>Wall Panels</h2>
+				<span>Wall panels add color, depth, and texture to any home or office space.</span>
 
 			</div>
 
-			<p>We can design and install any custom planter wall for you office or reception area.</p>
+			<p>We carry a wide array of wall panels and can custom cut and install them.</p>
 
-			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Customize Your Own</a>
+			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Select Your Wall Panel</a>
 
 		</div>
 
