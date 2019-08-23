@@ -1,9 +1,9 @@
 
-<section id="section-team" class="page-section topmargin-lg">
+<section id="section-team" class="page-section">
 
 	<div class="heading-block center">
-		<h2>Founded by Architects</h2>
-		<span>Mak Studios was founded by two architects with an eye for design</span>
+		<h2>A complete team for all of your needs</h2>
+		<span>We are a well rounded team of architects, designers, and manufacturers</span>
 	</div>
 
 	<div class="container clearfix">
