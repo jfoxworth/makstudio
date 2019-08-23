@@ -3,7 +3,7 @@
 	<div class="section nomargin">
 		<div class="container clearfix">
 			<div class="divcenter center" style="max-width: 900px;">
-				<h2 class="nobottommargin t300 ls1">Our pieces add depth and character to any corporate or residential space. All of our pieces are designed and fabricated in house and we offer a choice of selecting from our designs or working with us to create something just for you.</h2>
+				<h2 class="nobottommargin t300 ls1">Make studio is a Houston, Texas based group of architects, designers, carpenters, and doers. We model and build custom architectural walls and furniture.</h2>
 			</div>
 		</div>
 	</div>
@@ -53,6 +53,8 @@
 				</div>
 			</div>
 		</article>
+
+		<!--
 
 		<article class="portfolio-item pf-media pf-icons wide">
 			<div class="portfolio-image">
@@ -109,6 +111,8 @@
 				</div>
 			</div>
 		</article>
+
+	-->
 
 	</div><!-- #portfolio end -->
 
