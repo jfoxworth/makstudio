@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
     <link rel="stylesheet" href="/css/dark.css" type="text/css" />
     <link rel="stylesheet" href="/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="/css/font-icons/real-estate/real-estate-icons.css" type="text/css" />
     <link rel="stylesheet" href="/css/animate.css" type="text/css" />
     <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
 
