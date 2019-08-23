@@ -116,6 +116,4 @@
 
 	</div><!-- #portfolio end -->
 
-	<div class="topmargin center"><a href="/ourWork" class="button button-border button-circle t600">View More of Our Work</a></div>
-
 </div>
