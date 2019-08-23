@@ -36,7 +36,7 @@
 
 					<a href="/products" data-animate="fadeInUp" data-delay="300" class="categories" style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/flowerWallDemo.jpg');">
 						<div class="categories-details">
-							<div class="icon"><i class="icon-tree"></i></div>
+							<div class="icon"><i class="icon-line-sun"></i></div>
 							<div class="info">Planter Walls</div>
 						</div>
 					</a>
