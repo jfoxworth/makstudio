@@ -1,6 +1,6 @@
 
 <!-- Architectural Slat Wall -->
-<div class="section nobg notopmargin noborder bottommargin-sm">
+<div class="section nobg notopmargin noborder nobottommargin">
 
 	<div class="container clearfix">
 
@@ -30,7 +30,7 @@
 
 
 <!-- Faceted Wall -->
-<div class="section nobg topmargin-lg nobottommargin">
+<div class="section nobg notopmargin nobottommargin">
 
 	<div class="container clearfix">
 
@@ -62,7 +62,7 @@
 
 
 <!-- Desks -->
-<div class="section nobg notopmargin noborder bottommargin-sm">
+<div class="section nobg notopmargin noborder nobottommargin">
 
 	<div class="container clearfix">
 
@@ -94,7 +94,7 @@
 
 
 <!-- Planter Wall -->
-<div class="section nobg topmargin-lg nobottommargin">
+<div class="section nobg notopmargin nobottommargin">
 
 	<div class="container clearfix">
 
@@ -130,7 +130,7 @@
 
 
 <!-- Back Lit Wall -->
-<div class="section nobg notopmargin noborder bottommargin-sm">
+<div class="section nobg notopmargin noborder nobottommargin">
 
 	<div class="container clearfix">
 
@@ -162,7 +162,7 @@
 
 
 <!-- Planter Wall -->
-<div class="section nobg topmargin-lg nobottommargin">
+<div class="section nobg notopmargin nobottommargin">
 
 	<div class="container clearfix">
 
