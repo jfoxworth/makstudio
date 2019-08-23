@@ -15,42 +15,42 @@
 
 					<a href="/products" data-animate="fadeInUp" class="categories" style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/slatWallDemo.jpg');">
 						<div class="categories-details">
-							<div class="icon"><img src="demos/recipes/images/icons/bf.svg" alt="Slat Walls"></div>
+							<div class="icon"><i class="icon-settings2"></i></div>
 							<div class="info">Slat Walls</div>
 						</div>
 					</a>
 
 					<a href="/products" data-animate="fadeInUp" data-delay="100" class="categories" style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/backlitDemo.jpg');">
 						<div class="categories-details">
-							<div class="icon"><img src="demos/recipes/images/icons/lunch.svg" alt="Back Lit Walls"></div>
+							<div class="icon"><i class="icon-bulb"></i></div>
 							<div class="info">Back Lit Walls</div>
 						</div>
 					</a>
 
 					<a href="/products" data-animate="fadeInUp" data-delay="200" class="categories" style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/deskDemo.png');">
 						<div class="categories-details">
-							<div class="icon"><img src="demos/recipes/images/icons/dinner.svg" alt="Desks"></div>
+							<div class="icon"><i class="icon-study"></i></div>
 							<div class="info">Desks</div>
 						</div>
 					</a>
 
 					<a href="/products" data-animate="fadeInUp" data-delay="300" class="categories" style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/flowerWallDemo.jpg');">
 						<div class="categories-details">
-							<div class="icon"><img src="demos/recipes/images/icons/desserts.svg" alt="Planter Walls"></div>
+							<div class="icon"><i class="icon-tree"></i></div>
 							<div class="info">Planter Walls</div>
 						</div>
 					</a>
 
 					<a href="/products" data-animate="fadeInUp" data-delay="400" class="categories" style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/facetedWallDemo.jpg');">
 						<div class="categories-details">
-							<div class="icon"><img src="demos/recipes/images/icons/vegan.svg" alt="Faceted Walls"></div>
+							<div class="icon"><i class="icon-realestate-fence"></i></div>
 							<div class="info">Faceted Walls</div>
 						</div>
 					</a>
 
 					<a href="/products" data-animate="fadeInUp" data-delay="500" class="categories" style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/wallPanelsDemo.jpg');">
 						<div class="categories-details">
-							<div class="icon"><img src="demos/recipes/images/icons/seafood.svg" alt="Wall Panels"></div>
+							<div class="icon"><i class="icon-realestate-bricks"></i></div>
 							<div class="info">Wall Panels</div>
 						</div>
 					</a>
