@@ -1,4 +1,4 @@
-<div id="section-about" class="center page-section margintop topmargin">
+<div id="section-about" class="center page-section bottommargin-lg topmargin-lg">
 
 	<div class="container clearfix">
 

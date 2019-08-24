@@ -34,6 +34,7 @@
                 @include('sections.landing.option1.founders')
                 @include('sections.landing.option1.workofartBreak')
                 @include('sections.contactUs.contactForm')
+                @include('sections.landing.option1.customerGrey')
                 @include('sections.contactUs.contactInfo')
 
 
