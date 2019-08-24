@@ -1,13 +1,5 @@
 <div id="section-works" class="page-section notoppadding">
 
-	<div class="section nomargin">
-		<div class="container clearfix">
-			<div class="divcenter center" style="max-width: 900px;">
-				<h2 class="nobottommargin t300 ls1">Make studio is a Houston, Texas based group of architects, designers, carpenters, and doers. We model and build custom architectural walls and furniture.</h2>
-			</div>
-		</div>
-	</div>
-
 	<!-- Portfolio Items
 	============================================= -->
 	<div id="portfolio" class="portfolio grid-container portfolio-nomargin portfolio-full portfolio-masonry mixed-masonry clearfix">
