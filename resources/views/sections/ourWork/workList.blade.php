@@ -11,13 +11,10 @@
 
 		<!-- Eighth Wonder Bar -->
 		<div class="fancy-title title-dotted-border title-center">
-			<h2>Eighth Wonder</h2>
+			<h2>Eighth Wonder Brewery</h2>
 		</div>
 	
-		<div class="heading-block">
-			<span>This is text describing the work</span>
-		</div>
-
+		<p><span class="dropcap">E</span>ighth Wonder Brewery is located on Dallas St in Houston, Texas. Their custom made design highlights the unique character of the brewery and provides a one of a kind experience for its customers. The outside area in a truly one of a kind experience.</p>
 
 		<div class="masonry-thumbs grid-5 clearfix" 
 			 data-big="3" 
@@ -96,11 +93,11 @@
 				</div>
 			</a>
 
-			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg" 
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder7.jpg" 
 			   data-lightbox="gallery-item" 
 			   style="width: 133px; position: absolute; left: 532px; top: 100px;">
 			
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg" alt="Eighth Wonder Image">
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder7.jpg" alt="Eighth Wonder Image">
 				<div class="overlay">
 					<div class="overlay-wrap">
 						<i class="icon-line-plus"></i>
@@ -110,6 +107,20 @@
 
 		</div>
 
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder8.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 532px; top: 100px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder8.jpg" alt="Eighth Wonder Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+		</div>
 
 
 </section>
