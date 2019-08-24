@@ -28,7 +28,7 @@
             <div class="">
 
                 @include('sections.landing.option1.introText')
-                @include('sections.landing.option1.demoBreak')
+                @include('sections.landing.option1.workofartBreak2')
                 @include('sections.landing.option1.productVert')
                 @include('sections.landing.option1.sloganBreak')
                 @include('sections.landing.option1.founders')
