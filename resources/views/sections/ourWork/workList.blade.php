@@ -122,4 +122,69 @@
 
 	</div>
 
+
+
+
+
+
+
+
+		<!-- Primer Grey -->
+		<div class="fancy-title title-dotted-border title-center">
+			<h2>Primer Grey</h2>
+		</div>
+	
+		<p><span class="dropcap">P</span>rimer Grey is a company of graphic designers, marketers, and web developers that work in the Houston, Texas area.</p>
+
+		<div class="masonry-thumbs grid-5 clearfix" 
+			 data-big="3" 
+			 data-lightbox="gallery" 
+			 style="position: relative; height: 200px;">
+			
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/PrimerGrey1.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+				
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/PrimerGrey1.jpg" alt="Primer Grey">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/PrimerGrey2.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/PrimerGrey2.jpg" alt="Primer Grey">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/PrimerGrey3.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 266px; position: absolute; left: 266px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/PrimerGrey3.jpg" alt="Primer Grey">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+
+
+		</div>
+
+	</div>
+
+
+
+
+
 </section>
