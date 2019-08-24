@@ -7,7 +7,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Mak Studios - Who we are</title>
+    <title>Mak Studios - Some of our previous work</title>
 
 </head>
 
@@ -19,7 +19,7 @@
 
         @include('sections.secondHeader')
 
-        @include("sections.aboutUs.splashImage")
+        @include("sections.ourWork.splashImage")
 
 
         <!-- Content
@@ -28,7 +28,7 @@
 
             <div class="content-wrap">
 
-                @include("sections.aboutUs.teamList")
+                @include("sections.ourWork.workList")
 
             </div>
 
