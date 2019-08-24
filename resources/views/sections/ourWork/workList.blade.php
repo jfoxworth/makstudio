@@ -105,8 +105,6 @@
 				</div>
 			</a>
 
-		</div>
-
 
 			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder8.jpg" 
 			   data-lightbox="gallery-item" 
@@ -122,5 +120,6 @@
 
 		</div>
 
+	</div>
 
 </section>
