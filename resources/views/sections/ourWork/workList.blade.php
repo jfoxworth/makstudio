@@ -40,19 +40,7 @@
 			   data-lightbox="gallery-item" 
 			   style="width: 133px; position: absolute; left: 133px; top: 0px;">
 			
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg" alt="Eighth Wonder Image">
-				<div class="overlay">
-					<div class="overlay-wrap">
-						<i class="icon-line-plus"></i>
-					</div>
-				</div>
-			</a>
-
-			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder2.jpg" 
-			   data-lightbox="gallery-item" 
-			   style="width: 266px; position: absolute; left: 266px; top: 0px;">
-			
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg" alt="Eighth Wonder Image">
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder2.jpg" alt="Eighth Wonder Image">
 				<div class="overlay">
 					<div class="overlay-wrap">
 						<i class="icon-line-plus"></i>
@@ -62,7 +50,7 @@
 
 			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder3.jpg" 
 			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 532px; top: 0px;">
+			   style="width: 266px; position: absolute; left: 266px; top: 0px;">
 			
 				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder3.jpg" alt="Eighth Wonder Image">
 				<div class="overlay">
@@ -74,7 +62,7 @@
 
 			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder4.jpg" 
 			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 0px; top: 100px;">
+			   style="width: 133px; position: absolute; left: 532px; top: 0px;">
 			
 				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder4.jpg" alt="Eighth Wonder Image">
 				<div class="overlay">
@@ -86,9 +74,21 @@
 
 			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder5.jpg" 
 			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 133px; top: 100px;">
+			   style="width: 133px; position: absolute; left: 0px; top: 100px;">
 			
 				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder5.jpg" alt="Eighth Wonder Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 133px; top: 100px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg" alt="Eighth Wonder Image">
 				<div class="overlay">
 					<div class="overlay-wrap">
 						<i class="icon-line-plus"></i>
