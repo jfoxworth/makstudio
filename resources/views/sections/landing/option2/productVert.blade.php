@@ -42,7 +42,7 @@
 					
 							<p class="mb-2 text-white">We can create custom design architectural walls and ceilings that create a unique and beautiful look for any space.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/products">View Details</a></button>
+							<button type="button" class="btn btn-outline-light mt-2"><a href="/products" style="color:#FFF">View Details</a></button>
 					
 						</div>
 					
@@ -85,7 +85,7 @@
 					
 							<p class="mb-2 text-white">To add a truly new look and feel to any space, brand your business with a back lit wall.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/products">View Details</a></button>
+							<button type="button" class="btn btn-outline-light mt-2"><a href="/products" style="color:#FFF">View Details</a></button>
 					
 						</div>
 					
@@ -129,7 +129,7 @@
 					
 							<p class="mb-2 text-white">Custom desks can be built to fit into any space.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/products">View Details</a></button>
+							<button type="button" class="btn btn-outline-light mt-2"><a href="/products" style="color:#FFF">View Details</a></button>
 					
 						</div>
 					
@@ -174,7 +174,7 @@
 					
 							<p class="mb-2 text-white">Planter walls add a unique look and feel for any office environment.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/products">View Details</a></button>
+							<button type="button" class="btn btn-outline-light mt-2"><a href="/products" style="color:#FFF">View Details</a></button>
 					
 						</div>
 					
@@ -218,7 +218,7 @@
 					
 							<p class="mb-2 text-white">Design your own faceted wall to give life to any office.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/products">View Details</a></button>
+							<button type="button" class="btn btn-outline-light mt-2"><a href="/products" style="color:#FFF">View Details</a></button>
 					
 						</div>
 					
@@ -264,7 +264,7 @@
 					
 							<p class="mb-2 text-white">Choose from multiple kinds of wall panels for the home or office.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/products">View Details</a></button>
+							<button type="button" class="btn btn-outline-light mt-2"><a href="/products" style="color:#FFF">View Details</a></button>
 					
 						</div>
 					
