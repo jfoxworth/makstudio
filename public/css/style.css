@@ -901,7 +901,7 @@ body.stretched #header.full-header .container {
 	font-size: 36px;
 	line-height: 100%;
 	margin-right: 40px;
-	margin-top: 15px;
+	margin-top: 0px;
 }
 
 #header.full-header #logo {
@@ -922,7 +922,7 @@ body.stretched #header.full-header .container {
 	max-width: 100%;
 	width:100px;
 	height:45px !important;
-	margin-top:5px;
+	margin-top:20px;
 }
 
 #logo a.standard-logo { display: block; }
