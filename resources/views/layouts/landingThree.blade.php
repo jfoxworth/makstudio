@@ -17,15 +17,27 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-        @include('sections.landing.slider')
+        @include('sections.landing.option3.slider')
 
-        @include('sections.header')
+        @include('sections.header3')
 
         <!-- Content
         ============================================= -->
         <section id="content">
 
             <div class="">
+
+                @include('sections.landing.option3.introText')
+                @include('sections.landing.option3.workofartBreak2')
+                @include('sections.landing.option3.productVert')
+                @include('sections.landing.option3.sloganBreak')
+                @include('sections.landing.option2.processSteps')
+                @include('sections.landing.option2.uniqueBreak')
+                @include('sections.landing.option3.founders')
+                @include('sections.landing.option3.workofartBreak')
+                @include('sections.landing.option3.customerGrey')
+                @include('sections.contactUs.contactForm')
+                @include('sections.contactUs.contactInfo')
 
 
             </div>
