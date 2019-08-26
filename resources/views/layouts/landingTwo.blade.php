@@ -19,7 +19,7 @@
 
         @include('sections.landing.option2.slider')
 
-        @include('sections.header')
+        @include('sections.header2')
 
         <!-- Content
         ============================================= -->
