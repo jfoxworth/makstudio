@@ -30,7 +30,7 @@
 
 			<div class="col_one_third center">
 
-				<div class="center"><img src="https://makstudio.s3.us-east-2.amazonaws.com/steps1.png" width="150px"></div>
+				<div class="center"><img src="https://makstudio.s3.us-east-2.amazonaws.com/steps1.png" width="250px"></div>
 
 				<p>Our custom tools let you design and price your own custom slat walls or ceiling</p>
 
@@ -39,7 +39,7 @@
 
 			<div class="col_one_third">
 
-				<div class="center"><img src="https://makstudio.s3.us-east-2.amazonaws.com/steps1.png" width="150px"></div>
+				<div class="center"><img src="https://makstudio.s3.us-east-2.amazonaws.com/steps2.png" width="250px"></div>
 
 				<p>mak studios can build and install your design</p>
 
@@ -48,7 +48,7 @@
 
 			<div class="col_one_third col_last">
 
-				<div class="center"><img src="https://makstudio.s3.us-east-2.amazonaws.com/steps1.png" width="150px"></div>
+				<div class="center"><img src="https://makstudio.s3.us-east-2.amazonaws.com/steps3.png" width="250px"></div>
 
 				<p>Once installed, you can enjoy a totally unique space that is customed designed for your company</p>
 
