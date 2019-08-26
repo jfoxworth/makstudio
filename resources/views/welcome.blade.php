@@ -88,7 +88,6 @@
                     <a href="http://makstudio.herokuapp.com/Option1">Option 1</a>
                     <a href="http://makstudio.herokuapp.com/Option2">Option 2</a>
                     <a href="http://makstudio.herokuapp.com/Option3">Option 3</a>
-                    <a href="http://makstudio.herokuapp.com/Option4">Option 4</a>
                 </div>
             </div>
         </div>
