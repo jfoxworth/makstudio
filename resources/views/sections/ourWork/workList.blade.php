@@ -119,6 +119,19 @@
 				</div>
 			</a>
 
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder9.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 532px; top: 100px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder9.jpg" alt="Eighth Wonder Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
 		</div>
 
 
