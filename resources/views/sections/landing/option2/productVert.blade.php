@@ -25,7 +25,7 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-line2-camera h1"></i>
+									<i class="icon-settings2 h1"></i>
 									<h3 class="card-title">Slat Walls</h3>
 									<p class="card-text t400">Architectural slat walls add beauty and style to any environment</p>
 								</div>
@@ -40,7 +40,7 @@
 					
 						<div class="flip-card-inner">
 					
-							<p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+							<p class="mb-2 text-white">We can create custom design architectural walls and ceilings that create a unique and beautiful look for any space.</p>
 					
 							<button type="button" class="btn btn-outline-light mt-2">View Details</button>
 					
@@ -68,7 +68,7 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-line2-camera h1"></i>
+									<i class="icon-bulb h1"></i>
 									<h3 class="card-title">Back Lit Walls</h3>
 									<p class="card-text t400">Back lit walls are a unique style for any modern office</p>
 								</div>
@@ -83,7 +83,7 @@
 					
 						<div class="flip-card-inner">
 					
-							<p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+							<p class="mb-2 text-white">To add a truly new look and feel to any space, brand your business with a back lit wall.</p>
 					
 							<button type="button" class="btn btn-outline-light mt-2">View Details</button>
 					
@@ -112,7 +112,7 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-line2-camera h1"></i>
+									<i class="icon-study h1"></i>
 									<h3 class="card-title">Custom Desks</h3>
 									<p class="card-text t400">Custom Desks for any office environment</p>
 								</div>
@@ -127,7 +127,7 @@
 					
 						<div class="flip-card-inner">
 					
-							<p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+							<p class="mb-2 text-white">Custom desks can be built to fit into any space.</p>
 					
 							<button type="button" class="btn btn-outline-light mt-2">View Details</button>
 					
@@ -157,7 +157,7 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-line2-camera h1"></i>
+									<i class="icon-line-sun h1"></i>
 									<h3 class="card-title">Planter Walls</h3>
 									<p class="card-text t400">Custom Desks for any office environment</p>
 								</div>
@@ -172,7 +172,7 @@
 					
 						<div class="flip-card-inner">
 					
-							<p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+							<p class="mb-2 text-white">Planter walls add a unique look and feel for any office environment.</p>
 					
 							<button type="button" class="btn btn-outline-light mt-2">View Details</button>
 					
@@ -201,7 +201,7 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-line2-camera h1"></i>
+									<i class="icon-realestate-fence h1"></i>
 									<h3 class="card-title">Faceted Walls</h3>
 									<p class="card-text t400">Custom Desks for any office environment</p>
 								</div>
@@ -216,7 +216,7 @@
 					
 						<div class="flip-card-inner">
 					
-							<p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+							<p class="mb-2 text-white">Design your own faceted wall to give life to any office.</p>
 					
 							<button type="button" class="btn btn-outline-light mt-2">View Details</button>
 					
@@ -247,7 +247,7 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-line2-camera h1"></i>
+									<i class="icon-realestate-bricks h1"></i>
 									<h3 class="card-title">Wall Panels</h3>
 									<p class="card-text t400">Custom Desks for any office environment</p>
 								</div>
@@ -262,7 +262,7 @@
 					
 						<div class="flip-card-inner">
 					
-							<p class="mb-2 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</p>
+							<p class="mb-2 text-white">Choose from multiple kinds of wall panels for the home or office.</p>
 					
 							<button type="button" class="btn btn-outline-light mt-2">View Details</button>
 					
