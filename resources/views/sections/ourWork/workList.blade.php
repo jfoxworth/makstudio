@@ -20,9 +20,35 @@
 			<div class="fslider" data-arrows="false" data-animation="fade" data-thumbs="true">
 				<div class="flexslider">
 					<div class="slider-wrap">
-						<div class="slide" data-thumb="images/portfolio/single/slider-thumbs/1.jpg"><img src="images/portfolio/single/full/1.jpg" alt="Slider 1"></div>
-						<div class="slide" data-thumb="images/portfolio/single/slider-thumbs/7.jpg"><img src="images/portfolio/single/full/7.jpg" alt="Slider 2"></div>
-						<div class="slide" data-thumb="images/portfolio/single/slider-thumbs/10.jpg"><img src="images/portfolio/single/full/10.jpg" alt="Slider 3"></div>
+						
+						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder1.jpg">
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder1.jpg" alt="Slider 1">
+						</div>
+						
+						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder2.jpg">
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder2.jpg" alt="Slider 2">
+						</div>
+						
+						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder3.jpg">
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder3.jpg" alt="Slider 3">
+						</div>
+
+						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder4.jpg">
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder4.jpg" alt="Slider 3">
+						</div>
+
+						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder5.jpg">
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder5.jpg" alt="Slider 3">
+						</div>
+
+						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg">
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg" alt="Slider 3">
+						</div>
+
+						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder7.jpg">
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder7.jpg" alt="Slider 3">
+						</div>
+
 					</div>
 				</div>
 			</div>
