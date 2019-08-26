@@ -1,4 +1,4 @@
-<section id="section-team" class="page-section topmargin-lg">
+<section id="section-team" class="page-section topmargin-lg bottommargin-lg">
 
 	<div class="heading-block center">
 		<h2>Our Previous Customers</h2>
