@@ -31,6 +31,8 @@
                 @include('sections.landing.option1.workofartBreak2')
                 @include('sections.landing.option1.productVert')
                 @include('sections.landing.option1.sloganBreak')
+                @include('sections.landing.option2.processSteps')
+                @include('sections.landing.option2.uniqueBreak')
                 @include('sections.landing.option1.founders')
                 @include('sections.landing.option1.workofartBreak')
                 @include('sections.landing.option1.customerGrey')
