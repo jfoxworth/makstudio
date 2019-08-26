@@ -135,7 +135,6 @@
 		<p><span class="dropcap">P</span>rimer Grey is a company of graphic designers, marketers, and web developers that work in the Houston, Texas area.</p>
 
 		<div class="masonry-thumbs grid-5 clearfix" 
-			 data-big="3" 
 			 data-lightbox="gallery" 
 			 style="position: relative; height: 200px;">
 			
@@ -186,10 +185,9 @@
 			<h2>arm</h2>
 		</div>
 	
-		<p><span class="dropcap">a</span>arm is a software, processor, and Internet of Things company. Their entry way was transformed into a work of art.</p>
+		<p><span class="dropcap">a</span>rm is a software, processor, and Internet of Things company. Their entry way was transformed into a work of art.</p>
 
 		<div class="masonry-thumbs grid-5 clearfix" 
-			 data-big="3" 
 			 data-lightbox="gallery" 
 			 style="position: relative; height: 200px;">
 			
@@ -219,7 +217,7 @@
 
 			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" 
 			   data-lightbox="gallery-item" 
-			   style="width: 266px; position: absolute; left: 266px; top: 0px;">
+			   style="width: 133px; position: absolute; left: 266px; top: 0px;">
 			
 				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" alt="arm">
 				<div class="overlay">
