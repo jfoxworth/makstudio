@@ -9,6 +9,28 @@
 	<div class="container clearfix">
 		
 
+
+		<!-- Eighth Wonder Bar -->
+		<div class="fancy-title title-dotted-border title-center">
+			<h2>Eighth Wonder Brewery</h2>
+		</div>
+	
+		<p><span class="dropcap">E</span>ighth Wonder Brewery is located on Dallas St in Houston, Texas. Their custom made design highlights the unique character of the brewery and provides a one of a kind experience for its customers. The outside area in a truly one of a kind experience.</p>
+
+			<div class="fslider" data-arrows="false" data-animation="fade" data-thumbs="true">
+				<div class="flexslider">
+					<div class="slider-wrap">
+						<div class="slide" data-thumb="images/portfolio/single/slider-thumbs/1.jpg"><img src="images/portfolio/single/full/1.jpg" alt="Slider 1"></div>
+						<div class="slide" data-thumb="images/portfolio/single/slider-thumbs/7.jpg"><img src="images/portfolio/single/full/7.jpg" alt="Slider 2"></div>
+						<div class="slide" data-thumb="images/portfolio/single/slider-thumbs/10.jpg"><img src="images/portfolio/single/full/10.jpg" alt="Slider 3"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="line"></div>
+
+
+
 		<!-- Eighth Wonder Bar -->
 		<div class="fancy-title title-dotted-border title-center">
 			<h2>Eighth Wonder Brewery</h2>
@@ -127,7 +149,7 @@
 
 
 		<!-- Primer Grey -->
-		<div class="fancy-title title-dotted-border title-center">
+		<div class="fancy-title title-dotted-border title-center topmargin-lg">
 			<h2>Primer Grey</h2>
 		</div>
 	
@@ -175,8 +197,77 @@
 			</a>
 
 
+		</div>
+
+
+
+
+		<!-- arm Technology -->
+		<div class="fancy-title title-dotted-border title-center topmargin-lg">
+			<h2>arm</h2>
+		</div>
+	
+		<p><span class="dropcap">a</span>arm is a software, processor, and Internet of Things company. Their entry way was transformed into a work of art.</p>
+
+		<div class="masonry-thumbs grid-5 clearfix" 
+			 data-big="3" 
+			 data-lightbox="gallery" 
+			 style="position: relative; height: 200px;">
+			
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+				
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" alt="arm">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" alt="arm">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 266px; position: absolute; left: 266px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" alt="arm">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 532px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" alt="arm">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+
 
 		</div>
+
+
 
 	</div>
 
