@@ -10,52 +10,6 @@
 		
 
 
-		<!-- Eighth Wonder Bar -->
-		<div class="fancy-title title-dotted-border title-center">
-			<h2>Eighth Wonder Brewery</h2>
-		</div>
-	
-		<p><span class="dropcap">E</span>ighth Wonder Brewery is located on Dallas St in Houston, Texas. Their custom made design highlights the unique character of the brewery and provides a one of a kind experience for its customers. The outside area in a truly one of a kind experience.</p>
-
-			<div class="fslider" data-arrows="false" data-animation="fade" data-thumbs="true">
-				<div class="flexslider">
-					<div class="slider-wrap">
-						
-						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder1.jpg">
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder1.jpg" alt="Slider 1">
-						</div>
-						
-						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder2.jpg">
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder2.jpg" alt="Slider 2">
-						</div>
-						
-						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder3.jpg">
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder3.jpg" alt="Slider 3">
-						</div>
-
-						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder4.jpg">
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder4.jpg" alt="Slider 3">
-						</div>
-
-						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder5.jpg">
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder5.jpg" alt="Slider 3">
-						</div>
-
-						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg">
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder6.jpg" alt="Slider 3">
-						</div>
-
-						<div class="slide" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder7.jpg">
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder7.jpg" alt="Slider 3">
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="line"></div>
-
-
 
 		<!-- Eighth Wonder Bar -->
 		<div class="fancy-title title-dotted-border title-center">
@@ -95,7 +49,7 @@
 
 			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder3.jpg" 
 			   data-lightbox="gallery-item" 
-			   style="width: 266px; position: absolute; left: 266px; top: 0px;">
+			   style="width: 133px; position: absolute; left: 266px; top: 0px;">
 			
 				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder3.jpg" alt="Eighth Wonder Image">
 				<div class="overlay">
@@ -107,7 +61,7 @@
 
 			<a href="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder4.jpg" 
 			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 532px; top: 0px;">
+			   style="width: 133px; position: absolute; left: 399px; top: 0px;">
 			
 				<img src="https://makstudio.s3.us-east-2.amazonaws.com/EighthWonder4.jpg" alt="Eighth Wonder Image">
 				<div class="overlay">
