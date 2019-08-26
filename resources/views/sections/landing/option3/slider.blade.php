@@ -1,6 +1,7 @@
 <section id="slider" 
 		 class="slider-element slider-parallax full-screen dark slider-parallax-visible" 
-		 style="background: url(https://makstudio.s3.us-east-2.amazonaws.com/backgroundImage2.jpg) center center no-repeat; background-size: cover">
+		 style="height:520px !important"
+		 background: url(https://makstudio.s3.us-east-2.amazonaws.com/backgroundImage2.jpg) center center no-repeat; background-size: cover">
 
 	<div class="slider-parallax-inner">
 
