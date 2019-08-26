@@ -17,7 +17,7 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-        @include('sections.landing.slider')
+        @include('sections.landing.option2.slider')
 
         @include('sections.header')
 
@@ -26,6 +26,16 @@
         <section id="content">
 
             <div class="">
+
+                @include('sections.landing.option2.introText')
+                @include('sections.landing.option2.workofartBreak2')
+                @include('sections.landing.option2.productVert')
+                @include('sections.landing.option2.sloganBreak')
+                @include('sections.landing.option2.founders')
+                @include('sections.landing.option2.workofartBreak')
+                @include('sections.landing.option2.customerGrey')
+                @include('sections.contactUs.contactForm')
+                @include('sections.contactUs.contactInfo')
 
 
             </div>
