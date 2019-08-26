@@ -140,126 +140,57 @@
 
 
 
+
 		<!-- Primer Grey -->
-		<div class="section nobg notopmargin noborder nobottommargin">
+		<div class="col_half">
 
-			<div class="container clearfix">
+			<div class="fancy-title title-dotted-border title-center topmargin-lg">
+				<h2>Primer Grey</h2>
+			</div>
+		
+			<p><span class="dropcap">P</span>rimer Grey is a company of graphic designers, marketers, and web developers that work in the Houston, Texas area.</p>
 
-				<div class="col_half nobottommargin">
-
-					<div class="heading-block bottommargin-sm" style="padding-top: 20px;">
-
-						<h2>Primer Grey</h2>
-
+			<div class="masonry-thumbs grid-5 clearfix" 
+				 data-lightbox="gallery" 
+				 style="position: relative; height: 200px;">
+				
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey1.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+					
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey1.jpg" alt="Primer Grey">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
 					</div>
+				</a>
 
-					<p><span class="dropcap">P</span>rimer Grey is a company of graphic designers, marketers, and web developers that work in the Houston, Texas area.</p>
-
-					<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Build Your Own</a>
-
-				</div>
-
-				<div class="col_half bottommargin-sm center col_last">
-
-
-					<div class="masonry-thumbs grid-5 clearfix" 
-						 data-lightbox="gallery" 
-						 style="position: relative; height: 200px;">
-						
-						<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey1.jpg" 
-						   data-lightbox="gallery-item" 
-						   style="width: 133px; position: absolute; left: 0px; top: 0px;">
-							
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey1.jpg" alt="Primer Grey">
-							<div class="overlay">
-								<div class="overlay-wrap">
-									<i class="icon-line-plus"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey2.jpg" 
-						   data-lightbox="gallery-item" 
-						   style="width: 133px; position: absolute; left: 133px; top: 0px;">
-						
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey2.jpg" alt="Primer Grey">
-							<div class="overlay">
-								<div class="overlay-wrap">
-									<i class="icon-line-plus"></i>
-								</div>
-							</div>
-						</a>
-
-						<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey3.jpg" 
-						   data-lightbox="gallery-item" 
-						   style="width: 266px; position: absolute; left: 266px; top: 0px;">
-						
-							<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey3.jpg" alt="Primer Grey">
-							<div class="overlay">
-								<div class="overlay-wrap">
-									<i class="icon-line-plus"></i>
-								</div>
-							</div>
-						</a>
-
-
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey2.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey2.jpg" alt="Primer Grey">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
 					</div>
+				</a>
 
-
-				</div>
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey3.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 266px; position: absolute; left: 266px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey3.jpg" alt="Primer Grey">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
 
 			</div>
-		</div>
-
-
-
-		<!-- Primer Grey -->
-		<div class="fancy-title title-dotted-border title-center topmargin-lg">
-			<h2>Primer Grey</h2>
-		</div>
-	
-		<p><span class="dropcap">P</span>rimer Grey is a company of graphic designers, marketers, and web developers that work in the Houston, Texas area.</p>
-
-		<div class="masonry-thumbs grid-5 clearfix" 
-			 data-lightbox="gallery" 
-			 style="position: relative; height: 200px;">
-			
-			<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey1.jpg" 
-			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 0px; top: 0px;">
-				
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey1.jpg" alt="Primer Grey">
-				<div class="overlay">
-					<div class="overlay-wrap">
-						<i class="icon-line-plus"></i>
-					</div>
-				</div>
-			</a>
-
-			<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey2.jpg" 
-			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 133px; top: 0px;">
-			
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey2.jpg" alt="Primer Grey">
-				<div class="overlay">
-					<div class="overlay-wrap">
-						<i class="icon-line-plus"></i>
-					</div>
-				</div>
-			</a>
-
-			<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey3.jpg" 
-			   data-lightbox="gallery-item" 
-			   style="width: 266px; position: absolute; left: 266px; top: 0px;">
-			
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey3.jpg" alt="Primer Grey">
-				<div class="overlay">
-					<div class="overlay-wrap">
-						<i class="icon-line-plus"></i>
-					</div>
-				</div>
-			</a>
-
 
 		</div>
 
@@ -267,70 +198,70 @@
 
 
 		<!-- arm Technology -->
-		<div class="fancy-title title-dotted-border title-center topmargin-lg">
-			<h2>arm</h2>
-		</div>
-	
-		<p><span class="dropcap">a</span>rm is a software, processor, and Internet of Things company. Their entry way was transformed into a work of art.</p>
+		<div class="col_half col_last">
 
-		<div class="masonry-thumbs grid-5 clearfix" 
-			 data-lightbox="gallery" 
-			 style="position: relative; height: 200px;">
-			
-			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" 
-			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+			<div class="fancy-title title-dotted-border title-center topmargin-lg">
+				<h2>arm</h2>
+			</div>
+		
+			<p><span class="dropcap">a</span>rm is a software, processor, and Internet of Things company. Their entry way was transformed into a work of art.</p>
+
+			<div class="masonry-thumbs grid-5 clearfix" 
+				 data-lightbox="gallery" 
+				 style="position: relative; height: 200px;">
 				
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" alt="arm">
-				<div class="overlay">
-					<div class="overlay-wrap">
-						<i class="icon-line-plus"></i>
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+					
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" alt="arm">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
 					</div>
-				</div>
-			</a>
+				</a>
 
-			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" 
-			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 133px; top: 0px;">
-			
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" alt="arm">
-				<div class="overlay">
-					<div class="overlay-wrap">
-						<i class="icon-line-plus"></i>
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" alt="arm">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
 					</div>
-				</div>
-			</a>
+				</a>
 
-			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" 
-			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 266px; top: 0px;">
-			
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" alt="arm">
-				<div class="overlay">
-					<div class="overlay-wrap">
-						<i class="icon-line-plus"></i>
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 266px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" alt="arm">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
 					</div>
-				</div>
-			</a>
+				</a>
 
 
-			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" 
-			   data-lightbox="gallery-item" 
-			   style="width: 133px; position: absolute; left: 532px; top: 0px;">
-			
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" alt="arm">
-				<div class="overlay">
-					<div class="overlay-wrap">
-						<i class="icon-line-plus"></i>
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 532px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" alt="arm">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
 					</div>
-				</div>
-			</a>
+				</a>
 
-
+			</div>
 
 		</div>
-
-
 
 	</div>
 
