@@ -141,6 +141,79 @@
 
 
 		<!-- Primer Grey -->
+		<div class="section nobg notopmargin noborder nobottommargin">
+
+			<div class="container clearfix">
+
+				<div class="col_half nobottommargin">
+
+					<div class="heading-block bottommargin-sm" style="padding-top: 20px;">
+
+						<h2>Primer Grey</h2>
+
+					</div>
+
+					<p><span class="dropcap">P</span>rimer Grey is a company of graphic designers, marketers, and web developers that work in the Houston, Texas area.</p>
+
+					<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Build Your Own</a>
+
+				</div>
+
+				<div class="col_half bottommargin-sm center col_last">
+
+
+					<div class="masonry-thumbs grid-5 clearfix" 
+						 data-lightbox="gallery" 
+						 style="position: relative; height: 200px;">
+						
+						<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey1.jpg" 
+						   data-lightbox="gallery-item" 
+						   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+							
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey1.jpg" alt="Primer Grey">
+							<div class="overlay">
+								<div class="overlay-wrap">
+									<i class="icon-line-plus"></i>
+								</div>
+							</div>
+						</a>
+
+						<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey2.jpg" 
+						   data-lightbox="gallery-item" 
+						   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+						
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey2.jpg" alt="Primer Grey">
+							<div class="overlay">
+								<div class="overlay-wrap">
+									<i class="icon-line-plus"></i>
+								</div>
+							</div>
+						</a>
+
+						<a href="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey3.jpg" 
+						   data-lightbox="gallery-item" 
+						   style="width: 266px; position: absolute; left: 266px; top: 0px;">
+						
+							<img src="https://makstudio.s3.us-east-2.amazonaws.com/primerGrey3.jpg" alt="Primer Grey">
+							<div class="overlay">
+								<div class="overlay-wrap">
+									<i class="icon-line-plus"></i>
+								</div>
+							</div>
+						</a>
+
+
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<!-- Primer Grey -->
 		<div class="fancy-title title-dotted-border title-center topmargin-lg">
 			<h2>Primer Grey</h2>
 		</div>
