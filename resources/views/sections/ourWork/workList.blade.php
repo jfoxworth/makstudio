@@ -19,7 +19,6 @@
 		<p><span class="dropcap">E</span>ighth Wonder Brewery is located on Dallas St in Houston, Texas. Their custom made design highlights the unique character of the brewery and provides a one of a kind experience for its customers. The outside area in a truly one of a kind experience.</p>
 
 		<div class="masonry-thumbs grid-5 clearfix" 
-			 data-big="3" 
 			 data-lightbox="gallery" 
 			 style="position: relative; height: 200px;">
 			
