@@ -146,7 +146,7 @@
 
 
 		<!-- Ramada and Hideaway Kitchen -->
-		<div class="fancy-title title-dotted-border title-center">
+		<div class="fancy-title title-dotted-border title-center topmargin-lg">
 			<h2>Ramada and Hideaway Kitchen</h2>
 		</div>
 	
@@ -289,7 +289,7 @@
 
 
 		<!-- Primer Grey -->
-		<div class="col_half">
+		<div class="col_half topmargin-lg">
 
 			<div class="fancy-title title-dotted-border title-center topmargin-lg">
 				<h2>Primer Grey</h2>
@@ -345,7 +345,7 @@
 
 
 		<!-- arm Technology -->
-		<div class="col_half col_last">
+		<div class="col_half col_last topmargin-lg">
 
 			<div class="fancy-title title-dotted-border title-center topmargin-lg">
 				<h2>arm</h2>
@@ -419,7 +419,7 @@
 
 
 		<!-- Fatty's Smoke Shop -->
-		<div class="col_half col_last">
+		<div class="col_half topmargin-lg">
 
 			<div class="fancy-title title-dotted-border title-center topmargin-lg">
 				<h2>Fatty's Smoke Shop</h2>
@@ -467,7 +467,7 @@
 
 
 		<!-- Secret Group -->
-		<div class="col_half col_last">
+		<div class="col_half col_last topmargin-lg">
 
 			<div class="fancy-title title-dotted-border title-center topmargin-lg">
 				<h2>Secret Group</h2>
