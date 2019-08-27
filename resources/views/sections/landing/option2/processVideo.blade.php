@@ -10,7 +10,7 @@
 
 		<div class="col_third"></div>
 
-		<div class="col_third">
+		<div class="col_third" style="width:560px">
 
 			<iframe width="560" 
 					height="315" 
