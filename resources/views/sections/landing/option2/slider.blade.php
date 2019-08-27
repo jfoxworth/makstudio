@@ -3,7 +3,7 @@
 <section id="slider" class="slider-element full-screen slider-parallax">
 
 	<div class="full-screen section nopadding nomargin noborder ohidden" 
-		 style="background: url('https://makstudio.s3.us-east-2.amazonaws.com/MakWall1.jpg') bottom center no-repeat; background-size: cover;">
+		 style="background: url('https://makstudio.s3.us-east-2.amazonaws.com/OfficeWall9.jpg') bottom center no-repeat; background-size: cover;">
 
 
 		<div class="container clearfix">
