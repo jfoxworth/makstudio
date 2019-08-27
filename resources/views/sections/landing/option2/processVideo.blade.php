@@ -10,15 +10,19 @@
 
 		<div class="col_third"></div>
 
-		<div class="col_third" style="width:560px">
+		<div class="col_third">
 
-			<iframe width="560" 
-					height="315" 
-					src="https://www.youtube.com/embed/Ir7baoDMz5Y" 
-					frameborder="0" 
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-					
-			</iframe>
+			<div style="width:560px">
+
+				<iframe width="560" 
+						height="315" 
+						src="https://www.youtube.com/embed/Ir7baoDMz5Y" 
+						frameborder="0" 
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						
+				</iframe>
+
+			</div>
 
 		</div>
 
