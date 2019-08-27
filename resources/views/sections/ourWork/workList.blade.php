@@ -263,9 +263,123 @@
 
 		</div>
 
+
+
+
+
+
+
+
+
+		<!-- Fatty's Smoke Shop -->
+		<div class="col_half col_last">
+
+			<div class="fancy-title title-dotted-border title-center topmargin-lg">
+				<h2>Fatty's Smoke Shop</h2>
+			</div>
+		
+			<p><span class="dropcap">F</span>atty's smoke shop is a college station based store that sells a full selection of cigars, tobacco, water pipes, mods, vapes, and more. 
+</p>
+
+			<div class="masonry-thumbs grid-5 clearfix" 
+				 data-lightbox="gallery" 
+				 style="position: relative; height: 200px;">
+				
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/fattysSmokeShop1.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+					
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/fattysSmokeShop1.jpg" alt="arm">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/fattysSmokeShop2.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/fattysSmokeShop2.jpg" alt="arm">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+		<!-- Secret Group -->
+		<div class="col_half col_last">
+
+			<div class="fancy-title title-dotted-border title-center topmargin-lg">
+				<h2>Secret Group</h2>
+			</div>
+		
+			<p><span class="dropcap">S</span>ecret Group is a Houston based bar and multipurpose venue. Their main room hosts stand-up comedy, music, and a variety of other events</p>
+
+			<div class="masonry-thumbs grid-5 clearfix" 
+				 data-lightbox="gallery" 
+				 style="position: relative; height: 200px;">
+				
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/secretGroup1.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+					
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/secretGroup1.jpg" alt="Secret Group">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/secretGroup2.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/secretGroup2.jpg" alt="Secret Group">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+
+
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/secretGroup3.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 266px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/secretGroup3.jpg" alt="Secret Group">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+
+			</div>
+
+		</div>
+
+
+
+
+
 	</div>
-
-
 
 
 
