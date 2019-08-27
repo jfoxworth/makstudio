@@ -28,6 +28,7 @@
 
             <div class="">
 
+                @include('sections.landing.option2.callToAction')
                 @include('sections.landing.option2.productVert')
                 @include('sections.landing.option2.workofartBreak2')
                 @include('sections.landing.option2.processVideo')
