@@ -532,7 +532,7 @@
 
 
 		<!-- Kings Court -->
-		<div class="col_half col_last topmargin-lg">
+		<div class="col_half topmargin-lg">
 
 			<div class="fancy-title title-dotted-border title-center topmargin-lg">
 				<h2>Kings Court</h2>
