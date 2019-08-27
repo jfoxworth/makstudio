@@ -1,14 +1,13 @@
-<div class="container-fullwidth clearfix">
+<div class="container clearfix">
 
 
 	<!-- Sidebar
 	============================================= -->
-	<div class="sidebar nobottommargin clearfix">
+	<div class="col_onefourth clearfix">
 		
 		<div class="sidebar-widgets-wrap">
 
-			<div class="widget widget-twitter-feed clearfix">
-
+			<div class="widget clearfix">
 
 				<select class="selectpicker">
 					<option>Mustard</option>
@@ -23,7 +22,7 @@
 	</div>
 
 
-	<div class="postcontent nobottommargin col_last clearfix">
+	<div class="col_last col_threefourth">
 		<p>Here</p>
 	</div>
 
