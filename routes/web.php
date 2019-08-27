@@ -74,3 +74,10 @@ Route::get('/ourWork', function () {
 Route::get('/aboutUs', function () {
     return view('layouts.aboutUs');
 });
+
+
+
+// About Us
+Route::get('/designStudio', function () {
+    return view('layouts.designStudio');
+});
