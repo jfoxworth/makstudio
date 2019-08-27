@@ -2,7 +2,6 @@
 ============================================= -->
 <header id="header" class="full-header border-full-header transparent-header dark static-sticky" data-sticky-class="not-dark">
 
-
     <div id="header-wrap">
 
         <div class="container clearfix">

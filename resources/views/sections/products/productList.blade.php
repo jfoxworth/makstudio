@@ -15,7 +15,7 @@
 
 			<p>Vertical slat walls, ceiling slats, or somewhere in between. We can design the perfect wall for you or you can build one of your own with our online tool.</p>
 
-			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Build Your Own</a>
+			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Open Design Studio</a>
 
 		</div>
 
@@ -49,7 +49,7 @@
 
 			<p>Faceted walls add depth and texture to any room and define a working or entertainment space. Our tools let you design your own custom wall that we build and install.</p>
 
-			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Customize Your Own</a>
+			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Open Design Studio</a>
 
 		</div>
 
