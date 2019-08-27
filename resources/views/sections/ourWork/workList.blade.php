@@ -526,6 +526,100 @@
 
 
 
+
+
+
+
+
+		<!-- Kings Court -->
+		<div class="col_half col_last topmargin-lg">
+
+			<div class="fancy-title title-dotted-border title-center topmargin-lg">
+				<h2>Kings Court</h2>
+			</div>
+		
+			<p><span class="dropcap">K</span>ing's Court is an Indian and British restaurant and pub in the Houston Area.</p>
+
+			<div class="masonry-thumbs grid-5 clearfix" 
+				 data-lightbox="gallery" 
+				 style="position: relative; height: 200px;">
+				
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/kings1.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+					
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/kings1.jpg" alt="Secret Group">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/kings2.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/kings2.jpg" alt="Secret Group">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+
+
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/kings3.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 266px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/kings3.jpg" alt="Secret Group">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+
+
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/kings4.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 266px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/kings4.jpg" alt="Kings Court">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+
+
+
+				<a href="https://makstudio.s3.us-east-2.amazonaws.com/kings5.jpg" 
+				   data-lightbox="gallery-item" 
+				   style="width: 133px; position: absolute; left: 266px; top: 0px;">
+				
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/kings5.jpg" alt="Kings Court">
+					<div class="overlay">
+						<div class="overlay-wrap">
+							<i class="icon-line-plus"></i>
+						</div>
+					</div>
+				</a>
+
+
+
+			</div>
+
+		</div>
+
+
+
+
 	</div>
 
 
