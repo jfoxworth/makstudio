@@ -11,7 +11,7 @@
 
 
 
-		<div class="col_third"></div>
+		<div class="col_third" style="width:33%"></div>
 
 		<div class="col_third">
 
@@ -29,7 +29,7 @@
 
 		</div>
 
-		<div class="col_third col_last"></div>
+		<div class="col_third col_last" style="width:33%"></div>
 
 	</div>
 
