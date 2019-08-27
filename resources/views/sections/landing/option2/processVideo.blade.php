@@ -3,9 +3,12 @@
 
 	<div class="container">
 
-		<div class="col-md-8 offset-2 center">
-			<h2 class="text-title-light text-dark mb-5 ls1 uppercase">We handle all steps, from design to installation</h2>
+
+		<div class="heading-block center">
+			<h2>We handle all aspects</h2>
+			<span>From design to construction to installation, mak studios handles all steps</span>
 		</div>
+
 
 
 		<div class="col_third"></div>
@@ -26,7 +29,7 @@
 
 		</div>
 
-		<div class="colr_third col_last"></div>
+		<div class="col_third col_last"></div>
 
 	</div>
 
