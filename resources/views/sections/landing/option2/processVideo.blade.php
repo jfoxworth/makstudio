@@ -11,11 +11,11 @@
 
 
 
-		<div class="col_third" style="width:33%"></div>
+		<div class="col_third" style="width:33% !important;"></div>
 
 		<div class="col_third">
 
-			<div style="width:560px">
+			<div style="width:560px;">
 
 				<iframe width="560" 
 						height="315" 
@@ -29,7 +29,7 @@
 
 		</div>
 
-		<div class="col_third col_last" style="width:33%"></div>
+		<div class="col_third col_last" style="width:33% !important;"></div>
 
 	</div>
 
