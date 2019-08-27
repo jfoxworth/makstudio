@@ -141,6 +141,140 @@
 
 
 
+
+
+
+
+		<!-- Ramada and Hideaway Kitchen -->
+		<div class="fancy-title title-dotted-border title-center">
+			<h2>Ramada and Hideaway Kitchen</h2>
+		</div>
+	
+		<p><span class="dropcap">T</span>he Austin, Texas based Hideaway Kitchen is situated next to a Ramada. The ceiling features added to the two locations creates a unique and warm feel.</p>
+
+		<div class="masonry-thumbs grid-5 clearfix" 
+			 data-lightbox="gallery" 
+			 style="position: relative; height: 200px;">
+			
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen1.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+				
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen1.jpg" alt="Hideaway Kitchen Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen2.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen2.jpg" alt="Hideaway Kitchen Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen3.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 266px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen3.jpg" alt="Hideaway Kitchen Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen4.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 399px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen4.jpg" alt="Hideaway Kitchen Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ramada1.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 0px; top: 100px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ramada1.jpg" alt="Ramada Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ramada2.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 133px; top: 100px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ramada2.jpg" alt="Ramada Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ramada3.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 532px; top: 100px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ramada3.jpg" alt="Ramada Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ramada4.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 532px; top: 100px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ramada4.jpg" alt="Ramada Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ramada5.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 532px; top: 100px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ramada5.jpg" alt="Ramada Image">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+		</div>
+
+
+
+
+
+
+
+
 		<!-- Primer Grey -->
 		<div class="col_half">
 
