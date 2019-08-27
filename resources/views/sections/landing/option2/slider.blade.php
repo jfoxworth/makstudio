@@ -21,13 +21,17 @@
 		-->
 
 			<div class="divcenter vertical-middle center">
-				<img src="https://makstudio.s3.us-east-2.amazonaws.com/logoBlack.png" width="250px">
-			</div>
 
-			<div class="clear"></div>
+				<div>
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/logoBlack.png" width="250px">
+				</div>
+				
+				<div class="clear"></div>
 
-			<div class="divcenter center topmargin" style="max-width: 900px;">
-				<h2 class="nobottommargin t300 ls1" style="color:#FFFFFF">Mak studio is a Houston, Texas based group of architects, designers, carpenters, and doers. We model and build custom architectural walls and furniture.</h2>
+				<div class="divcenter center topmargin" style="max-width: 900px;">
+					<h2 class="nobottommargin t300 ls1" style="color:#FFFFFF">Mak studio is a Houston, Texas based group of architects, designers, carpenters, and doers. We model and build custom architectural walls and furniture.</h2>
+				</div>
+
 			</div>
 
 		</div>
