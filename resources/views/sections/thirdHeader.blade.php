@@ -1,6 +1,6 @@
 <!-- Header
 ============================================= -->
-<header id="header" class="full-header border-full-header dark static-sticky" data-sticky-class="not-dark">
+<header id="header" class="full-header border-full-header dark static-sticky" data-sticky-class="dark">
 
     <div id="header-wrap">
 

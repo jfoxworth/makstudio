@@ -35,12 +35,12 @@
 					<select id="slatOptions"
 							class="selectpicker btn-info" 
 							style="width:100%; height:35px; margin:10px 0px">
-						<option>Wall Dimensions</option>
-						<option>Wall Style</option>
-						<option>Fin Options</option>
-						<option>Ripple Style</option>
-						<option>Materials & Color</option>
-						<option>Logo Options</option>
+						<option value="slatDimensions">Wall Dimensions</option>
+						<option value="slatStyle">Wall Style</option>
+						<option value="slatFin">Fin Options</option>
+						<option value="slatRipple">Ripple Style</option>
+						<option value="slatMaterial">Materials & Color</option>
+						<option value="slatLogo">Logo Options</option>
 					</select>
 
 
@@ -78,7 +78,7 @@
 					<!-- Options for a backlit wall -->
 					<select id="backlitOptions"
 							class="selectpicker btn-info" 
-							style="width:100%; height:35px; margin:10px 0px; display:none">
+							style="width:100%; height:35px; margin:10px 0px;">
 						<option>Wall Dimensions</option>
 						<option>Logo</option>
 						<option>Headers</option>

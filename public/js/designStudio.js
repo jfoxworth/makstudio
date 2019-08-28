@@ -9,6 +9,14 @@ $(document).ready(function()	{
 	$("#genslerSection").hide();
 
 
+	$("#slatDimensions").show();
+	$("#slatStyle").hide();
+	$("#slatFin").hide();
+	$("#slatRipple").hide();
+	$("#slatMaterial").hide();
+	$("#slatLogo").hide();
+
+
 
 	// Initial variables for selections
 	var designType = "slatWall";					// The item currently being designed in the studio window
@@ -68,9 +76,42 @@ $(document).ready(function()	{
 		if ( designType == "facetedWall" ){ $("#facetedSection").show(); }
 		if ( designType == "gensler" ){ $("#genslerSection").show(); }
 
+	});
+
+
+
+
+
+	// When the user changes the type of design they are working on
+	$('#slatOptions').change(function()	
+	{	
+
+		// Set the value
+		var slatOption = $( "#slatOptions" ).val();
+		console.log('The slat option is '+slatOption);
+	
+
+		// Hide all of the options
+		$("#slatDimensions").hide();
+		$("#slatStyle").hide();
+		$("#slatFin").hide();
+		$("#slatRipple").hide();
+		$("#slatMaterial").hide();
+		$("#slatLogo").hide();
+
+
+
+		// Display the appropriate options
+		if ( slatOption == "slatDimensions" ){ $("#slatDimensions").show(); }
+
 
 
 	});
+
+
+
+
+
 
 
 });
