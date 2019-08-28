@@ -128,9 +128,12 @@ $(document).ready(function()	{
 
 
 		// Display the appropriate options
-		if ( slatOption == "slatDimensions" ){ $("#slatDimensions").show(); }
-		if ( slatOption == "slatStyle" ){ $("#slatStyle").show(); }
+		//if ( slatOption == "slatDimensions" ){ $("#slatDimensions").show(); }
+		//if ( slatOption == "slatStyle" ){ $("#slatStyle").show(); }
+		//if ( slatOption == "slatRipple" ){ $("#slatRipple").show(); }
 
+
+		$("#"+slatOption).show(); 
 
 
 	});
