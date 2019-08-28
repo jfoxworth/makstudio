@@ -52,59 +52,18 @@
 
 
 					<div class="white-section">
-						<label>Wall Length (inches)</label>
-						<span class="irs js-irs-0">
-							<span class="irs">
-								<span class="irs-line" tabindex="0">
-									<span class="irs-line-left"></span>
-									<span class="irs-line-mid"></span>
-									<span class="irs-line-right"></span>
-								</span>
-								<span class="irs-min" style="visibility: visible;">48</span>
-								<span class="irs-max" style="visibility: visible;">320</span>
-								<span class="irs-from" style="visibility: hidden;">0</span>
-								<span class="irs-to" style="visibility: hidden;">0</span>
-								<span class="irs-single" style="left: 41.8943%;">50</span>
-							</span>
-							<span class="irs-grid"></span>
-							<span class="irs-bar-edge"></span>
-							<span class="irs-shadow shadow-single" style="display: none;"></span>
-							<span class="irs-slider" style="left: 41.3889%;"></span>
-						</span>
-						<input class="range_01 irs-hidden-input" tabindex="-1" readonly="">
+						<label>Wall Height (inches)</label>
+						<input class="statWallHeightSlider" />
 					</div>
-
-
 
 					<div class="white-section">
-						<label>Wall Height (inches)</label>
-						<span class="irs js-irs-0">
-							<span class="irs">
-								<span class="irs-line" tabindex="0">
-									<span class="irs-line-left"></span>
-									<span class="irs-line-mid"></span>
-									<span class="irs-line-right"></span>
-								</span>
-								<span class="irs-min" style="visibility: visible;">30</span>
-								<span class="irs-max" style="visibility: visible;">540</span>
-								<span class="irs-from" style="visibility: hidden;">0</span>
-								<span class="irs-to" style="visibility: hidden;">0</span>
-								<span class="irs-single" style="left: 41.8943%;">50</span>
-							</span>
-							<span class="irs-grid"></span>
-							<span class="irs-bar-edge"></span>
-							<span class="irs-shadow shadow-single" style="display: none;"></span>
-							<span class="irs-slider" style="left: 41.3889%;"></span>
-						</span>
-						<input class="range_01 irs-hidden-input" tabindex="-1" readonly="">
+						<label>Wall Width (inches)</label>
+						<input class="statWallWidthSlider" />
 					</div>
-
-
-
 
 					<div class="white-section">
 						<label>Wall Depth (inches)</label>
-						<input class="wallDepthSlider" />
+						<input class="statWallDepthSlider" />
 					</div>
 
 				</div>
