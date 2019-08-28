@@ -73,6 +73,9 @@
 
 	</script>
 
+    <script type="text/javascript" src="/js/designStudio.js"></script>
+
+
 </body>
 </html>
 

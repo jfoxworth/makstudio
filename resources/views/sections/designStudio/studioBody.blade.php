@@ -11,13 +11,15 @@
 
 
 				<!-- Select the type of wall to be built -->
-				<select class="selectpicker btn-primary" style="width:100%; height:35px">
-					<option>Architectural Slat Wall</option>
-					<option>Planter Wall</option>
-					<option>Back-lit Branding Wall</option>
-					<option>Reception Desk</option>
-					<option>Faceted Wall</option>
-					<option>Gensler Custom Wall</option>
+				<select class="selectpicker btn-primary" 
+						id="designType" 
+						style="width:100%; height:35px">
+					<option value="slatWall">Architectural Slat Wall</option>
+					<option value="planterWall">Planter Wall</option>
+					<option value="backlitWall">Back-lit Branding Wall</option>
+					<option value="desk">Reception Desk</option>
+					<option value="facetedWall">Faceted Wall</option>
+					<option value="genslerWall">Gensler Custom Wall</option>
 				</select>
 
 
