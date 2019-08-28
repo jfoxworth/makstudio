@@ -49,7 +49,6 @@
 		$(document).ready(function () {
 
 			$(".slatWallHeightSlider").ionRangeSlider({
-				type: "double",
 				grid: false,
 				min: 48,
 				max: 320,
@@ -58,7 +57,6 @@
 			});
 
 			$(".slatWallWidthSlider").ionRangeSlider({
-				type: "double",
 				grid: false,
 				min: 30,
 				max: 540,
@@ -67,7 +65,6 @@
 			});
 
 			$(".slatWallDepthSlider").ionRangeSlider({
-				type: "double",
 				grid: true,
 				min: 3,
 				max: 8,
