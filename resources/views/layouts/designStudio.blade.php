@@ -44,6 +44,24 @@
 
     @include('sections.javasfiles')
 
+    <script>
+
+        $(document).ready(function () {
+
+            $(".wallDepthSlider").ionRangeSlider({
+                type: "double",
+                grid: true,
+                min: -3,
+                max: 8,
+                from: 3,
+                to: 8,
+                step: 1
+            });
+
+        });
+
+    </script>
+
 </body>
 </html>
 
