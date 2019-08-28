@@ -82,17 +82,17 @@
 
 
 
-					<!-- Specifics for slat wall dimensions -->
+					<!-- Specifics for slat wall ripple -->
 					<div id="slatRipple">
 
 						<div class="white-section" style="margin:10px 0px" >
-							<label>Ripple Location along Width (%)</label>
+							<label>Ripple X Location (%)</label>
 							<input class="rippleXSlider" id="rippleX"/>
 						</div>
 
 
 						<div class="white-section" style="margin:20px 0px" >
-							<label>Ripple Location along Height (%)</label>
+							<label>Ripple Y Location (%)</label>
 							<input class="rippleYSlider" id="rippleY"/>
 						</div>
 
@@ -113,6 +113,50 @@
 
 
 
+
+
+
+					<!-- Specifics for slat wall fins -->
+					<div id="slatFin">
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Fin Spacing (inches)</label>
+							<input class="finSpacingSlider" id="finSpacing"/>
+						</div>
+
+
+						<div class="white-section" style="margin:20px 0px" >
+							<label>Fin Rotation (degrees)</label>
+							<input class="finRotationSlider" id="finRotation"/>
+						</div>
+
+						<select id="finProfile"
+								class="selectpicker btn-success" 
+								style="width:100%; height:35px; margin:20px 0px">
+							<option value="curved">Curved</option>
+							<option value="angled">Angled</option>
+						</select>
+
+					</div>
+
+
+
+					<!-- Specifics for slat wall materials and colors -->
+					<div id="slatMaterial">
+
+						<div class="row hoverMe">
+							<img id="slatMaterialBirch" src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirch.jpg">	
+						</div>
+
+						<div class="row hoverMe">
+							<img id="slatMaterialBirchLaminate" src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirchLaminate.jpg">	
+						</div>
+
+						<div class="row hoverMe">
+							<img id="slatMaterialMDF" src="https://makstudio.s3.us-east-2.amazonaws.com/coloredMDF.jpg">
+						</div>
+
+					</div>
 
 
 				</div>

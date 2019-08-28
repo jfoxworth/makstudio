@@ -75,6 +75,19 @@ $(document).ready(function()	{
 		step: 1
 	});
 
+	$(".finSpacingSlider").ionRangeSlider({
+		grid: false,
+		min: 3,
+		max: 10,
+		step: 1
+	});
+
+	$(".rippleRotationSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 180,
+		step: 5
+	});
 
 
 
@@ -125,14 +138,7 @@ $(document).ready(function()	{
 		$("#slatMaterial").hide();
 		$("#slatLogo").hide();
 
-
-
 		// Display the appropriate options
-		//if ( slatOption == "slatDimensions" ){ $("#slatDimensions").show(); }
-		//if ( slatOption == "slatStyle" ){ $("#slatStyle").show(); }
-		//if ( slatOption == "slatRipple" ){ $("#slatRipple").show(); }
-
-
 		$("#"+slatOption).show(); 
 
 
