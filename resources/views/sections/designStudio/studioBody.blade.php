@@ -51,17 +51,17 @@
 				<div id="slatDimensions">
 
 
-					<div class="white-section">
+					<div class="white-section" style="margin:10px 0px">
 						<label>Wall Height (inches)</label>
 						<input class="slatWallHeightSlider" />
 					</div>
 
-					<div class="white-section">
+					<div class="white-section" style="margin:10px 0px">
 						<label>Wall Width (inches)</label>
 						<input class="slatWallWidthSlider" />
 					</div>
 
-					<div class="white-section">
+					<div class="white-section" style="margin:10px 0px">
 						<label>Wall Depth (inches)</label>
 						<input class="slatWallDepthSlider" />
 					</div>
