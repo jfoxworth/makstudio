@@ -1,6 +1,13 @@
 $(document).ready(function()	{
 
 
+	// Initialize all of the tool tips
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+
+
+	
 	// Hide the initial items that need to be hidden
 	$("#backlitSection").hide();
 	$("#planterSection").hide();
