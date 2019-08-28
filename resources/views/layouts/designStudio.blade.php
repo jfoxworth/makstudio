@@ -52,7 +52,6 @@
 				grid: false,
 				min: 48,
 				max: 320,
-				from:48,
 				step: 1
 			});
 
@@ -60,7 +59,6 @@
 				grid: false,
 				min: 30,
 				max: 540,
-				from:30,
 				step: 1
 			});
 
@@ -68,7 +66,6 @@
 				grid: true,
 				min: 3,
 				max: 8,
-				from:3,
 				step: 1
 			});
 
