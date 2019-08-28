@@ -34,7 +34,7 @@
 					<!-- Options for a slat wall -->
 					<select id="slatOptions"
 							class="selectpicker btn-info" 
-							style="width:100%; height:35px; margin:10px 0px">
+							style="width:100%; height:35px; margin:20px 0px">
 						<option value="slatDimensions">Wall Dimensions</option>
 						<option value="slatStyle">Wall Style</option>
 						<option value="slatFin">Fin Options</option>
@@ -76,6 +76,40 @@
 						<option value="angled">Angled</option>
 						<option value="artistic">Artistic</option>
 					</select>
+
+
+
+
+
+
+					<!-- Specifics for slat wall dimensions -->
+					<div id="slatRipple">
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Ripple Location along Width (%)</label>
+							<input class="rippleXSlider" id="rippleX"/>
+						</div>
+
+
+						<div class="white-section" style="margin:20px 0px" >
+							<label>Ripple Location along Height (%)</label>
+							<input class="rippleYSlider" id="rippleY"/>
+						</div>
+
+
+						<div class="white-section" style="margin:20px 0px" >
+							<label>Ripple Intensity</label>
+							<input class="rippleIntensitySlider" id="rippleIntensity"/>
+						</div>
+
+
+						<div class="white-section" style="margin:20px 0px">
+							<label>Ripple Roughness</label>
+							<input class="rippleRoughnessSlider" id="rippleRoughness"/>
+						</div>
+
+
+					</div>
 
 
 

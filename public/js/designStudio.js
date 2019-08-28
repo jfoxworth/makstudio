@@ -47,7 +47,33 @@ $(document).ready(function()	{
 		step: 1
 	});
 
+	$(".rippleXSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 100,
+		step: 1
+	});
 
+	$(".rippleYSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 100,
+		step: 1
+	});
+
+	$(".rippleIntensitySlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 4,
+		step: 1
+	});
+
+	$(".rippleRoughnessSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 2,
+		step: 1
+	});
 
 
 
