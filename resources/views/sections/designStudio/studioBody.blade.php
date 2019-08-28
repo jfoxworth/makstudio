@@ -23,8 +23,16 @@
 				</select>
 
 
+				<div class="row divcenter">
+
+					<div class="col_third"
+						 data-toggle="tooltip" data-placement="top" title="Architectural Slat Wall">
+						<i class="icon-settings2 h1"></i>
+					</div>
+				</div>
 
 
+				<div class="divider">
 
 
 
