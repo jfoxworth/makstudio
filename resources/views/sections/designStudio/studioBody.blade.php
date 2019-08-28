@@ -64,6 +64,23 @@
 
 					</div>
 
+
+
+
+
+					<!-- Options for a slat Style -->
+					<select id="slatStyle"
+							class="selectpicker btn-success" 
+							style="width:100%; height:35px; margin:20px 0px">
+						<option value="rippled">Rippled</option>
+						<option value="angled">Angled</option>
+						<option value="artistic">Artistic</option>
+					</select>
+
+
+
+
+
 				</div>
 
 

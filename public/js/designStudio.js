@@ -103,6 +103,7 @@ $(document).ready(function()	{
 
 		// Display the appropriate options
 		if ( slatOption == "slatDimensions" ){ $("#slatDimensions").show(); }
+		if ( slatOption == "slatStyle" ){ $("#slatStyle").show(); }
 
 
 
