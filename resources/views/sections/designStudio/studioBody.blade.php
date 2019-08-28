@@ -72,7 +72,7 @@
 
 
 				<!-- All options for the backlit walls -->
-				<div id="backlitSection" style="display:none">
+				<div id="backlitSection">
 
 
 					<!-- Options for a backlit wall -->

@@ -1,6 +1,15 @@
 $(document).ready(function()	{
 
 
+	// Hide the initial items that need to be hidden
+	$("#backlitSection").hide();
+	$("#planterSection").hide();
+	$("#deskSection").hide(); 
+	$("#facetedSection").hide();
+	$("#genslerSection").hide();
+
+
+
 	// Initial variables for selections
 	var designType = "slatWall";					// The item currently being designed in the studio window
 
