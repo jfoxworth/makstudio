@@ -11,7 +11,7 @@
 
 
 				<!-- Select the type of wall to be built -->
-				<select class="selectpicker btn-primary" style="width:100%; height:35px">
+				<select class="selectpicker" data-style="btn-primary" style="width:100%; height:35px">
 					<option>Architectural Slat Wall</option>
 					<option>Planter Wall</option>
 					<option>Back-lit Branding Wall</option>
@@ -19,6 +19,7 @@
 					<option>Faceted Wall</option>
 					<option>Gensler Custom Wall</option>
 				</select>
+
 
 
 				<!-- Options for a slat wall -->
@@ -50,20 +51,19 @@
 				<!-- Specifics for slat wall dimensions -->
 				<div id="slatDimensions">
 
-
-					<div class="white-section" style="margin:10px 0px">
+					<div class="white-section" style="margin:10px 0px" id="slatWallHeight">
 						<label>Wall Height (inches)</label>
-						<input class="slatWallHeightSlider" />
+						<input class="slatWallHeightSlider" id="slatWallHeightSlider"/>
 					</div>
 
-					<div class="white-section" style="margin:10px 0px">
+					<div class="white-section" style="margin:20px 0px" id="slatWallWidth">
 						<label>Wall Width (inches)</label>
-						<input class="slatWallWidthSlider" />
+						<input class="slatWallWidthSlider"  id="slatWallWidthSlider"/>
 					</div>
 
-					<div class="white-section" style="margin:10px 0px">
+					<div class="white-section" style="margin:20px 0px" id="slatWallDepth">
 						<label>Wall Depth (inches)</label>
-						<input class="slatWallDepthSlider" />
+						<input class="slatWallDepthSlider"  id="slatWallDepthSlider"/>
 					</div>
 
 				</div>

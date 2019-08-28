@@ -63,7 +63,7 @@
 			});
 
 			$(".slatWallDepthSlider").ionRangeSlider({
-				grid: true,
+				grid: false,
 				min: 3,
 				max: 8,
 				step: 1

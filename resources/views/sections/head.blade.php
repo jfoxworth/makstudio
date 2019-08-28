@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/css/font-icons/et/et-line.css" type="text/css" />
     <link rel="stylesheet" href="/css/animate.css" type="text/css" />
     <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="/css/bt-select.css" type="text/css" />
 
     <link rel="stylesheet" href="/css/travel.css" type="text/css" />
 
