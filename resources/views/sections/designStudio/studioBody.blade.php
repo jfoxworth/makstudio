@@ -21,11 +21,12 @@
 					</select>
 				</select>
 
-										<select class="selectpicker" data-style="btn-primary" >
+										<select class="selectpicker" data-style="btn-primary" data-width="19%">
 											<option>Mustard</option>
 											<option>Ketchup</option>
 											<option>Relish</option>
 											<option>Onions</option>
+											</select>
 										</select>
 
 
