@@ -23,53 +23,70 @@
 				</select>
 
 
-				<!-- Options for a slat wall -->
-				<select id="slatOptions"
-						class="selectpicker btn-info" 
-						style="width:100%; height:35px; margin:10px 0px">
-					<option>Wall Dimensions</option>
-					<option>Wall Style</option>
-					<option>Fin Options</option>
-					<option>Ripple Style</option>
-					<option>Materials & Color</option>
-					<option>Logo Options</option>
-				</select>
-
-
-
-
-				<!-- Options for a backlit wall -->
-				<select id="backlitOptions"
-						class="selectpicker btn-info" 
-						style="width:100%; height:35px; margin:10px 0px">
-					<option>Wall Dimensions</option>
-					<option>Logo</option>
-					<option>Headers</option>
-				</select>
 
 
 
 
 
-				<!-- Specifics for slat wall dimensions -->
-				<div id="slatDimensions">
+				<!-- All options for the slat walls -->
+				<div id="slatSection">
 
-					<div class="white-section" style="margin:10px 0px" id="slatWallHeight">
-						<label>Wall Height (inches)</label>
-						<input class="slatWallHeightSlider" id="slatWallHeightSlider"/>
-					</div>
+					<!-- Options for a slat wall -->
+					<select id="slatOptions"
+							class="selectpicker btn-info" 
+							style="width:100%; height:35px; margin:10px 0px">
+						<option>Wall Dimensions</option>
+						<option>Wall Style</option>
+						<option>Fin Options</option>
+						<option>Ripple Style</option>
+						<option>Materials & Color</option>
+						<option>Logo Options</option>
+					</select>
 
-					<div class="white-section" style="margin:20px 0px" id="slatWallWidth">
-						<label>Wall Width (inches)</label>
-						<input class="slatWallWidthSlider"  id="slatWallWidthSlider"/>
-					</div>
 
-					<div class="white-section" style="margin:20px 0px" id="slatWallDepth">
-						<label>Wall Depth (inches)</label>
-						<input class="slatWallDepthSlider"  id="slatWallDepthSlider"/>
+					<!-- Specifics for slat wall dimensions -->
+					<div id="slatDimensions" style="display:none">
+
+						<div class="white-section" style="margin:10px 0px" id="slatWallHeight">
+							<label>Wall Height (inches)</label>
+							<input class="slatWallHeightSlider" id="slatWallHeightSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:20px 0px" id="slatWallWidth">
+							<label>Wall Width (inches)</label>
+							<input class="slatWallWidthSlider"  id="slatWallWidthSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:20px 0px" id="slatWallDepth">
+							<label>Wall Depth (inches)</label>
+							<input class="slatWallDepthSlider"  id="slatWallDepthSlider"/>
+						</div>
+
 					</div>
 
 				</div>
+
+
+
+
+
+
+				<!-- All options for the backlit walls -->
+				<div id="backlitSection">
+
+
+					<!-- Options for a backlit wall -->
+					<select id="backlitOptions"
+							class="selectpicker btn-info" 
+							style="width:100%; height:35px; margin:10px 0px; display:none">
+						<option>Wall Dimensions</option>
+						<option>Logo</option>
+						<option>Headers</option>
+					</select>
+
+
+				</div>
+
 
 			</div>
 

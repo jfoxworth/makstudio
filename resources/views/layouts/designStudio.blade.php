@@ -44,35 +44,6 @@
 
 	@include('sections.javasfiles')
 
-	<script>
-
-		$(document).ready(function () {
-
-			$(".slatWallHeightSlider").ionRangeSlider({
-				grid: false,
-				min: 48,
-				max: 320,
-				step: 1
-			});
-
-			$(".slatWallWidthSlider").ionRangeSlider({
-				grid: false,
-				min: 30,
-				max: 540,
-				step: 1
-			});
-
-			$(".slatWallDepthSlider").ionRangeSlider({
-				grid: false,
-				min: 3,
-				max: 8,
-				step: 1
-			});
-
-		});
-
-	</script>
-
     <script type="text/javascript" src="/js/designStudio.js"></script>
 
 
