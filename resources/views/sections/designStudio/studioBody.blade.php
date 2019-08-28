@@ -11,15 +11,23 @@
 
 
 				<!-- Select the type of wall to be built -->
-				<select class="selectpicker" data-style="btn-primary" style="width:100%; height:35px">
+				<select class="selectpicker" data-style="btn-primary" data-width="19%" style="width:100%; height:35px">
 					<option>Architectural Slat Wall</option>
 					<option>Planter Wall</option>
 					<option>Back-lit Branding Wall</option>
 					<option>Reception Desk</option>
 					<option>Faceted Wall</option>
 					<option>Gensler Custom Wall</option>
+					</select>
 				</select>
 
+										<select class="selectpicker" data-style="btn-primary" data-width="19%">
+											<option>Mustard</option>
+											<option>Ketchup</option>
+											<option>Relish</option>
+											<option>Onions</option>
+											</select>
+										</select>
 
 
 				<!-- Options for a slat wall -->
