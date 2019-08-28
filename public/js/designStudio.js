@@ -46,8 +46,8 @@ $(document).ready(function()	{
 	
 
 		// Hide all of the options
-		$("#slatOptions").hide();
-		$("#backlitOptions").hide();
+		$("#slatSection").hide();
+		$("#backlitSection").hide();
 
 
 

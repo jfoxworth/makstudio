@@ -45,7 +45,7 @@
 
 
 					<!-- Specifics for slat wall dimensions -->
-					<div id="slatDimensions" style="display:none">
+					<div id="slatDimensions">
 
 						<div class="white-section" style="margin:10px 0px" id="slatWallHeight">
 							<label>Wall Height (inches)</label>
@@ -72,7 +72,7 @@
 
 
 				<!-- All options for the backlit walls -->
-				<div id="backlitSection">
+				<div id="backlitSection" style="display:none">
 
 
 					<!-- Options for a backlit wall -->
