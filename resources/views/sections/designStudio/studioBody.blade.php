@@ -18,16 +18,21 @@
 					<option>Reception Desk</option>
 					<option>Faceted Wall</option>
 					<option>Gensler Custom Wall</option>
-					</select>
 				</select>
 
-										<select class="selectpicker" data-style="btn-primary" data-width="19%">
+										<select class="selectpicker" data-style="btn-primary">
 											<option>Mustard</option>
 											<option>Ketchup</option>
 											<option>Relish</option>
 											<option>Onions</option>
-											</select>
 										</select>
+
+
+				<select class="selectpicker">
+  <option>Mustard</option>
+  <option>Ketchup</option>
+  <option>Relish</option>
+</select>
 
 
 				<!-- Options for a slat wall -->
@@ -41,6 +46,8 @@
 					<option>Materials & Color</option>
 					<option>Logo Options</option>
 				</select>
+
+
 
 
 				<!-- Options for a backlit wall -->
