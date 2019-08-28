@@ -53,17 +53,17 @@
 
 					<div class="white-section">
 						<label>Wall Height (inches)</label>
-						<input class="statWallHeightSlider" />
+						<input class="slatWallHeightSlider" />
 					</div>
 
 					<div class="white-section">
 						<label>Wall Width (inches)</label>
-						<input class="statWallWidthSlider" />
+						<input class="slatWallWidthSlider" />
 					</div>
 
 					<div class="white-section">
 						<label>Wall Depth (inches)</label>
-						<input class="statWallDepthSlider" />
+						<input class="slatWallDepthSlider" />
 					</div>
 
 				</div>
