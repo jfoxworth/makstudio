@@ -1633,7 +1633,7 @@
 
 
 
-+function(e) {
+!function(e) {
     "use strict";
     function t(t) {
         return this.each(function() {
