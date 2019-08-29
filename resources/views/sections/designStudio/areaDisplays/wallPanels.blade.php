@@ -1,58 +1,58 @@
 <div class="row">
 
-	<div class="col_one_third">
-		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelAxis.png" width="150px">
-		<h4>Axis</h4>
+	<div class="col_one_third bottommargin-sm divcenter">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelAxis.png" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Axis</h4>
 	</div>
 
 
-	<div class="col_one_third">
-		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelJaramillo.png" width="150px">
-		<h4>Jaramillo</h4>
+	<div class="col_one_third bottommargin-sm divcenter">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelJaramillo.png" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Jaramillo</h4>
 	</div>
 
 
-	<div class="col_one_third col_last">
-		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelLily.png" width="150px">
-		<h4>Lily</h4>
-	</div>
-
-
-
-	<div class="col_one_third">
-		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelPenrose.png" width="150px">
-		<h4>Penrose</h4>
-	</div>
-
-
-	<div class="col_one_third">
-		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelPointCloud.png" width="150px">
-		<h4>Point Cloud</h4>
-	</div>
-
-
-	<div class="col_one_third col_last">
-		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelQuilt.png" width="150px">
-		<h4>Quilt</h4>
+	<div class="col_one_third bottommargin-sm divcenter col_last">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelLily.png" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Lily</h4>
 	</div>
 
 
 
-	<div class="col_one_third">
-		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelSwirl.png" width="150px">
-		<h4>Swirl</h4>
+	<div class="col_one_third bottommargin-sm divcenter">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelPenrose.png" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Penrose</h4>
 	</div>
 
 
-	<div class="col_one_third">
-		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelTapiz.png" width="150px">
-		<h4>Tapiz</h4>
+	<div class="col_one_third bottommargin-sm divcenter">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelPointCloud.png" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Point Cloud</h4>
 	</div>
 
 
-	<div class="col_one_third col_last">
-		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelUndulado.png" width="150px">
-		<h4>Undulado</h4>
+	<div class="col_one_third bottommargin-sm divcenter col_last">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelQuilt.png" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Quilt</h4>
+	</div>
+
+
+
+	<div class="col_one_third bottommargin-sm divcenter">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelSwirl.png" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Swirl</h4>
+	</div>
+
+
+	<div class="col_one_third bottommargin-sm divcenter">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelTapiz.png" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Tapiz</h4>
+	</div>
+
+
+	<div class="col_one_third bottommargin-sm divcenter col_last">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelUndulado.png" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Undulado</h4>
 	</div>
 
 </div>
