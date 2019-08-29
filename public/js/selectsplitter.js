@@ -1,3 +1,7 @@
+/* -----------------------------------------------------------
+   Select Splitter
+   + https://github.com/xavierfaucon/bootstrap-selectsplitter
+----------------------------------------------------------- */
 +function(e) {
     "use strict";
     function t(t) {
