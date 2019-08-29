@@ -13,6 +13,7 @@ $(document).ready(function()	{
 	$("#deskSection").hide(); 
 	$("#facetedSection").hide();
 	$("#genslerSection").hide();
+	$("#panelSection").hide();
 
 
 	$("#slatDimensions").show();

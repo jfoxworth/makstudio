@@ -71,7 +71,7 @@
 
 					<!-- Options for a slat wall -->
 					<select id="slatOptions"
-							class="selectpicker btn-info" 
+							class="selectpicker btn-primary" 
 							style="width:100%; height:35px; margin:20px 0px">
 						<option value="slatDimensions">Wall Dimensions</option>
 						<option value="slatFin">Fin Options</option>
@@ -233,7 +233,7 @@
 
 					<!-- Options for a backlit wall -->
 					<select id="backlitOptions"
-							class="selectpicker btn-info" 
+							class="selectpicker btn-primary" 
 							style="width:100%; height:35px; margin:10px 0px;">
 						<option value="backlitDimensions">Wall Dimensions</option>
 						<option value="backlitLogo">Logo</option>
