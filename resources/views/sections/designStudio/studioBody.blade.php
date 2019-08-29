@@ -41,8 +41,8 @@
 						<i id="facetedWall" class="icon-realestate-fence h3" style="margin-top:5px;"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin col_last" id="desk">
-						<i class="icon-study h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last">
+						<i id="desk" class="icon-study h3"></i>
 					</div>
 
 				</div>
@@ -244,9 +244,49 @@
 
 
 	<div class="col_last col_three_fourth"
-		 id="slatWallArea">
+		 id="slatWallDisplay">
 		<p>Slat Wall Area</p>
 	</div>
+
+
+	<div class="col_last col_three_fourth"
+		 id="backlitWallDisplay">
+		<p>Backlit Wall Area</p>
+	</div>
+
+
+	<div class="col_last col_three_fourth"
+		 id="planterWallDisplay">
+		<p>Planter Wall Area</p>
+	</div>
+
+
+
+	<div class="col_last col_three_fourth"
+		 id="deskDisplay">
+		<p>Desk Area</p>
+	</div>
+
+
+
+	<div class="col_last col_three_fourth"
+		 id="facetedWallDisplay">
+		<p>Faceted Wall Area</p>
+	</div>
+
+
+	<div class="col_last col_three_fourth"
+		 id="panelWallDisplay">
+		<p>Panel Wall Area</p>
+	</div>
+
+
+
+	<div class="col_last col_three_fourth"
+		 id="genslerWallDisplay">
+		<p>Gensler Wall Area</p>
+	</div>
+
 
 
 

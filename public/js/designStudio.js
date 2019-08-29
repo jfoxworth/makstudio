@@ -22,6 +22,16 @@ $(document).ready(function()	{
 	$("#slatLogo").hide();
 
 
+	// Hide all of the display areas
+	$("#slatWallDisplay").show();
+	$("#backlitWallDisplay").hide();
+	$("#planterWallDisplay").hide();
+	$("#deskDisplay").hide();
+	$("#facetedWallDisplay").hide();
+	$("#panelWallDisplay").hide();
+	$("#genslerWallDisplay").hide();
+
+
 
 	// Initial variables for selections
 	var designType = "slatWall";					// The item currently being designed in the studio window
@@ -101,8 +111,6 @@ $(document).ready(function()	{
 	$('.designType').click(function(event)	
 	{	
 
-		console.log(event); 
-
 		// Set the value
 		var designType = event.target.id;
 		console.log('The value is '+designType);
@@ -111,16 +119,31 @@ $(document).ready(function()	{
 		// Hide all of the options
 		$("#slatSection").hide();
 		$("#backlitSection").hide();
+		$("#planterSection").hide();
+		$("#deskSection").hide();
+		$("#facetedSection").hide();
+		$("#panelSection").hide();
+		$("#genslerSection").hide();
 
+
+		// Hide all of the display areas
+		$("#slatWallDisplay").hide();
+		$("#backlitWallDisplay").hide();
+		$("#planterWallDisplay").hide();
+		$("#deskDisplay").hide();
+		$("#facetedWallDisplay").hide();
+		$("#panelWallDisplay").hide();
+		$("#genslerWallDisplay").hide();
 
 
 		// Display the appropriate options
-		if ( designType == "slatWall" ){ $("#slatSection").show(); }
+		if ( designType == "slatWall" ){ 	$("#slatSection").show(); }
 		if ( designType == "backlitWall" ){ $("#backlitSection").show(); }
 		if ( designType == "planterWall" ){ $("#planterSection").show(); }
-		if ( designType == "desk" ){ $("#deskSection").show(); }
+		if ( designType == "desk" ){ 		$("#deskSection").show(); }
 		if ( designType == "facetedWall" ){ $("#facetedSection").show(); }
-		if ( designType == "gensler" ){ $("#genslerSection").show(); }
+		if ( designType == "wallPanel" ){ 	$("#panelSection").show(); }
+		if ( designType == "genslerWall" ){ $("#genslerSection").show(); }
 
 
 		// Display the appropriate title in the design show section
@@ -129,7 +152,20 @@ $(document).ready(function()	{
 		if ( designType == "planterWall" ){ $("#designShow").text('Planter Wall'); }
 		if ( designType == "desk" ){ 		$("#designShow").text('Custom Desk'); }
 		if ( designType == "facetedWall" ){ $("#designShow").text('Faceted Wall'); }
-		if ( designType == "gensler" ){ 	$("#designShow").text('Gensler Wall'); }
+		if ( designType == "wallPanel" ){ 	$("#designShow").text('Wall Panel'); }
+		if ( designType == "genslerWall" ){ $("#designShow").text('Gensler Wall'); }
+
+
+
+		// Display the appropriate editing section
+		if ( designType == "slatWall" ){ 	$("#slatWallDisplay").show(); }
+		if ( designType == "backlitWall" ){ $("#backlitWallDisplay").show(); }
+		if ( designType == "planterWall" ){ $("#planterWallDisplay").show(); }
+		if ( designType == "desk" ){ 		$("#deskDisplay").show(); }
+		if ( designType == "facetedWall" ){ $("#facetedWallDisplay").show(); }
+		if ( designType == "wallPanel" ){ 	$("#panelWallDisplay").show(); }
+		if ( designType == "genslerWall" ){ $("#genslerWallDisplay").show(); }
+
 	});
 
 
