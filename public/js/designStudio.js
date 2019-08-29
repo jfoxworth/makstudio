@@ -104,6 +104,29 @@ $(document).ready(function()	{
 		step: 5
 	});
 
+	$(".backlitLengthSlider").ionRangeSlider({
+		grid: false,
+		min: 72,
+		max: 144,
+		step: 1
+	});
+
+	$(".backlitHeightSlider").ionRangeSlider({
+		grid: false,
+		min: 72,
+		max: 144,
+		step: 1
+	});
+
+	$(".backlitLogoSlider").ionRangeSlider({
+		grid: false,
+		min: 7,
+		max: 20,
+		step: 1
+	});
+
+
+
 
 
 
