@@ -32,6 +32,12 @@ $(document).ready(function()	{
 	$("#genslerWallDisplay").hide();
 
 
+	// Hide all of the display areas
+	$("#backlitDimensions").show();
+	$("#backlitLogo").hide();
+	$("#backlitHeaders").hide();
+
+
 
 	// Initial variables for selections
 	var designType = "slatWall";					// The item currently being designed in the studio window
