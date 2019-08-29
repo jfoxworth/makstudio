@@ -171,12 +171,14 @@
 
 						<div class="row">
 
-							<div class="col_half divcenter">
-								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleCurved.jpg" width="50px">
+							<div class="col_half divcenter hoverMe">
+								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleCurved.jpg" width="100px">
+								<div class="center">Curved</div>
 							</div>
 
-							<div class="col_half divcenter col_last">
-								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleAngled.jpg" width="50px">
+							<div class="col_half divcenter col_last hoverMe">
+								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleAngled.jpg" width="100px">
+								<div class="center">Angled</div>
 							</div>
 
 						</div>
@@ -233,10 +235,76 @@
 					<select id="backlitOptions"
 							class="selectpicker btn-info" 
 							style="width:100%; height:35px; margin:10px 0px;">
-						<option>Wall Dimensions</option>
-						<option>Logo</option>
-						<option>Headers</option>
+						<option value="backlitDimensions">Wall Dimensions</option>
+						<option value="backlitLogo">Logo</option>
+						<option value="backlitHeaders">Headers</option>
 					</select>
+
+
+
+					<!-- Specifics for backlit walls dimensions -->
+					<div id="backlitDimensions">
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Wall Length (inches)</label>
+							<input class="backlitLengthSlider" id="backlitLength"/>
+						</div>
+
+
+						<div class="white-section" style="margin:20px 0px" >
+							<label>Wall Height (inches)</label>
+							<input class="backlitHeightSlider" id="backlitHeight"/>
+						</div>
+
+
+					</div>
+
+
+
+					<!-- Specifics for backlit walls dimensions -->
+					<div id="backlitLogo">
+
+						<div class="col-lg-6 bottommargin">
+							<label>Upload Logo:</label><br>
+							<input id="logoUpload" name="logoUpload" type="file" multiple class="file-loading" data-show-preview="false">
+						</div>
+
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Logo Height (inches)</label>
+							<input class="backlitLogoSlider" id="backlitLogoHeight"/>
+						</div>
+
+						<div class="white-section">
+							<label>Create Flat Area</label>
+							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No">
+						</div>
+
+						<div class="white-section">
+							<label>Pattern After Logo</label>
+							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No">
+						</div>
+
+
+					</div>
+
+
+
+					<!-- Specifics for backlit walls headers -->
+					<div id="backlitHeaders">
+
+						<div class="row divcenter">
+							<label for="backlitHeader">Header</label>
+    						<input type="text" class="form-control" id="backlitHeader" placeholder="Header (15 char)">
+    					</div>
+
+						<div class="row divcenter">
+							<label for="backlitSubheader">Subheader</label>
+    						<input type="text" class="form-control" id="backlitsubHeader" placeholder="Sub Header (30 char)">
+    					</div>
+
+					</div>
+
 
 
 				</div>

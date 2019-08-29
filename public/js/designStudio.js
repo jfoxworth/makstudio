@@ -172,7 +172,7 @@ $(document).ready(function()	{
 
 
 
-	// When the user changes the type of design they are working on
+	// Slat Wall - When the user changes the type of design they are working on
 	$('#slatOptions').change(function()	
 	{	
 
@@ -194,6 +194,34 @@ $(document).ready(function()	{
 
 
 	});
+
+
+
+
+
+
+
+	// Backlit Wall - When the user changes the type of design they are working on
+	$('#backlitOptions').change(function()	
+	{	
+
+		// Set the value
+		var backlitOption = $( "#backlitOptions" ).val();
+		console.log('The backlit option is '+backlitOption);
+	
+
+		// Hide all of the options
+		$("#backlitDimensions").hide();
+		$("#backlitLogo").hide();
+		$("#backlitHeaders").hide();
+
+		// Display the appropriate options
+		$("#"+backlitOption).show(); 
+
+
+	});
+
+
 
 
 
