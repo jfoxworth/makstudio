@@ -31,7 +31,6 @@
     <link rel="stylesheet" href="/css/bs-switches.css" type="text/css" />
     <link rel="stylesheet" href="/css/radio-checkbox.css" type="text/css" />
 
-    <link rel="stylesheet" href="/css/travel.css" type="text/css" />
 
     <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

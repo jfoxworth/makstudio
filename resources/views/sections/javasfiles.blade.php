@@ -7,6 +7,7 @@
     <script type="text/javascript" src="/js/bs-switches.js"></script>
     <script type="text/javascript" src="/js/bs-select.js"></script>
     <script type="text/javascript" src="/js/selectsplitter.js"></script>
+    <script type="text/javascript" src="/js/function.js"></script>
 
     <!-- Google Map JavaScripts
     ============================================= --
