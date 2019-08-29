@@ -264,7 +264,7 @@
 					<!-- Specifics for backlit walls dimensions -->
 					<div id="backlitLogo">
 
-						<div class="bottommargin">
+						<div class="bottommargin" style="margin:20px 0px;">
 							<label>Upload Logo:</label><br>
 							<input id="logoUpload" name="logoUpload" type="file" multiple class="file-loading" data-show-preview="false">
 						</div>
@@ -293,12 +293,12 @@
 					<!-- Specifics for backlit walls headers -->
 					<div id="backlitHeaders">
 
-						<div class="row divcenter" style="margin:20px 0ox">
+						<div class="row divcenter" style="margin:20px 0px;">
 							<label for="backlitHeader">Header</label>
     						<input type="text" class="form-control" id="backlitHeader" placeholder="Header (15 char)">
     					</div>
 
-						<div class="row divcenter" style="margin:20px 0ox">
+						<div class="row divcenter" style="margin:20px 0px">
 							<label for="backlitSubheader">Subheader</label>
     						<input type="text" class="form-control" id="backlitsubHeader" placeholder="Sub Header (30 char)">
     					</div>
