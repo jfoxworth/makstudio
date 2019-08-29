@@ -29,19 +29,19 @@
 
 				<div class="row divcenter">
 
-					<div class="col_one_fourth center designType nobottommargin" id="slatWall">
+					<div class="hoverMe col_one_fourth center designType nobottommargin" id="slatWall">
 						<i class="icon-settings2 h3"></i>
 					</div>
 
-					<div class="col_one_fourth center designType nobottommargin" id="backlitWall">
+					<div class="hoverMe col_one_fourth center designType nobottommargin" id="backlitWall">
 						<i class="icon-bulb h3"></i>
 					</div>
 
-					<div class="col_one_fourth center designType nobottommargin" id="facetedWall">
-						<i class="icon-realestate-fence h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin" id="facetedWall">
+						<i class="icon-realestate-fence h3" style="margin-top:5px;"></i>
 					</div>
 
-					<div class="col_one_fourth center designType nobottommargin col_last" id="desk">
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last" id="desk">
 						<i class="icon-study h3"></i>
 					</div>
 
@@ -49,21 +49,21 @@
 
 				<div class="row divcenter">
 
-					<div class="col_one_fourth center designType nobottommargin" id="planterWall">
+					<div class="hoverMe col_one_fourth center designType nobottommargin" id="planterWall">
 						<i class="icon-line-sun h3"></i>
 					</div>
 
-					<div class="col_one_fourth center designType nobottommargin" id="wallPanel">
-						<i class="icon-realestate-bricks h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin" id="wallPanel">
+						<i class="icon-realestate-bricks h3" style="margin-top:6px"></i>
 					</div>
 
-					<div class="col_one_fourth center designType nobottommargin col_last" id="genslerWall">
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last" id="genslerWall">
 						<i class="icon-study h3"></i>
 					</div>
 
 				</div>
 
-				<h5 class="center" id="designShow"></h4>
+				<h5 class="center" id="designShow">Slat Wall</h5>
 
 
 				<!-- All options for the slat walls -->

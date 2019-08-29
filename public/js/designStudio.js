@@ -97,12 +97,12 @@ $(document).ready(function()	{
 
 
 
-	// When the user changes the type of design they are working on
-	$('#designType').change(function()	
+	// When the user clicks on one of the design type boxes
+	$('.designType').change(function()	
 	{	
 
 		// Set the value
-		var designType = $( "#designType" ).val();
+		var designType = event.target.id;
 		console.log('The value is '+designType);
 	
 
