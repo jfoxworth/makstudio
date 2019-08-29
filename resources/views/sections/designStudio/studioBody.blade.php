@@ -30,22 +30,22 @@
 				<div class="row divcenter">
 
 					<div class="col_one_fourth center designType nomarginbottom" id="slatWall">
-						<div><i class="icon-settings2 h1"></i></div>
+						<div><i class="icon-settings2 h3"></i></div>
 						<div>Slat</div>
 					</div>
 
 					<div class="col_one_fourth center designType nomarginbottom" id="backlitWall">
-						<div><i class="icon-bulb h1"></i></div>
+						<div><i class="icon-bulb h3"></i></div>
 						<div>Backlit</div>
 					</div>
 
 					<div class="col_one_fourth center designType nomarginbottom" id="facetedWall">
-						<div><i class="icon-realestate-fence h1"></i></div>
+						<div><i class="icon-realestate-fence h3"></i></div>
 						<div>Faceted</div>
 					</div>
 
 					<div class="col_one_fourth center designType nomarginbottom col_last" id="desk">
-						<div><i class="icon-study h1"></i></div>
+						<div><i class="icon-study h3"></i></div>
 						<div>Desk</div>
 					</div>
 
@@ -54,17 +54,17 @@
 				<div class="row divcenter">
 
 					<div class="col_one_fourth center designType nomarginbottom" id="planterWall">
-						<div><i class="icon-line-sun h1"></i></div>
+						<div><i class="icon-line-sun h3"></i></div>
 						<div>Planter</div>
 					</div>
 
 					<div class="col_one_fourth center designType nomarginbottom" id="wallPanel">
-						<div><i class="icon-realestate-bricks h1"></i></div>
+						<div><i class="icon-realestate-bricks h3"></i></div>
 						<div>Wall Panels</div>
 					</div>
 
 					<div class="col_one_fourth center designType nomarginbottom col_last" id="genslerWall">
-						<div><i class="icon-study h1"></i></div>
+						<div><i class="icon-study h3"></i></div>
 						<div>Gensler</div>
 					</div>
 
