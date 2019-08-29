@@ -29,6 +29,18 @@
 						 data-toggle="tooltip" data-placement="top" title="Architectural Slat Wall">
 						<i class="icon-settings2 h1"></i>
 					</div>
+
+					<div class="col_third"
+						 data-toggle="tooltip" data-placement="top" title="Back Lit Wall">
+						<i class="icon-bulb h1"></i>
+					</div>
+
+					<div class="col_third col_last"
+						 data-toggle="tooltip" data-placement="top" title="Custom Desk">
+						<i class="icon-study h1"></i>
+					</div>
+
+
 				</div>
 
 
