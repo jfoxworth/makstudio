@@ -29,43 +29,43 @@
 
 				<div class="row divcenter">
 
-					<div class="col_one_fourth center designType nomarginbottom" id="slatWall">
+					<div class="col_one_fourth center designType nobottommargin" id="slatWall">
 						<div><i class="icon-settings2 h3"></i></div>
-						<div>Slat</div>
+						<div style="font-size:0.8em">Slat</div>
 					</div>
 
-					<div class="col_one_fourth center designType nomarginbottom" id="backlitWall">
+					<div class="col_one_fourth center designType nobottommargin" id="backlitWall">
 						<div><i class="icon-bulb h3"></i></div>
-						<div>Backlit</div>
+						<div style="font-size:0.8em">Backlit</div>
 					</div>
 
-					<div class="col_one_fourth center designType nomarginbottom" id="facetedWall">
+					<div class="col_one_fourth center designType nobottommargin" id="facetedWall">
 						<div><i class="icon-realestate-fence h3"></i></div>
-						<div>Faceted</div>
+						<div style="font-size:0.8em">Faceted</div>
 					</div>
 
-					<div class="col_one_fourth center designType nomarginbottom col_last" id="desk">
+					<div class="col_one_fourth center designType nobottommargin col_last" id="desk">
 						<div><i class="icon-study h3"></i></div>
-						<div>Desk</div>
+						<div style="font-size:0.8em">Desk</div>
 					</div>
 
 				</div>
 
 				<div class="row divcenter">
 
-					<div class="col_one_fourth center designType nomarginbottom" id="planterWall">
+					<div class="col_one_fourth center designType nobottommargin" id="planterWall">
 						<div><i class="icon-line-sun h3"></i></div>
-						<div>Planter</div>
+						<div style="font-size:0.8em">Planter</div>
 					</div>
 
-					<div class="col_one_fourth center designType nomarginbottom" id="wallPanel">
+					<div class="col_one_fourth center designType nobottommargin" id="wallPanel">
 						<div><i class="icon-realestate-bricks h3"></i></div>
-						<div>Wall Panels</div>
+						<div style="font-size:0.8em">Wall Panels</div>
 					</div>
 
-					<div class="col_one_fourth center designType nomarginbottom col_last" id="genslerWall">
+					<div class="col_one_fourth center designType nobottommargin col_last" id="genslerWall">
 						<div><i class="icon-study h3"></i></div>
-						<div>Gensler</div>
+						<div style="font-size:0.8em">Gensler</div>
 					</div>
 
 				</div>
