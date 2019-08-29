@@ -3,6 +3,10 @@
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/plugins.js"></script>
     <script type="text/javascript" src="/js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/bs-switches.js"></script>
+    <script type="text/javascript" src="/js/bt-select.js"></script>
+    <script type="text/javascript" src="/js/selectsplitter.js"></script>
 
     <!-- Google Map JavaScripts
     ============================================= --
