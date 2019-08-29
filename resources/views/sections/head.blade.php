@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="/css/font-icons/et/et-line.css" type="text/css" />
     <link rel="stylesheet" href="/css/animate.css" type="text/css" />
     <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
-    <link rel="stylesheet" href="/css/bt-select.css" type="text/css" />
+    <link rel="stylesheet" href="/css/bs-select.css" type="text/css" />
     <link rel="stylesheet" href="/css/bs-switches.css" type="text/css" />
     <link rel="stylesheet" href="/css/radio-checkbox.css" type="text/css" />
 
