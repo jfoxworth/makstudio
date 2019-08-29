@@ -97,7 +97,7 @@ $(document).ready(function()	{
 		step: 1
 	});
 
-	$(".rippleRotationSlider").ionRangeSlider({
+	$(".finRotationSlider").ionRangeSlider({
 		grid: false,
 		min: 0,
 		max: 180,

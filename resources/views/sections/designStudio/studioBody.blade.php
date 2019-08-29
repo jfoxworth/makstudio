@@ -3,7 +3,7 @@
 
 	<!-- Sidebar
 	============================================= -->
-	<div class="col_one_fourth clearfix" style="height:600px; border-right: 1px solid #ccc;">
+	<div class="col_one_fourth clearfix" style="height:800px; border-right: 1px solid #ccc;">
 		
 		<div class="sidebar-widgets-wrap" >
 
@@ -58,7 +58,7 @@
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin col_last">
-						<i id="genslerWall" class="icon-study h3"></i>
+						<i id="genslerWall" class="icon-line-share h3"></i>
 					</div>
 
 				</div>
@@ -74,7 +74,6 @@
 							class="selectpicker btn-info" 
 							style="width:100%; height:35px; margin:20px 0px">
 						<option value="slatDimensions">Wall Dimensions</option>
-						<option value="slatStyle">Wall Style</option>
 						<option value="slatFin">Fin Options</option>
 						<option value="slatRipple">Ripple Style</option>
 						<option value="slatMaterial">Materials & Color</option>
@@ -106,7 +105,7 @@
 
 
 
-					<!-- Options for a slat Style -->
+					<!-- Options for a slat Style 
 					<select id="slatStyle"
 							class="selectpicker btn-success" 
 							style="width:100%; height:35px; margin:20px 0px">
@@ -114,6 +113,7 @@
 						<option value="angled">Angled</option>
 						<option value="artistic">Artistic</option>
 					</select>
+				-->
 
 
 
@@ -168,12 +168,18 @@
 							<input class="finRotationSlider" id="finRotation"/>
 						</div>
 
-						<select id="finProfile"
-								class="selectpicker btn-success" 
-								style="width:100%; height:35px; margin:20px 0px">
-							<option value="curved">Curved</option>
-							<option value="angled">Angled</option>
-						</select>
+
+						<div class="row">
+
+							<div class="col_half divcenter">
+								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleCurved.jpg" width="50px">
+							</div>
+
+							<div class="col_half divcenter col_last">
+								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleAngled.jpg" width="50px">
+							</div>
+
+						</div>
 
 					</div>
 
@@ -185,7 +191,7 @@
 						<div class="row hoverMe hoverMeGrey divcenter">
 							<img id="slatMaterialBirch" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirch.jpg" 
-								 width="150px"
+								 width="100px"
 								 class="divcenter">
 
 							<div class="divcenter" style="margin-top:10px"><h4>Baltic Birch</h4></div>
@@ -194,7 +200,7 @@
 						<div class="row hoverMe hoverMeGrey divcenter">
 							<img id="slatMaterialBirchLaminate" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirchLaminate.jpg" 
-								 width="150px"
+								 width="100px"
 								 class="divcenter">	
 
 							<div class="divcenter" style="margin-top:10px"><h4>Baltic Birch Laminate</h4></div>
@@ -203,7 +209,7 @@
 						<div class="row hoverMe hoverMeGrey divcenter">
 							<img id="slatMaterialMDF" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/coloredMDF.jpg" 
-								 width="150px"
+								 width="100px"
 								 class="divcenter">
 
 							<div class="divcenter" style="margin-top:10px"><h4>Colored MDF</h4></div>
