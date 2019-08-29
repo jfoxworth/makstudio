@@ -372,7 +372,7 @@
 
 					<div class="white-section" style="margin:20px 0px" >
 
-						<h4 class="center">Select Desk Shape</h4>
+						<h4 class="center nobottommargin">Select Desk Shape</h4>
 
 						<div>
 							<input id="radio-deskLShape" class="radio-style" name="radio-deskShape" type="radio" checked>
@@ -392,18 +392,18 @@
 
 					<div class="white-section" style="margin:20px 0px" >
 
-						<h4 class="center">Select Desk Color</h4>
+						<h4 class="center nobottommargin">Select Desk Color</h4>
 
 						<div>
-							<input id="radio-deskWhite" class="radio-style" name="radio-deskShape" type="radio" checked>
+							<input id="radio-deskWhite" class="radio-style" name="radio-deskColor" type="radio" checked>
 							<label for="radio-deskWhite" class="radio-style-3-label">White</label>
 						</div>
 						<div>
-							<input id="radio-deskBlack" class="radio-style" name="radio-deskShape" type="radio">
+							<input id="radio-deskBlack" class="radio-style" name="radio-deskColor" type="radio">
 							<label for="radio-deskBlack" class="radio-style-3-label">Black</label>
 						</div>
 						<div>
-							<input id="radio-deskWood" class="radio-style" name="radio-deskShape" type="radio">
+							<input id="radio-deskWood" class="radio-style" name="radio-deskColor" type="radio">
 							<label for="radio-deskWood" class="radio-style-3-label">Wood Tone</label>
 						</div>
 
@@ -413,18 +413,18 @@
 
 					<div class="white-section" style="margin:20px 0px" >
 
-						<h4 class="center">Desk Size (People)</h4>
+						<h4 class="center nobottommargin">Desk Size (People)</h4>
 
 						<div>
-							<input id="radio-deskPeople1" class="radio-style" name="radio-deskShape" type="radio" checked>
+							<input id="radio-deskPeople1" class="radio-style" name="radio-deskSize" type="radio" checked>
 							<label for="radio-deskPeople1" class="radio-style-3-label">1</label>
 						</div>
 						<div>
-							<input id="radio-deskPeople2" class="radio-style" name="radio-deskShape" type="radio">
+							<input id="radio-deskPeople2" class="radio-style" name="radio-deskSize" type="radio">
 							<label for="radio-deskPeople2" class="radio-style-3-label">2</label>
 						</div>
 						<div>
-							<input id="radio-deskPeople3" class="radio-style" name="radio-deskShape" type="radio">
+							<input id="radio-deskPeople3" class="radio-style" name="radio-deskSize" type="radio">
 							<label for="radio-deskPeople3" class="radio-style-3-label">3</label>
 						</div>
 
