@@ -3,6 +3,7 @@ $(document).ready(function()	{
 
 	// Initialize all of the tool tips
 	$('[data-toggle="tooltip"]').tooltip();
+	$(".bt-switch").bootstrapSwitch();
 
 
 
