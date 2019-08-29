@@ -447,7 +447,7 @@
 
 
 				<!-- All options for the Planter Walls -->
-				<div id="deskSection">
+				<div id="planterSection">
 
 					<div class="white-section" style="margin:20px 0px" >
 

@@ -11,7 +11,7 @@
 		</div>
 
 		<a href="/products" class="button button-border button-rounded button-light button-large">Product List</a>
-		<a href="/products" class="button button-rounded button-white button-light button-large">Design Studio</a>
+		<a href="/designStudio" class="button button-rounded button-white button-light button-large">Design Studio</a>
 
 	</div>
 </div>
