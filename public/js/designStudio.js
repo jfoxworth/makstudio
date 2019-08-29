@@ -4,7 +4,7 @@ $(document).ready(function()	{
 	// Initialize all of the tool tips
 	$('[data-toggle="tooltip"]').tooltip();
 	$(".bt-switch").bootstrapSwitch();
-
+	$('.selectsplitter').selectsplitter();
 
 
 	// Hide the initial items that need to be hidden
