@@ -98,7 +98,7 @@ $(document).ready(function()	{
 
 
 	// When the user clicks on one of the design type boxes
-	$('.designType').change(function()	
+	$('.designType').click(function()	
 	{	
 
 		// Set the value
@@ -120,6 +120,14 @@ $(document).ready(function()	{
 		if ( designType == "facetedWall" ){ $("#facetedSection").show(); }
 		if ( designType == "gensler" ){ $("#genslerSection").show(); }
 
+
+		// Display the appropriate title in the design show section
+		if ( designType == "slatWall" ){ 	$("#designShow").text('Slat Wall'); }
+		if ( designType == "backlitWall" ){ $("#designShow").text('Backlit Wall'); }
+		if ( designType == "planterWall" ){ $("#designShow").text('Planter Wall'); }
+		if ( designType == "desk" ){ 		$("#designShow").text('Custom Desk'); }
+		if ( designType == "facetedWall" ){ $("#designShow").text('Faceted Wall'); }
+		if ( designType == "gensler" ){ 	$("#designShow").text('Gensler Wall'); }
 	});
 
 
