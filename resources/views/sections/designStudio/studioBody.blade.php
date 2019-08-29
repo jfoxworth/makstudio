@@ -275,12 +275,12 @@
 							<input class="backlitLogoSlider" id="backlitLogoHeight"/>
 						</div>
 
-						<div class="white-section">
+						<div class="white-section" style="margin:20px 0px;">
 							<label>Create Flat Area</label>
 							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No">
 						</div>
 
-						<div class="white-section">
+						<div class="white-section" style="margin:20px 0px;">
 							<label>Pattern After Logo</label>
 							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No">
 						</div>
@@ -304,6 +304,68 @@
     					</div>
 
 					</div>
+
+				</div>
+
+
+
+
+
+
+
+
+
+				<!-- All options for the backlit walls -->
+				<div id="facetedSection">
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Facet Spacing</label>
+						<input class="facetedSpacingSlider" id="facetedSpacing"/>
+					</div>
+
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel A Rotation</label>
+						<input class="facetedARotSlider" id="facetedARotSpacing"/>
+					</div>
+
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel B Rotation</label>
+						<input class="facetedBRotSlider" id="facetedBRotSpacing"/>
+					</div>
+
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel C Rotation</label>
+						<input class="facetedCRotSlider" id="facetedCRotSpacing"/>
+					</div>
+
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel D Rotation</label>
+						<input class="facetedDRotSlider" id="facetedDRotSpacing"/>
+					</div>
+
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel E Rotation</label>
+						<input class="facetedERotSlider" id="facetedERotSpacing"/>
+					</div>
+
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel F Rotation</label>
+						<input class="facetedFRotSlider" id="facetedFRotSpacing"/>
+					</div>
+
+
+				</div>
+
+
+
+
+
 
 
 

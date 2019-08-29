@@ -132,8 +132,54 @@ $(document).ready(function()	{
 		step: 1
 	});
 
+	$(".facetedSpacingSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 10,
+		step: 1
+	});
 
+	$(".facetedARotSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 360,
+		step: 1
+	});
 
+	$(".facetedBRotSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 360,
+		step: 1
+	});
+
+	$(".facetedCRotSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 360,
+		step: 1
+	});
+
+	$(".facetedDRotSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 360,
+		step: 1
+	});
+
+	$(".facetedERotSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 360,
+		step: 1
+	});
+
+	$(".facetedFRotSlider").ionRangeSlider({
+		grid: false,
+		min: 0,
+		max: 360,
+		step: 1
+	});
 
 
 
