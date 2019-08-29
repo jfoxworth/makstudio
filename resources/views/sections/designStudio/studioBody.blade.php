@@ -531,6 +531,72 @@
 
 
 
+
+
+
+
+
+
+				<!-- All options for the Wall Panles -->
+				<div id="panelSection">
+
+					<div class="white-section" style="margin:20px 0px" >
+
+						<label>Select Desired Panels</label>
+						<select class="selectpicker" multiple>
+							<option value="lily">Lily</option>
+							<option value="quilted">Quilted</option>
+							<option value="swirl">Swirl</option>
+							<option value="tapiz">Tapiz</option>
+							<option value="undulado">Undulado</option>
+							<option value="axis">Axis</option>
+							<option value="penrose">Penrose</option>
+							<option value="pointCloud">Point Cloud</option>
+							<option value="jaramillo">Jaramillo</option>
+						</select>
+
+					</div>
+
+
+
+					<div class="white-section" style="margin:20px 0px" >
+
+						<label>What are the application types?</label>
+						<select class="selectpicker" multiple>
+							<option value="1">Commercial & Dry</option>
+							<option value="2">Commercial & Damp</option>
+							<option value="3">Commercial & Outdoor</option>
+							<option value="4">Residential & Dry</option>
+							<option value="5">Residential & Damp</option>
+							<option value="6">Residential & Outdoor</option>
+						</select>
+
+					</div>
+
+
+					<div class="row divcenter" style="margin:20px 0px">
+						<label for="wallPanelSize">Panel Sizes</label>
+						<input type="text" class="form-control" id="wallPanelSize" placeholder="4ft x 4ft, 3ft x 3ft">
+					</div>
+
+
+					<div class="form-group">
+						<label for="moreInfoWallPanel">Any additional info</label>
+						<textarea class="form-control" id="moreInfoWallPanel" rows="3"></textarea>
+					</div>
+
+
+					<div class="divcenter">
+						<a href="#" class="button button-border button-rounded button-fill button-blue"><span>Submit</span></a>
+					</div>
+
+
+				</div>
+
+
+
+
+
 			</div>
 
 		</div>
