@@ -101,6 +101,8 @@ $(document).ready(function()	{
 	$('.designType').click(function(event)	
 	{	
 
+		console.log(event); 
+
 		// Set the value
 		var designType = event.target.id;
 		console.log('The value is '+designType);
