@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="/css/animate.css" type="text/css" />
     <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="/css/bt-select.css" type="text/css" />
+    <link rel="stylesheet" href="/css/bs-switches.css" type="text/css" />
 
     <link rel="stylesheet" href="/css/travel.css" type="text/css" />
 
