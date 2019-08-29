@@ -15,7 +15,7 @@
 
 // Landing page (eventually)
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.landing');
 });
 
 
