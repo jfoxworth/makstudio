@@ -572,7 +572,7 @@
 
 	<div class="col_last col_three_fourth"
 		 id="panelWallDisplay">
-		<p>Panel Wall Area</p>
+		 @include('designStudio.areaDisplays.wallPanels')
 	</div>
 
 
