@@ -29,16 +29,16 @@
 
 				<div class="row divcenter">
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin" id="slatWall">
-						<i class="icon-settings2 h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin">
+						<i id="slatWall" class="icon-settings2 h3"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin" id="backlitWall">
-						<i class="icon-bulb h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin">
+						<i id="backlitWall" class="icon-bulb h3"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin" id="facetedWall">
-						<i class="icon-realestate-fence h3" style="margin-top:5px;"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin">
+						<i id="facetedWall" class="icon-realestate-fence h3" style="margin-top:5px;"></i>
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin col_last" id="desk">
@@ -49,16 +49,16 @@
 
 				<div class="row divcenter">
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin" id="planterWall">
-						<i class="icon-line-sun h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin">
+						<i id="planterWall" class="icon-line-sun h3"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin" id="wallPanel">
-						<i class="icon-realestate-bricks h3" style="margin-top:6px"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin">
+						<i id="wallPanel" class="icon-realestate-bricks h3" style="margin-top:6px"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin col_last" id="genslerWall">
-						<i class="icon-study h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last">
+						<i id="genslerWall" class="icon-study h3"></i>
 					</div>
 
 				</div>
@@ -243,8 +243,12 @@
 	</div>
 
 
-	<div class="col_last col_three_fourth">
-		<p>Here</p>
+	<div class="col_last col_three_fourth"
+		 id="slatWallArea">
+		<p>Slat Wall Area</p>
 	</div>
+
+
+
 
 </div>
