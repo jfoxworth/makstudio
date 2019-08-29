@@ -10,7 +10,7 @@
 			<div class="widget clearfix" style="width:80%">
 
 
-				<!-- Select the type of wall to be built -->
+				<!-- Select the type of wall to be built 
 				<select class="selectpicker btn-primary" 
 						id="designType" 
 						style="width:100%; height:35px">
@@ -22,33 +22,30 @@
 					<option value="genslerWall">Gensler Custom Wall</option>
 				</select>
 
+			-->
+
 
 				<div class="row divcenter">
 
-					<div class="col_third"
-						 data-toggle="tooltip" data-placement="top" title="Architectural Slat Wall">
-						<i class="icon-settings2 h1"></i>
+					<div class="col_one_third center designType" id="slatWall">
+						<div><i class="icon-settings2 h1"></i></div>
+						<div>Slat Wall</div>
 					</div>
 
-					<div class="col_third"
-						 data-toggle="tooltip" data-placement="top" title="Back Lit Wall">
-						<i class="icon-bulb h1"></i>
+					<div class="col_one_third center designType" id="backlitWall">
+						<div><i class="icon-bulb h1"></i></div>
+						<div>Backlit Wall</div>
 					</div>
 
-					<div class="col_third col_last"
-						 data-toggle="tooltip" data-placement="top" title="Custom Desk">
-						<i class="icon-study h1"></i>
+					<div class="col_one_third center designType col_last" id="desk">
+						<div><i class="icon-study h1"></i></div>
+						<div>Custom Desk</div>
 					</div>
-
 
 				</div>
 
 
-<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-  Tooltip on top
-</button>
-
-				<div class="divider">
+				<div class="divider"></div>
 
 
 
