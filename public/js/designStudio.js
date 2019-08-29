@@ -98,7 +98,7 @@ $(document).ready(function()	{
 
 
 	// When the user clicks on one of the design type boxes
-	$('.designType').click(function()	
+	$('.designType').click(function(event)	
 	{	
 
 		// Set the value
