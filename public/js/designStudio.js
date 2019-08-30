@@ -1,6 +1,29 @@
 $(document).ready(function()	{
 
 
+
+	// container for the viewer, typically this is a div
+	var _container = document.getElementById('slatWallDisplay'); 
+	// viewer settings 
+	var  _viewerSettings = { 
+		// container to use 
+		container: _container, 
+		// when creating the viewer, we want to get back an API v2 object 
+		api: {version: 2}, 
+		// level of log messages which will be sent to the browser console
+		loggingLevel: SDVApp.constants.loggingLevels.NONE, 
+		// instantly show the 3D scene 
+		showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
+		// ticket for a ShapeDiver model 
+		ticket: 'shapediver-squid-demo-16' 
+	}; 
+
+	// create the viewer, get back an API v2 object 
+	var api = new SDVApp.ParametricViewer(_viewerSettings);
+
+
+
+
 	// Initialize all of the tool tips
 	$('[data-toggle="tooltip"]').tooltip();
 	$(".bt-switch").bootstrapSwitch();

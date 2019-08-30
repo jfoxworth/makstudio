@@ -30,7 +30,7 @@
 				<div class="row divcenter">
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin">
-						<i id="slatWall" class="icon-settings2 h3"></i>
+						<i id="slatWall" class="icon-line-bar-graph-2 h3"></i>
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin">

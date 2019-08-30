@@ -25,7 +25,7 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-settings2 h1"></i>
+									<i class="icon-line-bar-graph-2 h1"></i>
 									<h3 class="card-title">Slat Walls</h3>
 									<p class="card-text t400">Architectural slat walls add beauty and style to any environment</p>
 								</div>
