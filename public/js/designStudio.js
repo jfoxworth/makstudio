@@ -343,7 +343,7 @@ $(document).ready(function()	{
 		{
 			delete bench_api;
 
-			if (typeof fin_wall_api === 'undefined') {
+			if (typeof fin_wall_api === 'undefined') 
  			{
 
 				// container for the fin wall viewer
@@ -378,7 +378,7 @@ $(document).ready(function()	{
 
 			delete fin_wall_api;
 
-			if (typeof fin_wall_api === 'undefined') {
+			if (typeof fin_wall_api === 'undefined') 
  			{
 				// container for the bench viewer
 				var _bench_container = document.getElementById('benchDisplay'); 
