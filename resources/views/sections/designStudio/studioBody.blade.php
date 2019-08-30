@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin col_last">
-						<i id="bench" class="icon-couch h3"></i>
+						<i id="bench" class="icon-line-toggle h3" ></i>
 					</div>
 
 				</div>
