@@ -2,50 +2,6 @@ $(document).ready(function()	{
 
 
 
-	// container for the fin wall viewer
-	var _fin_wall_container = document.getElementById('slatWallDisplay'); 
-	// viewer settings 
-	var  _fin_wall_viewerSettings = { 
-		// container to use 
-		container: _fin_wall_container, 
-		// when creating the viewer, we want to get back an API v2 object 
-		api: {version: 2}, 
-		// level of log messages which will be sent to the browser console
-		loggingLevel: SDVApp.constants.loggingLevels.NONE, 
-		// instantly show the 3D scene 
-		showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
-		// ticket for a ShapeDiver model 
-		ticket: '7cdc64cb2f68a52b77f0b1b14985e7679f11c08cb1653c5fd5492f14f46ed1cd5273531cbaff8b006a9ed039bbfbff6c59945500d7546b51e1eeaff87561b105d18fc30395aad0c7e827d763bfa9705da0ee337a4b4b729324ca67764ad30f2140ab8b701115e3f88d4dc2f120b1903d34b48ec50820-27dc55c7419201c14a944b5f738e9cc4', 
-		modelViewUrl : 'eu-central-1'
-	}; 
-
-	// create the viewer, get back an API v2 object 
-	var fin_wall_api = new SDVApp.ParametricViewer(_fin_wall_viewerSettings);
-
-
-
-	// container for the bench viewer
-	var _bench_container = document.getElementById('benchDisplay'); 
-	// viewer settings 
-	var  _bench_viewerSettings = { 
-		// container to use 
-		container: _bench_container, 
-		// when creating the viewer, we want to get back an API v2 object 
-		api: {version: 2}, 
-		// level of log messages which will be sent to the browser console
-		loggingLevel: SDVApp.constants.loggingLevels.NONE, 
-		// instantly show the 3D scene 
-		showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
-		// ticket for a ShapeDiver model 
-		ticket: '4a0592f5cc546eb466ff9edb9d19b5b5d73602211efc55c4db9c040a3f7a343f37f7fd25a30c376ffc67bb9494b5776db2ebe599bd7e8611e12f89074d712135fdfa9cd8d48610f30cc8199e39dc0d576d7a123bc39d16553d42b9a2a04365c0cf875efb5587a3e8b9ca1fa7794ec6940d8e376ed290-052484b3075f24e3a7a0fd885fafb80b', 
-		modelViewUrl : 'eu-central-1'
-	}; 
-
-
-	// create the viewer, get back an API v2 object 
-	var bench_api = new SDVApp.ParametricViewer(_bench_viewerSettings);
-
-
 
 
 
@@ -343,6 +299,64 @@ $(document).ready(function()	{
 		if ( designType == "wallPanel" ){ 	$("#panelWallDisplay").show(); }
 		if ( designType == "genslerWall" ){ $("#genslerWallDisplay").show(); }
 		if ( designType == "bench" ){ 		$("#benchDisplay").show(); }
+
+
+
+
+		if ( designType == "slatWall" )
+		{
+
+			// container for the fin wall viewer
+			var _fin_wall_container = document.getElementById('slatWallDisplay'); 
+			// viewer settings 
+			var  _fin_wall_viewerSettings = { 
+				// container to use 
+				container: _fin_wall_container, 
+				// when creating the viewer, we want to get back an API v2 object 
+				api: {version: 2}, 
+				// level of log messages which will be sent to the browser console
+				loggingLevel: SDVApp.constants.loggingLevels.NONE, 
+				// instantly show the 3D scene 
+				showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
+				// ticket for a ShapeDiver model 
+				ticket: '7cdc64cb2f68a52b77f0b1b14985e7679f11c08cb1653c5fd5492f14f46ed1cd5273531cbaff8b006a9ed039bbfbff6c59945500d7546b51e1eeaff87561b105d18fc30395aad0c7e827d763bfa9705da0ee337a4b4b729324ca67764ad30f2140ab8b701115e3f88d4dc2f120b1903d34b48ec50820-27dc55c7419201c14a944b5f738e9cc4', 
+				modelViewUrl : 'eu-central-1'
+			}; 
+
+			// create the viewer, get back an API v2 object 
+			var fin_wall_api = new SDVApp.ParametricViewer(_fin_wall_viewerSettings);
+
+		}
+
+
+		if ( designType == "bench" )
+		{
+
+			// container for the bench viewer
+			var _bench_container = document.getElementById('benchDisplay'); 
+			// viewer settings 
+			var  _bench_viewerSettings = { 
+				// container to use 
+				container: _bench_container, 
+				// when creating the viewer, we want to get back an API v2 object 
+				api: {version: 2}, 
+				// level of log messages which will be sent to the browser console
+				loggingLevel: SDVApp.constants.loggingLevels.NONE, 
+				// instantly show the 3D scene 
+				showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
+				// ticket for a ShapeDiver model 
+				ticket: '4a0592f5cc546eb466ff9edb9d19b5b5d73602211efc55c4db9c040a3f7a343f37f7fd25a30c376ffc67bb9494b5776db2ebe599bd7e8611e12f89074d712135fdfa9cd8d48610f30cc8199e39dc0d576d7a123bc39d16553d42b9a2a04365c0cf875efb5587a3e8b9ca1fa7794ec6940d8e376ed290-052484b3075f24e3a7a0fd885fafb80b', 
+				modelViewUrl : 'eu-central-1'
+			}; 
+
+
+			// create the viewer, get back an API v2 object 
+			var bench_api = new SDVApp.ParametricViewer(_bench_viewerSettings);
+
+
+		}
+
+
 
 	});
 
