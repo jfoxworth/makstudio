@@ -42,12 +42,16 @@
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin col_last">
-						<i id="desk" class="icon-study h3"></i>
+						<i id="bench" class="icon-couch h3"></i>
 					</div>
 
 				</div>
 
 				<div class="row divcenter">
+
+					<div class="hoverMe col_one_fourth center designType nobottommargin">
+						<i id="desk" class="icon-study h3"></i>
+					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin">
 						<i id="planterWall" class="icon-line-sun h3"></i>
@@ -63,7 +67,80 @@
 
 				</div>
 
-				<h5 class="center" id="designShow">Slat Wall</h5>
+				<h5 class="center" id="designShow">bench</h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- All options for the coucb -->
+				<div id="benchSection">
+
+					<!-- Specifics for slat wall dimensions -->
+					<div class="white-section" style="margin:10px 0px" id="benchDepth">
+						<label>Bench Depth (ft)</label>
+						<input class="benchDepthSlider" id="benchDepthSlider"/>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" id="benchHeight">
+						<label>Bench Height (ft)</label>
+						<input class="benchHeightSlider"  id="benchHeightSlider"/>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" id="benchTwistLength">
+						<label>Twist Length (ft)</label>
+						<input class="benchTwistSlider"  id="benchTwistSlider"/>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" id="benchLeftSeatLength">
+						<label>Left Seat Length (ft)</label>
+						<input class="benchLeftSeatSlider"  id="benchLeftSeatSlider"/>
+					</div>
+
+					<div>
+						<label>Left Planter Length</label>
+						<select id="leftPlanterLength"
+								class="selectpicker btn-primary" 
+								style="width:100%; height:35px; margin:20px 0px">
+							<option value="No Planter">No Planter</option>
+							<option value="Quarter Planter">Quarter Planter</option>
+							<option value="Half Planter">Half Planter</option>
+							<option value="Full Planter">Full Planter</option>
+						</select>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" id="benchRightSeatLength">
+						<label>Right Seat Length (ft)</label>
+						<input class="benchRightSeatSlider"  id="benchRightSeatSlider"/>
+					</div>
+
+					<div>
+						<label>Right Planter Length</label>
+						<select id="rightPlanterLength"
+								class="selectpicker btn-primary" 
+								style="width:100%; height:35px; margin:20px 0px">
+							<option value="No Planter">No Planter</option>
+							<option value="Quarter Planter">Quarter Planter</option>
+							<option value="Half Planter">Half Planter</option>
+							<option value="Full Planter">Full Planter</option>
+						</select>
+					</div>
+
+				</div>
+
+
+
+
+
+
 
 
 				<!-- All options for the slat walls -->
@@ -611,6 +688,11 @@
 	</div>
 
 
+
+
+	<div class="col_last col_three_fourth">
+		<div id="benchDisplay" style="width:900px; height:600px;"></div>
+	</div>
 
 
 

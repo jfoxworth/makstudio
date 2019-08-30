@@ -2,12 +2,12 @@ $(document).ready(function()	{
 
 
 
-	// container for the viewer, typically this is a div
-	var _container = document.getElementById('slatWallDisplay'); 
+	// container for the fin wall viewer
+	var _fin_wall_container = document.getElementById('slatWallDisplay'); 
 	// viewer settings 
-	var  _viewerSettings = { 
+	var  _fin_wall_viewerSettings = { 
 		// container to use 
-		container: _container, 
+		container: _fin_wall_container, 
 		// when creating the viewer, we want to get back an API v2 object 
 		api: {version: 2}, 
 		// level of log messages which will be sent to the browser console
@@ -20,9 +20,34 @@ $(document).ready(function()	{
 	}; 
 
 	// create the viewer, get back an API v2 object 
-	var api = new SDVApp.ParametricViewer(_viewerSettings);
+	var fin_wall_api = new SDVApp.ParametricViewer(_fin_wall_viewerSettings);
 
-	api.scene.camera.zoomAsync();
+
+
+	// container for the bench viewer
+	var _bench_container = document.getElementById('benchDisplay'); 
+	// viewer settings 
+	var  _bench_viewerSettings = { 
+		// container to use 
+		container: _bench_container, 
+		// when creating the viewer, we want to get back an API v2 object 
+		api: {version: 2}, 
+		// level of log messages which will be sent to the browser console
+		loggingLevel: SDVApp.constants.loggingLevels.NONE, 
+		// instantly show the 3D scene 
+		showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
+		// ticket for a ShapeDiver model 
+		ticket: '4a0592f5cc546eb466ff9edb9d19b5b5d73602211efc55c4db9c040a3f7a343f37f7fd25a30c376ffc67bb9494b5776db2ebe599bd7e8611e12f89074d712135fdfa9cd8d48610f30cc8199e39dc0d576d7a123bc39d16553d42b9a2a04365c0cf875efb5587a3e8b9ca1fa7794ec6940d8e376ed290-052484b3075f24e3a7a0fd885fafb80b', 
+		modelViewUrl : 'eu-central-1'
+	}; 
+
+
+	// create the viewer, get back an API v2 object 
+	var bench_api = new SDVApp.ParametricViewer(_bench_viewerSettings);
+
+
+
+
 
 	$('#hitMeBaby').click(function(event)	
 	{	
@@ -44,6 +69,8 @@ $(document).ready(function()	{
 	$("#facetedSection").hide();
 	$("#genslerSection").hide();
 	$("#panelSection").hide();
+	$("#slatWallSection").hide();
+	$("#benchSection").show();
 
 
 	$("#slatDimensions").show();
@@ -55,13 +82,14 @@ $(document).ready(function()	{
 
 
 	// Hide all of the display areas
-	$("#slatWallDisplay").show();
+	$("#benchDisplay").show();
 	$("#backlitWallDisplay").hide();
 	$("#planterWallDisplay").hide();
 	$("#deskDisplay").hide();
 	$("#facetedWallDisplay").hide();
 	$("#panelWallDisplay").hide();
 	$("#genslerWallDisplay").hide();
+	$("#slatWallDisplay").hide();
 
 
 	// Hide all of the display areas
@@ -72,7 +100,7 @@ $(document).ready(function()	{
 
 
 	// Initial variables for selections
-	var designType = "slatWall";					// The item currently being designed in the studio window
+	var designType = "bench";					// The item currently being designed in the studio window
 
 
 
@@ -213,6 +241,44 @@ $(document).ready(function()	{
 	});
 
 
+	$(".benchDepthSlider").ionRangeSlider({
+		grid: false,
+		min: 24,
+		max: 48,
+		step: 1
+	});
+
+	$(".benchHeightSlider").ionRangeSlider({
+		grid: false,
+		min: 24,
+		max: 48,
+		step: 1
+	});
+
+	$(".benchTwistSlider").ionRangeSlider({
+		grid: false,
+		min: 1,
+		max: 8,
+		step: 1
+	});
+
+	$(".benchLeftSeatSlider").ionRangeSlider({
+		grid: false,
+		min: 1,
+		max: 6,
+		step: 1
+	});
+
+	$(".benchRightSeatSlider").ionRangeSlider({
+		grid: false,
+		min: 1,
+		max: 6,
+		step: 1
+	});
+
+
+
+
 
 	// When the user clicks on one of the design type boxes
 	$('.designType').click(function(event)	
@@ -231,6 +297,7 @@ $(document).ready(function()	{
 		$("#facetedSection").hide();
 		$("#panelSection").hide();
 		$("#genslerSection").hide();
+		$("#benchSection").hide();
 
 
 		// Hide all of the display areas
@@ -241,6 +308,7 @@ $(document).ready(function()	{
 		$("#facetedWallDisplay").hide();
 		$("#panelWallDisplay").hide();
 		$("#genslerWallDisplay").hide();
+		$("#benchDisplay").hide();
 
 
 		// Display the appropriate options
@@ -251,6 +319,7 @@ $(document).ready(function()	{
 		if ( designType == "facetedWall" ){ $("#facetedSection").show(); }
 		if ( designType == "wallPanel" ){ 	$("#panelSection").show(); }
 		if ( designType == "genslerWall" ){ $("#genslerSection").show(); }
+		if ( designType == "bench" ){ 		$("#benchSection").show(); }
 
 
 		// Display the appropriate title in the design show section
@@ -261,6 +330,7 @@ $(document).ready(function()	{
 		if ( designType == "facetedWall" ){ $("#designShow").text('Faceted Wall'); }
 		if ( designType == "wallPanel" ){ 	$("#designShow").text('Wall Panel'); }
 		if ( designType == "genslerWall" ){ $("#designShow").text('Gensler Wall'); }
+		if ( designType == "bench" ){ 		$("#designShow").text('Planter bench'); }
 
 
 
@@ -272,6 +342,7 @@ $(document).ready(function()	{
 		if ( designType == "facetedWall" ){ $("#facetedWallDisplay").show(); }
 		if ( designType == "wallPanel" ){ 	$("#panelWallDisplay").show(); }
 		if ( designType == "genslerWall" ){ $("#genslerWallDisplay").show(); }
+		if ( designType == "bench" ){ 		$("#benchDisplay").show(); }
 
 	});
 
@@ -329,6 +400,33 @@ $(document).ready(function()	{
 	});
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// API calls for the bench
+	$('#benchDepthSlider').change(function()	
+	{	
+		
+		bench_api.parameters.updateAsync({name: "Bench Depth", value: $('#benchDepthSlider').val() });
+	
+	});
+
+	$('#benchHeightSlider').change(function()	
+	{	
+		
+		bench_api.parameters.updateAsync({name: "Bench Height", value: $('#benchHeightSlider').val() });
+	
+	});
 
 
 
