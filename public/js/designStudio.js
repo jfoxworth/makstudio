@@ -467,11 +467,15 @@ $(document).ready(function()	{
 		bench_api.parameters.updateAsync({name: "Right Seating Length", value: $('#benchRightSeatSlider').val() });
 	});
 
-	$('#leftPlanterLength').change(function()	
+	$('#leftPlanterLength').select(function()	
 	{			
 		bench_api.parameters.updateAsync({name: "Left Planter", value: $('#leftPlanterLength').val() });
 	});
 
+	$('#rightPlanterLength').select(function()	
+	{			
+		bench_api.parameters.updateAsync({name: "Right Planter", value: $('#rightPlanterLength').val() });
+	});
 
 });
 
