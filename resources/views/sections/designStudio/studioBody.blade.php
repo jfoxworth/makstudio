@@ -595,6 +595,13 @@
 
 
 
+				<div id="cameraOptions">
+					<button id="hitMeBaby">Recenter Camera</button>
+				</div>
+
+
+
+
 
 
 			</div>
@@ -603,37 +610,33 @@
 
 	</div>
 
-<button id="hitMeBaby">
-    Recenter Camera
-  </button>
-	<div class="col_last col_three_fourth" style="width:600px; height:400px;">
-		 <div id="slatWallDisplay"></div>
+
+
+
+
+	<div class="col_last col_three_fourth">
+		<div id="slatWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
-	<div class="col_last col_three_fourth"
-		 id="backlitWallDisplay">
-		<p>Backlit Wall Area</p>
+	<div class="col_last col_three_fourth">
+		<div id="backlitWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
-	<div class="col_last col_three_fourth"
-		 id="planterWallDisplay">
-		<p>Planter Wall Area</p>
+	<div class="col_last col_three_fourth">
+		<div id="planterWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
-
-	<div class="col_last col_three_fourth"
-		 id="deskDisplay">
-		<p>Desk Area</p>
+	<div class="col_last col_three_fourth">
+		<div id="deskDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
 
-	<div class="col_last col_three_fourth"
-		 id="facetedWallDisplay">
-		<p>Faceted Wall Area</p>
+	<div class="col_last col_three_fourth">
+		<div id="facetedWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
@@ -644,9 +647,8 @@
 
 
 
-	<div class="col_last col_three_fourth"
-		 id="genslerWallDisplay">
-		<p>Gensler Wall Area</p>
+	<div class="col_last col_three_fourth">
+		<div id="genslerWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
