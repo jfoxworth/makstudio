@@ -603,7 +603,9 @@
 
 	</div>
 
-
+<button onclick="api.scene.camera.zoomAsync();">
+    Recenter Camera
+  </button>
 	<div class="col_last col_three_fourth">
 		 <div id="slatWallDisplay">
 	</div>
