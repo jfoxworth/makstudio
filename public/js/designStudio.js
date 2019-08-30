@@ -468,12 +468,14 @@ $(document).ready(function()	{
 	});
 
 	$('#leftPlanterLength').change(function()	
-	{			
+	{	
+		console.log('Here1');		
 		bench_api.parameters.updateAsync({name: "Left Planter", value: $('#leftPlanterLength').val() });
 	});
 
 	$('#rightPlanterLength').change(function()	
 	{			
+		console.log('Here2');		
 		bench_api.parameters.updateAsync({name: "Right Planter", value: $('#rightPlanterLength').val() });
 	});
 
