@@ -144,7 +144,7 @@
 
 
 				<!-- All options for the slat walls -->
-				<div id="slatSection">
+				<div id="slatWallSection">
 
 					<!-- Options for a slat wall -->
 					<select id="slatOptions"

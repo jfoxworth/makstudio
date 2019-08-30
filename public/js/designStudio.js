@@ -296,7 +296,7 @@ $(document).ready(function()	{
 	
 
 		// Hide all of the options
-		$("#slatSection").hide();
+		$("#slatWallSection").hide();
 		$("#backlitSection").hide();
 		$("#planterSection").hide();
 		$("#deskSection").hide();
@@ -318,7 +318,7 @@ $(document).ready(function()	{
 
 
 		// Display the appropriate options
-		if ( designType == "slatWall" ){ 	$("#slatSection").show(); }
+		if ( designType == "slatWall" ){ 	$("#slatWallSection").show(); }
 		if ( designType == "backlitWall" ){ $("#backlitSection").show(); }
 		if ( designType == "planterWall" ){ $("#planterSection").show(); }
 		if ( designType == "desk" ){ 		$("#deskSection").show(); }
@@ -467,12 +467,12 @@ $(document).ready(function()	{
 		bench_api.parameters.updateAsync({name: "Right Seating Length", value: $('#benchRightSeatSlider').val() });
 	});
 
-	$('#leftPlanterLength').select(function()	
+	$('#leftPlanterLength').change(function()	
 	{			
 		bench_api.parameters.updateAsync({name: "Left Planter", value: $('#leftPlanterLength').val() });
 	});
 
-	$('#rightPlanterLength').select(function()	
+	$('#rightPlanterLength').change(function()	
 	{			
 		bench_api.parameters.updateAsync({name: "Right Planter", value: $('#rightPlanterLength').val() });
 	});
