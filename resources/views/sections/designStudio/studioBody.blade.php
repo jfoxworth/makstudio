@@ -127,10 +127,10 @@
 						<select id="rightPlanterLength"
 								class="selectpicker btn-primary" 
 								style="width:100%; height:35px; margin:20px 0px">
-							<option value="No Planter">No Planter</option>
-							<option value="Quarter Planter">Quarter Planter</option>
-							<option value="Half Planter">Half Planter</option>
-							<option value="Full Planter">Full Planter</option>
+							<option value="0">No Planter</option>
+							<option value="1">Quarter Planter</option>
+							<option value="2">Half Planter</option>
+							<option value="3">Full Planter</option>
 						</select>
 					</div>
 
