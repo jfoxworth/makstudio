@@ -673,7 +673,7 @@
 
 
 				<div id="cameraOptions">
-					<button id="hitMeBaby">Recenter Camera</button>
+					<button id="cameraCenter">Recenter Camera</button>
 				</div>
 
 
