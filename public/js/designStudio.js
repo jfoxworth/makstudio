@@ -435,28 +435,42 @@ $(document).ready(function()	{
 
 
 
+	/* -------------------------------------- *
 
+	          API Calls for the Bench
 
-
-	// API calls for the bench
+	/* ---------------------------------------*/
 	$('#benchDepthSlider').change(function()	
 	{	
-		
-		bench_api.parameters.updateAsync({name: "Bench Depth", value: $('#benchDepthSlider').val() });
-	
+		bench_api.parameters.updateAsync({name: "Bench Depth", value: $('#benchDepthSlider').val() });	
 	});
+
 
 	$('#benchHeightSlider').change(function()	
-	{	
-		
+	{			
 		bench_api.parameters.updateAsync({name: "Bench Height", value: $('#benchHeightSlider').val() });
-	
 	});
 
 
+	$('#benchTwistSlider').change(function()	
+	{			
+		bench_api.parameters.updateAsync({name: "Twist Length", value: $('#benchTwistSlider').val() });
+	});
 
+	$('#benchLeftSeatSlider').change(function()	
+	{			
+		bench_api.parameters.updateAsync({name: "Left Seating Length", value: $('#benchLeftSeatSlider').val() });
+	});
 
+	$('#benchRightSeatSlider').change(function()	
+	{			
+		bench_api.parameters.updateAsync({name: "Right Seating Length", value: $('#benchRightSeatSlider').val() });
+	});
 
+	$('#leftPlanterLength').change(function()	
+	{			
+		bench_api.parameters.updateAsync({name: "Left Planter", value: $('#leftPlanterLength').val() });
+	});
 
 
 });
