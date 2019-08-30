@@ -608,7 +608,7 @@
 		 id="">
 		<p>Slat Wall Area</p>
 
-		<iframe id="slatWallDisplay" width="640" height="480" src="//viewer.shapediver.com/v2/2.4.0/iframe/remote.html?modelViewUrl=us-east-1&ticket=f148e1699c609b5fb5852b525235d90a54ffaee5c33a506eb45ed2410475c4c4326c618596aef96cdfd4491434ba1783e0861ca4313e4c78d863831da3194dd13308fbed42064277669c51d5c003ee6bc730bca1dca566d72e023da6e361a7b6886b1a95354c047ca77b7e2902652441aac304-30663162633333332d343531352d3433" referrerpolicy="origin" allowfullscreen scrolling="no" style="overflow-x: hidden; overflow-y: hidden; border-width: 0;">
+		<iframe id="slatWallDisplay" width="640" height="480" src="//viewer.shapediver.com/v2/2.4.0/iframe/remote.html?modelViewUrl=eu-central-1&ticket=f148e1699c609b5fb5852b525235d90a54ffaee5c33a506eb45ed2410475c4c4326c618596aef96cdfd4491434ba1783e0861ca4313e4c78d863831da3194dd13308fbed42064277669c51d5c003ee6bc730bca1dca566d72e023da6e361a7b6886b1a95354c047ca77b7e2902652441aac304-30663162633333332d343531352d3433" referrerpolicy="origin" allowfullscreen scrolling="no" style="overflow-x: hidden; overflow-y: hidden; border-width: 0;">
 		<p>Your browser does not support iframes.</p>
 		</iframe>
 
