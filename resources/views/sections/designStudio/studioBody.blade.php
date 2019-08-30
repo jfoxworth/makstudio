@@ -604,9 +604,8 @@
 	</div>
 
 
-	<div class="col_last col_three_fourth"
-		 id="slatWallDisplay">
-		<p>Slat Wall Area</p>
+	<div class="col_last col_three_fourth">
+		 <div id="slatWallDisplay">
 	</div>
 
 
