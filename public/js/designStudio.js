@@ -342,6 +342,7 @@ $(document).ready(function()	{
 		if ( designType == "slatWall" )
 		{
 			delete bench_api;
+			document.getElementById('benchDisplay').innerHTML = "";
 
 			if (typeof fin_wall_api === 'undefined') 
  			{
@@ -377,6 +378,8 @@ $(document).ready(function()	{
 		{
 
 			delete fin_wall_api;
+			document.getElementById('slatWallDisplay').innerHTML = "";
+
 
 			if (typeof fin_wall_api === 'undefined') 
  			{
@@ -421,7 +424,6 @@ $(document).ready(function()	{
 
 		// Set the value
 		var slatOption = $( "#slatOptions" ).val();
-		console.log('The slat option is '+slatOption);
 	
 
 		// Hide all of the options
@@ -509,13 +511,11 @@ $(document).ready(function()	{
 
 	$('#leftPlanterLength').change(function()	
 	{	
-		console.log('Here1');		
 		bench_api.parameters.updateAsync({name: "Left Planter", value: $('#leftPlanterLength').val() });
 	});
 
 	$('#rightPlanterLength').change(function()	
 	{			
-		console.log('Here2');		
 		bench_api.parameters.updateAsync({name: "Right Planter", value: $('#rightPlanterLength').val() });
 	});
 
