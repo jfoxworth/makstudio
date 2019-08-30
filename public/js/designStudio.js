@@ -55,11 +55,18 @@ $(document).ready(function()	{
 
 
 
-	$('#cameraCenter').click(function(event)	
+	$('#benchCameraCenter').click(function(event)	
 	{	
-		api.scene.camera.zoomAsync();
+		bench_api.scene.camera.zoomAsync();
 
 	});
+
+	$('#slatCameraCenter').click(function(event)	
+	{	
+		fin_wall_api.scene.camera.zoomAsync();
+
+	});
+
 
 
 	// Initialize all of the tool tips

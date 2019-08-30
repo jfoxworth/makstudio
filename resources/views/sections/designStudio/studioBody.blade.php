@@ -110,10 +110,10 @@
 						<select id="leftPlanterLength"
 								class="selectpicker btn-primary" 
 								style="width:100%; height:35px; margin:20px 0px">
-							<option value="No Planter">No Planter</option>
-							<option value="Quarter Planter">Quarter Planter</option>
-							<option value="Half Planter">Half Planter</option>
-							<option value="Full Planter">Full Planter</option>
+							<option value="0">No Planter</option>
+							<option value="1">Quarter Planter</option>
+							<option value="2">Half Planter</option>
+							<option value="3">Full Planter</option>
 						</select>
 					</div>
 
@@ -132,6 +132,10 @@
 							<option value="2">Half Planter</option>
 							<option value="3">Full Planter</option>
 						</select>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" >
+						<button id="benchCameraCenter">Recenter Camera</button>
 					</div>
 
 				</div>
@@ -177,23 +181,6 @@
 						</div>
 
 					</div>
-
-
-
-
-
-					<!-- Options for a slat Style 
-					<select id="slatStyle"
-							class="selectpicker btn-success" 
-							style="width:100%; height:35px; margin:20px 0px">
-						<option value="rippled">Rippled</option>
-						<option value="angled">Angled</option>
-						<option value="artistic">Artistic</option>
-					</select>
-				-->
-
-
-
 
 
 
@@ -296,6 +283,10 @@
 
 					</div>
 
+					<div class="white-section" style="margin:20px 0px" >
+						<button id="slatCameraCenter">Recenter Camera</button>
+					</div>
+
 
 				</div>
 
@@ -382,6 +373,10 @@
 
 					</div>
 
+					<div class="white-section" style="margin:20px 0px" >
+						<button id="backlitCameraCenter">Recenter Camera</button>
+					</div>
+
 				</div>
 
 
@@ -434,6 +429,10 @@
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel F Rotation</label>
 						<input class="facetedFRotSlider" id="facetedFRotSpacing"/>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" >
+						<button id="facetedCameraCenter">Recenter Camera</button>
 					</div>
 
 
@@ -671,10 +670,6 @@
 				</div>
 
 
-
-				<div id="cameraOptions">
-					<button id="cameraCenter">Recenter Camera</button>
-				</div>
 
 
 
