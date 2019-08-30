@@ -24,6 +24,10 @@ $(document).ready(function()	{
 
 	api.scene.camera.zoomAsync();
 
+$("#hitMeBaby").ionRangeSlider({
+	api.scene.camera.zoomAsync();
+});
+
 
 	// Initialize all of the tool tips
 	$('[data-toggle="tooltip"]').tooltip();

@@ -603,7 +603,7 @@
 
 	</div>
 
-<button onclick="api.scene.camera.zoomAsync();">
+<button id="hitMeBaby">
     Recenter Camera
   </button>
 	<div class="col_last col_three_fourth">
