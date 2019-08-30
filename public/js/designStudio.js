@@ -15,7 +15,7 @@ $(document).ready(function()	{
 		// instantly show the 3D scene 
 		showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
 		// ticket for a ShapeDiver model 
-		ticket: 'shapediver-squid-demo-16' 
+		ticket: 'f1832e3ad0bcab4aa8d08f894889044419a2570f638a7f334b048c76c7b5c17a90b3f4502981d3bdee2321dcad99ec6d97c6c4d6e4356cb1dd06a9b93b103be1faeb0c1532047b7dc98a74f4fbb16cb861609a7fae45c95d0b03ab311414be24ce6a7ef35142bc04fe359091612e4ba6cc83feb14347-254bf0a71357b2c9f983746bf3867934' 
 	}; 
 
 	// create the viewer, get back an API v2 object 
