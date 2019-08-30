@@ -15,8 +15,10 @@ $(document).ready(function()	{
 		// instantly show the 3D scene 
 		showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
 		// ticket for a ShapeDiver model 
-		ticket: 'f148e1699c609b5fb5852b525235d90a54ffaee5c33a506eb45ed2410475c4c4326c618596aef96cdfd4491434ba1783e0861ca4313e4c78d863831da3194dd13308fbed42064277669c51d5c003ee6bc730bca1dca566d72e023da6e361a7b6886b1a95354c047ca77b7e2902652441aac304-30663162633333332d343531352d3433', 
-		modelViewUrl : 'eu-central-1'
+		ticket: '85d9977f5426033e058a60c8b81c2c91d331d5eec7bdfed66d354132539d4efb0d01bd6e5d7bc61bc8894b820fff1922d2a2e7e6b7f5883d244f93f0c9ce73daa540ccd7b6d1a1d9ccc40307c3549ff3bbce1a7e902ac438abb53b472d73f2fd2578881f8846e73c4af238f34b9725c41232a2e3129d-d34ace0dbe577c6152ee63654b9e807c', 
+		modelViewUrl : 'eu-central-1',
+		width:'700px',
+		height:'500px';
 	}; 
 
 	// create the viewer, get back an API v2 object 
