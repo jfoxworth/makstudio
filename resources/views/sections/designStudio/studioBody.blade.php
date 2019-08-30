@@ -606,7 +606,7 @@
 <button id="hitMeBaby">
     Recenter Camera
   </button>
-	<div class="col_last col_three_fourth">
+	<div class="col_last col_three_fourth" style="width:600px; height:400px;">
 		 <div id="slatWallDisplay"></div>
 	</div>
 
