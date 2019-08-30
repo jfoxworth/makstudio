@@ -341,7 +341,7 @@ $(document).ready(function()	{
 
 		if ( designType == "slatWall" )
 		{
-			remove bench_api;
+			delete bench_api;
 
 			if (typeof fin_wall_api === 'undefined') {
  			{
@@ -376,7 +376,7 @@ $(document).ready(function()	{
 		if ( designType == "bench" )
 		{
 
-			remove fin_wall_api;
+			delete fin_wall_api;
 
 			if (typeof fin_wall_api === 'undefined') {
  			{
