@@ -1,4 +1,4 @@
-<div class="promo parallax promo-dark promo-flat promo-full bottommargin" 
+<div class="promo parallax promo-dark promo-flat promo-full nobottommargin topmargin-lg" 
 	 style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/parallax7.jpg');" 
 	 data-bottom-top="background-position:0px 300px;" 
 	 data-top-bottom="background-position:0px -300px;">

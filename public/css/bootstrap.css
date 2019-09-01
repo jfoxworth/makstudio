@@ -2624,14 +2624,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-light {
-  color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #f8f9fa;
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 .btn-light:hover {
   color: #212529;
-  background-color: #e2e6ea;
+  background-color: #007bff;
   border-color: #dae0e5;
 }
 

@@ -28,15 +28,14 @@
 
             <div class="">
 
-                @include('sections.landing.callToAction')
                 @include('sections.landing.productVert')
                 @include('sections.landing.workofartBreak2')
-                @include('sections.landing.processVideo')
-                @include('sections.landing.sloganBreak')
                 @include('sections.landing.founders')
                 @include('sections.landing.workofartBreak')
                 @include('sections.landing.customerGrey')
+                @include('sections.landing.sloganBreak')
                 @include('sections.contactUs.contactForm')
+                @include('sections.landing.callToAction')
                 @include('sections.contactUs.contactInfo')
 
 

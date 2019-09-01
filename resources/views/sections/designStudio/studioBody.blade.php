@@ -14,7 +14,7 @@
 				<select class="selectpicker btn-primary" 
 						id="designType" 
 						style="width:100%; height:35px">
-					<option value="slatWall">Architectural Slat Wall</option>
+					<option value="finWall">Architectural Slat Wall</option>
 					<option value="planterWall">Planter Wall</option>
 					<option value="backlitWall">Back-lit Branding Wall</option>
 					<option value="desk">Reception Desk</option>
@@ -25,23 +25,35 @@
 			-->
 
 
-				<h4 class="center">Select Design Type</h4>
+				<!--
+				<div class="white-section" style="margin:20px 0px; position:relative; left:300px" >
+					<button id="benchCameraCenter">Recenter Camera</button>
+				</div>
+				-->
+
+
+
+				<h4 class="center" style="margin-bottom:5px">Select Design Type</h4>
 
 				<div class="row divcenter">
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin">
-						<i id="slatWall" class="icon-line-bar-graph-2 h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
+						 data-toggle="tooltip" data-placement="top" title="Fin Ripple Wall">
+						<i id="finWall" class="icon-line-bar-graph-2 h3"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin">
-						<i id="backlitWall" class="icon-bulb h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
+						 data-toggle="tooltip" data-placement="top" title="Backlit Wall">
+						<i id="backlit" class="icon-bulb h3"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin">
-						<i id="facetedWall" class="icon-realestate-fence h3" style="margin-top:5px;"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
+						 data-toggle="tooltip" data-placement="top" title="Faceted Wall">
+						<i id="faceted" class="icon-realestate-fence h3" style="margin-top:5px;"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin col_last">
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last currentItem"
+						 data-toggle="tooltip" data-placement="top" title="Planter Bench">
 						<i id="bench" class="icon-line-toggle h3" ></i>
 					</div>
 
@@ -49,25 +61,29 @@
 
 				<div class="row divcenter">
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin">
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
+						 data-toggle="tooltip" data-placement="bottom" title="Custom Desk">
 						<i id="desk" class="icon-study h3"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin">
-						<i id="planterWall" class="icon-line-sun h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
+						 data-toggle="tooltip" data-placement="bottom" title="Planter Wall">
+						<i id="planter" class="icon-line-sun h3"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin">
-						<i id="wallPanel" class="icon-realestate-bricks h3" style="margin-top:6px"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
+						 data-toggle="tooltip" data-placement="bottom" title="Panel Wall">
+						<i id="panel" class="icon-realestate-bricks h3" style="margin-top:6px"></i>
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin col_last">
-						<i id="genslerWall" class="icon-line-share h3"></i>
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
+						 data-toggle="tooltip" data-placement="bottom" title="Gensler Wall">
+						<i id="gensler" class="icon-line-share h3"></i>
 					</div>
 
 				</div>
 
-				<h5 class="center" id="designShow">bench</h5>
+				<!--<h5 class="center" id="designShow">bench</h5>-->
 
 
 
@@ -84,59 +100,80 @@
 				<!-- All options for the coucb -->
 				<div id="benchSection">
 
-					<!-- Specifics for slat wall dimensions -->
-					<div class="white-section" style="margin:10px 0px" id="benchDepth">
-						<label>Bench Depth (ft)</label>
-						<input class="benchDepthSlider" id="benchDepthSlider"/>
+					<h4 class="center topmargin-sm" style="margin-bottom:5px">Select Parameter Set</h4>
+
+					<div class="row divcenter bottommargin-sm">
+
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="bottom" title="Bench Dimensions">
+							<i id="benchDimensionsButton" class="icon-measure h3 parameterSelect"></i>
+						</div>
+
+						<div class="hoverMe col_one_fourth center nobottommargin" style="margin-top:7px"
+							 data-toggle="tooltip" data-placement="bottom" title="Seat Settings">
+							<i id="benchSeatButton" class="icon-realestate-chair h3 parameterSelect"></i>
+						</div>
+
 					</div>
 
-					<div class="white-section" style="margin:20px 0px" id="benchHeight">
-						<label>Bench Height (ft)</label>
-						<input class="benchHeightSlider"  id="benchHeightSlider"/>
+					<div id="benchDimensions" class="parameterSet">
+
+						<div class="white-section" style="margin:10px 0px" id="benchDepth">
+							<label>Bench Depth (ft)</label>
+							<input class="benchDepthSlider modelSlider" id="benchDepthSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:20px 0px" id="benchHeight">
+							<label>Bench Height (ft)</label>
+							<input class="benchHeightSlider modelSlider"  id="benchHeightSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:20px 0px" id="benchTwistLength">
+							<label>Twist Length (ft)</label>
+							<input class="benchTwistSlider modelSlider"  id="benchTwistSlider"/>
+						</div>
+
 					</div>
 
-					<div class="white-section" style="margin:20px 0px" id="benchTwistLength">
-						<label>Twist Length (ft)</label>
-						<input class="benchTwistSlider"  id="benchTwistSlider"/>
+
+					<div id="benchSeat" class="parameterSet">
+
+						<div class="white-section" style="margin:20px 0px" id="benchLeftSeatLength">
+							<label>Left Seat Length (ft)</label>
+							<input class="benchLeftSeatSlider modelSlider"  id="benchLeftSeatSlider"/>
+						</div>
+
+						<div>
+							<label>Left Planter Length</label>
+							<select id="leftPlanterLength"
+									class="selectpicker btn-primary modelDropdown" 
+									style="width:100%; height:35px; margin:20px 0px">
+								<option value="0">No Planter</option>
+								<option value="1">Quarter Planter</option>
+								<option value="2">Half Planter</option>
+								<option value="3">Full Planter</option>
+							</select>
+						</div>
+
+						<div class="white-section" style="margin:20px 0px" id="benchRightSeatLength">
+							<label>Right Seat Length (ft)</label>
+							<input class="benchRightSeatSlider modelSlider"  id="benchRightSeatSlider"/>
+						</div>
+
+						<div>
+							<label>Right Planter Length</label>
+							<select id="rightPlanterLength"
+									class="selectpicker btn-primary modelDropdown"
+									style="width:100%; height:35px; margin:20px 0px">
+								<option value="0">No Planter</option>
+								<option value="1">Quarter Planter</option>
+								<option value="2">Half Planter</option>
+								<option value="3">Full Planter</option>
+							</select>
+						</div>
+
 					</div>
 
-					<div class="white-section" style="margin:20px 0px" id="benchLeftSeatLength">
-						<label>Left Seat Length (ft)</label>
-						<input class="benchLeftSeatSlider"  id="benchLeftSeatSlider"/>
-					</div>
-
-					<div>
-						<label>Left Planter Length</label>
-						<select id="leftPlanterLength"
-								class="selectpicker btn-primary" 
-								style="width:100%; height:35px; margin:20px 0px">
-							<option value="0">No Planter</option>
-							<option value="1">Quarter Planter</option>
-							<option value="2">Half Planter</option>
-							<option value="3">Full Planter</option>
-						</select>
-					</div>
-
-					<div class="white-section" style="margin:20px 0px" id="benchRightSeatLength">
-						<label>Right Seat Length (ft)</label>
-						<input class="benchRightSeatSlider"  id="benchRightSeatSlider"/>
-					</div>
-
-					<div>
-						<label>Right Planter Length</label>
-						<select id="rightPlanterLength"
-								class="selectpicker btn-primary" 
-								style="width:100%; height:35px; margin:20px 0px">
-							<option value="0">No Planter</option>
-							<option value="1">Quarter Planter</option>
-							<option value="2">Half Planter</option>
-							<option value="3">Full Planter</option>
-						</select>
-					</div>
-
-					<div class="white-section" style="margin:20px 0px" >
-						<button id="benchCameraCenter">Recenter Camera</button>
-					</div>
 
 				</div>
 
@@ -148,36 +185,57 @@
 
 
 				<!-- All options for the slat walls -->
-				<div id="slatWallSection">
+				<div id="finWallSection">
 
 					<!-- Options for a slat wall -->
-					<select id="slatOptions"
-							class="selectpicker btn-primary" 
-							style="width:100%; height:35px; margin:20px 0px">
-						<option value="slatDimensions">Wall Dimensions</option>
-						<option value="slatFin">Fin Options</option>
-						<option value="slatRipple">Ripple Style</option>
-						<option value="slatMaterial">Materials & Color</option>
-						<option value="slatLogo">Logo Options</option>
-					</select>
+					<h4 class="center topmargin-sm" style="margin-bottom:5px">Select Parameter Set</h4>
+
+					<div class="row divcenter">
+
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Wall Dimensions">
+							<i id="finWallDimensionsButton" class="icon-measure h3 parameterSelect"></i>
+						</div>
+
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Fin Settings">
+							<i id="finFinButton" class="icon-line-disc h3 parameterSelect"></i>
+						</div>
+
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Ripple Settings">
+							<i id="finRippleButton" class="icon-line-target h3 parameterSelect"></i>
+						</div>
+
+						<div class="hoverMe col_one_fourth col_last center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Material Settings">
+							<i id="finMaterialButton" class="icon-line-layers h3 parameterSelect"></i>
+						</div>
+
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="bottom" title="Logo Settings">
+							<i id="finLogoButton" class="icon-line-upload h3 parameterSelect"></i>
+						</div>
+
+					</div>
 
 
 					<!-- Specifics for slat wall dimensions -->
-					<div id="slatDimensions">
+					<div id="finWallDimensions" class="parameterSet">
 
-						<div class="white-section" style="margin:10px 0px" id="slatWallHeight">
+						<div class="white-section" style="margin:10px 0px" id="finWallHeight">
 							<label>Wall Height (inches)</label>
-							<input class="slatWallHeightSlider" id="slatWallHeightSlider"/>
+							<input class="finWallHeightSlider modelSlider" id="finWallHeightSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:20px 0px" id="slatWallWidth">
+						<div class="white-section" style="margin:20px 0px" id="finWallWidth">
 							<label>Wall Width (inches)</label>
-							<input class="slatWallWidthSlider"  id="slatWallWidthSlider"/>
+							<input class="finWallWidthSlider modelSlider"  id="finWallWidthSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:20px 0px" id="slatWallDepth">
+						<div class="white-section" style="margin:20px 0px" id="finWallDepth">
 							<label>Wall Depth (inches)</label>
-							<input class="slatWallDepthSlider"  id="slatWallDepthSlider"/>
+							<input class="finWallDepthSlider modelSlider"  id="finWallDepthSlider"/>
 						</div>
 
 					</div>
@@ -185,29 +243,29 @@
 
 
 					<!-- Specifics for slat wall ripple -->
-					<div id="slatRipple">
+					<div id="finRipple" class="parameterSet">
 
 						<div class="white-section" style="margin:10px 0px" >
 							<label>Ripple X Location (%)</label>
-							<input class="rippleXSlider" id="rippleX"/>
+							<input class="rippleXSlider modelSlider" id="rippleXSlider"/>
 						</div>
 
 
 						<div class="white-section" style="margin:20px 0px" >
 							<label>Ripple Y Location (%)</label>
-							<input class="rippleYSlider" id="rippleY"/>
+							<input class="rippleYSlider modelSlider" id="rippleYSlider"/>
 						</div>
 
 
 						<div class="white-section" style="margin:20px 0px" >
 							<label>Ripple Intensity</label>
-							<input class="rippleIntensitySlider" id="rippleIntensity"/>
+							<input class="rippleIntensitySlider modelSlider" id="rippleIntensitySlider"/>
 						</div>
 
 
 						<div class="white-section" style="margin:20px 0px">
 							<label>Ripple Roughness</label>
-							<input class="rippleRoughnessSlider" id="rippleRoughness"/>
+							<input class="rippleRoughnessSlider modelSlider" id="rippleRoughnessSlider"/>
 						</div>
 
 
@@ -219,28 +277,28 @@
 
 
 					<!-- Specifics for slat wall fins -->
-					<div id="slatFin">
+					<div id="finFin" class="parameterSet">
 
 						<div class="white-section" style="margin:10px 0px" >
 							<label>Fin Spacing (inches)</label>
-							<input class="finSpacingSlider" id="finSpacing"/>
+							<input class="finSpacingSlider modelSlider" id="finSpacingSlider"/>
 						</div>
 
 
 						<div class="white-section" style="margin:20px 0px" >
 							<label>Fin Rotation (degrees)</label>
-							<input class="finRotationSlider" id="finRotation"/>
+							<input class="finRotationSlider modelSlider" id="finRotationSlider"/>
 						</div>
 
 
 						<div class="row">
 
-							<div class="col_half divcenter hoverMe">
+							<div class="col_half divcenter hoverMe" id="finCurvedIcon">
 								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleCurved.jpg" width="100px">
 								<div class="center">Curved</div>
 							</div>
 
-							<div class="col_half divcenter col_last hoverMe">
+							<div class="col_half divcenter col_last hoverMe" id="finAngledIcon">
 								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleAngled.jpg" width="100px">
 								<div class="center">Angled</div>
 							</div>
@@ -252,7 +310,7 @@
 
 
 					<!-- Specifics for slat wall materials and colors -->
-					<div id="slatMaterial">
+					<div id="finMaterial" class="parameterSet">
 
 						<div class="row hoverMe hoverMeGrey divcenter">
 							<img id="slatMaterialBirch" 
@@ -283,10 +341,6 @@
 
 					</div>
 
-					<div class="white-section" style="margin:20px 0px" >
-						<button id="slatCameraCenter">Recenter Camera</button>
-					</div>
-
 
 				</div>
 
@@ -299,30 +353,49 @@
 				<div id="backlitSection">
 
 
-					<!-- Options for a backlit wall -->
-					<select id="backlitOptions"
-							class="selectpicker btn-primary" 
-							style="width:100%; height:35px; margin:10px 0px;">
-						<option value="backlitDimensions">Wall Dimensions</option>
-						<option value="backlitLogo">Logo</option>
-						<option value="backlitHeaders">Headers</option>
-					</select>
+					<!-- Options for a slat wall -->
+					<h4 class="center topmargin-sm" style="margin-bottom:5px">Select Parameter Set</h4>
+
+					<div class="row divcenter">
+
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Wall Dimensions">
+							<i id="backlitDimensionsButton" class="icon-measure h3 parameterSelect"></i>
+						</div>
+
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Logo Settings">
+							<i id="backlitLogoButton" class="icon-line-upload h3 parameterSelect"></i>
+						</div>
+
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Headers">
+							<i id="backlitHeadersButton" class="icon-font1 h3 parameterSelect"></i>
+						</div>
+
+					</div>
 
 
 
 					<!-- Specifics for backlit walls dimensions -->
-					<div id="backlitDimensions">
+					<div id="backlitDimensions" class="parameterSet">
 
 						<div class="white-section" style="margin:10px 0px" >
 							<label>Wall Length (inches)</label>
-							<input class="backlitLengthSlider" id="backlitLength"/>
+							<input class="backlitLengthSlider modelSlider" id="backlitLengthSlider"/>
 						</div>
 
 
 						<div class="white-section" style="margin:20px 0px" >
 							<label>Wall Height (inches)</label>
-							<input class="backlitHeightSlider" id="backlitHeight"/>
+							<input class="backlitHeightSlider modelSlider" id="backlitHeightSlider"/>
 						</div>
+
+						<div class="white-section modelBoolean" style="margin:20px 0px;">
+							<label>Show Dimensions</label>
+							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitShowDimensions">
+						</div>
+
 
 
 					</div>
@@ -330,27 +403,41 @@
 
 
 					<!-- Specifics for backlit walls dimensions -->
-					<div id="backlitLogo">
+					<div id="backlitLogo" class="parameterSet">
+
+						<div class="white-section modelBoolean" style="margin:20px 0px;">
+							<input class="bt-switch" type="checkbox" checked data-on-text="Logo On" data-off-text="Logo Off" id="backlitLogoOnOff">
+						</div>
 
 						<div class="bottommargin" style="margin:20px 0px;">
 							<label>Upload Logo:</label><br>
-							<input id="logoUpload" name="logoUpload" type="file" multiple class="file-loading" data-show-preview="false">
+							<input id="logoUpload" name="logoUpload" type="file" multiple class="file-loading" data-show-preview="false" id="uploadLogo">
 						</div>
 
 
 						<div class="white-section" style="margin:10px 0px" >
-							<label>Logo Height (inches)</label>
-							<input class="backlitLogoSlider" id="backlitLogoHeight"/>
+							<label>Logo Scale (%)</label>
+							<input class="backlitLogoScaleSlider modelSlider" id="backlitLogoScaleSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:20px 0px;">
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Logo X (inches)</label>
+							<input class="backlitLogoXSlider modelSlider" id="backlitLogoXSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Logo Y (inches)</label>
+							<input class="backlitLogoZSlider modelSlider" id="backlitLogoZSlider"/>
+						</div>
+
+						<div class="white-section modelBoolean" style="margin:20px 0px;">
 							<label>Create Flat Area</label>
-							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No">
+							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitFlatOnOff">
 						</div>
 
-						<div class="white-section" style="margin:20px 0px;">
+						<div class="white-section modelBoolean" style="margin:20px 0px;">
 							<label>Pattern After Logo</label>
-							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No">
+							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitPatternOnOff">
 						</div>
 
 
@@ -359,7 +446,7 @@
 
 
 					<!-- Specifics for backlit walls headers -->
-					<div id="backlitHeaders">
+					<div id="backlitHeaders" class="parameterSet">
 
 						<div class="row divcenter" style="margin:20px 0px;">
 							<label for="backlitHeader">Header</label>
@@ -371,10 +458,6 @@
     						<input type="text" class="form-control" id="backlitsubHeader" placeholder="Sub Header (30 char)">
     					</div>
 
-					</div>
-
-					<div class="white-section" style="margin:20px 0px" >
-						<button id="backlitCameraCenter">Recenter Camera</button>
 					</div>
 
 				</div>
@@ -392,49 +475,44 @@
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Facet Spacing</label>
-						<input class="facetedSpacingSlider" id="facetedSpacing"/>
+						<input class="facetedSpacingSlider modelSlider" id="facetedSpacing"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel A Rotation</label>
-						<input class="facetedARotSlider" id="facetedARotSpacing"/>
+						<input class="facetedARotSlider modelSlider" id="facetedARotSpacing"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel B Rotation</label>
-						<input class="facetedBRotSlider" id="facetedBRotSpacing"/>
+						<input class="facetedBRotSlider modelSlider" id="facetedBRotSpacing"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel C Rotation</label>
-						<input class="facetedCRotSlider" id="facetedCRotSpacing"/>
+						<input class="facetedCRotSlider modelSlider" id="facetedCRotSpacing"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel D Rotation</label>
-						<input class="facetedDRotSlider" id="facetedDRotSpacing"/>
+						<input class="facetedDRotSlider modelSlider" id="facetedDRotSpacing"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel E Rotation</label>
-						<input class="facetedERotSlider" id="facetedERotSpacing"/>
+						<input class="facetedERotSlider modelSlider" id="facetedERotSpacing"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel F Rotation</label>
-						<input class="facetedFRotSlider" id="facetedFRotSpacing"/>
+						<input class="facetedFRotSlider modelSlider" id="facetedFRotSpacing"/>
 					</div>
-
-					<div class="white-section" style="margin:20px 0px" >
-						<button id="facetedCameraCenter">Recenter Camera</button>
-					</div>
-
 
 				</div>
 
@@ -671,11 +749,6 @@
 
 
 
-
-
-
-
-
 			</div>
 
 		</div>
@@ -685,46 +758,94 @@
 
 
 
-	<div class="col_last col_three_fourth">
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+
+		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
+			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
+			<i id="benchCameraCenter" class="icon-line-camera h3 hoverMe "></i>
+		</div>
+
 		<div id="benchDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
 
-	<div class="col_last col_three_fourth">
-		<div id="slatWallDisplay" style="width:900px; height:600px;"></div>
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+
+		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
+			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
+			<i id="finWallCameraCenter" class="icon-line-camera h3 hoverMe "></i>
+		</div>
+
+		<div id="finWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
-	<div class="col_last col_three_fourth">
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+
+		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
+			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
+			<i id="backlitCameraCenter" class="icon-line-camera h3 hoverMe "></i>
+		</div>
+
 		<div id="backlitWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
-	<div class="col_last col_three_fourth">
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+
+		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
+			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
+			<i id="planterCameraCenter" class="icon-line-camera h3 hoverMe "></i>
+		</div>
+
 		<div id="planterWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
-	<div class="col_last col_three_fourth">
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+
+		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
+			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
+			<i id="deskCameraCenter" class="icon-line-camera h3 hoverMe "></i>
+		</div>
+
 		<div id="deskDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
 
-	<div class="col_last col_three_fourth">
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+
+		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
+			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
+			<i id="facetedCameraCenter" class="icon-line-camera h3 hoverMe "></i>
+		</div>
+
 		<div id="facetedWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
-	<div class="col_last col_three_fourth"
+	<div class="col_last col_three_fourth notopmargin nobottommargin"
 		 id="panelWallDisplay">
+
+		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
+			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
+			<i id="panelCameraCenter" class="icon-line-camera h3 hoverMe "></i>
+		</div>
+
 		 @include('sections.designStudio.areaDisplays.wallPanels')
 	</div>
 
 
 
-	<div class="col_last col_three_fourth">
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+
+		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
+			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
+			<i id="genslerCameraCenter" class="icon-line-camera h3 hoverMe "></i>
+		</div>
+
 		<div id="genslerWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 

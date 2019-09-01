@@ -1,4 +1,4 @@
-<div class="container clearfix">
+<div class="container clearfix topmargin-lg">
 
 	<div class="heading-block center">
 		<h2>Want more information?</h2>
