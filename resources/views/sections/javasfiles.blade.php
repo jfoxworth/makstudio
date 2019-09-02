@@ -15,8 +15,6 @@
     <script type="text/javascript" src="/js/tools.js"></script>
     <script type="text/javascript" src="/js/navigations.js"></script>
     <script type="text/javascript" src="/js/parallax.js"></script>
-    <script type="text/javascript" src="/js/slideanim.js"></script>
-
 
 
     <!-- Google Map JavaScripts
@@ -37,7 +35,7 @@
     </script>
 
 
-
+    <!--
     <script>
 
         var tpj=jQuery;
@@ -45,7 +43,11 @@
 
         tpj(document).ready(function() {
 
-            var apiRevoSlider = tpj('#rev_slider_irestaurant').show().revolution(
+    -->
+
+    <script>
+        $(document).ready(function()    {
+            var apiRevoSlider = $('#rev_slider_irestaurant').show().revolution(
             {
                 sliderType:"standard",
                 jsFileLocation:"include/rs-plugin/js/",
@@ -155,4 +157,6 @@
         });
 
     </script><!-- END REVOLUTION SLIDER -->
+
+
 
