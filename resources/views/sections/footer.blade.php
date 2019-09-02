@@ -16,25 +16,32 @@
                     </div>
 
 
+
                     <div class="col_half col_last tright">
                         <div class="fright clearfix">
-                            <a href="https://www.facebook.com/FoxworthForCongress/" class="social-icon si-small si-borderless si-facebook">
+                            <a href="https://www.facebook.com/makstudiotx/" class="social-icon si-small si-borderless si-facebook">
                                 <i class="icon-facebook"></i>
                                 <i class="icon-facebook"></i>
                             </a>
 
-                            <a href="https://twitter.com/FoxworthFor14" class="social-icon si-small si-borderless si-twitter">
-                                <i class="icon-twitter"></i>
-                                <i class="icon-twitter"></i>
+                            <a href="#" class="social-icon si-small si-borderless si-pinterest">
+                                <i class="icon-pinterest"></i>
+                                <i class="icon-pinterest"></i>
                             </a>
 
 
-                            <a href="#" class="social-icon si-small si-borderless si-instagram">
+                            <a href="https://www.instagram.com/makstudio_us/?hl=en" class="social-icon si-small si-borderless si-instagram">
                                 <i class="icon-instagram"></i>
                                 <i class="icon-instagram"></i>
                             </a>
 
-<!--
+                    <!--
+
+                            <a href="#" class="social-icon si-small si-borderless si-twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+
                             <a href="#" class="social-icon si-small si-borderless si-gplus">
                                 <i class="icon-gplus"></i>
                                 <i class="icon-gplus"></i>

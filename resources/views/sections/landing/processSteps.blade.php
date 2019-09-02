@@ -6,21 +6,26 @@
 			<h2 class="text-title-light text-dark mb-5 ls1 uppercase">We handle all steps, from design to installation</h2>
 		</div>
 
-		<ul class="process-steps process-3 bottommargin clearfix">
+		<ul class="process-steps process-4 bottommargin clearfix">
 
 			<li>
 				<a href="#" class="i-circled i-alt divcenter">1</a>
-				<h5>Design and Pricing</h5>
+				<h5>Design and get pricing</h5>
 			</li>
 
 			<li>
 				<a href="#" class="i-circled i-alt divcenter">2</a>
-				<h5>We build your vision</h5>
+				<h5>We fabricate it for you</h5>
 			</li>
 
 			<li class="active">
 				<a href="#" class="i-circled i-alt divcenter">3</a>
-				<h5>Your unique space</h5>
+				<h5>Easy installation</h5>
+			</li>
+
+			<li class="active">
+				<a href="#" class="i-circled i-alt divcenter">3</a>
+				<h5>Your beautiful space</h5>
 			</li>
 
 		</ul>
