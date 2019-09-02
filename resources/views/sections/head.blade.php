@@ -30,8 +30,43 @@
     <link rel="stylesheet" href="/css/bs-select.css" type="text/css" />
     <link rel="stylesheet" href="/css/bs-switches.css" type="text/css" />
     <link rel="stylesheet" href="/css/radio-checkbox.css" type="text/css" />
+    <link rel="stylesheet" href="/css/layers.css" type="text/css" />
+    <link rel="stylesheet" href="/css/settings.css" type="text/css" />
 
 
     <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <style>
+
+        .revo-slider-emphasis-text {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-family: 'Raleway', sans-serif;
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+        }
+
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            width: 650px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: 'Raleway', sans-serif;
+        }
+        .tp-video-play-button { display: none !important; }
+
+        .tp-caption { white-space: nowrap; }
+
+    </style>
+
 

@@ -12,6 +12,14 @@ $(document).ready(function()	{
 
 	/*----------------------------------------------------*/
 
+
+
+	// Initialize all of the tool tips
+	$('[data-toggle="tooltip"]').tooltip();
+	$(".bt-switch").bootstrapSwitch();
+	$('.selectsplitter').selectsplitter();
+
+
 	// Initialize data to global variable
 	makStudio = initializeData();
 	
@@ -30,6 +38,8 @@ $(document).ready(function()	{
 
 
 
+
+
 	/*-------------------------------------------------------------
 
 		This is the bulk of the code. It handles the responses
@@ -37,12 +47,6 @@ $(document).ready(function()	{
 		end. This could be sliders, buttons, etc
 
 	/*-------------------------------------------------------------*/
-
-
-
-
-
-
 
 
 	$('#benchCameraCenter').click(function(event)	
@@ -75,9 +79,11 @@ $(document).ready(function()	{
 	{	
 		designType = event.target.id;
 
-		console.log('I am here');
-
-		console.log(designType);
+		// Delete old models
+		for (thisComponent in makStudio.containerNames )
+		{
+			document.getElementById(makStudio.containerNames[thisComponent] ).innerHTML='';
+		}
 
 		initializeModel( event.target.id )  
 
@@ -122,9 +128,41 @@ $(document).ready(function()	{
 
 	/* -------------------------------------- *
 
-	          API Calls for the Bench
+	          API Calls
 
 	/* ---------------------------------------*/
+
+	$('#finStyleCurved').click(function()	
+	{			
+		_fin_wall_api.parameters.updateAsync({name: "Panels Type", value: 0 });
+	});
+
+	$('#finStyleAngled').click(function()
+	{			
+		_fin_wall_api.parameters.updateAsync({name: "Panels Type", value: 1 });
+	});
+
+
+	$('#finMaterialBirch').click(function()
+	{			
+		_fin_wall_api.parameters.updateAsync({name: "Material", value: 0 });
+	});
+
+	$('#finMaterialLamBirch').click(function()
+	{			
+		_fin_wall_api.parameters.updateAsync({name: "Material", value: 1 });
+	});
+
+
+	$('#finMaterialMDF').click(function()
+	{			
+		_fin_wall_api.parameters.updateAsync({name: "Material", value: 2 });
+	});
+
+
+
+
+
 
 	$('.modelSlider, .modelDropdown').change(function(event)	
 	{	
@@ -157,18 +195,18 @@ $(document).ready(function()	{
 
 
 
-	$('.modelBoolean').find('.bt-switch').click(function(event)
-	{	
 
-		console.log('Here');
 
-		elemID = $(this).find('input:checkbox:first').attr('id');
 
-		console.log(elemID);
+
+
+	$('.modelSwitch').on('switchChange.bootstrapSwitch', function(e) 
+	{
+
 
 		for (thisComponent in makStudio.componentNames[designType])
 		{
-			if ( event.target.id == makStudio.componentNames[designType][thisComponent] )
+			if ( e.target.id == makStudio.componentNames[designType][thisComponent] )
 			{
 				var paramName = thisComponent;
 			}
@@ -177,20 +215,22 @@ $(document).ready(function()	{
 
 		if ( designType == 'bench' )
 		{
-			_bench_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).is(":checked") });
+			_bench_api.parameters.updateAsync({name: paramName, value: e.target.checked });
 		}
 
 		if ( designType == 'finWall' )
 		{
-			_fin_wall_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).is(":checked") });
+			_fin_wall_api.parameters.updateAsync({name: paramName, value: e.target.checked });
 		}
 
 		if ( designType == 'backlit' )
 		{
-			_backlit_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).is(":checked") });
+			_backlit_api.parameters.updateAsync({name: paramName, value: e.target.checked });
 		}
 
 	});
+
+
 
 
 });
@@ -283,21 +323,21 @@ function initializeData()
 				'Ripple Center Location (Left-Right) (%)' : 'rippleXSlider',
 				'Ripple Intensity' : 'rippleIntensitySlider',
 				'Roughness' : 'rippleRoughnessSlider',
-				'Fins Thickness' : 'finSpacingSlider',
-				'Spacing of Fins' : 'finRotationSlider',
+				'Fins Thickness' : 'finThicknessSlider',
+				'Spacing of Fins' : 'finSpacingSlider',
+				'Rotate Panels' : 'finRotationSlider',
 				'Position X Logo' : '',
 				'Position Z Logo' : '',
 				'Logo Intensity (%)' : '',
 				'Show Original Logo' : '',
+				'Show Human Scale' : 'finWallHumanScale',
+				'Show Dimensions' : 'finWallShowDimensions',
 
 				'Straight Panels Tolerance' : '',
 				'Back Panel Color' : '',
 				'Panels Type' : '',
-				'Rotate Panels' : '',
-				'Show Dimensions' : '',
 				'Material' : '',
 				'Logo?' : '',
-				'Show Human Scale' : '',
 				'Colored MDF' : ''
 
 			},
@@ -321,12 +361,13 @@ function initializeData()
 				'Show Dimensions?' : 'backlitShowDimensions',
 				'Ground Offset' : 'backlitOffsetSlider',
 
-				'Choose Pattern Variation' : '',
-				'Wave Amplitude' : '',
-				'Waves Depth' : '',
-				'Wall Roughness' : '',
-				'Wall Metalness' : '',
-				'Display Panel Divisions?' : '',
+				'Choose Pattern Variation' : 'backlitPatternSlider',
+				'Wave Amplitude' : 'backlitWaveAmpSlider',
+				'Waves Depth' : 'backlitWaveDepthSlider',
+				'Wall Roughness' : 'backlitRoughSlider',
+				'Wall Metalness' : 'backlitMetalSlider',
+				'Display Panel Divisions?' : 'backlitShowPanels',
+				'Show Human Scale?' : 'backlitHumanScale',
 
 				'Header Font' : '',
 				'Subheader' : '',
@@ -342,7 +383,7 @@ function initializeData()
 				'Logo Scale' : 'backlitLogoScaleSlider',
 				'MakLogo' : '',
 				'Create Flat Area?' : 'backlitFlatOnOff',
-				'Pattern After Logo?' : 'backlitPatterOnOff',
+				'Pattern After Logo?' : 'backlitPatternOnOff',
 
 				'Wall Color' : '',
 				'Logo and Text Color' : '',
@@ -365,6 +406,8 @@ function initializeData()
 				'Ripple Center Location (Down - Up) (%)' : 'slider',
 				'Rotate Panels' : 'slider',
 				'Fins Thickness' : 'slider',
+				'Spacing of Fins' : 'slider',
+				'Fin Rotation (deg)' : 'slider',
 				'Roughness' : 'slider',
 				'Show Dimensions' : 'boolean',
 				'Show Original Logo' : 'boolean',
@@ -373,11 +416,13 @@ function initializeData()
 				'Material' : 'dropdown',
 				'Logo?' : 'boolean',
 				'Ripple Center Location (Left-Right) (%)' : 'slider',
-				'Show Human Scale' : 'boolean',
 				'Spacing of Fins' : 'slider',
 				'Position Z Logo' : 'slider',
 				'Colored MDF' : 'swatch',
-				'Ripple Intensity' : 'slider'
+				'Ripple Intensity' : 'slider',
+				'Show Human Scale' : 'boolean',
+				'Show Dimensions' : 'boolean',
+				'Ground Offset' : 'slider',
 
 			},
 
@@ -397,9 +442,10 @@ function initializeData()
 				'LENGTH OF WALL' : 'slider',
 				'Height of Wall' : 'slider',
 				'Show Dimensions?' : 'boolean',
+				'Show Human Scale?' : 'boolean',
 				'Ground Offset' : 'slider',
 
-				'Choose Pattern Variation' : '',
+				'Choose Pattern Variation' : 'slider',
 				'Wave Amplitude' : 'slider',
 				'Waves Depth' : 'slider',
 				'Wall Roughness' : 'slider',
@@ -539,7 +585,6 @@ function setModelView( modelName )
 	}
 
 
-
 	// Hide all side menus
 	for (thisMenu in makStudio.sideMenus)
 	{
@@ -554,9 +599,6 @@ function setModelView( modelName )
 	// Show the side menu window
 	$('#'+makStudio['sideMenus'][modelName]).show();
 
-
-	// Display the proper text for the model
-	$("#designShow").text(makStudio['displayText'][modelName]);
 
 
 	// Show the dimensions submenu as the default
@@ -626,10 +668,24 @@ function setModelData( modelName )
 					makStudio.componentValues[modelName][camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
 				}
 
-				if ( makStudio.componentTypes[modelName][thisVar] == 'dropdowm' )
+				if ( makStudio.componentTypes[modelName][thisVar] == 'dropdown' )
 				{
 					//console.log('Setting value of '+makStudio.componentNames[modelName][thisVar]+' to '+element.value);
 					$( "#"+makStudio.componentNames[modelName][thisVar] ).val(element.value);
+				}
+
+				if ( makStudio.componentTypes[modelName][thisVar] == 'boolean' )
+				{
+					console.log('Setting value of '+makStudio.componentNames[modelName][thisVar]+' to '+element.value);
+					if ( element.value )
+					{
+						$( "#"+makStudio.componentNames[modelName][thisVar] ).prop('checked', true);
+						$( "#"+makStudio.componentNames[modelName][thisVar] ).attr('checked', true);
+					}else
+					{
+						$( "#"+makStudio.componentNames[modelName][thisVar] ).prop('checked', false);						
+						$( "#"+makStudio.componentNames[modelName][thisVar] ).attr('checked', false);						
+					}
 				}
 
 			}
@@ -667,12 +723,6 @@ function setModelData( modelName )
 /*-------------------------------------------*/
 function initializeComponents( modelName )
 {
-
-
-	// Initialize all of the tool tips
-	$('[data-toggle="tooltip"]').tooltip();
-	$(".bt-switch").bootstrapSwitch();
-	$('.selectsplitter').selectsplitter();
 
 
 	console.log('The model name is '+modelName);
@@ -729,12 +779,20 @@ function initializeComponents( modelName )
 			step: 1
 		});
 
+		$(".finThicknessSlider").ionRangeSlider({
+			grid: false,
+			min: 0.1,
+			max: 5,
+			step: 0.1
+		});
+
 		$(".finSpacingSlider").ionRangeSlider({
 			grid: false,
 			min: 3,
 			max: 10,
 			step: 1
 		});
+
 
 		$(".finRotationSlider").ionRangeSlider({
 			grid: false,
@@ -788,8 +846,8 @@ function initializeComponents( modelName )
 		$(".backlitLogoScaleSlider").ionRangeSlider({
 			grid: false,
 			min: 0,
-			max: 100,
-			step: 1
+			max: 1,
+			step: 0.1
 		});
 
 
@@ -809,15 +867,59 @@ function initializeComponents( modelName )
 		});
 
 
-		$(".backlitLogoScaleSlider").ionRangeSlider({
+		$(".backlitWaveDepthSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 3,
+			step: 0.1
+		});
+
+		$(".backlitWaveAmpSlider").ionRangeSlider({
+			grid: false,
+			min: 0.01,
+			max: 0.19,
+			step: 0.01
+		});
+
+		$(".backlitPatternSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 8,
+			step: 1
+		});
+
+		$(".backlitHeaderSlider").ionRangeSlider({
 			grid: false,
 			min: 0,
 			max: 100,
 			step: 1
 		});
 
+		$(".backlitSubheaderSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 100,
+			step: 1
+		});
+
+		$(".backlitMetalSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 1,
+			step: 0.1
+		});
+
+		$(".backlitRoughSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 1,
+			step: 0.1
+		});
+
+
 
 	}
+
 
 
 

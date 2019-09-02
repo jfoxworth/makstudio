@@ -238,6 +238,16 @@
 							<input class="finWallDepthSlider modelSlider"  id="finWallDepthSlider"/>
 						</div>
 
+						<div class="white-section modelBoolean" style="margin:20px 0px;">
+							<label>Show Dimensions</label>
+							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="finWallShowDimensions">
+						</div>
+
+						<div class="white-section modelBoolean" style="margin:20px 0px;">
+							<label>Show Human Scale</label>
+							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="finWallHumanScale">
+						</div>
+
 					</div>
 
 
@@ -280,6 +290,11 @@
 					<div id="finFin" class="parameterSet">
 
 						<div class="white-section" style="margin:10px 0px" >
+							<label>Fin Thickness (inches)</label>
+							<input class="finThicknessSlider modelSlider" id="finThicknessSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:10px 0px" >
 							<label>Fin Spacing (inches)</label>
 							<input class="finSpacingSlider modelSlider" id="finSpacingSlider"/>
 						</div>
@@ -293,12 +308,12 @@
 
 						<div class="row">
 
-							<div class="col_half divcenter hoverMe" id="finCurvedIcon">
+							<div class="col_half divcenter hoverMe" id="finStyleCurved">
 								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleCurved.jpg" width="100px">
 								<div class="center">Curved</div>
 							</div>
 
-							<div class="col_half divcenter col_last hoverMe" id="finAngledIcon">
+							<div class="col_half divcenter col_last hoverMe" id="finStyleAngled">
 								<img src="https://makstudio.s3.us-east-2.amazonaws.com/finStyleAngled.jpg" width="100px">
 								<div class="center">Angled</div>
 							</div>
@@ -312,7 +327,7 @@
 					<!-- Specifics for slat wall materials and colors -->
 					<div id="finMaterial" class="parameterSet">
 
-						<div class="row hoverMe hoverMeGrey divcenter">
+						<div class="row hoverMe hoverMeGrey divcenter" id="finMaterialBirch">
 							<img id="slatMaterialBirch" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirch.jpg" 
 								 width="100px"
@@ -321,7 +336,7 @@
 							<div class="divcenter" style="margin-top:10px"><h4>Baltic Birch</h4></div>
 						</div>
 
-						<div class="row hoverMe hoverMeGrey divcenter">
+						<div class="row hoverMe hoverMeGrey divcenter"  id="finMaterialLamBirch">
 							<img id="slatMaterialBirchLaminate" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirchLaminate.jpg" 
 								 width="100px"
@@ -330,7 +345,7 @@
 							<div class="divcenter" style="margin-top:10px"><h4>Baltic Birch Laminate</h4></div>
 						</div>
 
-						<div class="row hoverMe hoverMeGrey divcenter">
+						<div class="row hoverMe hoverMeGrey divcenter" id="finMaterialMDF">
 							<img id="slatMaterialMDF" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/coloredMDF.jpg" 
 								 width="100px"
@@ -364,14 +379,20 @@
 						</div>
 
 						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Pattern Settings">
+							<i id="backlitRippleButton" class="icon-line-target h3 parameterSelect"></i>
+						</div>
+
+						<div class="hoverMe col_one_fourth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Logo Settings">
 							<i id="backlitLogoButton" class="icon-line-upload h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fourth col_last center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Headers">
-							<i id="backlitHeadersButton" class="icon-font1 h3 parameterSelect"></i>
+							<i id="backlitHeadersButton" class="icon-font h3 parameterSelect"></i>
 						</div>
+
 
 					</div>
 
@@ -393,10 +414,18 @@
 
 						<div class="white-section modelBoolean" style="margin:20px 0px;">
 							<label>Show Dimensions</label>
-							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitShowDimensions">
+							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitShowDimensions">
 						</div>
 
+						<div class="white-section modelBoolean" style="margin:20px 0px;">
+							<label>Show Panel Divisions</label>
+							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitShowPanels">
+						</div>
 
+						<div class="white-section modelBoolean" style="margin:20px 0px;">
+							<label>Show Human Scale</label>
+							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitHumanScale">
+						</div>
 
 					</div>
 
@@ -406,7 +435,7 @@
 					<div id="backlitLogo" class="parameterSet">
 
 						<div class="white-section modelBoolean" style="margin:20px 0px;">
-							<input class="bt-switch" type="checkbox" checked data-on-text="Logo On" data-off-text="Logo Off" id="backlitLogoOnOff">
+							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Logo On" data-off-text="Logo Off" id="backlitLogoOnOff">
 						</div>
 
 						<div class="bottommargin" style="margin:20px 0px;">
@@ -430,14 +459,50 @@
 							<input class="backlitLogoZSlider modelSlider" id="backlitLogoZSlider"/>
 						</div>
 
+
+
+					</div>
+
+
+
+
+					<!-- Specifics for backlit walls ripples -->
+					<div id="backlitRipple" class="parameterSet">
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Wave Amplitude</label>
+							<input class="backlitWaveAmpSlider modelSlider" id="backlitWaveAmpSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Wave Depth</label>
+							<input class="backlitWaveDepthSlider modelSlider" id="backlitWaveDepthSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Wall Metalness</label>
+							<input class="backlitMetalSlider modelSlider" id="backlitMetalSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Wall Roughness</label>
+							<input class="backlitRoughSlider modelSlider" id="backlitRoughSlider"/>
+						</div>
+
 						<div class="white-section modelBoolean" style="margin:20px 0px;">
 							<label>Create Flat Area</label>
-							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitFlatOnOff">
+							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitFlatOnOff">
+						</div>
+
+
+						<div class="white-section" style="margin:20px 0px" >
+							<label>Choose Pattern Variation</label>
+							<input class="backlitPatternSlider modelSlider" id="backlitPatternSlider"/>
 						</div>
 
 						<div class="white-section modelBoolean" style="margin:20px 0px;">
 							<label>Pattern After Logo</label>
-							<input class="bt-switch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitPatternOnOff">
+							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitPatternOnOff">
 						</div>
 
 
@@ -453,10 +518,20 @@
     						<input type="text" class="form-control" id="backlitHeader" placeholder="Header (15 char)">
     					</div>
 
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Header Height</label>
+							<input class="backlitHeaderSlider modelSlider" id="backlitHeaderSlider"/>
+						</div>
+
 						<div class="row divcenter" style="margin:20px 0px">
 							<label for="backlitSubheader">Subheader</label>
     						<input type="text" class="form-control" id="backlitsubHeader" placeholder="Sub Header (30 char)">
     					</div>
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Subheader Height</label>
+							<input class="backlitSubheaderSlider modelSlider" id="backlitSubheaderSlider"/>
+						</div>
 
 					</div>
 

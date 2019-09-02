@@ -19,7 +19,7 @@
 
         @include('sections.header')
 
-        @include('sections.landing.slider')
+        @include('sections.landing.paraSlider')
 
 
         <!-- Content
