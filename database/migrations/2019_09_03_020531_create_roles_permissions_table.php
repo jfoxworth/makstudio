@@ -27,6 +27,8 @@ class CreateRolesPermissionsTable extends Migration
 			$table->primary(['role_id','permission_id']);
 
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

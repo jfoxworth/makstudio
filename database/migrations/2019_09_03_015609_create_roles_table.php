@@ -17,6 +17,7 @@ class CreateRolesTable extends Migration
             $table->bigIncrements('id');
             $table->string('slug'); //web-developer
             $table->string('name'); //Web Developer
+            $table->softDeletes();
             $table->timestamps();
         });
     }

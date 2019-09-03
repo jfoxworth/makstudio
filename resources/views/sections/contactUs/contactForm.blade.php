@@ -1,5 +1,6 @@
 <div class="container clearfix topmargin-lg">
 
+
 	<div class="heading-block center">
 		<h2>Want more information?</h2>
 		<span>Contact us for more information or a special request</span>
@@ -11,7 +12,11 @@
 
 			<div class="form-result"></div>
 
-			<form class="nobottommargin" id="template-contactform" name="template-contactform" action="../include/form.php" method="post">
+			<form class="nobottommargin" 
+				  id="template-contactform" 
+				  name="template-contactform" 
+				  action="/" 
+				  method="post">
 
 				<div class="form-process"></div>
 
