@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Build;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class BuildController extends Controller
 {
