@@ -35,6 +35,16 @@ class BuildController extends Controller
      */
     public function store(Request $request)
     {
+
+
+        $type = $request['file_type_id'];
+
+        $thisBuild = new Build;
+        $thisBuild->build_id = $request['buildType'];
+        $thisBuild->build_data = $request['buildData'];
+        $thisBuild->user_id = Auth::id();
+        $thisBuild->save();
+
         echo('Well, I got here ...');
     }
 

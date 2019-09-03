@@ -819,7 +819,7 @@ function saveModel(  )
 {
 	// Object to be sent to be saved
 	var modelObject = {};
-	modelObject['modelType']="bench";
+	modelObject['modelType']=modelType;
 
 	// For every entry saved in the array, get that value
 	// and save it into an object
@@ -846,7 +846,10 @@ function saveModel(  )
 	$.ajax({
 		url: "/saveModel",
 		method:"POST",
-		context: document.body
+		contents: : {
+			'buildType' : modelType,
+			'buildData' : modelObject
+		}
 	}).done(function() 
 	{
 		console.log('Done');
