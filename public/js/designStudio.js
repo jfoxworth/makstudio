@@ -122,13 +122,29 @@ $(document).ready(function()	{
 
 
 
-	$('#modelDisplay').click(function(event)	
+	$('#designViewModels').click(function(event)	
 	{	
+		// Hide and display the appropriate items
 		$("#benchDisplay, #finWallDisplay, #backlitDisplay, #planterWallDisplay, #deskDisplay, #facetedWallDisplay, #panelWallDisplay, #genslerWallDisplay").hide();
-		$("#modeDisplay").show();
+		$("#modelDisplay").show();
+
+
+		// Retrieve the model data for the user
+		retrieveModels();
+
+
 	});
 
 
+
+
+
+
+
+	$('#designSave').click(function(event)	
+	{	
+		saveModel();
+	});
 
 
 
@@ -649,7 +665,7 @@ function setModelView( modelName )
 	}
 
 	// Hide the list of models in case
-	$('#modeDisplay').hide();
+	$('#modelDisplay').hide();
 
 
 	// Hide all side menus
@@ -772,6 +788,70 @@ function setModelData( modelName )
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------*
+
+	This function saves the current mode
+	in the database
+
+/*-------------------------------------------*/
+function saveModel(  )
+{
+	// Object to be sent to be saved
+	var modelObject = {};
+
+	// For every entry saved in the array, get that value
+	// and save it into an object
+	for (nameComponent in makStudio.componentNames[designType] )
+	{
+
+		for (typeComponent in makStudio.componentTypes[designType] )
+		{
+
+			if ( nameComponent == typeComponent )
+			{
+				if ( ( makStudio.componentTypes[designType][typeComponent] == "slider" ) ||
+					 ( makStudio.componentTypes[designType][typeComponent] == "dropdown" ) )
+				{
+					modelObject[thisComponent] = $('#'+thisComponent).val();
+				}
+			}
+
+		}
+	}
+
+	console.log(modelObject);
+
+}
+
+
+
+
+
+
+/*-------------------------------------------*
+
+	This function gets the models that a
+	user has saved
+
+/*-------------------------------------------*/
+function retrieveModels(  )
+{
+
+
+}
+
+
 
 
 
