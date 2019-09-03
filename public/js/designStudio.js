@@ -844,9 +844,9 @@ function saveModel(  )
 	console.log(modelObject);
 
 	$.ajax({
-		url: "/saveModel",
-		method:"POST",
-		contents: : {
+		url : "/saveModel",
+		method :"POST",
+		contents :  {
 			'buildType' : modelType,
 			'buildData' : modelObject
 		}
