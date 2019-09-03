@@ -10,8 +10,32 @@
 			<div class="widget clearfix" style="width:80%">
 
 
+
+				<h4 class="center" style="margin-bottom:5px">Design Center</h4>
+
+				<div class="row divcenter">
+
+					@guest
+						<div class="hoverMe col_one_fourth center designType nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Login to save models">
+							<i id="designLogin" class="icon-user21 h3"></i>
+						</div>
+					@else
+						<div class="hoverMe col_one_fourth center designType nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="View my saved models">
+							<i id="designViewModels" class="icon-user21 h3"></i>
+						</div>
+
+						<div class="hoverMe col_one_fourth center designType nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Save Model">
+							<i id="designSave" class="icon-save2 h3"></i>
+						</div>
+					@endguest
+
+				</div>
+
 	
-				<h4 class="center" style="margin-bottom:5px">Select Design Type</h4>
+				<h4 class="center" style="margin-bottom:5px">Select Design</h4>
 
 				<div class="row divcenter">
 
