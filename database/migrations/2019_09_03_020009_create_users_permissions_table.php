@@ -39,5 +39,16 @@ class CreateUsersPermissionsTable extends Migration
     {
         Schema::dropIfExists('users_permissions');
     }
+
+
+
+    protected function setKeysForSaveQuery(Builder $query)
+    {
+        $query
+            ->where('pk_1', '=', $this->getAttribute('pk_1'))
+            ->where('pk_2', '=', $this->getAttribute('pk_2'));
+        return $query;
+    }
+    
 }
 

@@ -18,7 +18,7 @@ trait HasPermissionsTrait {
 	   return (bool) $this->permissions->where('slug', $permission->slug)->count();
 	}
 
-	/*
+	
 
    public function roles() {
       return $this->belongsToMany(Role::class,'users_roles');
@@ -85,7 +85,7 @@ trait HasPermissionsTrait {
 		return $this;
 	}
 
-	*/
+	
 
 
 }
