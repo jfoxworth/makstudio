@@ -192,6 +192,7 @@ $(document).ready(function()	{
 	// with the intent to delete it
 	$(document).on('click', '.deleteModel', function(event)
 	{	
+		console.log(event);
 		$.ajax({
 			url : "/deleteModel/"+event.target.id,
 			method :"DELETE"
