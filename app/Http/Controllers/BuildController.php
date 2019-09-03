@@ -16,7 +16,7 @@ class BuildController extends Controller
      */
     public function index()
     {
-        //
+        return Build::where( ['user_id', '=', Auth::id()] )->find();
     }
 
     /**
@@ -38,8 +38,8 @@ class BuildController extends Controller
     public function store(Request $request)
     {
 
-
-        $type = $request['file_type_id'];
+        echo($request['buildType']);
+        echo($request['buildData']);
 
         $thisBuild = new Build;
         $thisBuild->build_id = $request['buildType'];

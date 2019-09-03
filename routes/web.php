@@ -84,6 +84,9 @@ Route::get('/designStudio', function () {
 
 
 
+// Retrieve all user models
+Route::get('/getModels', 'BuildController@index');
+
 
 // Save a model
 Route::post('/saveModel', 'BuildController@store');
