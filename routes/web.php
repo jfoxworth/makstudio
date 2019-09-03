@@ -82,6 +82,10 @@ Route::get('/designStudio', function () {
     return view('layouts.designStudio');
 });
 
+
+
 Auth::routes();
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
