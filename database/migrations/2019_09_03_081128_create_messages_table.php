@@ -23,7 +23,7 @@ class CreateMessagesTable extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('user_id');          // ID of user that sent the message (if one exists)
+            $table->bigInteger('user_id');          // ID of user that sent the message (if one exists)
             $table->text('message_data');       // Content of message
             $table->softDeletes();
             $table->timestamps();

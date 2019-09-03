@@ -23,7 +23,7 @@ class CreateBuildsTable extends Migration
     {
         Schema::create('builds', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->int('user_id');             // ID of user that stored the build
+            $table->bigInteger('user_id');             // ID of user that stored the build
             $table->text('build_data');         // Content of build
             $table->string('build_id');         // Something to identify that build - bench, fin wall, etc
             $table->softDeletes();
