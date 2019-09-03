@@ -16,7 +16,7 @@ class BuildController extends Controller
      */
     public function index()
     {
-        return Build::where( ['user_id', '=', Auth::id()] )->find();
+        return Build::where( [['user_id', '=', Auth::id()]] )->find();
     }
 
     /**
