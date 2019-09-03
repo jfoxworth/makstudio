@@ -824,7 +824,7 @@ function saveModel( modelName )
 {
 	// Object to be sent to be saved
 	var modelObject = {};
-	modelObject['modelType']=modelType;
+	modelObject['modelType']=designType;
 	modelObject['modelName']=modelName;
 
 	// For every entry saved in the array, get that value
@@ -853,7 +853,7 @@ function saveModel( modelName )
 		url : "/saveModel",
 		method :"POST",
 		contents :  {
-			'buildType' : modelType,
+			'buildType' : designType,
 			'buildData' : modelObject
 		}
 	}).done(function() 
