@@ -953,7 +953,7 @@ function retrieveModels(  )
 	        var tr = $("<tr></tr>");
 	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.modelName +"</td>");
 	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
-	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i class='icon-remove'></i></td>");
+	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td>");
 
 	        $("#userModelList").append(tr);
 	    });
