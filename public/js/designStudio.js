@@ -150,11 +150,16 @@ $(document).ready(function()	{
 
 	$('#designSave').click(function(event)	
 	{	
-		saveModel();
+		console.log('Here');
+		// saveModel();
 	});
 
 
-
+	$('#saveModelButton').click(function(event)	
+	{	
+		console.log('Here 2');
+		// saveModel();
+	});
 
 
 
