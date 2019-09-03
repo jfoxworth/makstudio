@@ -947,12 +947,10 @@ function retrieveModels(  )
 		var tr="<tr style='padding:10px 0px;'><th style='width:300px;'>Model Name</th><th style='width:300px;'>Date Created</th></tr>"
         $("#userModelList").append(tr);
 
-		$.each(data, function(index, obj){
+		$.each(userModelData, function(index, obj){
 	        
-			var modelData = JSON.parse(obj.build_data);
-
 	        var tr = $("<tr></tr>");
-	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ modelData.modelName +"</td>");
+	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.modelName +"</td>");
 	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
 	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i class='icon-remove'></i></td>");
 
