@@ -14,7 +14,6 @@ class CreateUsersPermissionsTable extends Migration
     public function up()
     {
         Schema::create('users_permissions', function (Blueprint $table) {
-            $table->bigIncrements('id');
 
 		    $table->bigInteger('user_id')->unsigned();
 		    $table->bigInteger('permission_id')->unsigned();
@@ -49,6 +48,6 @@ class CreateUsersPermissionsTable extends Migration
             ->where('pk_2', '=', $this->getAttribute('pk_2'));
         return $query;
     }
-    
+
 }
 
