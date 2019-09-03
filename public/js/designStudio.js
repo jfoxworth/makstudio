@@ -884,13 +884,14 @@ function retrieveModels(  )
 
 	$.get( "getModels", function( data ) 
 	{
-		var modelData = JSON.parse(data);
-		console.log(modelData);
+		console.log(data);
 
-		$.each(modelData, function(index, obj){
+		$.each(data, function(index, obj){
 	        
-	        var tr = $("<tr></tr>");
-	        tr.append("<td>"+ obj.build_Data.modelName +"</td>");
+			var modelData = JSON.parse(obj.build_data);
+
+	        var tr = $("<tr class='potenModel' id='"+obj.id+"'></tr>");
+	        tr.append("<td>"+ modelData.modelName +"</td>");
 	        tr.append("<td>"+ obj.created_at +"</td>");
 
 	        $("#userModelList").append(tr);
