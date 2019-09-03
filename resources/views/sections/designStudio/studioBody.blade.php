@@ -16,21 +16,26 @@
 				<div class="row divcenter">
 
 					@guest
-						<div class="hoverMe col_one_fourth center designType nobottommargin"
+						<div class="hoverMe col_one_fourth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Login to save models">
 							<i id="designLogin" class="icon-user h3"></i>
 						</div>
 					@else
-						<div class="hoverMe col_one_fourth center designType nobottommargin"
+						<div class="hoverMe col_one_fourth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="View my saved models">
 							<i id="designViewModels" class="icon-user h3"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center designType nobottommargin"
+						<div class="hoverMe col_one_fourth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Save Model">
 							<i id="designSave" class="icon-save2 h3"></i>
 						</div>
 					@endguest
+
+					<div class="hoverMe col_one_fourth center nobottommargin"
+						 data-toggle="tooltip" data-placement="top" title="Recenter Model View">
+						<i id="designLogin" class="icon-line-camera h3"></i>
+					</div>
 
 				</div>
 
