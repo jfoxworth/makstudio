@@ -886,7 +886,7 @@
 		</div>
 	</div>
 
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
+	<div class="col_last col_three_fourth topmargin nobottommargin">
 
 		<div id="modelDisplay" style="width:900px; height:600px;">
 			
@@ -899,7 +899,7 @@
 						<div class="card-header">Saved Models for user {{{ Auth::user()->name }}} - {{{ Auth::user()->email }}}</div> 
 
 						<div class="card-body">
-							@include('sections.designStudio.modelList')
+							<div id="userModelList"></div>
 						</div>
 
 					</div>

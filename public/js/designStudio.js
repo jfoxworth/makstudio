@@ -886,6 +886,9 @@ function retrieveModels(  )
 	{
 		console.log(data);
 
+		var tr="<tr><th style='width:50%;''>Model Name</th><th>Date Created</th></tr>"
+        $("#userModelList").append(tr);
+
 		$.each(data, function(index, obj){
 	        
 			var modelData = JSON.parse(obj.build_data);
