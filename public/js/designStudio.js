@@ -182,7 +182,7 @@ $(document).ready(function()	{
 	// WHen the user clicks on a displayed model
 	// that they have saved adn they want to 
 	// view it
-	$(document).on('click', '.potenModel', function()
+	$(document).on('click', '.potenModel', function(event)
 	{	
 		console.log('click');
 	});
@@ -190,7 +190,7 @@ $(document).ready(function()	{
 
 	// When the user clicks on a displayed model
 	// with the intent to delete it
-	$(document).on('click', '.deleteModel', function()
+	$(document).on('click', '.deleteModel', function(event)
 	{	
 		$.ajax({
 			url : "/deleteModel/"+event.target.id,
