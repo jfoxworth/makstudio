@@ -16,7 +16,10 @@ class BuildController extends Controller
      */
     public function index()
     {
-        return Build::where( [['user_id', '=', Auth::id()]] )->find();
+        echo('---');
+        echo(Auth::id());
+        echo('---');
+        return Build::where( 'user_id', '=', Auth::id() )->find();
     }
 
     /**
