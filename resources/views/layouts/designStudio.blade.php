@@ -19,14 +19,12 @@
 
 		@include('sections.thirdHeader')
 
-		@include("sections.designStudio.pageTitle")
-
 
 		<!-- Content
 		============================================= -->
 		<section id="content" style="margin-bottom:0px;">
 
-			<div class="content-wrap">
+			<div class="content-wrap" style="padding-top:20px">
 
 				@include("sections.designStudio.studioBody")
 
