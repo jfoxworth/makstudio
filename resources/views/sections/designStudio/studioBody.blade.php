@@ -28,19 +28,19 @@
 
 						<div class="hoverMe col_one_fourth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Save Model">
-							<i id="designSave" class="icon-save2 h3"></i>
+							<i id="designSave" class="icon-save h3"></i>
 						</div>
 					@endguest
 
 					<div class="hoverMe col_one_fourth center nobottommargin"
 						 data-toggle="tooltip" data-placement="top" title="Recenter Model View">
-						<i id="designLogin" class="icon-line-camera h3"></i>
+						<i id="recenterCamera" class="icon-line-camera h3"></i>
 					</div>
 
 				</div>
 
 	
-				<h4 class="center" style="margin-bottom:5px">Select Design</h4>
+				<h4 class="center" style="margin-bottom:5px; margin-top:20px">Select Design</h4>
 
 				<div class="row divcenter">
 
@@ -880,35 +880,17 @@
 
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
-
-		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
-			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
-			<i id="benchCameraCenter" class="icon-line-camera h3 hoverMe "></i>
-		</div>
-
 		<div id="benchDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
-
-		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
-			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
-			<i id="finWallCameraCenter" class="icon-line-camera h3 hoverMe "></i>
-		</div>
-
 		<div id="finWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
-
-		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
-			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
-			<i id="backlitCameraCenter" class="icon-line-camera h3 hoverMe "></i>
-		</div>
-
 		<div id="backlitWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
@@ -933,12 +915,6 @@
 
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
-
-		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
-			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
-			<i id="facetedCameraCenter" class="icon-line-camera h3 hoverMe "></i>
-		</div>
-
 		<div id="facetedWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
@@ -951,12 +927,6 @@
 
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
-
-		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
-			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
-			<i id="genslerCameraCenter" class="icon-line-camera h3 hoverMe "></i>
-		</div>
-
 		<div id="genslerWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 

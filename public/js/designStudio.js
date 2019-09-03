@@ -119,6 +119,33 @@ $(document).ready(function()	{
 
 
 
+	$('#recenterCamera').click(function(event)	
+	{	
+		if ( designType == 'bench' )
+		{
+			_bench_api.scene.camera.zoomAsync();
+		}
+
+		if ( designType == 'finWall' )
+		{
+			_fin_wall_api.scene.camera.zoomAsync();
+		}
+
+		if ( designType == 'faceted' )
+		{
+			_faceted_api.scene.camera.zoomAsync();
+		}
+
+		if ( designType == 'backlit' )
+		{
+			_backlit_api.scene.camera.zoomAsync();
+		}
+
+
+	});
+
+
+
 
 
 
