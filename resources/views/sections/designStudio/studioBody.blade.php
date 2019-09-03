@@ -28,7 +28,7 @@
 
 						<div class="hoverMe col_one_fourth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Save Current Model">
-							<button data-toggle="modal" data-target="#exampleModal"><i id="designSave" class="icon-save h3"></i></button>
+							<i id="designSave" class="icon-save h3"></i>
 						</div>
 					@endguest
 
@@ -967,17 +967,13 @@
 
 
 
-<!-- Button trigger modal --
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modelNameModal" tabindex="-1" role="dialog" aria-labelledby="modelNameLabel" aria-hidden="true">
   <div class="modal-dialog .modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Model Name</h5>
+        <h5 class="modal-title" id="modelNameLabel">Model Name</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

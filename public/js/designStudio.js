@@ -148,11 +148,17 @@ $(document).ready(function()	{
 
 
 
+	$('#designSave').click(function(event)	
+	{	
+		$('#modelNameModal').modal('show');
+	});
+
 
 	$('#saveModelButton').click(function(event)	
 	{	
 		console.log('Here 2');
-		// saveModel();
+		$('#modelNameModal').modal('hide');
+		saveModel($('#modelName').val() );
 	});
 
 
@@ -814,11 +820,12 @@ function setModelData( modelName )
 	in the database
 
 /*-------------------------------------------*/
-function saveModel(  )
+function saveModel( modelName )
 {
 	// Object to be sent to be saved
 	var modelObject = {};
 	modelObject['modelType']=modelType;
+	modelObject['modelName']=modelName;
 
 	// For every entry saved in the array, get that value
 	// and save it into an object
