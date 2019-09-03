@@ -92,7 +92,7 @@ Route::get('/getModels', 'BuildController@index');
 Route::post('/saveModel', 'BuildController@store');
 
 // Delete a model
-Route::delete('/deleteModel', 'BuildController@destroy');
+Route::delete('/deleteModel/{id}', 'BuildController@destroy');
 
 
 Auth::routes();
