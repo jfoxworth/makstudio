@@ -19,7 +19,7 @@ class BuildController extends Controller
         echo('---');
         echo(Auth::id());
         echo('---');
-        return Build::where( 'user_id', '=', Auth::id() )->find();
+        return Build::where( 'user_id', '=', Auth::id() )->get();
     }
 
     /**
