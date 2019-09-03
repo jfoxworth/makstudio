@@ -148,12 +148,6 @@ $(document).ready(function()	{
 
 
 
-	$('#designSave').click(function(event)	
-	{	
-		console.log('Here');
-		// saveModel();
-	});
-
 
 	$('#saveModelButton').click(function(event)	
 	{	
