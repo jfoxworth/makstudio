@@ -693,6 +693,9 @@ function setModelView( modelName )
 	$('.cameraCenter').hide();
 	$('#'+modelName+'CameraCenter').parent().show();
 
+
+	$( '#saveMessageAlert' ).hide( );
+
 }
 
 
@@ -835,6 +838,7 @@ function saveModel(  )
 
 	$.ajax({
 		url: "/saveModel",
+		method:"POST",
 		context: document.body
 	}).done(function() 
 	{
