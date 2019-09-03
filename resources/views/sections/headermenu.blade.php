@@ -10,29 +10,17 @@
 
 			<li><a href="/aboutUs"><div>About Us</div></a></li>
 
+			@guest
+				<li data-toggle="tooltip" data-placement="bottom" title="Create Account / Login">
+					<a href="/register"><li class="icon-user21"></li></a>
+				</li>
+			@else
+				<li data-toggle="tooltip" data-placement="bottom" title="See My Models">
+					<a href="/home"><li class="icon-user21"></li></a>
+				</li>
+			@endguest
+
 		</ul>
-
-		<!-- Top Search
-		============================================= --
-		<div class="social-box fright clearfix">
-			<a href="https://www.facebook.com/" class="social-icon si-small si-borderless si-facebook">
-				<i class="icon-facebook"></i>
-				<i class="icon-facebook"></i>
-			</a>
-
-			<a href="https://twitter.com/" class="social-icon si-small si-borderless si-twitter">
-				<i class="icon-twitter"></i>
-				<i class="icon-twitter"></i>
-			</a>
-
-			
-			<a href="#" class="social-icon si-small si-borderless si-instagram">
-				<i class="icon-instagram"></i>
-				<i class="icon-instagram"></i>
-			</a>
-	
-
-		</div><!-- #top-search end -->
 
 
 	</nav><!-- #primary-menu end -->
