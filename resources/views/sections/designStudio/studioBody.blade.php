@@ -11,7 +11,7 @@
 
 
 
-				<h4 class="center" style="margin-bottom:5px">Design Center</h4>
+				<h4 class="center" style="margin-bottom:5px; margin-top:10px">Design Center</h4>
 
 				<div class="row divcenter">
 
@@ -27,7 +27,7 @@
 						</div>
 
 						<div class="hoverMe col_one_fourth center nobottommargin"
-							 data-toggle="tooltip" data-placement="top" title="Save Model">
+							 data-toggle="tooltip" data-placement="top" title="Save Current Model">
 							<i id="designSave" class="icon-save h3"></i>
 						</div>
 					@endguest
@@ -877,6 +877,33 @@
 	</div>
 
 
+
+
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+
+		<div id="modelDisplay" style="width:900px; height:600px;">
+			
+			<div class="row justify-content-center">
+
+				<div class="col-md-8">
+
+					<div class="card">
+
+						<div class="card-header">Saved Models for user {{{ Auth::user()->name }}} - {{{ Auth::user()->email }}}</div> 
+
+						<div class="card-body">
+							@include('sections.designStudio.modelList')
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
 
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">

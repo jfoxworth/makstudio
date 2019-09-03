@@ -15,7 +15,7 @@
 					<a href="/register"><i class="icon-user"></i></a>
 				</li>
 			@else
-				<li data-toggle="tooltip" data-placement="bottom" title="See My Models">
+				<li data-toggle="tooltip" data-placement="bottom" title="{{{ Auth::user()->name }}}">
 					<a href="/home"><i class="icon-user"></i></a>
 				</li>
 			@endguest
