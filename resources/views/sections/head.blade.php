@@ -1,7 +1,7 @@
     <meta property="og:title" content="Mak Studios">
     <meta property="og:image" content="">
     <meta property="og:description" content="Mak Studios designs ...">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146159091-1"></script>
