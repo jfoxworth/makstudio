@@ -81,7 +81,7 @@ $(document).ready(function()	{
 
 
 
-	// Slat Wall - When the user changes the type of design they are working on
+	// When the user clicks on a set of parameters to show
 	$('.parameterSelect').click(function(event)	
 	{	
 		// Hide all of the options
@@ -100,7 +100,8 @@ $(document).ready(function()	{
 
 
 
-
+	// When the user clicks on the camera icon in the top
+	// menu to recenter the view
 	$('#recenterCamera').click(function(event)	
 	{	
 		if ( designType == 'bench' )
@@ -128,7 +129,7 @@ $(document).ready(function()	{
 
 
 
-
+	// When the user wants to see the list of models that they have saved
 	$('#designViewModels').click(function(event)	
 	{	
 		// Hide and display the appropriate items
@@ -147,19 +148,68 @@ $(document).ready(function()	{
 
 
 
-
+	// When the user clicks on the save icon in the 
+	// top line to save a model design
 	$('#designSave').click(function(event)	
 	{	
 		$('#modelNameModal').modal('show');
 	});
 
 
+	// When the user has given that model to be
+	// saved a name in the modal window and
+	// then proceeds to save it
 	$('#saveModelButton').click(function(event)	
 	{	
-		console.log('Here 2');
 		$('#modelNameModal').modal('hide');
 		saveModel($('#modelName').val() );
 	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// WHen the user clicks on a displayed model
+	// that they have saved adn they want to 
+	// view it
+	$('.potenModel').click(function(event)	
+	{	
+
+	}
+
+
+	// When the user clicks on a displayed model
+	// with the intent to delete it
+	$('.deleteModel').click(function(event)	
+	{	
+		$.ajax({
+			url : "/deleteModel/"+event.target.id,
+			method :"DELETE"
+
+		}).done(function() 
+		{
+			$( '#deleteMessageAlert' ).show( );
+			setTimeout(
+				function() 
+				{
+	    			$( '#deleteMessageAlert' ).hide( );
+				}, 3000);
+		});
+		
+	}
+
+
+
 
 
 
@@ -707,6 +757,7 @@ function setModelView( modelName )
 
 
 	$( '#saveMessageAlert' ).hide( );
+	$( '#deleteMessageAlert' ).hide( );
 
 }
 
@@ -886,7 +937,7 @@ function retrieveModels(  )
 	{
 		console.log(data);
 
-		var tr="<tr><th style='width:50%;''>Model Name</th><th>Date Created</th></tr>"
+		var tr="<tr style='padding:10px 0px;'><th style='width:300px;'>Model Name</th><th>Date Created</th></tr>"
         $("#userModelList").append(tr);
 
 		$.each(data, function(index, obj){
@@ -896,6 +947,7 @@ function retrieveModels(  )
 	        var tr = $("<tr class='potenModel' id='"+obj.id+"'></tr>");
 	        tr.append("<td>"+ modelData.modelName +"</td>");
 	        tr.append("<td>"+ obj.created_at +"</td>");
+	        tr.append("<td id='"+obj.id+"' class='deleteModel'><i class='icon-delete'></i></td>");
 
 	        $("#userModelList").append(tr);
 	    });

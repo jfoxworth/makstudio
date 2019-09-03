@@ -886,6 +886,13 @@
 		</div>
 	</div>
 
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+		<div class="style-msg dangermsg" id="deleteMessageAlert">
+			<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Deleted!</strong> A model was successfully deleted from the stored items</div>
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		</div>
+	</div>
+
 	<div class="col_last col_three_fourth topmargin nobottommargin">
 
 		<div id="modelDisplay" style="width:900px; height:600px;">

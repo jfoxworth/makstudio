@@ -91,6 +91,8 @@ Route::get('/getModels', 'BuildController@index');
 // Save a model
 Route::post('/saveModel', 'BuildController@store');
 
+// Delete a model
+Route::delete('/deleteModel', 'BuildController@destroy');
 
 
 Auth::routes();

@@ -88,8 +88,11 @@ class BuildController extends Controller
      * @param  \App\Build  $build
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Build $build)
+    public function destroy($id)
     {
-        //
+        echo('Got here with '.$id);
+        $thisBuild = Build::findOrFail($id);
+        $thisBuild ->delete(); 
     }
+
 }
