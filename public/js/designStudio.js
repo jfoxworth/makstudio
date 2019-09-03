@@ -90,31 +90,6 @@ $(document).ready(function()	{
 
 
 
-	$('.cameraCenter').click(function(event)	
-	{	
-		if ( designType == 'bench' )
-		{
-			_bench_api.scene.camera.zoomAsync();
-		}
-
-		if ( designType == 'finWall' )
-		{
-			_fin_wall_api.scene.camera.zoomAsync();
-		}
-
-		if ( designType == 'faceted' )
-		{
-			_faceted_api.scene.camera.zoomAsync();
-		}
-
-		if ( designType == 'backlit' )
-		{
-			_backlit_api.scene.camera.zoomAsync();
-		}
-
-
-	});
-
 
 
 
@@ -146,6 +121,12 @@ $(document).ready(function()	{
 
 
 
+
+	$('#modelDisplay').click(function(event)	
+	{	
+		$("#benchDisplay, #finWallDisplay, #backlitDisplay, #planterWallDisplay, #deskDisplay, #facetedWallDisplay, #panelWallDisplay, #genslerWallDisplay").hide();
+		$("#modeDisplay").show();
+	});
 
 
 
@@ -666,6 +647,9 @@ function setModelView( modelName )
 	{
 		$('#'+makStudio['containerNames'][thisContainer]).hide();
 	}
+
+	// Hide the list of models in case
+	$('#modeDisplay').hide();
 
 
 	// Hide all side menus
