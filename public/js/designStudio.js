@@ -852,7 +852,7 @@ function saveModel( modelName )
 	$.ajax({
 		url : "/saveModel",
 		method :"POST",
-		contents :  {
+		data :  {
 			'buildType' : designType,
 			'buildData' : modelObject
 		}
