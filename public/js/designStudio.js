@@ -809,6 +809,7 @@ function saveModel(  )
 {
 	// Object to be sent to be saved
 	var modelObject = {};
+	modelObject['modelType']="bench";
 
 	// For every entry saved in the array, get that value
 	// and save it into an object
@@ -823,7 +824,7 @@ function saveModel(  )
 				if ( ( makStudio.componentTypes[designType][typeComponent] == "slider" ) ||
 					 ( makStudio.componentTypes[designType][typeComponent] == "dropdown" ) )
 				{
-					modelObject[thisComponent] = $('#'+thisComponent).val();
+					modelObject[nameComponent] = $('#'+makStudio.componentNames[designType][nameComponent]).val();
 				}
 			}
 
@@ -831,6 +832,15 @@ function saveModel(  )
 	}
 
 	console.log(modelObject);
+
+	$.ajax({
+		url: "/saveModel",
+		context: document.body
+	}).done(function() 
+	{
+		console.log('Done');
+		$( '#saveMessageAlert' ).show( );
+	});
 
 }
 

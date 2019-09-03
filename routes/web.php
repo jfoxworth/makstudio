@@ -77,10 +77,16 @@ Route::get('/aboutUs', function () {
 
 
 
-// About Us
+// Design Studio
 Route::get('/designStudio', function () {
     return view('layouts.designStudio');
 });
+
+
+
+
+// Save a model
+Route::post('/saveModel', 'BuildController@store');
 
 
 

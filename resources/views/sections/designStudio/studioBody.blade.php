@@ -879,6 +879,11 @@
 
 
 
+	<div class="style-msg successmsg" id="saveMessageAlert">
+		<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Saved!</strong> This model can be accessed from this page in the future.</div>
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+	</div>
+
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
 
 		<div id="modelDisplay" style="width:900px; height:600px;">

@@ -35,7 +35,7 @@ class BuildController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo('Well, I got here ...');
     }
 
     /**
