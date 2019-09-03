@@ -6,6 +6,20 @@ use App\Role;
 
 trait HasPermissionsTrait {
 
+
+
+
+	protected function hasPermissionTo($permission) {
+	   return $this->hasPermission($permission);
+	}
+
+
+	protected function hasPermission($permission) {
+	   return (bool) $this->permissions->where('slug', $permission->slug)->count();
+	}
+
+	/*
+
    public function roles() {
       return $this->belongsToMany(Role::class,'users_roles');
 
@@ -29,14 +43,6 @@ trait HasPermissionsTrait {
 	}
 
 
-	protected function hasPermissionTo($permission) {
-	   return $this->hasPermission($permission);
-	}
-
-
-	protected function hasPermission($permission) {
-	   return (bool) $this->permissions->where('slug', $permission->slug)->count();
-	}
 
 
 	public function hasPermissionThroughRole($permission) 
@@ -78,6 +84,8 @@ trait HasPermissionsTrait {
 		$this->permissions()->detach($permissions);
 		return $this;
 	}
+
+	*/
 
 
 }
