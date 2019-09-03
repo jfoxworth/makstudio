@@ -12,7 +12,7 @@
 
 			@guest
 				<li data-toggle="tooltip" data-placement="bottom" title="Create Account / Login">
-					<i class="icon-user21"><a href="/register"></i>
+					<i class="icon-user21"><a href="/register"></a></i>
 				</li>
 			@else
 				<li data-toggle="tooltip" data-placement="bottom" title="See My Models">
