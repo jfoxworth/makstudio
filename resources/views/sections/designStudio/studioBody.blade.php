@@ -27,8 +27,8 @@
 						</div>
 
 						<div class="hoverMe col_one_fourth center nobottommargin"
-							 data-toggle="tooltip" data-placement="top" title="Save Current Model" data-toggle="modal" data-target="#exampleModal">
-							<i id="designSave" class="icon-save h3"></i>
+							 data-toggle="tooltip" data-placement="top" title="Save Current Model">
+							<button data-toggle="modal" data-target="#exampleModal"><i id="designSave" class="icon-save h3"></i></button>
 						</div>
 					@endguest
 
@@ -977,13 +977,14 @@
   <div class="modal-dialog .modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Model Name</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+      	<h5>Enter a name for the model that will help you identify it later</h5>
+        <input type="text" class="form-control" id="modelName" placeholder="Enter Name for Model"
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
