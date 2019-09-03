@@ -939,8 +939,10 @@ function retrieveModels(  )
 
 		window['userModelData'] = data;
 		$.each(userModelData, function(index, obj){
-			userModelData[index]['buildData'] = JSON.parse(obj.build_data);
+			userModelData[index]['build_data'] = JSON.parse(obj.build_data);
 		});
+
+        $("#userModelList").innerHTML = '';
 
 		var tr="<tr style='padding:10px 0px;'><th style='width:300px;'>Model Name</th><th style='width:300px;'>Date Created</th></tr>"
         $("#userModelList").append(tr);
