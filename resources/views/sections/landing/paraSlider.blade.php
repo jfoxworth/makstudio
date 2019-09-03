@@ -54,18 +54,20 @@
 				-->
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-					data-x="600"
-					data-y="230"
-					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-					data-speed="800"
-					data-start="1200"
-					data-easing="easeOutQuad"
-					data-splitin="none"
-					data-splitout="none"
-					data-elementdelay="0.01"
-					data-endelementdelay="0.1"
-					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 3; color: #222; font-size: 45px;">Customize your interior space</div>
+						data-x="600"
+						data-y="230"
+						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+						data-speed="800"
+						data-start="1200"
+						data-easing="easeOutQuad"
+						data-splitin="none"
+						data-splitout="none"
+						data-elementdelay="0.01"
+						data-endelementdelay="0.1"
+						data-endspeed="1000"
+						data-endeasing="Power4.easeIn" 
+					style="z-index: 3; color: #222; font-size: 45px;">Customize your interior space
+					</div>
 
 
 					<!--

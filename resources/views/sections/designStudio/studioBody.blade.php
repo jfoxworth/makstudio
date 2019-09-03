@@ -893,6 +893,9 @@
 		</div>
 	</div>
 
+
+	@guest
+	@else
 	<div class="col_last col_three_fourth topmargin nobottommargin">
 
 		<div id="modelDisplay" style="width:900px; height:600px;">
@@ -918,6 +921,7 @@
 		</div>
 
 	</div>
+	@endguest
 
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
