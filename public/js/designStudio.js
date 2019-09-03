@@ -49,31 +49,6 @@ $(document).ready(function()	{
 	/*-------------------------------------------------------------*/
 
 
-	$('#benchCameraCenter').click(function(event)	
-	{	
-		_bench_api.scene.camera.zoomAsync();
-
-	});
-
-	$('#slatCameraCenter').click(function(event)	
-	{	
-		_fin_wall_api.scene.camera.zoomAsync();
-
-	});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	// When the user clicks on one of the design type boxes
 	$('.designType').click(function(event)	
 	{	
@@ -113,6 +88,32 @@ $(document).ready(function()	{
 	});
 
 
+
+
+	$('.cameraCenter').click(function(event)	
+	{	
+		if ( designType == 'bench' )
+		{
+			_bench_api.scene.camera.zoomAsync();
+		}
+
+		if ( designType == 'finWall' )
+		{
+			_fin_wall_api.scene.camera.zoomAsync();
+		}
+
+		if ( designType == 'faceted' )
+		{
+			_faceted_api.scene.camera.zoomAsync();
+		}
+
+		if ( designType == 'backlit' )
+		{
+			_backlit_api.scene.camera.zoomAsync();
+		}
+
+
+	});
 
 
 
@@ -191,6 +192,11 @@ $(document).ready(function()	{
 			_backlit_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
 		}
 
+		if ( designType == 'faceted' )
+		{
+			_faceted_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
+		}
+
 	});
 
 
@@ -228,6 +234,12 @@ $(document).ready(function()	{
 			_backlit_api.parameters.updateAsync({name: paramName, value: e.target.checked });
 		}
 
+		if ( designType == 'faceted' )
+		{
+			_faceted_api.parameters.updateAsync({name: paramName, value: e.target.checked });
+		}
+
+
 	});
 
 
@@ -263,20 +275,23 @@ function initializeData()
 		'modelTickets' : {
 			'bench' : '4a0592f5cc546eb466ff9edb9d19b5b5d73602211efc55c4db9c040a3f7a343f37f7fd25a30c376ffc67bb9494b5776db2ebe599bd7e8611e12f89074d712135fdfa9cd8d48610f30cc8199e39dc0d576d7a123bc39d16553d42b9a2a04365c0cf875efb5587a3e8b9ca1fa7794ec6940d8e376ed290-052484b3075f24e3a7a0fd885fafb80b',
 			'finWall' : 'f1832e3ad0bcab4aa8d08f894889044419a2570f638a7f334b048c76c7b5c17a90b3f4502981d3bdee2321dcad99ec6d97c6c4d6e4356cb1dd06a9b93b103be1faeb0c1532047b7dc98a74f4fbb16cb861609a7fae45c95d0b03ab311414be24ce6a7ef35142bc04fe359091612e4ba6cc83feb14347-254bf0a71357b2c9f983746bf3867934',
-			'backlit' : 'b377b948d7f72cee5db1184551e10c1e9f8a34cae0323283b7f5f8831cedc2e26986531436453d00bbce7556061713170f148b9d879fc7e6b2454fce26e030c1c8fb9782aeaaa1fa73ed74ce6059e6daba4a3b682e769ebfe82ee516dfc6b2a0fe3fc30c2fab53476e8f1f82c895f1781fa1746ebd15-b63fe0ed951441432130ea48fe327cf7'
+			'backlit' : 'b377b948d7f72cee5db1184551e10c1e9f8a34cae0323283b7f5f8831cedc2e26986531436453d00bbce7556061713170f148b9d879fc7e6b2454fce26e030c1c8fb9782aeaaa1fa73ed74ce6059e6daba4a3b682e769ebfe82ee516dfc6b2a0fe3fc30c2fab53476e8f1f82c895f1781fa1746ebd15-b63fe0ed951441432130ea48fe327cf7',
+			'faceted' : '6a4bbceb3a6a94c8d65543ebfa9d3d5fea7e02d3947dd4d34c6ff5eac325b91da4dcbf461588290b2867aedf44bc773a1b4d0d6f966dd2c8aa83d7a7a0caf6e1c2a2874c6d1ca9c45e245360bb14be9666bf0aad53f1758cf24a5fe9fa880416c71a33f184b47fef9295faa30e99ae1bb05a70f67352-2801291baf32cfcf605d4d7b00d78132'
 		},
 
 		'apiNames' :{
 			'bench' : 'bench',
 			'finWall' : 'finWall',
-			'backlit' : 'backlit'
+			'backlit' : 'backlit',
+			'faceted' : 'faceted'
 		},
 
 
 		'variableNames' :{
 			'bench' : '_bench_api',
 			'finWall' : '_fin_wall_api',
-			'backlit' : '_backlit_api'
+			'backlit' : '_backlit_api',
+			'faceted' : '_faceted_api'
 		},
 
 
@@ -388,6 +403,24 @@ function initializeData()
 				'Wall Color' : '',
 				'Logo and Text Color' : '',
 				'Upload Logo' : ''
+			},
+
+
+			'faceted' : {
+				'Spacing' : 'facetedSpacingSlider',
+				'Panel A Rotation' : 'facetedASlider',
+				'Panel B Rotation' : 'facetedBSlider',
+				'Panel C Rotation' : 'facetedCSlider',
+				'Panel D Rotation' : 'facetedDSlider',
+				'Panel E Rotation' : 'facetedESlider',
+				'Panel F Rotation' : 'facetedFSlider',
+				'Panel G Rotation' : 'facetedGSlider',
+				'Panel H Rotation' : 'facetedHSlider',
+				'Panel I Rotation' : 'facetedISlider',
+				'Panel J Rotation' : 'facetedJSlider',
+				'Panel K Rotation' : 'facetedKSlider',
+				'Panel L Rotation' : 'facetedLSlider',
+				'Panel M Rotation' : 'facetedMSlider'
 			}
 
 
@@ -471,6 +504,24 @@ function initializeData()
 				'Wall Color' : '',
 				'Logo and Text Color' : '',
 				'Upload Logo' : ''
+			},
+
+
+			'faceted' : {
+				'Spacing' : 'slider',
+				'Panel A Rotation' : 'slider',
+				'Panel B Rotation' : 'slider',
+				'Panel C Rotation' : 'slider',
+				'Panel D Rotation' : 'slider',
+				'Panel E Rotation' : 'slider',
+				'Panel F Rotation' : 'slider',
+				'Panel G Rotation' : 'slider',
+				'Panel H Rotation' : 'slider',
+				'Panel I Rotation' : 'slider',
+				'Panel J Rotation' : 'slider',
+				'Panel K Rotation' : 'slider',
+				'Panel L Rotation' : 'slider',
+				'Panel M Rotation' : 'slider'
 			}
 
 
@@ -552,6 +603,11 @@ function initializeModel( modelName )
 	if ( modelName == 'backlit' )
 	{
 		_backlit_api = new SDVApp.ParametricViewer(api_viewerSettings)
+	}
+
+	if ( modelName == 'faceted' )
+	{
+		_faceted_api = new SDVApp.ParametricViewer(api_viewerSettings)
 	}
 
 
@@ -646,6 +702,11 @@ function setModelData( modelName )
 	if ( modelName == 'backlit' )
 	{
 		thisData = _backlit_api.parameters.get();
+	}
+
+	if ( modelName == 'faceted' )
+	{
+		thisData = _faceted_api.parameters.get();
 	}
 
 
@@ -932,47 +993,97 @@ function initializeComponents( modelName )
 			step: 1
 		});
 
-		$(".facetedARotSlider").ionRangeSlider({
+		$(".facetedASlider").ionRangeSlider({
 			grid: false,
 			min: 0,
 			max: 360,
 			step: 1
 		});
 
-		$(".facetedBRotSlider").ionRangeSlider({
+		$(".facetedBSlider").ionRangeSlider({
 			grid: false,
 			min: 0,
 			max: 360,
 			step: 1
 		});
 
-		$(".facetedCRotSlider").ionRangeSlider({
+		$(".facetedCSlider").ionRangeSlider({
 			grid: false,
 			min: 0,
 			max: 360,
 			step: 1
 		});
 
-		$(".facetedDRotSlider").ionRangeSlider({
+		$(".facetedDSlider").ionRangeSlider({
 			grid: false,
 			min: 0,
 			max: 360,
 			step: 1
 		});
 
-		$(".facetedERotSlider").ionRangeSlider({
+		$(".facetedESlider").ionRangeSlider({
 			grid: false,
 			min: 0,
 			max: 360,
 			step: 1
 		});
 
-		$(".facetedFRotSlider").ionRangeSlider({
+		$(".facetedFSlider").ionRangeSlider({
 			grid: false,
 			min: 0,
 			max: 360,
 			step: 1
 		});
+
+		$(".facetedGSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 360,
+			step: 1
+		});
+
+		$(".facetedHSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 360,
+			step: 1
+		});
+
+		$(".facetedISlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 360,
+			step: 1
+		});
+
+		$(".facetedJSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 360,
+			step: 1
+		});
+
+		$(".facetedKSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 360,
+			step: 1
+		});
+
+		$(".facetedLSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 360,
+			step: 1
+		});
+
+		$(".facetedMSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 360,
+			step: 1
+		});
+
 
 	}
 

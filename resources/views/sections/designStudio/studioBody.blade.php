@@ -10,29 +10,7 @@
 			<div class="widget clearfix" style="width:80%">
 
 
-				<!-- Select the type of wall to be built 
-				<select class="selectpicker btn-primary" 
-						id="designType" 
-						style="width:100%; height:35px">
-					<option value="finWall">Architectural Slat Wall</option>
-					<option value="planterWall">Planter Wall</option>
-					<option value="backlitWall">Back-lit Branding Wall</option>
-					<option value="desk">Reception Desk</option>
-					<option value="facetedWall">Faceted Wall</option>
-					<option value="genslerWall">Gensler Custom Wall</option>
-				</select>
-
-			-->
-
-
-				<!--
-				<div class="white-section" style="margin:20px 0px; position:relative; left:300px" >
-					<button id="benchCameraCenter">Recenter Camera</button>
-				</div>
-				-->
-
-
-
+	
 				<h4 class="center" style="margin-bottom:5px">Select Design Type</h4>
 
 				<div class="row divcenter">
@@ -546,7 +524,7 @@
 
 
 				<!-- All options for the backlit walls -->
-				<div id="facetedSection">
+				<div id="facetedSection" style="overflow:scroll; height:500px">
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Facet Spacing</label>
@@ -556,38 +534,77 @@
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel A Rotation</label>
-						<input class="facetedARotSlider modelSlider" id="facetedARotSpacing"/>
+						<input class="facetedASlider modelSlider" id="facetedASlider"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel B Rotation</label>
-						<input class="facetedBRotSlider modelSlider" id="facetedBRotSpacing"/>
+						<input class="facetedBSlider modelSlider" id="facetedBSlider"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel C Rotation</label>
-						<input class="facetedCRotSlider modelSlider" id="facetedCRotSpacing"/>
+						<input class="facetedCSlider modelSlider" id="facetedCSlider"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel D Rotation</label>
-						<input class="facetedDRotSlider modelSlider" id="facetedDRotSpacing"/>
+						<input class="facetedDSlider modelSlider" id="facetedDSlider"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel E Rotation</label>
-						<input class="facetedERotSlider modelSlider" id="facetedERotSpacing"/>
+						<input class="facetedESlider modelSlider" id="facetedESlider"/>
 					</div>
 
 
 					<div class="white-section" style="margin:20px 0px" >
 						<label>Panel F Rotation</label>
-						<input class="facetedFRotSlider modelSlider" id="facetedFRotSpacing"/>
+						<input class="facetedFSlider modelSlider" id="facetedFSlider"/>
 					</div>
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel G Rotation</label>
+						<input class="facetedGSlider modelSlider" id="facetedGSlider"/>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel H Rotation</label>
+						<input class="facetedHSlider modelSlider" id="facetedHSlider"/>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel I Rotation</label>
+						<input class="facetedISlider modelSlider" id="facetedISlider"/>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel J Rotation</label>
+						<input class="facetedJSlider modelSlider" id="facetedJSlider"/>
+					</div>
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel K Rotation</label>
+						<input class="facetedKSlider modelSlider" id="facetedKSlider"/>
+					</div>
+
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel L Rotation</label>
+						<input class="facetedLSlider modelSlider" id="facetedLSlider"/>
+					</div>
+
+
+
+					<div class="white-section" style="margin:20px 0px" >
+						<label>Panel M Rotation</label>
+						<input class="facetedMSlider modelSlider" id="facetedMSpacing"/>
+					</div>
+
 
 				</div>
 
@@ -868,26 +885,22 @@
 
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
-
-		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
-			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
-			<i id="planterCameraCenter" class="icon-line-camera h3 hoverMe "></i>
-		</div>
-
 		<div id="planterWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
+
+
+	<!--  The desk section -->
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
+		
+		<div id="deskDisplay" style="width:900px; height:600px;">
+			
+			<img src="https://makstudio.s3.us-east-2.amazonaws.com/deskDemo.png" width="500px">
 
-		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
-			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
-			<i id="deskCameraCenter" class="icon-line-camera h3 hoverMe "></i>
 		</div>
-
-		<div id="deskDisplay" style="width:900px; height:600px;"></div>
 	</div>
-
+	<!-- // Desk -->
 
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
@@ -903,12 +916,6 @@
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin"
 		 id="panelWallDisplay">
-
-		<div class="white-section cameraCenter" style="margin:20px 0px; position:absolute; left:0px" 
-			 data-toggle="tooltip" data-placement="top" title="Center Camera View">
-			<i id="panelCameraCenter" class="icon-line-camera h3 hoverMe "></i>
-		</div>
-
 		 @include('sections.designStudio.areaDisplays.wallPanels')
 	</div>
 
