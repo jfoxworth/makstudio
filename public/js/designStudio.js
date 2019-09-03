@@ -937,7 +937,7 @@ function retrieveModels(  )
 	{
 		console.log(data);
 
-		window[userModelData] = data;
+		window['userModelData'] = data;
 		$.each(userModelData, function(index, obj){
 			userModelData[index]['buildData'] = JSON.parse(obj.build_data);
 		});
