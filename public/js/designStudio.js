@@ -182,15 +182,15 @@ $(document).ready(function()	{
 	// WHen the user clicks on a displayed model
 	// that they have saved adn they want to 
 	// view it
-	$('.potenModel').click(function(event)	
+	$(document).on('click', '.potenModel', function()
 	{	
-
+		console.log('click');
 	});
 
 
 	// When the user clicks on a displayed model
 	// with the intent to delete it
-	$('.deleteModel').click(function(event)	
+	$(document).on('click', '.deleteModel', function()
 	{	
 		$.ajax({
 			url : "/deleteModel/"+event.target.id,
