@@ -46,8 +46,6 @@ class BuildController extends Controller
         $thisBuild->build_data = json_encode($request['buildData']);
         $thisBuild->user_id = Auth::id();
         $thisBuild->save();
-
-        echo('Well, I got here ...');
     }
 
     /**

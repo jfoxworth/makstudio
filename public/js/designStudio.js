@@ -847,7 +847,6 @@ function saveModel( modelName )
 		}
 	}
 
-	console.log(modelObject);
 
 	$.ajax({
 		url : "/saveModel",
@@ -858,8 +857,12 @@ function saveModel( modelName )
 		}
 	}).done(function() 
 	{
-		console.log('Done');
 		$( '#saveMessageAlert' ).show( );
+		setTimeout(
+			function() 
+			{
+    			$( '#saveMessageAlert' ).hide( );
+			}, 3000);
 	});
 
 }
@@ -877,6 +880,12 @@ function saveModel( modelName )
 /*-------------------------------------------*/
 function retrieveModels(  )
 {
+
+
+	$.get( "getModels", function( data ) 
+	{
+  		console.log(data);
+	});
 
 
 }
