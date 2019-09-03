@@ -18,12 +18,12 @@
 					@guest
 						<div class="hoverMe col_one_fourth center designType nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Login to save models">
-							<i id="designLogin" class="icon-user21 h3"></i>
+							<i id="designLogin" class="icon-user h3"></i>
 						</div>
 					@else
 						<div class="hoverMe col_one_fourth center designType nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="View my saved models">
-							<i id="designViewModels" class="icon-user21 h3"></i>
+							<i id="designViewModels" class="icon-user h3"></i>
 						</div>
 
 						<div class="hoverMe col_one_fourth center designType nobottommargin"
