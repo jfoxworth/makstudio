@@ -881,15 +881,15 @@
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
 		<div class="style-msg successmsg" id="saveMessageAlert">
-			<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Saved!</strong> This model can be accessed from this page in the future.</div>
-			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+			<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Saved!</strong> This model can be accessed from this page in the future.
+			<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>
 		</div>
 	</div>
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div class="style-msg dangermsg" id="deleteMessageAlert">
-			<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Deleted!</strong> A model was successfully deleted from the stored items</div>
-			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		<div class="style-msg alert-danger" id="deleteMessageAlert">
+			<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Deleted!</strong> A model was successfully deleted from the stored items
+			<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>
 		</div>
 	</div>
 
