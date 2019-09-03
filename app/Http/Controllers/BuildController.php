@@ -39,11 +39,11 @@ class BuildController extends Controller
     {
 
         echo($request['buildType']);
-        echo($request['buildData']);
+        echo(json_encode($request['buildData']));
 
         $thisBuild = new Build;
         $thisBuild->build_id = $request['buildType'];
-        $thisBuild->build_data = $request['buildData'];
+        $thisBuild->build_data = json_encode($request['buildData']);
         $thisBuild->user_id = Auth::id();
         $thisBuild->save();
 
