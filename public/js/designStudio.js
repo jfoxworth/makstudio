@@ -112,8 +112,9 @@ $(document).ready(function()	{
 	$('#designViewModels').click(function(event)	
 	{	
 		// Hide and display the appropriate items
-		$("#currentModelDisplay, #benchDisplay, #finWallDisplay, #backlitDisplay, #planterWallDisplay, #deskDisplay, #facetedWallDisplay, #panelWallDisplay, #genslerWallDisplay").hide();
+		$("#currentModelDisplay, #planterWallDisplay, #deskDisplay, #panelWallDisplay").hide();
 		$("#modelDisplay").show();
+		document.getElementById( 'currentModelDisplay' ).html('');
 
 
 		// Retrieve the model data for the user
@@ -169,7 +170,7 @@ $(document).ready(function()	{
 
 		console.log('The design type is '+designType);
 
-		document.getElementById( 'currentModelDisplay' ).innerHTML='';
+		document.getElementById( 'currentModelDisplay' ).html('');
 
 		initializeModel( event.target.id )  
 
@@ -410,8 +411,6 @@ function setModelView( modelName )
 	// Show the container holding the view
 	$('#'+makStudio['containerNames'][modelName]).show();
 
-
-
 	// Show the side menu window
 	$('#'+makStudio['sideMenus'][modelName]).show();
 
@@ -420,11 +419,6 @@ function setModelView( modelName )
 	// Show the dimensions submenu as the default
 	$('.parameterSet').hide();
 	$("#"+modelName+"Dimensions").show();
-
-
-	// Hide the cameras and show the relevant one
-	$('.cameraCenter').hide();
-	$('#'+modelName+'CameraCenter').parent().show();
 
 
 	$( '#saveMessageAlert' ).hide( );
@@ -732,6 +726,7 @@ function reloadModel( modelID )
 		}
 	});
 
+	$("#modelName").text( makModel.build_data.name );
 
 
 	// viewer settings 
@@ -759,16 +754,54 @@ function reloadModel( modelID )
 
 	for (nameComponent in makModel.build_data.componentNames )
 	{
-
 		for (valueComponent in makModel.build_data.componentValues )
 		{
-
 			if ( makModel.build_data.componentNames[nameComponent] == valueComponent )
 			{
+				console.log('setting '+nameComponent+' to '+makModel.build_data.componentValues[valueComponent]);
 				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[valueComponent] });
 			}
 		}
 	}
+
+
+
+
+	for (nameComponent in makModel.build_data.componentNames )
+	{
+		for (typeComponent in makModel.build_data.componentTypes )
+		{
+			if ( makModel.build_data.componentNames[nameComponent] == typeComponent )
+			{
+
+				if ( makModel.build_data.componentTypes[typeComponent] == 'slider' )
+				{
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(element.value);
+				}
+
+				if ( makModel.build_data.componentTypes[typeComponent] == 'dropdown' )
+				{
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(element.value);
+				}
+
+				if ( makModel.build_data.componentTypes[typeComponent] == 'boolean' )
+				{
+					if ( element.value )
+					{
+						$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', true);
+						$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', true);
+					}else
+					{
+						$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', false);						
+						$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', false);						
+					}
+					makModel.build_data.componentValues[camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
+				}
+			}
+		}
+	}
+
+
 }
 
 
