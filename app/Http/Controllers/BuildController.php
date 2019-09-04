@@ -38,12 +38,12 @@ class BuildController extends Controller
     public function store(Request $request)
     {
 
-        echo($request['buildType']);
+        echo($request['makModel']);
         echo(json_encode($request['buildData']));
 
         $thisBuild = new Build;
-        $thisBuild->build_id = $request['buildType'];
-        $thisBuild->build_data = json_encode($request['buildData']);
+        $thisBuild->build_id = $request['makModel']['build_id'];
+        $thisBuild->build_data = json_encode($request['makModel']['build_data']);
         $thisBuild->user_id = Auth::id();
         $thisBuild->save();
     }

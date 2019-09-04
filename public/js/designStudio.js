@@ -550,11 +550,18 @@ function setDefaultModelData( modelName )
 		'user_id' : '',
 		'build_id' : modelName,
 		'build_data' : {
+			'name' : 'Unsaved Model',
 			'componentNames' : makStudio.componentNames[modelName],
 			'componentTypes' : makStudio.componentTypes[modelName],
 			'componentValues' : {}
 		}
 	};
+
+
+
+	// Set the file name to the un named value
+	$("#modelName").innerHTML = 'Unsaved Model';
+
 
 
 	// Loop through the data and set the parameters to the
@@ -623,28 +630,29 @@ function setDefaultModelData( modelName )
 /*-------------------------------------------*/
 function saveModel( modelName )
 {
-	// Object to be sent to be saved
-	var modelObject = {};
-	modelObject['modelType']=designType;
-	modelObject['modelName']=modelName;
+	// Place the name given in the popup in the name
+	makModel['build_data']['name']=modelName;
+
+	$("#modelName").innerHTML = modelName;
+
+
 
 	// For every entry saved in the array, get that value
 	// and save it into an object
-	for (nameComponent in makStudio.componentNames[designType] )
+	for (nameComponent in makModel.build_data.componentNames )
 	{
 
-		for (typeComponent in makStudio.componentTypes[designType] )
+		for (typeComponent in makModel.build_data.componentTypes )
 		{
 
 			if ( nameComponent == typeComponent )
 			{
-				if ( ( makStudio.componentTypes[designType][typeComponent] == "slider" ) ||
-					 ( makStudio.componentTypes[designType][typeComponent] == "dropdown" ) )
+				if ( ( makModel.build_data.componentTypes[typeComponent] == "slider" ) ||
+					 ( makModel.build_data.componentTypes[typeComponent] == "dropdown" ) )
 				{
-					modelObject[nameComponent] = $('#'+makStudio.componentNames[designType][nameComponent]).val();
+					makModel.build_data[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).val();
 				}
 			}
-
 		}
 	}
 
@@ -652,10 +660,8 @@ function saveModel( modelName )
 	$.ajax({
 		url : "/saveModel",
 		method :"POST",
-		data :  {
-			'buildType' : designType,
-			'buildData' : modelObject
-		}
+		data :  makModel
+
 	}).done(function() 
 	{
 		$( '#saveMessageAlert' ).show( );

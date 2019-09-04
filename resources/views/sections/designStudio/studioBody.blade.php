@@ -927,6 +927,7 @@
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
 		<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
+		<div><i class="icon-file"></i>  <div id="modelName" style="font-size:24px"></div></div>
 	</div>
 
 
