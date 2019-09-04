@@ -278,9 +278,9 @@ $(document).ready(function()	{
 				var paramName = thisComponent;
 			}
 		}
-		
-		model_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
 
+		model_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
+/*
 
 		if ( designType == 'bench' )
 		{
@@ -301,7 +301,7 @@ $(document).ready(function()	{
 		{
 			_faceted_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
 		}
-
+*/
 
 	});
 
@@ -319,6 +319,8 @@ $(document).ready(function()	{
 		}
 
 		model_api.parameters.updateAsync({name: paramName, value: e.target.checked });
+
+/*		
 
 		if ( designType == 'bench' )
 		{
@@ -339,7 +341,7 @@ $(document).ready(function()	{
 		{
 			_faceted_api.parameters.updateAsync({name: paramName, value: e.target.checked });
 		}
-
+*/
 
 	});
 
@@ -454,7 +456,7 @@ function initializeModel( modelName )
 	model_api = new SDVApp.ParametricViewer(api_viewerSettings)
 
 	setTimeout(function () {
-		setModelData(modelName);
+		setDefaultModelData(modelName);
     }, 1000);
 
 }
@@ -526,41 +528,33 @@ function setModelView( modelName )
 
 /*------------------------------------------------*
 
-	This function ties the data from a model to
-	the inital values of the sliders and other
-	items
+	This function populates a new model object 
+	with the default options and values
 
 /*------------------------------------------------*/
-function setModelData( modelName )
+function setDefaultModelData( modelName )
 {
 
 	console.log('The model name is '+modelName);
 
 
-	// Tie the variable for the data to the proper data set
-	/*
-	if ( modelName == 'bench' )
-	{
-		thisData = _bench_api.parameters.get();
-	}
-
-	if ( modelName == 'finWall' )
-	{
-		thisData = _fin_wall_api.parameters.get();
-	}
-
-	if ( modelName == 'backlit' )
-	{
-		thisData = _backlit_api.parameters.get();
-	}
-
-	if ( modelName == 'faceted' )
-	{
-		thisData = _faceted_api.parameters.get();
-	}
-	*/
-
+	// Pull the values from the shape diver ticket
 	thisData = model_api.parameters.get();
+
+
+	// Make the global variable holding the model
+	makModel = {
+		'id' : '',
+		'created_at' : '',
+		'modified_at' : '',
+		'user_id' : '',
+		'build_id' : modelName,
+		'build_data' : {
+			'componentNames' : makStudio.componentNames[modelName],
+			'componentTypes' : makStudio.componentTypes[modelName],
+			'componentValues' : {}
+		}
+	};
 
 
 	// Loop through the data and set the parameters to the
@@ -570,26 +564,22 @@ function setModelData( modelName )
 
 		for (thisVar in makStudio.componentNames[modelName])
 		{
-			//console.log('comparing '+thisVar+' to '+element.name);
 			if ( thisVar == element.name )
 			{
-				//console.log('Matched Name');
 				if ( makStudio.componentTypes[modelName][thisVar] == 'slider' )
 				{
-					//console.log('Setting value of '+makStudio.componentNames[modelName][thisVar]+' to '+element.value);
 					$( "#"+makStudio.componentNames[modelName][thisVar] ).val(element.value);
-					makStudio.componentValues[modelName][camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
+					makModel.build_data.componentValues[camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
 				}
 
 				if ( makStudio.componentTypes[modelName][thisVar] == 'dropdown' )
 				{
-					//console.log('Setting value of '+makStudio.componentNames[modelName][thisVar]+' to '+element.value);
 					$( "#"+makStudio.componentNames[modelName][thisVar] ).val(element.value);
+					makModel.build_data.componentValues[camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
 				}
 
 				if ( makStudio.componentTypes[modelName][thisVar] == 'boolean' )
 				{
-					console.log('Setting value of '+makStudio.componentNames[modelName][thisVar]+' to '+element.value);
 					if ( element.value )
 					{
 						$( "#"+makStudio.componentNames[modelName][thisVar] ).prop('checked', true);
@@ -599,6 +589,7 @@ function setModelData( modelName )
 						$( "#"+makStudio.componentNames[modelName][thisVar] ).prop('checked', false);						
 						$( "#"+makStudio.componentNames[modelName][thisVar] ).attr('checked', false);						
 					}
+					makModel.build_data.componentValues[camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
 				}
 
 			}
@@ -1140,31 +1131,10 @@ function initializeData()
 			'faceted' : '6a4bbceb3a6a94c8d65543ebfa9d3d5fea7e02d3947dd4d34c6ff5eac325b91da4dcbf461588290b2867aedf44bc773a1b4d0d6f966dd2c8aa83d7a7a0caf6e1c2a2874c6d1ca9c45e245360bb14be9666bf0aad53f1758cf24a5fe9fa880416c71a33f184b47fef9295faa30e99ae1bb05a70f67352-2801291baf32cfcf605d4d7b00d78132'
 		},
 
-		'apiNames' :{
-			'bench' : 'bench',
-			'finWall' : 'finWall',
-			'backlit' : 'backlit',
-			'faceted' : 'faceted'
-		},
-
-
-		'variableNames' :{
-			'bench' : '_bench_api',
-			'finWall' : '_fin_wall_api',
-			'backlit' : '_backlit_api',
-			'faceted' : '_faceted_api'
-		},
-
-
 		'containerNames' :{
-			'bench' : 'benchDisplay',
-			'finWall' : 'finWallDisplay',
-			'backlit' : 'backlitWallDisplay',
 			'planter' : 'planterWallDisplay',
 			'desk' : 'deskDisplay',
-			'faceted' : 'facetedWallDisplay',
-			'panel' : 'panelWallDisplay',
-			'gensler' : 'genslerWallDisplay'
+			'panel' : 'panelWallDisplay'
 		},
 
 		'sideMenus' :{
@@ -1176,17 +1146,6 @@ function initializeData()
 			'faceted' : 'facetedSection',
 			'panel' : 'panelSection',
 			'gensler' : 'genslerSection'
-		},
-
-		'displayText' : {
-			'bench' : 'Planter Bench',
-			'finWall' : 'Fin Wall',
-			'backlit' : 'Backlit Wall',
-			'planter' : 'Planter Wall',
-			'desk' : 'Custom Desk',
-			'faceted' : 'Faceted Wall',
-			'panel' : 'Wall Panels',
-			'gensler' : 'Gensler Wall'
 		},
 
 		'componentNames' : {
@@ -1386,22 +1345,8 @@ function initializeData()
 			}
 
 
-		},
-
-
-
-		'componentValues' : {
-
-			'bench' : {},
-			'finWall' : {},
-			'backlit' : {},
-			'planter' : {},
-			'desk' : {},
-			'faceted' : {},
-			'panel' : {},
-			'gensler' : {}
-
 		}
+
 
 
 	};

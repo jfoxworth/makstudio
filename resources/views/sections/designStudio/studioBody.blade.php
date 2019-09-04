@@ -929,21 +929,6 @@
 		<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div id="benchDisplay" style="width:900px; height:600px;"></div>
-	</div>
-
-
-
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div id="finWallDisplay" style="width:900px; height:600px;"></div>
-	</div>
-
-
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div id="backlitWallDisplay" style="width:900px; height:600px;"></div>
-	</div>
-
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
 		<div id="planterWallDisplay" style="width:900px; height:600px;"></div>
@@ -964,20 +949,10 @@
 	<!-- // Desk -->
 
 
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div id="facetedWallDisplay" style="width:900px; height:600px;"></div>
-	</div>
-
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin"
 		 id="panelWallDisplay">
 		 @include('sections.designStudio.areaDisplays.wallPanels')
-	</div>
-
-
-
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div id="genslerWallDisplay" style="width:900px; height:600px;"></div>
 	</div>
 
 
