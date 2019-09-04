@@ -317,7 +317,7 @@
 				-->
 
 					<div class="tp-caption ltl tp-resizeme"
-					data-x="300"
+					data-x="500"
 					data-y="425"
 					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 					data-speed="800"
@@ -398,7 +398,7 @@
 
 
 					<div class="tp-caption ltl tp-resizeme"
-					data-x="500"
+					data-x="200"
 					data-y="575"
 					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 					data-speed="800"
