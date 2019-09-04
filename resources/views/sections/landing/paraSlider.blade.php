@@ -66,7 +66,7 @@
 						data-endelementdelay="0.1"
 						data-endspeed="1000"
 						data-endeasing="Power4.easeIn" 
-					style="z-index: 3; color: #222; font-size: 45px;">Customize your interior space
+					style="z-index: 3; color: #222; font-size: 36px;">Customize your interior space
 					</div>
 
 
