@@ -748,10 +748,27 @@ function reloadModel( modelID )
 		ticket: makModel['build_data']['ticket'], 
 		modelViewUrl : 'eu-central-1'
 	}; 
+	model_api = new SDVApp.ParametricViewer(api_viewerSettings);
 
 
-	model_api = new SDVApp.ParametricViewer(api_viewerSettings)
 
+	$('#currentModelDisplay').show();
+	$("#modelDisplay").hide();
+
+
+
+	for (nameComponent in makModel.build_data.componentNames )
+	{
+
+		for (valueComponent in makModel.build_data.componentValues )
+		{
+
+			if ( makModel.build_data.componentNames[nameComponent] == valueComponent )
+			{
+				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[valueComponent] });
+			}
+		}
+	}
 }
 
 
