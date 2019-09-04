@@ -764,7 +764,7 @@ function reloadModel( modelID )
 
 		for (nameComponent in makModel.build_data.componentNames )
 		{
-			if ( makModel['build_data'][nameComponent] !== undefined )
+			if ( makModel['build_data']['componentValues'][nameComponent] !== undefined )
 			{	
 				console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[nameComponent]);
 				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[nameComponent] });
@@ -777,36 +777,32 @@ function reloadModel( modelID )
 
 	for (nameComponent in makModel.build_data.componentNames )
 	{
-		for (typeComponent in makModel.build_data.componentTypes )
+		console.log('Setting '+nameComponent+' - '+makModel.build_data.componentTypes[nameComponent]+' to '+makModel.build_data.componentValues[nameComponent]);
+		if ( makModel.build_data.componentTypes[nameComponent] == 'slider' )
 		{
-			if ( makModel.build_data.componentNames[nameComponent] == typeComponent )
+			$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
+		}
+
+		if ( makModel.build_data.componentTypes[nameComponent] == 'dropdown' )
+		{
+			$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
+		}
+
+		if ( makModel.build_data.componentTypes[nameComponent] == 'boolean' )
+		{
+			if ( makModel.build_data.componentValues[nameComponent] )
 			{
-
-				if ( makModel.build_data.componentTypes[typeComponent] == 'slider' )
-				{
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
-				}
-
-				if ( makModel.build_data.componentTypes[typeComponent] == 'dropdown' )
-				{
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
-				}
-
-				if ( makModel.build_data.componentTypes[typeComponent] == 'boolean' )
-				{
-					if ( makModel.build_data.componentValues[nameComponent] )
-					{
-						$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', true);
-						$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', true);
-					}else
-					{
-						$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', false);						
-						$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', false);						
-					}
-				}
+				$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', true);
+				$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', true);
+			}else
+			{
+				$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', false);						
+				$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', false);						
 			}
 		}
 	}
+
+	initializeComponents( makModel['build_id'] );
 
 
 }
