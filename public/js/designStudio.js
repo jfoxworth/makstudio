@@ -557,17 +557,17 @@ function saveModel( modelName )
 				if ( ( makModel.build_data.componentTypes[typeComponent] == "slider" ) ||
 					 ( makModel.build_data.componentTypes[typeComponent] == "dropdown" ) )
 				{
-					makModel.build_data.componentValues[makModel.build_data.componentNames[nameComponent]] = $('#'+makModel.build_data.componentNames[nameComponent]).val();
+					makModel.build_data.componentValues[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).val();
 				}
 
 				if ( makModel.build_data.componentTypes[typeComponent] == "boolean" )
 				{
-					makModel.build_data.componentValues[makModel.build_data.componentNames[nameComponent]] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
+					makModel.build_data.componentValues[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
 				}
 
 				if ( makModel.build_data.componentTypes[typeComponent] == "text" )
 				{
-					makModel.build_data.componentValues[makModel.build_data.componentNames[nameComponent]] = $('#'+makModel.build_data.componentNames[nameComponent]).text();
+					makModel.build_data.componentValues[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).text();
 				}
 
 			}
@@ -632,12 +632,12 @@ function updateModel( modelName )
 				if ( ( makModel.build_data.componentTypes[typeComponent] == "slider" ) ||
 					 ( makModel.build_data.componentTypes[typeComponent] == "dropdown" ) )
 				{
-					makModel.build_data[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).val();
+					makModel.build_data.componentValues[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).val();
 				}
 
 				if ( makModel.build_data.componentTypes[typeComponent] == "boolean" )
 				{
-					makModel.build_data[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
+					makModel.build_data.componentValues[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
 				}
 
 			}
@@ -782,12 +782,12 @@ function reloadModel( modelID )
 
 				if ( makModel.build_data.componentTypes[typeComponent] == 'slider' )
 				{
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]]);
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
 				}
 
 				if ( makModel.build_data.componentTypes[typeComponent] == 'dropdown' )
 				{
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]]);
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
 				}
 
 				if ( makModel.build_data.componentTypes[typeComponent] == 'boolean' )
