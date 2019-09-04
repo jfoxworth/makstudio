@@ -287,7 +287,7 @@ $(document).ready(function()	{
 
 
 	// Upload the logo for the backlit wall
-	$(document).on('change', '#logoUpload', function(res)
+	$("input:file").on('change', function(res)
 	{	
 		console.log('Got here for the change event');
 
