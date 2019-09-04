@@ -289,6 +289,8 @@ $(document).ready(function()	{
 	// Upload the logo for the backlit wall
 	$(document).on('change', '#logoUpload', function(res)
 	{	
+		console.log('Got here for the change event');
+
 		let file = document.getElementById("logoUpload").files[0];
 		model_api.parameters.updateAsync({
 			name: "Upload Logo",
