@@ -170,7 +170,7 @@ $(document).ready(function()	{
 
 		console.log('The design type is '+designType);
 
-		$( '#currentModelDisplay' ).html()
+		$( '#currentModelDisplay' ).html('')
 
 		initializeModel( event.target.id )  
 
@@ -348,6 +348,7 @@ $(document).ready(function()	{
 /*-----------------------------------------------------------------------------------------------------------*/
 function initializeModel( modelName )  
 {
+
 
 	// viewer settings 
 	var  api_viewerSettings = { 
