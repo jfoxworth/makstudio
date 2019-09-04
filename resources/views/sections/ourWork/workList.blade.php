@@ -452,7 +452,7 @@
 
 
 
-		<!-- Fatty's Smoke Shop -->
+		<!-- Fatty's Smoke Shop --
 		<div class="col_half topmargin-lg">
 
 			<div class="fancy-title title-dotted-border title-center topmargin-lg">
@@ -500,7 +500,7 @@
 
 
 
-		<!-- Secret Group -->
+		<!-- Secret Group --
 		<div class="col_half col_last topmargin-lg">
 
 			<div class="fancy-title title-dotted-border title-center topmargin-lg">
@@ -565,7 +565,7 @@
 
 
 
-		<!-- Kings Court -->
+		<!-- Kings Court --
 		<div class="col_half topmargin-lg">
 
 			<div class="fancy-title title-dotted-border title-center topmargin-lg">
@@ -651,7 +651,7 @@
 
 		</div>
 
-
+		-->
 
 
 	</div>
