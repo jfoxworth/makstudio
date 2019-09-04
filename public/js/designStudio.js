@@ -289,12 +289,11 @@ $(document).ready(function()	{
 	// Upload the logo for the backlit wall
 	document.getElementById("logoUpload").onchange = function(res) {
 		let file = document.getElementById("logoUpload").files[0];
-		api.parameters.updateAsync({
-			name: "logo",
+		model_api.parameters.updateAsync({
+			name: "Upload Logo",
 			value: file
 		}).then(
 			function(response) {
-				model_api.parameters.updateAsync({name: "logoUpload", value: file });
 
 				alert("File successfully uploaded", response);
 	    	}
