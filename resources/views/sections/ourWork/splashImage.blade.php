@@ -7,7 +7,7 @@
 		 data-top-bottom="background-position:0px -500px;">
 
     <div class="container clearfix">
-        <h1>Mak Studio - Our Work</h1>
+        <h1 style="text-transform:none">M<SPAN STYLE="text-decoration:overline">a</span>k Studio - Our Work</h1>
         <span>A list of some of our previous work</span>
     </div>
 
