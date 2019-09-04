@@ -136,7 +136,7 @@ $(document).ready(function()	{
 	$('#saveModelButton').click(function(event)	
 	{	
 		$('#modelNameModal').modal('hide');
-		saveModel($('#modelName').val() );
+		saveModel($('#modalModelName').val() );
 	});
 
 
@@ -145,28 +145,7 @@ $(document).ready(function()	{
 	// menu to recenter the view
 	$('#recenterCamera').click(function(event)	
 	{	
-		if ( designType == 'bench' )
-		{
-			_bench_api.scene.camera.zoomAsync();
-		}
-
-		if ( designType == 'finWall' )
-		{
-			_fin_wall_api.scene.camera.zoomAsync();
-		}
-
-		if ( designType == 'faceted' )
-		{
-			_faceted_api.scene.camera.zoomAsync();
-		}
-
-		if ( designType == 'backlit' )
-		{
-			_backlit_api.scene.camera.zoomAsync();
-		}
-
 		model_api.scene.camera.zoomAsync();
-
 	});
 
 	// END OF TOP ROW OF BUTTONS
@@ -180,6 +159,8 @@ $(document).ready(function()	{
 	$('.designType').click(function(event)	
 	{	
 		designType = event.target.id;
+
+		console.log('The design type is '+designType);
 
 		document.getElementById( 'currentModelDisplay' ).innerHTML='';
 
@@ -238,29 +219,29 @@ $(document).ready(function()	{
 
 	$('#finStyleCurved').click(function()	
 	{			
-		_fin_wall_api.parameters.updateAsync({name: "Panels Type", value: 0 });
+		model_api.parameters.updateAsync({name: "Panels Type", value: 0 });
 	});
 
 	$('#finStyleAngled').click(function()
 	{			
-		_fin_wall_api.parameters.updateAsync({name: "Panels Type", value: 1 });
+		model_api.parameters.updateAsync({name: "Panels Type", value: 1 });
 	});
 
 
 	$('#finMaterialBirch').click(function()
 	{			
-		_fin_wall_api.parameters.updateAsync({name: "Material", value: 0 });
+		model_api.parameters.updateAsync({name: "Material", value: 0 });
 	});
 
 	$('#finMaterialLamBirch').click(function()
 	{			
-		_fin_wall_api.parameters.updateAsync({name: "Material", value: 1 });
+		model_api.parameters.updateAsync({name: "Material", value: 1 });
 	});
 
 
 	$('#finMaterialMDF').click(function()
 	{			
-		_fin_wall_api.parameters.updateAsync({name: "Material", value: 2 });
+		model_api.parameters.updateAsync({name: "Material", value: 2 });
 	});
 
 
@@ -280,28 +261,6 @@ $(document).ready(function()	{
 		}
 
 		model_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
-/*
-
-		if ( designType == 'bench' )
-		{
-			_bench_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
-		}
-
-		if ( designType == 'finWall' )
-		{
-			_fin_wall_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
-		}
-
-		if ( designType == 'backlit' )
-		{
-			_backlit_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
-		}
-
-		if ( designType == 'faceted' )
-		{
-			_faceted_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
-		}
-*/
 
 	});
 
@@ -320,28 +279,6 @@ $(document).ready(function()	{
 
 		model_api.parameters.updateAsync({name: paramName, value: e.target.checked });
 
-/*		
-
-		if ( designType == 'bench' )
-		{
-			_bench_api.parameters.updateAsync({name: paramName, value: e.target.checked });
-		}
-
-		if ( designType == 'finWall' )
-		{
-			_fin_wall_api.parameters.updateAsync({name: paramName, value: e.target.checked });
-		}
-
-		if ( designType == 'backlit' )
-		{
-			_backlit_api.parameters.updateAsync({name: paramName, value: e.target.checked });
-		}
-
-		if ( designType == 'faceted' )
-		{
-			_faceted_api.parameters.updateAsync({name: paramName, value: e.target.checked });
-		}
-*/
 
 	});
 
@@ -479,10 +416,10 @@ function setModelView( modelName )
 {
 
 	// Hide all models
-//	for (thisContainer in makStudio.containerNames)
-//	{
-//		$('#'+makStudio['containerNames'][thisContainer]).hide();
-//	}
+	for (thisContainer in makStudio.containerNames)
+	{
+		$('#'+makStudio['containerNames'][thisContainer]).hide();
+	}
 
 	// Hide the list of models in case
 	$('#modelDisplay').hide();
@@ -560,7 +497,7 @@ function setDefaultModelData( modelName )
 
 
 	// Set the file name to the un named value
-	$("#modelName").innerHTML = 'Unsaved Model';
+	$("#modelName").text( 'Unsaved Model' );
 
 
 
@@ -633,7 +570,7 @@ function saveModel( modelName )
 	// Place the name given in the popup in the name
 	makModel['build_data']['name']=modelName;
 
-	$("#modelName").innerHTML = modelName;
+	$("#modelName").text( modelName );
 
 
 
@@ -718,6 +655,52 @@ function retrieveModels(  )
 
 }
 
+
+
+
+
+
+
+
+
+/*-------------------------------------------*
+
+	This function gets the models that a
+	user has saved
+
+/*-------------------------------------------*/
+function reloadModel(  )
+{
+
+
+	$.get( "getModels", function( data ) 
+	{
+		console.log(data);
+
+		window['userModelData'] = data;
+		$.each(userModelData, function(index, obj){
+			userModelData[index]['build_data'] = JSON.parse(obj.build_data);
+		});
+
+        $("#userModelList").innerHTML = '';
+
+		var tr="<tr style='padding:10px 0px;'><th style='width:300px;'>Model Name</th><th style='width:300px;'>Date Created</th></tr>"
+        $("#userModelList").append(tr);
+
+		$.each(userModelData, function(index, obj){
+	        
+	        var tr = $("<tr></tr>");
+	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.modelName +"</td>");
+	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
+	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td>");
+
+	        $("#userModelList").append(tr);
+	    });
+
+	});
+
+
+}
 
 
 
