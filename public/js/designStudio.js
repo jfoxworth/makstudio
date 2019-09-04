@@ -557,17 +557,23 @@ function saveModel( modelName )
 				if ( ( makModel.build_data.componentTypes[typeComponent] == "slider" ) ||
 					 ( makModel.build_data.componentTypes[typeComponent] == "dropdown" ) )
 				{
-					makModel.build_data[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).val();
+					makModel.build_data.componentValues[makModel.build_data.componentNames[nameComponent]] = $('#'+makModel.build_data.componentNames[nameComponent]).val();
 				}
 
 				if ( makModel.build_data.componentTypes[typeComponent] == "boolean" )
 				{
-					makModel.build_data[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
+					makModel.build_data.componentValues[makModel.build_data.componentNames[nameComponent]] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
+				}
+
+				if ( makModel.build_data.componentTypes[typeComponent] == "text" )
+				{
+					makModel.build_data.componentValues[makModel.build_data.componentNames[nameComponent]] = $('#'+makModel.build_data.componentNames[nameComponent]).text();
 				}
 
 			}
 		}
 	}
+
 
 
 	$.ajax({
@@ -758,12 +764,16 @@ function reloadModel( modelID )
 		{
 			if ( makModel['build_data'][nameComponent] !== undefined )
 			{	
-				console.log('Setting '+nameComponent+' to '+makModel.build_data[nameComponent]);
-				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data[nameComponent] });
+				console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]]);
+				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]] });
 			}
 		}
     }, 500);
 
+
+
+
+	makModel.build_data.componentValues[makModel.build_data.componentNames[nameComponent]] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
 
 
 
@@ -776,17 +786,17 @@ function reloadModel( modelID )
 
 				if ( makModel.build_data.componentTypes[typeComponent] == 'slider' )
 				{
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(element.value);
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]]);
 				}
 
 				if ( makModel.build_data.componentTypes[typeComponent] == 'dropdown' )
 				{
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(element.value);
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]]);
 				}
 
 				if ( makModel.build_data.componentTypes[typeComponent] == 'boolean' )
 				{
-					if ( element.value )
+					if ( makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]] )
 					{
 						$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', true);
 						$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', true);
@@ -795,7 +805,6 @@ function reloadModel( modelID )
 						$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', false);						
 						$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', false);						
 					}
-					makModel.build_data.componentValues[camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
 				}
 			}
 		}
