@@ -11,7 +11,7 @@
 
 
 
-		<!-- Eighth Wonder Bar -->
+		<!-- Eighth Wonder Bar --
 		<div class="fancy-title title-dotted-border title-center">
 			<h2>Eighth Wonder Brewery</h2>
 		</div>
@@ -135,10 +135,35 @@
 		</div>
 
 
+		-->
 
 
 
 
+		<!-- Scrolling windows -->
+		<section>
+
+			<div style="background-image:https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen1.jpg;">
+
+				<h1>Ramada and Hideaway Kitchen</h1>
+
+			</div>
+
+
+			<div style="background-image:https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg;">
+
+				<h1>arm Technologies Entryway</h1>
+
+			</div>
+
+
+			<div style="background-image:https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg;">
+
+				<h1>Re:3D - Branded Entryway</h1>
+
+			</div>
+
+		</section>
 
 
 
