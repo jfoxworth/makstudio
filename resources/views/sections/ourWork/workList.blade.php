@@ -144,25 +144,25 @@
 		<section>
 
 			<div class="section dark notopmargin nobottommargin noborder"
-				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen1.jpg;'); background-size:cover; color:#222; padding:150px">
+				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen1.jpg'); background-size:cover; color:#222; padding:150px">
 
-				<h1>Ramada and Hideaway Kitchen</h1>
-
-			</div>
-
-
-			<div class="section dark notopmargin nobottommargin noborder"
-				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg;'); background-size:cover; color:#222; padding:150px">
-
-				<h1>arm Technologies Entryway</h1>
+				<h1>Ramada and Hideaway Kitchen - unique dining experience</h1>
 
 			</div>
 
 
 			<div class="section dark notopmargin nobottommargin noborder"
-				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg;'); background-size:cover; color:#222; padding:150px">
+				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg'); background-size:cover; color:#222; padding:150px">
 
-				<h1>Re:3D - Branded Entryway</h1>
+				<h1 style="color:#222">arm Technologies Entryway</h1>
+
+			</div>
+
+
+			<div class="section dark notopmargin nobottommargin noborder"
+				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg'); background-size:cover; color:#222; padding:150px">
+
+				<h1 style="margin-left:300px">Re:3D - Branded Entryway</h1>
 
 			</div>
 
@@ -319,7 +319,75 @@
 
 
 
-		<!-- Primer Grey -->
+		<!-- arm Technology -->
+		<div class="fancy-title title-dotted-border title-center topmargin-lg">
+			<h2>arm</h2>
+		</div>
+	
+		<p><span class="dropcap">a</span>rm is a software, processor, and Internet of Things company. Their entry way was transformed into a work of art.</p>
+
+		<div class="masonry-thumbs grid-5 clearfix" 
+			 data-lightbox="gallery" 
+			 style="position: relative; height: 200px;">
+			
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 0px; top: 0px;">
+				
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" alt="arm">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 133px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" alt="arm">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 266px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" alt="arm">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+
+			<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" 
+			   data-lightbox="gallery-item" 
+			   style="width: 133px; position: absolute; left: 532px; top: 0px;">
+			
+				<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" alt="arm">
+				<div class="overlay">
+					<div class="overlay-wrap">
+						<i class="icon-line-plus"></i>
+					</div>
+				</div>
+			</a>
+
+		</div>
+
+
+
+
+
+
+
+		<!-- Primer Grey --
 		<div class="col_half topmargin-lg">
 
 			<div class="fancy-title title-dotted-border title-center topmargin-lg">
@@ -375,71 +443,6 @@
 
 
 
-		<!-- arm Technology -->
-		<div class="col_half col_last topmargin-lg">
-
-			<div class="fancy-title title-dotted-border title-center topmargin-lg">
-				<h2>arm</h2>
-			</div>
-		
-			<p><span class="dropcap">a</span>rm is a software, processor, and Internet of Things company. Their entry way was transformed into a work of art.</p>
-
-			<div class="masonry-thumbs grid-5 clearfix" 
-				 data-lightbox="gallery" 
-				 style="position: relative; height: 200px;">
-				
-				<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" 
-				   data-lightbox="gallery-item" 
-				   style="width: 133px; position: absolute; left: 0px; top: 0px;">
-					
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM1.jpg" alt="arm">
-					<div class="overlay">
-						<div class="overlay-wrap">
-							<i class="icon-line-plus"></i>
-						</div>
-					</div>
-				</a>
-
-				<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" 
-				   data-lightbox="gallery-item" 
-				   style="width: 133px; position: absolute; left: 133px; top: 0px;">
-				
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM2.jpg" alt="arm">
-					<div class="overlay">
-						<div class="overlay-wrap">
-							<i class="icon-line-plus"></i>
-						</div>
-					</div>
-				</a>
-
-				<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" 
-				   data-lightbox="gallery-item" 
-				   style="width: 133px; position: absolute; left: 266px; top: 0px;">
-				
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" alt="arm">
-					<div class="overlay">
-						<div class="overlay-wrap">
-							<i class="icon-line-plus"></i>
-						</div>
-					</div>
-				</a>
-
-
-				<a href="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" 
-				   data-lightbox="gallery-item" 
-				   style="width: 133px; position: absolute; left: 532px; top: 0px;">
-				
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM4.jpg" alt="arm">
-					<div class="overlay">
-						<div class="overlay-wrap">
-							<i class="icon-line-plus"></i>
-						</div>
-					</div>
-				</a>
-
-			</div>
-
-		</div>
 
 
 
