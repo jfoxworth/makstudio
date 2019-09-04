@@ -477,34 +477,34 @@ function setDefaultModelData( modelName )
 	// named the necessary value to make this work
 	thisData.data.forEach(function(element) {
 
-		for (thisVar in makStudio.componentNames[modelName])
+		for (componentName in makStudio.componentNames[modelName])
 		{
-			if ( thisVar == element.name )
+			if ( componentName == element.name )
 			{
-				if ( makStudio.componentTypes[modelName][thisVar] == 'slider' )
+				if ( makStudio.componentTypes[modelName][componentName] == 'slider' )
 				{
-					$( "#"+makStudio.componentNames[modelName][thisVar] ).val(element.value);
-					makModel.build_data.componentValues[camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
+					$( "#"+makStudio.componentNames[modelName][componentName] ).val(element.value);
+					makModel.build_data.componentValues[componentName]=element.value;
 				}
 
-				if ( makStudio.componentTypes[modelName][thisVar] == 'dropdown' )
+				if ( makStudio.componentTypes[modelName][componentName] == 'dropdown' )
 				{
-					$( "#"+makStudio.componentNames[modelName][thisVar] ).val(element.value);
-					makModel.build_data.componentValues[camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
+					$( "#"+makStudio.componentNames[modelName][componentName] ).val(element.value);
+					makModel.build_data.componentValues[componentName]=element.value;
 				}
 
-				if ( makStudio.componentTypes[modelName][thisVar] == 'boolean' )
+				if ( makStudio.componentTypes[modelName][componentName] == 'boolean' )
 				{
 					if ( element.value )
 					{
-						$( "#"+makStudio.componentNames[modelName][thisVar] ).prop('checked', true);
-						$( "#"+makStudio.componentNames[modelName][thisVar] ).attr('checked', true);
+						$( "#"+makStudio.componentNames[modelName][componentName] ).prop('checked', true);
+						$( "#"+makStudio.componentNames[modelName][componentName] ).attr('checked', true);
 					}else
 					{
-						$( "#"+makStudio.componentNames[modelName][thisVar] ).prop('checked', false);						
-						$( "#"+makStudio.componentNames[modelName][thisVar] ).attr('checked', false);						
+						$( "#"+makStudio.componentNames[modelName][componentName] ).prop('checked', false);						
+						$( "#"+makStudio.componentNames[modelName][componentName] ).attr('checked', false);						
 					}
-					makModel.build_data.componentValues[camelize(makStudio.componentNames[modelName][thisVar])]=element.value;
+					makModel.build_data.componentValues[componentName]=element.value;
 				}
 
 			}
@@ -554,6 +554,8 @@ function saveModel( modelName )
 
 			if ( nameComponent == typeComponent )
 			{
+
+				console.log('The name is '+nameComponent);
 				if ( ( makModel.build_data.componentTypes[typeComponent] == "slider" ) ||
 					 ( makModel.build_data.componentTypes[typeComponent] == "dropdown" ) )
 				{
@@ -764,8 +766,8 @@ function reloadModel( modelID )
 		{
 			if ( makModel['build_data'][nameComponent] !== undefined )
 			{	
-				console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]]);
-				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]] });
+				console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[nameComponent]);
+				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[nameComponent] });
 			}
 		}
     }, 500);
@@ -792,7 +794,7 @@ function reloadModel( modelID )
 
 				if ( makModel.build_data.componentTypes[typeComponent] == 'boolean' )
 				{
-					if ( makModel.build_data.componentValues[makModel.build_data.componentValues[nameComponent]] )
+					if ( makModel.build_data.componentValues[nameComponent] )
 					{
 						$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', true);
 						$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', true);
