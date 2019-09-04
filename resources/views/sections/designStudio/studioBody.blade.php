@@ -364,6 +364,38 @@
 					</div>
 
 
+
+					<!-- Specifics for fin wall logo -->
+					<div id="finLogo" class="parameterSet">
+
+						<div class="white-section modelBoolean" style="margin:20px 0px;">
+							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Logo On" data-off-text="Logo Off" id="finLogoOnOff">
+						</div>
+
+						<div class="bottommargin" style="margin:20px 0px;">
+							<label>Upload Logo:</label><br>
+							<input name="logoUpload" type="file" multiple class="file-loading" data-show-preview="false" id="finLogoUpload">
+						</div>
+
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Logo Scale (%)</label>
+							<input class="finLogoScaleSlider modelSlider" id="finLogoScaleSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Logo X (inches)</label>
+							<input class="finLogoXSlider modelSlider" id="finLogoXSlider"/>
+						</div>
+
+						<div class="white-section" style="margin:10px 0px" >
+							<label>Logo Y (inches)</label>
+							<input class="finLogoZSlider modelSlider" id="finLogoZSlider"/>
+						</div>
+
+					</div>
+
+
 				</div>
 
 

@@ -304,6 +304,23 @@ $(document).ready(function()	{
 	});
 
 
+	// Upload the logo for the fin wall
+	$("#finLogoUpload").on('change', function(res)
+	{	
+		console.log('Got here for the change event');
+
+		let file = $("#finLogoUpload")[0]['files'][0]
+		model_api.parameters.updateAsync({
+			name: "Upload Logo",
+			value: file
+		}).then(
+			function(response) {
+
+				alert("File successfully uploaded", response);
+	    	}
+	  	);
+	});
+
 
 	// WHen the user clicks on a displayed model
 	// that they have saved adn they want to 
@@ -932,6 +949,32 @@ function initializeComponents( modelName )
 		});
 
 
+		$(".finLogoXSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 200,
+			step: 1
+		});
+
+
+		$(".finLogoZSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 200,
+			step: 1
+		});
+
+
+		$(".finLogoScaleSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 100,
+			step: 1
+		});
+
+
+
+
 	}
 
 
@@ -1282,9 +1325,9 @@ function initializeData()
 				'Fins Thickness' : 'finThicknessSlider',
 				'Spacing of Fins' : 'finSpacingSlider',
 				'Rotate Panels' : 'finRotationSlider',
-				'Position X Logo' : '',
-				'Position Z Logo' : '',
-				'Logo Intensity (%)' : '',
+				'Position X Logo' : 'finLogoXSlider',
+				'Position Z Logo' : 'finLogoZSlider',
+				'Logo Intensity (%)' : 'finLogoScaleSlider',
 				'Show Original Logo' : '',
 				'Show Human Scale' : 'finWallHumanScale',
 				'Show Dimensions' : 'finWallShowDimensions',
@@ -1293,8 +1336,9 @@ function initializeData()
 				'Back Panel Color' : '',
 				'Panels Type' : '',
 				'Material' : '',
-				'Logo?' : '',
-				'Colored MDF' : ''
+				'Logo?' : 'finLogoOnOff',
+				'Colored MDF' : '',
+				'Upload Logo' : 'finLogoUpload'
 
 			},
 
@@ -1343,7 +1387,7 @@ function initializeData()
 
 				'Wall Color' : '',
 				'Logo and Text Color' : '',
-				'Upload Logo' : 'uploadLogo'
+				'Upload Logo' : 'backlitLogoUpload'
 			},
 
 
