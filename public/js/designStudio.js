@@ -170,7 +170,7 @@ $(document).ready(function()	{
 
 		console.log('The design type is '+designType);
 
-		document.getElementById( 'currentModelDisplay' ).html('');
+		$( '#currentModelDisplay' ).html()
 
 		initializeModel( event.target.id )  
 
