@@ -1,6 +1,6 @@
-    <meta property="og:title" content="Mak Studios">
+    <meta property="og:title" content="Mak Studio">
     <meta property="og:image" content="">
-    <meta property="og:description" content="Mak Studios designs ...">
+    <meta property="og:description" content="Mak Studio designs ...">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
