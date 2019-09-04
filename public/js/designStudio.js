@@ -165,6 +165,7 @@ $(document).ready(function()	{
 			_backlit_api.scene.camera.zoomAsync();
 		}
 
+		model_api.scene.camera.zoomAsync();
 
 	});
 
@@ -277,6 +278,8 @@ $(document).ready(function()	{
 				var paramName = thisComponent;
 			}
 		}
+		
+		model_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
 
 
 		if ( designType == 'bench' )
@@ -299,6 +302,7 @@ $(document).ready(function()	{
 			_faceted_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
 		}
 
+
 	});
 
 
@@ -314,6 +318,7 @@ $(document).ready(function()	{
 			}
 		}
 
+		model_api.parameters.updateAsync({name: paramName, value: e.target.checked });
 
 		if ( designType == 'bench' )
 		{
