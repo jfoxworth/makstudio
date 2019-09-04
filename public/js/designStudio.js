@@ -114,7 +114,7 @@ $(document).ready(function()	{
 		// Hide and display the appropriate items
 		$("#currentModelDisplay, #planterWallDisplay, #deskDisplay, #panelWallDisplay").hide();
 		$("#modelDisplay").show();
-		document.getElementById( 'currentModelDisplay' ).html('');
+		$( '#currentModelDisplay' ).html('');
 
 
 		// Retrieve the model data for the user
