@@ -447,7 +447,7 @@
 
 						<div class="bottommargin" style="margin:20px 0px;">
 							<label>Upload Logo:</label><br>
-							<input id="logoUpload" name="logoUpload" type="file" multiple class="file-loading" data-show-preview="false" id="uploadLogo">
+							<input id="uploadLogo" name="logoUpload" type="file" multiple class="file-loading" data-show-preview="false">
 						</div>
 
 

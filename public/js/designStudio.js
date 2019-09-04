@@ -286,6 +286,22 @@ $(document).ready(function()	{
 
 
 
+	// Upload the logo for the backlit wall
+	document.getElementById("logoUpload").onchange = function(res) {
+		let file = document.getElementById("logoUpload").files[0];
+		api.parameters.updateAsync({
+			name: "logo",
+			value: file
+		}).then(
+			function(response) {
+				model_api.parameters.updateAsync({name: "logoUpload", value: file });
+
+				alert("File successfully uploaded", response);
+	    	}
+	  	);
+	};
+
+
 	// WHen the user clicks on a displayed model
 	// that they have saved adn they want to 
 	// view it
@@ -1324,7 +1340,7 @@ function initializeData()
 
 				'Wall Color' : '',
 				'Logo and Text Color' : '',
-				'Upload Logo' : ''
+				'Upload Logo' : 'uploadLogo'
 			},
 
 
@@ -1425,7 +1441,7 @@ function initializeData()
 
 				'Wall Color' : '',
 				'Logo and Text Color' : '',
-				'Upload Logo' : ''
+				'Upload Logo' : 'file'
 			},
 
 
