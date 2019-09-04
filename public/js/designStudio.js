@@ -687,7 +687,7 @@ function retrieveModels(  )
 		$.each(userModelData, function(index, obj){
 	        
 	        var tr = $("<tr></tr>");
-	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.modelName +"</td>");
+	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.name +"</td>");
 	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
 	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td>");
 
@@ -756,16 +756,13 @@ function reloadModel( modelID )
 
 		for (nameComponent in makModel.build_data.componentNames )
 		{
-			for (valueComponent in makModel.build_data.componentValues )
-			{
-				if ( makModel.build_data.componentNames[nameComponent] == valueComponent )
-				{
-					console.log('setting '+nameComponent+' to '+makModel.build_data.componentValues[valueComponent]);
-					model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[valueComponent] });
-				}
+			if ( makModel['build_data'][nameComponent] !== undefined )
+			{	
+				console.log('Setting '+nameComponent+' to '+makModel.build_data[nameComponent]);
+				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data[nameComponent] });
 			}
 		}
-    }, 2000);
+    }, 500);
 
 
 
