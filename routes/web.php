@@ -91,6 +91,9 @@ Route::get('/getModels', 'BuildController@index');
 // Save a model
 Route::post('/saveModel', 'BuildController@store');
 
+// Update a model
+Route::put('/saveModel', 'BuildController@update');
+
 // Delete a model
 Route::delete('/deleteModel/{id}', 'BuildController@destroy');
 

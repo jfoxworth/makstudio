@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in! Go to the <a href="/designStudio">Design Studio</a>.
                 </div>
             </div>
         </div>

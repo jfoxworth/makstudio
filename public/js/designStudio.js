@@ -136,7 +136,14 @@ $(document).ready(function()	{
 	$('#saveModelButton').click(function(event)	
 	{	
 		$('#modelNameModal').modal('hide');
-		saveModel($('#modalModelName').val() );
+
+		if ( makModel['id'] =='' )
+		{
+			saveModel($('#modalModelName').val() );
+		}else
+		{
+			updateModel($('#modalModelName').val() );			
+		}
 	});
 
 
@@ -163,12 +170,6 @@ $(document).ready(function()	{
 		console.log('The design type is '+designType);
 
 		document.getElementById( 'currentModelDisplay' ).innerHTML='';
-
-		// Delete old models
-//		for (thisComponent in makStudio.containerNames )
-//		{
-//			document.getElementById(makStudio.containerNames[thisComponent] ).innerHTML='';
-//		}
 
 		initializeModel( event.target.id )  
 
@@ -290,7 +291,14 @@ $(document).ready(function()	{
 	$(document).on('click', '.potenModel', function(event)
 	{	
 		console.log('click');
+		reloadModel( event.target.id );
 	});
+
+
+
+
+
+
 
 
 	// When the user clicks on a displayed model
@@ -340,12 +348,6 @@ $(document).ready(function()	{
 function initializeModel( modelName )  
 {
 
-	// delete any existing models
-	for (x in makStudio.variableNames)
-	{
-		delete window[makStudio['variableNames'][x]];
-	}
-
 	// viewer settings 
 	var  api_viewerSettings = { 
 		// container to use 
@@ -362,33 +364,6 @@ function initializeModel( modelName )
 		modelViewUrl : 'eu-central-1'
 	}; 
 
-
-	// create the viewer, get back an API v2 object 
-	//eval(makStudio['variableNames'][modelName] = new SDVApp.ParametricViewer(api_viewerSettings));
-
-
-	// create the viewer, get back an API v2 object 
-	/*
-	if ( modelName == 'bench' )
-	{
-		_bench_api = new SDVApp.ParametricViewer(api_viewerSettings);
-	}
-
-	if ( modelName == 'finWall' )
-	{
-		_fin_wall_api = new SDVApp.ParametricViewer(api_viewerSettings)
-	}
-
-	if ( modelName == 'backlit' )
-	{
-		_backlit_api = new SDVApp.ParametricViewer(api_viewerSettings)
-	}
-
-	if ( modelName == 'faceted' )
-	{
-		_faceted_api = new SDVApp.ParametricViewer(api_viewerSettings)
-	}
-*/
 
 	model_api = new SDVApp.ParametricViewer(api_viewerSettings)
 
@@ -433,8 +408,9 @@ function setModelView( modelName )
 
 
 	// Show the container holding the view
-	//$('#'+makStudio['containerNames'][modelName]).show();
-	$('#currentModelDisplay').show();
+	$('#'+makStudio['containerNames'][modelName]).show();
+
+
 
 	// Show the side menu window
 	$('#'+makStudio['sideMenus'][modelName]).show();
@@ -490,6 +466,7 @@ function setDefaultModelData( modelName )
 			'name' : 'Unsaved Model',
 			'componentNames' : makStudio.componentNames[modelName],
 			'componentTypes' : makStudio.componentTypes[modelName],
+			'ticket' : makStudio.modelTickets[modelName],
 			'componentValues' : {}
 		}
 	};
@@ -569,7 +546,6 @@ function saveModel( modelName )
 {
 	// Place the name given in the popup in the name
 	makModel['build_data']['name']=modelName;
-
 	$("#modelName").text( modelName );
 
 
@@ -589,6 +565,12 @@ function saveModel( modelName )
 				{
 					makModel.build_data[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).val();
 				}
+
+				if ( makModel.build_data.componentTypes[typeComponent] == "boolean" )
+				{
+					makModel.build_data[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
+				}
+
 			}
 		}
 	}
@@ -611,6 +593,74 @@ function saveModel( modelName )
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------*
+
+	This function updates the current mode
+	in the database
+
+/*-------------------------------------------*/
+function updateModel( modelName )
+{
+	// Place the name given in the popup in the name
+	makModel['build_data']['name']=modelName;
+	$("#modelName").text( modelName );
+
+
+
+	// For every entry saved in the array, get that value
+	// and save it into an object
+	for (nameComponent in makModel.build_data.componentNames )
+	{
+
+		for (typeComponent in makModel.build_data.componentTypes )
+		{
+
+			if ( nameComponent == typeComponent )
+			{
+				if ( ( makModel.build_data.componentTypes[typeComponent] == "slider" ) ||
+					 ( makModel.build_data.componentTypes[typeComponent] == "dropdown" ) )
+				{
+					makModel.build_data[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).val();
+				}
+
+				if ( makModel.build_data.componentTypes[typeComponent] == "boolean" )
+				{
+					makModel.build_data[nameComponent] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
+				}
+
+			}
+		}
+	}
+
+
+	$.ajax({
+		url : "/saveModel",
+		method :"PUT",
+		data :  { 'model' : makModel }
+
+	}).done(function() 
+	{
+		$( '#saveMessageAlert' ).show( );
+		setTimeout(
+			function() 
+			{
+    			$( '#saveMessageAlert' ).hide( );
+			}, 3000);
+	});
+
+}
 
 
 
@@ -665,40 +715,42 @@ function retrieveModels(  )
 
 /*-------------------------------------------*
 
-	This function gets the models that a
-	user has saved
+	This function loads a model that a user
+	has selected from the list of existing
+	models
 
 /*-------------------------------------------*/
-function reloadModel(  )
+function reloadModel( modelID )
 {
 
 
-	$.get( "getModels", function( data ) 
+	userModelData.forEach(function(element) 
 	{
-		console.log(data);
-
-		window['userModelData'] = data;
-		$.each(userModelData, function(index, obj){
-			userModelData[index]['build_data'] = JSON.parse(obj.build_data);
-		});
-
-        $("#userModelList").innerHTML = '';
-
-		var tr="<tr style='padding:10px 0px;'><th style='width:300px;'>Model Name</th><th style='width:300px;'>Date Created</th></tr>"
-        $("#userModelList").append(tr);
-
-		$.each(userModelData, function(index, obj){
-	        
-	        var tr = $("<tr></tr>");
-	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.modelName +"</td>");
-	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
-	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td>");
-
-	        $("#userModelList").append(tr);
-	    });
-
+		if ( element.id == modelID )
+		{
+			makModel = element
+		}
 	});
 
+
+
+	// viewer settings 
+	var  api_viewerSettings = { 
+		// container to use 
+		container : document.getElementById('currentModelDisplay'),
+		// when creating the viewer, we want to get back an API v2 object 
+		api: {version: 2}, 
+		// level of log messages which will be sent to the browser console
+		loggingLevel: SDVApp.constants.loggingLevels.NONE, 
+		// instantly show the 3D scene 
+		showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
+		// ticket for a ShapeDiver model 
+		ticket: makModel['build_data']['ticket'], 
+		modelViewUrl : 'eu-central-1'
+	}; 
+
+
+	model_api = new SDVApp.ParametricViewer(api_viewerSettings)
 
 }
 
@@ -1123,7 +1175,11 @@ function initializeData()
 		'containerNames' :{
 			'planter' : 'planterWallDisplay',
 			'desk' : 'deskDisplay',
-			'panel' : 'panelWallDisplay'
+			'panel' : 'panelWallDisplay',
+			'faceted' : 'currentModelDisplay',
+			'bench' : 'currentModelDisplay',
+			'backlit' : 'currentModelDisplay',
+			'finWall' : 'currentModelDisplay'
 		},
 
 		'sideMenus' :{

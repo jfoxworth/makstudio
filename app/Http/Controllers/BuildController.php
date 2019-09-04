@@ -38,9 +38,6 @@ class BuildController extends Controller
     public function store(Request $request)
     {
 
-        echo($request['makModel']);
-        echo(json_encode($request['buildData']));
-
         $thisData = $request['model'];
 
         $thisBuild = new Build;
@@ -81,7 +78,9 @@ class BuildController extends Controller
      */
     public function update(Request $request, Build $build)
     {
-        //
+        $thisData = $request['model'];
+        $thisBuild = Build::findOrFail($thisData['id']);
+        $thisBuild['build_data'] = json_encode($thisData['build_data']);
     }
 
     /**
