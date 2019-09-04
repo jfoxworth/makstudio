@@ -781,11 +781,13 @@ function reloadModel( modelID )
 		if ( makModel.build_data.componentTypes[nameComponent] == 'slider' )
 		{
 			$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
+			$( "#"+makModel.build_data.componentNames[nameComponent] ).change();
 		}
 
 		if ( makModel.build_data.componentTypes[nameComponent] == 'dropdown' )
 		{
 			$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
+			$( "#"+makModel.build_data.componentNames[nameComponent] ).change();
 		}
 
 		if ( makModel.build_data.componentTypes[nameComponent] == 'boolean' )
@@ -799,6 +801,7 @@ function reloadModel( modelID )
 				$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', false);						
 				$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', false);						
 			}
+			$( "#"+makModel.build_data.componentNames[nameComponent] ).change();
 		}
 	}
 
