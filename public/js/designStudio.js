@@ -299,7 +299,7 @@ $(document).ready(function()	{
 				alert("File successfully uploaded", response);
 	    	}
 	  	);
-	};
+	});
 
 
 
