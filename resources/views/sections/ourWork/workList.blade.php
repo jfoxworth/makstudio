@@ -6,7 +6,7 @@
 		<span>Whether corporate, small business, or residential, we have done it all</span>
 	</div>
 
-	<div class="container clearfix">
+	<div class="container-wide clearfix">
 		
 
 
@@ -143,21 +143,24 @@
 		<!-- Scrolling windows -->
 		<section>
 
-			<div style="background-image:https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen1.jpg;">
+			<div class="section dark notopmargin nobottommargin noborder"
+				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/hideawayKitchen1.jpg;'); color:#222; padding:150px">
 
 				<h1>Ramada and Hideaway Kitchen</h1>
 
 			</div>
 
 
-			<div style="background-image:https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg;">
+			<div class="section dark notopmargin nobottommargin noborder"
+				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg;'); color:#222; padding:150px">
 
 				<h1>arm Technologies Entryway</h1>
 
 			</div>
 
 
-			<div style="background-image:https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg;">
+			<div class="section dark notopmargin nobottommargin noborder"
+				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg;'); color:#222; padding:150px">
 
 				<h1>Re:3D - Branded Entryway</h1>
 
@@ -166,7 +169,10 @@
 		</section>
 
 
+	</div>
 
+
+	<div class="container clearfix">
 
 
 
