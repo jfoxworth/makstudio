@@ -55,7 +55,7 @@
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
 						data-x="650"
-						data-y="300"
+						data-y="400"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1200"
@@ -88,7 +88,7 @@
 
 					<div class="tp-caption ltl tp-resizeme"
 						data-x="800"
-						data-y="325"
+						data-y="350"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1550"
