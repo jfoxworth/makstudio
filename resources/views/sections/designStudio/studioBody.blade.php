@@ -924,6 +924,11 @@
 	@endguest
 
 
+
+	<div class="col_last col_three_fourth notopmargin nobottommargin">
+		<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
+	</div>
+
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
 		<div id="benchDisplay" style="width:900px; height:600px;"></div>
 	</div>
@@ -977,6 +982,9 @@
 
 
 
+</div>
+
+
 
 
 <!-- Modal -->
@@ -999,7 +1007,4 @@
       </div>
     </div>
   </div>
-</div>
-
-
 </div>
