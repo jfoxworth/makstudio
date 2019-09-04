@@ -41,9 +41,11 @@ class BuildController extends Controller
         echo($request['makModel']);
         echo(json_encode($request['buildData']));
 
+        $thisData = $request['model'];
+
         $thisBuild = new Build;
-        $thisBuild->build_id = $request['makModel']['build_id'];
-        $thisBuild->build_data = json_encode($request['makModel']['build_data']);
+        $thisBuild->build_id = $thisData['build_id'];
+        $thisBuild->build_data = json_encode($thisData['build_data']);
         $thisBuild->user_id = Auth::id();
         $thisBuild->save();
     }

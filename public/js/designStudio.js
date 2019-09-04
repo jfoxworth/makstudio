@@ -660,7 +660,7 @@ function saveModel( modelName )
 	$.ajax({
 		url : "/saveModel",
 		method :"POST",
-		data :  makModel
+		data :  { 'model' : makModel }
 
 	}).done(function() 
 	{
