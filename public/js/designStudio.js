@@ -751,18 +751,21 @@ function reloadModel( modelID )
 	$("#modelDisplay").hide();
 
 
-
-	for (nameComponent in makModel.build_data.componentNames )
+	setTimeout(function () 
 	{
-		for (valueComponent in makModel.build_data.componentValues )
+
+		for (nameComponent in makModel.build_data.componentNames )
 		{
-			if ( makModel.build_data.componentNames[nameComponent] == valueComponent )
+			for (valueComponent in makModel.build_data.componentValues )
 			{
-				console.log('setting '+nameComponent+' to '+makModel.build_data.componentValues[valueComponent]);
-				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[valueComponent] });
+				if ( makModel.build_data.componentNames[nameComponent] == valueComponent )
+				{
+					console.log('setting '+nameComponent+' to '+makModel.build_data.componentValues[valueComponent]);
+					model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[valueComponent] });
+				}
 			}
 		}
-	}
+    }, 2000);
 
 
 
