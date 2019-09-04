@@ -287,7 +287,8 @@ $(document).ready(function()	{
 
 
 	// Upload the logo for the backlit wall
-	document.getElementById("logoUpload").onchange = function(res) {
+	$(document).on('change', '#logoUpload', function(res)
+	{	
 		let file = document.getElementById("logoUpload").files[0];
 		model_api.parameters.updateAsync({
 			name: "Upload Logo",
@@ -299,6 +300,7 @@ $(document).ready(function()	{
 	    	}
 	  	);
 	};
+
 
 
 	// WHen the user clicks on a displayed model
