@@ -291,7 +291,7 @@ $(document).ready(function()	{
 	{	
 		console.log('Got here for the change event');
 
-		let file = $("#logoUpload").files[0];
+		let file = $("#logoUpload")[0]['files'][0]
 		model_api.parameters.updateAsync({
 			name: "Upload Logo",
 			value: file
