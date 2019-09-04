@@ -54,8 +54,8 @@
 				-->
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-						data-x="600"
-						data-y="230"
+						data-x="650"
+						data-y="300"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1200"
@@ -66,7 +66,7 @@
 						data-endelementdelay="0.1"
 						data-endspeed="1000"
 						data-endeasing="Power4.easeIn" 
-					style="z-index: 3; color: #222; font-size: 36px;">Customize your interior space
+					style="z-index: 3; color: #222; font-size: 40px;">Customize your interior space
 					</div>
 
 
@@ -99,7 +99,7 @@
 						data-endelementdelay="0.1"
 						data-endspeed="1000"
 						data-endeasing="Power4.easeIn" style="z-index: 3;">
-						<a href="#/designStudio" class="button button-3d button-black button-large button-rounded tright nomargin" style="color: #FFF;">
+						<a href="/designStudio" class="button button-3d button-black button-large button-rounded tright nomargin" style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
 						</a>
 					</div>
