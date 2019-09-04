@@ -773,10 +773,6 @@ function reloadModel( modelID )
 
 
 
-	makModel.build_data.componentValues[makModel.build_data.componentNames[nameComponent]] = $('#'+makModel.build_data.componentNames[nameComponent]).prop('checked');
-
-
-
 	for (nameComponent in makModel.build_data.componentNames )
 	{
 		for (typeComponent in makModel.build_data.componentTypes )
