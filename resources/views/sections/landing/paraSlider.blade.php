@@ -13,6 +13,88 @@
 
 
 
+
+				<!-- SLIDE  -->
+				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/bgRamada.jpeg" data-delay="12000"  data-saveperformance="off"  data-title="Full Featured Menu">
+					<!-- MAIN IMAGE -->
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/bgRamada.jpeg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
+					<!-- LAYERS -->
+
+					<!-- LAYER NR. 1 -->
+
+					<!--
+					<div class="tp-caption ltl tp-resizeme revo-slider-caps-text uppercase"
+					data-x="440"
+					data-y="215"
+					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+					data-speed="800"
+					data-start="1000"
+					data-easing="easeOutQuad"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.01"
+					data-endelementdelay="0.1"
+					data-endspeed="1000"
+					data-endeasing="Power4.easeIn" style="z-index: 3;">Wide Array of Options</div>
+				-->
+
+					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
+					data-x="225"
+					data-y="475"
+					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+					data-speed="800"
+					data-start="1200"
+					data-easing="easeOutQuad"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.01"
+					data-endelementdelay="0.1"
+					data-endspeed="1000"
+					data-endeasing="Power4.easeIn" style="z-index: 3;font-size:40px">Customize Your Interior Space</div>
+
+
+					<!--
+					<div class="tp-caption ltl tp-resizeme revo-slider-desc-text"
+					data-x="245"
+					data-y="340"
+					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+					data-speed="800"
+					data-start="1400"
+					data-easing="easeOutQuad"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.01"
+					data-endelementdelay="0.1"
+					data-endspeed="1000"
+					data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;">Choose from Continental, Oriental, Italian or Thai Cuisines. Or Simply create your own Mix.</div>
+					-->
+
+
+
+					<div class="tp-caption ltl tp-resizeme"
+					data-x="325"
+					data-y="575"
+					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+					data-speed="800"
+					data-start="1550"
+					data-easing="easeOutQuad"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.01"
+					data-endelementdelay="0.1"
+					data-endspeed="1000"
+					data-endeasing="Power4.easeIn" style="z-index: 3; color:#222;">
+					<a href="#" class="button button-border button-white button-light button-large button-rounded tright nomargin">
+						<span>Create Your Own</span> <i class="icon-angle-right"></i>
+					</a>
+					</div>
+				</li>
+
+
+
+
+
+
 				<!-- SLIDE  -->
 				<li data-transition="slidedown" 
 					data-slotamount="1" 
@@ -54,8 +136,8 @@
 				-->
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-						data-x="650"
-						data-y="200"
+						data-x="700"
+						data-y="600"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1200"
@@ -66,7 +148,7 @@
 						data-endelementdelay="0.1"
 						data-endspeed="1000"
 						data-endeasing="Power4.easeIn" 
-					style="z-index: 3; color: #222; font-size: 40px;">Customize your interior space
+					style="z-index: 3; color: #222; font-size: 40px; max-width: 400px;">Create your own cool and "instagram-able" space
 					</div>
 
 
@@ -87,8 +169,8 @@
 				-->
 
 					<div class="tp-caption ltl tp-resizeme"
-						data-x="800"
-						data-y="300"
+						data-x="850"
+						data-y="700"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1550"
@@ -210,7 +292,7 @@
 					data-endeasing="Power4.easeIn" style="z-index: 3;">Wide Array of Options</div>
 				-->
 
-					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
+					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text noborder"
 					data-x="0"
 					data-y="450"
 					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
@@ -222,7 +304,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 3; font-size:40px; background-color:#222; padding:10px">Customize Your Interior Space</div>
+					data-endeasing="Power4.easeIn" style="z-index: 3; font-size:40px; max-width:400px; background-color:#222; padding:10px">Memorable experiences for your customers</div>
 
 					<!--
 					<div class="tp-caption ltl tp-resizeme revo-slider-desc-text"
@@ -337,84 +419,6 @@
 
 
 
-
-
-
-				<!-- SLIDE  -->
-				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/bgRamada.jpeg" data-delay="12000"  data-saveperformance="off"  data-title="Full Featured Menu">
-					<!-- MAIN IMAGE -->
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/bgRamada.jpeg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
-					<!-- LAYERS -->
-
-					<!-- LAYER NR. 1 -->
-
-					<!--
-					<div class="tp-caption ltl tp-resizeme revo-slider-caps-text uppercase"
-					data-x="440"
-					data-y="215"
-					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-					data-speed="800"
-					data-start="1000"
-					data-easing="easeOutQuad"
-					data-splitin="none"
-					data-splitout="none"
-					data-elementdelay="0.01"
-					data-endelementdelay="0.1"
-					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 3;">Wide Array of Options</div>
-				-->
-
-					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-					data-x="175"
-					data-y="475"
-					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-					data-speed="800"
-					data-start="1200"
-					data-easing="easeOutQuad"
-					data-splitin="none"
-					data-splitout="none"
-					data-elementdelay="0.01"
-					data-endelementdelay="0.1"
-					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 3;font-size:40px">Customize Your Interior Space</div>
-
-
-					<!--
-					<div class="tp-caption ltl tp-resizeme revo-slider-desc-text"
-					data-x="245"
-					data-y="340"
-					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-					data-speed="800"
-					data-start="1400"
-					data-easing="easeOutQuad"
-					data-splitin="none"
-					data-splitout="none"
-					data-elementdelay="0.01"
-					data-endelementdelay="0.1"
-					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;">Choose from Continental, Oriental, Italian or Thai Cuisines. Or Simply create your own Mix.</div>
-					-->
-
-
-
-					<div class="tp-caption ltl tp-resizeme"
-					data-x="200"
-					data-y="575"
-					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-					data-speed="800"
-					data-start="1550"
-					data-easing="easeOutQuad"
-					data-splitin="none"
-					data-splitout="none"
-					data-elementdelay="0.01"
-					data-endelementdelay="0.1"
-					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 3; color:#222;">
-					<a href="#" class="button button-border button-white button-light button-large button-rounded tright nomargin">
-						<span>Create Your Own</span> <i class="icon-angle-right"></i>
-					</a>
-					</div>
-				</li>
 
 
 
