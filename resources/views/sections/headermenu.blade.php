@@ -3,8 +3,7 @@
 	<nav id="primary-menu" class="dark">
 
 		<ul>
-			<li><a href="/products"><div>Products</div></a>
-			</li>
+			<li><a href="/products"><div>Products</div></a></li>
 
 			<li><a href="/ourWork"><div>Our Work</div></a></li>
 
