@@ -31,6 +31,8 @@ $(document).ready(function()	{
 	$('#contactSubmit').click(function(event)	
 	{	
 
+		console.log('Contact button clicked');
+
 		makContact = {
 			'name' : $('#contactName').val(),
 			'email' : $('#contactEmail').val(),
