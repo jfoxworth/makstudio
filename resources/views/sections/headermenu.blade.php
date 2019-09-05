@@ -11,18 +11,6 @@
 			<li><a href="/aboutUs"><div>About Us</div></a></li>
 
 			
-<!--
-			@guest
-				<li data-toggle="tooltip" data-placement="bottom" title="Create Account / Login">
-					<a href="/register"><i class="icon-user"></i></a>
-				</li>
-			@else
-				<li data-toggle="tooltip" data-placement="bottom" title="{{{ Auth::user()->name }}}">
-					<a href="/home"><i class="icon-user"></i></a>
-				</li>
-			@endguest
--->
-
 			<!-- Right Side Of Navbar -->
 	            <!-- Authentication Links -->
 	            @guest
