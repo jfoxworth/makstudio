@@ -28,7 +28,7 @@ $(document).ready(function()	{
 
 
 	// When the user sends a message
-	$('#contactSubmit').change(function(event)	
+	$('#contactSubmit').click(function(event)	
 	{	
 
 		makContact = {
