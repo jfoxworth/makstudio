@@ -1359,7 +1359,7 @@ function initializeData()
 		},
 
 		'priceType' : {
-			'bench' ; 'linear',
+			'bench' : 'linear',
 			'finWall' : 'square',
 			'backlit' : 'square'
 		}

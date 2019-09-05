@@ -39,7 +39,7 @@ class MessageController extends Controller
     {
 
         $thisMessage = new Message;
-        $thisMessage->message_data = $request['message'];
+        $thisMessage->message_data = json_encode($request['message']);
         $thisMessage->user_id = Auth::id();
         $thisMessage->save();
         
