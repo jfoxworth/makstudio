@@ -14,11 +14,6 @@ $(document).ready(function()	{
 
 
 
-	console.log('I am here');
-
-
-
-
 
 	/*---------------------------------------------------
 
@@ -48,7 +43,7 @@ $(document).ready(function()	{
 		$('#contactMessage').val('');
 
 		$.ajax({
-			url : "/messages/",
+			url : "/messages",
 			method :"POST",
 			data :  { 'message' : makContact }
 
