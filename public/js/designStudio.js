@@ -739,7 +739,7 @@ function retrieveModels(  )
 	        $("#userModelList").append(tr);
 	    });
 
-		tr.append('</table>');
+		$("#userModelList").append('</table>');
 	});
 
 
