@@ -175,6 +175,8 @@ $(document).ready(function()	{
 
 		setModelView(event.target.id);
 
+		setPrice(event.target.id);
+
 		$('.designType').removeClass('currentItem');
 
 		$('#'+event.target.id).parent().addClass('currentItem');
@@ -859,6 +861,35 @@ function reloadModel( modelID )
 
 
 
+
+
+
+
+
+
+
+
+/*-------------------------------------------*
+
+	This function sets the prices for the
+	3D model items based upon square feet
+	and linear feet.
+
+/*-------------------------------------------*/
+function setPrice( modelName )
+{
+
+	var modelPrice = 0;
+	var linFootBench = 1250;
+	var sqFootFin = 85;
+	var sqFootBacklit = 125;
+
+	if ( modelName == 'bench' )
+	{
+		modelPrice = parseInt()
+	}
+
+}
 
 
 
