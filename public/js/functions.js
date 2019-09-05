@@ -2828,6 +2828,8 @@ jQuery(document).ready(function() {
         !1
     })
 }),
+
+/*
 jQuery.get("http://themes.semicolonweb.com/html/canvas/switcher-html.html", function(e) {
     jQuery("#gotoTop").after(e),
     jQuery(".scw-trigger").on("click", function() {
@@ -2837,6 +2839,7 @@ jQuery.get("http://themes.semicolonweb.com/html/canvas/switcher-html.html", func
         jQuery(e.target).closest(".scw-switcher-wrap").length || jQuery(".scw-switcher-wrap").toggleClass("scw-switcher-open", !1)
     })
 });
+*/
 jQuery(document).one("ajaxComplete", function() {
     jQuery(".preloader-demo").on("click", function(s) {
         var i = jQuery(this)
