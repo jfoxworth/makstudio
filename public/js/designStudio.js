@@ -731,10 +731,10 @@ function retrieveModels(  )
 
 		$.each(userModelData, function(index, obj){
 	        
-	        var tr = $("<tr class='hoverMe' style='height:50px; padding:10px 0px; border-bottom:2px solid #ccc;'></tr>");
+	        var tr = $("<tr class='hoverMe' style='height:50px; padding:10px 0px; border-bottom:2px solid #ccc;'>");
 	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.name +"</td>");
 	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
-	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td>");
+	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td></tr>");
 
 	        $("#userModelList").append(tr);
 	    });
