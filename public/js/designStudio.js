@@ -887,16 +887,17 @@ function setPrice( modelName )
 
 	if ( modelName == 'bench' )
 	{
-		var totalLength = parseInt( makModel['componentValues']['Twist Length'] ) + 
-						  parseInt( makModel['componentValues']['Right Seating Length'] ) + 
-						  parseInt( makModel['componentValues']['Left Seating Length'] );
+		var totalLength = parseInt( makModel['build_data']['componentValues']['Twist Length'] ) + 
+						  parseInt( makModel['build_data']['componentValues']['Right Seating Length'] ) + 
+						  parseInt( makModel['build_data']['componentValues']['Left Seating Length'] );
 		modelPrice = makStudio['modelPrices'][modelName] * totalLength;
 		$('#benchPrice').html( modelPrice );
 	}
 
 	if ( modelName == 'finWall' )
 	{
-		var totalSpace = parseInt( makModel['componentValues']['Height of Wall'] ) + parseInt( makModel['componentValues']['Lenght of Wall'] );
+		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) + 
+						parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
 		modelPrice = makStudio['modelPrices'][modelName] * totalSpace;
 		$('#finWallPrice').html( modelPrice );
 	}
@@ -904,7 +905,8 @@ function setPrice( modelName )
 
 	if ( modelName == 'backlit' )
 	{
-		var totalSpace = parseInt( makModel['componentValues']['Height of Wall'] ) + parseInt( makModel['componentValues']['LENGTH OF WALL'] );
+		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) + 
+						 parseInt( makModel['build_data']['componentValues']['LENGTH OF WALL'] );
 		modelPrice = makStudio['modelPrices'][modelName] * totalSpace;
 		$('#backlitPrice').html( modelPrice );
 	}
