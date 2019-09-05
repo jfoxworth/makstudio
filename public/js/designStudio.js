@@ -115,6 +115,7 @@ $(document).ready(function()	{
 		$("#currentModelDisplay, #planterWallDisplay, #deskDisplay, #panelWallDisplay").hide();
 		$("#modelDisplay").show();
 		$( '#currentModelDisplay' ).html('');
+		$('.parameterSet').hide();
 
 
 		// Retrieve the model data for the user

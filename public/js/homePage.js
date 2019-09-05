@@ -1,6 +1,31 @@
 $(document).ready(function()	{
 
 
+	/*---------------------------------------------------
+
+		Things that have to be done on page load
+
+	----------------------------------------------------*/
+
+
+	// Hide the success message 
+	$('#saveMessageAlert').hide();
+
+
+
+
+
+
+
+
+
+
+	/*---------------------------------------------------
+
+		Things that are responses to actions
+
+	----------------------------------------------------*/
+
 
 	// When the user sends a message
 	$('#contactSubmit').change(function(event)	

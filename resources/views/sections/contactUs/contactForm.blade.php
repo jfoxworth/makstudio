@@ -18,7 +18,6 @@
 
 			<div class="form-result"></div>
 
-			<form class="nobottommargin">
 
 				<div class="form-process"></div>
 
@@ -92,7 +91,6 @@
 
 				<input type="hidden" name="prefix" value="template-contactform-">
 
-			</form>
 
 		</div>
 
