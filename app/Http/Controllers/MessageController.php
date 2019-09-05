@@ -35,7 +35,12 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $thisMessage = new Message;
+        $thisMessage->message_data = $request['message']);
+        $thisMessage->user_id = Auth::id();
+        $thisMessage->save();
+        
     }
 
     /**

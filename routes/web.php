@@ -97,6 +97,9 @@ Route::put('/saveModel', 'BuildController@update');
 // Delete a model
 Route::delete('/deleteModel/{id}', 'BuildController@destroy');
 
+// Save a Message
+Route::post('/messages', 'MessageController@store');
+
 
 Auth::routes();
 
