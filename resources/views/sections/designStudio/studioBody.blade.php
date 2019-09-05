@@ -167,7 +167,7 @@
 							<input class="benchRightSeatSlider modelSlider"  id="benchRightSeatSlider"/>
 						</div>
 
-						<div>
+						<div class="white-section" style="margin:20px 0px">
 							<label>Right Planter Length</label>
 							<select id="rightPlanterLength"
 									class="selectpicker btn-primary modelDropdown"
@@ -184,9 +184,10 @@
 
 
 					<!-- Price box for bench -->
-					<div class="divcenter">
+					<div class="white-section divcenter" style="margin:20px 0px">
+						<label>Estimated Cost (US)</label>
 
-						<div class="priceBox">
+						<div class="divcenter priceBox">
 							$ <span id="benchPrice"></span>
 						</div>
 
@@ -407,6 +408,17 @@
 					</div>
 
 
+					<!-- Price box for bench -->
+					<div class="white-section divcenter" style="margin:20px 0px">
+						<label>Estimated Cost (US)</label>
+
+						<div class="divcenter priceBox">
+							$ <span id="benchPrice"></span>
+						</div>
+
+					</div>
+
+
 				</div>
 
 
@@ -584,6 +596,18 @@
 						</div>
 
 					</div>
+
+
+					<!-- Price box for bench -->
+					<div class="white-section divcenter" style="margin:20px 0px">
+						<label>Estimated Cost (US)</label>
+
+						<div class="divcenter priceBox">
+							$ <span id="benchPrice"></span>
+						</div>
+
+					</div>
+
 
 				</div>
 

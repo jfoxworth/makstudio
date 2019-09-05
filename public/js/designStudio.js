@@ -69,6 +69,7 @@ $(document).ready(function()	{
 
 	// Setup the initial model that the viewer will see
 	initializeModel('bench');
+	setPrice('bench');
 
 
 	// Set the page to display the default model
