@@ -1362,7 +1362,7 @@ function initializeData()
 			'bench' : 'linear',
 			'finWall' : 'square',
 			'backlit' : 'square'
-		}
+		},
 
 		'containerNames' :{
 			'planter' : 'planterWallDisplay',
