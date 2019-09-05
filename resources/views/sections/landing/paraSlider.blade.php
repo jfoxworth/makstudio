@@ -39,7 +39,7 @@
 				-->
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-					data-x="225"
+					data-x="275"
 					data-y="475"
 					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 					data-speed="800"
@@ -72,7 +72,7 @@
 
 
 					<div class="tp-caption ltl tp-resizeme"
-					data-x="325"
+					data-x="400"
 					data-y="575"
 					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 					data-speed="800"
@@ -137,7 +137,7 @@
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
 						data-x="700"
-						data-y="600"
+						data-y="450"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1200"
@@ -170,7 +170,7 @@
 
 					<div class="tp-caption ltl tp-resizeme"
 						data-x="850"
-						data-y="700"
+						data-y="600"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1550"
@@ -200,6 +200,7 @@
 					<!-- LAYERS -->
 
 					<!-- LAYER NR. 2 -->
+					<!--
 					<div class="tp-caption ltl tp-resizeme revo-slider-caps-text uppercase"
 					data-x="600"
 					data-y="215"
@@ -213,6 +214,7 @@
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
 					data-endeasing="Power4.easeIn" style="z-index: 3;">We handle all aspects</div>
+				-->
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
 					data-x="597"
@@ -226,7 +228,9 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 3;  font-size: 45px;">Design, Build, Environment</div>
+					data-endeasing="Power4.easeIn" style="z-index: 3;  font-size: 45px;">Brand Your Business</div>
+
+					<!--
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-desc-text tleft"
 					data-x="600"
@@ -241,6 +245,8 @@
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
 					data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;">Use our platform to design your own environment. We then build and install your custom design</div>
+
+				-->
 
 					<div class="tp-caption ltl tp-resizeme"
 					data-x="600"
