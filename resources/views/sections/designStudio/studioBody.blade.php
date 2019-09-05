@@ -182,6 +182,17 @@
 					</div>
 
 
+
+					<!-- Price box for bench -->
+					<div class="divcenter">
+
+						<div class="priceBox">
+							$ <span id="benchPrice"></span>
+						</div>
+
+					</div>
+
+
 				</div>
 
 
