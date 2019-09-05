@@ -413,7 +413,7 @@
 						<label>Estimated Cost (US)</label>
 
 						<div class="divcenter priceBox">
-							$ <span id="benchPrice"></span>
+							$ <span id="finWallPrice"></span>
 						</div>
 
 					</div>
@@ -603,7 +603,7 @@
 						<label>Estimated Cost (US)</label>
 
 						<div class="divcenter priceBox">
-							$ <span id="benchPrice"></span>
+							$ <span id="backlitPrice"></span>
 						</div>
 
 					</div>
