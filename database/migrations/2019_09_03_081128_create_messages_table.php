@@ -25,7 +25,6 @@ class CreateMessagesTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id');          // ID of user that sent the message (if one exists)
             $table->text('message_data');           // Content of message
-            $table->integer('status')->default(0);  // 0 for unread, 1 for read, etc
             $table->softDeletes();
             $table->timestamps();
         });

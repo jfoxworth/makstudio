@@ -280,6 +280,12 @@ span.middot {
 .hoverMe { cursor: pointer; }
 .hoverMeGrey:hover { background-color: #EEE; cursor:pointer; }
 
+.priceBox{
+	background-color:#222;
+	padding:5px 10px;
+	color:#fff;
+}
+
 .center { text-align: center !important; }
 
 .divcenter {

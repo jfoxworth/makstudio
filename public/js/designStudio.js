@@ -259,11 +259,12 @@ $(document).ready(function()	{
 		{
 			if ( event.target.id == makStudio.componentNames[designType][thisComponent] )
 			{
-				var paramName = thisComponent;
+				model_api.parameters.updateAsync({name: thisComponent, value: $('#'+event.target.id).val() });
+				makModel['build_data']['componentValues'][thisComponent] = $('#'+event.target.id).val();
 			}
 		}
 
-		model_api.parameters.updateAsync({name: paramName, value: $('#'+event.target.id).val() });
+		setPrice( designType );
 
 	});
 
@@ -276,12 +277,12 @@ $(document).ready(function()	{
 		{
 			if ( e.target.id == makStudio.componentNames[designType][thisComponent] )
 			{
-				var paramName = thisComponent;
+				model_api.parameters.updateAsync({name: thisComponent, value: e.target.checked });
+				makModel['build_data']['componentValues'][thisComponent] = e.target.checked;
 			}
 		}
 
-		model_api.parameters.updateAsync({name: paramName, value: e.target.checked });
-
+		setPrice( designType );
 
 	});
 
@@ -886,8 +887,29 @@ function setPrice( modelName )
 
 	if ( modelName == 'bench' )
 	{
-		modelPrice = parseInt()
+		var totalLength = parseInt( makModel['componentValues']['Twist Length'] ) + 
+						  parseInt( makModel['componentValues']['Right Seating Length'] ) + 
+						  parseInt( makModel['componentValues']['Left Seating Length'] );
+		modelPrice = makStudio['modelPrices'][modelName] * totalLength;
+		$('#benchPrice').html( modelPrice );
 	}
+
+	if ( modelName == 'finWall' )
+	{
+		var totalSpace = parseInt( makModel['componentValues']['Height of Wall'] ) + parseInt( makModel['componentValues']['Lenght of Wall'] );
+		modelPrice = makStudio['modelPrices'][modelName] * totalSpace;
+		$('#finWallPrice').html( modelPrice );
+	}
+
+
+	if ( modelName == 'backlit' )
+	{
+		var totalSpace = parseInt( makModel['componentValues']['Height of Wall'] ) + parseInt( makModel['componentValues']['LENGTH OF WALL'] );
+		modelPrice = makStudio['modelPrices'][modelName] * totalSpace;
+		$('#backlitPrice').html( modelPrice );
+	}
+
+	makModel['build_data']['price'] = modelPrice;
 
 }
 
@@ -1328,6 +1350,19 @@ function initializeData()
 			'backlit' : 'b377b948d7f72cee5db1184551e10c1e9f8a34cae0323283b7f5f8831cedc2e26986531436453d00bbce7556061713170f148b9d879fc7e6b2454fce26e030c1c8fb9782aeaaa1fa73ed74ce6059e6daba4a3b682e769ebfe82ee516dfc6b2a0fe3fc30c2fab53476e8f1f82c895f1781fa1746ebd15-b63fe0ed951441432130ea48fe327cf7',
 			'faceted' : '6a4bbceb3a6a94c8d65543ebfa9d3d5fea7e02d3947dd4d34c6ff5eac325b91da4dcbf461588290b2867aedf44bc773a1b4d0d6f966dd2c8aa83d7a7a0caf6e1c2a2874c6d1ca9c45e245360bb14be9666bf0aad53f1758cf24a5fe9fa880416c71a33f184b47fef9295faa30e99ae1bb05a70f67352-2801291baf32cfcf605d4d7b00d78132'
 		},
+
+
+		'modelPrices' : {
+			'bench' : 1250,
+			'finWall' : 85,
+			'backlit' : 125
+		},
+
+		'priceType' : {
+			'bench' ; 'linear',
+			'finWall' : 'square',
+			'backlit' : 'square'
+		}
 
 		'containerNames' :{
 			'planter' : 'planterWallDisplay',
