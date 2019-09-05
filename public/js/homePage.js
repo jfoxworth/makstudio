@@ -7,6 +7,13 @@ $(document).ready(function()	{
 
 	----------------------------------------------------*/
 
+	// Set CSRF Token
+	$.ajaxSetup({
+	    headers: {
+	        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	    }
+	});
+
 
 	// Hide the success message 
 	$('#saveMessageAlert').hide();
