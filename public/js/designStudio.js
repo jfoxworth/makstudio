@@ -898,18 +898,18 @@ function setPrice( modelName )
 
 	if ( modelName == 'finWall' )
 	{
-		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) + 
+		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
-		modelPrice = makStudio['modelPrices'][modelName] * totalSpace;
+		modelPrice = makStudio['modelPrices'][modelName] * totalSpace / 144;
 		$('#finWallPrice').html( modelPrice );
 	}
 
 
 	if ( modelName == 'backlit' )
 	{
-		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) + 
+		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						 parseInt( makModel['build_data']['componentValues']['LENGTH OF WALL'] );
-		modelPrice = makStudio['modelPrices'][modelName] * totalSpace;
+		modelPrice = makStudio['modelPrices'][modelName] * totalSpace / 144;
 		$('#backlitPrice').html( modelPrice );
 	}
 
