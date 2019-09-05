@@ -562,7 +562,7 @@ function setDefaultModelData( modelName )
 
 
 	initializeComponents( modelName );
-	setPrice(event.target.id);
+	setPrice( modelName );
 
 
 
@@ -854,7 +854,7 @@ function reloadModel( modelID )
 	}
 
 	initializeComponents( makModel['build_id'] );
-	setPrice(event.target.id);
+	setPrice( modelID);
 
 
 }
