@@ -86,7 +86,6 @@ $(document).ready(function()	{
 	// Set the overall variable for the model type
 	window['designType'] = 'bench';
 
-	setPrice('bench');
 
 
 
@@ -175,8 +174,6 @@ $(document).ready(function()	{
 		initializeModel( event.target.id )  
 
 		setModelView(event.target.id);
-
-		setPrice(event.target.id);
 
 		$('.designType').removeClass('currentItem');
 
@@ -410,6 +407,7 @@ function initializeModel( modelName )
 
 	setTimeout(function () {
 		setDefaultModelData(modelName);
+		setPrice(modelName);
     }, 1000);
 
 }
@@ -564,6 +562,8 @@ function setDefaultModelData( modelName )
 
 
 	initializeComponents( modelName );
+	setPrice(event.target.id);
+
 
 
 }
@@ -854,6 +854,7 @@ function reloadModel( modelID )
 	}
 
 	initializeComponents( makModel['build_id'] );
+	setPrice(event.target.id);
 
 
 }
