@@ -14,7 +14,7 @@ $(document).ready(function()	{
 
 
 
-
+	console.log('I am here');
 
 
 
@@ -28,7 +28,7 @@ $(document).ready(function()	{
 
 
 	// When the user sends a message
-	$('#contactSubmit').click(function(event)	
+	$('#contactSubmit').click(function(event)
 	{	
 
 		console.log('Contact button clicked');
