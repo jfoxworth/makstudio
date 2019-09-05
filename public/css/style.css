@@ -278,7 +278,7 @@ span.middot {
 }
 
 .hoverMe { cursor: pointer; }
-.hoverMeGrey:hover { background-color: #EEE; }
+.hoverMeGrey:hover { background-color: #EEE; cursor:pointer; }
 
 .center { text-align: center !important; }
 

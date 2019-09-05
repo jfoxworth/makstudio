@@ -168,8 +168,6 @@ $(document).ready(function()	{
 	{	
 		designType = event.target.id;
 
-		console.log('The design type is '+designType);
-
 		$( '#currentModelDisplay' ).html('')
 
 		initializeModel( event.target.id )  
@@ -432,6 +430,14 @@ function setModelView( modelName )
 	for (thisContainer in makStudio.containerNames)
 	{
 		$('#'+makStudio['containerNames'][thisContainer]).hide();
+	}
+
+
+	// Name of the file
+	$('#modelName').parent().hide();
+	if ( ( modelName == 'bench' ) || ( modelName == 'finWall' ) || ( modelName == 'backlit' ) || ( modelName == 'faceted' ) )
+	{
+		$('#modelName').parent().show();
 	}
 
 	// Hide the list of models in case
@@ -731,7 +737,7 @@ function retrieveModels(  )
 
 		$.each(userModelData, function(index, obj){
 	        
-	        var tr = $("<tr class='hoverMe' style='height:50px; padding:10px 0px; border-bottom:2px solid #ccc;'>");
+	        var tr = $("<tr class='hoverMeGrey' style='height:50px; padding:10px 0px; border-bottom:2px solid #ccc;'>");
 	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.name +"</td>");
 	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
 	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td></tr>");
