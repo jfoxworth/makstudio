@@ -14,7 +14,7 @@ class MessageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index( $offset )
     {
         return Message::orderBy('id', 'desc')->skip( $offset * 20 )->take(20)->get();
     }

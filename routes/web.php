@@ -81,7 +81,7 @@ Route::post('/messages', 'MessageController@store');
 
 
 // Retrieve all builds
-Route::get('/allBuilds/{offset}', 'BuildController@store');
+Route::get('/allBuilds/{offset}', 'BuildController@indexAll');
 
 
 Auth::routes();
