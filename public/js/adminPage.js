@@ -70,30 +70,30 @@ function retrieveMessages( )
 
 			obj.message_data = JSON.parse(obj.message_data);
 	        
-	        var tr = $("");
+	        var message = '';
 
-	        tr.append("<tr style='width:600px'><td style='width:150px; font-weight:bold;'>Name : </td>");
-	        tr.append("<td style='width:450px'>"+ obj.message_data.name +"</td></tr>");
+	        message=message+"<div style='width:600px; margin-top:20px;' class='row'><div style='width:150px; font-weight:bold;'>Name : </div>";
+	        message=message+"<div style='width:450px'>"+ obj.message_data.name +"</div></div>";
 
-	        tr.append("<tr style='width:600px'><td style='width:150px; font-weight:bold;'>Date Sent : </td>");
-	        tr.append("<td style='width:450px'>"+ obj.created_at +"</td></tr>");
+	        message=message+"<div style='width:600px; margin-top:20px;' class='row'><div style='width:150px; font-weight:bold;'>Date Sent : </div>";
+	        message=message+"<div style='width:450px'>"+ obj.created_at +"</div></div>";
 
-	        tr.append("<tr style='width:600px'><td style='width:150px; font-weight:bold;'>Phone Number : </td>");
-	        tr.append("<td style='width:450px'>"+ obj.message_data.phone +"</td></tr>");
+	        message=message+"<div style='width:600px; margin-top:20px;' class='row'><div style='width:150px; font-weight:bold;'>Phone Number : </div>";
+	        message=message+"<div style='width:450px'>"+ obj.message_data.phone +"</div></div>";
 
-	        tr.append("<tr style='width:600px'><td style='width:150px; font-weight:bold;'>email : </td>");
-	        tr.append("<td style='width:450px'>"+ obj.message_data.email +"</td></tr>");
+	        message=message+"<div style='width:600px; margin-top:20px;' class='row'><div style='width:150px; font-weight:bold;'>email : </div>";
+	        message=message+"<div style='width:450px'>"+ obj.message_data.email +"</div></div>";
 
-	        tr.append("<tr style='width:600px'><td style='width:150px; font-weight:bold;'>Subject : </td>");
-	        tr.append("<td style='width:450px'>"+ obj.message_data.subject +"</td></tr>");
+	        message=message+"<div style='width:600px; margin-top:20px;' class='row'><div style='width:150px; font-weight:bold;'>Subject : </div>";
+	        message=message+"<div style='width:450px'>"+ obj.message_data.subject +"</div></div>";
 
-	        tr.append("<tr style='width:600px'><td style='width:150px; font-weight:bold;'>Name : </td>");
-	        tr.append("<td style='width:450px'>"+ obj.message_data.name +"</td></tr>");
-
-	        tr.append("<tr style='width:600px'><td colspan='2' style='width:600px;'>"+obj.message_data.message+"</td></tr>");
+	        message=message+"<div style='width:600px; margin-top:40px; margin-bottom:60px; border-bottom:1px solid #ccc'><td colspan='2' style='width:600px;'>"+obj.message_data.message+"</div></div>";
 
 
-	        $("#messageList").append(tr);
+	        console.log('The message is '+message);
+
+
+	        $("#messageList").append(message);
 	    });
 
 	});
