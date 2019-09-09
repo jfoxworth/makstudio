@@ -11,11 +11,12 @@
 							<div class="tab-container">
 
 								<div class="tab-content clearfix" id="tabs-1">
-									@include('sections.admin.messagesContent')
+									I am here 1
 								</div>
 
 								<div class="tab-content clearfix" id="tabs-2">
-									@include('sections.admin.buildsContent')
+
+									I am here 2
 								</div>
 
 							</div>

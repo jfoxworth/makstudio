@@ -1,4 +1,4 @@
-<div id="section-team" class="page-section">
+<section id="section-team" class="page-section">
 
 	<div class="heading-block center">
 		<h2>Build Models</h2>
@@ -13,4 +13,4 @@
 
 	</div>
 
-</div>
+</section>
