@@ -58,7 +58,7 @@ function retrieveMessages( )
 
 
 	$.ajax({
-		url : "/messages/1",
+		url : "/messages/0",
 		method :"GET"
 
 	}).done(function(data) 
@@ -83,7 +83,7 @@ function retrieveBuilds( )
 
 
 	$.ajax({
-		url : "/allBuilds/1",
+		url : "/allBuilds/0",
 		method :"GET"
 
 	}).done(function(data) 
