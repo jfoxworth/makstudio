@@ -70,7 +70,7 @@ function retrieveMessages( )
 
 			obj.message_data = JSON.parse(obj.message_data);
 	        
-	        var tr = '';
+	        var tr = $("");
 
 	        tr.append("<tr style='width:600px'><td style='width:150px; font-weight:bold;'>Name : </td>");
 	        tr.append("<td style='width:450px'>"+ obj.message_data.name +"</td></tr>");
