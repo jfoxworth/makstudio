@@ -68,7 +68,7 @@ function retrieveMessages( )
 
 		$.each(data, function(index, obj){
 
-			obj.message_data = json.parse(obj.message_data);
+			obj.message_data = JSON.parse(obj.message_data);
 	        
 	        var tr = '';
 
