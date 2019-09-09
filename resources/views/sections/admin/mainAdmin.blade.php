@@ -11,11 +11,11 @@
 							<div class="tab-container">
 
 								<div class="tab-content clearfix" id="tabs-1">
-									@yield('sections.admin.messagesContent')
+									@include('sections.admin.messagesContent')
 								</div>
 
 								<div class="tab-content clearfix" id="tabs-2">
-									@yield('sections.admin.buildsContent')
+									@include('sections.admin.buildsContent')
 								</div>
 
 							</div>
