@@ -16,7 +16,7 @@ class MessageController extends Controller
      */
     public function index()
     {
-        //
+        return Message::orderBy('id', 'desc')->skip( $offset * 20 )->take(20)->get();
     }
 
     /**

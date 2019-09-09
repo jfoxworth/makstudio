@@ -73,8 +73,15 @@ Route::put('/saveModel', 'BuildController@update');
 Route::delete('/deleteModel/{id}', 'BuildController@destroy');
 
 
+// Retrieve all Messages
+Route::get('/messages/{offset}', 'MessageController@index');
+
 // Save a Message
 Route::post('/messages', 'MessageController@store');
+
+
+// Retrieve all builds
+Route::get('/allBuilds/{offset}', 'BuildController@store');
 
 
 Auth::routes();

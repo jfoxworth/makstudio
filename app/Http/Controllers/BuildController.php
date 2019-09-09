@@ -19,6 +19,18 @@ class BuildController extends Controller
         return Build::where( 'user_id', '=', Auth::id() )->get();
     }
 
+
+    /**
+     * Display the listing of recent resources.
+     *
+     * @param  \App\Build  $build
+     * @return \Illuminate\Http\Response
+     */
+    public function indexAll( $offset )
+    {
+        return Build::orderBy('id', 'desc')->skip( $offset * 20 )->take(20)->get();
+    }
+
     /**
      * Show the form for creating a new resource.
      *
