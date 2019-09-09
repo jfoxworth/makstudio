@@ -17,7 +17,7 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-        @include('sections.secondHeader')
+        @include('sections.thirdHeader')
 
         @include("sections.admin.title")
 

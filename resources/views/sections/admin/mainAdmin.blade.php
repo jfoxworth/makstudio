@@ -11,13 +11,15 @@
 							<div class="tab-container">
 
 								<div class="tab-content clearfix" id="tabs-1">
-									@yield('messagesContent')
+									@yield('sections.admin.messagesContent')
 								</div>
 
 								<div class="tab-content clearfix" id="tabs-2">
-									@yield('buildsContent')
+									@yield('sections.admin.buildsContent')
 								</div>
 
 							</div>
 
 						</div>
+
+</div>
