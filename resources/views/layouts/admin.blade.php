@@ -44,6 +44,8 @@
 
     @include('sections.javasfiles')
 
+    <script type="text/javascript" src="/js/adminPage.js"></script>
+
 </body>
 </html>
 
