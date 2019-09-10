@@ -3,7 +3,7 @@
 
 	<!-- Sidebar
 	============================================= -->
-	<div class="col_one_fourth clearfix" style="height:800px; border-right: 1px solid #ccc;">
+	<div class="col_one_fourth clearfix" style="height:800px;">
 		
 		<div class="sidebar-widgets-wrap" >
 

@@ -77,9 +77,9 @@ $(document).ready(function()	{
 
 	// Set CSRF Token
 	$.ajaxSetup({
-	    headers: {
-	        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-	    }
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+		}
 	});
 
 
@@ -211,10 +211,10 @@ $(document).ready(function()	{
 
 	/* -------------------------------------- *
 
-	          API Calls
+			  API Calls
 
-	    User interacting with the sliders, 
-	    buttons, etc
+		User interacting with the sliders, 
+		buttons, etc
 
 	/* ---------------------------------------*/
 
@@ -245,6 +245,26 @@ $(document).ready(function()	{
 		model_api.parameters.updateAsync({name: "Material", value: 2 });
 	});
 
+
+	$('#backlitHeader').enter(function()
+	{			
+		model_api.parameters.updateAsync({name: "Material", value: 2 });
+	});
+
+
+
+	$('#backlitHeader').on('keypress',function(e) {
+		if(e.which == 13) {
+			model_api.parameters.updateAsync({name: "Header", value: $('#backlitHeader').val() });
+		}
+	});
+
+
+	$('#backlitSubheader').on('keypress',function(e) {
+		if(e.which == 13) {
+			model_api.parameters.updateAsync({name: "Subheader", value: $('#backlitSubHeader').val() });
+		}
+	});
 
 
 
@@ -299,7 +319,7 @@ $(document).ready(function()	{
 			function(response) {
 
 				alert("File successfully uploaded", response);
-	    	}
+			}
 	  	);
 	});
 
@@ -317,7 +337,7 @@ $(document).ready(function()	{
 			function(response) {
 
 				alert("File successfully uploaded", response);
-	    	}
+			}
 	  	);
 	});
 
@@ -355,7 +375,7 @@ $(document).ready(function()	{
 			setTimeout(
 				function() 
 				{
-	    			$( '#deleteMessageAlert' ).hide( );
+					$( '#deleteMessageAlert' ).hide( );
 				}, 3000);
 		});
 		
@@ -408,7 +428,7 @@ function initializeModel( modelName )
 	setTimeout(function () {
 		setDefaultModelData(modelName);
 		setPrice(modelName);
-    }, 1000);
+	}, 1000);
 
 }
 
@@ -637,7 +657,7 @@ function saveModel( modelName )
 		setTimeout(
 			function() 
 			{
-    			$( '#saveMessageAlert' ).hide( );
+				$( '#saveMessageAlert' ).hide( );
 			}, 3000);
 	});
 
@@ -706,7 +726,7 @@ function updateModel( modelName )
 		setTimeout(
 			function() 
 			{
-    			$( '#saveMessageAlert' ).hide( );
+				$( '#saveMessageAlert' ).hide( );
 			}, 3000);
 	});
 
@@ -735,20 +755,20 @@ function retrieveModels(  )
 			userModelData[index]['build_data'] = JSON.parse(obj.build_data);
 		});
 
-        $("#userModelList").html('');
+		$("#userModelList").html('');
 
 		var tr="<tr style='padding:10px 0px; border-bottom:2px solid #ccc;'><th style='width:300px;'>Model Name</th><th style='width:300px;'>Date Created</th></tr>"
-        $("#userModelList").append(tr);
+		$("#userModelList").append(tr);
 
 		$.each(userModelData, function(index, obj){
-	        
-	        var tr = $("<tr class='hoverMeGrey' style='height:50px; padding:10px 0px; border-bottom:2px solid #ccc;'>");
-	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.name +"</td>");
-	        tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
-	        tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td></tr>");
+			
+			var tr = $("<tr class='hoverMeGrey' style='height:50px; padding:10px 0px; border-bottom:2px solid #ccc;'>");
+			tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.name +"</td>");
+			tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
+			tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td></tr>");
 
-	        $("#userModelList").append(tr);
-	    });
+			$("#userModelList").append(tr);
+		});
 
 	});
 
@@ -818,7 +838,7 @@ function reloadModel( modelID )
 				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[nameComponent] });
 			}
 		}
-    }, 500);
+	}, 500);
 
 
 
@@ -1315,8 +1335,8 @@ function initializeComponents( modelName )
 
 function camelize(str) {
   return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
-    if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
-    return index == 0 ? match.toLowerCase() : match.toUpperCase();
+	if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+	return index == 0 ? match.toLowerCase() : match.toUpperCase();
   });
 }
 
@@ -1351,7 +1371,7 @@ function initializeData()
 		'modelTickets' : {
 			'bench' : 'ccf330f694285fa526a47387edbd0a89e09146369e7b730dbf57fa6354146b1df5390f267e9fe942b42e7571084e91c912c272ff2b7609aed88e123dfd2718afeb773039caed2580fc03c3d0d629a26da06f34f54bc0b3731a19d16c790bd4656b5dad94fd5572642398bc694aaf42b03957e44bbb44-9bc6005b71d9578337b4509851c32a30',
 			'finWall' : 'f1832e3ad0bcab4aa8d08f894889044419a2570f638a7f334b048c76c7b5c17a90b3f4502981d3bdee2321dcad99ec6d97c6c4d6e4356cb1dd06a9b93b103be1faeb0c1532047b7dc98a74f4fbb16cb861609a7fae45c95d0b03ab311414be24ce6a7ef35142bc04fe359091612e4ba6cc83feb14347-254bf0a71357b2c9f983746bf3867934',
-			'backlit' : 'b377b948d7f72cee5db1184551e10c1e9f8a34cae0323283b7f5f8831cedc2e26986531436453d00bbce7556061713170f148b9d879fc7e6b2454fce26e030c1c8fb9782aeaaa1fa73ed74ce6059e6daba4a3b682e769ebfe82ee516dfc6b2a0fe3fc30c2fab53476e8f1f82c895f1781fa1746ebd15-b63fe0ed951441432130ea48fe327cf7',
+			'backlit' : 'bcd694cc9cd87e8d6f1af17f13bdddd17ca80ab54d84578d27312eb3c28ac14ea55fbfc203f00cabed698508c21fdddddf2b18c33060d851058d7cc3c5096597d730e5c6708b058c47a1e6cd5ba503c11214dc2850beab551013b942dac3016cf1361fccbbc21fb6ee836568ec50fac035c0ccb739d7-1166bf145f8c13f887a44bb9f12d1134',
 			'faceted' : '6a4bbceb3a6a94c8d65543ebfa9d3d5fea7e02d3947dd4d34c6ff5eac325b91da4dcbf461588290b2867aedf44bc773a1b4d0d6f966dd2c8aa83d7a7a0caf6e1c2a2874c6d1ca9c45e245360bb14be9666bf0aad53f1758cf24a5fe9fa880416c71a33f184b47fef9295faa30e99ae1bb05a70f67352-2801291baf32cfcf605d4d7b00d78132'
 		},
 
@@ -1452,6 +1472,8 @@ function initializeData()
 				'Header - Subheader Scale' : '',
 				'Header-Subheader Relation' : '',
 				'Header' : '',
+				'Header Height' : 'backlitHeaderSlider',
+				'Subheader Height' : 'backlitSubheaderSlider',
 
 				'Logo?' : 'backlitLogoOnOff',
 				'Logo X Location' : 'backlitLogoXSlider',
@@ -1553,6 +1575,8 @@ function initializeData()
 				'Header - Subheader Scale' : '',
 				'Header-Subheader Relation' : '',
 				'Header' : 'text',
+				'Header Height' : 'slider',
+				'Subheader Height' : 'slider',
 
 				'Logo?' : 'boolean',
 				'Logo X Location' : 'slider',
