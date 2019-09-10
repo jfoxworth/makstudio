@@ -246,11 +246,6 @@ $(document).ready(function()	{
 	});
 
 
-	$('#backlitHeader').enter(function()
-	{			
-		model_api.parameters.updateAsync({name: "Material", value: 2 });
-	});
-
 
 
 	$('#backlitHeader').on('keypress',function(e) {
