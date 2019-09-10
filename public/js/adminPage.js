@@ -101,7 +101,9 @@ function retrieveMessages( )
 			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"</div>";
 			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
-			message=message+"<div class='col_full' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			message=message+"<div class='col_two_fourth' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div>";
+			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
 			$("#messageList").append(message);
