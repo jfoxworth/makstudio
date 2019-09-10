@@ -72,36 +72,36 @@ function retrieveMessages( )
 			
 			var message = '';
 
-			message=message+"<div class='col_one_fourth'></div>";
-			message=message+"<div class='col_one_fourth' style='font-weight:bold;'>Name : </div>";
-			message=message+"<div class='col_one_fourth'>"+ obj.message_data.name +"</div>";
-			message=message+"<div class='col_one_fourth col_last'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.name +"</div>";
+			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			message=message+"<div class='col_one_fourth'></div>";
-			message=message+"<div class='col_one_fourth' style='font-weight:bold;'>Date : </div>";
-			message=message+"<div class='col_one_fourth'>"+ obj.created_at +"</div></div>";
-			message=message+"<div class='col_one_fourth col_last'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Date : </div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
+			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			message=message+"<div class='col_one_fourth'></div>";
-			message=message+"<div class='col_one_fourth' style='font-weight:bold;'>Phone : </div>";
-			message=message+"<div class='col_one_fourth'>"+ obj.message_data.phone +"</div></div>";
-			message=message+"<div class='col_one_fourth col_last'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Phone : </div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.phone +"</div>";
+			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			message=message+"<div class='col_one_fourth'></div>";
-			message=message+"<div class='col_one_fourth' style='font-weight:bold;'>Email : </div>";
-			message=message+"<div class='col_two_fourth'>"+ obj.message_data.email +"</div></div>";
-			message=message+"<div class='col_one_fourth col_last'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Email : </div>";
+			message=message+"<div class='col_two_fourth' style='margin-bottom:10px'>"+ obj.message_data.email +"</div>";
+			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			message=message+"<div class='col_one_fourth'></div>";
-			message=message+"<div class='col_one_fourth' style='font-weight:bold;'>Subject : </div>";
-			message=message+"<div class='col_two_fourth'>"+ obj.message_data.subject +"</div></div>";
-			message=message+"<div class='col_one_fourth col_last'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Subject : </div>";
+			message=message+"<div class='col_two_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"</div>";
+			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
-			message=message+"<div class='col_full' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div></div>";
+			message=message+"<div class='col_full' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div>";
 
 
 			$("#messageList").append(message);
@@ -139,22 +139,22 @@ function retrieveBuilds( )
 			
 			var builds = '';
 
-			builds=builds+"<div class='col_one_fourth'></div>";
-			builds=builds+"<div class='col_one_fourth' style='font-weight:bold;'>Build Type : </div>";
-			builds=builds+"<div class='col_two_fourth'>"+ obj.build_id +"</div></div>";
-			builds=builds+"<div class='col_one_fourth col_last'></div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Build Type : </div>";
+			builds=builds+"<div class='col_two_fourth' style='margin-bottom:10px'>"+ obj.build_id +"</div>";
+			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			builds=builds+"<div class='col_one_fourth'></div>";
-			builds=builds+"<div class='col_one_fourth' style='font-weight:bold;'>Name : </div>";
-			builds=builds+"<div class='col_one_fourth'>"+ obj.created_at +"</div></div>";
-			builds=builds+"<div class='col_one_fourth col_last'></div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
+			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			builds=builds+"<div class='col_one_fourth'></div>";
-			builds=builds+"<div class='col_one_fourth' style='font-weight:bold;'>Name : </div>";
-			builds=builds+"<div class='col_two_fourth'>"+ obj.build_data.name +"</div></div>";
-			builds=builds+"<div class='col_one_fourth col_last'></div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
+			builds=builds+"<div class='col_two_fourth' style='margin-bottom:10px'>"+ obj.build_data.name +"</div>";
+			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
 
