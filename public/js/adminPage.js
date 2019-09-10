@@ -92,13 +92,13 @@ function retrieveMessages( )
 
 			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
 			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Email : </div>";
-			message=message+"<div class='col_two_fourth' style='margin-bottom:10px'>"+ obj.message_data.email +"</div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.email +"</div>";
 			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
 			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
 			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Subject : </div>";
-			message=message+"<div class='col_two_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"</div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"</div>";
 			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 			message=message+"<div class='col_full' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div>";
@@ -141,7 +141,7 @@ function retrieveBuilds( )
 
 			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
 			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Build Type : </div>";
-			builds=builds+"<div class='col_two_fourth' style='margin-bottom:10px'>"+ obj.build_id +"</div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.build_id +"</div>";
 			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
@@ -153,7 +153,7 @@ function retrieveBuilds( )
 
 			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
 			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
-			builds=builds+"<div class='col_two_fourth' style='margin-bottom:10px'>"+ obj.build_data.name +"</div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.build_data.name +"</div>";
 			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
