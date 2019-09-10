@@ -70,27 +70,24 @@ function retrieveMessages( )
 
 			obj.message_data = JSON.parse(obj.message_data);
 			
-			var message = '<div class="row">';
+			var message = '';
 
-			message=message+"<div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
+			message=message+"<div class='row'><div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
 			message=message+"<div class='col_two_third col_last'>"+ obj.message_data.name +"</div></div>";
 
-			message=message+"<div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
+			message=message+"<div class='row'><div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
 			message=message+"<div class='col_two_third col_last'>"+ obj.created_at +"</div></div>";
 
-			message=message+"<div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
+			message=message+"<div class='row'><div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
 			message=message+"<div class='col_two_third col_last'>"+ obj.message_data.phone +"</div></div>";
 
-			message=message+"<div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
+			message=message+"<div class='row'><div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
 			message=message+"<div class='col_two_third col_last'>"+ obj.message_data.email +"</div></div>";
 
-			message=message+"<div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
+			message=message+"<div class='row'><div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
 			message=message+"<div class='col_two_third col_last'>"+ obj.message_data.subject +"</div></div>";
 
 			message=message+"<div class='col_full' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div>";
-
-
-			message = message+'</div>';
 
 
 			$("#messageList").append(message);
@@ -126,20 +123,17 @@ function retrieveBuilds( )
 
 			obj.build_data = JSON.parse(obj.build_data);
 			
-			var builds = '<div class="row">';
+			var builds = '';
 
-			builds=builds+"<div class='col_one_third'><div style='font-weight:bold;'>Build Type : </div>";
+			builds=builds+"<div class='row'><div class='col_one_third'><div style='font-weight:bold;'>Build Type : </div>";
 			builds=builds+"<div class='col_two_third col_last'>"+ obj.build_id +"</div></div>";
 
-			builds=builds+"<div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
-			builds=message+"<div class='col_two_third col_last'>"+ obj.created_at +"</div></div>";
+			builds=builds+"<div class='row'><div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
+			builds=builds+"<div class='col_two_third col_last'>"+ obj.created_at +"</div></div>";
 
-			builds=message+"<div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
-			builds=message+"<div class='col_two_third col_last'>"+ obj.build_data.name +"</div></div>";
+			builds=builds+"<div class='row'><div class='col_one_third'><div style='font-weight:bold;'>Name : </div>";
+			builds=builds+"<div class='col_two_third col_last'>"+ obj.build_data.name +"</div></div>";
 
-
-
-			builds = builds+'</div>';
 
 
 			$("#buildList").append(builds);
