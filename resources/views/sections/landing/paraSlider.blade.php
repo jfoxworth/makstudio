@@ -84,7 +84,7 @@
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
 					data-endeasing="Power4.easeIn" style="z-index: 3; color:#222;">
-					<a href="#" class="button button-border button-white button-light button-large button-rounded tright nomargin">
+					<a href="/designStudio" class="button button-border button-white button-light button-large button-rounded tright nomargin">
 						<span>Create Your Own</span> <i class="icon-angle-right"></i>
 					</a>
 					</div>

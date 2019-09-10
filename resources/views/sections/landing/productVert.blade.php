@@ -86,7 +86,7 @@
 					
 							<p class="mb-2 text-white">To add a truly new look and feel to any space, brand your business with a back lit wall.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudion" style="color:#FFF">Enter Design Studio</a></button>
+							<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>
 					
 						</div>
 					
