@@ -46,22 +46,22 @@
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 data-toggle="tooltip" data-placement="top" title="Fin Ripple Wall">
-						<img src="/Images/icons/MAK ICONS-07.jpg" width="48px">
+						<img src="images/icons/MAK ICONS-07.jpg" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 data-toggle="tooltip" data-placement="top" title="Backlit Wall">
-						<img src="/Images/icons/MAK ICONS-08.jpg" width="48px">
+						<img src="images/icons/MAK ICONS-08.jpg" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 data-toggle="tooltip" data-placement="top" title="Faceted Wall">
-						<img src="/Images/icons/MAK ICONS-06.jpg" width="48px">
+						<img src="images/icons/MAK ICONS-06.jpg" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin col_last currentItem"
 						 data-toggle="tooltip" data-placement="top" title="Planter Bench">
-						<img src="/Images/icons/MAK ICONS-05.jpg" width="48px">
+						<img src="images/icons/MAK ICONS-05.jpg" width="48px">
 					</div>
 
 				</div>
@@ -70,22 +70,22 @@
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 data-toggle="tooltip" data-placement="bottom" title="Custom Desk">
-						<img src="/Images/icons/MAK ICONS-09.jpg" width="48px">
+						<img src="images/icons/MAK ICONS-09.jpg" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 data-toggle="tooltip" data-placement="bottom" title="Planter Wall">
-						<img src="/Images/icons/MAK ICONS-04.jpg" width="48px">
+						<img src="images/icons/MAK ICONS-04.jpg" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 data-toggle="tooltip" data-placement="bottom" title="Panel Wall">
-						<img src="/Images/icons/MAK ICONS-02.jpg" width="48px">
+						<img src="images/icons/MAK ICONS-02.jpg" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
 						 data-toggle="tooltip" data-placement="bottom" title="Gensler Wall">
-						<img src="/Images/icons/MAK ICONS-01.jpg" width="48px">
+						<img src="images/icons/MAK ICONS-01.jpg" width="48px">
 					</div>
 
 				</div>
