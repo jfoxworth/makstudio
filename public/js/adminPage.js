@@ -101,7 +101,7 @@ function retrieveMessages( )
 			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"</div>";
 			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; margin-top:20px'></div>";
 			message=message+"<div class='col_two_fourth' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div>";
 			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
@@ -153,7 +153,7 @@ function retrieveBuilds( )
 			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+			builds=builds+"<div class='col_one_fourth' style='margin-bottom:40px'></div>";
 			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
 			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.build_data.name +"</div>";
 			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
