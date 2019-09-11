@@ -761,8 +761,8 @@ function retrieveModels(  )
 
 		$("#userModelList").html('');
 
-		var tr="<tr style='padding:10px 0px; border-bottom:2px solid #ccc;'>");
-		tr=tr+"<th style='width:300px;'>Model Name</th><th style='width:300px;'>Date Created</th><th colspan='3'>Actions</th>");
+		var tr="<tr style='padding:10px 0px; border-bottom:2px solid #ccc;'>";
+		tr=tr+"<th style='width:300px;'>Model Name</th><th style='width:300px;'>Date Created</th><th colspan='3'>Actions</th>";
 		tr=tr+"</tr>"
 		$("#userModelList").append(tr);
 
