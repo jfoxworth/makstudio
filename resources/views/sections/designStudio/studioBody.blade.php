@@ -831,10 +831,6 @@
 							<div><table id="userModelList"></table></div>
 
     						</div>
-							@foreach($userModelData as $modelFile)
-
-						        <div>Here - $modelFile.build_data.name</div>
-						    @endforeach
 
 
 					</div>
