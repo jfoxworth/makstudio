@@ -1,14 +1,16 @@
-<div style="width:900px; height:600px;">
+<div style="width:900px; height:600px;" class="center">
 	<img src="https://makstudio.s3.us-east-2.amazonaws.com/planterWall.jpg" width="750px">
 </div>
 
 
-<div class="center">
+<div class="row center">
 
-	<div class="white-section center row" style="margin:20px 0px" >
-
+	<div class="col_one_third" style="margin:20px 0px" >
 		<h4 class="center nobottommargin">Choose Fin Style</h4>
+	</div>
 
+
+	<div class="col_two_third col_last row">
 		<div>
 			<input id="radio-planterFinTwisted" class="radio-style" name="radio-planterFinStyle" type="radio" checked>
 			<label for="radio-planterFinTwisted" class="radio-style-3-label">Twisted</label>
@@ -21,7 +23,6 @@
 			<input id="radio-planterFinStraight" class="radio-style" name="radio-planterFinStyle" type="radio">
 			<label for="radio-planterFinStraight" class="radio-style-3-label">Straight</label>
 		</div>
-
 	</div>
 
 </div>
@@ -29,12 +30,13 @@
 
 
 
-<div class="center">
+<div class="row center">
 
-	<div class="white-section center row" style="margin:20px 0px" >
-
+	<div class="col_one_third" >
 		<h4 class="center nobottommargin">Planter Box Color</h4>
+	</div>
 
+	<div class="col_two_third col_last row">
 		<div>
 			<input id="radio-planterWhite" class="radio-style" name="radio-planterColor" type="radio" checked>
 			<label for="radio-planterWhite" class="radio-style-3-label">White</label>
@@ -55,19 +57,20 @@
 			<input id="radio-planterWood" class="radio-style" name="radio-planterColor" type="radio">
 			<label for="radio-planterWood" class="radio-style-3-label">Other</label>
 		</div>
-
 	</div>
 
 </div>
 
 
-<div class="center">
+<div class="row center">
 
 
-	<div class="white-section center row" style="margin:20px 0px" >
-
+	<div class="col_one_third" >
 		<h4 class="center nobottommargin">Number Needed</h4>
+	</div>
 
+
+	<div class="col_two_third col_last row">	
 		<div>
 			<input id="radio-planterNumber1" class="radio-style" name="radio-planterNumber" type="radio" checked>
 			<label for="radio-planterNumber1" class="radio-style-3-label">1</label>
@@ -83,8 +86,11 @@
 
 	</div>
 
+</div>
 
-<div class="center">
+
+
+<div class="row center">
 
 	<div class="form-group">
 		<label for="moreInfoDesk">Any additional info</label>
@@ -94,8 +100,6 @@
 </div>
 
 
-	<div class="divcenter">
-		<a href="#" class="button button-border button-rounded button-fill button-blue"><span>Submit</span></a>
-	</div>
-
+<div class="row divcenter">
+	<a href="#" class="button button-border button-rounded button-fill button-blue"><span>Submit</span></a>
 </div>

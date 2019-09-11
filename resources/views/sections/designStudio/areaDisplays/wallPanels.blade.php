@@ -58,7 +58,7 @@
 </div>
 
 
-<div class="divcenter">
+<div class="row divcenter">
 
 	<div class="col_one_third" ><label>Select Desired Panels</label></div>
 
@@ -79,7 +79,7 @@
 </div>
 
 
-<div class="center">
+<div class="row divcenter">
 
 	<div class="col_one_third" ><label>What are the application types?</label></div>
 
@@ -97,7 +97,7 @@
 </div>
 
 
-<div class="center">
+<div class="row center">
 
 	<div class="row divcenter" style="margin:20px 0px">
 		<label for="wallPanelSize">Panel Sizes</label>
@@ -107,7 +107,7 @@
 </div>
 
 
-<div class="center">
+<div class="row center">
 
 	<div class="form-group">
 		<label for="moreInfoWallPanel">Any additional info</label>
@@ -116,6 +116,6 @@
 
 </div>
 
-<div class="divcenter">
+<div class="row center">
 	<a href="#" class="button button-border button-rounded button-fill button-blue"><span>Submit</span></a>
 </div>

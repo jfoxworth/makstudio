@@ -3,12 +3,14 @@
 </div>
 
 
-<div class="center">
+<div class="row center">
 
-	<div class="white-section center row" style="margin:20px 0px" >
-
+	<div class="col_one_third">
 		<h4 class="center nobottommargin">Select Desk Shape</h4>
+	</div>
 
+
+	<div class="col_two_third col_last">
 		<div>
 			<input id="radio-deskLShape" class="radio-style" name="radio-deskShape" type="radio" checked>
 			<label for="radio-deskLShape" class="radio-style-3-label">L Shape</label>
@@ -21,19 +23,19 @@
 			<input id="radio-deskStraight" class="radio-style" name="radio-deskShape" type="radio">
 			<label for="radio-deskStraight" class="radio-style-3-label">Straight</label>
 		</div>
-
 	</div>
 
 </div>
 
 
 
-<div class="center">
+<div class="row center">
 
-	<div class="white-section center row" style="margin:20px 0px" >
-
+	<div class="col_one_third">
 		<h4 class="center nobottommargin">Select Desk Color</h4>
+	</div>
 
+	<div class="col_two_third col_last">
 		<div>
 			<input id="radio-deskWhite" class="radio-style" name="radio-deskColor" type="radio" checked>
 			<label for="radio-deskWhite" class="radio-style-3-label">White</label>
@@ -46,20 +48,20 @@
 			<input id="radio-deskWood" class="radio-style" name="radio-deskColor" type="radio">
 			<label for="radio-deskWood" class="radio-style-3-label">Wood Tone</label>
 		</div>
-
 	</div>
 
 </div>
 
 
 
-<div class="center">
+<div class="row center">
 
-
-	<div class="white-section center row" style="margin:20px 0px" >
-
+	<div class="col_one_third">
 		<h4 class="center nobottommargin">Desk Size (People)</h4>
+	</div>
 
+
+	<div class="col_two_third col_last">
 		<div>
 			<input id="radio-deskPeople1" class="radio-style" name="radio-deskSize" type="radio" checked>
 			<label for="radio-deskPeople1" class="radio-style-3-label">1</label>
@@ -72,13 +74,14 @@
 			<input id="radio-deskPeople3" class="radio-style" name="radio-deskSize" type="radio">
 			<label for="radio-deskPeople3" class="radio-style-3-label">3</label>
 		</div>
-
 	</div>
 
 </div>
 
 
-<div class="center">
+
+
+<div class="row center">
 
 	<div class="form-group">
 		<label for="moreInfoDesk">Any additional info</label>
@@ -89,8 +92,7 @@
 
 
 
-<div class="center">
-
+<div class="row center">
 	<div class="divcenter">
 		<a href="#" class="button button-border button-rounded button-fill button-blue"><span>Submit</span></a>
 	</div>
