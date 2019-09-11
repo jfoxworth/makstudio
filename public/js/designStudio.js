@@ -761,7 +761,7 @@ function retrieveModels(  )
 
 		$("#userModelList").html('');
 
-		var tr="<div class='col_full' style='line-height:30px; border-bottom:2px solid #ccc;'>";
+		var tr="<div class='row' style='line-height:30px; border-bottom:2px solid #ccc;'>";
 		tr=tr+"<div class='col_one_third'>Model Name</div>";
 		tr=tr+"<div class='col_one_third'>Date Created</div>";
 		tr=tr+"<div class='col_one_third col_last'>Actions</div>";
@@ -773,8 +773,8 @@ function retrieveModels(  )
 			var newDate = new Date(obj.created_at);
 			var formattedDate = monthNames[newDate.getMonth()] +' '+newDate.getDay()+','+newDate.getFullYear();
 
-			var tr = "<div class='col_full' style='height:50px; padding:10px 0px 10px 10px; border-bottom:2px solid #ccc;'>";
-			tr=tr+"<div class='col_one_third'"+ obj.build_data.name +"</div>";
+			var tr = "<div class='row' style='height:50px; padding:10px 0px 10px 10px; border-bottom:2px solid #ccc;'>";
+			tr=tr+"<div class='col_one_third'>"+ obj.build_data.name +"</div>";
 			tr=tr+"<div class='col_one_third'>"+ formattedDate +"</div>";
 			tr=tr+"<div class='col_one_third'>";
 			tr=tr+"<i id='"+obj.id+"' class='icon-list2 h5 modelDetails hoverMe' data-toggle='tooltip' data-placement='top' title='Model Details'></i>";
