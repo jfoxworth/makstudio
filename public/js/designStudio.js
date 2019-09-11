@@ -761,7 +761,7 @@ function retrieveModels(  )
 
 		$("#userModelList").html('');
 
-		var tr="<tr style='padding:10px 0px; border-bottom:2px solid #ccc;'>";
+		var tr="<tr style='line-height:30px; border-bottom:2px solid #ccc;'>";
 		tr=tr+"<th style='width:250px;'>Model Name</th><th style='width:250px;'>Date Created</th><th></th><th></th><th></th>";
 		tr=tr+"</tr>"
 		$("#userModelList").append(tr);
@@ -774,13 +774,13 @@ function retrieveModels(  )
 			var tr = "<tr style='height:50px; padding:10px 0px 10px 10px; border-bottom:2px solid #ccc;'>";
 			tr=tr+"<td>"+ obj.build_data.name +"</td>";
 			tr=tr+"<td>"+ formattedDate +"</td>";
-			tr=tr+"<td id='"+obj.id+"' class='' style='padding:10px 10px 0px 0px;'>";
+			tr=tr+"<td id='"+obj.id+"' class='' style='padding:10px 15px 0px 0px;'>";
 			tr=tr+"<i id='"+obj.id+"' class='icon-list2 h5 modelDetails hoverMe' data-toggle='tooltip' data-placement='top' title='Model Details'></i>";
 			tr=tr+"</td>";
-			tr=tr+"<td id='"+obj.id+"' class='' style='padding:10px 10px 0px 0px;'>";
+			tr=tr+"<td id='"+obj.id+"' class='' style='padding:10px 15px 0px 0px;'>";
 			tr=tr+"<i id='"+obj.id+"' class='icon-resize-full h5 potenModel hoverMe' data-toggle='tooltip' data-placement='top' title='Open Model'></i>";
 			tr=tr+"</td>";
-			tr=tr+"<td id='"+obj.id+"' class='' style='padding:10px 10px 0px 0px;'>";
+			tr=tr+"<td id='"+obj.id+"' class='' style='padding:10px 15px 0px 0px;'>";
 			tr=tr+"<i id='"+obj.id+"' class='icon-remove-circle h5 deleteModel hoverMe' data-toggle='tooltip' data-placement='top' title='Delete Model'></i>";
 			tr=tr+"</td></tr>";
 

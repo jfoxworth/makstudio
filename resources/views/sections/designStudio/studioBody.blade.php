@@ -828,8 +828,14 @@
 						<div class="card-header">Saved Models for user {{{ Auth::user()->name }}} - {{{ Auth::user()->email }}}</div> 
 
 						<div class="card-body">
-							<div><table id="userModelList" class="divcenter"></table></div>
-						</div>
+							<div><table id="userModelList"></table></div>
+
+							foreach($userModelData as $modelFile){
+
+						        <div>Here - $modelFile.build_data.name</div>
+						    }
+
+    						</div>
 
 					</div>
 
