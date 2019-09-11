@@ -10,7 +10,7 @@
 	</div>
 
 
-	<div class="col_two_third col_last">
+	<div class="col_two_third col_last row">
 		<div>
 			<input id="radio-deskLShape" class="radio-style" name="radio-deskShape" type="radio" checked>
 			<label for="radio-deskLShape" class="radio-style-3-label">L Shape</label>
@@ -31,11 +31,11 @@
 
 <div class="row center">
 
-	<div class="col_one_third">
+	<div class="col_one_third ">
 		<h4 class="center nobottommargin">Select Desk Color</h4>
 	</div>
 
-	<div class="col_two_third col_last">
+	<div class="col_two_third col_last row">
 		<div>
 			<input id="radio-deskWhite" class="radio-style" name="radio-deskColor" type="radio" checked>
 			<label for="radio-deskWhite" class="radio-style-3-label">White</label>
@@ -61,7 +61,7 @@
 	</div>
 
 
-	<div class="col_two_third col_last">
+	<div class="col_two_third col_last row">
 		<div>
 			<input id="radio-deskPeople1" class="radio-style" name="radio-deskSize" type="radio" checked>
 			<label for="radio-deskPeople1" class="radio-style-3-label">1</label>
