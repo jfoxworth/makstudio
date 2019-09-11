@@ -384,7 +384,7 @@ $(document).ready(function()	{
 
 	$(document).on('click', '.modelDetailsShow', function(event)
 	{	
-		$('.modeDetails').hide();
+		$('.modelDetails').hide();
 		$('#'+event.target.id+'Details').show();
 
 
