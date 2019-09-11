@@ -791,7 +791,7 @@ function retrieveModels(  )
 			{
 				var det = '';
 
-				det=det+'<div class="topmargin center" style="margin:0px 40px; border:1px solid #888">';
+				det=det+'<div id="'+obj.id+'Details" class="topmargin center" style="margin:0px 40px;">';
 
 					det=det+'<div class="nobottommargin row center" style="background-color:#888888; color:#ccc; padding:5px 0px;">';
 						det=det+'<div class="col_three_fifth nobottommargin">Description</div>';
@@ -830,7 +830,7 @@ function retrieveModels(  )
 					det=det+'</div>';
 
 
-					det=det+'<div class="topmargin nobottommargin row" style="background-color:#888888; color:#ccc; padding:5px 0px;">';
+					det=det+'<div class="bottommargin row" style="background-color:#888888; color:#ccc; padding:5px 0px;">';
 						det=det+'<div class="col_three_fifth nobottommargin">Subtotal</div>';
 						det=det+'<div class="col_one_fifth nobottommargin"></div>';
 						det=det+'<div class="col_one_fifth col_last nobottommargin">'+obj.build_data.price+'</div>';
