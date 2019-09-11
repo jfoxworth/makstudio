@@ -926,7 +926,7 @@ function setPrice( modelName )
 	if ( modelName == 'backlit' )
 	{
 		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
-						 parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
+						 parseInt( makModel['build_data']['componentValues']['LENGTH OF WALL'] );
 		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalSpace / 144);
 		$('#backlitPrice').html( modelPrice );
 	}
@@ -1487,7 +1487,7 @@ function initializeData()
 
 
 			'backlit' : {
-				'Lenght of Wall' : 'backlitLengthSlider',
+				'LENGTH OF WALL' : 'backlitLengthSlider',
 				'Height of Wall' : 'backlitHeightSlider',
 				'Show Dimensions?' : 'backlitShowDimensions',
 				'Ground Offset' : 'backlitOffsetSlider',
@@ -1596,7 +1596,7 @@ function initializeData()
 
 
 			'backlit' : {
-				'Lenght of Wall' : 'slider',
+				'LENGTH OF WALL' : 'slider',
 				'Height of Wall' : 'slider',
 				'Show Dimensions?' : 'boolean',
 				'Show Human Scale?' : 'boolean',
