@@ -774,17 +774,19 @@ function retrieveModels(  )
 			var tr = $("<tr style='height:50px; padding:10px 0px 10px 10px; border-bottom:2px solid #ccc;'>");
 			tr.append("<td>"+ obj.build_data.name +"</td>");
 			tr.append("<td>"+ formattedDate +"</td>");
-			tr.append("<td id='"+obj.id+"' class='modelDetails hoverMe' style='padding:10px 10px 0px 0px;'>");
-			tr.append("<i id='"+obj.id+"' class='icon-list2 h5' data-toggle='tooltip' data-placement='top' title='Model Details'></i>");
+			tr.append("<td id='"+obj.id+"' class='' style='padding:10px 10px 0px 0px;'>");
+			tr.append("<i id='"+obj.id+"' class='icon-list2 h5 modelDetails hoverMe' data-toggle='tooltip' data-placement='top' title='Model Details'></i>");
 			tr.append("</td>");
-			tr.append("<td id='"+obj.id+"' class='potenModel hoverMe' style='padding:10px 10px 0px 10px;'>");
-			tr.append("<i id='"+obj.id+"' class='icon-resize-full h5' data-toggle='tooltip' data-placement='top' title='Open Model'></i>");
+			tr.append("<td id='"+obj.id+"' class='' style='padding:10px 10px 0px 10px;'>");
+			tr.append("<i id='"+obj.id+"' class='icon-resize-full h5 potenModel hoverMe' data-toggle='tooltip' data-placement='top' title='Open Model'></i>");
 			tr.append("</td>");
-			tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe' style='padding:10px 10px 0px 10px;'>");
-			tr.append("<i id='"+obj.id+"' class='icon-remove-circle h5' data-toggle='tooltip' data-placement='top' title='Delete Model'></i>");
+			tr.append("<td id='"+obj.id+"' class='' style='padding:10px 10px 0px 10px;'>");
+			tr.append("<i id='"+obj.id+"' class='icon-remove-circle h5 deleteModel hoverMe' data-toggle='tooltip' data-placement='top' title='Delete Model'></i>");
 			tr.append("</td></tr>");
 
 			$("#userModelList").append(tr);
+			$('[data-toggle="tooltip"]').tooltip();
+
 		});
 
 	});
