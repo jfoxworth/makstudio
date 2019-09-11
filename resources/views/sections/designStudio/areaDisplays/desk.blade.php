@@ -1,11 +1,11 @@
-<div id="deskDisplay" style="width:900px; height:600px;" class="center">
+<div style="width:900px; height:600px;" class="center">
 	<img src="https://makstudio.s3.us-east-2.amazonaws.com/deskDemo.png" width="750px">
 </div>
 
 
 <div class="center">
 
-	<div class="white-section center" style="margin:20px 0px" >
+	<div class="white-section center row" style="margin:20px 0px" >
 
 		<h4 class="center nobottommargin">Select Desk Shape</h4>
 
@@ -30,7 +30,7 @@
 
 <div class="center">
 
-	<div class="white-section center" style="margin:20px 0px" >
+	<div class="white-section center row" style="margin:20px 0px" >
 
 		<h4 class="center nobottommargin">Select Desk Color</h4>
 
@@ -56,7 +56,7 @@
 <div class="center">
 
 
-	<div class="white-section center" style="margin:20px 0px" >
+	<div class="white-section center row" style="margin:20px 0px" >
 
 		<h4 class="center nobottommargin">Desk Size (People)</h4>
 

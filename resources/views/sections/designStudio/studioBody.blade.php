@@ -796,7 +796,8 @@
 	</div>
 
 
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
+	<div class="col_last col_three_fourth notopmargin nobottommargin"
+		 id="planterWallDisplay">
 		@include('sections.designStudio.areaDisplays.planterWall')
 	</div>
 
@@ -804,7 +805,8 @@
 
 
 	<!--  The desk section -->
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
+	<div class="col_last col_three_fourth notopmargin nobottommargin"
+		 id="deskDisplay">
 		@include('sections.designStudio.areaDisplays.desk')
 	</div>
 	<!-- // Desk -->
