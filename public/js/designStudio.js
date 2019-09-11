@@ -772,7 +772,11 @@ function retrieveModels(  )
 			var tr = $("<tr class='hoverMeGrey' style='height:50px; padding:10px 0px 10px 10px; border-bottom:2px solid #ccc;'>");
 			tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.name +"</td>");
 			tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ formattedDate +"</td>");
-			tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe' style='padding:0px 10px 0px 0px;'><i id='"+obj.id+"' class='icon-remove'></i></td></tr>");
+			tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe' style='padding:0px 10px 0px 0px;'>");
+			tr.append("<i id='"+obj.id+"' class='icon-list2' data-toggle="tooltip" data-placement="top" title="Model Details"></i>");
+			tr.append("<i id='"+obj.id+"' class='icon-resize-full' data-toggle="tooltip" data-placement="top" title="Open Model"></i>");
+			tr.append("<i id='"+obj.id+"' class='icon-remove-circle' data-toggle="tooltip" data-placement="top" title="Delete Model"></i>");
+			tr.append("</td></tr>");
 
 			$("#userModelList").append(tr);
 		});
