@@ -1327,6 +1327,28 @@ function initializeComponents( modelName )
 			step: 1
 		});
 
+	}
+
+
+
+
+	if ( modelName == 'light' )
+	{
+
+		$(".lightLengthSlider").ionRangeSlider({
+			grid: false,
+			min: 1,
+			max: 500,
+			step: 1
+		});
+
+
+		$(".lightHeightSlider").ionRangeSlider({
+			grid: false,
+			min: 1,
+			max: 500,
+			step: 1
+		});
 
 	}
 
