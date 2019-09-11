@@ -761,7 +761,9 @@ function retrieveModels(  )
 
 		$("#userModelList").html('');
 
-		var tr="<tr style='padding:10px 0px; border-bottom:2px solid #ccc;'><th style='width:300px;'>Model Name</th><th style='width:300px;'>Date Created</th></tr>"
+		var tr="<tr style='padding:10px 0px; border-bottom:2px solid #ccc;'>");
+		tr=tr+"<th style='width:300px;'>Model Name</th><th style='width:300px;'>Date Created</th><th colspan='3'>Actions</th>");
+		tr=tr+"</tr>"
 		$("#userModelList").append(tr);
 
 		$.each(userModelData, function(index, obj){
@@ -772,10 +774,14 @@ function retrieveModels(  )
 			var tr = $("<tr class='hoverMeGrey' style='height:50px; padding:10px 0px 10px 10px; border-bottom:2px solid #ccc;'>");
 			tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.name +"</td>");
 			tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ formattedDate +"</td>");
-			tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe' style='padding:0px 10px 0px 0px;'>");
-			tr.append("<i id='"+obj.id+"' class='icon-list2' data-toggle='tooltip' data-placement='top' title='Model Details'></i>");
-			tr.append("<i id='"+obj.id+"' class='icon-resize-full' data-toggle='tooltip' data-placement='top' title='Open Model'></i>");
-			tr.append("<i id='"+obj.id+"' class='icon-remove-circle' data-toggle='tooltip' data-placement='top' title='Delete Model'></i>");
+			tr.append("<td id='"+obj.id+"' class='modelDetails hoverMe' style='padding:0px 10px 0px 0px;'>");
+			tr.append("<i id='"+obj.id+"' class='icon-list2 h5' data-toggle='tooltip' data-placement='top' title='Model Details'></i>");
+			tr.append("</td>");
+			tr.append("<td id='"+obj.id+"' class='openModel hoverMe' style='padding:0px 10px 0px 10px;'>");
+			tr.append("<i id='"+obj.id+"' class='icon-resize-full h5' data-toggle='tooltip' data-placement='top' title='Open Model'></i>");
+			tr.append("</td>");
+			tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe' style='padding:0px 10px 0px 10px;'>");
+			tr.append("<i id='"+obj.id+"' class='icon-remove-circle h5' data-toggle='tooltip' data-placement='top' title='Delete Model'></i>");
 			tr.append("</td></tr>");
 
 			$("#userModelList").append(tr);
