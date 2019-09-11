@@ -848,7 +848,7 @@
 
 	<div class="col_last col_three_fourth notopmargin nobottommargin">
 		<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
-		<div class="topmargin row"><i class="h4 icon-file"></i>  <div id="modelName" style="font-size:24px; margin-left:10px">Unsaved Model</div></div>
+		<div id="modelNameContainer" class="topmargin row"><i class="h4 icon-file"></i>  <div id="modelName" style="font-size:24px; margin-left:10px">Unsaved Model</div></div>
 	</div>
 
 

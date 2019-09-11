@@ -116,6 +116,7 @@ $(document).ready(function()	{
 		$("#modelDisplay").show();
 		$( '#currentModelDisplay' ).html('');
 		$('.parameterSet').hide();
+		$('#modelNameContainer').hide();
 
 
 		// Retrieve the model data for the user
@@ -169,15 +170,17 @@ $(document).ready(function()	{
 	{	
 		designType = event.target.id;
 
-		$( '#currentModelDisplay' ).html('')
+		$( '#currentModelDisplay' ).html('');
 
-		initializeModel( event.target.id )  
+		initializeModel( event.target.id );
 
 		setModelView(event.target.id);
 
 		$('.designType').removeClass('currentItem');
 
 		$('#'+event.target.id).parent().addClass('currentItem');
+
+		$('#modelNameContainer').show();
 
 	});
 
@@ -764,7 +767,7 @@ function retrieveModels(  )
 		var tr="<div class='row center' style='line-height:30px; border-bottom:2px solid #ccc; margin:0px 20px;'>";
 		tr=tr+"<div class='col_one_third' style='margin-bottom:0px; font-weight:bold;'>Model Name</div>";
 		tr=tr+"<div class='col_one_third' style='margin-bottom:0px; font-weight:bold;'>Date Created</div>";
-		tr=tr+"<div class='col_one_third' col_last style='margin-bottom:0px; font-weight:bold;'>Actions</div>";
+		tr=tr+"<div class='col_one_third col_last' style='margin-bottom:0px; font-weight:bold;'>Actions</div>";
 		tr=tr+"</div>"
 		$("#userModelList").append(tr);
 
