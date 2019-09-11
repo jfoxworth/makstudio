@@ -63,7 +63,7 @@
 
 
 
-<div class="row center">
+<div class="row center col_full">
 
 	<div class="form-group">
 		<label for="moreInfoDesk">Any additional info</label>

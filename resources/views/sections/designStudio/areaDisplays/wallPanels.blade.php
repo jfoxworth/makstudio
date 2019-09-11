@@ -97,7 +97,7 @@
 </div>
 
 
-<div class="row center">
+<div class="row center col_full">
 
 	<div class="row divcenter" style="margin:20px 0px">
 		<label for="wallPanelSize">Panel Sizes</label>
@@ -107,7 +107,7 @@
 </div>
 
 
-<div class="row center">
+<div class="row col_full center">
 
 	<div class="form-group">
 		<label for="moreInfoWallPanel">Any additional info</label>
@@ -116,6 +116,6 @@
 
 </div>
 
-<div class="row center">
+<div class="row col_full center">
 	<a href="#" class="button button-border button-rounded button-fill button-blue"><span>Submit</span></a>
 </div>

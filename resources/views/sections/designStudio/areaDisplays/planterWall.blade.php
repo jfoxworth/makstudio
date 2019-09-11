@@ -76,6 +76,6 @@
 </div>
 
 
-<div class="row divcenter">
+<div class="row divcenter col_full">
 	<a href="#" class="button button-border button-rounded button-fill button-blue"><span>Submit</span></a>
 </div>
