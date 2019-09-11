@@ -381,6 +381,17 @@ $(document).ready(function()	{
 
 
 
+
+	$(document).on('click', '.modelDetails', function(event)
+	{	
+		$('.modeDetails').hide();
+		$('#'+event.target.id+'Details').show();
+
+
+	});
+
+
+
 });
 
 
@@ -794,7 +805,7 @@ function retrieveModels(  )
 			{
 				var det = '';
 
-				det=det+'<div id="'+obj.id+'Details" class="topmargin center" style="margin:0px 40px;">';
+				det=det+'<div id="'+obj.id+'Details" class="topmargin center modelDetails" style="margin:0px 40px;">';
 
 					det=det+'<div class="nobottommargin row center" style="background-color:#888888; color:#ccc; padding:5px 0px;">';
 						det=det+'<div class="col_three_fifth nobottommargin">Description</div>';
@@ -845,6 +856,8 @@ function retrieveModels(  )
 				$("#userModelList").append(det);
 			}
 
+
+			$('.modelDetails').hide();
 
 
 		});
