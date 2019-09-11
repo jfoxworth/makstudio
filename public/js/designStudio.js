@@ -1343,7 +1343,7 @@ function initializeComponents( modelName )
 		});
 
 
-		$(".lightHeightSlider").ionRangeSlider({
+		$(".lightLengthSlider").ionRangeSlider({
 			grid: false,
 			min: 1,
 			max: 500,
@@ -1541,7 +1541,7 @@ function initializeData()
 
 			'light' : {
 				'Ceiling Width' : 'lightWidthSlider',
-				'Ceiling Height' : 'lightHeightSlider'
+				'Ceiling Length' : 'lightLengthSlider'
 			}
 
 

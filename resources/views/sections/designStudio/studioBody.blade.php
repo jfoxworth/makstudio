@@ -755,8 +755,8 @@
 
 
 						<div class="white-section center" style="margin:20px 0px" >
-							<label>Wall Height (inches)</label>
-							<input class="lightHeightSlider modelSlider" id="lightHeightSlider"/>
+							<label>Wall Length (inches)</label>
+							<input class="lightLengthSlider modelSlider" id="lightLengthSlider"/>
 						</div>
 
 					</div>
