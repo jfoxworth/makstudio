@@ -750,7 +750,7 @@
 
 						<div class="white-section center" style="margin:10px 0px" >
 							<label>Wall Width (inches)</label>
-							<input class="lightLengthSlider modelSlider" id="lightWidthSlider"/>
+							<input class="lightWidthSlider modelSlider" id="lightWidthSlider"/>
 						</div>
 
 
