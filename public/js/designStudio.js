@@ -746,6 +746,12 @@ function retrieveModels(  )
 
 	$.get( "getModels", function( data ) 
 	{
+
+
+		var monthNames = [ "January", "February", "March", "April", "May", "June",
+		    "July", "August", "September", "October", "November", "December" ];
+
+
 		console.log(data);
 
 		window['userModelData'] = data;
@@ -760,10 +766,13 @@ function retrieveModels(  )
 
 		$.each(userModelData, function(index, obj){
 			
-			var tr = $("<tr class='hoverMeGrey' style='height:50px; padding:10px 0px; border-bottom:2px solid #ccc;'>");
+			var newDate = new Date(obj.created_at);
+			var formattedDate = monthNames[newDate.getMonth()] +' '+newDate.getDay()+','+newDate.getFullYear();
+
+			var tr = $("<tr class='hoverMeGrey' style='height:50px; padding:10px 0px 10px 10px; border-bottom:2px solid #ccc;'>");
 			tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.build_data.name +"</td>");
-			tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ obj.created_at +"</td>");
-			tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe'><i id='"+obj.id+"' class='icon-remove'></i></td></tr>");
+			tr.append("<td class='potenModel hoverMe' id='"+obj.id+"'>"+ formattedDate +"</td>");
+			tr.append("<td id='"+obj.id+"' class='deleteModel hoverMe' style='padding:0px 10px 0px 0px;'><i id='"+obj.id+"' class='icon-remove'></i></td></tr>");
 
 			$("#userModelList").append(tr);
 		});

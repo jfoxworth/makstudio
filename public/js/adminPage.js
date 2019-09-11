@@ -135,6 +135,7 @@ function retrieveBuilds( )
 		console.log(data);
 
 
+
 		$.each(data, function(index, obj){
 
 			obj.build_data = JSON.parse(obj.build_data);
