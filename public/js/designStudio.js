@@ -762,9 +762,9 @@ function retrieveModels(  )
 		$("#userModelList").html('');
 
 		var tr="<div class='row center' style='line-height:30px; border-bottom:2px solid #ccc; margin:0px 20px;'>";
-		tr=tr+"<div class='col_one_third style='margin-bottom:0px''>Model Name</div>";
-		tr=tr+"<div class='col_one_third style='margin-bottom:0px''>Date Created</div>";
-		tr=tr+"<div class='col_one_third col_last style='margin-bottom:0px''>Actions</div>";
+		tr=tr+"<div class='col_one_third style='margin-bottom:0px'>Model Name</div>";
+		tr=tr+"<div class='col_one_third style='margin-bottom:0px'>Date Created</div>";
+		tr=tr+"<div class='col_one_third col_last style='margin-bottom:0px'>Actions</div>";
 		tr=tr+"</div>"
 		$("#userModelList").append(tr);
 
@@ -773,10 +773,10 @@ function retrieveModels(  )
 			var newDate = new Date(obj.created_at);
 			var formattedDate = monthNames[newDate.getMonth()] +' '+newDate.getDay()+','+newDate.getFullYear();
 
-			var tr = "<div class='row' style='height:50px; padding:10px 0px 10px 10px; margin:0px 20px; border-bottom:2px solid #ccc;'>";
+			var tr = "<div class='row center' style='height:50px; padding:10px 0px 10px 10px; margin:0px 20px; border-bottom:2px solid #ccc;'>";
 			tr=tr+"<div class='col_one_third' style='margin-bottom:0px'>"+ obj.build_data.name +"</div>";
 			tr=tr+"<div class='col_one_third' style='margin-bottom:0px'>"+ formattedDate +"</div>";
-			tr=tr+"<div class='col_one_third col_last style='margin-bottom:0px''>";
+			tr=tr+"<div class='col_one_third col_last style='margin-bottom:0px'>";
 			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-list2 h5 modelDetails hoverMe' data-toggle='tooltip' data-placement='top' title='Model Details'></i>";
 			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-resize-full h5 potenModel hoverMe' data-toggle='tooltip' data-placement='top' title='Open Model'></i>";
 			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-remove-circle h5 deleteModel hoverMe' data-toggle='tooltip' data-placement='top' title='Delete Model'></i>";
