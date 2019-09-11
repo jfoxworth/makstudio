@@ -1514,6 +1514,12 @@ function initializeData()
 				'Panel K Rotation' : 'facetedKSlider',
 				'Panel L Rotation' : 'facetedLSlider',
 				'Panel M Rotation' : 'facetedMSlider'
+			},
+
+
+			'light' : {
+				'Ceiling Width' : 'lightWidthSlider',
+				'Ceiling Height' : 'lightHeightSlider'
 			}
 
 
@@ -1617,6 +1623,11 @@ function initializeData()
 				'Panel K Rotation' : 'slider',
 				'Panel L Rotation' : 'slider',
 				'Panel M Rotation' : 'slider'
+			},
+
+			'light' : {
+				'Ceiling Width' : 'slider',
+				'Ceiling Height' : 'slider'
 			}
 
 
