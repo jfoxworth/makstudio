@@ -828,9 +828,9 @@
 						<div class="card-header">Saved Models for user {{{ Auth::user()->name }}} - {{{ Auth::user()->email }}}</div> 
 
 						<div class="card-body">
-							<div><table id="userModelList"></table></div>
+							<div id="userModelList"></div>
 
-    						</div>
+						</div>
 
 
 					</div>
