@@ -793,47 +793,47 @@ function retrieveModels(  )
 
 				det=det+'';
 
-					det=det+'<div class="topmargin nobottommargin row" style="background-color:#888888; color:#ccc;">';
+					det=det+'<div class="topmargin nobottommargin row" style="margin:0px 40px; background-color:#888888; color:#ccc;">';
 						det=det+'<div class="col_three_fifth nobottommargin">Description</div>';
 						det=det+'<div class="col_one_fifth nobottommargin">Value</div>';
 						det=det+'<div class="col_one_fifth col_last nobottommargin">Cost</div>';
 					det=det+'</div>';
 
-					det=det+'<div class="row">';
+					det=det+'<div class="row center nobottommargin">';
 						det=det+'<div class="col_three_fifth">Bench Height (in)</div>';
 						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Bench Height']+'</div>';
-						det=det+'<div class="col_one_fifth"></div>';
+						det=det+'<div class="col_one_fifth col_last"></div>';
 					det=det+'</div>';
 
-					det=det+'<div class="row">';
+					det=det+'<div class="row center nobottommargin">';
 						det=det+'<div class="col_three_fifth">Bench Depth (in)</div>';
 						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Bench Depth']+'</div>';
-						det=det+'<div class="col_one_fifth"></div>';
+						det=det+'<div class="col_one_fifth col_last"></div>';
 					det=det+'</div>';
 
-					det=det+'<div class="row">';
+					det=det+'<div class="row center nobottommargin">';
 						det=det+'<div class="col_three_fifth">Twist Length (ft)</div>';
 						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Twist Length']+'</div>';
-						det=det+'<div class="col_one_fifth"></div>';
+						det=det+'<div class="col_one_fifth col_last"></div>';
 					det=det+'</div>';
 
-					det=det+'<div class="row">';
+					det=det+'<div class="row center nobottommargin">';
 						det=det+'<div class="col_three_fifth">Left Seating Length (ft)</div>';
 						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Left Seating Length']+'</div>';
-						det=det+'<div class="col_one_fifth"></div>';
+						det=det+'<div class="col_one_fifth col_last"></div>';
 					det=det+'</div>';
 
-					det=det+'<div class="row">';
+					det=det+'<div class="row center nobottommargin">';
 						det=det+'<div class="col_three_fifth">Right Seating Length (ft)</div>';
 						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Right Seating Length']+'</div>';
-						det=det+'<div class="col_one_fifth"></div>';
+						det=det+'<div class="col_one_fifth col_last"></div>';
 					det=det+'</div>';
 
 
 					det=det+'<div class="topmargin nobottommargin row" style="background-color:#888888; color:#ccc;">';
 						det=det+'<div class="col_three_fifth nobottommargin">Subtotal</div>';
 						det=det+'<div class="col_one_fifth nobottommargin"></div>';
-						det=det+'<div class="col_one_fifth col_last nobottommargin">'+obj.price+'</div>';
+						det=det+'<div class="col_one_fifth col_last nobottommargin">'+obj.build_data.price+'</div>';
 					det=det+'</div>';
 
 				det=det+'</div>';
