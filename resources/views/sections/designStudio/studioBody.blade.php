@@ -830,12 +830,12 @@
 						<div class="card-body">
 							<div><table id="userModelList"></table></div>
 
-							foreach($userModelData as $modelFile){
+    						</div>
+							@foreach($userModelData as $modelFile)
 
 						        <div>Here - $modelFile.build_data.name</div>
-						    }
+						    @endforeach
 
-    						</div>
 
 					</div>
 
