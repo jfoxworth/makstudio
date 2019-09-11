@@ -508,6 +508,7 @@ function setDefaultModelData( modelName )
 
 	// Pull the values from the shape diver ticket
 	thisData = model_api.parameters.get();
+	console.log(thisData);
 
 
 	// Make the global variable holding the model
@@ -540,8 +541,10 @@ function setDefaultModelData( modelName )
 
 		for (componentName in makStudio.componentNames[modelName])
 		{
+			console.log('Comparing '+componentName+' to '+element.name);
 			if ( componentName == element.name )
 			{
+				console.log('The type is '+makStudio.componentTypes[modelName][componentName]);
 				if ( makStudio.componentTypes[modelName][componentName] == 'slider' )
 				{
 					$( "#"+makStudio.componentNames[modelName][componentName] ).val(element.value);
