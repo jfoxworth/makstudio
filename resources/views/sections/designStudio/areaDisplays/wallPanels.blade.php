@@ -58,11 +58,11 @@
 </div>
 
 
-<div class="center">
+<div class="divcenter">
 
-	<div class="white-section row" style="margin:20px 0px" >
+	<div class="col_one_third" ><label>Select Desired Panels</label></div>
 
-		<label>Select Desired Panels</label>
+	<div class="col_two_third col_last">
 		<select class="selectpicker" multiple>
 			<option value="lily">Lily</option>
 			<option value="quilted">Quilted</option>
@@ -74,7 +74,6 @@
 			<option value="pointCloud">Point Cloud</option>
 			<option value="jaramillo">Jaramillo</option>
 		</select>
-
 	</div>
 
 </div>
@@ -82,9 +81,9 @@
 
 <div class="center">
 
-	<div class="white-section center row" style="margin:20px 0px" >
+	<div class="col_one_third" ><label>What are the application types?</label></div>
 
-		<label>What are the application types?</label>
+	<div class="col_two_third col_last">
 		<select class="selectpicker" multiple>
 			<option value="1">Commercial & Dry</option>
 			<option value="2">Commercial & Damp</option>
@@ -93,7 +92,6 @@
 			<option value="5">Residential & Damp</option>
 			<option value="6">Residential & Outdoor</option>
 		</select>
-
 	</div>
 
 </div>

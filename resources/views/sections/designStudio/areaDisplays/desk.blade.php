@@ -78,6 +78,16 @@
 </div>
 
 
+<div class="center">
+
+	<div class="form-group">
+		<label for="moreInfoDesk">Any additional info</label>
+		<textarea class="form-control" id="moreInfoWallPanel" rows="3"></textarea>
+	</div>
+
+</div>
+
+
 
 <div class="center">
 

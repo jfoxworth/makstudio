@@ -84,6 +84,16 @@
 	</div>
 
 
+<div class="center">
+
+	<div class="form-group">
+		<label for="moreInfoDesk">Any additional info</label>
+		<textarea class="form-control" id="moreInfoDesk" rows="3"></textarea>
+	</div>
+
+</div>
+
+
 	<div class="divcenter">
 		<a href="#" class="button button-border button-rounded button-fill button-blue"><span>Submit</span></a>
 	</div>
