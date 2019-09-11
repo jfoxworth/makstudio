@@ -382,7 +382,7 @@ $(document).ready(function()	{
 
 
 
-	$(document).on('click', '.modelDetails', function(event)
+	$(document).on('click', '.modelDetailsShow', function(event)
 	{	
 		$('.modeDetails').hide();
 		$('#'+event.target.id+'Details').show();
@@ -791,7 +791,7 @@ function retrieveModels(  )
 			tr=tr+"<div class='col_one_third' style='margin-bottom:0px'>"+ obj.build_data.name +"</div>";
 			tr=tr+"<div class='col_one_third' style='margin-bottom:0px'>"+ formattedDate +"</div>";
 			tr=tr+"<div class='col_one_third col_last' style='margin-bottom:0px'>";
-			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-list2 h5 modelDetails hoverMe' data-toggle='tooltip' data-placement='top' title='Model Details'></i>";
+			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-list2 h5 modelDetailsShow hoverMe' data-toggle='tooltip' data-placement='top' title='Model Details'></i>";
 			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-resize-full h5 potenModel hoverMe' data-toggle='tooltip' data-placement='top' title='Open Model'></i>";
 			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-remove-circle h5 deleteModel hoverMe' data-toggle='tooltip' data-placement='top' title='Delete Model'></i>";
 			tr=tr+"</div></div>";
