@@ -762,9 +762,9 @@ function retrieveModels(  )
 		$("#userModelList").html('');
 
 		var tr="<div class='row center' style='line-height:30px; border-bottom:2px solid #ccc; margin:0px 20px;'>";
-		tr=tr+"<div class='col_one_third style='margin-bottom:0px'>Model Name</div>";
-		tr=tr+"<div class='col_one_third style='margin-bottom:0px'>Date Created</div>";
-		tr=tr+"<div class='col_one_third col_last style='margin-bottom:0px'>Actions</div>";
+		tr=tr+"<div class='col_one_third' style='margin-bottom:0px; font-weight:bold;'>Model Name</div>";
+		tr=tr+"<div class='col_one_third' style='margin-bottom:0px; font-weight:bold;'>Date Created</div>";
+		tr=tr+"<div class='col_one_third' col_last style='margin-bottom:0px; font-weight:bold;'>Actions</div>";
 		tr=tr+"</div>"
 		$("#userModelList").append(tr);
 
@@ -776,7 +776,7 @@ function retrieveModels(  )
 			var tr = "<div class='row center' style='height:50px; padding:10px 0px 10px 10px; margin:0px 20px; border-bottom:2px solid #ccc;'>";
 			tr=tr+"<div class='col_one_third' style='margin-bottom:0px'>"+ obj.build_data.name +"</div>";
 			tr=tr+"<div class='col_one_third' style='margin-bottom:0px'>"+ formattedDate +"</div>";
-			tr=tr+"<div class='col_one_third col_last style='margin-bottom:0px'>";
+			tr=tr+"<div class='col_one_third col_last' style='margin-bottom:0px'>";
 			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-list2 h5 modelDetails hoverMe' data-toggle='tooltip' data-placement='top' title='Model Details'></i>";
 			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-resize-full h5 potenModel hoverMe' data-toggle='tooltip' data-placement='top' title='Open Model'></i>";
 			tr=tr+"<i id='"+obj.id+"' class='rightmargin-sm icon-remove-circle h5 deleteModel hoverMe' data-toggle='tooltip' data-placement='top' title='Delete Model'></i>";
@@ -784,6 +784,65 @@ function retrieveModels(  )
 
 			$("#userModelList").append(tr);
 			$('[data-toggle="tooltip"]').tooltip();
+
+
+
+			if ( obj.build_id == "bench" )
+			{
+				var det = '';
+
+				det=det+'';
+
+					det=det+'<div class="topmargin nobottommargin row" style="background-color:#888888; color:#ccc;">';
+						det=det+'<div class="col_three_fifth nobottommargin">Description</div>';
+						det=det+'<div class="col_one_fifth nobottommargin">Value</div>';
+						det=det+'<div class="col_one_fifth col_last nobottommargin">Cost</div>';
+					det=det+'</div>';
+
+					det=det+'<div class="row">';
+						det=det+'<div class="col_three_fifth">Bench Height (in)</div>';
+						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Bench Height']+'</div>';
+						det=det+'<div class="col_one_fifth"></div>';
+					det=det+'</div>';
+
+					det=det+'<div class="row">';
+						det=det+'<div class="col_three_fifth">Bench Depth (in)</div>';
+						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Bench Depth']+'</div>';
+						det=det+'<div class="col_one_fifth"></div>';
+					det=det+'</div>';
+
+					det=det+'<div class="row">';
+						det=det+'<div class="col_three_fifth">Twist Length (ft)</div>';
+						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Twist Length']+'</div>';
+						det=det+'<div class="col_one_fifth"></div>';
+					det=det+'</div>';
+
+					det=det+'<div class="row">';
+						det=det+'<div class="col_three_fifth">Left Seating Length (ft)</div>';
+						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Left Seating Length']+'</div>';
+						det=det+'<div class="col_one_fifth"></div>';
+					det=det+'</div>';
+
+					det=det+'<div class="row">';
+						det=det+'<div class="col_three_fifth">Right Seating Length (ft)</div>';
+						det=det+'<div class="col_one_fifth">'+obj.build_data.componentValues['Right Seating Length']+'</div>';
+						det=det+'<div class="col_one_fifth"></div>';
+					det=det+'</div>';
+
+
+					det=det+'<div class="topmargin nobottommargin row" style="background-color:#888888; color:#ccc;">';
+						det=det+'<div class="col_three_fifth nobottommargin">Subtotal</div>';
+						det=det+'<div class="col_one_fifth nobottommargin"></div>';
+						det=det+'<div class="col_one_fifth col_last nobottommargin">'+obj.price+'</div>';
+					det=det+'</div>';
+
+				det=det+'</div>';
+
+
+				$("#userModelList").append(det);
+			}
+
+
 
 		});
 
