@@ -1335,7 +1335,7 @@ function initializeComponents( modelName )
 	if ( modelName == 'light' )
 	{
 
-		$(".lightLengthSlider").ionRangeSlider({
+		$(".lightWidthSlider").ionRangeSlider({
 			grid: false,
 			min: 1,
 			max: 500,

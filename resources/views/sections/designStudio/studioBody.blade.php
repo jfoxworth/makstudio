@@ -749,8 +749,8 @@
 					<div id="lightDimensions" class="parameterSet">
 
 						<div class="white-section center" style="margin:10px 0px" >
-							<label>Wall Length (inches)</label>
-							<input class="lightLengthSlider modelSlider" id="lightLengthSlider"/>
+							<label>Wall Width (inches)</label>
+							<input class="lightLengthSlider modelSlider" id="lightWidthSlider"/>
 						</div>
 
 
