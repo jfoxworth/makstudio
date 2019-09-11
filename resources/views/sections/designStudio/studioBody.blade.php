@@ -86,8 +86,8 @@
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
-						 data-toggle="tooltip" data-placement="bottom" title="Gensler Wall">
-						<img id="gensler" src="images/icons/MAK ICONS-01.jpg" width="48px">
+						 data-toggle="tooltip" data-placement="bottom" title="Light Fixture Wall">
+						<img id="light" src="images/icons/MAK ICONS-01.jpg" width="48px">
 					</div>
 
 				</div>
@@ -126,17 +126,17 @@
 
 					<div id="benchDimensions" class="parameterSet">
 
-						<div class="white-section" style="margin:10px 0px" id="benchDepth">
+						<div class="white-section center" style="margin:10px 0px" id="benchDepth">
 							<label>Bench Depth (ft)</label>
 							<input class="benchDepthSlider modelSlider" id="benchDepthSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:20px 0px" id="benchHeight">
+						<div class="white-section center" style="margin:20px 0px" id="benchHeight">
 							<label>Bench Height (ft)</label>
 							<input class="benchHeightSlider modelSlider"  id="benchHeightSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:20px 0px" id="benchTwistLength">
+						<div class="white-section center" style="margin:20px 0px" id="benchTwistLength">
 							<label>Twist Length (ft)</label>
 							<input class="benchTwistSlider modelSlider"  id="benchTwistSlider"/>
 						</div>
@@ -146,7 +146,7 @@
 
 					<div id="benchSeat" class="parameterSet">
 
-						<div class="white-section" style="margin:20px 0px" id="benchLeftSeatLength">
+						<div class="white-section center" style="margin:20px 0px" id="benchLeftSeatLength">
 							<label>Left Seat Length (ft)</label>
 							<input class="benchLeftSeatSlider modelSlider"  id="benchLeftSeatSlider"/>
 						</div>
@@ -163,12 +163,12 @@
 							</select>
 						</div>
 
-						<div class="white-section" style="margin:20px 0px" id="benchRightSeatLength">
+						<div class="white-section center" style="margin:20px 0px" id="benchRightSeatLength">
 							<label>Right Seat Length (ft)</label>
 							<input class="benchRightSeatSlider modelSlider"  id="benchRightSeatSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:20px 0px">
+						<div class="white-section center" style="margin:20px 0px">
 							<label>Right Planter Length</label>
 							<select id="rightPlanterLength"
 									class="selectpicker btn-primary modelDropdown"
@@ -185,7 +185,7 @@
 
 
 					<!-- Price box for bench -->
-					<div class="white-section divcenter" style="margin:20px 0px">
+					<div class="white-section center divcenter" style="margin:20px 0px">
 						<label>Estimated Cost (US)</label>
 
 						<div class="divcenter priceBox">
@@ -243,27 +243,27 @@
 					<!-- Specifics for slat wall dimensions -->
 					<div id="finWallDimensions" class="parameterSet">
 
-						<div class="white-section" style="margin:10px 0px" id="finWallHeight">
+						<div class="white-section center" style="margin:10px 0px" id="finWallHeight">
 							<label>Wall Height (inches)</label>
 							<input class="finWallHeightSlider modelSlider" id="finWallHeightSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:20px 0px" id="finWallWidth">
+						<div class="white-section center" style="margin:20px 0px" id="finWallWidth">
 							<label>Wall Width (inches)</label>
 							<input class="finWallWidthSlider modelSlider"  id="finWallWidthSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:20px 0px" id="finWallDepth">
+						<div class="white-section center" style="margin:20px 0px" id="finWallDepth">
 							<label>Wall Depth (inches)</label>
 							<input class="finWallDepthSlider modelSlider"  id="finWallDepthSlider"/>
 						</div>
 
-						<div class="white-section modelBoolean" style="margin:20px 0px;">
+						<div class="white-section center modelBoolean" style="margin:20px 0px;">
 							<label>Show Dimensions</label>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="finWallShowDimensions">
 						</div>
 
-						<div class="white-section modelBoolean" style="margin:20px 0px;">
+						<div class="white-section center modelBoolean" style="margin:20px 0px;">
 							<label>Show Human Scale</label>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="finWallHumanScale">
 						</div>
@@ -275,25 +275,25 @@
 					<!-- Specifics for slat wall ripple -->
 					<div id="finRipple" class="parameterSet">
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Ripple X Location (%)</label>
 							<input class="rippleXSlider modelSlider" id="rippleXSlider"/>
 						</div>
 
 
-						<div class="white-section" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" >
 							<label>Ripple Y Location (%)</label>
 							<input class="rippleYSlider modelSlider" id="rippleYSlider"/>
 						</div>
 
 
-						<div class="white-section" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" >
 							<label>Ripple Intensity</label>
 							<input class="rippleIntensitySlider modelSlider" id="rippleIntensitySlider"/>
 						</div>
 
 
-						<div class="white-section" style="margin:20px 0px">
+						<div class="white-section center" style="margin:20px 0px">
 							<label>Ripple Roughness</label>
 							<input class="rippleRoughnessSlider modelSlider" id="rippleRoughnessSlider"/>
 						</div>
@@ -309,18 +309,18 @@
 					<!-- Specifics for slat wall fins -->
 					<div id="finFin" class="parameterSet">
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Fin Thickness (inches)</label>
 							<input class="finThicknessSlider modelSlider" id="finThicknessSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Fin Spacing (inches)</label>
 							<input class="finSpacingSlider modelSlider" id="finSpacingSlider"/>
 						</div>
 
 
-						<div class="white-section" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" >
 							<label>Fin Rotation (degrees)</label>
 							<input class="finRotationSlider modelSlider" id="finRotationSlider"/>
 						</div>
@@ -381,27 +381,35 @@
 					<!-- Specifics for fin wall logo -->
 					<div id="finLogo" class="parameterSet">
 
-						<div class="white-section modelBoolean" style="margin:20px 0px;">
+						<div class="white-section center modelBoolean" style="margin:20px 0px;">
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Logo On" data-off-text="Logo Off" id="finLogoOnOff">
 						</div>
 
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Wall Dimensions">
+							<i id="finWallDimensionsButton" class="icon-measure h3 parameterSelect"></i>
+						</div>
+
+
 						<div class="bottommargin" style="margin:20px 0px;">
-							<label>Upload Logo:</label><br>
+							<label>Upload Logo: 
+								<i class="icon-info" data-toggle="tooltip" data-placement="top" title="Black and white image less than 150 KB"></i>
+							</label><br>
 							<input name="logoUpload" type="file" multiple class="file-loading" data-show-preview="false" id="finLogoUpload">
 						</div>
 
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Logo Scale (%)</label>
 							<input class="finLogoScaleSlider modelSlider" id="finLogoScaleSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Logo X (inches)</label>
 							<input class="finLogoXSlider modelSlider" id="finLogoXSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Logo Y (inches)</label>
 							<input class="finLogoZSlider modelSlider" id="finLogoZSlider"/>
 						</div>
@@ -410,7 +418,7 @@
 
 
 					<!-- Price box for bench -->
-					<div class="white-section divcenter" style="margin:20px 0px">
+					<div class="white-section center divcenter" style="margin:20px 0px">
 						<label>Estimated Cost (US)</label>
 
 						<div class="divcenter priceBox">
@@ -464,28 +472,28 @@
 					<!-- Specifics for backlit walls dimensions -->
 					<div id="backlitDimensions" class="parameterSet">
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Wall Length (inches)</label>
 							<input class="backlitLengthSlider modelSlider" id="backlitLengthSlider"/>
 						</div>
 
 
-						<div class="white-section" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" >
 							<label>Wall Height (inches)</label>
 							<input class="backlitHeightSlider modelSlider" id="backlitHeightSlider"/>
 						</div>
 
-						<div class="white-section modelBoolean" style="margin:20px 0px;">
+						<div class="white-section center modelBoolean" style="margin:20px 0px;">
 							<label>Show Dimensions</label>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitShowDimensions">
 						</div>
 
-						<div class="white-section modelBoolean" style="margin:20px 0px;">
+						<div class="white-section center modelBoolean" style="margin:20px 0px;">
 							<label>Show Panel Divisions</label>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitShowPanels">
 						</div>
 
-						<div class="white-section modelBoolean" style="margin:20px 0px;">
+						<div class="white-section center modelBoolean" style="margin:20px 0px;">
 							<label>Show Human Scale</label>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitHumanScale">
 						</div>
@@ -497,27 +505,29 @@
 					<!-- Specifics for backlit walls dimensions -->
 					<div id="backlitLogo" class="parameterSet">
 
-						<div class="white-section modelBoolean" style="margin:20px 0px;">
+						<div class="white-section center modelBoolean" style="margin:20px 0px;">
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Logo On" data-off-text="Logo Off" id="backlitLogoOnOff">
 						</div>
 
 						<div class="bottommargin" style="margin:20px 0px;">
-							<label>Upload Logo:</label><br>
+							<label>Upload Logo: 
+								<i class="icon-info" data-toggle="tooltip" data-placement="top" title="Black and white image less than 150 KB"></i>
+							</label><br>
 							<input name="logoUpload" type="file" multiple class="file-loading" data-show-preview="false" id="backlitLogoUpload">
 						</div>
 
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Logo Scale (%)</label>
 							<input class="backlitLogoScaleSlider modelSlider" id="backlitLogoScaleSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Logo X (inches)</label>
 							<input class="backlitLogoXSlider modelSlider" id="backlitLogoXSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Logo Y (inches)</label>
 							<input class="backlitLogoZSlider modelSlider" id="backlitLogoZSlider"/>
 						</div>
@@ -532,38 +542,40 @@
 					<!-- Specifics for backlit walls ripples -->
 					<div id="backlitRipple" class="parameterSet">
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Wave Amplitude</label>
 							<input class="backlitWaveAmpSlider modelSlider" id="backlitWaveAmpSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<!--
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Wave Depth</label>
 							<input class="backlitWaveDepthSlider modelSlider" id="backlitWaveDepthSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Wall Metalness</label>
 							<input class="backlitMetalSlider modelSlider" id="backlitMetalSlider"/>
 						</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Wall Roughness</label>
 							<input class="backlitRoughSlider modelSlider" id="backlitRoughSlider"/>
 						</div>
+						-->
 
-						<div class="white-section modelBoolean" style="margin:20px 0px;">
+						<div class="white-section center modelBoolean" style="margin:20px 0px;">
 							<label>Create Flat Area</label>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitFlatOnOff">
 						</div>
 
 
-						<div class="white-section" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" >
 							<label>Choose Pattern Variation</label>
 							<input class="backlitPatternSlider modelSlider" id="backlitPatternSlider"/>
 						</div>
 
-						<div class="white-section modelBoolean" style="margin:20px 0px;">
+						<div class="white-section center modelBoolean" style="margin:20px 0px;">
 							<label>Pattern After Logo</label>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitPatternOnOff">
 						</div>
@@ -581,7 +593,7 @@
     						<input type="text" class="form-control" id="backlitHeader" placeholder="Header (15 char)">
     					</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Header Height</label>
 							<input class="backlitHeaderSlider modelSlider" id="backlitHeaderSlider"/>
 						</div>
@@ -591,7 +603,7 @@
     						<input type="text" class="form-control" id="backlitsubHeader" placeholder="Sub Header (30 char)">
     					</div>
 
-						<div class="white-section" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" >
 							<label>Subheader Height</label>
 							<input class="backlitSubheaderSlider modelSlider" id="backlitSubheaderSlider"/>
 						</div>
@@ -600,7 +612,7 @@
 
 
 					<!-- Price box for bench -->
-					<div class="white-section divcenter" style="margin:20px 0px">
+					<div class="white-section center divcenter" style="margin:20px 0px">
 						<label>Estimated Cost (US)</label>
 
 						<div class="divcenter priceBox">
@@ -623,81 +635,81 @@
 				<!-- All options for the backlit walls -->
 				<div id="facetedSection" style="overflow:scroll; height:500px">
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Facet Spacing</label>
 						<input class="facetedSpacingSlider modelSlider" id="facetedSpacing"/>
 					</div>
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel A Rotation</label>
 						<input class="facetedASlider modelSlider" id="facetedASlider"/>
 					</div>
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel B Rotation</label>
 						<input class="facetedBSlider modelSlider" id="facetedBSlider"/>
 					</div>
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel C Rotation</label>
 						<input class="facetedCSlider modelSlider" id="facetedCSlider"/>
 					</div>
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel D Rotation</label>
 						<input class="facetedDSlider modelSlider" id="facetedDSlider"/>
 					</div>
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel E Rotation</label>
 						<input class="facetedESlider modelSlider" id="facetedESlider"/>
 					</div>
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel F Rotation</label>
 						<input class="facetedFSlider modelSlider" id="facetedFSlider"/>
 					</div>
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel G Rotation</label>
 						<input class="facetedGSlider modelSlider" id="facetedGSlider"/>
 					</div>
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel H Rotation</label>
 						<input class="facetedHSlider modelSlider" id="facetedHSlider"/>
 					</div>
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel I Rotation</label>
 						<input class="facetedISlider modelSlider" id="facetedISlider"/>
 					</div>
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel J Rotation</label>
 						<input class="facetedJSlider modelSlider" id="facetedJSlider"/>
 					</div>
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel K Rotation</label>
 						<input class="facetedKSlider modelSlider" id="facetedKSlider"/>
 					</div>
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel L Rotation</label>
 						<input class="facetedLSlider modelSlider" id="facetedLSlider"/>
 					</div>
 
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 						<label>Panel M Rotation</label>
 						<input class="facetedMSlider modelSlider" id="facetedMSpacing"/>
 					</div>
@@ -713,7 +725,7 @@
 				<!-- All options for the desks -->
 				<div id="deskSection">
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 
 						<h4 class="center nobottommargin">Select Desk Shape</h4>
 
@@ -733,7 +745,7 @@
 					</div>
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 
 						<h4 class="center nobottommargin">Select Desk Color</h4>
 
@@ -754,7 +766,7 @@
 
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 
 						<h4 class="center nobottommargin">Desk Size (People)</h4>
 
@@ -792,7 +804,7 @@
 				<!-- All options for the Planter Walls -->
 				<div id="planterSection">
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 
 						<h4 class="center nobottommargin">Choose Fin Style</h4>
 
@@ -812,7 +824,7 @@
 					</div>
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 
 						<h4 class="center nobottommargin">Planter Box Color</h4>
 
@@ -841,7 +853,7 @@
 
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 
 						<h4 class="center nobottommargin">Number Needed</h4>
 
@@ -883,7 +895,7 @@
 				<!-- All options for the Wall Panles -->
 				<div id="panelSection">
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 
 						<label>Select Desired Panels</label>
 						<select class="selectpicker" multiple>
@@ -902,7 +914,7 @@
 
 
 
-					<div class="white-section" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" >
 
 						<label>What are the application types?</label>
 						<select class="selectpicker" multiple>

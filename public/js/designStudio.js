@@ -907,7 +907,7 @@ function setPrice( modelName )
 		var totalLength = parseInt( makModel['build_data']['componentValues']['Twist Length'] ) + 
 						  parseInt( makModel['build_data']['componentValues']['Right Seating Length'] ) + 
 						  parseInt( makModel['build_data']['componentValues']['Left Seating Length'] );
-		modelPrice = makStudio['modelPrices'][modelName] * totalLength;
+		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalLength);
 		$('#benchPrice').html( modelPrice );
 	}
 
@@ -915,7 +915,7 @@ function setPrice( modelName )
 	{
 		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
-		modelPrice = makStudio['modelPrices'][modelName] * totalSpace / 144;
+		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalSpace / 144);
 		$('#finWallPrice').html( modelPrice );
 	}
 
@@ -924,9 +924,19 @@ function setPrice( modelName )
 	{
 		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						 parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
-		modelPrice = makStudio['modelPrices'][modelName] * totalSpace / 144;
+		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalSpace / 144);
 		$('#backlitPrice').html( modelPrice );
 	}
+
+
+	if ( modelName == 'light' )
+	{
+		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
+						 parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
+		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalSpace / 144);
+		$('#backlitPrice').html( modelPrice );
+	}
+
 
 	makModel['build_data']['price'] = modelPrice;
 
@@ -1062,14 +1072,14 @@ function initializeComponents( modelName )
 		$(".backlitLengthSlider").ionRangeSlider({
 			grid: false,
 			min: 1,
-			max: 1000,
+			max: 240,
 			step: 1
 		});
 
 		$(".backlitHeightSlider").ionRangeSlider({
 			grid: false,
 			min: 1,
-			max: 1000,
+			max: 240,
 			step: 1
 		});
 
@@ -1364,23 +1374,26 @@ function initializeData()
 	return {
 
 		'modelTickets' : {
-			'bench' : 'ccf330f694285fa526a47387edbd0a89e09146369e7b730dbf57fa6354146b1df5390f267e9fe942b42e7571084e91c912c272ff2b7609aed88e123dfd2718afeb773039caed2580fc03c3d0d629a26da06f34f54bc0b3731a19d16c790bd4656b5dad94fd5572642398bc694aaf42b03957e44bbb44-9bc6005b71d9578337b4509851c32a30',
-			'finWall' : 'f1832e3ad0bcab4aa8d08f894889044419a2570f638a7f334b048c76c7b5c17a90b3f4502981d3bdee2321dcad99ec6d97c6c4d6e4356cb1dd06a9b93b103be1faeb0c1532047b7dc98a74f4fbb16cb861609a7fae45c95d0b03ab311414be24ce6a7ef35142bc04fe359091612e4ba6cc83feb14347-254bf0a71357b2c9f983746bf3867934',
-			'backlit' : 'bcd694cc9cd87e8d6f1af17f13bdddd17ca80ab54d84578d27312eb3c28ac14ea55fbfc203f00cabed698508c21fdddddf2b18c33060d851058d7cc3c5096597d730e5c6708b058c47a1e6cd5ba503c11214dc2850beab551013b942dac3016cf1361fccbbc21fb6ee836568ec50fac035c0ccb739d7-1166bf145f8c13f887a44bb9f12d1134',
-			'faceted' : '6a4bbceb3a6a94c8d65543ebfa9d3d5fea7e02d3947dd4d34c6ff5eac325b91da4dcbf461588290b2867aedf44bc773a1b4d0d6f966dd2c8aa83d7a7a0caf6e1c2a2874c6d1ca9c45e245360bb14be9666bf0aad53f1758cf24a5fe9fa880416c71a33f184b47fef9295faa30e99ae1bb05a70f67352-2801291baf32cfcf605d4d7b00d78132'
+			'bench' 	: 'ccf330f694285fa526a47387edbd0a89e09146369e7b730dbf57fa6354146b1df5390f267e9fe942b42e7571084e91c912c272ff2b7609aed88e123dfd2718afeb773039caed2580fc03c3d0d629a26da06f34f54bc0b3731a19d16c790bd4656b5dad94fd5572642398bc694aaf42b03957e44bbb44-9bc6005b71d9578337b4509851c32a30',
+			'finWall' 	: 'f1832e3ad0bcab4aa8d08f894889044419a2570f638a7f334b048c76c7b5c17a90b3f4502981d3bdee2321dcad99ec6d97c6c4d6e4356cb1dd06a9b93b103be1faeb0c1532047b7dc98a74f4fbb16cb861609a7fae45c95d0b03ab311414be24ce6a7ef35142bc04fe359091612e4ba6cc83feb14347-254bf0a71357b2c9f983746bf3867934',
+			'backlit' 	: 'bcd694cc9cd87e8d6f1af17f13bdddd17ca80ab54d84578d27312eb3c28ac14ea55fbfc203f00cabed698508c21fdddddf2b18c33060d851058d7cc3c5096597d730e5c6708b058c47a1e6cd5ba503c11214dc2850beab551013b942dac3016cf1361fccbbc21fb6ee836568ec50fac035c0ccb739d7-1166bf145f8c13f887a44bb9f12d1134',
+			'faceted' 	: '6a4bbceb3a6a94c8d65543ebfa9d3d5fea7e02d3947dd4d34c6ff5eac325b91da4dcbf461588290b2867aedf44bc773a1b4d0d6f966dd2c8aa83d7a7a0caf6e1c2a2874c6d1ca9c45e245360bb14be9666bf0aad53f1758cf24a5fe9fa880416c71a33f184b47fef9295faa30e99ae1bb05a70f67352-2801291baf32cfcf605d4d7b00d78132',
+			'light'		: '3c0d469228cf4904f47b4487932978fd1e9438f83df58a8cd7b7381aaca3472a8d58ca75f16450b90ee4d234b383c365389b9655cd5960ec0aedf3369a4cced2702642506c9c9660e66fcee31493cd15c591b4fa98eaa39c68385fafaf3bd5d2e1abc03562e26930bfa8dd6887b7057de7dad4a704be-6991cd00af723d0ec78fdad4cc0404de'
 		},
 
 
 		'modelPrices' : {
 			'bench' : 1250,
 			'finWall' : 85,
-			'backlit' : 125
+			'backlit' : 125,
+			'light' : 125
 		},
 
 		'priceType' : {
 			'bench' : 'linear',
 			'finWall' : 'square',
-			'backlit' : 'square'
+			'backlit' : 'square',
+			'light' : 'square'
 		},
 
 		'containerNames' :{
@@ -1390,7 +1403,8 @@ function initializeData()
 			'faceted' : 'currentModelDisplay',
 			'bench' : 'currentModelDisplay',
 			'backlit' : 'currentModelDisplay',
-			'finWall' : 'currentModelDisplay'
+			'finWall' : 'currentModelDisplay',
+			'light' : 'currentModelDisplay'
 		},
 
 		'sideMenus' :{
@@ -1401,7 +1415,7 @@ function initializeData()
 			'desk' : 'deskSection',
 			'faceted' : 'facetedSection',
 			'panel' : 'panelSection',
-			'gensler' : 'genslerSection'
+			'light' : 'lightSection'
 		},
 
 		'componentNames' : {
