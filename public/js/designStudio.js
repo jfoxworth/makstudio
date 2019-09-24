@@ -439,6 +439,8 @@ function initializeModel( modelName )
 		setPrice(modelName);
 	}, 1000);
 
+	setModelGroups();
+
 }
 
 
@@ -589,7 +591,13 @@ function setDefaultModelData( modelName )
 
 				if ( makStudio.componentTypes[modelName][componentName] == 'dataPack' )
 				{
-					makModel.build_data.componentValues[componentName]=element.value;					
+					if ( typeof( element.value ) == "string" )
+					{
+						makModel.build_data.componentValues[componentName]=JSON.parse(element.value);
+					}else
+					{
+						makModel.build_data.componentValues[componentName]=element.value;
+					}
 				}
 
 
@@ -1059,34 +1067,57 @@ function setPrice( modelName )
 /*-------------------------------------------*
 
 	This Function sets the parameters 
-	of the light wall fixtures.
+	of the light wall fixtures. It needs
+	to be broadened for other groups.
 
 /*-------------------------------------------*/
-function setLights( )
+function setModelGroups( )
 {
 
-	var modelPrice = 0;
-	var linFootBench = 1250;
-	var sqFootFin = 85;
-	var sqFootBacklit = 125;
+	var det = '';
+	var lightNum = 1;
 
-				var det = '';
+	for (thisItem in makModel['build_data']['componentTypes'])
+	{
+		if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
+		{
+			for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
+			{
+				console.log(thisGroup);
 
-				det=det+'<div id="'+obj.id+'Details" class="topmargin center modelDetails" style="margin:0px 40px;">';
+				det = det+'<div class="topmargin center nodeDetails" style="margin:0px 40px;">';
 
-					det=det+'<div class="nobottommargin row center" style="background-color:#888888; color:#ccc; padding:5px 0px;">';
-						det=det+'<div class="col_three_fifth nobottommargin">Description</div>';
-						det=det+'<div class="col_one_fifth nobottommargin">Value</div>';
-						det=det+'<div class="col_one_fifth col_last nobottommargin">Cost</div>';
-					det=det+'</div>';
+					det = det+'<div class="row">Group '+lightNum+'</div>';
 
-					det=det+'<div class="row center nobottommargin" style="border-bottom:1px solid #888; padding:5px 0px;">';
-						det=det+'<div class="col_three_fifth nobottommargin">Bench Height (in)</div>';
-						det=det+'<div class="col_one_fifth nobottommargin">'+obj.build_data.componentValues['Bench Height']+'</div>';
-						det=det+'<div class="col_one_fifth col_last nobottommargin"></div>';
-					det=det+'</div>';
+					det = det+'<div class="row">';
 
+						det = det+'<div class="col_half">Angle</div>';
+						det = det+'<div class="col_half col_last"><input class="groupInput" value="'+thisGroup['angle']+'"></div>';
 
+						det = det+'<div class="col_half">X Loc</div>';
+						det = det+'<div class="col_half col_last"><input class="groupInput" value="'+thisGroup['loc'][0]+'"></div>';
+
+						det = det+'<div class="col_half">Y Loc</div>';
+						det = det+'<div class="col_half col_last"><input class="groupInput" value="'+thisGroup['loc'][1]+'"></div>';
+
+						var heightNum = 0;
+						for ( thisHeight in thisGroup['heights'] )
+						{
+							det = det+'<div class="col_half">Height '+heightNum+'</div>';
+							det = det+'<div class="col_half col_last"><input class="groupInput" value="'+thisGroup['heights'][heightNum]+'"></div>';
+						}
+
+					det = det+'</div>';
+
+				det = det+'</div>'+;
+
+				lightNum = lightNum + 1;
+	
+			}
+	
+		}
+	
+	}
 
 }
 
