@@ -439,7 +439,6 @@ function initializeModel( modelName )
 		setPrice(modelName);
 	}, 1000);
 
-	//setModelGroups();
 
 }
 
@@ -611,6 +610,8 @@ function setDefaultModelData( modelName )
 
 	initializeComponents( modelName );
 	setPrice( modelName );
+	setModelGroups();
+
 
 
 
