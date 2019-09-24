@@ -439,7 +439,7 @@ function initializeModel( modelName )
 		setPrice(modelName);
 	}, 1000);
 
-	setModelGroups();
+	//setModelGroups();
 
 }
 
