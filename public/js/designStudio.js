@@ -555,10 +555,10 @@ function setDefaultModelData( modelName )
 
 		for (componentName in makStudio.componentNames[modelName])
 		{
-			console.log('Comparing '+componentName+' to '+element.name);
+			//console.log('Comparing '+componentName+' to '+element.name);
 			if ( componentName == element.name )
 			{
-				console.log('The type is '+makStudio.componentTypes[modelName][componentName]);
+				//console.log('The type is '+makStudio.componentTypes[modelName][componentName]);
 				if ( makStudio.componentTypes[modelName][componentName] == 'slider' )
 				{
 					$( "#"+makStudio.componentNames[modelName][componentName] ).val(element.value);
@@ -584,6 +584,14 @@ function setDefaultModelData( modelName )
 					}
 					makModel.build_data.componentValues[componentName]=element.value;
 				}
+
+
+
+				if ( makStudio.componentTypes[modelName][componentName] == 'dataPack' )
+				{
+					makModel.build_data.componentValues[componentName]=element.value;					
+				}
+
 
 			}
 
@@ -1035,6 +1043,50 @@ function setPrice( modelName )
 
 
 	makModel['build_data']['price'] = modelPrice;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------*
+
+	This Function sets the parameters 
+	of the light wall fixtures.
+
+/*-------------------------------------------*/
+function setLights( )
+{
+
+	var modelPrice = 0;
+	var linFootBench = 1250;
+	var sqFootFin = 85;
+	var sqFootBacklit = 125;
+
+				var det = '';
+
+				det=det+'<div id="'+obj.id+'Details" class="topmargin center modelDetails" style="margin:0px 40px;">';
+
+					det=det+'<div class="nobottommargin row center" style="background-color:#888888; color:#ccc; padding:5px 0px;">';
+						det=det+'<div class="col_three_fifth nobottommargin">Description</div>';
+						det=det+'<div class="col_one_fifth nobottommargin">Value</div>';
+						det=det+'<div class="col_one_fifth col_last nobottommargin">Cost</div>';
+					det=det+'</div>';
+
+					det=det+'<div class="row center nobottommargin" style="border-bottom:1px solid #888; padding:5px 0px;">';
+						det=det+'<div class="col_three_fifth nobottommargin">Bench Height (in)</div>';
+						det=det+'<div class="col_one_fifth nobottommargin">'+obj.build_data.componentValues['Bench Height']+'</div>';
+						det=det+'<div class="col_one_fifth col_last nobottommargin"></div>';
+					det=det+'</div>';
+
+
 
 }
 
@@ -1745,7 +1797,8 @@ function initializeData()
 
 			'light' : {
 				'Ceiling Width' : 'slider',
-				'Ceiling Height' : 'slider'
+				'Ceiling Length' : 'slider',
+				'GroupsJSON' : 'dataPack'
 			}
 
 

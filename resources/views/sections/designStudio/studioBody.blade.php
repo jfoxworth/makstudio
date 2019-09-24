@@ -741,6 +741,11 @@
 							<i id="lightDimensionsButton" class="icon-measure h3 parameterSelect"></i>
 						</div>
 
+						<div class="hoverMe col_one_fourth center nobottommargin"
+							 data-toggle="tooltip" data-placement="top" title="Light Settings">
+							<i id="lightDimensionsButton" class="icon-bulb h3 parameterSelect"></i>
+						</div>
+
 					</div>
 
 
@@ -760,6 +765,19 @@
 						</div>
 
 					</div>
+
+
+
+
+
+					<!-- Specifics for backlit walls dimensions -->
+					<div id="lightSettings" class="parameterSet">
+
+
+					</div>
+
+
+
 
 				</div>
 
