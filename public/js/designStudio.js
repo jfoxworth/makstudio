@@ -1109,7 +1109,7 @@ function setModelGroups( )
 
 					det = det+'</div>';
 
-				det = det+'</div>'+;
+				det = det+'</div>';
 
 				lightNum = lightNum + 1;
 	
