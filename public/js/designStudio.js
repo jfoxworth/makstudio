@@ -1120,6 +1120,9 @@ function setModelGroups( )
 	
 	}
 
+	$("#lightSettings").append(det);
+
+
 }
 
 
