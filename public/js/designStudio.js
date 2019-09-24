@@ -1093,19 +1093,19 @@ function setModelGroups( )
 					det = det+'<div class="row">';
 
 						det = det+'<div class="col_half">Angle</div>';
-						det = det+'<div class="col_half col_last"><input class="groupInput" value="'+thisGroup['angle']+'"></div>';
+						det = det+'<div class="col_half col_last"><input class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['angle']+'"></div>';
 
 						det = det+'<div class="col_half">X Loc</div>';
-						det = det+'<div class="col_half col_last"><input class="groupInput" value="'+thisGroup['loc'][0]+'"></div>';
+						det = det+'<div class="col_half col_last"><input class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][0]+'"></div>';
 
 						det = det+'<div class="col_half">Y Loc</div>';
-						det = det+'<div class="col_half col_last"><input class="groupInput" value="'+thisGroup['loc'][1]+'"></div>';
+						det = det+'<div class="col_half col_last"><input class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][1]+'"></div>';
 
 						var heightNum = 0;
-						for ( thisHeight in thisGroup['heights'] )
+						for ( thisHeight in makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'] )
 						{
 							det = det+'<div class="col_half">Height '+heightNum+'</div>';
-							det = det+'<div class="col_half col_last"><input class="groupInput" value="'+thisGroup['heights'][heightNum]+'"></div>';
+							det = det+'<div class="col_half col_last"><input class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
 						}
 
 					det = det+'</div>';
