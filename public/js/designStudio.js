@@ -1099,21 +1099,23 @@ function setModelGroups( )
 	var lightNum = 1;
 
 
-	det = det+'<div>';
-		det = det+'<label>Light</label>';
-		det = det+'<select id="lightPicker" class="selectpicker btn-primary blockDropdown" style="width:100%; height:35px; margin:20px 0px">';
-			for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
-			{
-				det = det+'<option value="'+thisGroup+'">Light '+thisGroup+'</option>';
-			}
-		det = det+'</select>';
-	det = det+'</div>';
-
-
 	for (thisItem in makModel['build_data']['componentTypes'])
 	{
 		if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
 		{
+
+
+			det = det+'<div>';
+				det = det+'<label>Light</label>';
+				det = det+'<select id="lightPicker" class="selectpicker btn-primary blockDropdown" style="width:100%; height:35px; margin:20px 0px">';
+					for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
+					{
+						det = det+'<option value="'+thisGroup+'">Light '+thisGroup+'</option>';
+					}
+				det = det+'</select>';
+			det = det+'</div>';
+
+
 			for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
 			{
 				console.log(thisGroup);
