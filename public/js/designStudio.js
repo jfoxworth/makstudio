@@ -1190,7 +1190,6 @@ function bundleBlock( bundleName )
 				var heightNum = 0;
 				for ( thisHeight in makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'] )
 				{
-					det = det+'<div><input id="'+thisItem+''+thisGroup+'Heights'+heightNum+'" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
 					makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum] = $( "#"+thisItem+''+thisGroup+'Heights'+heightNum ).val( );
 					heightNum = heightNum+1;
 				}
