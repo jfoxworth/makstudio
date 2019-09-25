@@ -349,13 +349,11 @@ $(document).ready(function()	{
 	$(document).on('change', '.blockDropdown', function(event)
 	{	
 		console.log('changed');
-		console.log(event);
+		console.log(event.target.value);
 		$('.blockDetails').hide();
-		$('#'+event.target.value).show();
+		$('#lightGroup'+event.target.value).show();
 
 	});
-
-
 
 
 
@@ -406,7 +404,7 @@ $(document).ready(function()	{
 	$(document).on('click', '.modelDetailsShow', function(event)
 	{	
 		$('.modelDetails').hide();
-		$('#lightGroup'+event.target.id+'Details').show();
+		$('#'+event.target.id+'Details').show();
 
 
 	});
