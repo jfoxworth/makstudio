@@ -351,7 +351,7 @@ $(document).ready(function()	{
 		console.log('changed');
 		console.log(event);
 		$('.blockDetails').hide();
-		$('#'+event.target.val).show();
+		$('#'+event.target.value).show();
 
 	});
 
@@ -1107,7 +1107,7 @@ function setModelGroups( )
 
 			det = det+'<div class="white-section center" style="margin:20px 0px">';
 				det = det+'<label>Select Light</label>';
-				det = det+'<select id="lightPicker" class="selectpicker btn-primary blockDropdown" style="width:100%; height:35px; margin:20px 0px">';
+				det = det+'<select id="lightPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:20px 0px">';
 					for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
 					{
 						det = det+'<option value="'+thisGroup+'">Light '+thisGroup+'</option>';
