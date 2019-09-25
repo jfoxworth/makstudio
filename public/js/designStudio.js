@@ -360,6 +360,7 @@ $(document).ready(function()	{
 
 
 
+
 	// WHen the user clicks on a displayed model
 	// that they have saved adn they want to 
 	// view it
@@ -405,7 +406,7 @@ $(document).ready(function()	{
 	$(document).on('click', '.modelDetailsShow', function(event)
 	{	
 		$('.modelDetails').hide();
-		$('#'+event.target.id+'Details').show();
+		$('#lightGroup'+event.target.id+'Details').show();
 
 
 	});
@@ -1098,7 +1099,6 @@ function setModelGroups( )
 	var det = '';
 	var lightNum = 1;
 
-
 	for (thisItem in makModel['build_data']['componentTypes'])
 	{
 		if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
@@ -1153,6 +1153,7 @@ function setModelGroups( )
 
 	$("#lightSettings").append(det);
 
+	$('.blockDetails').hide();
 
 }
 
