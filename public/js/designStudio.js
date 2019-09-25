@@ -1197,7 +1197,7 @@ function bundleBlock( bundleName )
 			
 			}
 
-			model_api.parameters.updateAsync({name: thisItem, value: makModel['build_data']['componentValues'][thisItem] });
+			model_api.parameters.updateAsync({name: thisItem, value: JSON.stringify(makModel['build_data']['componentValues'][thisItem]) });
 
 		}
 
@@ -1802,7 +1802,7 @@ function initializeData()
 			'light' : {
 				'Ceiling Width' : 'lightWidthSlider',
 				'Ceiling Length' : 'lightLengthSlider',
-				'GroupsJSON' : 'groupsJSON'
+				'GroupsJSON' : 'GroupsJSON'
 			}
 
 
