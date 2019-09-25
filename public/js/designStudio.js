@@ -355,6 +355,14 @@ $(document).ready(function()	{
 
 	});
 
+	// When the user hits enter on a light property
+	$(document).on('keypress', '.groupInput', function(e)
+	{	
+		if(e.which == 13) 
+		{
+			bundleBlock( e.target.id );
+		}
+	});
 
 
 
@@ -1117,22 +1125,23 @@ function setModelGroups( )
 			for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
 			{
 
-				det = det+'<div id="lightGroup'+thisGroup+'" class="white-section topmargin center blockDetails" style="margin:0px 40px;">';
+				det = det+'<div id="lightGroup'+thisGroup+'" class="white-section topmargin center blockDetails" style="margin-top:40px;">';
 
 					det = det+'<label>Angle</label>';
-					det = det+'<div><input class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['angle']+'"></div>';
+					det = det+'<div><input id="'+thisItem+''+thisGroup+'angle" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['angle']+'"></div>';
 
 					det = det+'<label>X Loc</label>';
-					det = det+'<div><input class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][0]+'"></div>';
+					det = det+'<div><input id="'+thisItem+''+thisGroup+'X" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][0]+'"></div>';
 
 					det = det+'<label>Y Loc</label>';
-					det = det+'<div><input class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][1]+'"></div>';
+					det = det+'<div><input id="'+thisItem+''+thisGroup+'Y" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][1]+'"></div>';
 
 					var heightNum = 0;
 					for ( thisHeight in makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'] )
 					{
 						det = det+'<label>Height '+heightNum+'</label>';
-						det = det+'<div><input class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
+						det = det+'<div><input id="'+thisItem+''+thisGroup+'Heights'+heightNum+'" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
+						heightNum = heightNum+1;
 					}
 
 
@@ -1153,7 +1162,49 @@ function setModelGroups( )
 }
 
 
+/*-------------------------------------------*
 
+	When a bundled property is hit entered
+
+/*-------------------------------------------*/
+function bundleBlock( bundleName )
+{
+
+	console.log('In bundle block');
+
+	for (thisItem in makModel['build_data']['componentTypes'])
+	{
+		if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
+		{
+
+			for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
+			{
+				console.log('The item and group are ...');
+				console.log(thisItem);
+				console.log(thisGroup);
+				console.log($( "#"+thisItem+''+thisGroup+'angle' ).val( ));
+				makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['angle'] = $( "#"+thisItem+''+thisGroup+'angle' ).val( );
+				makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][0] = $( "#"+thisItem+''+thisGroup+'X' ).val( );
+				makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][1] = $( "#"+thisItem+''+thisGroup+'Y' ).val( );
+
+				var heightNum = 0;
+				for ( thisHeight in makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'] )
+				{
+					det = det+'<div><input id="'+thisItem+''+thisGroup+'Heights'+heightNum+'" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
+					makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum] = $( "#"+thisItem+''+thisGroup+'Heights'+heightNum ).val( );
+					heightNum = heightNum+1;
+				}
+
+			
+			}
+
+			model_api.parameters.updateAsync({name: thisItem, value: makModel['build_data']['componentValues'][thisItem] });
+
+		}
+
+	}
+
+}
 
 
 
