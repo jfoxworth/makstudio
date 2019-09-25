@@ -1105,8 +1105,8 @@ function setModelGroups( )
 		{
 
 
-			det = det+'<div>';
-				det = det+'<label>Light</label>';
+			det = det+'<div class="white-section center" style="margin:20px 0px">';
+				det = det+'<label>Select Light</label>';
 				det = det+'<select id="lightPicker" class="selectpicker btn-primary blockDropdown" style="width:100%; height:35px; margin:20px 0px">';
 					for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
 					{

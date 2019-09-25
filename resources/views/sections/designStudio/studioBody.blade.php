@@ -743,7 +743,7 @@
 
 						<div class="hoverMe col_one_fourth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Light Settings">
-							<i id="lightDimensionsButton" class="icon-bulb h3 parameterSelect"></i>
+							<i id="lightSettingsButton" class="icon-bulb h3 parameterSelect"></i>
 						</div>
 
 					</div>
