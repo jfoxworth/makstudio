@@ -405,7 +405,7 @@ $(document).ready(function()	{
 					'loc' : ['10', '10'],
 					'xforms' : [1]
 				};
-				makModel['build_data']['componentValues'][thisItem]['groups'].splice( thisLength, 1 newLight);
+				makModel['build_data']['componentValues'][thisItem]['groups'].splice( thisLength, 1, newLight);
 
 			}
 
