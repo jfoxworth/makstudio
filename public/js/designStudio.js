@@ -1194,8 +1194,13 @@ function setModelGroups( )
 		{
 
 
-			det = det+'<button type="button" class="btn btn-secondary" id="addLightGroup">Add Light Group</button>';
-			det = det+'<button type="button" class="btn btn-danger" id="deleteLightGroup">Delete Light Group</button>';
+			det = det+'<div class="white-section center" style="margin:20px 0px">';
+				det = det+'<button type="button" class="btn btn-secondary" id="addLightGroup">Add Light Group</button>';
+			det = det+'</div>';
+
+			det = det+'<div class="white-section center" style="margin:20px 0px">';
+				det = det+'<button type="button" class="btn btn-danger" id="deleteLightGroup">Delete Light Group</button>';
+			det = det+'</div>';
 
 
 
