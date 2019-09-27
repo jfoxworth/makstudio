@@ -180,7 +180,15 @@ $(document).ready(function()	{
 
 		$('#'+event.target.id).parent().addClass('currentItem');
 
-		$('#modelNameContainer').show();
+		if ( ( designType == "finWall" ) || ( designType == "backlit" ) || ( designType == "faceted" ) ||
+			 ( designType == "bench") || (designType == "light") )
+		{
+			$('#modelNameContainer').show();
+		
+		}else
+		{
+			$('#modelNameContainer').hide();
+		}
 
 	});
 
@@ -361,6 +369,81 @@ $(document).ready(function()	{
 		if(e.which == 13) 
 		{
 			bundleBlock( e.target.id );
+		}
+	});
+
+
+	// Delete a light group
+	$(document).on('click', '.deleteLightGroup', function(e)
+	{	
+
+		for (thisItem in makModel['build_data']['componentTypes'])
+		{
+			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
+			{
+
+				thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'].splice( $('#lightPicker').val(), 1 );
+
+			}
+
+		}
+	});
+
+
+	// Add a light group
+	$(document).on('click', '.addLightGroup', function(e)
+	{	
+
+		for (thisItem in makModel['build_data']['componentTypes'])
+		{
+			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
+			{
+				thisLength = makModel['build_data']['componentValues'][thisItem]['groups'].length;
+				var newLight = {
+					'angle' : "0",
+					'heights' : ["10"],
+					'loc' : ['10', '10'],
+					'xforms' : [1]
+				};
+				makModel['build_data']['componentValues'][thisItem]['groups'].splice( thisLength, 1 newLight);
+
+			}
+
+		}
+	});
+
+
+
+	// Add a single light
+	$(document).on('click', '.addLight', function(e)
+	{	
+
+		for (thisItem in makModel['build_data']['componentTypes'])
+		{
+			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
+			{
+				var thisLength = makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['heights'].length;
+				makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['heights'].splice( thisLength, 1, '10');
+				makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['xforms'].splice( thisLength, 1, thisLength);
+
+			}
+
+		}
+	});
+
+
+	// Delete a single light
+	$(document).on('click', '.deleteLight', function(e)
+	{	
+		var splitKeys = e.target.id.split('-');
+		for (thisItem in makModel['build_data']['componentTypes'])
+		{
+			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
+			{
+				makModel['build_data']['componentValues'][thisItem]['groups'][splitKeys[0]]['heights'].splice( splitKeys[1], 1);
+
+			}
+
 		}
 	});
 
@@ -1111,12 +1194,17 @@ function setModelGroups( )
 		{
 
 
+			det = det+'<button type="button" class="btn btn-secondary" id="addLightGroup">Add Light Group</button>';
+			det = det+'<button type="button" class="btn btn-danger" id="deleteLightGroup">Delete Light Group</button>';
+
+
+
 			det = det+'<div class="white-section center" style="margin:20px 0px">';
 				det = det+'<label>Select Light</label>';
 				det = det+'<select id="lightPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:20px 0px">';
 					for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
 					{
-						det = det+'<option value="'+thisGroup+'">Light '+thisGroup+'</option>';
+						det = det+'<option value="'+thisGroup+'">Light Block'+thisGroup+'</option>';
 					}
 				det = det+'</select>';
 			det = det+'</div>';
@@ -1125,31 +1213,34 @@ function setModelGroups( )
 			for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
 			{
 
-				det = det+'<div id="lightGroup'+thisGroup+'" class="white-section topmargin center blockDetails" style="margin-top:40px;">';
+				det = det+'<div id="lightGroup'+thisGroup+'" class="white-section topmargin center blockDetails">';
 
-					det = det+'<label>Angle</label>';
+					det = det+'<label style="margin-top:40px;">Angle</label>';
 					det = det+'<div><input id="'+thisItem+''+thisGroup+'angle" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['angle']+'"></div>';
 
-					det = det+'<label>X Loc</label>';
+					det = det+'<label style="margin-top:40px;">X Loc</label>';
 					det = det+'<div><input id="'+thisItem+''+thisGroup+'X" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][0]+'"></div>';
 
-					det = det+'<label>Y Loc</label>';
+					det = det+'<label style="margin-top:40px;">Y Loc</label>';
 					det = det+'<div><input id="'+thisItem+''+thisGroup+'Y" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][1]+'"></div>';
 
 					var heightNum = 0;
 					for ( thisHeight in makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'] )
 					{
-						det = det+'<label>Height '+heightNum+'</label>';
-						det = det+'<div><input id="'+thisItem+''+thisGroup+'Heights'+heightNum+'" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
+						det = det+'<div class="row">';
+							det = det+'<label style="margin-top:40px;">Height '+heightNum+'</label>';
+							det = det+'<div><input id="'+thisItem+''+thisGroup+'Heights'+heightNum+'" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
+							det = det+'<i id="'+thisGroup+'-'+heightNum+'" class="icon-remove h3 deleteLight"></i>';
+						det = det+'</div>';
 						heightNum = heightNum+1;
 					}
 
 
 				det = det+'</div>';
-
 				lightNum = lightNum + 1;
 	
 			}
+				det = det+'<i id="'+thisGroup+'" class="icon-plus h3 addLight"></i>';
 	
 		}
 	

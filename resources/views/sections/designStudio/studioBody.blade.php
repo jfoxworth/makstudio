@@ -347,7 +347,7 @@
 					<!-- Specifics for slat wall materials and colors -->
 					<div id="finMaterial" class="parameterSet">
 
-						<div class="row hoverMe hoverMeGrey divcenter" id="finMaterialBirch">
+						<div class="center hoverMe hoverMeGrey divcenter" id="finMaterialBirch">
 							<img id="slatMaterialBirch" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirch.jpg" 
 								 width="100px"
@@ -356,7 +356,7 @@
 							<div class="divcenter" style="margin-top:10px"><h4>Baltic Birch</h4></div>
 						</div>
 
-						<div class="row hoverMe hoverMeGrey divcenter"  id="finMaterialLamBirch">
+						<div class="center hoverMe hoverMeGrey divcenter"  id="finMaterialLamBirch">
 							<img id="slatMaterialBirchLaminate" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirchLaminate.jpg" 
 								 width="100px"
@@ -365,7 +365,7 @@
 							<div class="divcenter" style="margin-top:10px"><h4>Baltic Birch Laminate</h4></div>
 						</div>
 
-						<div class="row hoverMe hoverMeGrey divcenter" id="finMaterialMDF">
+						<div class="center hoverMe hoverMeGrey divcenter" id="finMaterialMDF">
 							<img id="slatMaterialMDF" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/coloredMDF.jpg" 
 								 width="100px"
