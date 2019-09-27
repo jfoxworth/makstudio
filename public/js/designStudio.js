@@ -1232,8 +1232,8 @@ function setModelGroups( )
 					var heightNum = 0;
 					for ( thisHeight in makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'] )
 					{
-						det = det+'<div class="row">';
-							det = det+'<label style="margin-top:40px;">Height '+heightNum+'</label>';
+						det = det+'<div class="row" style="margin-top:40px;">';
+							det = det+'<div>Height '+heightNum+'</div>';
 							det = det+'<div><input id="'+thisItem+''+thisGroup+'Heights'+heightNum+'" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
 							det = det+'<i id="'+thisGroup+'-'+heightNum+'" class="icon-remove h3 deleteLight"></i>';
 						det = det+'</div>';
