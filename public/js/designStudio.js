@@ -1194,19 +1194,19 @@ function setModelGroups( )
 		{
 
 
-			det = det+'<div class="white-section center" style="margin:20px 0px">';
+			det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
 				det = det+'<button type="button" class="btn btn-secondary" id="addLightGroup">Add Light Group</button>';
 			det = det+'</div>';
 
-			det = det+'<div class="white-section center" style="margin:20px 0px">';
+			det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
 				det = det+'<button type="button" class="btn btn-danger" id="deleteLightGroup">Delete Light Group</button>';
 			det = det+'</div>';
 
 
 
-			det = det+'<div class="white-section center" style="margin:20px 0px">';
+			det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
 				det = det+'<label>Select Light</label>';
-				det = det+'<select id="lightPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:20px 0px">';
+				det = det+'<select id="lightPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:5px 0px">';
 					for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
 					{
 						det = det+'<option value="'+thisGroup+'">Light Block'+thisGroup+'</option>';
@@ -1220,13 +1220,13 @@ function setModelGroups( )
 
 				det = det+'<div id="lightGroup'+thisGroup+'" class="white-section topmargin center blockDetails">';
 
-					det = det+'<label style="margin-top:40px;">Angle</label>';
+					det = det+'<label style="margin-top:10px;">Angle</label>';
 					det = det+'<div><input id="'+thisItem+''+thisGroup+'angle" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['angle']+'"></div>';
 
-					det = det+'<label style="margin-top:40px;">X Loc</label>';
+					det = det+'<label style="margin-top:10px;">X Loc</label>';
 					det = det+'<div><input id="'+thisItem+''+thisGroup+'X" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][0]+'"></div>';
 
-					det = det+'<label style="margin-top:40px;">Y Loc</label>';
+					det = det+'<label style="margin-top:10px;">Y Loc</label>';
 					det = det+'<div><input id="'+thisItem+''+thisGroup+'Y" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][1]+'"></div>';
 
 					var heightNum = 0;
