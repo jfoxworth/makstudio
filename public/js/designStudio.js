@@ -210,8 +210,8 @@ $(document).ready(function()	{
 
 
 		// Shade the current parameter selector
-		$('.parameterSelect').removeClass('currentItem');
-		$('#'+event.target.id).parent().addClass('currentItem');
+		$('.parameterSelect').parent().removeClass('currentParameter');
+		$('#'+event.target.id).parent().addClass('currentParameter');
 
 	});
 

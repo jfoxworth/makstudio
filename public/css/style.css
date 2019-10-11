@@ -14395,6 +14395,7 @@ label.checkbox,label.radio {
 
 
 
-.currentItem { color : #007bff; }
+.currentItem { background-color : #ccc; }
+.currentParameter { color : #007bff; }
 
 
