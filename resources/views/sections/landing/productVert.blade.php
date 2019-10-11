@@ -97,8 +97,10 @@
 			</div>
 
 
+		</div>
 
 
+		<div class="row grid-container" data-layout="masonry" style="overflow: visible">
 
 
 			<div class="col-lg-4 mb-4 nomargin nopadding">
