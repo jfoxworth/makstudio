@@ -50,7 +50,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:575px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:555px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
 					Customize Your Interior Space</div>
 
 
@@ -245,7 +245,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:575px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:375px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
 					Brand Your Business</div>
 
 					<!--
@@ -417,7 +417,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 3; color:#222; font-size:40px">Customize Your Interior Space</div>
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:450px !important; background-color:#222; padding:10px">Customize Your Interior Space</div>
 
 					<!--
 					<div class="tp-caption ltl tp-resizeme revo-slider-desc-text"
