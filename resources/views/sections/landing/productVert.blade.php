@@ -16,7 +16,7 @@
 
 			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
-				<div class="flip-card text-center">
+				<div class="flip-card text-center" style="margin:10px; padding:10px">
 
 					<div class="flip-card-front dark" 
 						 style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/slatWallDemo.jpg')">
@@ -56,7 +56,7 @@
 
 			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
-				<div class="flip-card text-center">
+				<div class="flip-card text-center" style="margin:10px; padding:10px">
 
 					<div class="flip-card-front dark" 
 						 style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/backlitDemo.jpg')">
@@ -96,7 +96,7 @@
 
 			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
-				<div class="flip-card text-center">
+				<div class="flip-card text-center" style="margin:10px; padding:10px">
 
 					<div class="flip-card-front dark" 
 						 style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/deskDemo.png')">
@@ -142,7 +142,7 @@
 
 			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
-				<div class="flip-card text-center">
+				<div class="flip-card text-center" style="margin:10px; padding:10px">
 
 					<div class="flip-card-front dark" 
 						 style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/flowerWallDemo.jpg')">
@@ -186,7 +186,7 @@
 
 			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
-				<div class="flip-card text-center">
+				<div class="flip-card text-center" style="margin:10px; padding:10px">
 
 					<div class="flip-card-front dark" 
 						 style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/facetedWallDemo.jpg')">
@@ -232,7 +232,7 @@
 
 			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
-				<div class="flip-card text-center">
+				<div class="flip-card text-center" style="margin:10px; padding:10px">
 
 					<div class="flip-card-front dark" 
 						 style="background-image: url('https://makstudio.s3.us-east-2.amazonaws.com/wallPanelsDemo.jpg')">
