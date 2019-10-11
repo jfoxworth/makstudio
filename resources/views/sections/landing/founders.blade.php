@@ -7,11 +7,11 @@
 	</div>
 
 
-	<div class="row">
+	<div class="row bottommargin">
 
-		<div class="col-lg-3 col-md-6 bottommargin"></div>
+		<div class="col-lg-3 col-md-6 nomargin nopadding"></div>
 
-		<div class="col-lg-3 col-md-6 bottommargin">
+		<div class="col-lg-3 col-md-6 nomargin nopadding">
 
 			<div class="team">
 				<div class="team-image">
@@ -32,7 +32,7 @@
 
 		</div>
 
-		<div class="col-lg-3 col-md-6 bottommargin">
+		<div class="col-lg-3 col-md-6">
 
 			<div class="team">
 				<div class="team-image">
@@ -53,7 +53,7 @@
 
 		</div>
 
-		<div class="col-lg-3 col-md-6 bottommargin"></div>
+		<div class="col-lg-3 col-md-6"></div>
 
 	</div>
 

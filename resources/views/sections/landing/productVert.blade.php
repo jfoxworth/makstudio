@@ -14,7 +14,7 @@
 
 
 
-			<div class="col-lg-4 mb-4">
+			<div class="col-lg-4 mb-4 nomargin nopadding">
 
 				<div class="flip-card text-center">
 
@@ -57,7 +57,7 @@
 
 
 
-			<div class="col-lg-4 mb-4">
+			<div class="col-lg-4 mb-4 nomargin nopadding">
 
 				<div class="flip-card text-center">
 
@@ -101,7 +101,7 @@
 
 
 
-			<div class="col-lg-4 mb-4">
+			<div class="col-lg-4 mb-4 nomargin nopadding">
 
 				<div class="flip-card text-center">
 
@@ -146,7 +146,7 @@
 
 
 
-			<div class="col-lg-4 mb-4">
+			<div class="col-lg-4 mb-4 nomargin nopadding">
 
 				<div class="flip-card text-center">
 
@@ -190,7 +190,7 @@
 
 
 
-			<div class="col-lg-4 mb-4">
+			<div class="col-lg-4 mb-4 nomargin nopadding">
 
 				<div class="flip-card text-center">
 
@@ -236,7 +236,7 @@
 
 
 
-			<div class="col-lg-4 mb-4">
+			<div class="col-lg-4 mb-4 nomargin nopadding">
 
 				<div class="flip-card text-center">
 
