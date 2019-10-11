@@ -73,7 +73,7 @@
 
 					<div class="tp-caption ltl tp-resizeme"
 					data-x="400"
-					data-y="575"
+					data-y="275"
 					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 					data-speed="800"
 					data-start="1550"
@@ -137,7 +137,7 @@
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
 						data-x="780"
-						data-y="450"
+						data-y="425"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1200"
@@ -154,7 +154,7 @@
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
 						data-x="780"
-						data-y="500"
+						data-y="475"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1200"
@@ -186,7 +186,7 @@
 
 					<div class="tp-caption ltl tp-resizeme"
 						data-x="900"
-						data-y="600"
+						data-y="575"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1550"
