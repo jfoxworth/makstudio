@@ -52,9 +52,6 @@
 				</div>
 			
 			</div>
-		
-
-
 
 
 			<div class="col-lg-4 mb-4 nomargin nopadding">
@@ -97,12 +94,6 @@
 			</div>
 
 
-		</div>
-
-
-		<div class="row grid-container" data-layout="masonry" style="overflow: visible">
-
-
 			<div class="col-lg-4 mb-4 nomargin nopadding">
 
 				<div class="flip-card text-center">
@@ -143,9 +134,10 @@
 			</div>
 
 
+		</div>
 
 
-
+		<div class="row grid-container" data-layout="masonry" style="overflow: visible">
 
 
 			<div class="col-lg-4 mb-4 nomargin nopadding">
