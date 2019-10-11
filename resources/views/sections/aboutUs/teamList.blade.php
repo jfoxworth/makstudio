@@ -9,6 +9,7 @@
 	<div class="container clearfix">
 		
 		<div class="row">
+
 			<div class="col-lg-6 bottommargin">
 
 				<div class="team team-list clearfix">
@@ -38,7 +39,10 @@
 
 			</div>
 
+		</div>
 
+
+		<div class="row">
 
 			<div class="col-lg-6 bottommargin">
 
@@ -74,8 +78,10 @@
 			</div>
 
 
+		</div>
 
 
+		<div class="row">
 
 
 			<div class="col-lg-6 bottommargin">
@@ -113,8 +119,10 @@
 			</div>
 
 
+		</div>
 
 
+		<div class="row">
 
 
 			<div class="col-lg-6 bottommargin">

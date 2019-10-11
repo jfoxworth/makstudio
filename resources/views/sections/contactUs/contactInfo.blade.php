@@ -6,7 +6,7 @@
 				<img src="https://makstudio.s3.us-east-2.amazonaws.com/makStudioMap.png" style="padding-right:0px; padding-left:0px; width:100%";>
 			</a>
 		</div>
-		<div class="col-lg-4 col-md-6" style="background-color: #222; color:#FFFFFF">
+		<div class="col-lg-4 col-md-6 nopadding nomargin" style="background-color: #222; color:#FFFFFF">
 			<div class="col-padding">
 				<h3 class="font-body t400 ls1" style="color:#FFFFFF">Mak Studio Location</h3>
 
