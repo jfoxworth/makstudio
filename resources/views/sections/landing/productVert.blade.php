@@ -10,11 +10,11 @@
 
 
 
-		<div class="row grid-container" data-layout="masonry" style="overflow: visible">
+		<div class="row grid-container bottommargin" data-layout="masonry" style="overflow: visible">
 
 
 
-			<div class="col-lg-4 mb-4 nomargin nopadding">
+			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
 				<div class="flip-card text-center">
 
@@ -54,7 +54,7 @@
 			</div>
 
 
-			<div class="col-lg-4 mb-4 nomargin nopadding">
+			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
 				<div class="flip-card text-center">
 
@@ -94,7 +94,7 @@
 			</div>
 
 
-			<div class="col-lg-4 mb-4 nomargin nopadding">
+			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
 				<div class="flip-card text-center">
 
@@ -137,10 +137,10 @@
 		</div>
 
 
-		<div class="row grid-container" data-layout="masonry" style="overflow: visible">
+		<div class="row grid-container bottommargin" data-layout="masonry" style="overflow: visible">
 
 
-			<div class="col-lg-4 mb-4 nomargin nopadding">
+			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
 				<div class="flip-card text-center">
 
@@ -184,7 +184,7 @@
 
 
 
-			<div class="col-lg-4 mb-4 nomargin nopadding">
+			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
 				<div class="flip-card text-center">
 
@@ -230,7 +230,7 @@
 
 
 
-			<div class="col-lg-4 mb-4 nomargin nopadding">
+			<div class="col-lg-4 mb-4 nomargin nopadding" style="padding:10px">
 
 				<div class="flip-card text-center">
 
