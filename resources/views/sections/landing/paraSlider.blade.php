@@ -50,7 +50,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center; z-index: 3; font-size:40px; width:550px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
+					data-endeasing="Power4.easeIn" style="text-align:center; z-index: 3; font-size:40px; width:575px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
 					Customize Your Interior Space</div>
 
 
@@ -73,7 +73,7 @@
 
 
 					<div class="tp-caption ltl tp-resizeme"
-					data-x="425"
+					data-x="450"
 					data-y="275"
 					data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 					data-speed="800"
@@ -138,7 +138,7 @@
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
 						data-x="780"
-						data-y="600"
+						data-y="300"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1200"
@@ -155,7 +155,7 @@
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
 						data-x="780"
-						data-y="650"
+						data-y="350"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1200"
@@ -187,7 +187,7 @@
 
 					<div class="tp-caption ltl tp-resizeme"
 						data-x="900"
-						data-y="750"
+						data-y="450"
 						data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 						data-speed="800"
 						data-start="1550"
