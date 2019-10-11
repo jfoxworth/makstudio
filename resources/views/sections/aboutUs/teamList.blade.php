@@ -8,9 +8,9 @@
 
 	<div class="container clearfix">
 		
-		<div class="row">
+		<div class="row bottommargin">
 
-			<div class="col-lg-6 bottommargin">
+			<div class="col-lg-6 nopadding nomargin">
 
 				<div class="team team-list clearfix">
 					<div class="team-image">
@@ -24,7 +24,7 @@
 
 			</div>
 
-			<div class="col-lg-6 bottommargin">
+			<div class="col-lg-6 nopadding nomargin">
 
 				<div class="team team-list clearfix">
 					<div class="team-image">
@@ -42,9 +42,9 @@
 		</div>
 
 
-		<div class="row">
+		<div class="row bottommargin">
 
-			<div class="col-lg-6 bottommargin">
+			<div class="col-lg-6 nopadding nomargin">
 
 				<div class="team team-list clearfix">
 					<div class="team-image">
@@ -62,7 +62,7 @@
 
 
 
-			<div class="col-lg-6 bottommargin">
+			<div class="col-lg-6 nopadding nomargin">
 
 				<div class="team team-list clearfix">
 					<div class="team-image">
@@ -81,10 +81,10 @@
 		</div>
 
 
-		<div class="row">
+		<div class="row bottommargin">
 
 
-			<div class="col-lg-6 bottommargin">
+			<div class="col-lg-6 nopadding nomargin">
 
 				<div class="team team-list clearfix">
 					<div class="team-image">
@@ -103,7 +103,7 @@
 
 
 
-			<div class="col-lg-6 bottommargin">
+			<div class="col-lg-6 nopadding nomargin">
 
 				<div class="team team-list clearfix">
 					<div class="team-image">
@@ -122,10 +122,10 @@
 		</div>
 
 
-		<div class="row">
+		<div class="row bottommargin">
 
 
-			<div class="col-lg-6 bottommargin">
+			<div class="col-lg-6 nopadding nomargin">
 
 				<div class="team team-list clearfix">
 					<div class="team-image">
@@ -144,7 +144,7 @@
 
 
 
-			<div class="col-lg-6 bottommargin">
+			<div class="col-lg-6 nopadding nomargin">
 
 				<div class="team team-list clearfix">
 					<div class="team-image">
