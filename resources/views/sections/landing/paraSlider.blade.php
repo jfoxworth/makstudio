@@ -50,7 +50,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center; z-index: 3; font-size:40px; width:575px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:575px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
 					Customize Your Interior Space</div>
 
 
@@ -245,7 +245,8 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="z-index: 3;  font-size: 45px;">Brand Your Business</div>
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:575px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
+					Brand Your Business</div>
 
 					<!--
 
@@ -278,10 +279,9 @@
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
 					data-endeasing="Power4.easeIn" style="z-index: 3;">
-					<a href="/designStudio" class="button button-white button-light button-border button-large button-rounded tright nomargin">
-						<span>Create Your Own</span> <i class="icon-angle-right"></i>
-					</a></div>
-
+					<a href="/designStudio" class="button button-3d button-white button-large button-rounded tright nomargin" style="color: #000;">
+						<span>Create your own</span> <i class="icon-angle-right"></i>
+					</a>
 				</li>
 
 
@@ -327,7 +327,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center; z-index: 3; font-size:40px; width:450px !important; background-color:#222; padding:10px">Memorable experiences</div>
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:450px !important; background-color:#222; padding:10px">Memorable experiences</div>
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text noborder"
 					data-x="0"
@@ -341,7 +341,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center; z-index: 3; font-size:40px; width:450px !important; background-color:#222; padding:10px">for your customers</div>
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:450px !important; background-color:#222; padding:10px">for your customers</div>
 
 					<!--
 					<div class="tp-caption ltl tp-resizeme revo-slider-desc-text"
