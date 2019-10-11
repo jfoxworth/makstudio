@@ -176,8 +176,8 @@ $(document).ready(function()	{
 
 		setModelView(event.target.id);
 
+		// Shade the current item
 		$('.designType').removeClass('currentItem');
-
 		$('#'+event.target.id).parent().addClass('currentItem');
 
 		if ( ( designType == "finWall" ) || ( designType == "backlit" ) || ( designType == "faceted" ) ||
@@ -207,6 +207,11 @@ $(document).ready(function()	{
 		// Display the appropriate options
 		var elementToShow = event.target.id.replace('Button','');
 		$("#"+elementToShow).show(); 
+
+
+		// Shade the current parameter selector
+		$('.parameterSelect').removeClass('currentItem');
+		$('#'+event.target.id).parent().addClass('currentItem');
 
 	});
 
