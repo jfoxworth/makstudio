@@ -61,6 +61,8 @@ $(document).ready(function()	{
 	$('[data-toggle="tooltip"]').tooltip();
 	$(".bt-switch").bootstrapSwitch();
 	$('.selectsplitter').selectsplitter();
+	$('#bench').parent().addClass('currentItem');
+	$('#benchDimensionsButton').parent().addClass('currentParameter');
 
 
 	// Initialize data to global variable
@@ -610,6 +612,7 @@ function setModelView( modelName )
 	// Show the dimensions submenu as the default
 	$('.parameterSet').hide();
 	$("#"+modelName+"Dimensions").show();
+	$('#'+modelName+'DimensionsButton').parent().addClass('currentParameter');
 
 
 	$( '#saveMessageAlert' ).hide( );
