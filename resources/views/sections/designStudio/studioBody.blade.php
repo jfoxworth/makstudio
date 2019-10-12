@@ -135,31 +135,25 @@
 
 						<div class="white-section center" style="margin:10px 0px" id="benchDepth">
 							<label>Bench Depth (ft)</label>
-							<div style="width:70%">
-								<input class="benchDepthSlider modelSlider" id="benchDepthSlider"/>
-							</div>
-							<div style="width:30%">
-								<input id="benchDepthInput"/>
+							<div class="row" style="width:100%">
+								<input style="width:70%" class="benchDepthSlider modelSlider" id="benchDepthSlider"/>
+								<input style="width:30%" id="benchDepthInput"/>
 							</div>
 						</div>
 
 						<div class="white-section center" style="margin:20px 0px" id="benchHeight">
 							<label>Bench Height (ft)</label>
-							<div style="width:70%">
-								<input class="benchHeightSlider modelSlider"  id="benchHeightSlider"/>
-							</div>
-							<div style="width:30%">
-								<input id="benchHeightInput"/>
+							<div class="row" style="width:100%">
+								<input style="width:70%" class="benchHeightSlider modelSlider"  id="benchHeightSlider"/>
+								<input style="width:30%" id="benchHeightInput"/>
 							</div>
 						</div>
 
 						<div class="white-section center" style="margin:20px 0px" id="benchTwistLength">
 							<label>Twist Length (ft)</label>
-							<div style="width:70%">
-								<input class="benchTwistSlider modelSlider"  id="benchTwistSlider"/>
-							</div>
-							<div style="width:30%">
-								<input id="benchTwistLengthInput"/>
+							<div class="row" style="width:100%">
+								<input style="width:70%" class="benchTwistSlider modelSlider"  id="benchTwistSlider"/>
+								<input style="width:30%" id="benchTwistLengthInput"/>
 							</div>
 						</div>
 
