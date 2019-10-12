@@ -414,7 +414,6 @@
 
 						<div class="white-section center" style="margin:10px 0px" id="finSpacing">
 							<label>Fin Spacing (inches)</label>
-							<input class="finSpacingSlider modelSlider" id="finSpacingSlider"/>
 							<div class="row" style="width:100%">
 								<div style="width:70%">
 									<input class="finSpacingSlider modelSlider" id="finSpacingSlider"/>
@@ -428,7 +427,6 @@
 
 						<div class="white-section center" style="margin:20px 0px" id="finRotation">
 							<label>Fin Rotation (degrees)</label>
-							<input class="finRotationSlider modelSlider" id="finRotationSlider"/>
 							<div class="row" style="width:100%">
 								<div style="width:70%">
 									<input class="finRotationSlider modelSlider" id="finRotationSlider"/>
@@ -513,19 +511,41 @@
 						</div>
 
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="finLogoScale">
 							<label>Logo Scale (%)</label>
-							<input class="finLogoScaleSlider modelSlider" id="finLogoScaleSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="finLogoScaleSlider modelSlider" id="finLogoScaleSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="finLogoScaleInput" style="width:100%"/>
+								</div>
+							</div>
+
 						</div>
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="finLogoX">
 							<label>Logo X (inches)</label>
-							<input class="finLogoXSlider modelSlider" id="finLogoXSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="finLogoXSlider modelSlider" id="finLogoXSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="finLogoXInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="finLogoZ">
 							<label>Logo Y (inches)</label>
-							<input class="finLogoZSlider modelSlider" id="finLogoZSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="finLogoZSlider modelSlider" id="finLogoZSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="finLogoZInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 					</div>
@@ -586,15 +606,29 @@
 					<!-- Specifics for backlit walls dimensions -->
 					<div id="backlitDimensions" class="parameterSet">
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="backlitLength">
 							<label>Wall Length (inches)</label>
-							<input class="backlitLengthSlider modelSlider" id="backlitLengthSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="backlitLengthSlider modelSlider" id="backlitLengthSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="backlitLengthInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 
-						<div class="white-section center" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" id="backlitHeight">
 							<label>Wall Height (inches)</label>
-							<input class="backlitHeightSlider modelSlider" id="backlitHeightSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="backlitHeightSlider modelSlider" id="backlitHeightSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="backlitHeightInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
@@ -631,19 +665,40 @@
 						</div>
 
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="backlitLogoX">
 							<label>Logo Scale (%)</label>
-							<input class="backlitLogoScaleSlider modelSlider" id="backlitLogoScaleSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="backlitLogoScaleSlider modelSlider" id="backlitLogoScaleSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="backlitLogoScaleInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="backlitLogoY">
 							<label>Logo X (inches)</label>
-							<input class="backlitLogoXSlider modelSlider" id="backlitLogoXSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="backlitLogoXSlider modelSlider" id="backlitLogoXSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="backlitLogoXInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="backlitLogoZ">
 							<label>Logo Y (inches)</label>
-							<input class="backlitLogoZSlider modelSlider" id="backlitLogoZSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="backlitLogoZSlider modelSlider" id="backlitLogoZSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="backlitLogoZInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 
@@ -656,9 +711,16 @@
 					<!-- Specifics for backlit walls ripples -->
 					<div id="backlitRipple" class="parameterSet">
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="backlitWaveAmp">
 							<label>Wave Amplitude</label>
-							<input class="backlitWaveAmpSlider modelSlider" id="backlitWaveAmpSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="backlitWaveAmpSlider modelSlider" id="backlitWaveAmpSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="backlitWaveAmpInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 						<!--
@@ -684,9 +746,16 @@
 						</div>
 
 
-						<div class="white-section center" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" id="backlitPattern">
 							<label>Choose Pattern Variation</label>
-							<input class="backlitPatternSlider modelSlider" id="backlitPatternSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="backlitPatternSlider modelSlider" id="backlitPatternSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="backlitPatternInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
@@ -707,9 +776,16 @@
     						<input type="text" class="form-control" id="backlitHeader" placeholder="Header (15 char)">
     					</div>
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="backlitHeader">
 							<label>Header Height</label>
-							<input class="backlitHeaderSlider modelSlider" id="backlitHeaderSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="backlitHeaderSlider modelSlider" id="backlitHeaderSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="backlitHeaderInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 						<div class="row divcenter" style="margin:20px 0px">
@@ -717,9 +793,16 @@
     						<input type="text" class="form-control" id="backlitsubHeader" placeholder="Sub Header (30 char)">
     					</div>
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="backlitSubheader">
 							<label>Subheader Height</label>
-							<input class="backlitSubheaderSlider modelSlider" id="backlitSubheaderSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="backlitSubheaderSlider modelSlider" id="backlitSubheaderSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="backlitSubheaderInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 					</div>
@@ -749,83 +832,181 @@
 				<!-- All options for the backlit walls -->
 				<div id="facetedSection" style="overflow:scroll; height:500px">
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedSpacing">
 						<label>Facet Spacing</label>
-						<input class="facetedSpacingSlider modelSlider" id="facetedSpacing"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedSpacingSlider modelSlider" id="facetedSpacing"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedSpacingInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedA">
 						<label>Panel A Rotation</label>
-						<input class="facetedASlider modelSlider" id="facetedASlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedASlider modelSlider" id="facetedASlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedAInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedB">
 						<label>Panel B Rotation</label>
-						<input class="facetedBSlider modelSlider" id="facetedBSlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedBSlider modelSlider" id="facetedBSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedBInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedC">
 						<label>Panel C Rotation</label>
-						<input class="facetedCSlider modelSlider" id="facetedCSlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedCSlider modelSlider" id="facetedCSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedCInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedD">
 						<label>Panel D Rotation</label>
-						<input class="facetedDSlider modelSlider" id="facetedDSlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedDSlider modelSlider" id="facetedDSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedDInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedE">
 						<label>Panel E Rotation</label>
-						<input class="facetedESlider modelSlider" id="facetedESlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedESlider modelSlider" id="facetedESlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedEInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedF">
 						<label>Panel F Rotation</label>
-						<input class="facetedFSlider modelSlider" id="facetedFSlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedFSlider modelSlider" id="facetedFSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedFInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedG">
 						<label>Panel G Rotation</label>
-						<input class="facetedGSlider modelSlider" id="facetedGSlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedGSlider modelSlider" id="facetedGSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedGInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedH">
 						<label>Panel H Rotation</label>
-						<input class="facetedHSlider modelSlider" id="facetedHSlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedHSlider modelSlider" id="facetedHSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedHInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedI">
 						<label>Panel I Rotation</label>
-						<input class="facetedISlider modelSlider" id="facetedISlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedISlider modelSlider" id="facetedISlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedIInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedJ">
 						<label>Panel J Rotation</label>
-						<input class="facetedJSlider modelSlider" id="facetedJSlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedJSlider modelSlider" id="facetedJSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedJInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedK">
 						<label>Panel K Rotation</label>
-						<input class="facetedKSlider modelSlider" id="facetedKSlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedKSlider modelSlider" id="facetedKSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedKInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedL">
 						<label>Panel L Rotation</label>
-						<input class="facetedLSlider modelSlider" id="facetedLSlider"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedLSlider modelSlider" id="facetedLSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedLInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
 
 
-					<div class="white-section center" style="margin:20px 0px" >
+					<div class="white-section center" style="margin:20px 0px" id="facetedM">
 						<label>Panel M Rotation</label>
-						<input class="facetedMSlider modelSlider" id="facetedMSpacing"/>
+						<div class="row" style="width:100%">
+							<div style="width:70%">
+								<input class="facetedMSlider modelSlider" id="facetedMSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="facetedMInput" style="width:100%"/>
+							</div>
+						</div>
 					</div>
 
 
@@ -867,15 +1048,30 @@
 					<!-- Specifics for backlit walls dimensions -->
 					<div id="lightDimensions" class="parameterSet">
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="lightWidth">
 							<label>Wall Width (inches)</label>
 							<input class="lightWidthSlider modelSlider" id="lightWidthSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="lightWidthSlider  modelSlider" id="lightWidthSlider "/>
+								</div>
+								<div style="width:30%">
+									<input id="lightWidthInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 
-						<div class="white-section center" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" id="lightLength">
 							<label>Wall Length (inches)</label>
-							<input class="lightLengthSlider modelSlider" id="lightLengthSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="lightLengthSlider  modelSlider" id="lightLengthSlider "/>
+								</div>
+								<div style="width:30%">
+									<input id="lightLengthInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 					</div>
