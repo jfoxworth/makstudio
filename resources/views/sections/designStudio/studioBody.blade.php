@@ -140,7 +140,7 @@
 									<input class="benchDepthSlider modelSlider" id="benchDepthSlider"/>
 								</div>
 								<div style="width:30%">
-									<input id="benchDepthInput"/>
+									<input id="benchDepthInput" style="width:100%"/>
 								</div>
 							</div>
 						</div>
@@ -152,7 +152,7 @@
 									<input class="benchHeightSlider modelSlider"  id="benchHeightSlider"/>
 								</div>
 								<div style="width:30%">
-									<input id="benchHeightInput"/>
+									<input id="benchHeightInput" style="width:100%"/>
 								</div>
 							</div>
 						</div>
@@ -164,7 +164,7 @@
 									<input class="benchTwistSlider modelSlider"  id="benchTwistSlider"/>
 								</div>
 								<div style="width:30%">
-									<input id="benchTwistLengthInput"/>
+									<input id="benchTwistLengthInput" style="width:100%"/>
 								</div>
 							</div>
 						</div>
@@ -176,7 +176,14 @@
 
 						<div class="white-section center" style="margin:20px 0px" id="benchLeftSeatLength">
 							<label>Left Seat Length (ft)</label>
-							<input class="benchLeftSeatSlider modelSlider"  id="benchLeftSeatSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="benchLeftSeatSlider modelSlider"  id="benchLeftSeatSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="benchLeftSeatLengthInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 						<div>
@@ -193,7 +200,14 @@
 
 						<div class="white-section center" style="margin:20px 0px" id="benchRightSeatLength">
 							<label>Right Seat Length (ft)</label>
-							<input class="benchRightSeatSlider modelSlider"  id="benchRightSeatSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="benchRightSeatSlider modelSlider"  id="benchRightSeatSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="benchRightSeatLengthInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 						<div class="white-section center" style="margin:20px 0px">
@@ -273,17 +287,38 @@
 
 						<div class="white-section center" style="margin:10px 0px" id="finWallHeight">
 							<label>Wall Height (inches)</label>
-							<input class="finWallHeightSlider modelSlider" id="finWallHeightSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="finWallHeightSlider modelSlider" id="finWallHeightSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="finWallHeightInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 						<div class="white-section center" style="margin:20px 0px" id="finWallWidth">
 							<label>Wall Width (inches)</label>
-							<input class="finWallWidthSlider modelSlider"  id="finWallWidthSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="finWallWidthSlider modelSlider"  id="finWallWidthSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="finWallWidthInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 						<div class="white-section center" style="margin:20px 0px" id="finWallDepth">
 							<label>Wall Depth (inches)</label>
-							<input class="finWallDepthSlider modelSlider"  id="finWallDepthSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="finWallDepthSlider modelSlider"  id="finWallDepthSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="finWallDepthInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
@@ -303,27 +338,55 @@
 					<!-- Specifics for slat wall ripple -->
 					<div id="finRipple" class="parameterSet">
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="rippleX">
 							<label>Ripple X Location (%)</label>
-							<input class="rippleXSlider modelSlider" id="rippleXSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="rippleXSlider modelSlider" id="rippleXSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="rippleXInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 
-						<div class="white-section center" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" id="rippleY">
 							<label>Ripple Y Location (%)</label>
-							<input class="rippleYSlider modelSlider" id="rippleYSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="rippleYSlider modelSlider" id="rippleYSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="rippleYInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 
-						<div class="white-section center" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" id="rippleIntensity">
 							<label>Ripple Intensity</label>
-							<input class="rippleIntensitySlider modelSlider" id="rippleIntensitySlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="rippleIntensitySlider modelSlider" id="rippleIntensitySlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="rippleIntensityInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 
-						<div class="white-section center" style="margin:20px 0px">
+						<div class="white-section center" style="margin:20px 0px" id="rippleRoughness">
 							<label>Ripple Roughness</label>
-							<input class="rippleRoughnessSlider modelSlider" id="rippleRoughnessSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="rippleRoughnessSlider modelSlider" id="rippleRoughnessSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="rippleRoughnessInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 
@@ -337,20 +400,43 @@
 					<!-- Specifics for slat wall fins -->
 					<div id="finFin" class="parameterSet">
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="finThickness">
 							<label>Fin Thickness (inches)</label>
-							<input class="finThicknessSlider modelSlider" id="finThicknessSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="finThicknessSlider modelSlider" id="finThicknessSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="finThicknessInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
-						<div class="white-section center" style="margin:10px 0px" >
+						<div class="white-section center" style="margin:10px 0px" id="finSpacing">
 							<label>Fin Spacing (inches)</label>
 							<input class="finSpacingSlider modelSlider" id="finSpacingSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="finSpacingSlider modelSlider" id="finSpacingSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="finSpacingInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 
-						<div class="white-section center" style="margin:20px 0px" >
+						<div class="white-section center" style="margin:20px 0px" id="finRotation">
 							<label>Fin Rotation (degrees)</label>
 							<input class="finRotationSlider modelSlider" id="finRotationSlider"/>
+							<div class="row" style="width:100%">
+								<div style="width:70%">
+									<input class="finRotationSlider modelSlider" id="finRotationSlider"/>
+								</div>
+								<div style="width:30%">
+									<input id="finRotationInput" style="width:100%"/>
+								</div>
+							</div>
 						</div>
 
 
