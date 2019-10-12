@@ -7,8 +7,7 @@
 		
 		<div class="sidebar-widgets-wrap" >
 
-			<div class="widget clearfix" style="width:80%">
-
+			<div class="widget clearfix" style="width:100%">
 
 
 				<h4 class="center" style="margin-bottom:5px; margin-top:10px">Design Center</h4>
@@ -136,17 +135,32 @@
 
 						<div class="white-section center" style="margin:10px 0px" id="benchDepth">
 							<label>Bench Depth (ft)</label>
-							<input class="benchDepthSlider modelSlider" id="benchDepthSlider"/>
+							<div style="width:70%">
+								<input class="benchDepthSlider modelSlider" id="benchDepthSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="benchDepthInput"/>
+							</div>
 						</div>
 
 						<div class="white-section center" style="margin:20px 0px" id="benchHeight">
 							<label>Bench Height (ft)</label>
-							<input class="benchHeightSlider modelSlider"  id="benchHeightSlider"/>
+							<div style="width:70%">
+								<input class="benchHeightSlider modelSlider"  id="benchHeightSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="benchHeightInput"/>
+							</div>
 						</div>
 
 						<div class="white-section center" style="margin:20px 0px" id="benchTwistLength">
 							<label>Twist Length (ft)</label>
-							<input class="benchTwistSlider modelSlider"  id="benchTwistSlider"/>
+							<div style="width:70%">
+								<input class="benchTwistSlider modelSlider"  id="benchTwistSlider"/>
+							</div>
+							<div style="width:30%">
+								<input id="benchTwistLengthInput"/>
+							</div>
 						</div>
 
 					</div>
