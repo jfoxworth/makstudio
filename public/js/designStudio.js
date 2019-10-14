@@ -681,6 +681,7 @@ function setDefaultModelData( modelName )
 				if ( makStudio.componentTypes[modelName][componentName] == 'slider' )
 				{
 					$( "#"+makStudio.componentNames[modelName][componentName] ).val(element.value);
+					$( "#"+makStudio.componentNames[modelName][componentName].replace("Slider", "Input") ).val(element.value);
 					makModel.build_data.componentValues[componentName]=element.value;
 				}
 
