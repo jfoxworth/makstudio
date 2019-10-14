@@ -1948,7 +1948,6 @@ function initializeData()
 		'componentTypes' : {
 
 			'finWall' : {
-				'Position X Logo' : 'slider',
 				'Height of Wall' : 'slider',
 				'Lenght of Wall' : 'slider',
 				'Straight Panels Tolerance' : 'slider',
@@ -1968,9 +1967,10 @@ function initializeData()
 				'Logo?' : 'boolean',
 				'Ripple Center Location (Left-Right) (%)' : 'slider',
 				'Spacing of Fins' : 'slider',
-				'Position Z Logo' : 'slider',
+				'Position X Logo (%)' : 'slider',
+				'Position Z Logo (%)' : 'slider',
 				'Colored MDF' : 'swatch',
-				'Ripple Intensity' : 'slider',
+				'Ripple Intensity ( Straight - Wavy)' : 'slider',
 				'Show Human Scale' : 'boolean',
 				'Show Dimensions' : 'boolean',
 				'Ground Offset' : 'slider',
