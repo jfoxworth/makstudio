@@ -139,8 +139,8 @@
 								<div style="width:70%">
 									<input class="benchDepthSlider modelSlider" id="benchDepthSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="benchDepthInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="benchDepthInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -151,20 +151,20 @@
 								<div style="width:70%">
 									<input class="benchHeightSlider modelSlider"  id="benchHeightSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="benchHeightInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="benchHeightInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
 
-						<div class="white-section center" style="margin:20px 0px" id="benchTwistLength">
+						<div class="white-section center" style="margin:20px 0px" id="benchTwist">
 							<label>Twist Length (ft)</label>
 							<div class="row" style="width:100%">
 								<div style="width:70%">
 									<input class="benchTwistSlider modelSlider"  id="benchTwistSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="benchTwistLengthInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="benchTwistInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -174,14 +174,14 @@
 
 					<div id="benchSeat" class="parameterSet">
 
-						<div class="white-section center" style="margin:20px 0px" id="benchLeftSeatLength">
+						<div class="white-section center" style="margin:20px 0px" id="benchLeftSeat">
 							<label>Left Seat Length (ft)</label>
 							<div class="row" style="width:100%">
 								<div style="width:70%">
 									<input class="benchLeftSeatSlider modelSlider"  id="benchLeftSeatSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="benchLeftSeatLengthInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="benchLeftSeatInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -198,14 +198,14 @@
 							</select>
 						</div>
 
-						<div class="white-section center" style="margin:20px 0px" id="benchRightSeatLength">
+						<div class="white-section center" style="margin:20px 0px" id="benchRightSeat">
 							<label>Right Seat Length (ft)</label>
 							<div class="row" style="width:100%">
 								<div style="width:70%">
 									<input class="benchRightSeatSlider modelSlider"  id="benchRightSeatSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="benchRightSeatLengthInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="benchRightSeatInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -291,8 +291,8 @@
 								<div style="width:70%">
 									<input class="finWallHeightSlider modelSlider" id="finWallHeightSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="finWallHeightInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="finWallHeightInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -303,8 +303,8 @@
 								<div style="width:70%">
 									<input class="finWallWidthSlider modelSlider"  id="finWallWidthSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="finWallWidthInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="finWallWidthInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -315,8 +315,8 @@
 								<div style="width:70%">
 									<input class="finWallDepthSlider modelSlider"  id="finWallDepthSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="finWallDepthInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="finWallDepthInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -344,8 +344,8 @@
 								<div style="width:70%">
 									<input class="rippleXSlider modelSlider" id="rippleXSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="rippleXInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="rippleXInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -357,8 +357,8 @@
 								<div style="width:70%">
 									<input class="rippleYSlider modelSlider" id="rippleYSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="rippleYInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="rippleYInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -370,8 +370,8 @@
 								<div style="width:70%">
 									<input class="rippleIntensitySlider modelSlider" id="rippleIntensitySlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="rippleIntensityInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="rippleIntensityInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -383,8 +383,8 @@
 								<div style="width:70%">
 									<input class="rippleRoughnessSlider modelSlider" id="rippleRoughnessSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="rippleRoughnessInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="rippleRoughnessInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -406,8 +406,8 @@
 								<div style="width:70%">
 									<input class="finThicknessSlider modelSlider" id="finThicknessSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="finThicknessInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="finThicknessInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -418,8 +418,8 @@
 								<div style="width:70%">
 									<input class="finSpacingSlider modelSlider" id="finSpacingSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="finSpacingInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="finSpacingInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -431,8 +431,8 @@
 								<div style="width:70%">
 									<input class="finRotationSlider modelSlider" id="finRotationSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="finRotationInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="finRotationInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -517,8 +517,8 @@
 								<div style="width:70%">
 									<input class="finLogoScaleSlider modelSlider" id="finLogoScaleSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="finLogoScaleInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="finLogoScaleInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 
@@ -530,8 +530,8 @@
 								<div style="width:70%">
 									<input class="finLogoXSlider modelSlider" id="finLogoXSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="finLogoXInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="finLogoXInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -542,8 +542,8 @@
 								<div style="width:70%">
 									<input class="finLogoZSlider modelSlider" id="finLogoZSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="finLogoZInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="finLogoZInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -612,8 +612,8 @@
 								<div style="width:70%">
 									<input class="backlitLengthSlider modelSlider" id="backlitLengthSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="backlitLengthInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="backlitLengthInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -625,8 +625,8 @@
 								<div style="width:70%">
 									<input class="backlitHeightSlider modelSlider" id="backlitHeightSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="backlitHeightInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="backlitHeightInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -671,8 +671,8 @@
 								<div style="width:70%">
 									<input class="backlitLogoScaleSlider modelSlider" id="backlitLogoScaleSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="backlitLogoScaleInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="backlitLogoScaleInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -683,8 +683,8 @@
 								<div style="width:70%">
 									<input class="backlitLogoXSlider modelSlider" id="backlitLogoXSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="backlitLogoXInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="backlitLogoXInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -695,8 +695,8 @@
 								<div style="width:70%">
 									<input class="backlitLogoZSlider modelSlider" id="backlitLogoZSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="backlitLogoZInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="backlitLogoZInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -717,8 +717,8 @@
 								<div style="width:70%">
 									<input class="backlitWaveAmpSlider modelSlider" id="backlitWaveAmpSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="backlitWaveAmpInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="backlitWaveAmpInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -752,8 +752,8 @@
 								<div style="width:70%">
 									<input class="backlitPatternSlider modelSlider" id="backlitPatternSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="backlitPatternInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="backlitPatternInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -782,8 +782,8 @@
 								<div style="width:70%">
 									<input class="backlitHeaderSlider modelSlider" id="backlitHeaderSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="backlitHeaderInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="backlitHeaderInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -799,8 +799,8 @@
 								<div style="width:70%">
 									<input class="backlitSubheaderSlider modelSlider" id="backlitSubheaderSlider"/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="backlitSubheaderInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="backlitSubheaderInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -838,8 +838,8 @@
 							<div style="width:70%">
 								<input class="facetedSpacingSlider modelSlider" id="facetedSpacing"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedSpacingInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedSpacingInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -851,8 +851,8 @@
 							<div style="width:70%">
 								<input class="facetedASlider modelSlider" id="facetedASlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedAInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedAInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -864,8 +864,8 @@
 							<div style="width:70%">
 								<input class="facetedBSlider modelSlider" id="facetedBSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedBInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedBInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -877,8 +877,8 @@
 							<div style="width:70%">
 								<input class="facetedCSlider modelSlider" id="facetedCSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedCInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedCInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -890,8 +890,8 @@
 							<div style="width:70%">
 								<input class="facetedDSlider modelSlider" id="facetedDSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedDInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedDInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -903,8 +903,8 @@
 							<div style="width:70%">
 								<input class="facetedESlider modelSlider" id="facetedESlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedEInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedEInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -916,8 +916,8 @@
 							<div style="width:70%">
 								<input class="facetedFSlider modelSlider" id="facetedFSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedFInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedFInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -928,8 +928,8 @@
 							<div style="width:70%">
 								<input class="facetedGSlider modelSlider" id="facetedGSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedGInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedGInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -940,8 +940,8 @@
 							<div style="width:70%">
 								<input class="facetedHSlider modelSlider" id="facetedHSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedHInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedHInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -952,8 +952,8 @@
 							<div style="width:70%">
 								<input class="facetedISlider modelSlider" id="facetedISlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedIInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedIInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -964,8 +964,8 @@
 							<div style="width:70%">
 								<input class="facetedJSlider modelSlider" id="facetedJSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedJInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedJInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -976,8 +976,8 @@
 							<div style="width:70%">
 								<input class="facetedKSlider modelSlider" id="facetedKSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedKInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedKInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -989,8 +989,8 @@
 							<div style="width:70%">
 								<input class="facetedLSlider modelSlider" id="facetedLSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedLInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedLInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -1003,8 +1003,8 @@
 							<div style="width:70%">
 								<input class="facetedMSlider modelSlider" id="facetedMSlider"/>
 							</div>
-							<div style="width:25%; margin:0px 0px 0px 5%">
-								<input id="facetedMInput" style="width:100%"/>
+							<div style="width:20%; margin:0px 0px 0px 10%">
+								<input id="facetedMInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -1055,8 +1055,8 @@
 								<div style="width:70%">
 									<input class="lightWidthSlider  modelSlider" id="lightWidthSlider "/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="lightWidthInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="lightWidthInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -1068,8 +1068,8 @@
 								<div style="width:70%">
 									<input class="lightLengthSlider  modelSlider" id="lightLengthSlider "/>
 								</div>
-								<div style="width:25%; margin:0px 0px 0px 5%">
-									<input id="lightLengthInput" style="width:100%"/>
+								<div style="width:20%; margin:0px 0px 0px 10%">
+									<input id="lightLengthInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
