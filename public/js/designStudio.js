@@ -321,6 +321,7 @@ $(document).ready(function()	{
 
 			if ( event.target.id == makStudio.componentNames[designType][thisComponent] )
 			{
+				console.log('Should be updating model parameter '+thisComponent+' with '+$('#'+event.target.id).val());
 				model_api.parameters.updateAsync({name: thisComponent, value: $('#'+event.target.id).val() });
 				makModel['build_data']['componentValues'][thisComponent] = $('#'+event.target.id).val();
 			}
