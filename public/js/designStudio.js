@@ -295,7 +295,7 @@ $(document).ready(function()	{
 			console.log('Here 1');
 
 			var paramName = event.target.id.replace("Input", "Slider");
-			makModel['build_data']['componentValues'][thisComponent] = $('#'+event.target.id).val();
+			makModel['build_data']['componentValues'][paramName] = $('#'+event.target.id).val();
 			$('#'+paramName).val( $('#'+event.target.id).val() );
 
 			console.log('Here 2');
