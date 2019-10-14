@@ -230,6 +230,8 @@ $(document).ready(function()	{
 
 
 
+
+
 	/* -------------------------------------- *
 
 			  API Calls
@@ -284,6 +286,33 @@ $(document).ready(function()	{
 
 
 
+
+
+	// When enter is hit on one of the text inputs
+	$('.textParameterInput').on('keypress',function(event) {
+		if(e.which == 13) {
+
+			console.log('Here 1');
+
+			var paramName = event.target.id.replace("Input", "Slider");
+
+			console.log('Here 2');
+
+			for (thisComponent in makStudio.componentNames[designType])
+			{
+				if ( paramName == makStudio.componentNames[designType][thisComponent] )
+				{
+					model_api.parameters.updateAsync({name: thisComponent, value: $('#'+paramName).val() });
+					makModel['build_data']['componentValues'][thisComponent] = $('#'+paramName).val();
+				}
+			}
+
+			console.log('Here 3');
+
+			setPrice( designType );
+
+		}
+	});
 
 
 	$('.modelSlider, .modelDropdown').change(function(event)	
@@ -1348,7 +1377,7 @@ function initializeComponents( modelName )
 		$(".finWallDepthSlider").ionRangeSlider({
 			grid: false,
 			min: 3,
-			max: 8,
+			max: 12,
 			step: 1
 		});
 

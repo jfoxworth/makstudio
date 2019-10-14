@@ -3,7 +3,7 @@
 
 	<!-- Sidebar
 	============================================= -->
-	<div class="col_one_fourth clearfix" style="height:800px;">
+	<div class="col_one_fifth clearfix" style="height:800px;">
 		
 		<div class="sidebar-widgets-wrap" >
 
@@ -15,23 +15,23 @@
 				<div class="row divcenter">
 
 					@guest
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Login to save models">
 							<i id="designLogin" class="icon-user h3"></i>
 						</div>
 					@else
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="View my saved models">
 							<i id="designViewModels" class="icon-user h3"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Save Current Model">
 							<i id="designSave" class="icon-save h3"></i>
 						</div>
 					@endguest
 
-					<div class="hoverMe col_one_fourth center nobottommargin"
+					<div class="hoverMe col_one_fifth center nobottommargin"
 						 data-toggle="tooltip" data-placement="top" title="Recenter Model View">
 						<i id="recenterCamera" class="icon-line-camera h3"></i>
 					</div>
@@ -45,25 +45,25 @@
 
 				<div class="row divcenter">
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin"
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="finWallHolder"
 						 data-toggle="tooltip" data-placement="top" title="Fin Ripple Wall">
 						<img id="finWall" src="images/icons/MAK ICONS-07.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin"
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="backlitHolder"
 						 data-toggle="tooltip" data-placement="top" title="Backlit Wall">
 						<img id="backlit" src="images/icons/MAK ICONS-08.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin"
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="facetedHolder"
 						 data-toggle="tooltip" data-placement="top" title="Faceted Wall">
 						<img id="faceted" src="images/icons/MAK ICONS-06.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin col_last currentItem"
+					<div class="hoverMe col_one_fifth center designType nobottommargin col_last currentItem"
 						 id="benchHolder"
 						 data-toggle="tooltip" data-placement="top" title="Planter Bench">
 						<img id="bench" src="images/icons/MAK ICONS-05.png" width="48px">
@@ -73,25 +73,25 @@
 
 				<div class="row divcenter">
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin"
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="deskHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Custom Desk">
 						<img id="desk" src="images/icons/MAK ICONS-09.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin"
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="planterHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Planter Wall">
 						<img id="planter" src="images/icons/MAK ICONS-04.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin"
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="panelHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Panel Wall">
 						<img id="panel" src="images/icons/MAK ICONS-02.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
+					<div class="hoverMe col_one_fifth center designType nobottommargin col_last"
 						 id="lightHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Light Fixture Wall">
 						<img id="light" src="images/icons/MAK ICONS-01.png" width="48px">
@@ -119,12 +119,12 @@
 
 					<div class="row divcenter bottommargin-sm">
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="bottom" title="Bench Dimensions">
 							<i id="benchDimensionsButton" class="icon-measure h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin" style="margin-top:7px"
+						<div class="hoverMe col_one_fifth center nobottommargin" style="margin-top:7px"
 							 data-toggle="tooltip" data-placement="bottom" title="Seat Settings">
 							<i id="benchSeatButton" class="icon-realestate-chair h3 parameterSelect"></i>
 						</div>
@@ -140,7 +140,7 @@
 									<input class="benchDepthSlider modelSlider" id="benchDepthSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="benchDepthInput" style="width:100%; text-align:center"/>
+									<input id="benchDepthInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -152,7 +152,7 @@
 									<input class="benchHeightSlider modelSlider"  id="benchHeightSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="benchHeightInput" style="width:100%; text-align:center"/>
+									<input id="benchHeightInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -164,7 +164,7 @@
 									<input class="benchTwistSlider modelSlider"  id="benchTwistSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="benchTwistInput" style="width:100%; text-align:center"/>
+									<input id="benchTwistInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -181,7 +181,7 @@
 									<input class="benchLeftSeatSlider modelSlider"  id="benchLeftSeatSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="benchLeftSeatInput" style="width:100%; text-align:center"/>
+									<input id="benchLeftSeatInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -205,7 +205,7 @@
 									<input class="benchRightSeatSlider modelSlider"  id="benchRightSeatSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="benchRightSeatInput" style="width:100%; text-align:center"/>
+									<input id="benchRightSeatInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -254,27 +254,27 @@
 
 					<div class="row divcenter">
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Wall Dimensions">
 							<i id="finWallDimensionsButton" class="icon-measure h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Fin Settings">
 							<i id="finFinButton" class="icon-line-disc h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Ripple Settings">
 							<i id="finRippleButton" class="icon-line-target h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth col_last center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Material Settings">
 							<i id="finMaterialButton" class="icon-line-layers h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth col_last center nobottommargin"
 							 data-toggle="tooltip" data-placement="bottom" title="Logo Settings">
 							<i id="finLogoButton" class="icon-line-upload h3 parameterSelect"></i>
 						</div>
@@ -292,7 +292,7 @@
 									<input class="finWallHeightSlider modelSlider" id="finWallHeightSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="finWallHeightInput" style="width:100%; text-align:center"/>
+									<input id="finWallHeightInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -304,7 +304,7 @@
 									<input class="finWallWidthSlider modelSlider"  id="finWallWidthSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="finWallWidthInput" style="width:100%; text-align:center"/>
+									<input id="finWallWidthInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -316,18 +316,18 @@
 									<input class="finWallDepthSlider modelSlider"  id="finWallDepthSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="finWallDepthInput" style="width:100%; text-align:center"/>
+									<input id="finWallDepthInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
-							<label>Show Dimensions</label>
+							<label>Show Dimensions</label><br>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="finWallShowDimensions">
 						</div>
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
-							<label>Show Human Scale</label>
+							<label>Show Human Scale</label><br>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="finWallHumanScale">
 						</div>
 
@@ -345,7 +345,7 @@
 									<input class="rippleXSlider modelSlider" id="rippleXSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="rippleXInput" style="width:100%; text-align:center"/>
+									<input id="rippleXInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -358,7 +358,7 @@
 									<input class="rippleYSlider modelSlider" id="rippleYSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="rippleYInput" style="width:100%; text-align:center"/>
+									<input id="rippleYInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -371,7 +371,7 @@
 									<input class="rippleIntensitySlider modelSlider" id="rippleIntensitySlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="rippleIntensityInput" style="width:100%; text-align:center"/>
+									<input id="rippleIntensityInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -384,7 +384,7 @@
 									<input class="rippleRoughnessSlider modelSlider" id="rippleRoughnessSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="rippleRoughnessInput" style="width:100%; text-align:center"/>
+									<input id="rippleRoughnessInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -407,7 +407,7 @@
 									<input class="finThicknessSlider modelSlider" id="finThicknessSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="finThicknessInput" style="width:100%; text-align:center"/>
+									<input id="finThicknessInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -419,7 +419,7 @@
 									<input class="finSpacingSlider modelSlider" id="finSpacingSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="finSpacingInput" style="width:100%; text-align:center"/>
+									<input id="finSpacingInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -432,7 +432,7 @@
 									<input class="finRotationSlider modelSlider" id="finRotationSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="finRotationInput" style="width:100%; text-align:center"/>
+									<input id="finRotationInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -497,7 +497,7 @@
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Logo On" data-off-text="Logo Off" id="finLogoOnOff">
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Wall Dimensions">
 							<i id="finWallDimensionsButton" class="icon-measure h3 parameterSelect"></i>
 						</div>
@@ -518,7 +518,7 @@
 									<input class="finLogoScaleSlider modelSlider" id="finLogoScaleSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="finLogoScaleInput" style="width:100%; text-align:center"/>
+									<input id="finLogoScaleInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 
@@ -531,7 +531,7 @@
 									<input class="finLogoXSlider modelSlider" id="finLogoXSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="finLogoXInput" style="width:100%; text-align:center"/>
+									<input id="finLogoXInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -543,7 +543,7 @@
 									<input class="finLogoZSlider modelSlider" id="finLogoZSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="finLogoZInput" style="width:100%; text-align:center"/>
+									<input id="finLogoZInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -578,22 +578,22 @@
 
 					<div class="row divcenter">
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Wall Dimensions">
 							<i id="backlitDimensionsButton" class="icon-measure h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Pattern Settings">
 							<i id="backlitRippleButton" class="icon-line-target h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Logo Settings">
 							<i id="backlitLogoButton" class="icon-line-upload h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth col_last center nobottommargin"
+						<div class="hoverMe col_one_fifth col_last center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Headers">
 							<i id="backlitHeadersButton" class="icon-font h3 parameterSelect"></i>
 						</div>
@@ -613,7 +613,7 @@
 									<input class="backlitLengthSlider modelSlider" id="backlitLengthSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="backlitLengthInput" style="width:100%; text-align:center"/>
+									<input id="backlitLengthInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -626,23 +626,23 @@
 									<input class="backlitHeightSlider modelSlider" id="backlitHeightSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="backlitHeightInput" style="width:100%; text-align:center"/>
+									<input id="backlitHeightInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
-							<label>Show Dimensions</label>
+							<label>Show Dimensions</label><br>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitShowDimensions">
 						</div>
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
-							<label>Show Panel Divisions</label>
+							<label>Show Panel Divisions</label><br>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitShowPanels">
 						</div>
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
-							<label>Show Human Scale</label>
+							<label>Show Human Scale</label><br>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitHumanScale">
 						</div>
 
@@ -672,7 +672,7 @@
 									<input class="backlitLogoScaleSlider modelSlider" id="backlitLogoScaleSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="backlitLogoScaleInput" style="width:100%; text-align:center"/>
+									<input id="backlitLogoScaleInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -684,7 +684,7 @@
 									<input class="backlitLogoXSlider modelSlider" id="backlitLogoXSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="backlitLogoXInput" style="width:100%; text-align:center"/>
+									<input id="backlitLogoXInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -696,7 +696,7 @@
 									<input class="backlitLogoZSlider modelSlider" id="backlitLogoZSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="backlitLogoZInput" style="width:100%; text-align:center"/>
+									<input id="backlitLogoZInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -718,7 +718,7 @@
 									<input class="backlitWaveAmpSlider modelSlider" id="backlitWaveAmpSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="backlitWaveAmpInput" style="width:100%; text-align:center"/>
+									<input id="backlitWaveAmpInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -741,7 +741,7 @@
 						-->
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
-							<label>Create Flat Area</label>
+							<label>Create Flat Area</label><br>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitFlatOnOff">
 						</div>
 
@@ -753,13 +753,13 @@
 									<input class="backlitPatternSlider modelSlider" id="backlitPatternSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="backlitPatternInput" style="width:100%; text-align:center"/>
+									<input id="backlitPatternInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
-							<label>Pattern After Logo</label>
+							<label>Pattern After Logo</label><br>
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Yes" data-off-text="No" id="backlitPatternOnOff">
 						</div>
 
@@ -783,7 +783,7 @@
 									<input class="backlitHeaderSlider modelSlider" id="backlitHeaderSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="backlitHeaderInput" style="width:100%; text-align:center"/>
+									<input id="backlitHeaderInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -800,7 +800,7 @@
 									<input class="backlitSubheaderSlider modelSlider" id="backlitSubheaderSlider"/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="backlitSubheaderInput" style="width:100%; text-align:center"/>
+									<input id="backlitSubheaderInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -839,7 +839,7 @@
 								<input class="facetedSpacingSlider modelSlider" id="facetedSpacing"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedSpacingInput" style="width:100%; text-align:center"/>
+								<input id="facetedSpacingInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -852,7 +852,7 @@
 								<input class="facetedASlider modelSlider" id="facetedASlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedAInput" style="width:100%; text-align:center"/>
+								<input id="facetedAInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -865,7 +865,7 @@
 								<input class="facetedBSlider modelSlider" id="facetedBSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedBInput" style="width:100%; text-align:center"/>
+								<input id="facetedBInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -878,7 +878,7 @@
 								<input class="facetedCSlider modelSlider" id="facetedCSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedCInput" style="width:100%; text-align:center"/>
+								<input id="facetedCInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -891,7 +891,7 @@
 								<input class="facetedDSlider modelSlider" id="facetedDSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedDInput" style="width:100%; text-align:center"/>
+								<input id="facetedDInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -904,7 +904,7 @@
 								<input class="facetedESlider modelSlider" id="facetedESlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedEInput" style="width:100%; text-align:center"/>
+								<input id="facetedEInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -917,7 +917,7 @@
 								<input class="facetedFSlider modelSlider" id="facetedFSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedFInput" style="width:100%; text-align:center"/>
+								<input id="facetedFInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -929,7 +929,7 @@
 								<input class="facetedGSlider modelSlider" id="facetedGSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedGInput" style="width:100%; text-align:center"/>
+								<input id="facetedGInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -941,7 +941,7 @@
 								<input class="facetedHSlider modelSlider" id="facetedHSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedHInput" style="width:100%; text-align:center"/>
+								<input id="facetedHInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -953,7 +953,7 @@
 								<input class="facetedISlider modelSlider" id="facetedISlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedIInput" style="width:100%; text-align:center"/>
+								<input id="facetedIInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -965,7 +965,7 @@
 								<input class="facetedJSlider modelSlider" id="facetedJSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedJInput" style="width:100%; text-align:center"/>
+								<input id="facetedJInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -977,7 +977,7 @@
 								<input class="facetedKSlider modelSlider" id="facetedKSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedKInput" style="width:100%; text-align:center"/>
+								<input id="facetedKInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -990,7 +990,7 @@
 								<input class="facetedLSlider modelSlider" id="facetedLSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedLInput" style="width:100%; text-align:center"/>
+								<input id="facetedLInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -1004,7 +1004,7 @@
 								<input class="facetedMSlider modelSlider" id="facetedMSlider"/>
 							</div>
 							<div style="width:20%; margin:0px 0px 0px 10%">
-								<input id="facetedMInput" style="width:100%; text-align:center"/>
+								<input id="facetedMInput" class="textParameterInput" style="width:100%; text-align:center"/>
 							</div>
 						</div>
 					</div>
@@ -1031,12 +1031,12 @@
 
 					<div class="row divcenter">
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Wall Dimensions">
 							<i id="lightDimensionsButton" class="icon-measure h3 parameterSelect"></i>
 						</div>
 
-						<div class="hoverMe col_one_fourth center nobottommargin"
+						<div class="hoverMe col_one_fifth center nobottommargin"
 							 data-toggle="tooltip" data-placement="top" title="Light Settings">
 							<i id="lightSettingsButton" class="icon-bulb h3 parameterSelect"></i>
 						</div>
@@ -1056,7 +1056,7 @@
 									<input class="lightWidthSlider  modelSlider" id="lightWidthSlider "/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="lightWidthInput" style="width:100%; text-align:center"/>
+									<input id="lightWidthInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
@@ -1069,7 +1069,7 @@
 									<input class="lightLengthSlider  modelSlider" id="lightLengthSlider "/>
 								</div>
 								<div style="width:20%; margin:0px 0px 0px 10%">
-									<input id="lightLengthInput" style="width:100%; text-align:center"/>
+									<input id="lightLengthInput" class="textParameterInput" style="width:100%; text-align:center"/>
 								</div>
 							</div>
 						</div>
