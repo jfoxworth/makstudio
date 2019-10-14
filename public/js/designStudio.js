@@ -290,7 +290,7 @@ $(document).ready(function()	{
 
 	// When enter is hit on one of the text inputs
 	$('.textParameterInput').on('keypress',function(event) {
-		if(e.which == 13) {
+		if(event.which == 13) {
 
 			console.log('Here 1');
 
