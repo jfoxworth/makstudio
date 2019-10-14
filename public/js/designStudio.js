@@ -327,7 +327,7 @@ $(document).ready(function()	{
 		setPrice( designType );
 
 		var paramName = event.target.id.replace("Slider", "Input");
-		$('.'+paramName).val($('#'+event.target.id).val());
+		$('#'+paramName).val($('#'+event.target.id).val());
 
 	});
 
