@@ -298,6 +298,8 @@ $(document).ready(function()	{
 
 			console.log('Here 2');
 
+			console.log(paramName);
+
 			for (thisComponent in makStudio.componentNames[designType])
 			{
 				if ( paramName == makStudio.componentNames[designType][thisComponent] )
