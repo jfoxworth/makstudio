@@ -1847,7 +1847,7 @@ function initializeData()
 				'Wall Depth' : 'finWallDepthSlider',
 				'Ripple Center Location (Down - Up) (%)' : 'rippleYSlider',
 				'Ripple Center Location (Left-Right) (%)' : 'rippleXSlider',
-				'Ripple Intensity  ( STRAIGHT - WAVY)' : 'rippleIntensitySlider',
+				'Ripple Intensity  ( Straight - Wavy)' : 'rippleIntensitySlider',
 				'Roughness' : 'rippleRoughnessSlider',
 				'Fins Thickness' : 'finThicknessSlider',
 				'Spacing of Fins' : 'finSpacingSlider',
