@@ -292,15 +292,9 @@ $(document).ready(function()	{
 	$('.textParameterInput').on('keypress',function(event) {
 		if(event.which == 13) {
 
-			console.log('Here 1');
-
 			var paramName = event.target.id.replace("Input", "Slider");
 			makModel['build_data']['componentValues'][paramName] = $('#'+event.target.id).val();
 			$('#'+paramName).val( $('#'+event.target.id).val() );
-
-			console.log('Here 2');
-
-			console.log(paramName);
 
 			for (thisComponent in makStudio.componentNames[designType])
 			{
@@ -310,7 +304,7 @@ $(document).ready(function()	{
 				}
 			}
 
-			console.log('Here 3');
+			$('.'+paramName).data("ionRangeSlider").update({'from':$('#'+event.target.id).val()})
 
 			setPrice( designType );
 
@@ -332,7 +326,12 @@ $(document).ready(function()	{
 
 		setPrice( designType );
 
+		var paramName = event.target.id.replace("Slider", "Input");
+		$('.'+paramName).val($('#'+event.target.id).val());
+
 	});
+
+
 
 
 	$('.modelSwitch').on('switchChange.bootstrapSwitch', function(e) 
