@@ -45,25 +45,25 @@
 
 				<div class="row divcenter">
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="finWallHolder"
 						 data-toggle="tooltip" data-placement="top" title="Fin Ripple Wall">
 						<img id="finWall" src="images/icons/MAK ICONS-07.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="backlitHolder"
 						 data-toggle="tooltip" data-placement="top" title="Backlit Wall">
 						<img id="backlit" src="images/icons/MAK ICONS-08.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="facetedHolder"
 						 data-toggle="tooltip" data-placement="top" title="Faceted Wall">
 						<img id="faceted" src="images/icons/MAK ICONS-06.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin col_last currentItem"
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last currentItem"
 						 id="benchHolder"
 						 data-toggle="tooltip" data-placement="top" title="Planter Bench">
 						<img id="bench" src="images/icons/MAK ICONS-05.png" width="48px">
@@ -73,25 +73,25 @@
 
 				<div class="row divcenter">
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="deskHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Custom Desk">
 						<img id="desk" src="images/icons/MAK ICONS-09.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="planterHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Planter Wall">
 						<img id="planter" src="images/icons/MAK ICONS-04.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="panelHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Panel Wall">
 						<img id="panel" src="images/icons/MAK ICONS-02.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin col_last"
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
 						 id="lightHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Light Fixture Wall">
 						<img id="light" src="images/icons/MAK ICONS-01.png" width="48px">
@@ -275,7 +275,7 @@
 						</div>
 
 						<div class="hoverMe col_one_fifth col_last center nobottommargin"
-							 data-toggle="tooltip" data-placement="bottom" title="Logo Settings">
+							 data-toggle="tooltip" data-placement="top" title="Logo Settings">
 							<i id="finLogoButton" class="icon-line-upload h3 parameterSelect"></i>
 						</div>
 
@@ -494,12 +494,8 @@
 					<div id="finLogo" class="parameterSet">
 
 						<div class="white-section center modelBoolean" style="margin:20px 0px;">
+							<label>Logo On/Off</label> 
 							<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="Logo On" data-off-text="Logo Off" id="finLogoOnOff">
-						</div>
-
-						<div class="hoverMe col_one_fifth center nobottommargin"
-							 data-toggle="tooltip" data-placement="top" title="Wall Dimensions">
-							<i id="finWallDimensionsButton" class="icon-measure h3 parameterSelect"></i>
 						</div>
 
 
