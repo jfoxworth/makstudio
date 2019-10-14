@@ -317,6 +317,8 @@ $(document).ready(function()	{
 
 		for (thisComponent in makStudio.componentNames[designType])
 		{
+			console.log('Comparing '+event.target.id+' to '+makStudio.componentNames[designType][thisComponent]);
+
 			if ( event.target.id == makStudio.componentNames[designType][thisComponent] )
 			{
 				model_api.parameters.updateAsync({name: thisComponent, value: $('#'+event.target.id).val() });
