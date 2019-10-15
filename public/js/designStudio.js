@@ -553,7 +553,7 @@ $(document).ready(function()	{
 
 
 	const pickr = new Pickr({
-	  el: $('#colorPicker'),
+	  el: document.querySelector('.pickr'),
 	  useAsButton: true,
 	  default: '#42445A',
 	  theme: 'classic',
