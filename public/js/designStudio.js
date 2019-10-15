@@ -554,7 +554,8 @@ $(document).ready(function()	{
 
 
 	// Set the color picker 
-    $("#finWallColor").ColorPickerSliders({
+    $("input#finWallColor").ColorPickerSliders({
+    	placement:'right',
         color: "rgb(36, 170, 242)",
         flat: true,
         sliders: false,
