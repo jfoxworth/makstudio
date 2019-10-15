@@ -45,6 +45,17 @@
     <script type="text/javascript" src="/js/designStudio.js"></script>
     <script type="text/javascript" src="/js/colorPickerSliders.min.js"></script>
 
+    <script>	// Set the color picker 
+    $("input#finWallColor").ColorPickerSliders({
+    	placement:'right',
+        color: "rgb(36, 170, 242)",
+        flat: true,
+        sliders: false,
+        swatches: false,
+        hsvpanel: true
+    });
+</script>
+
 
 </body>
 </html>
