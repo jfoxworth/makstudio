@@ -489,7 +489,7 @@
 						<div class="white-section center" style="margin:20px 0px" id="finColor">
 							<label>Color</label>
 							<div class="row" style="width:100%">
-								<input type="text" class="form-control" id="finWallColor" value="#A6FF00" data-color-format="hex">
+								<div class="pickr"></div>
 							</div>
 						</div>
 
