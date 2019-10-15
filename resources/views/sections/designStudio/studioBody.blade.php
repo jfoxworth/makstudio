@@ -460,8 +460,7 @@
 					<div id="finMaterial" class="parameterSet">
 
 
-						<div class="row">
-
+						<div class="white-section center" style="margin:10px 0px">
 							<label>Material</label>
 
 							<div class="center hoverMe hoverMeGrey col_one_third" id="finMaterialBirch">
@@ -491,13 +490,13 @@
 								<div class="divcenter" style="margin-top:10px"><span>Colored MDF</span></div>
 							</div>
 
-							<div class="white-section center" style="margin:20px 0px" id="finColor">
+						</div>
+
+						<div class="white-section center" style="margin:20px 0px">
 								<label>Color</label>
 								<div class="row divcenter" style="width:100%">
 									<input type="text" class="pickr" id="colorPicker">
 								</div>
-							</div>
-
 						</div>
 
 
