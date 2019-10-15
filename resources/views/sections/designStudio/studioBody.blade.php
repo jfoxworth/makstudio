@@ -459,36 +459,38 @@
 					<!-- Specifics for slat wall materials and colors -->
 					<div id="finMaterial" class="parameterSet">
 
-						<div class="center hoverMe hoverMeGrey divcenter" id="finMaterialBirch">
+						<label>Material</label>
+
+						<div class="center hoverMe hoverMeGrey col_one_third" id="finMaterialBirch">
 							<img id="slatMaterialBirch" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirch.jpg" 
 								 width="100px"
 								 class="divcenter">
 
-							<div class="divcenter" style="margin-top:10px"><h4>Baltic Birch</h4></div>
+							<div class="divcenter" style="margin-top:10px"><span>Baltic Birch</span></div>
 						</div>
 
-						<div class="center hoverMe hoverMeGrey divcenter"  id="finMaterialLamBirch">
+						<div class="center hoverMe hoverMeGrey col_one_third"  id="finMaterialLamBirch">
 							<img id="slatMaterialBirchLaminate" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirchLaminate.jpg" 
 								 width="100px"
 								 class="divcenter">	
 
-							<div class="divcenter" style="margin-top:10px"><h4>Baltic Birch Laminate</h4></div>
+							<div class="divcenter" style="margin-top:10px"><span>Baltic Birch Laminate</span></div>
 						</div>
 
-						<div class="center hoverMe hoverMeGrey divcenter" id="finMaterialMDF">
+						<div class="center hoverMe hoverMeGrey col_one_third" id="finMaterialMDF">
 							<img id="slatMaterialMDF" 
 								 src="https://makstudio.s3.us-east-2.amazonaws.com/coloredMDF.jpg" 
 								 width="100px"
 								 class="divcenter">
 
-							<div class="divcenter" style="margin-top:10px"><h4>Colored MDF</h4></div>
+							<div class="divcenter" style="margin-top:10px"><span>Colored MDF</span></div>
 						</div>
 
 						<div class="white-section center" style="margin:20px 0px" id="finColor">
 							<label>Color</label>
-							<div class="row" style="width:100%">
+							<div class="row divcenter" style="width:100%">
 								<input type="text" class="pickr" id="colorPicker">
 							</div>
 						</div>
