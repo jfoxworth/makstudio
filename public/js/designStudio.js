@@ -326,11 +326,11 @@ $(document).ready(function()	{
 
 		for (thisComponent in makStudio.componentNames[designType])
 		{
-			console.log('Comparing '+event.target.id+' to '+makStudio.componentNames[designType][thisComponent]);
+			//console.log('Comparing '+event.target.id+' to '+makStudio.componentNames[designType][thisComponent]);
 
 			if ( event.target.id == makStudio.componentNames[designType][thisComponent] )
 			{
-				console.log('Should be updating model parameter '+thisComponent+' with '+$('#'+event.target.id).val());
+				//console.log('Should be updating model parameter '+thisComponent+' with '+$('#'+event.target.id).val());
 				model_api.parameters.updateAsync({name: thisComponent, value: $('#'+event.target.id).val() });
 				makModel['build_data']['componentValues'][thisComponent] = $('#'+event.target.id).val();
 			}
@@ -763,10 +763,10 @@ function setDefaultModelData( modelName )
 
 		for (componentName in makStudio.componentNames[modelName])
 		{
-			console.log('Comparing '+componentName+' to '+element.name);
+			//console.log('Comparing '+componentName+' to '+element.name);
 			if ( componentName == element.name )
 			{
-				console.log('The type is '+makStudio.componentTypes[modelName][componentName]);
+				//console.log('The type is '+makStudio.componentTypes[modelName][componentName]);
 				if ( makStudio.componentTypes[modelName][componentName] == 'slider' )
 				{
 					$( "#"+makStudio.componentNames[modelName][componentName] ).val(element.value);
