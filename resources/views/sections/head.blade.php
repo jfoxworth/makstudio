@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="/css/layers.css" type="text/css" />
     <link rel="stylesheet" href="/css/settings.css" type="text/css" />
     <link rel="stylesheet" href="/css/shapeDiver1.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'nano' theme -->
 
     <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
