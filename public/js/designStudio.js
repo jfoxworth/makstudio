@@ -551,9 +551,10 @@ $(document).ready(function()	{
 	});
 
 
+	const inputElement = document.querySelector('.pickr');
 
 	const pickr = new Pickr({
-	  el: document.querySelector('.pickr'),
+	  el: inputElement,
 	  useAsButton: true,
 	  default: '#42445A',
 	  theme: 'classic',
