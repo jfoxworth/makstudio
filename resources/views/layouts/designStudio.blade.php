@@ -44,7 +44,9 @@
 
     <script type="text/javascript" src="/js/designStudio.js"></script>
     <script type="text/javascript" src="/js/colorPickerSliders.min.js"></script>
-
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tinycolor/0.11.1/tinycolor.min.js"></script>
     <script>	// Set the color picker 
     $("input#finWallColor").ColorPickerSliders({
     	placement:'right',
