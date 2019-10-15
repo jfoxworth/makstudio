@@ -463,31 +463,35 @@
 						<div class="white-section center" style="margin:10px 0px">
 							<label>Material</label>
 
-							<div class="center hoverMe hoverMeGrey col_one_third" id="finMaterialBirch">
-								<img id="slatMaterialBirch" 
-									 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirch.jpg" 
-									 width="100px"
-									 class="divcenter">
+							<div class="row">
 
-								<div class="divcenter" style="margin-top:10px"><span>Baltic Birch</span></div>
-							</div>
+								<div class="center hoverMe hoverMeGrey col_one_third" id="finMaterialBirch">
+									<img id="slatMaterialBirch" 
+										 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirch.jpg" 
+										 width="100px"
+										 class="divcenter">
 
-							<div class="center hoverMe hoverMeGrey col_one_third"  id="finMaterialLamBirch">
-								<img id="slatMaterialBirchLaminate" 
-									 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirchLaminate.jpg" 
-									 width="100px"
-									 class="divcenter">	
+									<div class="divcenter" style="margin-top:10px"><span>Baltic Birch</span></div>
+								</div>
 
-								<div class="divcenter" style="margin-top:10px"><span>Baltic Birch Laminate</span></div>
-							</div>
+								<div class="center hoverMe hoverMeGrey col_one_third"  id="finMaterialLamBirch">
+									<img id="slatMaterialBirchLaminate" 
+										 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirchLaminate.jpg" 
+										 width="100px"
+										 class="divcenter">	
 
-							<div class="center hoverMe hoverMeGrey col_one_third col_last" id="finMaterialMDF">
-								<img id="slatMaterialMDF" 
-									 src="https://makstudio.s3.us-east-2.amazonaws.com/coloredMDF.jpg" 
-									 width="100px"
-									 class="divcenter">
+									<div class="divcenter" style="margin-top:10px"><span>Baltic Birch Laminate</span></div>
+								</div>
 
-								<div class="divcenter" style="margin-top:10px"><span>Colored MDF</span></div>
+								<div class="center hoverMe hoverMeGrey col_one_third col_last" id="finMaterialMDF">
+									<img id="slatMaterialMDF" 
+										 src="https://makstudio.s3.us-east-2.amazonaws.com/coloredMDF.jpg" 
+										 width="100px"
+										 class="divcenter">
+
+									<div class="divcenter" style="margin-top:10px"><span>Colored MDF</span></div>
+								</div>
+
 							</div>
 
 						</div>
