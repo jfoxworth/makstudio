@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="/css/layers.css" type="text/css" />
     <link rel="stylesheet" href="/css/settings.css" type="text/css" />
     <link rel="stylesheet" href="/css/shapeDiver1.css" type="text/css" />
+    <link rel="stylesheet" href="/css/colorPickerSliders.min.css" type="text/css" />
 
 
     <link rel="stylesheet" href="/css/responsive.css" type="text/css" />

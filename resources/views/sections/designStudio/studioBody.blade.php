@@ -486,6 +486,12 @@
 							<div class="divcenter" style="margin-top:10px"><h4>Colored MDF</h4></div>
 						</div>
 
+						<div class="white-section center" style="margin:20px 0px" id="finColor">
+							<label>Color</label>
+							<div class="row" style="width:100%" id="finWallColor"></div>
+						</div>
+
+
 					</div>
 
 

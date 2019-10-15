@@ -43,6 +43,7 @@
 	@include('sections.javasfiles')
 
     <script type="text/javascript" src="/js/designStudio.js"></script>
+    <script type="text/javascript" src="/js/colorPickerSliders.min.js"></script>
 
 
 </body>

@@ -255,17 +255,26 @@ $(document).ready(function()	{
 	$('#finMaterialBirch').click(function()
 	{			
 		model_api.parameters.updateAsync({name: "Material", value: 0 });
+		$('#finMaterialBirch').addClass('currentItem');
+		$('#finMaterialLamBirch').removeClass('currentItem');
+		$('#finMaterialMDF').removeClass('currentItem');
 	});
 
 	$('#finMaterialLamBirch').click(function()
 	{			
 		model_api.parameters.updateAsync({name: "Material", value: 1 });
+		$('#finMaterialLamBirch').addClass('currentItem');
+		$('#finMaterialBirch').removeClass('currentItem');
+		$('#finMaterialMDF').removeClass('currentItem');
 	});
 
 
 	$('#finMaterialMDF').click(function()
 	{			
 		model_api.parameters.updateAsync({name: "Material", value: 2 });
+		$('#finMaterialMDF').addClass('currentItem');
+		$('#finMaterialBirch').removeClass('currentItem');
+		$('#finMaterialLamBirch').removeClass('currentItem');
 	});
 
 
@@ -543,7 +552,20 @@ $(document).ready(function()	{
 
 
 
+
+	// Set the color picker 
+    $("#finWallColor").ColorPickerSliders({
+        color: "rgb(36, 170, 242)",
+        flat: true,
+        sliders: false,
+        swatches: false,
+        hsvpanel: true
+    });
+
+
 });
+
+
 
 
 
