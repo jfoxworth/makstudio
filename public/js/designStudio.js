@@ -604,7 +604,7 @@ $(document).ready(function()	{
 
 	const inputBackElement = document.querySelector('.backpickr');
 
-	const pickr = new Pickr({
+	const backpickr = new Pickr({
 	  el: inputBackElement,
 	  useAsButton: true,
 	  default: '#42445A',
