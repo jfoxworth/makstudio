@@ -1978,9 +1978,9 @@ function initializeData()
 				'Material' : '',
 				'Logo?' : 'finLogoOnOff',
 				'Colored MDF' : '',
-				'Upload Logo' : 'finLogoUpload'
+				'Upload Logo' : 'finLogoUpload',
 				'Colored MDF' : 'MDFColorPicker',
-				'Back Panel Color' : 'MDFBackColorPicker',
+				'Back Panel Color' : 'MDFBackColorPicker'
 
 			},
 
