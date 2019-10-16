@@ -465,7 +465,7 @@
 
 							<div class="row">
 
-								<div class="center hoverMe hoverMeGrey col_one_third" id="finMaterialBirch">
+								<div class="center hoverMe hoverMeGrey col_one_third nobottommargin" id="finMaterialBirch">
 									<img id="slatMaterialBirch" 
 										 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirch.jpg" 
 										 width="100px"
@@ -474,7 +474,7 @@
 									<div class="divcenter" style="margin-top:10px"><span>Baltic Birch</span></div>
 								</div>
 
-								<div class="center hoverMe hoverMeGrey col_one_third"  id="finMaterialLamBirch">
+								<div class="center hoverMe hoverMeGrey col_one_third nobottommargin"  id="finMaterialLamBirch">
 									<img id="slatMaterialBirchLaminate" 
 										 src="https://makstudio.s3.us-east-2.amazonaws.com/balticBirchLaminate.jpg" 
 										 width="100px"
@@ -483,7 +483,7 @@
 									<div class="divcenter" style="margin-top:10px"><span>Baltic Birch Laminate</span></div>
 								</div>
 
-								<div class="center hoverMe hoverMeGrey col_one_third col_last" id="finMaterialMDF">
+								<div class="center hoverMe hoverMeGrey col_one_third nobottommargin col_last" id="finMaterialMDF">
 									<img id="slatMaterialMDF" 
 										 src="https://makstudio.s3.us-east-2.amazonaws.com/coloredMDF.jpg" 
 										 width="100px"
@@ -496,13 +496,19 @@
 
 						</div>
 
-						<div class="white-section center" style="margin:20px 0px">
+						<div class="white-section center" style="margin:10px 0px">
 								<label>Color</label>
-								<div class="row divcenter" style="width:100%">
-									<input type="text" class="pickr" id="colorPicker">
+								<div class="row divcenter nomargin" style="width:100%">
+									<input type="text" class="pickr center divcenter" id="MDFColorPicker">
 								</div>
 						</div>
 
+						<div class="white-section center" style="margin:10px 0px">
+								<label>Background Color</label>
+								<div class="row divcenter nomargin" style="width:100%">
+									<input type="text" class="backpickr center divcenter" id="MDFBackColorPicker">
+								</div>
+						</div>
 
 					</div>
 
