@@ -602,10 +602,10 @@ $(document).ready(function()	{
 
 
 
-	const inputElement = document.querySelector('.backpickr');
+	const inputBackElement = document.querySelector('.backpickr');
 
 	const pickr = new Pickr({
-	  el: inputElement,
+	  el: inputBackElement,
 	  useAsButton: true,
 	  default: '#42445A',
 	  theme: 'classic',
@@ -641,9 +641,9 @@ $(document).ready(function()	{
 	    }
 	  }
 	}).on('init', pickr => {
-	  inputElement.value = pickr.getSelectedColor().toRGBA().toString(0);
+	  inputBackElement.value = pickr.getSelectedColor().toRGBA().toString(0);
 	}).on('save', color => {
-		inputElement.value = color.toRGBA().toString(0);
+		inputBackElement.value = color.toRGBA().toString(0);
 		pickr.hide();
 		model_api.parameters.updateAsync({name: 'Back Panel Color', value: $('#'+event.target.id).val() });
 		makModel['build_data']['componentValues']['Back Panel Color'] = $('#'+event.target.id).val();
