@@ -72,7 +72,7 @@ function retrieveMessages( )
 			
 			var message = '';
 
-			message=message+"<div class='row'>";
+			message=message+"<div class='row' style='border-bottom:1px solid #ccc; margin-bottom:20px'>";
 
 				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
 				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
@@ -104,7 +104,7 @@ function retrieveMessages( )
 				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; margin-top:20px'></div>";
-				message=message+"<div class='col_two_fourth' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div>";
+				message=message+"<div class='col_two_fourth'>"+obj.message_data.message+"</div>";
 				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 			message=message+"</div>";
@@ -146,22 +146,26 @@ function retrieveBuilds( )
 			
 			var builds = '';
 
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Build Type : </div>";
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.build_id +"</div>";
-			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+			builds=builds+"<div class='row' style='border-bottom:1px solid #ccc; margin-bottom:20px;'>";
+
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Build Type : </div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.build_id +"</div>";
+				builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
-			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
+				builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:40px'></div>";
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
-			builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.build_data.name +"</div>";
-			builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:40px'></div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.build_data.name +"</div>";
+				builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+
+			builds=builds+"</div>";
 
 
 
