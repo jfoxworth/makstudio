@@ -72,38 +72,42 @@ function retrieveMessages( )
 			
 			var message = '';
 
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.name +"</div>";
-			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+			message=message+"<div class='row'>";
+
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.name +"</div>";
+				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Date : </div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
-			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Date : </div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
+				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Phone : </div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.phone +"</div>";
-			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Phone : </div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.phone +"</div>";
+				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Email : </div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.email +"</div>";
-			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Email : </div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.email +"</div>";
+				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Subject : </div>";
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"</div>";
-			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Subject : </div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"</div>";
+				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
-			message=message+"<div class='col_one_fourth' style='margin-bottom:10px; margin-top:20px'></div>";
-			message=message+"<div class='col_two_fourth' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div>";
-			message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; margin-top:20px'></div>";
+				message=message+"<div class='col_two_fourth' style='border-bottom:1px solid #ccc'>"+obj.message_data.message+"</div>";
+				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+
+			message=message+"</div>";
 
 
 			$("#messageList").append(message);
