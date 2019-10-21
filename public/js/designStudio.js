@@ -592,8 +592,8 @@ $(document).ready(function()	{
 	}).on('init', pickr => {
 		inputElement.value = pickr.getSelectedColor().toRGBA().toString(0);
 	}).on('save', color => {
-		console.log('I should be saving the color - '+inputBackElement.value);
-		console.log(backPickr);
+		console.log('I should be saving the color - '+inputElement.value);
+		console.log(pickr);
 		inputElement.value = color.toRGBA().toString(0);
 		pickr.hide();
 		model_api.parameters.updateAsync({name: 'Colored MDF', value: inputElement.value });
@@ -606,7 +606,7 @@ $(document).ready(function()	{
 
 	const inputBackElement = document.querySelector('.backpickr');
 
-	const backpickr = new Pickr({
+	const backPickr = new Pickr({
 	  el: inputBackElement,
 	  useAsButton: true,
 	  default: '#42445A',
@@ -648,7 +648,7 @@ $(document).ready(function()	{
 		inputBackElement.value = color.toRGBA().toString(0);
 		console.log('I should be saving the back color - '+inputBackElement.value);
 		console.log(backPickr);
-		pickr.hide();
+		backPickr.hide();
 		model_api.parameters.updateAsync({name: 'Back Panel Color', value: inputBackElement.value });
 		makModel['build_data']['componentValues']['Back Panel Color'] = inputBackElement.value;
 
