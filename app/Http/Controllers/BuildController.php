@@ -95,6 +95,22 @@ class BuildController extends Controller
         $thisBuild['build_data'] = json_encode($thisData['build_data']);
     }
 
+
+
+    /**
+     * Pull all of the data for one build
+     *
+     * @param  \App\Build  $build
+     * @return \Illuminate\Http\Response
+     */
+    public function buildData($buildID)
+    {
+        echo('Got here with '.$buildID);
+		return Build::findOrFail($buildID);
+    }
+
+
+
     /**
      * Remove the specified resource from storage.
      *

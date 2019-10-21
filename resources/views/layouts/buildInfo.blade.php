@@ -42,7 +42,7 @@
 
 	@include('sections.javasfiles')
 
-    <script type="text/javascript" src="/js/buildInfo.js"></script>
+    <script type="text/javascript" src="/js/buildPage.js"></script>
 
 
 

@@ -156,7 +156,7 @@ function retrieveBuilds( )
 
 				builds=builds+"<div class='col_one_fourth' style='margin-bottom:40px'></div>";
 				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
-				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'><a href='/buildInfo/"+obj.build_data.id+"'>"+ obj.build_data.name +"</a></div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'><a href='/buildInfo/"+obj.id+"'>"+ obj.build_data.name +"</a></div>";
 				builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";

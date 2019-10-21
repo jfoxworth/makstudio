@@ -13,6 +13,10 @@
 
 
 
+// Calls to pull pages
+
+
+
 // Landing page (eventually)
 Route::get('/', function () { return view('layouts.landing'); });
 
@@ -58,9 +62,11 @@ Route::get('/designStudio', function () { return view('layouts.designStudio');  
 
 
 // Individual build page
-Route::get('/buildInfo', function () { return view('layouts.buildInfo'); });
+Route::get('/buildInfo/{buildID}', function () { return view('layouts.buildInfo'); });
 
 
+
+// Calls to pull data
 
 
 // Retrieve all user models
@@ -89,6 +95,10 @@ Route::post('/messages', 'MessageController@store');
 // Retrieve all builds
 Route::get('/allBuilds/{offset}', 'BuildController@indexAll');
 
+
+
+// Retrieve a builds
+Route::get('/buildData/{buildNum}', 'BuildController@buildData');
 
 
 Auth::routes();
