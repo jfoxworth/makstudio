@@ -49,6 +49,8 @@ $(document).ready(function()	{
 function retrieveBuild( )
 {
 
+	console.log('I am in the retrieve build function');
+
 	var buildNumber = window.location.href.replace("http://www.makstudio.us/buildInfo/","");
 
 	$.ajax({

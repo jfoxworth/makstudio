@@ -105,7 +105,6 @@ class BuildController extends Controller
      */
     public function buildData($buildID)
     {
-        echo('Got here with '.$buildID);
 		return Build::findOrFail($buildID);
     }
 
