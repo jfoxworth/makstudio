@@ -592,10 +592,12 @@ $(document).ready(function()	{
 	}).on('init', pickr => {
 		inputElement.value = pickr.getSelectedColor().toRGBA().toString(0);
 	}).on('save', color => {
+		console.log('I should be saving the color - '+inputBackElement.value);
+		console.log(backPickr);
 		inputElement.value = color.toRGBA().toString(0);
 		pickr.hide();
-		model_api.parameters.updateAsync({name: 'Colored MDF', value: $('#'+event.target.id).val() });
-		makModel['build_data']['componentValues']['Colored MDF'] = $('#'+event.target.id).val();
+		model_api.parameters.updateAsync({name: 'Colored MDF', value: inputElement.value });
+		makModel['build_data']['componentValues']['Colored MDF'] = inputElement.value;
 
 	})
 
@@ -641,12 +643,14 @@ $(document).ready(function()	{
 	    }
 	  }
 	}).on('init', pickr => {
-	  inputBackElement.value = pickr.getSelectedColor().toRGBA().toString(0);
+	  inputBackElement.value = backPickr.getSelectedColor().toRGBA().toString(0);
 	}).on('save', color => {
 		inputBackElement.value = color.toRGBA().toString(0);
+		console.log('I should be saving the back color - '+inputBackElement.value);
+		console.log(backPickr);
 		pickr.hide();
-		model_api.parameters.updateAsync({name: 'Back Panel Color', value: $('#'+event.target.id).val() });
-		makModel['build_data']['componentValues']['Back Panel Color'] = $('#'+event.target.id).val();
+		model_api.parameters.updateAsync({name: 'Back Panel Color', value: inputBackElement.value });
+		makModel['build_data']['componentValues']['Back Panel Color'] = inputBackElement.value;
 
 	})
 
