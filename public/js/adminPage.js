@@ -146,6 +146,7 @@ function retrieveBuilds( )
 			
 			var builds = '';
 
+
 			builds=builds+"<div class='row' style='border-bottom:1px solid #ccc; margin-bottom:20px;'>";
 
 				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
@@ -153,16 +154,14 @@ function retrieveBuilds( )
 				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.build_id +"</div>";
 				builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
-
-				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
-				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
-				builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
-
-
 				builds=builds+"<div class='col_one_fourth' style='margin-bottom:40px'></div>";
 				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
-				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.build_data.name +"</div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'><a href='/buildInfo/+"obj.build_data.id"+'>"+ obj.build_data.name +"</a></div>";
+				builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Date Created : </div>";
+				builds=builds+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
 				builds=builds+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
 
 			builds=builds+"</div>";

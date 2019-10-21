@@ -57,6 +57,12 @@ Route::get('/admin', function () { return view('layouts.admin'); });
 Route::get('/designStudio', function () { return view('layouts.designStudio');  });
 
 
+// Individual build page
+Route::get('/buildInfo', function () { return view('layouts.buildInfo'); });
+
+
+
+
 // Retrieve all user models
 Route::get('/getModels', 'BuildController@index');
 
@@ -82,6 +88,7 @@ Route::post('/messages', 'MessageController@store');
 
 // Retrieve all builds
 Route::get('/allBuilds/{offset}', 'BuildController@indexAll');
+
 
 
 Auth::routes();

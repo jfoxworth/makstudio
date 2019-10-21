@@ -7,9 +7,13 @@
 
 	<div class="container-wide clearfix">
 
-		<table id="buildList">
+		<div id="messageList" class="divcenter"></div>
 
-		</table>
+	</div>
+
+	<div class="container-wide clearfix">
+
+		<div id="buildList" class="divcenter"></div>
 
 	</div>
 
