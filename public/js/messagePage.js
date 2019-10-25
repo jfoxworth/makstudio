@@ -103,7 +103,12 @@ function retrieveMessages( )
 
 
 			messageText = messageText+"<div class='row messageText nomargin' id='text"+obj.id+"'>";
-				messageText = messageText+obj.message_data.message;
+				messageText = messageText+"<h4>"+obj.message_data.subject+"</h4>";
+				messageText = messageText+"<div>From : "+obj.message_data.name+"</div>";
+				messageText = messageText+"<div>Date : "+obj.created_at+"</div>";
+				if (obj.status == 0 ) { messageText = messageText+"<div>Status : Unread</div>"; }
+				if (obj.status == 1 ) { messageText = messageText+"<div>Status : Read</div>"; }
+				messageText = messageText+"<div style='margin-top:20px'>"+obj.message_data.message+"</div>";
 			messageText = messageText+"</div>";
 
 		});

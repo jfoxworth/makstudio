@@ -8,7 +8,7 @@
 	<div class="container clearfix">
 
 		<!-- The column on the left listing the message details -->
-		<div class="col_one_third"
+		<div class="col_one_third nomargin"
 			 style="border-right:1px solid #ccc"
 			 id="messageList">
 		</div>
@@ -16,7 +16,7 @@
 
 
 		<!-- The text of a message that is selected -->
-		<div class="col_two_third col_last"
+		<div class="col_two_third col_last nomargin"
 			 id="messageText">
 		</div>
 		<!-- / Message Text -->
