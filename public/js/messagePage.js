@@ -36,6 +36,7 @@ $(document).ready(function()	{
 		$('.messageText').hide();
 
 		var thisID = $("#"+event.target.id).closest('.messageBlock').attr('id');
+		console.log('The ID is '+thisID);
 		$("#text"+thisID).show();
 
 
