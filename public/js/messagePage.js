@@ -66,46 +66,22 @@ function retrieveMessages( )
 		console.log('Messages are ...');
 		console.log(data);
 
+		var message = '';
+
 		$.each(data, function(index, obj){
 
 			obj.message_data = JSON.parse(obj.message_data);
 			
-			var message = '';
 
-			message=message+"<div class='row' style='border-bottom:1px solid #ccc; margin-bottom:20px'>";
+			message=message+"<div class='row' style='border-bottom:1px solid #ccc; margin-bottom:10px; padding:10px 5px'>";
 
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Name : </div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.name +"</div>";
-				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_two_third'>";
+					message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"<br>"+ obj.message_data.name +"</div>";
+				message=message+"</div>";
 
-
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Date : </div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
-				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
-
-
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Phone : </div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.phone +"</div>";
-				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
-
-
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Email : </div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.email +"</div>";
-				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
-
-
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'></div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; font-weight:bold;'>Subject : </div>";
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"</div>";
-				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
-
-				message=message+"<div class='col_one_fourth' style='margin-bottom:10px; margin-top:20px'></div>";
-				message=message+"<div class='col_two_fourth'>"+obj.message_data.message+"</div>";
-				message=message+"<div class='col_one_fourth col_last' style='margin-bottom:10px'></div>";
+				message=message+"<div class='col_one_third col_last'>";
+					message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
+				message=message+"</div>";
 
 			message=message+"</div>";
 

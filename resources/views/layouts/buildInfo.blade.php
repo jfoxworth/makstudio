@@ -3,50 +3,48 @@
 <html dir="ltr" lang="en-US">
 <head>
 
-	@include('sections.head')
+    @include('sections.head')
 
-	<!-- Document Title
-	============================================= -->
-	<title>Mak Studios - Build Data</title>
+    <!-- Document Title
+    ============================================= -->
+    <title>Mak Studios - Builds Page</title>
 
 </head>
 
 <body class="stretched">
 
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper" class="clearfix">
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
 
-		@include('sections.thirdHeader')
+        @include('sections.thirdHeader')
+
+        @include("sections.builds.title")
 
 
-		<!-- Content
-		============================================= -->
-		<section id="content" style="margin-bottom:0px;">
+        <!-- Content
+        ============================================= -->
+        <section id="content">
 
-			<div class="content-wrap" style="padding-top:20px">
+            <div class="content-wrap">
 
-				@include("sections.buildInfo.buildInfoBody")
+                @include("sections.admin.mainAdmin")
 
-			</div>
+            </div>
 
-		</section><!-- #content end -->
+        </section><!-- #content end -->
 
-		@include('sections.footer')
+        @include('sections.footer')
 
-	</div><!-- #wrapper end -->
+    </div><!-- #wrapper end -->
 
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
 
-	@include('sections.javasfiles')
+    @include('sections.javasfiles')
 
     <script type="text/javascript" src="/js/buildPage.js"></script>
-
-
-
-
 
 </body>
 </html>

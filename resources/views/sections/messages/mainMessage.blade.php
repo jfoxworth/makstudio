@@ -5,9 +5,20 @@
 		<span>Messages are arranged by the date that they are received</span>
 	</div>
 
-	<div class="container-wide clearfix">
+	<div class="container clearfix">
 
-		<div id="messageList" class="divcenter"></div>
+		<!-- The column on the left listing the message details -->
+		<div class="col_one_third divcenter"
+			 id="messageList">
+		</div>
+		<!-- / Message List -->
+
+
+		<!-- The text of a message that is selected -->
+		<div class="col_two_third col_last divcenter"
+			 id="messageText">
+		</div>
+		<!-- / Message Text -->
 
 	</div>
 

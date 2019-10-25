@@ -19,8 +19,6 @@
 
         @include('sections.thirdHeader')
 
-        @include("sections.messages.title")
-
 
         <!-- Content
         ============================================= -->
