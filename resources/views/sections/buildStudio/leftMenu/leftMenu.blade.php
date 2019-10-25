@@ -9,7 +9,7 @@
 
 
 
-				<h4 class="center" style="margin-bottom:5px; margin-top:10px">Select Build</h4>
+				<h4 class="center" style="margin-bottom:5px; margin-top:10px">Select Model and Build</h4>
 
 				<div class="row divcenter">
 
@@ -28,3 +28,9 @@
 				@include('sections.buildStudio.leftMenu.finWall');
 				@include('sections.buildStudio.leftMenu.backlit');
 				@include('sections.buildStudio.leftMenu.faceted');
+
+			</div>
+
+		</div>
+
+	</div>
