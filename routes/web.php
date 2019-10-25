@@ -65,6 +65,10 @@ Route::get('/messages', function () { return view('layouts.messages'); });
 Route::get('/designStudio', function () { return view('layouts.designStudio');  });
 
 
+// Build Studio
+Route::get('/buildStudio/{buildID}', function () { return view('layouts.buildStudio');  });
+
+
 // Individual build page
 Route::get('/buildInfo/{buildID}', function () { return view('layouts.buildInfo'); });
 
