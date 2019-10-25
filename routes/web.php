@@ -57,6 +57,10 @@ Route::get('/aboutUs', function () { return view('layouts.aboutUs'); });
 Route::get('/admin', function () { return view('layouts.admin'); });
 
 
+// Messages page
+Route::get('/messages', function () { return view('layouts.messages'); });
+ 
+
 // Design Studio
 Route::get('/designStudio', function () { return view('layouts.designStudio');  });
 
