@@ -84,7 +84,7 @@ function retrieveMessages( )
 
 			obj.message_data = JSON.parse(obj.message_data);
 			
-			message=message+"<div id='"+obj.id+"' class='row messageBlock hoverMe greyHover' style='border-bottom:1px solid #ccc; margin-bottom:10px; padding:10px 5px'>";
+			message=message+"<div id='"+obj.id+"' class='row messageBlock hoverMe greyHover' style='border-bottom:1px solid #ccc; margin:0px; padding:10px 5px'>";
 
 				message=message+"<div id='name"+obj.id+"' class='col_two_third'>";
 					message=message+""+obj.message_data.subject +"<br>"+ obj.message_data.name;
@@ -99,9 +99,12 @@ function retrieveMessages( )
 				messageText = messageText+obj.message_data.message;
 			messageText = messageText+"</div>";
 
-
-			$("#messageList").append(message);
 		});
+
+		$("#messageList").append(message);
+		$("#messageText").append(messageText);
+
+		$('.messageText').hide();
 
 	});
 
