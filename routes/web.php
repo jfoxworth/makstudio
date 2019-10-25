@@ -85,8 +85,8 @@ Route::put('/saveModel', 'BuildController@update');
 Route::delete('/deleteModel/{id}', 'BuildController@destroy');
 
 
-// Retrieve all Messages
-Route::get('/messages/{offset}', 'MessageController@index');
+// Retrieve Messages
+Route::get('/messages/{offset}/{type}', 'MessageController@index');
 
 // Save a Message
 Route::post('/messages', 'MessageController@store');

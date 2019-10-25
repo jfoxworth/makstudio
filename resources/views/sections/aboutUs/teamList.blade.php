@@ -14,10 +14,10 @@
 
 				<div class="team team-list clearfix">
 					<div class="team-image">
-						<img src="https://makstudio.s3.us-east-2.amazonaws.com/lizCordil.png" alt="Liz Cordil">
+						<img src="https://makstudio.s3.us-east-2.amazonaws.com/lizCordil.png" alt="Liz Cordill">
 					</div>
 					<div class="team-desc">
-						<div class="team-title"><h4>Liz Cordil</h4><span>Co-Founder, AIA, RID</span></div>
+						<div class="team-title"><h4>Liz Cordill</h4><span>Co-Founder, AIA, RID</span></div>
 						<div class="team-content">Liz is a licensed architect and interior designer with 15 years of experience in the construction industry. She specializes in making sure we are ahead of the curve Liz is our business expert, planner, teacher, counselor, etc. She got to meet Warren Buffet, Richard Branson and Michael Bloomberg all in one day. She always gives the best feedback. Ask her anything.</div>
 					</div>
 				</div>

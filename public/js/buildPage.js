@@ -62,6 +62,9 @@ function retrieveBuild( )
 		console.log('Build Data is ...');
 		console.log(data);
 
+		var buildData = data;
+		buildData.build_data = JSON.parse( buildData.build_data );
+
 	});
 
 
