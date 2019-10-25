@@ -35,12 +35,9 @@ $(document).ready(function()	{
 		// Hide and display the appropriate items
 		$('.messageText').hide();
 
-		console.log('SHould be displaying text'+event.target.id);
+		console.log(event);
 		$("#text"+event.target.id).show();
 
-
-		// Retrieve the model data for the user
-		retrieveModels();
 
 	});
 
