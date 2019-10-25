@@ -35,10 +35,17 @@ $(document).ready(function()	{
 		// Hide and display the appropriate items
 		$('.messageText').hide();
 
+
+		// Show the text for the message selected
 		var thisID = $("#"+event.target.id).closest('.messageBlock').attr('id');
-		console.log('The ID is '+thisID);
 		$("#text"+thisID).show();
 
+
+		// Remove the current item class from all items
+		$(".messageBlock").removeClass('currentItem');
+
+		// Add the current item class to selected item
+		$("#"+thisID).addClass('currentItem');
 
 	});
 
@@ -84,7 +91,7 @@ function retrieveMessages( )
 
 			obj.message_data = JSON.parse(obj.message_data);
 			
-			message=message+"<div id='"+obj.id+"' class='row messageBlock hoverMe greyHover' style='border-bottom:1px solid #ccc; margin:0px; padding:10px 5px'>";
+			message=message+"<div id='"+obj.id+"' class='row messageBlock hoverMe greyHover nomargin' style='border-bottom:1px solid #ccc; margin:0px; padding:10px 5px'>";
 
 				message=message+"<div id='name"+obj.id+"' class='col_two_third'>";
 					message=message+""+obj.message_data.subject +"<br>"+ obj.message_data.name;
@@ -95,7 +102,7 @@ function retrieveMessages( )
 			message=message+"</div>";
 
 
-			messageText = messageText+"<div class='row messageText' id='text"+obj.id+"'>";
+			messageText = messageText+"<div class='row messageText nomargin' id='text"+obj.id+"'>";
 				messageText = messageText+obj.message_data.message;
 			messageText = messageText+"</div>";
 
