@@ -83,7 +83,7 @@ function retrieveMessages( )
 
 			obj.message_data = JSON.parse(obj.message_data);
 			
-			message=message+"<div id='"+obj.id+"' class='row messageBlock hoverMe greyHover' style='border-bottom:1px solid #ccc; margin-bottom:10px; padding:10px 5px'>";
+			message=message+"<div id='body"+obj.id+"' class='row messageBlock hoverMe greyHover' style='border-bottom:1px solid #ccc; margin-bottom:10px; padding:10px 5px'>";
 
 				message=message+"<div class='col_two_third'>";
 					message=message+""+obj.message_data.subject +"<br>"+ obj.message_data.name;

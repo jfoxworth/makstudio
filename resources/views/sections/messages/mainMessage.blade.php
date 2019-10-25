@@ -9,6 +9,7 @@
 
 		<!-- The column on the left listing the message details -->
 		<div class="col_one_third"
+			 style="border-right:1px solid #ccc"
 			 id="messageList">
 		</div>
 		<!-- / Message List -->
