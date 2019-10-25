@@ -13,7 +13,7 @@
 
 			<div class="tab-content clearfix" id="tabs-1">
 
-				@include('sections.buildStudio.leftMenu.leftMenu');
+				@include('sections.buildStudio.leftMenu.leftMenu')
 
 				<!-- The main area for the three.js model -->
 				<div class="col_last col_three_fourth topmargin nobottommargin">
@@ -26,7 +26,7 @@
 
 			<div class="tab-content clearfix" id="tabs-2">
 
-				@include('sections.buildStudio.buildTimeline');
+				@include('sections.buildStudio.buildTimeline')
 
 			</div>
 
