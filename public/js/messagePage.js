@@ -35,8 +35,8 @@ $(document).ready(function()	{
 		// Hide and display the appropriate items
 		$('.messageText').hide();
 
-		console.log(event);
-		$("#text"+event.target.id).show();
+		var thisID = $("#"+event.target.id).closest('.messageBlock').attr('id');
+		$("#text"+thisID).show();
 
 
 	});
@@ -83,13 +83,13 @@ function retrieveMessages( )
 
 			obj.message_data = JSON.parse(obj.message_data);
 			
-			message=message+"<div id='body"+obj.id+"' class='row messageBlock hoverMe greyHover' style='border-bottom:1px solid #ccc; margin-bottom:10px; padding:10px 5px'>";
+			message=message+"<div id='"+obj.id+"' class='row messageBlock hoverMe greyHover' style='border-bottom:1px solid #ccc; margin-bottom:10px; padding:10px 5px'>";
 
-				message=message+"<div class='col_two_third'>";
+				message=message+"<div id='name"+obj.id+"' class='col_two_third'>";
 					message=message+""+obj.message_data.subject +"<br>"+ obj.message_data.name;
 				message=message+"</div>";
 
-				message=message+"<div class='col_one_third col_last'>"+ obj.created_at +"</div>";
+				message=message+"<div id='date"+obj.id+"' class='col_one_third col_last'>"+ obj.created_at +"</div>";
 
 			message=message+"</div>";
 
