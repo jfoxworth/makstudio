@@ -20,10 +20,6 @@ $(document).ready(function()	{
 	retrieveMessages();
 
 
-	// Load the build
-	retrieveBuilds();
-
-
 
 
 	/*---------------------------------------------------
@@ -31,6 +27,23 @@ $(document).ready(function()	{
 		Things that are responses to actions
 
 	----------------------------------------------------*/
+
+
+	// When the user wants to see the list of models that they have saved
+	$(document).on('click', '.messageBlock', function(event)
+	{	
+		// Hide and display the appropriate items
+		$('.messageText').hide();
+
+		console.log('SHould be displaying text'+event.target.id);
+		$("#text"+event.target.id).show();
+
+
+		// Retrieve the model data for the user
+		retrieveModels();
+
+	});
+
 
 });
 
@@ -67,23 +80,26 @@ function retrieveMessages( )
 		console.log(data);
 
 		var message = '';
+		var messageText = '';
 
 		$.each(data, function(index, obj){
 
 			obj.message_data = JSON.parse(obj.message_data);
 			
-
-			message=message+"<div class='row' style='border-bottom:1px solid #ccc; margin-bottom:10px; padding:10px 5px'>";
+			message=message+"<div id='"+obj.id+"' class='row messageBlock hoverMe greyHover' style='border-bottom:1px solid #ccc; margin-bottom:10px; padding:10px 5px'>";
 
 				message=message+"<div class='col_two_third'>";
-					message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.message_data.subject +"<br>"+ obj.message_data.name +"</div>";
+					message=message+""+obj.message_data.subject +"<br>"+ obj.message_data.name;
 				message=message+"</div>";
 
-				message=message+"<div class='col_one_third col_last'>";
-					message=message+"<div class='col_one_fourth' style='margin-bottom:10px'>"+ obj.created_at +"</div>";
-				message=message+"</div>";
+				message=message+"<div class='col_one_third col_last'>"+ obj.created_at +"</div>";
 
 			message=message+"</div>";
+
+
+			messageText = messageText+"<div class='row messageText' id='text"+obj.id+"'>";
+				messageText = messageText+obj.message_data.message;
+			messageText = messageText+"</div>";
 
 
 			$("#messageList").append(message);
