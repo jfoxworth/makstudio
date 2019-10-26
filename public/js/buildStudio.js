@@ -65,6 +65,10 @@ $(document).ready(function()	{
 	$('#benchDimensionsButton').parent().addClass('currentParameter');
 
 
+	// Get the builds for the model
+	getBuilds( window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
+
+
 	// Initialize data to global variable
 	makStudio = initializeData();
 	
@@ -667,6 +671,30 @@ $(document).ready(function()	{
 
 
 
+
+
+
+/*------------------------------------------------------------*
+
+	This function gets all of the instances for a user
+
+/*------------------------------------------------------------*/
+function getBuilds( id )
+{
+
+
+	$.ajax({
+		url : "/getBuilds/"+id,
+		method :"get"
+
+	}).done(function(data) 
+	{
+
+		console.log(data);
+
+	});
+
+}
 
 
 

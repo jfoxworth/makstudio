@@ -104,9 +104,11 @@ Route::post('/messages', 'MessageController@store');
 Route::get('/allBuilds/{offset}', 'BuildController@indexAll');
 
 
-
 // Retrieve a builds
 Route::get('/buildData/{buildNum}', 'BuildController@buildData');
+
+// Retrieve builds for an instance
+Route::get('/getBuilds/{id}', 'BuildController@getBuilds');
 
 
 Auth::routes();
