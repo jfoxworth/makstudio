@@ -112,6 +112,24 @@ $(document).ready(function()	{
 	/*-----------------------------------------------------------------------------*/
 
 
+	$('#buildID').change(function(event)	
+	{	
+		buildData.forEach(function(obj) 
+		{
+			if ( obj.id == $( "#buildID option:selected" ).val() )
+			{
+				makModel = obj;
+			}
+
+		});
+
+
+		reloadModel();
+
+	});
+
+
+
 	// TOP ROW OF BUTTONS
 
 	// When the user wants to see the list of models that they have saved
@@ -696,8 +714,10 @@ function getBuilds( id )
 		data.forEach(function(obj) 
 		{
 			obj.build_data = JSON.parse(obj.build_data);
-			newOptions[obj.id] = obj.build_data.name;
+			newOptions[obj.build_data.name] = obj.id;
 		});
+
+		window['buildData'] = data;
 
 
 		var $el = $("#buildID");
@@ -1214,17 +1234,6 @@ function retrieveModels(  )
 /*-------------------------------------------*/
 function reloadModel( modelID )
 {
-
-
-	userModelData.forEach(function(element) 
-	{
-		if ( element.id == modelID )
-		{
-			makModel = element
-		}
-	});
-
-	$("#modelName").text( makModel.build_data.name );
 
 
 	// viewer settings 
