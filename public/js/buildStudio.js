@@ -65,13 +65,13 @@ $(document).ready(function()	{
 	$('#benchDimensionsButton').parent().addClass('currentParameter');
 
 
-	// Get the builds for the model
-	getBuilds( window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
-
-
 	// Initialize data to global variable
 	makStudio = initializeData();
 	
+
+	// Get the builds for the model
+	getBuilds( window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
+
 
 	// Setup the initial model that the viewer will see
 	//initializeModel('bench');
@@ -733,7 +733,7 @@ function getBuilds( id )
 		if ( data.length == 1 )
 		{
 			console.log('Here');
-			window['makStudio'] = data[0];
+			window['makModel'] = data[0];
 			reloadModel();
 		}
 
