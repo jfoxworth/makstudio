@@ -14,7 +14,15 @@
 				<div class="row divcenter">
 
 					<div>
-						<select id="buildSelect"
+						<select id="instanceID"
+								class="selectpicker btn-primary modelDropdown" 
+								style="width:100%; height:35px; margin:20px 0px">
+							<option value="0">No Planter</option>
+						</select>
+					</div>
+
+					<div>
+						<select id="buildID"
 								class="selectpicker btn-primary modelDropdown" 
 								style="width:100%; height:35px; margin:20px 0px">
 							<option value="0">No Planter</option>
@@ -24,10 +32,10 @@
 				</div>
 
 
-				@include('sections.buildStudio.leftMenu.bench');
-				@include('sections.buildStudio.leftMenu.finWall');
-				@include('sections.buildStudio.leftMenu.backlit');
-				@include('sections.buildStudio.leftMenu.faceted');
+				@include('sections.buildStudio.leftMenu.bench')
+				@include('sections.buildStudio.leftMenu.finWall')
+				@include('sections.buildStudio.leftMenu.backlit')
+				@include('sections.buildStudio.leftMenu.faceted')
 
 			</div>
 
