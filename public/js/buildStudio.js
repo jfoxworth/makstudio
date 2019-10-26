@@ -70,11 +70,11 @@ $(document).ready(function()	{
 
 
 	// Initialize data to global variable
-	makStudio = initializeData();
+	//makStudio = initializeData();
 	
 
 	// Setup the initial model that the viewer will see
-	initializeModel('bench');
+	//initializeModel('bench');
 
 
 	// Set the page to display the default model
@@ -718,6 +718,7 @@ function getBuilds( id )
 		});
 
 		window['buildData'] = data;
+			console.log(newOptions);
 
 
 		var $el = $("#buildID");
@@ -731,9 +732,12 @@ function getBuilds( id )
 		// Load the first version if there is only one build
 		if ( data.length == 1 )
 		{
+			console.log('Here');
 			window['makModel'] = data[0];
 			reloadModel();
 		}
+
+
 
 	});
 
