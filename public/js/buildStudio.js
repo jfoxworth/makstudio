@@ -714,17 +714,19 @@ function getBuilds( id )
 		data.forEach(function(obj) 
 		{
 			obj.build_data = JSON.parse(obj.build_data);
-			newOptions[obj.build_data.name] = obj.id;
+			newOptions[obj.id] = obj.build_data.name;
 		});
 
 		window['buildData'] = data;
+
+		console.log(newOptions);
 
 
 		var $el = $("#buildID");
 		$el.empty(); // remove old options
 		$.each(newOptions, function(key,value) {
 		  $el.append($("<option></option>")
-		     .attr("value", value).text(key));
+		     .attr("value", key).text(value));
 		});
 
 
