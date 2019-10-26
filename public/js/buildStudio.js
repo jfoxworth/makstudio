@@ -70,7 +70,7 @@ $(document).ready(function()	{
 
 
 	// Initialize data to global variable
-	//makStudio = initializeData();
+	makStudio = initializeData();
 	
 
 	// Setup the initial model that the viewer will see
@@ -733,7 +733,7 @@ function getBuilds( id )
 		if ( data.length == 1 )
 		{
 			console.log('Here');
-			window['makModel'] = data[0];
+			window['makStudio'] = data[0];
 			reloadModel();
 		}
 
