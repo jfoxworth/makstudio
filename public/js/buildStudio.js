@@ -691,6 +691,22 @@ function getBuilds( id )
 	{
 
 		console.log(data);
+		var newOptions = {};
+
+		data.forEach(function(obj) 
+		{
+			obj.build_data = JSON.parse(obj.build_data);
+			newOptions[obj.id] = obj.build_data.name;
+		});
+
+
+		var $el = $("#buildID");
+		$el.empty(); // remove old options
+		$.each(newOptions, function(key,value) {
+		  $el.append($("<option></option>")
+		     .attr("value", value).text(key));
+		});
+
 
 	});
 
