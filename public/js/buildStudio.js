@@ -719,8 +719,6 @@ function getBuilds( id )
 
 		window['buildData'] = data;
 
-		console.log(newOptions);
-
 
 		var $el = $("#buildID");
 		$el.empty(); // remove old options
@@ -729,6 +727,13 @@ function getBuilds( id )
 		     .attr("value", key).text(value));
 		});
 
+
+		// Load the first version if there is only one build
+		if ( data.length == 1 )
+		{
+			window['makModel'] = data[0];
+			reloadModel();
+		}
 
 	});
 
