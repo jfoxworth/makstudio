@@ -1387,7 +1387,7 @@ function reloadModel( modelID )
 	and linear feet.
 
 /*-------------------------------------------*/
-function setPrice( modelName )
+function setPrice( )
 {
 
 	var modelPrice = 0;
@@ -1395,7 +1395,7 @@ function setPrice( modelName )
 	var sqFootFin = 85;
 	var sqFootBacklit = 125;
 
-	if ( modelName == 'bench' )
+	if ( makModel['design_type'] == 2 )
 	{
 		var totalLength = parseInt( makModel['build_data']['componentValues']['Twist Length'] ) + 
 						  parseInt( makModel['build_data']['componentValues']['Right Seating Length'] ) + 
@@ -1404,7 +1404,7 @@ function setPrice( modelName )
 		$('#benchPrice').html( modelPrice );
 	}
 
-	if ( modelName == 'finWall' )
+	if ( makModel['design_type'] == 3 )
 	{
 		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
@@ -1413,7 +1413,7 @@ function setPrice( modelName )
 	}
 
 
-	if ( modelName == 'backlit' )
+	if ( makModel['design_type'] == 4 )
 	{
 		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						 parseInt( makModel['build_data']['componentValues']['LENGTH OF WALL'] );
@@ -1422,7 +1422,7 @@ function setPrice( modelName )
 	}
 
 
-	if ( modelName == 'light' )
+	if ( makModel['design_type'] == 6 )
 	{
 		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						 parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
