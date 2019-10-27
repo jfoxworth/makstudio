@@ -1402,7 +1402,7 @@ function setPrice( )
 		var totalLength = parseInt( makModel['build_data']['componentValues']['Twist Length'] ) + 
 						  parseInt( makModel['build_data']['componentValues']['Right Seating Length'] ) + 
 						  parseInt( makModel['build_data']['componentValues']['Left Seating Length'] );
-		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalLength);
+		modelPrice = Math.round(makStudio['modelPrices'][2] * totalLength);
 		$('#benchPrice').html( modelPrice );
 	}
 
@@ -1410,7 +1410,7 @@ function setPrice( )
 	{
 		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
-		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalSpace / 144);
+		modelPrice = Math.round(makStudio['modelPrices'][3] * totalSpace / 144);
 		$('#finWallPrice').html( modelPrice );
 	}
 
@@ -1419,7 +1419,7 @@ function setPrice( )
 	{
 		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						 parseInt( makModel['build_data']['componentValues']['LENGTH OF WALL'] );
-		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalSpace / 144);
+		modelPrice = Math.round(makStudio['modelPrices'][4] * totalSpace / 144);
 		$('#backlitPrice').html( modelPrice );
 	}
 
@@ -1428,7 +1428,7 @@ function setPrice( )
 	{
 		var totalSpace = parseInt( makModel['build_data']['componentValues']['Height of Wall'] ) * 
 						 parseInt( makModel['build_data']['componentValues']['Lenght of Wall'] );
-		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalSpace / 144);
+		modelPrice = Math.round(makStudio['modelPrices'][5] * totalSpace / 144);
 		$('#backlitPrice').html( modelPrice );
 	}
 
@@ -2033,17 +2033,17 @@ function initializeData()
 
 
 		'modelPrices' : {
-			'bench' : 1250,
-			'finWall' : 85,
-			'backlit' : 125,
-			'light' : 125
+			2 : 1250,
+			3 : 85,
+			4 : 125,
+			5 : 125
 		},
 
 		'priceType' : {
-			'bench' : 'linear',
-			'finWall' : 'square',
-			'backlit' : 'square',
-			'light' : 'square'
+			2 : 'linear',
+			3 : 'square',
+			4 : 'square',
+			5 : 'square'
 		},
 
 		'containerNames' :{
