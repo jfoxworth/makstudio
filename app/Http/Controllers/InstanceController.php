@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Instance;
-use App\Instance;
 use Illuminate\Http\Request;
 
 class InstanceController extends Controller
