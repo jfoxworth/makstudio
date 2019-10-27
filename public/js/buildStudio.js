@@ -779,7 +779,7 @@ function getBuilds( id )
 
 			reloadModel();
 			setTimeout(function () {
-				setPrice(modelName);
+				setPrice( );
 			}, 1000);
 		}
 
@@ -825,7 +825,7 @@ function initializeModel( modelName )
 
 	setTimeout(function () {
 		setDefaultModelData(modelName);
-		setPrice(modelName);
+		setPrice();
 	}, 1000);
 
 
@@ -1000,7 +1000,7 @@ function setDefaultModelData( modelName )
 
 
 	initializeComponents( modelName );
-	setPrice( modelName );
+	setPrice( );
 	setModelGroups();
 
 
@@ -1362,7 +1362,7 @@ function reloadModel( modelID )
 	}
 
 	initializeComponents( makModel['build_id'] );
-	setPrice( modelID);
+	setPrice( );
 
 
 }
@@ -1389,6 +1389,8 @@ function reloadModel( modelID )
 /*-------------------------------------------*/
 function setPrice( )
 {
+
+	console.log('In set price');
 
 	var modelPrice = 0;
 	var linFootBench = 1250;
