@@ -15,7 +15,6 @@
 
 					<div>
 						<select id="buildID"
-								class="selectpicker btn-primary modelDropdown" 
 								style="width:100%; height:35px; margin:20px 0px">
 						</select>
 					</div>
