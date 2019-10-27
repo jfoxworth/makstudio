@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Instance;
+use App\Instance;
 use Illuminate\Http\Request;
 
 class InstanceController extends Controller
@@ -12,9 +13,9 @@ class InstanceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index( $id )
     {
-        //
+        return Instance::findOrFail( $id );
     }
 
     /**

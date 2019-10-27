@@ -69,8 +69,9 @@ $(document).ready(function()	{
 	makStudio = initializeData();
 	
 
-	// Get the builds for the model
+	// Get the build and instance for the model
 	getBuilds( window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
+	getInstance( window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
 
 
 	// Setup the initial model that the viewer will see
@@ -88,9 +89,6 @@ $(document).ready(function()	{
 		}
 	});
 
-
-	// Set the overall variable for the model type
-	window['designType'] = 'bench';
 
 
 
@@ -119,6 +117,7 @@ $(document).ready(function()	{
 			if ( obj.id == $( "#buildID option:selected" ).val() )
 			{
 				makModel = obj;
+				$( "#modelName" ).text();
 			}
 
 		});
@@ -691,10 +690,38 @@ $(document).ready(function()	{
 
 
 
+/*------------------------------------------------------------*
+
+	This function gets the instance in question
+
+/*------------------------------------------------------------*/
+function getInstance( id )
+{
+
+
+	$.ajax({
+		url : "/getInstance/"+id,
+		method :"get"
+
+	}).done(function(data) 
+	{
+
+		console.log(data);
+		window['instanceData'] = data;
+
+	});
+
+}
+
+
+
+
+
+
 
 /*------------------------------------------------------------*
 
-	This function gets all of the instances for a user
+	This function gets all of the builds for a given instance
 
 /*------------------------------------------------------------*/
 function getBuilds( id )
@@ -732,8 +759,11 @@ function getBuilds( id )
 		// Load the first version if there is only one build
 		if ( data.length == 1 )
 		{
-			console.log('Here');
 			window['makModel'] = data[0];
+		
+			// Set the overall variable for the model type
+			window['designType'] = makModel.build_data.name;
+
 			reloadModel();
 		}
 

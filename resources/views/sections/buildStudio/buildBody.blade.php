@@ -17,9 +17,10 @@
 
 				<!-- The main area for the three.js model -->
 				<div class="col_last col_three_fourth topmargin nobottommargin">
+					<div>Model Name : <div id="modelName"></div></div>
+					<div>Build Name : <div id="buildName"></div></div>
 					<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
 				</div>
-
 
 			</div>
 

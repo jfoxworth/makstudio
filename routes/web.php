@@ -110,5 +110,7 @@ Route::get('/buildData/{buildNum}', 'BuildController@buildData');
 // Retrieve builds for an instance
 Route::get('/getBuilds/{id}', 'BuildController@getBuilds');
 
+// Retrieve an instance
+Route::get('/getInstance/{id}', 'InstanceController@index');
 
 Auth::routes();
