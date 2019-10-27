@@ -1,7 +1,7 @@
 
 
 <!-- All options for the slat walls -->
-<div id="finWallSection">
+<div id="finWallSection" class="optionSection">
 
 	<!-- Options for a slat wall -->
 	<h4 class="center topmargin-sm" style="margin-bottom:5px">Select Parameter Set</h4>

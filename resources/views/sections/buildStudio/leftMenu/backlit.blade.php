@@ -2,7 +2,7 @@
 
 
 <!-- All options for the backlit walls -->
-<div id="backlitSection">
+<div id="backlitSection" class="optionSection">
 
 
 	<!-- Options for a slat wall -->

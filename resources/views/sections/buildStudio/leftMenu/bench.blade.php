@@ -1,5 +1,5 @@
 <!-- All options for the coucb -->
-<div id="benchSection">
+<div id="benchSection" class="optionSection">
 
 	<h4 class="center notopmargin" style="margin-bottom:5px">Select Parameter Set</h4>
 

@@ -708,6 +708,19 @@ function getInstance( id )
 
 		console.log(data);
 		window['instanceData'] = data;
+		$('#modelName').text(data.name);
+
+
+		$('.optionSection').hide();
+
+		if ( data.design_type == 2 ){ $('#benchSection').show(); }
+		if ( data.design_type == 3 ){ $('#finWallSection').show(); }
+		if ( data.design_type == 4 ){ $('#backlitSection').show(); }
+		if ( data.design_type == 5 ){ $('#facetedSection').show(); }
+		if ( data.design_type == 6 ){ $('#lightWallSection').show(); }
+		if ( data.design_type == 7 ){ $('#deskSection').show(); }
+		if ( data.design_type == 8 ){ $('#planterWallSection').show(); }
+		if ( data.design_type == 9 ){ $('#panelWallSection').show(); }
 
 	});
 
@@ -765,6 +778,9 @@ function getBuilds( id )
 			window['designType'] = makModel.build_data.name;
 
 			reloadModel();
+			setTimeout(function () {
+				setPrice(modelName);
+			}, 1000);
 		}
 
 
