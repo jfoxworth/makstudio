@@ -107,4 +107,28 @@
 		amplitude.getInstance().init("5cba4ba9c5e68a06978c0f426d2c71c2");
 	</script>
 
+    <script type="text/javascript">
+        $(document).ready(function()    {
+            
+            if (window.location.href == "http://www.makstudio.us")
+            {
+                amplitude.getInstance().logEvent('Home Page');
+            }
+
+            if (window.location.href == "http://www.makstudio.us/ourWork")
+            {
+                amplitude.getInstance().logEvent('Our Work Page');
+            }
+
+            if (window.location.href == "http://www.makstudio.us/aboutUs")
+            {
+                amplitude.getInstance().logEvent('About Us Page');
+            }
+
+            if (window.location.href == "http://www.makstudio.us/products")
+            {
+                amplitude.getInstance().logEvent('Products Page');
+            }
+        });
+    </script>
 

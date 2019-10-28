@@ -18,7 +18,7 @@
 					<img src="https://makstudio.s3.us-east-2.amazonaws.com/lizCordilSmall.png" alt="Liz Cordil">
 				</div>
 				<div class="team-desc team-desc-bg">
-					<div class="team-title"><h4>Liz Cordil</h4><span>Co-Founder, COO</span></div>
+					<div class="team-title"><h4>Liz Cordill</h4><span>Co-Founder, COO</span></div>
 					<a href="https://www.linkedin.com/in/liz-cordill-45b29b5/" class="social-icon inline-block si-small si-light si-rounded si-linkedin">
 						<i class="icon-linkedin"></i>
 						<i class="icon-linkedin"></i>
