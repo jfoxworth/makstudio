@@ -111,7 +111,7 @@
     <script type="text/javascript">
         $(document).ready(function()    {
             
-            if (window.location.href == "http://www.makstudio.us")
+            if (window.location.href == "http://www.makstudio.us/")
             {
                 amplitude.getInstance().logEvent('Home Page');
             }
