@@ -32,9 +32,10 @@ $(document).ready(function()	{
 	// When the user sends a message
 	$('.designStudioButton').click(function(event)
 	{
-		amplitude.getInstance().logEvent(event.target.id);
 		console.log('Here - '+event.target.id);
 		console.log(event);
+		console.log($(event.target).closest('.designStudioButton'));
+		amplitude.getInstance().logEvent(event.target.id);
 		setTimeout(function () 
 		{
 			//window.location.href = "http://www.makstudio.us/designStudio";
