@@ -34,9 +34,10 @@ $(document).ready(function()	{
 	{
 		amplitude.getInstance().logEvent(event.target.id);
 		console.log('Here - '+event.target.id);
+		console.log(event);
 		setTimeout(function () 
 		{
-			window.location.href = "http://www.makstudio.us/designStudio";
+			//window.location.href = "http://www.makstudio.us/designStudio";
 		}, 2000);
 	});
 
