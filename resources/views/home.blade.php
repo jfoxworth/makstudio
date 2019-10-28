@@ -18,27 +18,27 @@
 
 
 					<table>
-						<tr><th>Number</th><th>Model Name</th><th>Model Type</th><th>Date Created</th></tr>
+						<tr><th>Number</th><th>Model Type</th><th>Model Name</th><th>Date Created</th></tr>
 						@foreach ($instanceData as $instance)
 
 							<tr>
 								<td>{{$loop->iteration}}</td>
 
-								@if ( $instance->design_type ) == 2 )
+								@if ( $instance->design_type == 2 )
 									<td>Planter Bench</td>
-								@elseif ( $instance->design_type ) == 3 )
+								@elseif ( $instance->design_type == 3 )
 									<td>Fin Wall</td>
-								@elseif ( $instance->design_type ) == 4 )
+								@elseif ( $instance->design_type == 4 )
 									<td>Backlit Wall</td>
-								@elseif ( $instance->design_type ) == 5 )
+								@elseif ( $instance->design_type == 5 )
 									<td>Faceted Wall</td>
-								@elseif ( $instance->design_type ) == 6 )
+								@elseif ( $instance->design_type == 6 )
 									<td>Light Wall</td>
-								@elseif ( $instance->design_type ) == 7 )
+								@elseif ( $instance->design_type == 7 )
 									<td>Office Desk</td>
-								@elseif ( $instance->design_type ) == 8 )
+								@elseif ( $instance->design_type == 8 )
 									<td>Planter Wall</td>
-								@elseif ( $instance->design_type ) == 9 )
+								@elseif ( $instance->design_type == 9 )
 									<td>Panel Wall</td>
 								@endif
 								
