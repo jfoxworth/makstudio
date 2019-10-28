@@ -33,10 +33,11 @@ $(document).ready(function()	{
 	$('.designStudioButton').click(function(event)
 	{
 		amplitude.getInstance().logEvent(event.target.id);
+		console.log('Here - '+event.target.id);
 		setTimeout(function () 
 		{
 			window.location.href = "http://www.makstudio.us/designStudio";
-		}, 100);
+		}, 2000);
 	});
 
 
