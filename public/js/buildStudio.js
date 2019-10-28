@@ -1307,7 +1307,7 @@ function reloadModel( modelID )
 		{
 			if ( makModel['build_data']['componentValues'][nameComponent] !== undefined )
 			{	
-				console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[nameComponent]);
+				//console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[nameComponent]);
 				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[nameComponent] });
 			}
 		}
@@ -1318,7 +1318,7 @@ function reloadModel( modelID )
 
 	for (nameComponent in makModel.build_data.componentNames )
 	{
-		console.log('Setting '+nameComponent+' - '+makModel.build_data.componentTypes[nameComponent]+' to '+makModel.build_data.componentValues[nameComponent]);
+		//console.log('Setting '+nameComponent+' - '+makModel.build_data.componentTypes[nameComponent]+' to '+makModel.build_data.componentValues[nameComponent]);
 		if ( makModel.build_data.componentTypes[nameComponent] == 'slider' )
 		{
 			$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
@@ -1374,8 +1374,6 @@ function reloadModel( modelID )
 /*-------------------------------------------*/
 function setPrice( )
 {
-
-	console.log('In set price');
 
 	var modelPrice = 0;
 	var linFootBench = 1250;

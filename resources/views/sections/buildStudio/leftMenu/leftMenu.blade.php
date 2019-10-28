@@ -7,8 +7,9 @@
 
 			<div class="widget clearfix" style="width:100%">
 
-
-				<div class="row">Model Name : <div id="modelName"></div></div>
+				<div class="row">
+				    <div id="newBuild" class="button divcenter">Create New Build</div>
+				</div>
 
 				<h4 class="center" style="margin-bottom:5px; margin-top:10px">Select Build</h4>
 
