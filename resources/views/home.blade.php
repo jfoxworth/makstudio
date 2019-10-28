@@ -19,7 +19,11 @@
 
                     @foreach ($instanceData as $instance)
 
-                        <div>{{$instance->id}}</div>
+                        <div>
+                            <div>$loop->iteration</div>
+                            <div><a href="/buildStudio/{{$instance->id}}">{{$instance->name}}</a></div>
+                            <div>{{$instance->created_at}}</div>
+                        </div>
 
                     @endforeach
 
