@@ -690,20 +690,28 @@ function getInstance( id )
 
 		$('.optionSection').hide();
 
-		if ( data.design_type == 2 ){ $('#benchSection').show(); }
-		if ( data.design_type == 3 ){ $('#finWallSection').show(); }
-		if ( data.design_type == 4 ){ $('#backlitSection').show(); }
-		if ( data.design_type == 5 ){ $('#facetedSection').show(); }
-		if ( data.design_type == 6 ){ $('#lightWallSection').show(); }
-		if ( data.design_type == 7 ){ $('#deskSection').show(); }
-		if ( data.design_type == 8 ){ $('#planterWallSection').show(); }
-		if ( data.design_type == 9 ){ $('#panelWallSection').show(); }
+		var designType='';
+		if ( data.design_type == 2 ){ $('#benchSection').show(); designType='Bench'; }
+		if ( data.design_type == 3 ){ $('#finWallSection').show(); designType='Fin Wall'; }
+		if ( data.design_type == 4 ){ $('#backlitSection').show(); designType='Backlit Wall'; }
+		if ( data.design_type == 5 ){ $('#facetedSection').show(); designType='Faceted Wall'; }
+		if ( data.design_type == 6 ){ $('#lightWallSection').show(); designType='Light Wall'; }
+		if ( data.design_type == 7 ){ $('#deskSection').show(); designType='Desk'; }
+		if ( data.design_type == 8 ){ $('#planterWallSection').show(); designType='Planter Wall'; }
+		if ( data.design_type == 9 ){ $('#panelWallSection').show(); designType='Panel Wall'; }
+
+
+		// Place this data into the properties page
+		$('#instanceName').text(instanceData.name);
+		$('#instanceType').text(designType);
+		$('#instanceDate').text(instanceData.created_at);
+		$('#instanceBuilds').text(buildData.length);
+		$('#instanceStatus').text(instanceData.stage);
+		$('#instancePrice').text(buildData[buildData.length-1]['build_data']['price']);
 
 	});
 
 }
-
-
 
 
 
