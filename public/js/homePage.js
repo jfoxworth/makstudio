@@ -33,7 +33,10 @@ $(document).ready(function()	{
 	$('.designStudioButton').click(function(event)
 	{
 		amplitude.getInstance().logEvent(event.target.id);
-		window.location.href = "http://www.makstudio.us/designStudio";
+		setTimeout(function () 
+		{
+			window.location.href = "http://www.makstudio.us/designStudio";
+		}, 500);
 	});
 
 
