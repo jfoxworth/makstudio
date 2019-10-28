@@ -42,11 +42,9 @@
 						<div class="flip-card-inner">
 					
 							<p class="mb-2 text-white">We can create custom design architectural walls and ceilings that create a unique and beautiful look for any space.</p>
-					
-					
+										
 							<div id="Design Flip Button 1" 
-								 class="designStudioButton btn btn-outline-light mt-2" 
-								 style="color: #FFF;">
+								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
 								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
 							</div>
 
@@ -88,7 +86,12 @@
 					
 							<p class="mb-2 text-white">To add a truly new look and feel to any space, brand your business with a back lit wall.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>
+							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
+
+							<div id="Design Flip Button 2" 
+								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
+								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
+							</div>
 					
 						</div>
 					
@@ -128,7 +131,12 @@
 					
 							<p class="mb-2 text-white">Custom desks can be built to fit into any space.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>
+							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
+
+							<div id="Design Flip Button 3" 
+								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
+								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
+							</div>
 					
 						</div>
 					
@@ -174,7 +182,12 @@
 					
 							<p class="mb-2 text-white">Planter walls add a unique look and feel for any office environment.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>
+							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
+
+							<div id="Design Flip Button 4" 
+								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
+								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
+							</div>
 					
 						</div>
 					
@@ -218,7 +231,12 @@
 					
 							<p class="mb-2 text-white">Design your own faceted wall to give life to any office.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>
+							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
+
+							<div id="Design Flip Button 5" 
+								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
+								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
+							</div>
 					
 						</div>
 					
@@ -264,7 +282,12 @@
 					
 							<p class="mb-2 text-white">Choose from multiple kinds of wall panels for the home or office.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>
+							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
+
+							<div id="Design Flip Button 6" 
+								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
+								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
+							</div>
 					
 						</div>
 					
