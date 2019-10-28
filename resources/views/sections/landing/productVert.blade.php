@@ -43,8 +43,13 @@
 					
 							<p class="mb-2 text-white">We can create custom design architectural walls and ceilings that create a unique and beautiful look for any space.</p>
 					
-							<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>
 					
+							<div id="Design Flip Button 1" 
+								 class="designStudioButton btn btn-outline-light mt-2" 
+								 style="color: #FFF;">
+								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
+							</div>
+
 						</div>
 					
 					</div>

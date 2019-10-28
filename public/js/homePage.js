@@ -32,9 +32,6 @@ $(document).ready(function()	{
 	// When the user sends a message
 	$('.designStudioButton').click(function(event)
 	{
-		console.log('Here - '+event.target.id);
-		console.log(event);
-		console.log($(event.target).closest('.designStudioButton').attr('id'));
 		amplitude.getInstance().logEvent( $(event.target).closest('.designStudioButton').attr('id') );
 		setTimeout(function () 
 		{
