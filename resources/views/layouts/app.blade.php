@@ -59,10 +59,20 @@
                 amplitude.getInstance().logEvent('Register Page');
             }
 
-            if (window.location.href == "http://www.makstudio.us/register")
+            if (window.location.href == "http://www.makstudio.us/login")
             {
                 amplitude.getInstance().logEvent('Login Page');
             }
+
+            $('#regButton').click(function(event)    
+            {   
+                amplitude.getInstance().logEvent('New User');                
+            })
+
+            $('#loginButton').click(function(event)    
+            {   
+                amplitude.getInstance().logEvent('User Login');                
+            })
 
         });
     </script>
