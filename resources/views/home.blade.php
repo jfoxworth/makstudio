@@ -17,11 +17,13 @@
 					<p>You are logged in! To start a new design, go to the <a href="/designStudio">Design Studio</a>. To edit an existing design or purchase that design, click on that design below.</p>
 
 
-					<table>
-						<tr><th>Number</th><th>Model Type</th><th>Model Name</th><th>Date Created</th></tr>
+					<table style="width:100%; text-align:center;">
+						<tr style="background-color:#ccc">
+							<th>Number</th><th>Model Type</th><th>Model Name</th><th>Date Created</th>
+						</tr>
 						@foreach ($instanceData as $instance)
 
-							<tr>
+							<tr style="border-bottom:1px solid #ccc">
 								<td>{{$loop->iteration}}</td>
 
 								@if ( $instance->design_type == 2 )
@@ -40,6 +42,8 @@
 									<td>Planter Wall</td>
 								@elseif ( $instance->design_type == 9 )
 									<td>Panel Wall</td>
+								@else
+									<td></td>
 								@endif
 								
 								<td><a href="/buildStudio/{{$instance->id}}">{{$instance->name}}</a></td>
