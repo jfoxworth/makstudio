@@ -110,6 +110,11 @@
 
     <script type="text/javascript">
         $(document).ready(function()    {
+
+			if ( $('#navbarDropdown').text().replace(/\r?\n|\r/g,'').trim() != '' )
+			{
+				amplitude.getInstance().setUserId($('#navbarDropdown').text().replace(/\r?\n|\r/g,'').trim());
+			}
             
             if (window.location.href == "http://www.makstudio.us/")
             {

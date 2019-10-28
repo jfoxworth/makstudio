@@ -29,7 +29,7 @@ $(document).ready(function()	{
 	----------------------------------------------------*/
 
 
-	// When the user sends a message
+	// When the user navigates to the design studio
 	$('.designStudioButton').click(function(event)
 	{
 		amplitude.getInstance().logEvent( $(event.target).closest('.designStudioButton').attr('id') );
