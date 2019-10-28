@@ -38,8 +38,8 @@ $(document).ready(function()	{
 		amplitude.getInstance().logEvent( $(event.target).closest('.designStudioButton').attr('id') );
 		setTimeout(function () 
 		{
-			//window.location.href = "http://www.makstudio.us/designStudio";
-		}, 2000);
+			window.location.href = "http://www.makstudio.us/designStudio";
+		}, 200);
 	});
 
 
