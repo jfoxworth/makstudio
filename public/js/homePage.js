@@ -36,7 +36,7 @@ $(document).ready(function()	{
 		setTimeout(function () 
 		{
 			window.location.href = "http://www.makstudio.us/designStudio";
-		}, 500);
+		}, 100);
 	});
 
 

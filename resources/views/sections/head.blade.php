@@ -78,6 +78,7 @@
 
 	</style>
 
+    <script type="text/javascript" src="/js/jquery.js"></script>
 
 	<script type="text/javascript">
 		(function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
