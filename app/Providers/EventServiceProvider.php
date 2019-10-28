@@ -9,6 +9,19 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 
 class EventServiceProvider extends ServiceProvider
 {
+
+
+    /**
+     * The subscriber classes to register.
+     *
+     * @var array
+     */
+    protected $subscribe = [
+        'App\Listeners\ActionListener',
+    ];
+
+
+
     /**
      * The event listener mappings for the application.
      *
@@ -18,6 +31,8 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+
+
     ];
 
     /**

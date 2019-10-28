@@ -90,11 +90,11 @@ $(document).ready(function()	{
 	});
 
 
-
-
-
-
-
+	// If user is logged in, set the ID
+	if ( $('#navbarDropdown').text().replace(/\r?\n|\r/g,'').trim() != '' )
+	{
+		amplitude.getInstance().setUserId($('#navbarDropdown').text().replace(/\r?\n|\r/g,'').trim());
+	}
 
 	/*------------------------------------------------------------------------------
 
