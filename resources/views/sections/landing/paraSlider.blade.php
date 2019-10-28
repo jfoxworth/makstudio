@@ -85,9 +85,16 @@
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
 					data-endeasing="Power4.easeIn" style="z-index: 3; color:#222;">
+					<!--
 					<a href="/designStudio" class="button button-3d button-white button-large button-rounded tright nomargin" style="color: #000;">
 						<span>Create your own</span> <i class="icon-angle-right"></i>
 					</a>
+					-->
+						<div id="Design Button 1" 
+							 class="designStudioButton button button-3d button-white button-large button-rounded tright nomargin" 
+							 style="color: #000;">
+							<span>Create your own</span> <i class="icon-angle-right"></i>
+						</div>
 					</div>
 				</li>
 
@@ -198,9 +205,16 @@
 						data-endelementdelay="0.1"
 						data-endspeed="1000"
 						data-endeasing="Power4.easeIn" style="z-index: 3;">
+						<!--
 						<a href="/designStudio" class="button button-3d button-black button-large button-rounded tright nomargin" style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
 						</a>
+					-->
+						<div id="Design Button 2" 
+							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
+							 style="color: #FFF;">
+							<span>Create your own</span> <i class="icon-angle-right"></i>
+						</div>
 					</div>
 
 				</li>
