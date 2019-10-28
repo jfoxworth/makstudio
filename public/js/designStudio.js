@@ -89,8 +89,15 @@ $(document).ready(function()	{
 	window['designType'] = 'bench';
 
 
+	// If user is logged in, set the ID
+	if ( $('#navbarDropdown').text().replace(/\r?\n|\r/g,'').trim() != '' )
+	{
+		amplitude.getInstance().setUserId($('#navbarDropdown').text().replace(/\r?\n|\r/g,'').trim());
+	}
 
 
+
+	amplitude.getInstance().logEvent('Design Studio');
 
 
 
@@ -132,6 +139,8 @@ $(document).ready(function()	{
 	$('#designSave').click(function(event)	
 	{	
 		$('#modelNameModal').modal('show');
+		amplitude.getInstance().logEvent('DS Save Design');
+
 	});
 
 
@@ -149,6 +158,8 @@ $(document).ready(function()	{
 		{
 			updateModel($('#modalModelName').val() );			
 		}
+
+		amplitude.getInstance().logEvent('DS Save Model');
 	});
 
 
@@ -158,6 +169,8 @@ $(document).ready(function()	{
 	$('#recenterCamera').click(function(event)	
 	{	
 		model_api.scene.camera.zoomAsync();
+
+		amplitude.getInstance().logEvent('DS Recenter Camera');
 	});
 
 	// END OF TOP ROW OF BUTTONS
@@ -192,6 +205,9 @@ $(document).ready(function()	{
 			$('#modelNameContainer').hide();
 		}
 
+
+		amplitude.getInstance().logEvent('DS Model Type - '+designType);
+
 	});
 
 	// END OF SECOND ROW OF BUTTONS
@@ -214,6 +230,8 @@ $(document).ready(function()	{
 		// Shade the current parameter selector
 		$('.parameterSelect').parent().removeClass('currentParameter');
 		$('#'+event.target.id).parent().addClass('currentParameter');
+
+		amplitude.getInstance().logEvent('DS Parameters - '+elementToShow);
 
 	});
 
@@ -244,11 +262,13 @@ $(document).ready(function()	{
 	$('#finStyleCurved').click(function()	
 	{			
 		model_api.parameters.updateAsync({name: "Panels Type", value: 0 });
+		amplitude.getInstance().logEvent('DS Fin Wall Curved');
 	});
 
 	$('#finStyleAngled').click(function()
 	{			
 		model_api.parameters.updateAsync({name: "Panels Type", value: 1 });
+		amplitude.getInstance().logEvent('DS Fin Wall Angled');
 	});
 
 
@@ -258,6 +278,7 @@ $(document).ready(function()	{
 		$('#finMaterialBirch').addClass('currentItem');
 		$('#finMaterialLamBirch').removeClass('currentItem');
 		$('#finMaterialMDF').removeClass('currentItem');
+		amplitude.getInstance().logEvent('DS Fin Wall Birch');
 	});
 
 	$('#finMaterialLamBirch').click(function()
@@ -266,6 +287,7 @@ $(document).ready(function()	{
 		$('#finMaterialLamBirch').addClass('currentItem');
 		$('#finMaterialBirch').removeClass('currentItem');
 		$('#finMaterialMDF').removeClass('currentItem');
+		amplitude.getInstance().logEvent('DS Fin Wall Laminated Birch');
 	});
 
 
@@ -275,6 +297,7 @@ $(document).ready(function()	{
 		$('#finMaterialMDF').addClass('currentItem');
 		$('#finMaterialBirch').removeClass('currentItem');
 		$('#finMaterialLamBirch').removeClass('currentItem');
+		amplitude.getInstance().logEvent('DS Fin Wall MDF');
 	});
 
 
@@ -283,6 +306,7 @@ $(document).ready(function()	{
 	$('#backlitHeader').on('keypress',function(e) {
 		if(e.which == 13) {
 			model_api.parameters.updateAsync({name: "Header", value: $('#backlitHeader').val() });
+			amplitude.getInstance().logEvent('Backlit Header');
 		}
 	});
 
@@ -290,6 +314,7 @@ $(document).ready(function()	{
 	$('#backlitSubheader').on('keypress',function(e) {
 		if(e.which == 13) {
 			model_api.parameters.updateAsync({name: "Subheader", value: $('#backlitSubHeader').val() });
+			amplitude.getInstance().logEvent('Backlit Subheader');
 		}
 	});
 
@@ -317,7 +342,9 @@ $(document).ready(function()	{
 
 			setPrice( designType );
 
+			amplitude.getInstance().logEvent('DS - '+paramName);
 		}
+
 	});
 
 
@@ -340,6 +367,7 @@ $(document).ready(function()	{
 
 		var paramName = event.target.id.replace("Slider", "Input");
 		$('#'+paramName).val($('#'+event.target.id).val());
+		amplitude.getInstance().logEvent(paramName);
 
 	});
 
@@ -356,6 +384,7 @@ $(document).ready(function()	{
 			{
 				model_api.parameters.updateAsync({name: thisComponent, value: e.target.checked });
 				makModel['build_data']['componentValues'][thisComponent] = e.target.checked;
+				amplitude.getInstance().logEvent(thisComponent);
 			}
 		}
 
@@ -378,6 +407,7 @@ $(document).ready(function()	{
 			function(response) {
 
 				alert("File successfully uploaded", response);
+				amplitude.getInstance().logEvent('Backlit Logo Upload');
 			}
 	  	);
 	});
@@ -396,6 +426,7 @@ $(document).ready(function()	{
 			function(response) {
 
 				alert("File successfully uploaded", response);
+				amplitude.getInstance().logEvent('Finwall Logo Upload');
 			}
 	  	);
 	});
@@ -410,6 +441,7 @@ $(document).ready(function()	{
 		console.log(event.target.value);
 		$('.blockDetails').hide();
 		$('#lightGroup'+event.target.value).show();
+		amplitude.getInstance().logEvent('Lightgroup Select');
 
 	});
 
@@ -419,6 +451,7 @@ $(document).ready(function()	{
 		if(e.which == 13) 
 		{
 			bundleBlock( e.target.id );
+			amplitude.getInstance().logEvent('Light Property - '+e.target.id);
 		}
 	});
 
@@ -433,6 +466,7 @@ $(document).ready(function()	{
 			{
 
 				thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'].splice( $('#lightPicker').val(), 1 );
+				amplitude.getInstance().logEvent('Delete Light');
 
 			}
 
@@ -456,6 +490,7 @@ $(document).ready(function()	{
 					'xforms' : [1]
 				};
 				makModel['build_data']['componentValues'][thisItem]['groups'].splice( thisLength, 1, newLight);
+				amplitude.getInstance().logEvent('Add Light Group');
 
 			}
 
@@ -475,6 +510,7 @@ $(document).ready(function()	{
 				var thisLength = makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['heights'].length;
 				makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['heights'].splice( thisLength, 1, '10');
 				makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['xforms'].splice( thisLength, 1, thisLength);
+				amplitude.getInstance().logEvent('Add Light');
 
 			}
 
@@ -491,6 +527,7 @@ $(document).ready(function()	{
 			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
 			{
 				makModel['build_data']['componentValues'][thisItem]['groups'][splitKeys[0]]['heights'].splice( splitKeys[1], 1);
+				amplitude.getInstance().logEvent('Delete Light');
 
 			}
 
@@ -507,6 +544,7 @@ $(document).ready(function()	{
 	{	
 		console.log('click');
 		reloadModel( event.target.id );
+		amplitude.getInstance().logEvent('Load Model - '+event.target.id);
 	});
 
 
@@ -535,6 +573,9 @@ $(document).ready(function()	{
 				{
 					$( '#deleteMessageAlert' ).hide( );
 				}, 3000);
+
+			amplitude.getInstance().logEvent('Delete Model - '+event.target.id);
+
 		});
 		
 	});
@@ -546,6 +587,7 @@ $(document).ready(function()	{
 	{	
 		$('.modelDetails').hide();
 		$('#'+event.target.id+'Details').show();
+		amplitude.getInstance().logEvent('Model Details - '+event.target.id);
 
 
 	});
@@ -960,6 +1002,8 @@ function saveModel( modelName )
 			}, 3000);
 	});
 
+	amplitude.getInstance().logEvent('Save Model - '+makModel.id);
+
 }
 
 
@@ -1027,6 +1071,9 @@ function updateModel( modelName )
 			{
 				$( '#saveMessageAlert' ).hide( );
 			}, 3000);
+
+		amplitude.getInstance().logEvent('Update Model - '+makModel.id);
+
 	});
 
 }
@@ -1322,6 +1369,7 @@ function setPrice( modelName )
 
 
 	makModel['build_data']['price'] = modelPrice;
+
 
 }
 

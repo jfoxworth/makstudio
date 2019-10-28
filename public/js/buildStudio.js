@@ -130,6 +130,7 @@ $(document).ready(function()	{
 
 
 		reloadModel();
+		amplitude.getInstance().logEvent('Load Build - '+$( "#buildID option:selected" ).val() );
 
 	});
 
@@ -137,21 +138,6 @@ $(document).ready(function()	{
 
 	// TOP ROW OF BUTTONS
 
-	// When the user wants to see the list of models that they have saved
-	$('#designViewModels').click(function(event)	
-	{	
-		// Hide and display the appropriate items
-		$("#currentModelDisplay, #planterWallDisplay, #deskDisplay, #panelWallDisplay").hide();
-		$("#modelDisplay").show();
-		$( '#currentModelDisplay' ).html('');
-		$('.parameterSet').hide();
-		$('#modelNameContainer').hide();
-
-
-		// Retrieve the model data for the user
-		retrieveModels();
-
-	});
 
 
 	// When the user clicks on the save icon in the 
@@ -185,43 +171,13 @@ $(document).ready(function()	{
 	$('#recenterCamera').click(function(event)	
 	{	
 		model_api.scene.camera.zoomAsync();
+		amplitude.getInstance().logEvent('BS Recenter Camera');
 	});
 
 	// END OF TOP ROW OF BUTTONS
 
 
 
-	// SECOND ROW OF BUTTONS
-
-
-	// When the user clicks on one of the design type boxes to change the model type
-	$('.designType').click(function(event)	
-	{	
-		designType = event.target.id;
-
-		$( '#currentModelDisplay' ).html('');
-
-		initializeModel( event.target.id );
-
-		setModelView(event.target.id);
-
-		// Shade the current item
-		$('.designType').removeClass('currentItem');
-		$('#'+event.target.id).parent().addClass('currentItem');
-
-		if ( ( designType == "finWall" ) || ( designType == "backlit" ) || ( designType == "faceted" ) ||
-			 ( designType == "bench") || (designType == "light") )
-		{
-			$('#modelNameContainer').show();
-		
-		}else
-		{
-			$('#modelNameContainer').hide();
-		}
-
-	});
-
-	// END OF SECOND ROW OF BUTTONS
 
 
 
@@ -241,6 +197,9 @@ $(document).ready(function()	{
 		// Shade the current parameter selector
 		$('.parameterSelect').parent().removeClass('currentParameter');
 		$('#'+event.target.id).parent().addClass('currentParameter');
+
+
+		amplitude.getInstance().logEvent('BS Parameter - '+elementToShow);
 
 	});
 
@@ -271,11 +230,13 @@ $(document).ready(function()	{
 	$('#finStyleCurved').click(function()	
 	{			
 		model_api.parameters.updateAsync({name: "Panels Type", value: 0 });
+		amplitude.getInstance().logEvent('BS - Finwall Curved');
 	});
 
 	$('#finStyleAngled').click(function()
 	{			
 		model_api.parameters.updateAsync({name: "Panels Type", value: 1 });
+		amplitude.getInstance().logEvent('BS - Finwall Angled');
 	});
 
 
@@ -285,6 +246,7 @@ $(document).ready(function()	{
 		$('#finMaterialBirch').addClass('currentItem');
 		$('#finMaterialLamBirch').removeClass('currentItem');
 		$('#finMaterialMDF').removeClass('currentItem');
+		amplitude.getInstance().logEvent('BS - Finwall Birch');
 	});
 
 	$('#finMaterialLamBirch').click(function()
@@ -293,6 +255,7 @@ $(document).ready(function()	{
 		$('#finMaterialLamBirch').addClass('currentItem');
 		$('#finMaterialBirch').removeClass('currentItem');
 		$('#finMaterialMDF').removeClass('currentItem');
+		amplitude.getInstance().logEvent('BS - Finwall Laminated Birch');
 	});
 
 
@@ -302,6 +265,7 @@ $(document).ready(function()	{
 		$('#finMaterialMDF').addClass('currentItem');
 		$('#finMaterialBirch').removeClass('currentItem');
 		$('#finMaterialLamBirch').removeClass('currentItem');
+		amplitude.getInstance().logEvent('BS - Finwall MDF');
 	});
 
 
@@ -310,6 +274,7 @@ $(document).ready(function()	{
 	$('#backlitHeader').on('keypress',function(e) {
 		if(e.which == 13) {
 			model_api.parameters.updateAsync({name: "Header", value: $('#backlitHeader').val() });
+			amplitude.getInstance().logEvent('BS - Backlit Header');
 		}
 	});
 
@@ -317,6 +282,7 @@ $(document).ready(function()	{
 	$('#backlitSubheader').on('keypress',function(e) {
 		if(e.which == 13) {
 			model_api.parameters.updateAsync({name: "Subheader", value: $('#backlitSubHeader').val() });
+			amplitude.getInstance().logEvent('BS - Backlit Subheader');
 		}
 	});
 
@@ -344,6 +310,7 @@ $(document).ready(function()	{
 
 			setPrice( designType );
 
+			amplitude.getInstance().logEvent('BS - '+paramName);
 		}
 	});
 
@@ -368,6 +335,7 @@ $(document).ready(function()	{
 		var paramName = event.target.id.replace("Slider", "Input");
 		$('#'+paramName).val($('#'+event.target.id).val());
 
+		amplitude.getInstance().logEvent('BS - '+paramName);
 	});
 
 
@@ -383,6 +351,7 @@ $(document).ready(function()	{
 			{
 				model_api.parameters.updateAsync({name: thisComponent, value: e.target.checked });
 				makModel['build_data']['componentValues'][thisComponent] = e.target.checked;
+				amplitude.getInstance().logEvent('BS - Switch - '+thisComponent);
 			}
 		}
 
@@ -405,6 +374,7 @@ $(document).ready(function()	{
 			function(response) {
 
 				alert("File successfully uploaded", response);
+				amplitude.getInstance().logEvent('BS - Backlit Logo Upload');
 			}
 	  	);
 	});
@@ -423,6 +393,7 @@ $(document).ready(function()	{
 			function(response) {
 
 				alert("File successfully uploaded", response);
+				amplitude.getInstance().logEvent('BS - Finwall Logo Upload');
 			}
 	  	);
 	});
