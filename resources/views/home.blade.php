@@ -24,7 +24,7 @@
 							<tr>
 								<td>{{$loop->iteration}}</td>
 
-								@if ( $instance->design_type ) === 2 )
+								@if ( $instance->design_type ) == 2 )
 									<td>Planter Bench</td>
 								@elseif ( $instance->design_type ) == 3 )
 									<td>Fin Wall</td>
