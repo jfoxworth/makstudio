@@ -34,8 +34,8 @@ $(document).ready(function()	{
 	{
 		console.log('Here - '+event.target.id);
 		console.log(event);
-		console.log($(event.target).closest('.designStudioButton'));
-		amplitude.getInstance().logEvent(event.target.id);
+		console.log($(event.target).closest('.designStudioButton').attr('id'));
+		amplitude.getInstance().logEvent( $(event.target).closest('.designStudioButton').attr('id') );
 		setTimeout(function () 
 		{
 			//window.location.href = "http://www.makstudio.us/designStudio";
