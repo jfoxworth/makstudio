@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
 		//        return view('home');
-        $instanceData = Instance::where( 'user_id', '=', Auth::id())->orderBy('created_at')->get() );
+        $instanceData = Instance::where( 'user_id', '=', Auth::id())->orderBy('created_at')->get();
         return view('home')->with('instanceData', $instanceData);
     }
 }
