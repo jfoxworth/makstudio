@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Instance;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+		//        return view('home');
+        $instanceData = Instance::where( 'user_id', '=', Auth::id()->orderBy('created_at')->get() );
+        return view('home')->with('instanceData', $instanceData);
     }
 }

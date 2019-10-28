@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">My Designs</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,16 @@
                         </div>
                     @endif
 
-                    You are logged in! Go to the <a href="/designStudio">Design Studio</a>.
+                    <p>You are logged in! To start a new design, go to the <a href="/designStudio">Design Studio</a>. To edit an existing design or purchase that design, click on that design below.</p>
+
+
+                    @foreach ($instanceData as $instance)
+
+                        <div>{{$instance->id}}</div>
+
+                    @endforeach
+
+
                 </div>
             </div>
         </div>
