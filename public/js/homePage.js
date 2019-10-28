@@ -24,6 +24,24 @@ $(document).ready(function()	{
 
 	/*---------------------------------------------------
 
+		Amplitude Buttons
+
+	----------------------------------------------------*/
+
+
+	// When the user sends a message
+	$('.designStudioButton').click(function(event)
+	{
+		amplitude.getInstance().logEvent(event.target.id);
+		window.location.href = "http://www.makstudio.us/designStudio";
+	});
+
+
+
+
+
+	/*---------------------------------------------------
+
 		Things that are responses to actions
 
 	----------------------------------------------------*/
