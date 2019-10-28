@@ -95,6 +95,12 @@ $(document).ready(function()	{
 	{
 		amplitude.getInstance().setUserId($('#navbarDropdown').text().replace(/\r?\n|\r/g,'').trim());
 	}
+	amplitude.getInstance().logEvent('Build Page');
+	amplitude.getInstance().logEvent('Build Page - '+window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
+
+
+
+
 
 	/*------------------------------------------------------------------------------
 
