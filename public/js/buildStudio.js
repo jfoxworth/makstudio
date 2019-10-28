@@ -707,7 +707,7 @@ function getInstance( id )
 		$('#instanceDate').text(instanceData.created_at);
 		$('#instanceBuilds').text(buildData.length);
 		$('#instanceStatus').text(instanceData.stage);
-		$('#instancePrice').text(buildData[buildData.length-1]['build_data']['price']);
+		$('#instancePrice').text('$'+buildData[buildData.length-1]['build_data']['price']);
 
 	});
 
