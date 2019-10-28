@@ -6,7 +6,11 @@
 	<div class="container clearfix">
 		<h3>Call us today at <span>(713) 505-1234</span> or Email us at <span>info@makstudio.us</span></h3>
 		<span>You can also use our design studio to build and price your own slat wall, faceted wall, and others</span>
-		<a href="/designStudion" class="button button-light button-xlarge button-border button-rounded">Create Your Own</a>
+		<!--<a href="/designStudio" class="button button-light button-xlarge button-border button-rounded">Create Your Own</a>-->
+		<div id="Design Call To Action Button" 
+			 class="designStudioButton button button-light button-xlarge button-border button-rounded hoverMe" >
+			<span>Create Your Own</span>
+		</div>
 	</div>
 
 </div>

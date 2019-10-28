@@ -10,7 +10,13 @@
 			<!--<p class="lead topmargin-sm">Instead of a standard office with a generic entry space, you can have something awe inspiring and unique.</p>-->
 		</div>
 
-		<a href="/designStudio" class="button button-rounded button-white button-light button-large">Design Studio</a>
+		<!--<a href="/designStudio" class="button button-rounded button-white button-light button-large">Design Studio</a>-->
+
+		<div id="Design Work of Art Button" 
+			 class="designStudioButton button button-rounded button-white button-light button-large hoverMe" >
+			<span>Design Studio</span>
+		</div>
+
 		<!--
 		<a href="/products" class="button button-border button-rounded button-light button-large">Product List</a>
 		<a href="/designStudio" class="button button-rounded button-white button-light button-large">Design Studio</a>
