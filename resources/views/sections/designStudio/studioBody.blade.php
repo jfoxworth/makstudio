@@ -20,6 +20,85 @@
 					<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
 				</div>
 
+
+
+				<div class="col_last col_three_fourth notopmargin nobottommargin">
+					<div class="style-msg successmsg" id="saveMessageAlert">
+						<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Saved!</strong> This model can be accessed from this page in the future.
+						<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>
+					</div>
+				</div>
+
+				<div class="col_last col_three_fourth notopmargin nobottommargin">
+					<div class="style-msg alert-danger" id="deleteMessageAlert">
+						<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Deleted!</strong> A model was successfully deleted from the stored items
+						<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>
+					</div>
+				</div>
+
+
+				@guest
+				@else
+				<div class="col_last col_three_fourth topmargin nobottommargin">
+
+					<div id="modelDisplay" style="width:900px; height:600px;">
+						
+						<div class="row justify-content-center">
+
+							<div class="col-md-10">
+
+								<div class="card">
+
+									<div class="card-header">Saved Models for user {{{ Auth::user()->name }}} - {{{ Auth::user()->email }}}</div> 
+
+									<div class="card-body">
+										<div id="userModelList"></div>
+
+									</div>
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				@endguest
+
+
+
+				<div class="col_last col_three_fourth notopmargin nobottommargin">
+					<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
+					<div id="modelNameContainer" class="topmargin row"><i class="h4 icon-file"></i>  <div id="modelName" style="font-size:24px; margin-left:10px">Unsaved Model</div></div>
+				</div>
+
+
+				<div class="col_last col_three_fourth notopmargin nobottommargin"
+					 id="planterWallDisplay">
+					@include('sections.designStudio.areaDisplays.planterWall')
+				</div>
+
+
+
+
+				<!--  The desk section -->
+				<div class="col_last col_three_fourth notopmargin nobottommargin"
+					 id="deskDisplay">
+					@include('sections.designStudio.areaDisplays.desk')
+				</div>
+				<!-- // Desk -->
+
+
+
+				<div class="col_last col_three_fourth notopmargin nobottommargin"
+					 id="panelWallDisplay">
+					 @include('sections.designStudio.areaDisplays.wallPanels')
+				</div>
+
+
 			</div>
 
 
@@ -41,102 +120,6 @@
 	</div>
 
 </div>
-
-
-
-<div class="container clearfix designOption">
-
-
-	@include('sections.designStudio.leftMenu.leftMenu')
-
-	<!-- The main area for the three.js model -->
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
-	</div>
-
-
-
-
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div class="style-msg successmsg" id="saveMessageAlert">
-			<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Saved!</strong> This model can be accessed from this page in the future.
-			<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>
-		</div>
-	</div>
-
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div class="style-msg alert-danger" id="deleteMessageAlert">
-			<div class="sb-msg"><i class="icon-thumbs-up"></i><strong>Model Deleted!</strong> A model was successfully deleted from the stored items
-			<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>
-		</div>
-	</div>
-
-
-	@guest
-	@else
-	<div class="col_last col_three_fourth topmargin nobottommargin">
-
-		<div id="modelDisplay" style="width:900px; height:600px;">
-			
-			<div class="row justify-content-center">
-
-				<div class="col-md-10">
-
-					<div class="card">
-
-						<div class="card-header">Saved Models for user {{{ Auth::user()->name }}} - {{{ Auth::user()->email }}}</div> 
-
-						<div class="card-body">
-							<div id="userModelList"></div>
-
-						</div>
-
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-	@endguest
-
-
-
-	<div class="col_last col_three_fourth notopmargin nobottommargin">
-		<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
-		<div id="modelNameContainer" class="topmargin row"><i class="h4 icon-file"></i>  <div id="modelName" style="font-size:24px; margin-left:10px">Unsaved Model</div></div>
-	</div>
-
-
-	<div class="col_last col_three_fourth notopmargin nobottommargin"
-		 id="planterWallDisplay">
-		@include('sections.designStudio.areaDisplays.planterWall')
-	</div>
-
-
-
-
-	<!--  The desk section -->
-	<div class="col_last col_three_fourth notopmargin nobottommargin"
-		 id="deskDisplay">
-		@include('sections.designStudio.areaDisplays.desk')
-	</div>
-	<!-- // Desk -->
-
-
-
-	<div class="col_last col_three_fourth notopmargin nobottommargin"
-		 id="panelWallDisplay">
-		 @include('sections.designStudio.areaDisplays.wallPanels')
-	</div>
-
-
-
-</div>
-
 
 
 
