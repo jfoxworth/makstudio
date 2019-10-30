@@ -1,5 +1,5 @@
 
-<div class="container clearfix buildOption">
+<div class="container clearfix">
 
 	<div class="tabs clearfix" id="tab-1">
 
