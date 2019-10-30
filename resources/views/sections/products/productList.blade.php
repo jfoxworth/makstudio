@@ -15,7 +15,7 @@
 
 			<p>Vertical slat walls, ceiling slats, or somewhere in between. We can design the perfect wall for you or you can build one of your own with our online tool.</p>
 
-			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Open Design Studio</a>
+			<a href="/designStudio/finWall" class="button button-border button-large button-rounded notopmargin noleftmargin">Open Design Studio</a>
 
 		</div>
 
@@ -25,6 +25,7 @@
 
 	</div>
 </div>
+
 
 
 
@@ -49,7 +50,7 @@
 
 			<p>Faceted walls add depth and texture to any room and define a working or entertainment space. Our tools let you design your own custom wall that we build and install.</p>
 
-			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Open Design Studio</a>
+			<a href="/designStudio/faceted" class="button button-border button-large button-rounded notopmargin noleftmargin">Open Design Studio</a>
 
 		</div>
 
@@ -77,7 +78,7 @@
 
 			<p>We custom make desks for reception areas and offices. Contact our office to get more information on what we can do and take a look at our <a href="/ourWork">previous work.</a></p>
 
-			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Desk Options</a>
+			<a href="/designStudio/desk" class="button button-border button-large button-rounded notopmargin noleftmargin">Desk Options</a>
 
 		</div>
 
@@ -107,13 +108,13 @@
 			<div class="heading-block bottommargin-sm" style="padding-top: 20px;">
 
 				<h2>Planter Walls</h2>
-				<span>Our faceted walls define any office space</span>
+				<span>Our planter walls add a touch of class to an entryway</span>
 
 			</div>
 
-			<p>Faceted walls add depth and texture to any room and define a working or entertainment space. Our tools let you design your own custom wall that we build and install.</p>
+			<p>Planter walls can be custom designed to fit any office.</p>
 
-			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Customize Your Own</a>
+			<a href="/designStudio/planter" class="button button-border button-large button-rounded notopmargin noleftmargin">Customize Your Own</a>
 
 		</div>
 
@@ -145,7 +146,7 @@
 
 			<p>Our back lit walls are custom made and can be installed whereever needed</p>
 
-			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Design Your Wall</a>
+			<a href="/designStudio/backlit" class="button button-border button-large button-rounded notopmargin noleftmargin">Design Your Wall</a>
 
 		</div>
 
@@ -181,7 +182,7 @@
 
 			<p>We carry a wide array of wall panels and can custom cut and install them.</p>
 
-			<a href="#" class="button button-border button-large button-rounded notopmargin noleftmargin">Select Your Wall Panel</a>
+			<a href="/designStudio/panel" class="button button-border button-large button-rounded notopmargin noleftmargin">Select Your Wall Panel</a>
 
 		</div>
 

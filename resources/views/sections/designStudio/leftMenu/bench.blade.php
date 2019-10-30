@@ -19,7 +19,7 @@
 
 	<div id="benchDimensions" class="parameterSet">
 
-		<div class="white-section center" style="margin:10px 0px" id="benchDepth">
+		<div class="white-section" style="margin:10px 0px" id="benchDepth">
 			<label>Bench Depth (ft)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
@@ -31,7 +31,7 @@
 			</div>
 		</div>
 
-		<div class="white-section center" style="margin:20px 0px" id="benchHeight">
+		<div class="white-section" style="margin:20px 0px" id="benchHeight">
 			<label>Bench Height (ft)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 
-		<div class="white-section center" style="margin:20px 0px" id="benchTwist">
+		<div class="white-section" style="margin:20px 0px" id="benchTwist">
 			<label>Twist Length (ft)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
@@ -60,7 +60,7 @@
 
 	<div id="benchSeat" class="parameterSet">
 
-		<div class="white-section center" style="margin:20px 0px" id="benchLeftSeat">
+		<div class="white-section" style="margin:20px 0px" id="benchLeftSeat">
 			<label>Left Seat Length (ft)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
@@ -72,7 +72,7 @@
 			</div>
 		</div>
 
-		<div>
+		<div class="white-section" style="margin:20px 0px">
 			<label>Left Planter Length</label>
 			<select id="leftPlanterLength"
 					class="selectpicker btn-primary modelDropdown" 
@@ -84,7 +84,7 @@
 			</select>
 		</div>
 
-		<div class="white-section center" style="margin:20px 0px" id="benchRightSeat">
+		<div class="white-section" style="margin:20px 0px" id="benchRightSeat">
 			<label>Right Seat Length (ft)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
@@ -96,7 +96,7 @@
 			</div>
 		</div>
 
-		<div class="white-section center" style="margin:20px 0px">
+		<div class="white-section" style="margin:20px 0px">
 			<label>Right Planter Length</label>
 			<select id="rightPlanterLength"
 					class="selectpicker btn-primary modelDropdown"
@@ -113,7 +113,7 @@
 
 
 	<!-- Price box for bench -->
-	<div class="white-section center divcenter" style="margin:20px 0px">
+	<div class="white-section divcenter" style="margin:20px 0px">
 		<label>Estimated Cost (US)</label>
 
 		<div class="divcenter priceBox">

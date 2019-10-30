@@ -87,7 +87,7 @@
 
 				</div>
 
-				<div class="row divcenter designOption">
+				<div class="row divcenter designOption bottommargin-sm">
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="deskHolder"

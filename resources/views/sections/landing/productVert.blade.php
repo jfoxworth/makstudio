@@ -26,7 +26,8 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-line-bar-graph-2 h1"></i>
+									<!--<i class="icon-line-bar-graph-2 h1"></i>-->
+									<img src="/images/icons/MAKICONS-07.png">
 									<h3 class="card-title">Slat Walls</h3>
 									<p class="card-text t400">Architectural slat walls add beauty and branding</p>
 								</div>
@@ -70,7 +71,8 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-bulb h1"></i>
+									<!--<i class="icon-bulb h1"></i>-->
+									<img src="/images/icons/MAKICONS-08.png">
 									<h3 class="card-title">Back Lit Walls</h3>
 									<p class="card-text t400">Sophisticated branding wall for any modern office</p>
 								</div>
@@ -116,7 +118,8 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-study h1"></i>
+									<!--<i class="icon-study h1"></i>-->
+									<img src="/images/icons/MAKICONS-09.png">
 									<h3 class="card-title">Custom Desks</h3>
 									<p class="card-text t400">Customizable reception desk for any office environment</p>
 								</div>
@@ -168,7 +171,8 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-line-sun h1"></i>
+									<!--<i class="icon-line-sun h1"></i>-->
+									<img src="/images/icons/MAKICONS-04.png">
 									<h3 class="card-title">Planter Walls</h3>
 									<p class="card-text t400">Adding greenery to your space</p>
 								</div>
@@ -218,7 +222,8 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-realestate-fence h1"></i>
+									<!--<i class="icon-realestate-fence h1"></i>-->
+									<img src="/images/icons/MAKICONS-06.png">
 									<h3 class="card-title">Faceted Walls</h3>
 									<p class="card-text t400">Solve your acoustical problems with style</p>
 								</div>
@@ -270,7 +275,8 @@
 							<div class="card nobg noborder text-center">
 								
 								<div class="card-body">
-									<i class="icon-realestate-bricks h1"></i>
+									<!--<i class="icon-realestate-bricks h1"></i>-->
+									<img src="/images/icons/MAKICONS-02.png">
 									<h3 class="card-title">3D Wall Panels</h3>
 									<p class="card-text t400">Bring texture to your walls</p>
 								</div>

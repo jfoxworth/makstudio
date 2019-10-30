@@ -2,7 +2,7 @@
 <!-- All options for the backlit walls -->
 <div id="facetedSection" class="optionSection" style="overflow:scroll; height:500px">
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedSpacing">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedSpacing">
 		<label>Facet Spacing</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -15,7 +15,7 @@
 	</div>
 
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedA">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedA">
 		<label>Panel A Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -28,7 +28,7 @@
 	</div>
 
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedB">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedB">
 		<label>Panel B Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -41,7 +41,7 @@
 	</div>
 
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedC">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedC">
 		<label>Panel C Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -54,7 +54,7 @@
 	</div>
 
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedD">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedD">
 		<label>Panel D Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -67,7 +67,7 @@
 	</div>
 
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedE">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedE">
 		<label>Panel E Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -80,7 +80,7 @@
 	</div>
 
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedF">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedF">
 		<label>Panel F Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -92,7 +92,7 @@
 		</div>
 	</div>
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedG">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedG">
 		<label>Panel G Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -104,7 +104,7 @@
 		</div>
 	</div>
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedH">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedH">
 		<label>Panel H Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -116,7 +116,7 @@
 		</div>
 	</div>
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedI">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedI">
 		<label>Panel I Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -128,7 +128,7 @@
 		</div>
 	</div>
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedJ">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedJ">
 		<label>Panel J Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -140,7 +140,7 @@
 		</div>
 	</div>
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedK">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedK">
 		<label>Panel K Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -153,7 +153,7 @@
 	</div>
 
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedL">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedL">
 		<label>Panel L Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">
@@ -167,7 +167,7 @@
 
 
 
-	<div class="white-section center" style="margin:20px 0px" id="facetedM">
+	<div class="white-section center" style="width:90%; margin:20px 5%;" id="facetedM">
 		<label>Panel M Rotation</label>
 		<div class="row" style="width:100%">
 			<div style="width:70%">

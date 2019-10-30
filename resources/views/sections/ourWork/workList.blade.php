@@ -160,11 +160,20 @@
 
 
 			<div class="section dark notopmargin nobottommargin noborder"
+				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/JacobWhite1.jpg'); background-size:cover; color:#222; padding:150px">
+
+				<h1 style="margin-left:300px">Jacob White</h1>
+
+			</div>
+
+			<!--
+			<div class="section dark notopmargin nobottommargin noborder"
 				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg'); background-size:cover; color:#222; padding:150px">
 
 				<h1 style="margin-left:300px">Re:3D - Branded Entryway</h1>
 
 			</div>
+		-->
 
 		</section>
 

@@ -46,7 +46,7 @@
 									<td></td>
 								@endif
 								
-								<td><a href="/buildStudio/{{$instance->id}}">{{$instance->name}}</a></td>
+								<td><a href="/designStudio/{{$instance->id}}">{{$instance->name}}</a></td>
 								<td>{{$instance->created_at}}</td>
 							</tr>
 

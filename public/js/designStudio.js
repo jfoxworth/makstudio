@@ -171,6 +171,16 @@ $(document).ready(function()	{
 	});
 
 
+
+
+	// Clicking on the login
+	$('#designLogin').click(function(event)	
+	{	
+		window.location.href="http://www.makstudio.us/login";
+	});
+
+
+
 	// When the user has given that model to be
 	// saved a name in the modal window and
 	// then proceeds to save it
@@ -912,6 +922,11 @@ function setModelView( modelName )
 	$('.parameterSet').hide();
 	$("#"+modelName+"Dimensions").show();
 	$('#'+modelName+'DimensionsButton').parent().addClass('currentParameter');
+
+
+	// Shade the current item
+	$('.designType').removeClass('currentItem');
+	$('#'+MakDesignType).parent().addClass('currentItem');
 
 
 	$( '#saveMessageAlert' ).hide( );
