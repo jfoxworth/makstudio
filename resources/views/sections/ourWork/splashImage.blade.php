@@ -8,7 +8,6 @@
 
     <div class="container clearfix">
         <h1 style="text-transform:none">M<div style="text-decoration:overline; display:inline">a</div>k Studio - Our Work</h1>
-        <span>A list of some of our previous work</span>
     </div>
 
 </section><!-- #page-title end -->

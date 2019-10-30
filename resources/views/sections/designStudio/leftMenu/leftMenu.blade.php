@@ -63,7 +63,7 @@
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="finWallHolder"
-						 data-toggle="tooltip" data-placement="top" title="Fin Ripple Wall">
+						 data-toggle="tooltip" data-placement="top" title="Slat Wall">
 						<img id="finWall" src="/images/icons/MAKICONS-07.png" width="48px">
 					</div>
 
@@ -103,7 +103,7 @@
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="panelHolder"
-						 data-toggle="tooltip" data-placement="bottom" title="Panel Wall">
+						 data-toggle="tooltip" data-placement="bottom" title="3D Wall Panels">
 						<img id="panel" src="/images/icons/MAKICONS-02.png" width="48px">
 					</div>
 
