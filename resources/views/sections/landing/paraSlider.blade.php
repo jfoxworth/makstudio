@@ -15,9 +15,9 @@
 
 
 				<!-- SLIDE  -->
-				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/bgRamada.jpeg" data-delay="12000"  data-saveperformance="off"  data-title="Full Featured Menu">
+				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/makStudioFlowerWall.jpg" data-delay="12000"  data-saveperformance="off"  data-title="Full Featured Menu">
 					<!-- MAIN IMAGE -->
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/bgRamada.jpeg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/makStudioFlowerWall.jpg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
 					<!-- LAYERS -->
 
 					<!-- LAYER NR. 1 -->
@@ -91,7 +91,7 @@
 					</a>
 					-->
 						<div id="Design Top Button 1" 
-							 modelType="bench"
+							 modelType="flowerWall"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
@@ -107,13 +107,13 @@
 				<li data-transition="slidedown" 
 					data-slotamount="1" 
 					data-masterspeed="1500" 
-					data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/bgArm.jpeg" 
+					data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/bgEldridge.jpeg" 
 					data-delay="10000"  
 					data-saveperformance="off" 
 					data-title="Customize your interior space">
 					
 					<!-- MAIN IMAGE -->
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/bgArm.jpeg"  
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/bgEldridge.jpeg"  
 						 alt="Arm Image"  
 						 data-bgposition="center top" 
 						 data-kenburns="on" 
@@ -211,7 +211,7 @@
 						</a>
 					-->
 						<div id="Design Top Button 2" 
-							 modelType="bench"
+							 modelType="finWall"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
@@ -226,9 +226,9 @@
 
 
 				<!-- SLIDE  -->
-				<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg" data-delay="12000"  data-saveperformance="off" data-title="Delicious Recipes">
+				<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/makStudioFossilWall.jpg" data-delay="12000"  data-saveperformance="off" data-title="Fossil Wall">
 					<!-- MAIN IMAGE -->
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right center">
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/makStudioFossilWall.jpg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right center">
 					<!-- LAYERS -->
 
 					<!-- LAYER NR. 2 -->
@@ -302,7 +302,7 @@
 				-->
 
 						<div id="Design Top Button 3" 
-							 modelType="bench"
+							 modelType="FossilWall"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
@@ -317,9 +317,9 @@
 
 
 				<!-- SLIDE  -->
-				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/bgHomewood.jpeg" data-delay="12000"  data-saveperformance="off"  data-title="Full Featured Menu">
+				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg" data-delay="12000"  data-saveperformance="off"  data-title="Brand Wall">
 					<!-- MAIN IMAGE -->
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/bgHomewood.jpeg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/bgRe3d.jpeg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
 					<!-- LAYERS -->
 
 					<!-- LAYER NR. 1 -->
@@ -404,7 +404,7 @@
 				-->
 
 						<div id="Design Top Button 4" 
-							 modelType="bench"
+							 modelType="finWall"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
@@ -417,9 +417,9 @@
 
 
 				<!-- SLIDE  -->
-				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/bgEldridge.jpeg" data-delay="12000"  data-saveperformance="off"  data-title="Full Featured Menu">
+				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/makStudioHallmark.jpg" data-delay="12000"  data-saveperformance="off"  data-title="Backlit Wall">
 					<!-- MAIN IMAGE -->
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/bgEldridge.jpeg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/makStudioHallmark.jpg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
 					<!-- LAYERS -->
 
 					<!-- LAYER NR. 1 -->
@@ -490,7 +490,7 @@
 					</a>
 				-->
 						<div id="Design Top Button 5"
-							 modelType="finWall"
+							 modelType="backlit"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
