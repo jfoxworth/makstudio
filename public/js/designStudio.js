@@ -43,6 +43,19 @@ $(document).ready(function()	{
 
 
 
+	/*------------------------------------------------------------------------------
+
+								Handling Models
+
+		When the page loads, the code looks to see if the user is wanting to
+		load an existing model or to create one from scratch. If one is created
+		from scratch, the model desired is loaded with the generic data.
+		
+
+	/*-----------------------------------------------------------------------------*/
+
+
+
 
 	/*------------------------------------------------------------------------------
 
@@ -57,24 +70,6 @@ $(document).ready(function()	{
 
 
 
-	// Initialize all of the tool tips
-	$('[data-toggle="tooltip"]').tooltip();
-	$(".bt-switch").bootstrapSwitch();
-	$('.selectsplitter').selectsplitter();
-	$('#bench').parent().addClass('currentItem');
-	$('#benchDimensionsButton').parent().addClass('currentParameter');
-
-
-	// Initialize data to global variable
-	makStudio = initializeData();
-	
-
-	// Setup the initial model that the viewer will see
-	initializeModel('bench');
-
-
-	// Set the page to display the default model
-	setModelView('bench');
 
 
 	// Set CSRF Token
@@ -85,19 +80,51 @@ $(document).ready(function()	{
 	});
 
 
-	// Set the overall variable for the model type
-	window['designType'] = 'bench';
+	// Initialize all of the tool tips
+	$('[data-toggle="tooltip"]').tooltip();
+	$(".bt-switch").bootstrapSwitch();
+	$('.selectsplitter').selectsplitter();
+	$('#bench').parent().addClass('currentItem');
+	$('#benchDimensionsButton').parent().addClass('currentParameter');
 
 
-	// If user is logged in, set the ID
+	// Set the environment variables that depend upon the URL
+	setEnvironment();
+
+
+	// Initialize data to global variable
+	makStudio = initializeData( );
+	
+
+	// Initialize the new or old model
+	if ( MakViewType == 0 )
+	{
+		initializeNewModel( MakDesignType );
+	
+	}else
+	{
+		initializeOldModel();
+	}
+
+
+	// Set the page to display the default model
+	setModelView( MakDesignType );
+
+
+
+
+	// Initialize Amplitude
 	if ( $('#navbarDropdown').text().replace(/\r?\n|\r/g,'').trim() != '' )
 	{
 		amplitude.getInstance().setUserId($('#navbarDropdown').text().replace(/\r?\n|\r/g,'').trim());
 	}
-
-
-
 	amplitude.getInstance().logEvent('Design Studio');
+
+
+
+
+
+
 
 
 
@@ -187,7 +214,7 @@ $(document).ready(function()	{
 
 		$( '#currentModelDisplay' ).html('');
 
-		initializeModel( event.target.id );
+		initializeNewModel( event.target.id );
 
 		setModelView(event.target.id);
 
@@ -713,15 +740,80 @@ $(document).ready(function()	{
 
 
 
+/*------------------------------------------------------------------------------------------------------------*
+
+	This function is the first one called when the page loads. It takes a look at the URL to determine
+	what the user wants to do. If the URL has a model phrase at the end, that model is loaded and it 
+	is assumed that the user wants to build a model of that type. If nothing is after "design studio"
+	then it defaults to "bench".
+
+	If the last item is a number, it is assumed that this is the ID of an existing model and the user
+	is presented with the info for that model (if it is theirs). On this page, they are allowed to 
+	add builds and see the other info in it.
+
+	variables set - window level
+	MakViewType
+	MakDesignType
+
+/*-----------------------------------------------------------------------------------------------------------*/
+function setEnvironment( )  
+{
+
+	// Set the overall variable for the model type
+	var designType = window.location.href.replace('http://www.makstudio.us/designStudio/','').replace('http://www.makstudio.us/designStudio','').replace(/\/$/, "");
+
+	// If the parameter is a number, this is an existing model
+	if ( $.isNumeric( designType ) )
+	{
+		window['MakViewType'] = 1;
+		window['MakDesignType'] = designType; 
+	
+	// If not a number, continue investigating type but set view to new
+	}else
+	{
+		window['MakViewType'] = 0;
+
+		// If no model is indicated, set default to bench
+		if ( designType == '' )
+		{
+			window['MakDesignType'] = 'bench';		 
+		
+		// Set design type to entered model
+		}else 
+		{
+			if ( (designType == 'bench') || (designType == 'finWall') || (designType == 'backlit') ||
+				 (designType == 'faceted') || (designType == 'light') || (designType == 'planter') ||
+				 (designType == 'desk') || (designType == 'panel') )
+			{
+				window['MakDesignType'] = designType; 
+			}else
+			{
+				window['MakDesignType'] = 0; // An error occured somewhere 
+			}
+		}
+
+	}
+
+	console.log('I set the view type to - '+MakViewType);
+	console.log('I set the design type to - '+MakDesignType);
+
+}
+
+
+
+
+
+
+
+
 
 /*------------------------------------------------------------------------------------------------------------*
 
-	This function initializes a model. This is done using the global variable holding all of the data for
-	the mak studio system instead of entering each model name and ticket separately. It deletes all of the
-	other models before creating the new one.
+	This function initializes a model. This is for a new model only. The API is called and
+	the default data is placed into the inputs and the model properties
 
 /*-----------------------------------------------------------------------------------------------------------*/
-function initializeModel( modelName )  
+function initializeNewModel( modelName )  
 {
 
 
@@ -744,6 +836,7 @@ function initializeModel( modelName )
 
 	model_api = new SDVApp.ParametricViewer(api_viewerSettings)
 
+
 	setTimeout(function () {
 		setDefaultModelData(modelName);
 		setPrice(modelName);
@@ -759,15 +852,28 @@ function initializeModel( modelName )
 
 
 
-/*------------------------------------------------*
+/*----------------------------------------------------------------------------*
 
-	This is the function called whenever the user
-	changes the side menu by selecting a new
-	model.
+	This is the function called whenever the user changes the side menu 
+	by selecting a new model.
 
-/*------------------------------------------------*/
+	It also sets the view for a new model or an old model
+
+/*----------------------------------------------------------------------------*/
 function setModelView( modelName )
 {
+
+	// Display the tabs for the build scene or the design studio for an undefined model
+	if ( MakViewType == 0 )
+	{
+		$('.buildOption').hide();
+		$('.designOption').show();
+	}else
+	{
+		$('.designOption').hide();
+		$('.buildOption').show();
+	}
+
 
 	// Hide all models
 	for (thisContainer in makStudio.containerNames)

@@ -35,7 +35,7 @@ $(document).ready(function()	{
 		amplitude.getInstance().logEvent( $(event.target).closest('.designStudioButton').attr('id') );
 		setTimeout(function () 
 		{
-			window.location.href = "http://www.makstudio.us/designStudio";
+			window.location.href = "http://www.makstudio.us/designStudio/"+$(event.target).closest('.designStudioButton').attr('modelType');
 		}, 200);
 	});
 

@@ -50,7 +50,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:555px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:555px !important; color:#222; padding:10px">
 					Customize Your Interior Space</div>
 
 
@@ -91,13 +91,13 @@
 					</a>
 					-->
 						<div id="Design Top Button 1" 
-							 class="designStudioButton button button-3d button-white button-large button-rounded tright nomargin" 
-							 style="color: #000;">
+							 modelType="bench"
+							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
+							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
 						</div>
 					</div>
 				</li>
-
 
 
 
@@ -211,6 +211,7 @@
 						</a>
 					-->
 						<div id="Design Top Button 2" 
+							 modelType="bench"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
@@ -259,7 +260,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:375px !important; background-color:#ddd; color:#000; opacity: 0.5; padding:10px">
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:375px !important; color:#222; padding:10px">
 					Brand Your Business</div>
 
 					<!--
@@ -301,12 +302,12 @@
 				-->
 
 						<div id="Design Top Button 3" 
-							 class="designStudioButton button button-3d button-white button-large button-rounded tright nomargin" 
-							 style="color: #000;">
+							 modelType="bench"
+							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
+							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
 						</div>
 				</li>
-
 
 
 
@@ -350,7 +351,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:450px !important; background-color:#222; padding:10px">Memorable experiences</div>
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:450px !important; color:#222; padding:10px">Memorable experiences</div>
 
 					<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text noborder"
 					data-x="0"
@@ -364,7 +365,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:450px !important; background-color:#222; padding:10px">for your customers</div>
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:450px !important; color:#222; padding:10px">for your customers</div>
 
 					<!--
 					<div class="tp-caption ltl tp-resizeme revo-slider-desc-text"
@@ -403,6 +404,7 @@
 				-->
 
 						<div id="Design Top Button 4" 
+							 modelType="bench"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
@@ -450,7 +452,7 @@
 					data-elementdelay="0.01"
 					data-endelementdelay="0.1"
 					data-endspeed="1000"
-					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:550px !important; background-color:#222; padding:10px">Customize Your Interior Space</div>
+					data-endeasing="Power4.easeIn" style="text-align:center !important; z-index: 3; font-size:40px; width:550px !important; color:#222; padding:10px">Customize Your Interior Space</div>
 
 					<!--
 					<div class="tp-caption ltl tp-resizeme revo-slider-desc-text"
@@ -487,7 +489,8 @@
 						<span>Create your own</span> <i class="icon-angle-right"></i>
 					</a>
 				-->
-						<div id="Design Top Button 5" 
+						<div id="Design Top Button 5"
+							 modelType="finWall"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>

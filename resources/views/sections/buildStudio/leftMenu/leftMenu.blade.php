@@ -7,7 +7,7 @@
 
 			<div class="widget clearfix" style="width:100%">
 
-				<div class="row">
+				<div class="row bottommargin">
 				    <div id="newBuild" class="button divcenter">Create New Build</div>
 				</div>
 
@@ -15,6 +15,7 @@
 
 				<div class="row divcenter" style="width:75%">
 					<select id="buildID"
+							class="notopmargin"
 							style="width:100%; height:35px; margin:20px 0px">
 					</select>
 				</div>

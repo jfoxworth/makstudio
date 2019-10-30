@@ -44,6 +44,7 @@
 							<p class="mb-2 text-white">We can create custom design architectural walls and ceilings that create a unique and beautiful look for any space.</p>
 										
 							<div id="Design Flip Button 1" 
+								 modelType="finWall"
 								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
 								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
 							</div>
@@ -89,6 +90,7 @@
 							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
 
 							<div id="Design Flip Button 2" 
+								 modelType="backlit"
 								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
 								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
 							</div>
@@ -134,6 +136,7 @@
 							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
 
 							<div id="Design Flip Button 3" 
+								 modelType="desk"
 								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
 								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
 							</div>
@@ -185,6 +188,7 @@
 							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
 
 							<div id="Design Flip Button 4" 
+								 modelType="planter"
 								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
 								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
 							</div>
@@ -234,6 +238,7 @@
 							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
 
 							<div id="Design Flip Button 5" 
+								 modelType="faceted"
 								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
 								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
 							</div>
@@ -285,6 +290,7 @@
 							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
 
 							<div id="Design Flip Button 6" 
+								 modelType="panel"
 								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
 								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
 							</div>
