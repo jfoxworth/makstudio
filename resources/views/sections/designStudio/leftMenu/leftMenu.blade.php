@@ -64,25 +64,25 @@
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="finWallHolder"
 						 data-toggle="tooltip" data-placement="top" title="Fin Ripple Wall">
-						<img id="finWall" src="images/icons/MAK ICONS-07.png" width="48px">
+						<img id="finWall" src="images/icons/MAKICONS-07.png" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="backlitHolder"
 						 data-toggle="tooltip" data-placement="top" title="Backlit Wall">
-						<img id="backlit" src="images/icons/MAK ICONS-08.png" width="48px">
+						<img id="backlit" src="images/icons/MAKICONS-08.png" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="facetedHolder"
 						 data-toggle="tooltip" data-placement="top" title="Faceted Wall">
-						<img id="faceted" src="images/icons/MAK ICONS-06.png" width="48px">
+						<img id="faceted" src="images/icons/MAKICONS-06.png" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin col_last currentItem"
 						 id="benchHolder"
 						 data-toggle="tooltip" data-placement="top" title="Planter Bench">
-						<img id="bench" src="images/icons/MAK ICONS-05.png" width="48px">
+						<img id="bench" src="images/icons/MAKICONS-05.png" width="48px">
 					</div>
 
 				</div>
@@ -92,25 +92,25 @@
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="deskHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Custom Desk">
-						<img id="desk" src="images/icons/MAK ICONS-09.png" width="48px">
+						<img id="desk" src="images/icons/MAKICONS-09.png" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="planterHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Planter Wall">
-						<img id="planter" src="images/icons/MAK ICONS-04.png" width="48px">
+						<img id="planter" src="images/icons/MAKICONS-04.png" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="panelHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Panel Wall">
-						<img id="panel" src="images/icons/MAK ICONS-02.png" width="48px">
+						<img id="panel" src="images/icons/MAKICONS-02.png" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
 						 id="lightHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Light Fixture Wall">
-						<img id="light" src="images/icons/MAK ICONS-01.png" width="48px">
+						<img id="light" src="images/icons/MAKICONS-01.png" width="48px">
 					</div>
 
 				</div>
