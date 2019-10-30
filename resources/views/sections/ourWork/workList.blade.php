@@ -160,9 +160,9 @@
 
 
 			<div class="section dark notopmargin nobottommargin noborder"
-				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/JacobWhite1.jpg'); background-size:cover; color:#222; padding:150px">
+				 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/JacobWhite3.jpg'); background-size:cover; color:#222; padding:150px">
 
-				<h1 style="margin-left:300px">Jacob White</h1>
+				<h1 style="margin-left:200px; color:#222">Jacob White</h1>
 
 			</div>
 
