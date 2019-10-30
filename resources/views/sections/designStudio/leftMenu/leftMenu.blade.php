@@ -117,14 +117,14 @@
 
 
 				<!-- Left menu options for the various design types -->
-				@include('sections.buildStudio.leftMenu.bench')
-				@include('sections.buildStudio.leftMenu.finWall')
-				@include('sections.buildStudio.leftMenu.backlit')
-				@include('sections.buildStudio.leftMenu.faceted')
-				@include('sections.buildStudio.leftMenu.light')
-				@include('sections.buildStudio.leftMenu.desk')
-				@include('sections.buildStudio.leftMenu.panel')
-				@include('sections.buildStudio.leftMenu.planter')
+				@include('sections.designStudio.leftMenu.bench')
+				@include('sections.designStudio.leftMenu.finWall')
+				@include('sections.designStudio.leftMenu.backlit')
+				@include('sections.designStudio.leftMenu.faceted')
+				@include('sections.designStudio.leftMenu.light')
+				@include('sections.designStudio.leftMenu.desk')
+				@include('sections.designStudio.leftMenu.panel')
+				@include('sections.designStudio.leftMenu.planter')
 
 			</div>
 
