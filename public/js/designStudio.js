@@ -84,8 +84,6 @@ $(document).ready(function()	{
 	$('[data-toggle="tooltip"]').tooltip();
 	$(".bt-switch").bootstrapSwitch();
 	$('.selectsplitter').selectsplitter();
-	$('#bench').parent().addClass('currentItem');
-	$('#benchDimensionsButton').parent().addClass('currentParameter');
 
 
 	// Set the environment variables that depend upon the URL
@@ -614,10 +612,10 @@ $(document).ready(function()	{
 		$el.empty(); // remove old options
 		$.each(flowerOptions, function(key,value) {
 		  $el.append($("<option></option>")
-		     .attr("value", key).text(value));
+			 .attr("value", key).text(value));
 		});
 	});
-	
+
 
 
 	// Delete a flower
@@ -637,7 +635,7 @@ $(document).ready(function()	{
 		$el.empty(); // remove old options
 		$.each(flowerOptions, function(key,value) {
 		  $el.append($("<option></option>")
-		     .attr("value", key).text(value));
+			 .attr("value", key).text(value));
 		});
 	});
 
@@ -756,34 +754,34 @@ $(document).ready(function()	{
 	  theme: 'classic',
 
 	  swatches: [
-	    'rgba(244, 67, 54, 1)',
-	    'rgba(233, 30, 99, 0.95)',
-	    'rgba(156, 39, 176, 0.9)',
-	    'rgba(103, 58, 183, 0.85)',
-	    'rgba(63, 81, 181, 0.8)',
-	    'rgba(33, 150, 243, 0.75)',
-	    'rgba(3, 169, 244, 0.7)',
-	    'rgba(0, 188, 212, 0.7)',
-	    'rgba(0, 150, 136, 0.75)',
-	    'rgba(76, 175, 80, 0.8)',
-	    'rgba(139, 195, 74, 0.85)',
-	    'rgba(205, 220, 57, 0.9)',
-	    'rgba(255, 235, 59, 0.95)',
-	    'rgba(255, 193, 7, 1)'
+		'rgba(244, 67, 54, 1)',
+		'rgba(233, 30, 99, 0.95)',
+		'rgba(156, 39, 176, 0.9)',
+		'rgba(103, 58, 183, 0.85)',
+		'rgba(63, 81, 181, 0.8)',
+		'rgba(33, 150, 243, 0.75)',
+		'rgba(3, 169, 244, 0.7)',
+		'rgba(0, 188, 212, 0.7)',
+		'rgba(0, 150, 136, 0.75)',
+		'rgba(76, 175, 80, 0.8)',
+		'rgba(139, 195, 74, 0.85)',
+		'rgba(205, 220, 57, 0.9)',
+		'rgba(255, 235, 59, 0.95)',
+		'rgba(255, 193, 7, 1)'
 	  ],
 
 	  components: {
-	    preview: true,
-	    opacity: true,
-	    hue: true,
+		preview: true,
+		opacity: true,
+		hue: true,
 
-	    interaction: {
-	      hex: true,
-	      rgba: true,
-	      hsva: true,
-	      input: true,
-	      save: true
-	    }
+		interaction: {
+		  hex: true,
+		  rgba: true,
+		  hsva: true,
+		  input: true,
+		  save: true
+		}
 	  }
 	}).on('init', pickr => {
 		inputElement.value = pickr.getSelectedColor().toRGBA().toString(0);
@@ -809,34 +807,34 @@ $(document).ready(function()	{
 	  theme: 'classic',
 
 	  swatches: [
-	    'rgba(244, 67, 54, 1)',
-	    'rgba(233, 30, 99, 0.95)',
-	    'rgba(156, 39, 176, 0.9)',
-	    'rgba(103, 58, 183, 0.85)',
-	    'rgba(63, 81, 181, 0.8)',
-	    'rgba(33, 150, 243, 0.75)',
-	    'rgba(3, 169, 244, 0.7)',
-	    'rgba(0, 188, 212, 0.7)',
-	    'rgba(0, 150, 136, 0.75)',
-	    'rgba(76, 175, 80, 0.8)',
-	    'rgba(139, 195, 74, 0.85)',
-	    'rgba(205, 220, 57, 0.9)',
-	    'rgba(255, 235, 59, 0.95)',
-	    'rgba(255, 193, 7, 1)'
+		'rgba(244, 67, 54, 1)',
+		'rgba(233, 30, 99, 0.95)',
+		'rgba(156, 39, 176, 0.9)',
+		'rgba(103, 58, 183, 0.85)',
+		'rgba(63, 81, 181, 0.8)',
+		'rgba(33, 150, 243, 0.75)',
+		'rgba(3, 169, 244, 0.7)',
+		'rgba(0, 188, 212, 0.7)',
+		'rgba(0, 150, 136, 0.75)',
+		'rgba(76, 175, 80, 0.8)',
+		'rgba(139, 195, 74, 0.85)',
+		'rgba(205, 220, 57, 0.9)',
+		'rgba(255, 235, 59, 0.95)',
+		'rgba(255, 193, 7, 1)'
 	  ],
 
 	  components: {
-	    preview: true,
-	    opacity: true,
-	    hue: true,
+		preview: true,
+		opacity: true,
+		hue: true,
 
-	    interaction: {
-	      hex: true,
-	      rgba: true,
-	      hsva: true,
-	      input: true,
-	      save: true
-	    }
+		interaction: {
+		  hex: true,
+		  rgba: true,
+		  hsva: true,
+		  input: true,
+		  save: true
+		}
 	  }
 	}).on('init', pickr => {
 	  inputBackElement.value = backPickr.getSelectedColor().toRGBA().toString(0);
@@ -1335,7 +1333,7 @@ function retrieveModels(  )
 
 
 		var monthNames = [ "January", "February", "March", "April", "May", "June",
-		    "July", "August", "September", "October", "November", "December" ];
+			"July", "August", "September", "October", "November", "December" ];
 
 
 		console.log(data);
@@ -1538,6 +1536,7 @@ function reloadModel( modelID )
 
 	initializeComponents( makModel['build_id'] );
 	setPrice( modelID);
+	setDragDrop();
 
 
 }
@@ -1718,7 +1717,7 @@ function setModelGroups( )
 		$el.empty(); // remove old options
 		$.each(flowerOptions, function(key,value) {
 		  $el.append($("<option></option>")
-		     .attr("value", key).text(value));
+			 .attr("value", key).text(value));
 		});
 
 		window['currentFlowerIndex'] = 0;
@@ -1774,6 +1773,149 @@ function bundleBlock( bundleName )
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------*
+
+	This function sets the items to be dragged and
+	dropped in the current model.
+
+/*-------------------------------------------------------*/
+function setDragDrop( )
+{
+
+	if ( MakDesignType == "flower" )
+	{
+
+		var flowersID;
+		var panelsScenePath;
+		var flowersJSON = makModel.build_data.componentValues.flowersJSON;
+
+
+		//define effects for selectable, hoverable and draggable flowers
+		var hoverSelectDragEffect = {
+			active: {
+				name: 'colorHighlight',
+				options: {
+					color: [0, 255, 0]
+				}
+			}
+		};
+
+		//flowers in the scene should be hoverable and draggable
+		var flowersGroup = {
+			id: "flowers_group",
+			draggable: true,
+			dragEffect: hoverSelectDragEffect,
+			hoverable: true,
+			hoverEffect: hoverSelectDragEffect,
+			selectable: false,
+			selectionEffect: hoverSelectDragEffect
+		};
+
+		//add interaction group to the scene
+		model_api.scene.updateInteractionGroups([flowersGroup]);
+
+
+		//get 3D assets
+		var assets = model_api.scene.get(null, "CommPlugin_1").data;
+
+
+		//look for flowers and panels assets
+		for (var i = 0; i < assets.length; ++i) 
+		{
+			if (assets[i].material != undefined) 
+			{
+				if (assets[i].name == "Flowers") 
+				{
+					flowersID = assets[i].id;
+				
+				}else if (assets[i].name == "Panels") 
+				{
+					panelsScenePath = assets[i].scenePath;
+				}
+			}
+		}
+
+
+		//update flowers 3D asset to make it draggable and hoverable
+		model_api.scene.updatePersistentAsync({
+			id: flowersID,
+			interactionGroup: flowersGroup.id,
+			interactionMode: "sub",
+			dragPlaneNormal: { x: 0, y: 1, z: 0 }
+		}, 'CommPlugin_1');
+
+
+		//add event listener to detect flower dragging
+		model_api.scene.addEventListener(api.scene.EVENTTYPE.DRAG_END, function (res) {
+			console.log(res);
+
+			var draggedScenePath = res.scenePath.split(".");
+
+			//check if the dragged element is a flower
+			if (draggedScenePath[1] == flowersID) {
+				var draggedFlower = draggedScenePath[2].split("_")[1];
+
+
+				// Mark the selected flower as the current one and update the data
+				window['currentFlowerIndex'] = draggedFlower;
+				$('#flowerXLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][0] );
+				$('#flowerYLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][1] );
+				$('#flowerSize').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['size'] );
+				$('#flowerRot').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['rotation'] );
+				amplitude.getInstance().logEvent('Selected Flower');
+
+
+				//store flower original location
+				var originalLoc = flowersJSON.flowers[draggedFlower].position;
+
+				//update flower location
+				flowersJSON.flowers[draggedFlower].position = [res.dragPosAbs.x, res.dragPosAbs.z];
+				model_api.parameters.updateAsync({ name: "flowersJSON", value: JSON.stringify(flowersJSON) }).then(function () {
+					//check if there are any collisions with the new flower location
+					var checkFlower = model_api.scene.getData({ name: "checkFlowers" }).data[0].data[draggedFlower];
+					if (checkFlower.collision) {
+						alert("Collision Detected");
+						flowersJSON.flowers[draggedFlower].position = originalLoc;
+						model_api.parameters.updateAsync({ name: "flowersJSON", value: JSON.stringify(flowersJSON) });
+					}
+				});
+			}
+		});
+
+		//add event listener to detect flower selection
+		model_api.scene.addEventListener(api.scene.EVENTTYPE.SELECT_ON, function (res) {
+			var selectedScenePath = res.scenePath.split(".");
+
+			//check if the dragged element is a flower
+			if (selectedScenePath[1] == flowersID) {
+			}
+		});
+
+
+		//activate random flowers
+		model_api.parameters.updateAsync({ name: "Random Flowers", value: true }).then(function () {
+			flowersJSON = model_api.scene.getData({ name: "randomFlowersJSON" }).data[0].data;
+			model_api.parameters.updateAsync([{ name: "Random Flowers", value: false }, { name: "flowersJSON", value: JSON.stringify(flowersJSON) }]);
+		});
+
+	}
+
+}
+
+
+
+
 
 
 
