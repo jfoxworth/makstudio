@@ -1803,123 +1803,129 @@ function setDragDrop( )
 	if ( MakDesignType == "flower" )
 	{
 
-		console.log('Setting Flowers');
+		setTimeout(function () {
 
-		var flowersID;
-		var panelsScenePath;
-		var flowersJSON = makModel.build_data.componentValues.flowersJSON;
+			console.log('Setting Flowers');
 
-		console.log('The flowers json is');
-		console.log(flowersJSON);
+			var flowersID;
+			var panelsScenePath;
+			var flowersJSON = makModel.build_data.componentValues.flowersJSON;
 
-
-		//define effects for selectable, hoverable and draggable flowers
-		var hoverSelectDragEffect = {
-			active: {
-				name: 'colorHighlight',
-				options: {
-					color: [0, 255, 0]
-				}
-			}
-		};
-
-		//flowers in the scene should be hoverable and draggable
-		var flowersGroup = {
-			id: "flowers_group",
-			draggable: true,
-			dragEffect: hoverSelectDragEffect,
-			hoverable: true,
-			hoverEffect: hoverSelectDragEffect,
-			selectable: false,
-			selectionEffect: hoverSelectDragEffect
-		};
-
-		//add interaction group to the scene
-		model_api.scene.updateInteractionGroups([flowersGroup]);
+			console.log('The flowers json is');
+			console.log(flowersJSON);
 
 
-		//get 3D assets
-		var assets = model_api.scene.get(null, "CommPlugin_1").data;
 
-
-		//look for flowers and panels assets
-		for (var i = 0; i < assets.length; ++i) 
-		{
-			if (assets[i].material != undefined) 
-			{
-				if (assets[i].name == "Flowers") 
-				{
-					flowersID = assets[i].id;
-				
-				}else if (assets[i].name == "Panels") 
-				{
-					panelsScenePath = assets[i].scenePath;
-				}
-			}
-		}
-
-
-		//update flowers 3D asset to make it draggable and hoverable
-		model_api.scene.updatePersistentAsync({
-			id: flowersID,
-			interactionGroup: flowersGroup.id,
-			interactionMode: "sub",
-			dragPlaneNormal: { x: 0, y: 1, z: 0 }
-		}, 'CommPlugin_1');
-
-
-		//add event listener to detect flower dragging
-		model_api.scene.addEventListener(model_api.scene.EVENTTYPE.DRAG_END, function (res) {
-			console.log(res);
-
-			var draggedScenePath = res.scenePath.split(".");
-
-			//check if the dragged element is a flower
-			if (draggedScenePath[1] == flowersID) {
-				var draggedFlower = draggedScenePath[2].split("_")[1];
-
-
-				// Mark the selected flower as the current one and update the data
-				window['currentFlowerIndex'] = draggedFlower;
-				$('#flowerXLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][0] );
-				$('#flowerYLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][1] );
-				$('#flowerSize').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['size'] );
-				$('#flowerRot').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['rotation'] );
-				amplitude.getInstance().logEvent('Dragged Flower');
-
-
-				//store flower original location
-				var originalLoc = flowersJSON.flowers[draggedFlower].position;
-
-				//update flower location
-				flowersJSON.flowers[draggedFlower].position = [res.dragPosAbs.x, res.dragPosAbs.z];
-				model_api.parameters.updateAsync({ name: "flowersJSON", value: JSON.stringify(flowersJSON) }).then(function () {
-					//check if there are any collisions with the new flower location
-					var checkFlower = model_api.scene.getData({ name: "checkFlowers" }).data[0].data[draggedFlower];
-					if (checkFlower.collision) {
-						alert("Collision Detected");
-						flowersJSON.flowers[draggedFlower].position = originalLoc;
-						model_api.parameters.updateAsync({ name: "flowersJSON", value: JSON.stringify(flowersJSON) });
+			//define effects for selectable, hoverable and draggable flowers
+			var hoverSelectDragEffect = {
+				active: {
+					name: 'colorHighlight',
+					options: {
+						color: [0, 255, 0]
 					}
-				});
+				}
+			};
+
+			//flowers in the scene should be hoverable and draggable
+			var flowersGroup = {
+				id: "flowers_group",
+				draggable: true,
+				dragEffect: hoverSelectDragEffect,
+				hoverable: true,
+				hoverEffect: hoverSelectDragEffect,
+				selectable: false,
+				selectionEffect: hoverSelectDragEffect
+			};
+
+			//add interaction group to the scene
+			model_api.scene.updateInteractionGroups([flowersGroup]);
+
+
+			//get 3D assets
+			var assets = model_api.scene.get(null, "CommPlugin_1").data;
+
+
+			//look for flowers and panels assets
+			for (var i = 0; i < assets.length; ++i) 
+			{
+				if (assets[i].material != undefined) 
+				{
+					if (assets[i].name == "Flowers") 
+					{
+						flowersID = assets[i].id;
+					
+					}else if (assets[i].name == "Panels") 
+					{
+						panelsScenePath = assets[i].scenePath;
+					}
+				}
 			}
-		});
-
-		//add event listener to detect flower selection
-		model_api.scene.addEventListener(model_api.scene.EVENTTYPE.SELECT_ON, function (res) {
-			var selectedScenePath = res.scenePath.split(".");
-
-			//check if the dragged element is a flower
-			if (selectedScenePath[1] == flowersID) {
-			}
-		});
 
 
-		//activate random flowers
-		//model_api.parameters.updateAsync({ name: "Random Flowers", value: true }).then(function () {
-		//	flowersJSON = model_api.scene.getData({ name: "randomFlowersJSON" }).data[0].data;
-		//	model_api.parameters.updateAsync([{ name: "Random Flowers", value: false }, { name: "flowersJSON", value: JSON.stringify(flowersJSON) }]);
-		//});
+			//update flowers 3D asset to make it draggable and hoverable
+			model_api.scene.updatePersistentAsync({
+				id: flowersID,
+				interactionGroup: flowersGroup.id,
+				interactionMode: "sub",
+				dragPlaneNormal: { x: 0, y: 1, z: 0 }
+			}, 'CommPlugin_1');
+
+
+			//add event listener to detect flower dragging
+			model_api.scene.addEventListener(model_api.scene.EVENTTYPE.DRAG_END, function (res) {
+				console.log(res);
+
+				var draggedScenePath = res.scenePath.split(".");
+
+				//check if the dragged element is a flower
+				if (draggedScenePath[1] == flowersID) {
+					var draggedFlower = draggedScenePath[2].split("_")[1];
+
+
+					// Mark the selected flower as the current one and update the data
+					window['currentFlowerIndex'] = draggedFlower;
+					$('#flowerXLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][0] );
+					$('#flowerYLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][1] );
+					$('#flowerSize').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['size'] );
+					$('#flowerRot').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['rotation'] );
+					amplitude.getInstance().logEvent('Dragged Flower');
+
+
+					//store flower original location
+					var originalLoc = flowersJSON.flowers[draggedFlower].position;
+
+					//update flower location
+					flowersJSON.flowers[draggedFlower].position = [res.dragPosAbs.x, res.dragPosAbs.z];
+					model_api.parameters.updateAsync({ name: "flowersJSON", value: JSON.stringify(flowersJSON) }).then(function () {
+						//check if there are any collisions with the new flower location
+						var checkFlower = model_api.scene.getData({ name: "checkFlowers" }).data[0].data[draggedFlower];
+						if (checkFlower.collision) {
+							alert("Collision Detected");
+							flowersJSON.flowers[draggedFlower].position = originalLoc;
+							model_api.parameters.updateAsync({ name: "flowersJSON", value: JSON.stringify(flowersJSON) });
+						}
+					});
+				}
+			});
+
+			//add event listener to detect flower selection
+			model_api.scene.addEventListener(model_api.scene.EVENTTYPE.SELECT_ON, function (res) {
+				var selectedScenePath = res.scenePath.split(".");
+
+				//check if the dragged element is a flower
+				if (selectedScenePath[1] == flowersID) {
+				}
+			});
+
+
+			//activate random flowers
+			//model_api.parameters.updateAsync({ name: "Random Flowers", value: true }).then(function () {
+			//	flowersJSON = model_api.scene.getData({ name: "randomFlowersJSON" }).data[0].data;
+			//	model_api.parameters.updateAsync([{ name: "Random Flowers", value: false }, { name: "flowersJSON", value: JSON.stringify(flowersJSON) }]);
+			//});
+
+		}, 3000);
+
 
 	
 
@@ -1927,85 +1933,89 @@ function setDragDrop( )
 	}else if ( MakDesignType == "backlit" )
 	{
 
-		var logoID;
+		setTimeout(function () {
 
-		//define effects for selectable, hoverable and draggable logo
-		var hoverSelectDragEffect = {
-			active: {
-				name: 'colorHighlight',
-				options: {
-					color: [0, 255, 0]
+			var logoID;
+
+			//define effects for selectable, hoverable and draggable logo
+			var hoverSelectDragEffect = {
+				active: {
+					name: 'colorHighlight',
+					options: {
+						color: [0, 255, 0]
+					}
 				}
-			}
-		};
+			};
 
-		// Logo should be hoverable and draggable
-		var logo = {
-			id: "MakLogo",
-			draggable: true,
-			dragEffect: hoverSelectDragEffect,
-			hoverable: true,
-			hoverEffect: hoverSelectDragEffect,
-			selectable: false,
-			selectionEffect: hoverSelectDragEffect
-		};
+			// Logo should be hoverable and draggable
+			var logo = {
+				id: "MakLogo",
+				draggable: true,
+				dragEffect: hoverSelectDragEffect,
+				hoverable: true,
+				hoverEffect: hoverSelectDragEffect,
+				selectable: false,
+				selectionEffect: hoverSelectDragEffect
+			};
 
-		//add interaction group to the scene
-		model_api.scene.updateInteractionGroups([logo]);
-
-
-		//get 3D assets
-		var assets = model_api.scene.get(null, "CommPlugin_1").data;
+			//add interaction group to the scene
+			model_api.scene.updateInteractionGroups([logo]);
 
 
-		//look for flowers and panels assets
-		for (var i = 0; i < assets.length; ++i) 
-		{
-			if (assets[i].material != undefined) 
+			//get 3D assets
+			var assets = model_api.scene.get(null, "CommPlugin_1").data;
+
+
+			//look for flowers and panels assets
+			for (var i = 0; i < assets.length; ++i) 
 			{
-				if (assets[i].name == "LogoAndText") 
+				if (assets[i].material != undefined) 
 				{
-					logoID = assets[i].id;
-				
-				}else if (assets[i].name == "Panels") 
-				{
-					panelsScenePath = assets[i].scenePath;
+					if (assets[i].name == "LogoAndText") 
+					{
+						logoID = assets[i].id;
+					
+					}else if (assets[i].name == "Panels") 
+					{
+						panelsScenePath = assets[i].scenePath;
+					}
 				}
 			}
-		}
 
 
-		//update logo to make it draggable and hoverable
-		model_api.scene.updatePersistentAsync({
-			id: logoID,
-			interactionGroup: logo.id,
-			interactionMode: "sub",
-			dragPlaneNormal: { x: 0, y: 1, z: 0 }
-		}, 'CommPlugin_1');
+			//update logo to make it draggable and hoverable
+			model_api.scene.updatePersistentAsync({
+				id: logoID,
+				interactionGroup: logo.id,
+				interactionMode: "sub",
+				dragPlaneNormal: { x: 0, y: 1, z: 0 }
+			}, 'CommPlugin_1');
 
 
-		//add event listener to detect logo dragging
-		model_api.scene.addEventListener(model_api.scene.EVENTTYPE.DRAG_END, function (res) {
-			console.log(res);
+			//add event listener to detect logo dragging
+			model_api.scene.addEventListener(model_api.scene.EVENTTYPE.DRAG_END, function (res) {
+				console.log(res);
 
-			var draggedScenePath = res.scenePath.split(".");
-			makModel.build_data.componentValues['Logo X Location'] = res.dragPosAbs.x;
-			$('#backlitLogoXInput').val( res.dragPosAbs.x );
-			$( "#backlitLogoXSlider" ).val( res.dragPosAbs.x );
-			$( '#backlitLogoXSlider').data("ionRangeSlider").update({'from': res.dragPosAbs.x })
+				var draggedScenePath = res.scenePath.split(".");
+				makModel.build_data.componentValues['Logo X Location'] = res.dragPosAbs.x;
+				$('#backlitLogoXInput').val( res.dragPosAbs.x );
+				$( "#backlitLogoXSlider" ).val( res.dragPosAbs.x );
+				$( '#backlitLogoXSlider').data("ionRangeSlider").update({'from': res.dragPosAbs.x })
 
-			makModel.build_data.componentValues['Logo Z Location'] = res.dragPosAbs.z;
-			$('#backlitLogoZInput').val( res.dragPosAbs.z );
-			$( "#backlitLogoZSlider" ).val( res.dragPosAbs.z );
-			$( '#backlitLogoZSlider').data("ionRangeSlider").update({'from': res.dragPosAbs.z })
-			$( "#backlitLogoZSlider" ).change();
+				makModel.build_data.componentValues['Logo Z Location'] = res.dragPosAbs.z;
+				$('#backlitLogoZInput').val( res.dragPosAbs.z );
+				$( "#backlitLogoZSlider" ).val( res.dragPosAbs.z );
+				$( '#backlitLogoZSlider').data("ionRangeSlider").update({'from': res.dragPosAbs.z })
+				$( "#backlitLogoZSlider" ).change();
 
-			model_api.parameters.updateAsync({ name: "Logo X Location", value: res.dragPosAbs.x})
-			model_api.parameters.updateAsync({ name: "Logo Z Location", value: res.dragPosAbs.z})
+				model_api.parameters.updateAsync({ name: "Logo X Location", value: res.dragPosAbs.x})
+				model_api.parameters.updateAsync({ name: "Logo Z Location", value: res.dragPosAbs.z})
+
+			});
 
 
+		}, 2000);
 
-		});
 
 	}
 
