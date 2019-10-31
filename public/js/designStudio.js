@@ -220,7 +220,7 @@ $(document).ready(function()	{
 	// When the user clicks on one of the design type boxes to change the model type
 	$('.designType').click(function(event)	
 	{	
-		designType = event.target.id;
+		MakDesignType = event.target.id;
 
 		$( '#currentModelDisplay' ).html('');
 
@@ -232,8 +232,8 @@ $(document).ready(function()	{
 		$('.designType').removeClass('currentItem');
 		$('#'+event.target.id).parent().addClass('currentItem');
 
-		if ( ( designType == "finWall" ) || ( designType == "backlit" ) || ( designType == "faceted" ) ||
-			 ( designType == "bench") || (designType == "light") || (designType == "flower") )
+		if ( ( MakDesignType == "finWall" ) || ( MakDesignType == "backlit" ) || ( MakDesignType == "faceted" ) ||
+			 ( MakDesignType == "bench") || (MakDesignType == "light") || (MakDesignType == "flower") )
 		{
 			$('#modelNameContainer').show();
 		
@@ -243,7 +243,7 @@ $(document).ready(function()	{
 		}
 
 
-		amplitude.getInstance().logEvent('DS Model Type - '+designType);
+		amplitude.getInstance().logEvent('DS Model Type - '+MakDesignType);
 
 	});
 
@@ -367,9 +367,9 @@ $(document).ready(function()	{
 			makModel['build_data']['componentValues'][paramName] = $('#'+event.target.id).val();
 			$('#'+paramName).val( $('#'+event.target.id).val() );
 
-			for (thisComponent in makStudio.componentNames[designType])
+			for (thisComponent in makStudio.componentNames[MakDesignType])
 			{
-				if ( paramName == makStudio.componentNames[designType][thisComponent] )
+				if ( paramName == makStudio.componentNames[MakDesignType][thisComponent] )
 				{
 					model_api.parameters.updateAsync({name: thisComponent, value: $('#'+paramName).val() });
 				}
@@ -377,7 +377,7 @@ $(document).ready(function()	{
 
 			$('.'+paramName).data("ionRangeSlider").update({'from':$('#'+event.target.id).val()})
 
-			setPrice( designType );
+			setPrice( MakDesignType );
 
 			amplitude.getInstance().logEvent('DS - '+paramName);
 		}
@@ -388,11 +388,11 @@ $(document).ready(function()	{
 	$('.modelSlider, .modelDropdown').change(function(event)	
 	{	
 
-		for (thisComponent in makStudio.componentNames[designType])
+		for (thisComponent in makStudio.componentNames[MakDesignType])
 		{
-			//console.log('Comparing '+event.target.id+' to '+makStudio.componentNames[designType][thisComponent]);
+			//console.log('Comparing '+event.target.id+' to '+makStudio.componentNames[MakDesignType][thisComponent]);
 
-			if ( event.target.id == makStudio.componentNames[designType][thisComponent] )
+			if ( event.target.id == makStudio.componentNames[MakDesignType][thisComponent] )
 			{
 				//console.log('Should be updating model parameter '+thisComponent+' with '+$('#'+event.target.id).val());
 				model_api.parameters.updateAsync({name: thisComponent, value: $('#'+event.target.id).val() });
@@ -400,7 +400,7 @@ $(document).ready(function()	{
 			}
 		}
 
-		setPrice( designType );
+		setPrice( MakDesignType);
 
 		var paramName = event.target.id.replace("Slider", "Input");
 		$('#'+paramName).val($('#'+event.target.id).val());
@@ -415,9 +415,9 @@ $(document).ready(function()	{
 	{
 
 
-		for (thisComponent in makStudio.componentNames[designType])
+		for (thisComponent in makStudio.componentNames[MakDesignType])
 		{
-			if ( e.target.id == makStudio.componentNames[designType][thisComponent] )
+			if ( e.target.id == makStudio.componentNames[MakDesignType][thisComponent] )
 			{
 				model_api.parameters.updateAsync({name: thisComponent, value: e.target.checked });
 				makModel['build_data']['componentValues'][thisComponent] = e.target.checked;
@@ -425,7 +425,7 @@ $(document).ready(function()	{
 			}
 		}
 
-		setPrice( designType );
+		setPrice( MakDesignType );
 
 	});
 
@@ -1514,75 +1514,85 @@ function setPrice( modelName )
 function setModelGroups( )
 {
 
-	var det = '';
-	var lightNum = 1;
-
-	for (thisItem in makModel['build_data']['componentTypes'])
+	if ( MakDesignType == 'light' )
 	{
-		if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
+		var det = '';
+		var lightNum = 1;
+
+		for (thisItem in makModel['build_data']['componentTypes'])
 		{
-
-
-			det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
-				det = det+'<button type="button" class="btn btn-secondary" id="addLightGroup">Add Light Group</button>';
-			det = det+'</div>';
-
-			det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
-				det = det+'<button type="button" class="btn btn-danger" id="deleteLightGroup">Delete Light Group</button>';
-			det = det+'</div>';
-
-
-
-			det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
-				det = det+'<label>Select Light</label>';
-				det = det+'<select id="lightPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:5px 0px">';
-					for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
-					{
-						det = det+'<option value="'+thisGroup+'">Light Block'+thisGroup+'</option>';
-					}
-				det = det+'</select>';
-			det = det+'</div>';
-
-
-			for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
+			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
 			{
 
-				det = det+'<div id="lightGroup'+thisGroup+'" class="white-section topmargin center blockDetails">';
 
-					det = det+'<label style="margin-top:10px;">Angle</label>';
-					det = det+'<div><input id="'+thisItem+''+thisGroup+'angle" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['angle']+'"></div>';
-
-					det = det+'<label style="margin-top:10px;">X Loc</label>';
-					det = det+'<div><input id="'+thisItem+''+thisGroup+'X" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][0]+'"></div>';
-
-					det = det+'<label style="margin-top:10px;">Y Loc</label>';
-					det = det+'<div><input id="'+thisItem+''+thisGroup+'Y" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][1]+'"></div>';
-
-					var heightNum = 0;
-					for ( thisHeight in makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'] )
-					{
-						det = det+'<div class="row" style="margin-top:40px;">';
-							det = det+'<div>Height '+heightNum+'</div>';
-							det = det+'<div><input id="'+thisItem+''+thisGroup+'Heights'+heightNum+'" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
-							det = det+'<i id="'+thisGroup+'-'+heightNum+'" class="icon-remove h3 deleteLight"></i>';
-						det = det+'</div>';
-						heightNum = heightNum+1;
-					}
-
-
+				det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
+					det = det+'<button type="button" class="btn btn-secondary" id="addLightGroup">Add Light Group</button>';
 				det = det+'</div>';
-				lightNum = lightNum + 1;
-	
+
+				det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
+					det = det+'<button type="button" class="btn btn-danger" id="deleteLightGroup">Delete Light Group</button>';
+				det = det+'</div>';
+
+
+
+				det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
+					det = det+'<label>Select Light</label>';
+					det = det+'<select id="lightPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:5px 0px">';
+						for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
+						{
+							det = det+'<option value="'+thisGroup+'">Light Block'+thisGroup+'</option>';
+						}
+					det = det+'</select>';
+				det = det+'</div>';
+
+
+				for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
+				{
+
+					det = det+'<div id="lightGroup'+thisGroup+'" class="white-section topmargin center blockDetails">';
+
+						det = det+'<label style="margin-top:10px;">Angle</label>';
+						det = det+'<div><input id="'+thisItem+''+thisGroup+'angle" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['angle']+'"></div>';
+
+						det = det+'<label style="margin-top:10px;">X Loc</label>';
+						det = det+'<div><input id="'+thisItem+''+thisGroup+'X" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][0]+'"></div>';
+
+						det = det+'<label style="margin-top:10px;">Y Loc</label>';
+						det = det+'<div><input id="'+thisItem+''+thisGroup+'Y" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][1]+'"></div>';
+
+						var heightNum = 0;
+						for ( thisHeight in makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'] )
+						{
+							det = det+'<div class="row" style="margin-top:40px;">';
+								det = det+'<div>Height '+heightNum+'</div>';
+								det = det+'<div><input id="'+thisItem+''+thisGroup+'Heights'+heightNum+'" class="groupInput" value="'+makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['heights'][heightNum]+'"></div>';
+								det = det+'<i id="'+thisGroup+'-'+heightNum+'" class="icon-remove h3 deleteLight"></i>';
+							det = det+'</div>';
+							heightNum = heightNum+1;
+						}
+
+
+					det = det+'</div>';
+					lightNum = lightNum + 1;
+		
+				}
+					det = det+'<i id="'+thisGroup+'" class="icon-plus h3 addLight"></i>';
+		
 			}
-				det = det+'<i id="'+thisGroup+'" class="icon-plus h3 addLight"></i>';
-	
+		
 		}
-	
+
+		$("#lightSettings").append(det);
+
+		$('.blockDetails').hide();
+
 	}
 
-	$("#lightSettings").append(det);
 
-	$('.blockDetails').hide();
+	if ( MakDesignType == 'flower' )
+	{
+
+	}
 
 }
 
@@ -2040,11 +2050,18 @@ function initializeComponents( modelName )
 
 	if ( modelName == "flower" )
 	{
-		$(".flowerWallLengthSlider").ionRangeSlider({
+		$(".flowerWallWidthSlider").ionRangeSlider({
 			grid: false,
 			min: 2,
-			max: 120,
+			max: 1200,
 			step: 2
+		});
+
+		$(".flowerWallHeightSlider").ionRangeSlider({
+			grid: false,
+			min: 1,
+			max: 120,
+			step: 1
 		});
 
 	}
@@ -2251,7 +2268,8 @@ function initializeData()
 
 
 			'flower' : {
-				'Wall Length' : 'wallLengthSlider'
+				'Wall Width' : 'wallWidthSlider',
+				'Wall Height' : 'wallHeightSlider'
 			}
 
 
@@ -2365,7 +2383,8 @@ function initializeData()
 			},
 
 			'flower' : {
-				'Wall Length' : 'slider'
+				'Wall Width' : 'slider',
+				'Wall Height' : 'slider'
 			}
 
 

@@ -10,7 +10,7 @@
 			<i id="flowerDimensionsButton" class="icon-measure h3 parameterSelect"></i>
 		</div>
 
-		<div class="hoverMe col_one_fifth col_last center nobottommargin" style="margin-top:7px"
+		<div class="hoverMe col_one_fifth col_last center nobottommargin"
 			 data-toggle="tooltip" data-placement="bottom" title="Flowers">
 			<i id="flowerNumberButton" class="icon-sun h3 parameterSelect"></i>
 		</div>
@@ -20,13 +20,25 @@
 	<div id="flowerDimensions" class="parameterSet">
 
 		<div class="white-section" style="margin:10px 0px" id="benchDepth">
-			<label>Wall Length (in)</label>
+			<label>Wall Height (in)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
-					<input class="flowerWallLengthSlider modelSlider" id="flowerWallLengthSlider"/>
+					<input class="flowerWallHeightSlider modelSlider" id="flowerWallHeightSlider"/>
 				</div>
 				<div style="width:20%; margin:0px 0px 0px 10%">
-					<input id="flowerWallLengthInput" class="textParameterInput" style="width:100%; text-align:center"/>
+					<input id="flowerWallHeightInput" class="textParameterInput" style="width:100%; text-align:center"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+			<label>Wall Width (in)</label>
+			<div class="row" style="width:100%">
+				<div style="width:70%">
+					<input class="flowerWallWidthSlider modelSlider" id="flowerWallWidthSlider"/>
+				</div>
+				<div style="width:20%; margin:0px 0px 0px 10%">
+					<input id="flowerWallWidthInput" class="textParameterInput" style="width:100%; text-align:center"/>
 				</div>
 			</div>
 		</div>
@@ -41,6 +53,13 @@
 
 	<div id="flowerNumber" class="parameterSet">
 
+		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+			<label>Flower Settings</label>
+			<div id="flowerWallSettings"
+				 class="row" 
+				 style="width:100%">
+			</div>
+		</div>
 
 	</div>
 
