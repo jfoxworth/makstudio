@@ -91,7 +91,7 @@
 					</a>
 					-->
 						<div id="Design Top Button 1" 
-							 modelType="flowerWall"
+							 modelType="flower"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>
@@ -302,7 +302,7 @@
 				-->
 
 						<div id="Design Top Button 3" 
-							 modelType="FossilWall"
+							 modelType="panel"
 							 class="designStudioButton button button-3d button-black button-large button-rounded tright nomargin" 
 							 style="color: #FFF;">
 							<span>Create your own</span> <i class="icon-angle-right"></i>

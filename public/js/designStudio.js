@@ -602,8 +602,22 @@ $(document).ready(function()	{
 		$('#flowerYLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][thisLength]['position'][1] );
 		$('#flowerSize').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][thisLength]['size'] );
 		$('#flowerRot').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][thisLength]['rotation'] );
+		model_api.parameters.updateAsync({name: 'flowersJSON', value: JSON.stringify(makModel['build_data']['componentValues']['flowersJSON']) });
 		amplitude.getInstance().logEvent('Add Flower');
+		var flowerOptions = {};
+		for (thisGroup in makModel['build_data']['componentValues']['flowersJSON']['flowers'])
+		{
+			flowerOptions[thisGroup] = 'Flower - '+thisGroup;
+		}
+
+		var $el = $("#flowerPicker");
+		$el.empty(); // remove old options
+		$.each(flowerOptions, function(key,value) {
+		  $el.append($("<option></option>")
+		     .attr("value", key).text(value));
+		});
 	});
+	
 
 
 	// Delete a flower
@@ -611,7 +625,20 @@ $(document).ready(function()	{
 	{	
 		makModel['build_data']['componentValues']['flowersJSON']['flowers'].splice( currentFlowerIndex, 1);
 		amplitude.getInstance().logEvent('Delete Flower');
+		model_api.parameters.updateAsync({name: 'flowersJSON', value: JSON.stringify(makModel['build_data']['componentValues']['flowersJSON']) });
 		currentFlowerIndex = currentFlowerIndex - 1;
+		var flowerOptions = {};
+		for (thisGroup in makModel['build_data']['componentValues']['flowersJSON']['flowers'])
+		{
+			flowerOptions[thisGroup] = 'Flower - '+thisGroup;
+		}
+
+		var $el = $("#flowerPicker");
+		$el.empty(); // remove old options
+		$.each(flowerOptions, function(key,value) {
+		  $el.append($("<option></option>")
+		     .attr("value", key).text(value));
+		});
 	});
 
 
