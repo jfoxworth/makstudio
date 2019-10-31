@@ -233,7 +233,7 @@ $(document).ready(function()	{
 		$('#'+event.target.id).parent().addClass('currentItem');
 
 		if ( ( designType == "finWall" ) || ( designType == "backlit" ) || ( designType == "faceted" ) ||
-			 ( designType == "bench") || (designType == "light") || || (designType == "flower") )
+			 ( designType == "bench") || (designType == "light") || (designType == "flower") )
 		{
 			$('#modelNameContainer').show();
 		
