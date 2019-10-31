@@ -1796,8 +1796,13 @@ function bundleBlock( bundleName )
 function setDragDrop( )
 {
 
+	console.log('In set drag drop');
+
+
 	if ( MakDesignType == "flower" )
 	{
+
+		console.log('Setting Flowers');
 
 		var flowersID;
 		var panelsScenePath;
@@ -1907,10 +1912,10 @@ function setDragDrop( )
 
 
 		//activate random flowers
-		model_api.parameters.updateAsync({ name: "Random Flowers", value: true }).then(function () {
-			flowersJSON = model_api.scene.getData({ name: "randomFlowersJSON" }).data[0].data;
-			model_api.parameters.updateAsync([{ name: "Random Flowers", value: false }, { name: "flowersJSON", value: JSON.stringify(flowersJSON) }]);
-		});
+		//model_api.parameters.updateAsync({ name: "Random Flowers", value: true }).then(function () {
+		//	flowersJSON = model_api.scene.getData({ name: "randomFlowersJSON" }).data[0].data;
+		//	model_api.parameters.updateAsync([{ name: "Random Flowers", value: false }, { name: "flowersJSON", value: JSON.stringify(flowersJSON) }]);
+		//});
 
 	
 
