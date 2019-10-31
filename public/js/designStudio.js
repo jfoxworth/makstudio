@@ -107,6 +107,7 @@ $(document).ready(function()	{
 
 	// Set the page to display the default model
 	setModelView( MakDesignType );
+	setDragDrop();
 
 
 
@@ -1857,7 +1858,7 @@ function setDragDrop( )
 
 
 		//add event listener to detect flower dragging
-		model_api.scene.addEventListener(api.scene.EVENTTYPE.DRAG_END, function (res) {
+		model_api.scene.addEventListener(model_api.scene.EVENTTYPE.DRAG_END, function (res) {
 			console.log(res);
 
 			var draggedScenePath = res.scenePath.split(".");
@@ -1894,7 +1895,7 @@ function setDragDrop( )
 		});
 
 		//add event listener to detect flower selection
-		model_api.scene.addEventListener(api.scene.EVENTTYPE.SELECT_ON, function (res) {
+		model_api.scene.addEventListener(model_api.scene.EVENTTYPE.SELECT_ON, function (res) {
 			var selectedScenePath = res.scenePath.split(".");
 
 			//check if the dragged element is a flower
