@@ -97,7 +97,7 @@
 		</div>
 
 
-		<div class="white-section center" style="margin:10px 0px" id="backlitLogoX">
+		<div class="white-section center" style="margin:10px 0px" id="backlitLogoScale">
 			<label>Logo Scale (%)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
@@ -109,7 +109,7 @@
 			</div>
 		</div>
 
-		<div class="white-section center" style="margin:10px 0px" id="backlitLogoY">
+		<div class="white-section center" style="margin:10px 0px" id="backlitLogoX">
 			<label>Logo X (inches)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
@@ -122,7 +122,7 @@
 		</div>
 
 		<div class="white-section center" style="margin:10px 0px" id="backlitLogoZ">
-			<label>Logo Y (inches)</label>
+			<label>Logo Z (inches)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
 					<input class="backlitLogoZSlider modelSlider" id="backlitLogoZSlider"/>
