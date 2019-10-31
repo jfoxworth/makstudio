@@ -233,7 +233,7 @@ $(document).ready(function()	{
 		$('#'+event.target.id).parent().addClass('currentItem');
 
 		if ( ( designType == "finWall" ) || ( designType == "backlit" ) || ( designType == "faceted" ) ||
-			 ( designType == "bench") || (designType == "light") )
+			 ( designType == "bench") || (designType == "light") || || (designType == "flower") )
 		{
 			$('#modelNameContainer').show();
 		
@@ -793,7 +793,7 @@ function setEnvironment( )
 		{
 			if ( (designType == 'bench') || (designType == 'finWall') || (designType == 'backlit') ||
 				 (designType == 'faceted') || (designType == 'light') || (designType == 'planter') ||
-				 (designType == 'desk') || (designType == 'panel') )
+				 (designType == 'desk') || (designType == 'panel') || (designType == 'flower') )
 			{
 				window['MakDesignType'] = designType; 
 			}else
@@ -894,7 +894,7 @@ function setModelView( modelName )
 
 	// Name of the file
 	$('#modelName').parent().hide();
-	if ( ( modelName == 'bench' ) || ( modelName == 'finWall' ) || ( modelName == 'backlit' ) || ( modelName == 'faceted' ) )
+	if ( ( modelName == 'bench' ) || ( modelName == 'finWall' ) || ( modelName == 'backlit' ) || ( modelName == 'faceted' )|| ( modelName == 'flower' ) )
 	{
 		$('#modelName').parent().show();
 	}
@@ -2038,6 +2038,16 @@ function initializeComponents( modelName )
 	}
 
 
+	if ( modelName == "flower" )
+	{
+		$(".flowerWallLengthSlider").ionRangeSlider({
+			grid: false,
+			min: 2,
+			max: 120,
+			step: 2
+		});
+
+	}
 
 }
 
