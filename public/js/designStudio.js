@@ -1076,7 +1076,7 @@ function setDefaultModelData( modelName )
 
 
 	// Make the global variable holding the model
-	makModel = {
+	window['makModel'] = {
 		'id' : '',
 		'created_at' : '',
 		'modified_at' : '',
@@ -1091,7 +1091,6 @@ function setDefaultModelData( modelName )
 		}
 	};
 
-	setDragDrop();
 
 
 	// Set the file name to the un named value
@@ -1159,6 +1158,7 @@ function setDefaultModelData( modelName )
 	});
 
 
+	setDragDrop();
 	initializeComponents( modelName );
 	setPrice( modelName );
 	setModelGroups();
