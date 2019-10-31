@@ -594,7 +594,7 @@ $(document).ready(function()	{
 	// Add a flower
 	$(document).on('click', '#addFlower', function(e)
 	{	
-		var newFlower = {'size':10; 'rotation':90; 'position':[10, 10] };
+		var newFlower = {'size':10, 'rotation':90, 'position':[10, 10] };
 		var thisLength = makModel['build_data']['componentValues']['flowersJSON']['flowers'].length;
 		makModel['build_data']['componentValues']['flowersJSON']['flowers'].splice( thisLength, 1, newFlower);
 		window['currentFlowerIndex'] = thisLength;
