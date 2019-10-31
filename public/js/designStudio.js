@@ -1587,7 +1587,7 @@ function setModelGroups( )
 					det = det+'<select id="lightPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:5px 0px">';
 						for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
 						{
-							det = det+'<option value="'+thisGroup+'">Light Block'+thisGroup+'</option>';
+							det = det+'<option value="'+thisGroup+'">Light Block - '+thisGroup+'</option>';
 						}
 					det = det+'</select>';
 				det = det+'</div>';
@@ -1638,6 +1638,29 @@ function setModelGroups( )
 
 	if ( MakDesignType == 'flower' )
 	{
+
+		var det = '';
+		var flowerNum = 1;
+
+
+		det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
+			det = det+'<button type="button" class="btn btn-secondary" id="addFlower">Add Flower</button>';
+		det = det+'</div>';
+
+		det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
+			det = det+'<label>Select Flower</label>';
+			det = det+'<select id="flowerPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:5px 0px">';
+				for (thisGroup in makModel['build_data']['componentValues']['flowersJSON']['flowers'])
+				{
+					det = det+'<option value="'+thisGroup+'">Flower - '+thisGroup+'</option>';
+				}
+			det = det+'</select>';
+		det = det+'</div>';
+
+		det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
+			det = det+'<button type="button" class="btn btn-danger" id="deleteFlower">Delete Flower</button>';
+		det = det+'</div>';
+
 
 	}
 
@@ -2316,7 +2339,8 @@ function initializeData()
 
 			'flower' : {
 				'Wall Width' : 'flowerWallWidthSlider',
-				'Wall Height' : 'flowerWallHeightSlider'
+				'Wall Height' : 'flowerWallHeightSlider',
+				'flowersJSON' : 'flowersJSON'
 			}
 
 

@@ -50,6 +50,35 @@
 	<div id="flowerSettings" class="parameterSet">
 
 
+		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+			<label>X Location (in)</label>
+			<div class="row" style="width:100%">
+				<input class="" id="flowerXLoc"/>
+			</div>
+		</div>
+
+		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+			<label>Y Location (in)</label>
+			<div class="row" style="width:100%">
+				<input class="" id="flowerYLoc"/>
+			</div>
+		</div>
+
+
+		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+			<label>Size (in)</label>
+			<div class="row" style="width:100%">
+				<input class="" id="flowerSize"/>
+			</div>
+		</div>
+
+		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+			<label>Rotation (deg)</label>
+			<div class="row" style="width:100%">
+				<input class="" id="flowerRot"/>
+			</div>
+		</div>
+
 	</div>
 
 
