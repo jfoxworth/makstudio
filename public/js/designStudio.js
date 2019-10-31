@@ -1681,6 +1681,7 @@ function setModelGroups( )
 
 	if ( MakDesignType == 'flower' )
 	{
+		var flowerOptions = {};
 		for (thisGroup in makModel['build_data']['componentValues']['flowersJSON']['flowers'])
 		{
 			flowerOptions[thisGroup] = 'Flower - '+thisGroup;
@@ -1688,7 +1689,7 @@ function setModelGroups( )
 
 		var $el = $("#flowerPicker");
 		$el.empty(); // remove old options
-		$.each(newOptions, function(key,value) {
+		$.each(flowerOptions, function(key,value) {
 		  $el.append($("<option></option>")
 		     .attr("value", key).text(value));
 		});
