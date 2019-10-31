@@ -11,8 +11,8 @@
 		</div>
 
 		<div class="hoverMe col_one_fifth col_last center nobottommargin"
-			 data-toggle="tooltip" data-placement="bottom" title="Flowers">
-			<i id="flowerNumberButton" class="icon-sun h3 parameterSelect"></i>
+			 data-toggle="tooltip" data-placement="bottom" title="Flower Settings">
+			<i id="flowerSettingsButton" class="icon-sun h3 parameterSelect"></i>
 		</div>
 
 	</div>
@@ -51,15 +51,8 @@
 	</div>
 
 
-	<div id="flowerNumber" class="parameterSet">
+	<div id="flowerSettings" class="parameterSet">
 
-		<div class="white-section" style="margin:10px 0px" id="benchDepth">
-			<label>Flower Settings</label>
-			<div id="flowerWallSettings"
-				 class="row" 
-				 style="width:100%">
-			</div>
-		</div>
 
 	</div>
 

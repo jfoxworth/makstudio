@@ -27,7 +27,6 @@
 
 		<div class="white-section center" style="margin:10px 0px" id="lightWidth">
 			<label>Wall Width (inches)</label>
-			<input class="lightWidthSlider modelSlider" id="lightWidthSlider"/>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
 					<input class="lightWidthSlider  modelSlider" id="lightWidthSlider "/>
