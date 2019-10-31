@@ -63,6 +63,7 @@ Route::get('/messages', function () { return view('layouts.messages'); });
 
 // Design Studio
 Route::get('/designStudio/{designID}', function () { return view('layouts.designStudio');  });
+Route::get('/designStudio', function () { return view('layouts.designStudio');  });
 
 
 // Build Studio
