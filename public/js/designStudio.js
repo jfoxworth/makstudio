@@ -965,7 +965,6 @@ function initializeNewModel( modelName )
 
 
 	setTimeout(function () {
-		setDragDrop();
 		setDefaultModelData(modelName);
 		setPrice(modelName);
 	}, 1000);
@@ -1092,6 +1091,7 @@ function setDefaultModelData( modelName )
 		}
 	};
 
+	setDragDrop();
 
 
 	// Set the file name to the un named value
