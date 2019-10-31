@@ -2356,7 +2356,7 @@ function initializeData()
 
 			'flower' : {
 				'Wall Length' : 'slider'
-\			}
+			}
 
 
 		}
