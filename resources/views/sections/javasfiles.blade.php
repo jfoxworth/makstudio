@@ -7,7 +7,7 @@
     <script type="text/javascript" src="/js/bs-switches.js"></script>
     <script type="text/javascript" src="/js/bs-select.js"></script>
     <script type="text/javascript" src="/js/selectsplitter.js"></script>
-    <script type="text/javascript" src="/js/shapeDiverPlugin.js"></script>
+    <script type="text/javascript" src="/js/shapeDiverNew.js"></script>
     <script type="text/javascript" src="/js/revolution.min.js"></script>
     <script type="text/javascript" src="/js/kenburns.js"></script>
     <script type="text/javascript" src="/js/layeranimation.js"></script>

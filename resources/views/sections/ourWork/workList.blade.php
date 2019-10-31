@@ -190,7 +190,7 @@
 			<h2>Ramada and Hideaway Kitchen</h2>
 		</div>
 	
-		<p><span class="dropcap">T</span>he Austin, Texas based Hideaway Kitchen is situated next to a Ramada. The ceiling features added to the two locations creates a unique and warm feel.</p>
+		<p>The Austin, Texas based Hideaway Kitchen is situated next to a Ramada. The ceiling features added to the two locations creates a unique and warm feel.</p>
 
 		<div class="masonry-thumbs grid-5 clearfix" 
 			 data-lightbox="gallery" 
@@ -333,7 +333,7 @@
 			<h2>arm</h2>
 		</div>
 	
-		<p><span class="dropcap">a</span>rm is a software, processor, and Internet of Things company. Their entry way was transformed into a work of art.</p>
+		<p>arm is a software, processor, and Internet of Things company. Their entry way was transformed into a work of art.</p>
 
 		<div class="masonry-thumbs grid-5 clearfix" 
 			 data-lightbox="gallery" 
