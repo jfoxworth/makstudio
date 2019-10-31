@@ -107,7 +107,6 @@ $(document).ready(function()	{
 
 	// Set the page to display the default model
 	setModelView( MakDesignType );
-	setDragDrop();
 
 
 
@@ -226,6 +225,8 @@ $(document).ready(function()	{
 		initializeNewModel( event.target.id );
 
 		setModelView(event.target.id);
+
+		setDragDrop();
 
 		// Shade the current item
 		$('.designType').removeClass('currentItem');
@@ -964,6 +965,7 @@ function initializeNewModel( modelName )
 
 
 	setTimeout(function () {
+		setDragDrop();
 		setDefaultModelData(modelName);
 		setPrice(modelName);
 	}, 1000);
