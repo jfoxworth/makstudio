@@ -43,10 +43,6 @@
 			</div>
 		</div>
 
-		<div class="white-section center modelBoolean" style="margin:20px 0px;">
-			<label>Wall Color</label><br>
-			<input class="bt-switch modelSwitch" type="checkbox" checked data-on-text="White" data-off-text="Grey" id="flowerWallColor">
-		</div>
 
 	</div>
 

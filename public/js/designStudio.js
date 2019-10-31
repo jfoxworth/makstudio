@@ -574,6 +574,53 @@ $(document).ready(function()	{
 
 
 
+
+
+
+
+	// Add a flower
+	$(document).on('click', '.addFlower', function(e)
+	{	
+
+		for (thisItem in makModel['build_data']['componentTypes'])
+		{
+			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
+			{
+				var thisLength = makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['heights'].length;
+				makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['heights'].splice( thisLength, 1, '10');
+				makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['xforms'].splice( thisLength, 1, thisLength);
+				amplitude.getInstance().logEvent('Add Light');
+
+			}
+
+		}
+	});
+
+
+	// Delete a single light
+	$(document).on('click', '.deleteFlower', function(e)
+	{	
+		var splitKeys = e.target.id.split('-');
+		for (thisItem in makModel['build_data']['componentTypes'])
+		{
+			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
+			{
+				makModel['build_data']['componentValues'][thisItem]['groups'][splitKeys[0]]['heights'].splice( splitKeys[1], 1);
+				amplitude.getInstance().logEvent('Delete Light');
+
+			}
+
+		}
+	});
+
+
+
+
+
+
+
+
+
 	// WHen the user clicks on a displayed model
 	// that they have saved adn they want to 
 	// view it
@@ -2268,8 +2315,8 @@ function initializeData()
 
 
 			'flower' : {
-				'Wall Width' : 'wallWidthSlider',
-				'Wall Height' : 'wallHeightSlider'
+				'Wall Width' : 'flowerWallWidthSlider',
+				'Wall Height' : 'flowerWallHeightSlider'
 			}
 
 
@@ -2384,7 +2431,8 @@ function initializeData()
 
 			'flower' : {
 				'Wall Width' : 'slider',
-				'Wall Height' : 'slider'
+				'Wall Height' : 'slider',
+				'flowersJSON' : 'dataPack'
 			}
 
 
