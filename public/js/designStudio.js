@@ -1159,10 +1159,10 @@ function setDefaultModelData( modelName )
 	});
 
 
-	setDragDrop();
 	initializeComponents( modelName );
 	setPrice( modelName );
 	setModelGroups();
+	setDragDrop();
 
 
 
@@ -1808,6 +1808,9 @@ function setDragDrop( )
 		var flowersID;
 		var panelsScenePath;
 		var flowersJSON = makModel.build_data.componentValues.flowersJSON;
+
+		console.log('The flowers json is');
+		console.log(flowersJSON);
 
 
 		//define effects for selectable, hoverable and draggable flowers
