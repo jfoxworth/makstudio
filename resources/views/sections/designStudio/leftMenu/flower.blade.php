@@ -19,7 +19,7 @@
 
 	<div id="flowerDimensions" class="parameterSet">
 
-		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+		<div class="white-section" style="margin:10px 0px">
 			<label>Wall Height (in)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
@@ -31,7 +31,7 @@
 			</div>
 		</div>
 
-		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+		<div class="white-section" style="margin:10px 0px">
 			<label>Wall Width (in)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
@@ -47,36 +47,49 @@
 	</div>
 
 
-	<div id="flowerSettings" class="parameterSet">
+	<div id="flowerSettings" class="parameterSet center">
+
+		<div class="white-section center" style="margin:20px 0px 0px">
+			<button type="button" class="btn btn-secondary" id="addFlower">Add Flower</button>
+		</div>
+
+		<div class="white-section center" style="margin:20px 0px 0px">
+			<label>Select Flower</label>
+			<select id="flowerPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:5px 0px"></select>
+		</div>
 
 
-		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+		<div class="white-section" style="margin:10px 0px">
 			<label>X Location (in)</label>
 			<div class="row" style="width:100%">
-				<input class="" id="flowerXLoc"/>
+				<input class="divcenter" id="flowerXLoc"/>
 			</div>
 		</div>
 
-		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+		<div class="white-section" style="margin:10px 0px">
 			<label>Y Location (in)</label>
 			<div class="row" style="width:100%">
-				<input class="" id="flowerYLoc"/>
+				<input class="divcenter" id="flowerYLoc"/>
 			</div>
 		</div>
 
 
-		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+		<div class="white-section" style="margin:10px 0px">
 			<label>Size (in)</label>
 			<div class="row" style="width:100%">
-				<input class="" id="flowerSize"/>
+				<input class="divcenter" id="flowerSize"/>
 			</div>
 		</div>
 
-		<div class="white-section" style="margin:10px 0px" id="benchDepth">
+		<div class="white-section" style="margin:10px 0px">
 			<label>Rotation (deg)</label>
 			<div class="row" style="width:100%">
-				<input class="" id="flowerRot"/>
+				<input class="divcenter" id="flowerRot"/>
 			</div>
+		</div>
+
+		<div class="white-section center" style="margin:20px 0px 0px">
+			<button type="button" class="btn btn-danger" id="deleteFlower">Delete Flower</button>
 		</div>
 
 	</div>

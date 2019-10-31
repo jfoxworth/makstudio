@@ -576,47 +576,90 @@ $(document).ready(function()	{
 
 
 
+	// Pick a flower
+	$(document).on('change', '#flowerPicker', function(e)
+	{	
+		window['currentFlowerIndex'] = $('#flowerPicker').val();
+		if ( window['currentFlowerIndex'] === undefined ) { window['currentFlowerIndex'] = 0; }
+
+		$('#flowerXLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][0] );
+		$('#flowerYLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][1] );
+		$('#flowerSize').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['size'] );
+		$('#flowerRot').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['rotation'] );
+		amplitude.getInstance().logEvent('Change Flower');
+
+	});
 
 
 	// Add a flower
-	$(document).on('click', '.addFlower', function(e)
+	$(document).on('click', '#addFlower', function(e)
 	{	
+		var newFlower = {'size':10; 'rotation':90; 'position':[10, 10] };
+		var thisLength = makModel['build_data']['componentValues']['flowersJSON']['flowers'].length;
+		makModel['build_data']['componentValues']['flowersJSON']['flowers'].splice( thisLength, 1, newFlower);
+		window['currentFlowerIndex'] = thisLength;
+		$('#flowerXLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][thisLength]['position'][0] );
+		$('#flowerYLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][thisLength]['position'][1] );
+		$('#flowerSize').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][thisLength]['size'] );
+		$('#flowerRot').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][thisLength]['rotation'] );
+		amplitude.getInstance().logEvent('Add Flower');
+	});
 
-		for (thisItem in makModel['build_data']['componentTypes'])
+
+	// Delete a flower
+	$(document).on('click', '#deleteFlower', function(e)
+	{	
+		makModel['build_data']['componentValues']['flowersJSON']['flowers'].splice( currentFlowerIndex, 1);
+		amplitude.getInstance().logEvent('Delete Flower');
+		currentFlowerIndex = currentFlowerIndex - 1;
+	});
+
+
+	// Change the X Location
+	$(document).on('keypress', '#flowerXLoc', function(e)
+	{	
+		if(e.which == 13) 
 		{
-			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
-			{
-				var thisLength = makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['heights'].length;
-				makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['heights'].splice( thisLength, 1, '10');
-				makModel['build_data']['componentValues'][thisItem]['groups'][e.target.id]['xforms'].splice( thisLength, 1, thisLength);
-				amplitude.getInstance().logEvent('Add Light');
+			makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][0] = $('#flowerXLoc').val();
+			amplitude.getInstance().logEvent('Flower X');
+			model_api.parameters.updateAsync({name: 'flowersJSON', value: JSON.stringify(makModel['build_data']['componentValues']['flowersJSON']) });
+		}
+	});
 
-			}
-
+	// Change the Y Location
+	$(document).on('keypress', '#flowerYLoc', function(e)
+	{	
+		if(e.which == 13) 
+		{
+			makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['position'][1] = $('#flowerYLoc').val();
+			amplitude.getInstance().logEvent('Flower Y');
+			model_api.parameters.updateAsync({name: 'flowersJSON', value: JSON.stringify(makModel['build_data']['componentValues']['flowersJSON']) });
 		}
 	});
 
 
-	// Delete a single light
-	$(document).on('click', '.deleteFlower', function(e)
+	// Change the size
+	$(document).on('keypress', '#flowerSize', function(e)
 	{	
-		var splitKeys = e.target.id.split('-');
-		for (thisItem in makModel['build_data']['componentTypes'])
+		if(e.which == 13) 
 		{
-			if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
-			{
-				makModel['build_data']['componentValues'][thisItem]['groups'][splitKeys[0]]['heights'].splice( splitKeys[1], 1);
-				amplitude.getInstance().logEvent('Delete Light');
-
-			}
-
+			makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['size'] = $('#flowerSize').val();
+			amplitude.getInstance().logEvent('Flower Size');
+			model_api.parameters.updateAsync({name: 'flowersJSON', value: JSON.stringify(makModel['build_data']['componentValues']['flowersJSON']) });
 		}
 	});
 
 
-
-
-
+	// Change the rotation
+	$(document).on('keypress', '#flowerRot', function(e)
+	{	
+		if(e.which == 13) 
+		{
+			makModel['build_data']['componentValues']['flowersJSON']['flowers'][currentFlowerIndex]['rotation'] = $('#flowerRot').val();
+			amplitude.getInstance().logEvent('Flower Rotation');
+			model_api.parameters.updateAsync({name: 'flowersJSON', value: JSON.stringify(makModel['build_data']['componentValues']['flowersJSON']) });
+		}
+	});
 
 
 
@@ -1638,29 +1681,23 @@ function setModelGroups( )
 
 	if ( MakDesignType == 'flower' )
 	{
+		for (thisGroup in makModel['build_data']['componentValues']['flowersJSON']['flowers'])
+		{
+			flowerOptions[thisGroup] = 'Flower - '+thisGroup;
+		}
 
-		var det = '';
-		var flowerNum = 1;
+		var $el = $("#flowerPicker");
+		$el.empty(); // remove old options
+		$.each(newOptions, function(key,value) {
+		  $el.append($("<option></option>")
+		     .attr("value", key).text(value));
+		});
 
-
-		det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
-			det = det+'<button type="button" class="btn btn-secondary" id="addFlower">Add Flower</button>';
-		det = det+'</div>';
-
-		det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
-			det = det+'<label>Select Flower</label>';
-			det = det+'<select id="flowerPicker" class="btn-primary blockDropdown" style="width:100%; height:35px; margin:5px 0px">';
-				for (thisGroup in makModel['build_data']['componentValues']['flowersJSON']['flowers'])
-				{
-					det = det+'<option value="'+thisGroup+'">Flower - '+thisGroup+'</option>';
-				}
-			det = det+'</select>';
-		det = det+'</div>';
-
-		det = det+'<div class="white-section center" style="margin:20px 0px 0px">';
-			det = det+'<button type="button" class="btn btn-danger" id="deleteFlower">Delete Flower</button>';
-		det = det+'</div>';
-
+		window['currentFlowerIndex'] = 0;
+		$('#flowerXLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][0]['position'][0] );
+		$('#flowerYLoc').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][0]['position'][1] );
+		$('#flowerSize').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][0]['size'] );
+		$('#flowerRot').val( makModel['build_data']['componentValues']['flowersJSON']['flowers'][0]['rotation'] );
 
 	}
 
