@@ -1980,11 +1980,12 @@ function setDragDrop( )
 			makModel.build_data.componentValues['Logo X Location'] = res.dragPosAbs.x;
 			$('#backlitLogoXInput').val( res.dragPosAbs.x );
 			$( "#backlitLogoXSlider" ).val( res.dragPosAbs.x );
-			$( "#backlitLogoXSlider" ).change();
+			$( '#backlitLogoXSlider').data("ionRangeSlider").update({'from': res.dragPosAbs.x })
 
 			makModel.build_data.componentValues['Logo Z Location'] = res.dragPosAbs.z;
 			$('#backlitLogoZInput').val( res.dragPosAbs.z );
 			$( "#backlitLogoZSlider" ).val( res.dragPosAbs.z );
+			$( '#backlitLogoZSlider').data("ionRangeSlider").update({'from': res.dragPosAbs.z })
 			$( "#backlitLogoZSlider" ).change();
 
 			model_api.parameters.updateAsync({ name: "Logo X Location", value: res.dragPosAbs.x})
