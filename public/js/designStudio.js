@@ -236,11 +236,11 @@ $(document).ready(function()	{
 			 ( MakDesignType == "bench") || (MakDesignType == "light") || (MakDesignType == "flower") )
 		{
 			$('#modelNameContainer').show();
-			$('#currentModelDisplay').show()
+			$('#currentModelDisplay').show();
 		
 		}else
 		{
-			$('#currentModelDisplay').hide()
+			$('#currentModelDisplay').hide();
 			$('#modelNameContainer').hide();
 		}
 
