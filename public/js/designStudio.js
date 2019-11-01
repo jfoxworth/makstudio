@@ -101,7 +101,11 @@ $(document).ready(function()	{
 	
 	}else
 	{
-		reloadModel( );
+		setTimeout(
+			function() 
+			{
+				reloadModel( );
+			}, 2000);
 	}
 
 
@@ -895,7 +899,6 @@ function setEnvironment( )
 	if ( $.isNumeric( designType ) )
 	{
 		window['MakViewType'] = 1;
-		window['MakDesignType'] = designType;
 
 		// Get the build and instance for the model
 		getBuilds( window.location.href.replace('http://www.makstudio.us/designStudio/', '') );
@@ -1470,19 +1473,23 @@ function reloadModel( modelID )
 
 	if ( modelID === undefined )
 	{
+		makModel = buildData[buildData.length-1];
+	
+	}else
+	{
+
+		buildData.forEach(function(build) 
+		{
+			if ( element.id == modelID )
+			{
+				makModel = build;
+			}
+		});
 
 	}
 
-
-	userModelData.forEach(function(element) 
-	{
-		if ( element.id == modelID )
-		{
-			makModel = element
-		}
-	});
-
 	$("#modelName").text( makModel.build_data.name );
+	MakDesignType = makModel['build_id'];
 
 
 	// viewer settings 
