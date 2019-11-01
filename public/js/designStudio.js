@@ -101,7 +101,7 @@ $(document).ready(function()	{
 	
 	}else
 	{
-		initializeOldModel();
+		reloadModel( );
 	}
 
 
@@ -986,6 +986,10 @@ function initializeNewModel( modelName )
 
 
 
+
+
+
+
 /*----------------------------------------------------------------------------*
 
 	This is the function called whenever the user changes the side menu 
@@ -1455,15 +1459,19 @@ function retrieveModels(  )
 
 
 
-/*-------------------------------------------*
+/*----------------------------------------------------------------------------*
 
-	This function loads a model that a user
-	has selected from the list of existing
-	models
+	This function loads a build based upon an ID given through the input.
+	If no build ID was given, the latest one is loaded
 
-/*-------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 function reloadModel( modelID )
 {
+
+	if ( modelID === undefined )
+	{
+		
+	}
 
 
 	userModelData.forEach(function(element) 
