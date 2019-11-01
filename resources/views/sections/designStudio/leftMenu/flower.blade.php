@@ -21,7 +21,7 @@
 
 		<div class="white-section" style="margin:10px 0px">
 			<label>Wall Height (in)</label>
-			<div class="row" style="width:100%">
+			<div class="row">
 				<div style="width:70%">
 					<input class="flowerWallHeightSlider modelSlider" id="flowerWallHeightSlider"/>
 				</div>
@@ -33,7 +33,7 @@
 
 		<div class="white-section" style="margin:10px 0px">
 			<label>Wall Width (in)</label>
-			<div class="row" style="width:100%">
+			<div class="row">
 				<div style="width:70%">
 					<input class="flowerWallWidthSlider modelSlider" id="flowerWallWidthSlider"/>
 				</div>
@@ -61,14 +61,14 @@
 
 		<div class="white-section" style="margin:10px 0px">
 			<label>X Location (in)</label>
-			<div class="row" style="width:100%">
+			<div>
 				<input class="divcenter" id="flowerXLoc"/>
 			</div>
 		</div>
 
 		<div class="white-section" style="margin:10px 0px">
 			<label>Y Location (in)</label>
-			<div class="row" style="width:100%">
+			<div>
 				<input class="divcenter" id="flowerYLoc"/>
 			</div>
 		</div>
@@ -76,14 +76,14 @@
 
 		<div class="white-section" style="margin:10px 0px">
 			<label>Size (in)</label>
-			<div class="row" style="width:100%">
+			<div>
 				<input class="divcenter" id="flowerSize"/>
 			</div>
 		</div>
 
 		<div class="white-section" style="margin:10px 0px">
 			<label>Rotation (deg)</label>
-			<div class="row" style="width:100%">
+			<div>
 				<input class="divcenter" id="flowerRot"/>
 			</div>
 		</div>

@@ -895,7 +895,12 @@ function setEnvironment( )
 	if ( $.isNumeric( designType ) )
 	{
 		window['MakViewType'] = 1;
-		window['MakDesignType'] = designType; 
+		window['MakDesignType'] = designType;
+
+		// Get the build and instance for the model
+		getBuilds( window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
+		getInstance( window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
+
 	
 	// If not a number, continue investigating type but set view to new
 	}else
@@ -2024,6 +2029,120 @@ function setDragDrop( )
 }
 
 
+
+
+
+
+
+
+
+/*------------------------------------------------------------*
+
+	This function gets the instance in question
+
+/*------------------------------------------------------------*/
+function getInstance( id )
+{
+
+
+	$.ajax({
+		url : "/getInstance/"+id,
+		method :"get"
+
+	}).done(function(data) 
+	{
+
+		console.log(data);
+		window['instanceData'] = data;
+		$('#modelName').text(data.name);
+
+
+		$('.optionSection').hide();
+
+		var designType='';
+		if ( data.design_type == 2 ){ $('#benchSection').show(); 		window['MakDesignType']='bench'; }
+		if ( data.design_type == 3 ){ $('#finWallSection').show(); 		window['MakDesignType']='finWall'; }
+		if ( data.design_type == 4 ){ $('#backlitSection').show(); 		window['MakDesignType']='backlit'; }
+		if ( data.design_type == 5 ){ $('#facetedSection').show(); 		window['MakDesignType']='faceted'; }
+		if ( data.design_type == 6 ){ $('#lightWallSection').show(); 	window['MakDesignType']='light'; }
+		if ( data.design_type == 7 ){ $('#deskSection').show(); 		window['MakDesignType']='desk'; }
+		if ( data.design_type == 8 ){ $('#planterWallSection').show(); 	window['MakDesignType']='planter'; }
+		if ( data.design_type == 9 ){ $('#panelWallSection').show(); 	window['MakDesignType']='panel'; }
+		if ( data.design_type == 12 ){ $('#flowerSection').show(); 		window['MakDesignType']='flower'; }
+
+
+		// Place this data into the properties page
+		$('#instanceName').text(instanceData.name);
+		$('#instanceType').text(MakDesignType);
+		$('#instanceDate').text(instanceData.created_at);
+		$('#instanceBuilds').text(buildData.length);
+		$('#instanceStatus').text(instanceData.stage);
+		$('#instancePrice').text('$'+buildData[buildData.length-1]['build_data']['price']);
+
+	});
+
+}
+
+
+
+
+
+/*------------------------------------------------------------*
+
+	This function gets all of the builds for a given instance
+
+/*------------------------------------------------------------*/
+function getBuilds( id )
+{
+
+
+	$.ajax({
+		url : "/getBuilds/"+id,
+		method :"get"
+
+	}).done(function(data) 
+	{
+
+		console.log(data);
+		var newOptions = {};
+
+		data.forEach(function(obj) 
+		{
+			obj.build_data = JSON.parse(obj.build_data);
+			newOptions[obj.id] = obj.build_data.name;
+		});
+
+		window['buildData'] = data;
+		console.log(newOptions);
+
+
+		var $el = $("#buildID");
+		$el.empty(); // remove old options
+		$.each(newOptions, function(key,value) {
+		  $el.append($("<option></option>")
+		     .attr("value", key).text(value));
+		});
+
+
+		// Load the first version if there is only one build
+		if ( data.length == 1 )
+		{
+			window['makModel'] = data[0];
+		
+			// Set the overall variable for the model type
+			window['MakDesignType'] = makModel.build_data.name;
+
+			reloadModel();
+			setTimeout(function () {
+				setPrice( );
+			}, 1000);
+		}
+
+
+
+	});
+
+}
 
 
 
