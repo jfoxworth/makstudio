@@ -898,8 +898,8 @@ function setEnvironment( )
 		window['MakDesignType'] = designType;
 
 		// Get the build and instance for the model
-		getBuilds( window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
-		getInstance( window.location.href.replace('http://www.makstudio.us/buildStudio/', '') );
+		getBuilds( window.location.href.replace('http://www.makstudio.us/designStudio/', '') );
+		getInstance( window.location.href.replace('http://www.makstudio.us/designStudio/', '') );
 
 	
 	// If not a number, continue investigating type but set view to new
@@ -1470,7 +1470,7 @@ function reloadModel( modelID )
 
 	if ( modelID === undefined )
 	{
-		
+
 	}
 
 
