@@ -931,8 +931,6 @@ function setEnvironment( )
 
 	}
 
-	console.log('I set the view type to - '+MakViewType);
-	console.log('I set the design type to - '+MakDesignType);
 
 }
 
