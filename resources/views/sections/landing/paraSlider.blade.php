@@ -417,9 +417,9 @@
 
 
 				<!-- SLIDE  -->
-				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/makStudioHallmark.jpg" data-delay="12000"  data-saveperformance="off"  data-title="Backlit Wall">
+				<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/MakJacobWhite.jpg" data-delay="12000"  data-saveperformance="off"  data-title="Backlit Wall">
 					<!-- MAIN IMAGE -->
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/makStudioHallmark.jpg"  alt="kenburns3"  data-bgposition="right bottom" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/MakJacobWhite.jpg"  alt="kenburns3"  data-bgposition="right bottom" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
 					<!-- LAYERS -->
 
 					<!-- LAYER NR. 1 -->

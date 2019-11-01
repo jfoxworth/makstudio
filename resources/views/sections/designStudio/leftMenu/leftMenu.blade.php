@@ -117,7 +117,7 @@
 					<div class="hoverMe col_one_fifth center designType nobottommargin col_last"
 						 id="flowerHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Flower Wall">
-						<img id="flower" src="/images/icons/MAKICONS-01.png" width="48px">
+						<img id="flower" src="/images/icons/MAKICONS-10.png" width="48px">
 					</div>
 
 				</div>

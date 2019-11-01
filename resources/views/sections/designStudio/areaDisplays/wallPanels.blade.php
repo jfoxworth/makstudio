@@ -1,12 +1,27 @@
 <div class="row">
 
 	<div class="col_one_fifth bottommargin-sm center">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/MakPanelFossil.jpg" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Fossil</h4>
+	</div>
+
+	<div class="col_one_fifth bottommargin-sm center">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/MakPanelLeaf.jpg" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Leaf</h4>
+	</div>
+
+	<div class="col_one_fifth bottommargin-sm center">
+		<img src="https://makstudio.s3.us-east-2.amazonaws.com/MakPanelText.jpg" width="150px" height="150px">
+		<h4 class="center" style="margin-top:8px">Text</h4>
+	</div>
+
+	<div class="col_one_fifth bottommargin-sm center">
 		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelAxis.png" width="150px" height="150px">
 		<h4 class="center" style="margin-top:8px">Axis</h4>
 	</div>
 
 
-	<div class="col_one_fifth bottommargin-sm center">
+	<div class="col_one_fifth col_last bottommargin-sm center">
 		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelJaramillo.png" width="150px" height="150px">
 		<h4 class="center" style="margin-top:8px">Jaramillo</h4>
 	</div>
@@ -25,7 +40,7 @@
 	</div>
 
 
-	<div class="col_one_fifth bottommargin-sm center col_last">
+	<div class="col_one_fifth bottommargin-sm center ">
 		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelPointCloud.png" width="150px" height="150px">
 		<h4 class="center" style="margin-top:8px">Point Cloud</h4>
 	</div>
@@ -38,7 +53,7 @@
 
 
 
-	<div class="col_one_fifth bottommargin-sm center">
+	<div class="col_one_fifth col_last bottommargin-sm center">
 		<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelSwirl.png" width="150px" height="150px">
 		<h4 class="center" style="margin-top:8px">Swirl</h4>
 	</div>
@@ -64,6 +79,9 @@
 
 	<div class="col_two_third col_last">
 		<select class="selectpicker" multiple>
+			<option value="fossil">Fossil</option>
+			<option value="leaf">Leaf</option>
+			<option value="text">Text</option>
 			<option value="lily">Lily</option>
 			<option value="quilted">Quilted</option>
 			<option value="swirl">Swirl</option>
