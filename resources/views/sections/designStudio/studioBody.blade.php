@@ -17,9 +17,7 @@
 
 				<!-- The main area for the three.js model -->
 				<div class="col_last col_three_fourth notopmargin nobottommargin">
-					<div>1</div>
 					<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
-					<div>2</div>
 				</div>
 
 

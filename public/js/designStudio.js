@@ -1488,6 +1488,7 @@ function reloadModel( modelID )
 	$("#modelName").text( makModel.build_data.name );
 	MakDesignType = makModel['build_id'];
 	setModelView( MakDesignType );
+	$( '#currentModelDisplay' ).html('');
 
 
 	// viewer settings 
