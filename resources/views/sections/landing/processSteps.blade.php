@@ -9,22 +9,22 @@
 		<ul class="process-steps process-4 bottommargin clearfix">
 
 			<li>
-				<a href="#" class="i-circled i-alt divcenter">1</a>
+				<div class="i-circled i-alt divcenter">1</div>
 				<h5>Design and get pricing</h5>
 			</li>
 
 			<li>
-				<a href="#" class="i-circled i-alt divcenter">2</a>
+				<div class="i-circled i-alt divcenter">2</div>
 				<h5>We fabricate it for you</h5>
 			</li>
 
 			<li class="active">
-				<a href="#" class="i-circled i-alt divcenter">3</a>
+				<div class="i-circled i-alt divcenter">3</div>
 				<h5>Easy installation</h5>
 			</li>
 
 			<li class="active">
-				<a href="#" class="i-circled i-alt divcenter">3</a>
+				<div class="i-circled i-alt divcenter">4</div>
 				<h5>Your beautiful space</h5>
 			</li>
 
