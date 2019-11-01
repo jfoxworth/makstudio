@@ -98,6 +98,9 @@ $(document).ready(function()	{
 	if ( MakViewType == 0 )
 	{
 		initializeNewModel( MakDesignType );
+		
+		// Set the page to display the default model
+		setModelView( MakDesignType );
 	
 	}else
 	{
@@ -107,10 +110,6 @@ $(document).ready(function()	{
 				reloadModel( );
 			}, 2000);
 	}
-
-
-	// Set the page to display the default model
-	setModelView( MakDesignType );
 
 
 
@@ -1488,6 +1487,7 @@ function reloadModel( modelID )
 
 	$("#modelName").text( makModel.build_data.name );
 	MakDesignType = makModel['build_id'];
+	setModelView( MakDesignType );
 
 
 	// viewer settings 
@@ -2088,9 +2088,7 @@ function getInstance( id )
 		$('#instanceName').text(instanceData.name);
 		$('#instanceType').text(MakDesignType);
 		$('#instanceDate').text(instanceData.created_at);
-		$('#instanceBuilds').text(buildData.length);
 		$('#instanceStatus').text(instanceData.stage);
-		$('#instancePrice').text('$'+buildData[buildData.length-1]['build_data']['price']);
 
 	});
 
@@ -2126,7 +2124,8 @@ function getBuilds( id )
 		});
 
 		window['buildData'] = data;
-		console.log(newOptions);
+		$('#instanceBuilds').text(buildData.length);
+		$('#instancePrice').text('$'+buildData[buildData.length-1]['build_data']['price']);
 
 
 		var $el = $("#buildID");
