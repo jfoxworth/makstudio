@@ -61,6 +61,8 @@
 
 				<div class="row divcenter designOption">
 
+					<div class="col_one_fifth nobottommargin"></div>
+
 					<div class="hoverMe col_one_fifth center designType nobottommargin "
 						 id="flowerHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Flower Wall">
@@ -73,11 +75,13 @@
 						<img id="backlit" src="/images/icons/MAKICONS-08.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin col_last"
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="panelHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="3D Wall Panels">
 						<img id="panel" src="/images/icons/MAKICONS-02.png" width="48px">
 					</div>
+
+					<div class="col_one_fifth nobottommargin col_last"></div>
 
 				</div>
 
@@ -85,6 +89,7 @@
 
 				<div class="row divcenter designOption ">
 
+					<div class="col_one_fifth nobottommargin "></div>
 
 					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="finWallHolder"
@@ -105,11 +110,15 @@
 						<img id="planter" src="/images/icons/MAKICONS-04.png" width="48px">
 					</div>
 
+					<div class="col_one_fifth nobottommargin col_last"></div>
+
 				</div>
 
 
 
 				<div class="row divcenter designOption bottommargin-sm">
+
+					<div class="col_one_fifth nobottommargin "></div>
 
 
 					<div class="hoverMe col_one_fifth center designType nobottommargin"
@@ -131,6 +140,8 @@
 						<img id="light" src="/images/icons/MAKICONS-01.png" width="48px">
 					</div>
 				-->
+
+					<div class="col_one_fifth nobottommargin col_last"></div>
 
 				</div>
 
