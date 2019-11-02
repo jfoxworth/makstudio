@@ -79,6 +79,8 @@
 						<img id="panel" src="/images/icons/MAKICONS-02.png" width="48px">
 					</div>
 
+				</div>
+
 
 
 				<div class="row divcenter designOption ">
