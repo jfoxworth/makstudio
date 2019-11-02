@@ -2588,9 +2588,9 @@ function initializeComponents( modelName )
 
 		$(".flowerWallHeightSlider").ionRangeSlider({
 			grid: false,
-			min: 36,
-			max: 120,
-			step: 1
+			min: 96,
+			max: 192,
+			step: 96
 		});
 
 	}
