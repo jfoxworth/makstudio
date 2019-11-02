@@ -1631,6 +1631,15 @@ function setPrice( modelName )
 	}
 
 
+	if ( modelName == 'flower' )
+	{
+		var totalSpace = parseInt( makModel['build_data']['componentValues']['Wall Height'] ) * 
+						 parseInt( makModel['build_data']['componentValues']['Wall Width'] );
+		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalSpace / 144);
+		$('#flowerPrice').html( modelPrice );
+	}
+
+
 	makModel['build_data']['price'] = modelPrice;
 
 

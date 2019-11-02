@@ -59,6 +59,7 @@
 		</div>
 
 
+		<!--
 		<div class="white-section" style="margin:10px 0px">
 			<label>X Location (in)</label>
 			<div>
@@ -72,6 +73,7 @@
 				<input class="divcenter" id="flowerYLoc"/>
 			</div>
 		</div>
+		-->
 
 
 		<div class="white-section" style="margin:10px 0px">

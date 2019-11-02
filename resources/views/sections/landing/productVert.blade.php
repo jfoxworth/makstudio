@@ -48,7 +48,7 @@
 							<!--<button type="button" class="btn btn-outline-light mt-2"><a href="/designStudio" style="color:#FFF">Enter Design Studio</a></button>-->
 
 							<div id="Design Flip Button 6" 
-								 modelType="panel"
+								 modelType="flower"
 								 class="designStudioButton btn btn-outline-light mt-2 hoverMe" >
 								<span>Enter Design Studio</span> <i class="icon-angle-right"></i>
 							</div>

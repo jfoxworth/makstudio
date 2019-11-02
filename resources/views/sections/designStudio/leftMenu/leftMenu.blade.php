@@ -122,11 +122,13 @@
 						<img id="desk" src="/images/icons/MAKICONS-09.png" width="48px">
 					</div>
 
+					<!--
 					<div class="hoverMe col_one_fifth center designType nobottommargin col_last"
 						 id="lightHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Light Fixture Wall">
 						<img id="light" src="/images/icons/MAKICONS-01.png" width="48px">
 					</div>
+				-->
 
 				</div>
 
