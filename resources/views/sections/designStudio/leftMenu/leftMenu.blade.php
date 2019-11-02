@@ -61,10 +61,10 @@
 
 				<div class="row divcenter designOption">
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
-						 id="finWallHolder"
-						 data-toggle="tooltip" data-placement="top" title="Slat Wall">
-						<img id="finWall" src="/images/icons/MAKICONS-07.png" width="48px">
+					<div class="hoverMe col_one_fifth center designType nobottommargin "
+						 id="flowerHolder"
+						 data-toggle="tooltip" data-placement="bottom" title="Flower Wall">
+						<img id="flower" src="/images/icons/MAKICONS-10.png" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fifth center designType nobottommargin"
@@ -73,10 +73,47 @@
 						<img id="backlit" src="/images/icons/MAKICONS-08.png" width="48px">
 					</div>
 
+					<div class="hoverMe col_one_fifth center designType nobottommargin col_last"
+						 id="panelHolder"
+						 data-toggle="tooltip" data-placement="bottom" title="3D Wall Panels">
+						<img id="panel" src="/images/icons/MAKICONS-02.png" width="48px">
+					</div>
+
+
+
+				<div class="row divcenter designOption ">
+
+
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
+						 id="finWallHolder"
+						 data-toggle="tooltip" data-placement="top" title="Slat Wall">
+						<img id="finWall" src="/images/icons/MAKICONS-07.png" width="48px">
+					</div>
+
+
 					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="facetedHolder"
 						 data-toggle="tooltip" data-placement="top" title="Faceted Wall">
 						<img id="faceted" src="/images/icons/MAKICONS-06.png" width="48px">
+					</div>
+
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
+						 id="planterHolder"
+						 data-toggle="tooltip" data-placement="bottom" title="Planter Wall">
+						<img id="planter" src="/images/icons/MAKICONS-04.png" width="48px">
+					</div>
+
+				</div>
+
+
+
+				<div class="row divcenter designOption bottommargin-sm">
+
+
+					<div class="hoverMe col_one_fifth center designType nobottommargin"
+						 id="benchHolder"
+						 data-toggle="tooltip" data-placement="top" title="Planter Bench">
+						<img id="bench" src="/images/icons/MAKICONS-05.png" width="48px">
 					</div>
 
 					<div class="hoverMe col_one_fifth center designType nobottommargin"
@@ -85,39 +122,10 @@
 						<img id="desk" src="/images/icons/MAKICONS-09.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin col_last currentItem"
-						 id="benchHolder"
-						 data-toggle="tooltip" data-placement="top" title="Planter Bench">
-						<img id="bench" src="/images/icons/MAKICONS-05.png" width="48px">
-					</div>
-
-				</div>
-
-				<div class="row divcenter designOption bottommargin-sm">
-
-
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
-						 id="planterHolder"
-						 data-toggle="tooltip" data-placement="bottom" title="Planter Wall">
-						<img id="planter" src="/images/icons/MAKICONS-04.png" width="48px">
-					</div>
-
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
-						 id="panelHolder"
-						 data-toggle="tooltip" data-placement="bottom" title="3D Wall Panels">
-						<img id="panel" src="/images/icons/MAKICONS-02.png" width="48px">
-					</div>
-
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fifth center designType nobottommargin col_last"
 						 id="lightHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Light Fixture Wall">
 						<img id="light" src="/images/icons/MAKICONS-01.png" width="48px">
-					</div>
-
-					<div class="hoverMe col_one_fifth center designType nobottommargin col_last"
-						 id="flowerHolder"
-						 data-toggle="tooltip" data-placement="bottom" title="Flower Wall">
-						<img id="flower" src="/images/icons/MAKICONS-10.png" width="48px">
 					</div>
 
 				</div>

@@ -2572,14 +2572,14 @@ function initializeComponents( modelName )
 	{
 		$(".flowerWallWidthSlider").ionRangeSlider({
 			grid: false,
-			min: 2,
-			max: 1200,
+			min: 30,
+			max: 240,
 			step: 2
 		});
 
 		$(".flowerWallHeightSlider").ionRangeSlider({
 			grid: false,
-			min: 1,
+			min: 36,
 			max: 120,
 			step: 1
 		});
