@@ -129,7 +129,7 @@
       </div>
       <div class="modal-body">
       	<h5>Enter a name for the model that will help you identify it later</h5>
-        <input type="text" class="form-control" id="modalModelName" placeholder="Enter Name for Model"
+        <input type="text" class="form-control" id="modalModelName" placeholder="Enter Name for Model">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -144,6 +144,3 @@
 
 
 @include('sections.designStudio.quoteBlocks.benchQuote')
-
-
-

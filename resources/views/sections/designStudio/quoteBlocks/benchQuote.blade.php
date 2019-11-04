@@ -30,7 +30,7 @@
 
 					<tr>
 						<td>Length of Left Side of Bench</td>
-						<td></td>
+						<td id="leftBenchLength"></td>
 					</tr>
 
 				</table>
