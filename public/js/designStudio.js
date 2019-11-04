@@ -1851,7 +1851,7 @@ function setDragDrop( )
 
 	console.log('In set drag drop');
 
-
+	console.log(model_api)
 
 	while ( model_api.scene === undefined )
 	{
@@ -1863,6 +1863,8 @@ function setDragDrop( )
 		}, 1000);
 
 	}
+
+	console.log(model_api);
 
 	console.log('Moving On');
 
