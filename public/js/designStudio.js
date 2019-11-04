@@ -1571,9 +1571,12 @@ function reloadModel( modelID )
 
 			initializeComponents( makModel['build_id'] );
 			setPrice( modelID);
-			setDragDrop();
+			setTimeout(function () {
+				setDragDrop();
+			}, 3000);
 
-		}, 1000);
+	
+		}, 3000);
 
 	}
 
