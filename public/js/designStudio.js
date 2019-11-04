@@ -868,7 +868,7 @@ $(document).ready(function()	{
 	/*------------------------------------------------------------------------------------------------------------*/
 
 
-	// Change the rotation
+	// Bench Modal
 	$(document).on('click', '#benchModalCall', function(e)
 	{	
 
@@ -893,8 +893,23 @@ $(document).ready(function()	{
 	});
 
 
-});
 
+
+
+	// Flower Wall Modal
+	$(document).on('click', '#flowerModalCall', function(e)
+	{	
+
+		$('#flowerQuoteModal').modal('show');
+		$('#flowerWallHeightQuote').text(makModel.build_data.componentValues['Wall Height']);
+		$('#flowerWallWidthQuote').text(makModel.build_data.componentValues['Wall Width']);
+		$('#flowerWallNumbersQuote').text(makModel.build_data.componentValues['flowersJSON']['flowers'].length);
+
+	});
+
+
+
+});
 
 
 
