@@ -1952,6 +1952,8 @@ function setDragDrop( )
 
 				//add event listener to detect flower dragging
 				model_api.scene.addEventListener(model_api.scene.EVENTTYPE.DRAG_END, function (res) {
+					
+					console.log('In add event listener');
 					console.log(res);
 
 					var draggedScenePath = res.scenePath.split(".");
@@ -2098,9 +2100,6 @@ function setDragDrop( )
 	
 
 }
-
-
-
 
 
 
