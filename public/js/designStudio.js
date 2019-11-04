@@ -1866,7 +1866,8 @@ function setDragDrop( )
 
 	console.log(model_api)
 
-	while ( model_api.scene === undefined )
+	while ( (model_api.scene === undefined ) ||
+			( Object.keys(makModel.build_data.componentValues).length === 0 ) )
 	{
 		console.log('Loop');
 
