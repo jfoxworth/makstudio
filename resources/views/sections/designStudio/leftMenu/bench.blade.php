@@ -116,8 +116,20 @@
 	<div class="white-section divcenter" style="margin:20px 0px">
 		<label>Estimated Cost (US)</label>
 
-		<div class="divcenter priceBox">
-			$ <span id="benchPrice"></span>
+		<div class="row">
+
+			<div class="divcenter priceBox">
+				$ <span id="benchPrice"></span>
+			</div>
+
+			<i id="benchModalCall"
+			   class="nomargin nopadding i-circled i-small icon-dollar hoverMe"
+			   data-toggle="toottip"
+			   data-placement="top"
+			   title="Get Full Price Quote" >
+				
+			</i>
+
 		</div>
 
 	</div>

@@ -138,3 +138,12 @@
     </div>
   </div>
 </div>
+
+
+
+
+
+@include('sections.designStudio.quoteBlocks.benchQuote')
+
+
+

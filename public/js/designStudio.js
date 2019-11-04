@@ -857,7 +857,31 @@ $(document).ready(function()	{
 
 
 
+
+
+
+
+	/*------------------------------------------------------------------------------------------------------------*
+
+		Modal Calls
+
+	/*------------------------------------------------------------------------------------------------------------*/
+
+
+	// Change the rotation
+	$(document).on('click', '#benchModalCall', function(e)
+	{	
+		$('#benchQuoteModal').modal('show');
+		$('#leftBenchLength').val(makModel.build_data.componentValues['Left Seating Length']);
+	});
+
+
 });
+
+
+
+
+
 
 
 
