@@ -1177,7 +1177,9 @@ function setDefaultModelData( modelName )
 	initializeComponents( modelName );
 	setPrice( modelName );
 	setModelGroups();
-	setDragDrop();
+	setTimeout(function () {
+		setDragDrop();
+	}, 3000);
 
 
 
@@ -1906,6 +1908,7 @@ function setDragDrop( )
 					{
 						if (assets[i].name == "Flowers") 
 						{
+							console.log('Here');
 							flowersID = assets[i].id;
 						
 						}else if (assets[i].name == "Panels") 
@@ -1915,7 +1918,7 @@ function setDragDrop( )
 					}
 				}
 
-
+				console.log('The flowers ID is '+flowersID);
 				console.log('Here 5');
 
 				//update flowers 3D asset to make it draggable and hoverable
