@@ -975,7 +975,7 @@ function initializeNewModel( modelName )
 	setTimeout(function () {
 		setDefaultModelData(modelName);
 		setPrice(modelName);
-	}, 3000);
+	}, 5000);
 
 
 }
@@ -1083,16 +1083,6 @@ function setDefaultModelData( modelName )
 
 	console.log(model_api);
 
-	while ( model_api.scene === undefined )
-	{
-		console.log('Waiting');
-		setTimeout(
-			function() 
-			{
-				console.log('here');
-			}, 1000);
-
-	}
 
 	// Pull the values from the shape diver ticket
 	thisData = model_api.parameters.get();
@@ -1865,19 +1855,6 @@ function setDragDrop( )
 	console.log('In set drag drop');
 
 	console.log(model_api)
-
-	while ( (model_api.scene === undefined ) )
-	{
-		console.log('Loop');
-
-		setTimeout(function () 
-		{
-
-		}, 1000);
-
-	}
-
-	console.log(model_api);
 
 	console.log('Moving On');
 
