@@ -889,7 +889,7 @@ $(document).ready(function()	{
 		$('#benchTwistLengthQuote').text(makModel.build_data.componentValues['Twist Length']);
 		$('#benchRightPlanterQuote').text(planterValues[makModel.build_data.componentValues['Right Planter']]);
 		$('#benchLeftPlanterQuote').text(planterValues[makModel.build_data.componentValues['Left Planter']]);
-		$('#benchModalPriceQuote').text(planterValues[makModel.build_data.['price']]);
+		$('#benchModalPriceQuote').text(planterValues[makModel.build_data['price']]);
 	});
 
 
