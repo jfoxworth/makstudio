@@ -180,6 +180,30 @@
 	</div>
 
 
+
+	<!-- Price box for faceted -->
+	<div class="white-section center divcenter" style="margin:20px 0px">
+		<label>Estimated Cost (US)</label>
+
+
+		<div class="row">
+
+			<div class="divcenter priceBox">
+				$ <span id="facetedPrice"></span>
+			</div>
+
+			<i id="facetedModalCall"
+			   class="nomargin nopadding i-circled i-small icon-dollar hoverMe"
+			   data-toggle="toottip"
+			   data-placement="top"
+			   title="Get Full Price Quote" >
+				
+			</i>
+
+		</div>
+
+	</div>
+
 </div>
 
 

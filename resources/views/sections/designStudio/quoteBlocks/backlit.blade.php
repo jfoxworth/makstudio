@@ -1,8 +1,6 @@
-
-
-<!-- Fin Wall Quote Modal -->
+<!-- Bench Quote Modal -->
 <div class="modal fade" 
-	 id="finWallQuoteModal" 
+	 id="backlitQuoteModal" 
 	 tabindex="-1" 
 	 role="dialog" 
 	 aria-labelledby="exampleModalLabel" 
@@ -35,51 +33,47 @@
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Height of Wall</td><td id="finWallHeightQuote"></td>
+						<td></td>Length of Wall<td id="backlitLengthQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Length of Wall</td><td id="finWallLengthQuote"></td>
+						<td>Height of Wall</td><td id="backlitWidthQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Show Logo</td><td id="finWallShowLogoQuote"></td>
+						<td>Logo</td><td id="backlitLogoQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Material</td><td id="finWallMaterialQuote"></td>
+						<td>Create Flat Area</td><td id="backlitFlatAreaQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Logo Position X</td><td id="finWallXQuote"></td>
+						<td>Logo Scale</td><td id="backlitLogoScaleQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Logo Position Y</td><td id="finWallYQuote"></td>
+						<td>Logo Z Location</td><td id="backlitLogoZQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Wall Depth</td><td id="finWallDepthQuote"></td>
+						<td>Logo X</td><td id="backlitLogoXQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Spacing of Fins</td><td id="finWallSpacingQuote"></td>
+						<td>Wall Roughness</td><td id="backlitWallRoughQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Ripple Center Location X</td><td id="finWallRippleXQuote"></td>
+						<td>Wave Amplitude</td><td id="backlitWaveAmpQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Ripple Center Location Y</td><td id="finWallRippleYQuote"></td>
-					</tr>
-
-					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Panel Type</td><td id="finWallPanelTypeQuote"></td>
+						<td>Wave Depth</td><td id="backlitWaveDepthQuote"></td>
 					</tr>
 
 					<tr style="height:30px; background-color:#888; color:#fff">
-						<td>Price</td><td id="finWallModalPriceQuote"></td>
+						<td>Price</td><td id="backlitModalPriceQuote"></td>
 					</tr>
 
 				</table>

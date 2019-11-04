@@ -12,7 +12,7 @@
 
 		<div class="modal-content">
 
-	  		<div class="modal-header">
+	  		<div class="modal-header btn-primary">
 
 				<h5 class="modal-title btn-primary" id="exampleModalLabel">Finish Quote</h5>
 		

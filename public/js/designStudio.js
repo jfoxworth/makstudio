@@ -889,7 +889,7 @@ $(document).ready(function()	{
 		$('#benchTwistLengthQuote').text(makModel.build_data.componentValues['Twist Length']);
 		$('#benchRightPlanterQuote').text(planterValues[makModel.build_data.componentValues['Right Planter']]);
 		$('#benchLeftPlanterQuote').text(planterValues[makModel.build_data.componentValues['Left Planter']]);
-		$('#benchModalPriceQuote').text(planterValues[makModel.build_data['price']]);
+		$('#benchModalPriceQuote').text(makModel.build_data['price']);
 	});
 
 
@@ -904,6 +904,8 @@ $(document).ready(function()	{
 		$('#flowerWallHeightQuote').text(makModel.build_data.componentValues['Wall Height']);
 		$('#flowerWallWidthQuote').text(makModel.build_data.componentValues['Wall Width']);
 		$('#flowerWallNumbersQuote').text(makModel.build_data.componentValues['flowersJSON']['flowers'].length);
+
+		$('#flowerWallModalPriceQuote').text(makModel.build_data['price']);
 
 	});
 
@@ -937,7 +939,85 @@ $(document).ready(function()	{
 		$('#finWallRippleYQuote').text(makModel.build_data.componentValues['Ripple Center Location (Left-Right) (%)']);
 		$('#finWallPanelTypeQuote').text(panelTypes[makModel.build_data.componentValues['Panels Type']]);
 
+		$('#finWallModalPriceQuote').text(makModel.build_data['price']);
 	});
+
+
+
+
+
+	// Backlit Modal
+	$(document).on('click', '#backlitModalCall', function(e)
+	{	
+
+		$('#backlitQuoteModal').modal('show');
+		$('#backlitLengthQuote').text(makModel.build_data.componentValues['LENGTH OF WALL']);
+		$('#backlitWidthQuote').text(makModel.build_data.componentValues['Height of Wall']);
+		$('#backlitLogoQuote').text(makModel.build_data.componentValues['Logo?']);
+		$('#backlitFlatAreaQuote').text(makModel.build_data.componentValues['Create Flat Area?']);
+		$('#backlitLogoScaleQuote').text(makModel.build_data.componentValues['Logo Scale']);
+		$('#backlitLogoZQuote').text(makModel.build_data.componentValues['Logo Z Location']);
+		$('#backlitLogoXQuote').text(makModel.build_data.componentValues['Logo X Location']);
+		$('#backlitWallRoughQuote').text(makModel.build_data.componentValues['Wall Roughness']);
+		$('#backlitWaveAmpQuote').text(makModel.build_data.componentValues['Wave Amplitude']);
+		$('#backlitWaveDepthQuote').text(makModel.build_data.componentValues['Waves Depth']);
+		$('#backlitQuote').text(makModel.build_data.componentValues['']);
+
+		$('#backlitModalPriceQuote').text(makModel.build_data['price']);
+	});
+
+
+
+
+
+	// Faceted Modal
+	$(document).on('click', '#facetedModalCall', function(e)
+	{	
+
+		$('#facetedQuoteModal').modal('show');
+		$('#facetedARotQuote').text(makModel.build_data.componentValues['Panel A Rotation']);
+		$('#facetedBRotQuote').text(makModel.build_data.componentValues['Panel B Rotation']);
+		$('#facetedCRotQuote').text(makModel.build_data.componentValues['Panel C Rotation']);
+		$('#facetedDRotQuote').text(makModel.build_data.componentValues['Panel D Rotation']);
+		$('#facetedERotQuote').text(makModel.build_data.componentValues['Panel E Rotation']);
+		$('#facetedFRotQuote').text(makModel.build_data.componentValues['Panel F Rotation']);
+		$('#facetedGRotQuote').text(makModel.build_data.componentValues['Panel G Rotation']);
+		$('#facetedHRotQuote').text(makModel.build_data.componentValues['Panel H Rotation']);
+		$('#facetedIRotQuote').text(makModel.build_data.componentValues['Panel I Rotation']);
+		$('#facetedJRotQuote').text(makModel.build_data.componentValues['Panel J Rotation']);
+		$('#facetedKRotQuote').text(makModel.build_data.componentValues['Panel K Rotation']);
+		$('#facetedLRotQuote').text(makModel.build_data.componentValues['Panel L Rotation']);
+		$('#facetedMRotQuote').text(makModel.build_data.componentValues['Panel M Rotation']);
+
+		$('#facetedModalPriceQuote').text(makModel.build_data['price']);
+	});
+
+
+
+
+
+
+
+
+	// Panel Modal
+	$(document).on('click', '#panelModalCall', function(e)
+	{	
+
+		$('#panelQuoteModal').modal('show');
+		$('#panelQuote').text(makModel.build_data.componentValues['']);
+		$('#panelQuote').text(makModel.build_data.componentValues['']);
+		$('#panelQuote').text(makModel.build_data.componentValues['']);
+		$('#panelQuote').text(makModel.build_data.componentValues['']);
+		$('#panelQuote').text(makModel.build_data.componentValues['']);
+		$('#panelQuote').text(makModel.build_data.componentValues['']);
+		$('#panelQuote').text(makModel.build_data.componentValues['']);
+		$('#panelQuote').text(makModel.build_data.componentValues['']);
+		$('#panelQuote').text(makModel.build_data.componentValues['']);
+
+		$('#panelModalPriceQuote').text(makModel.build_data['price']);
+	});
+
+
 
 
 

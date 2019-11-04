@@ -1,8 +1,6 @@
-
-
-<!-- Fin Wall Quote Modal -->
+<!-- Bench Quote Modal -->
 <div class="modal fade" 
-	 id="finWallQuoteModal" 
+	 id="facetedQuoteModal" 
 	 tabindex="-1" 
 	 role="dialog" 
 	 aria-labelledby="exampleModalLabel" 
@@ -35,51 +33,60 @@
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Height of Wall</td><td id="finWallHeightQuote"></td>
+						<td>Panel A Rotation</td><td id="facetedARotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Length of Wall</td><td id="finWallLengthQuote"></td>
+						<td>Panel B Rotation</td><td id="facetedBRotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Show Logo</td><td id="finWallShowLogoQuote"></td>
+						<td>Panel C Rotation</td><td id="facetedCRotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Material</td><td id="finWallMaterialQuote"></td>
+						<td>Panel D Rotation</td><td id="facetedDRotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Logo Position X</td><td id="finWallXQuote"></td>
+						<td>Panel E Rotation</td><td id="facetedERotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Logo Position Y</td><td id="finWallYQuote"></td>
+						<td>Panel F Rotation</td><td id="facetedFRotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Wall Depth</td><td id="finWallDepthQuote"></td>
+						<td>Panel G Rotation</td><td id="facetedGRotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Spacing of Fins</td><td id="finWallSpacingQuote"></td>
+						<td>Panel H Rotation</td><td id="facetedHRotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Ripple Center Location X</td><td id="finWallRippleXQuote"></td>
+						<td>Panel I Rotation</td><td id="facetedIRotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Ripple Center Location Y</td><td id="finWallRippleYQuote"></td>
+						<td>Panel J Rotation</td><td id="facetedJRotQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Panel Type</td><td id="finWallPanelTypeQuote"></td>
+						<td>Panel K Rotation</td><td id="facetedKRotQuote"></td>
 					</tr>
+
+					<tr style="height:30px; border-bottom:1px solid #ccc">
+						<td>Panel L Rotation</td><td id="facetedLRotQuote"></td>
+					</tr>
+
+					<tr style="height:30px; border-bottom:1px solid #ccc">
+						<td>Panel M Rotation</td><td id="facetedMRotQuote"></td>
+					</tr>
+
 
 					<tr style="height:30px; background-color:#888; color:#fff">
-						<td>Price</td><td id="finWallModalPriceQuote"></td>
+						<td>Price</td><td id="facetedModalPriceQuote"></td>
 					</tr>
 
 				</table>
