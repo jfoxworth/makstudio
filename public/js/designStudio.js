@@ -889,7 +889,7 @@ $(document).ready(function()	{
 		$('#benchTwistLengthQuote').text(makModel.build_data.componentValues['Twist Length']);
 		$('#benchRightPlanterQuote').text(planterValues[makModel.build_data.componentValues['Right Planter']]);
 		$('#benchLeftPlanterQuote').text(planterValues[makModel.build_data.componentValues['Left Planter']]);
-		$('#benchModalPriceQuote').text(makModel.build_data['price']);
+		$('#benchModalPriceQuote').text('$ '+makModel.build_data['price']);
 	});
 
 
@@ -905,7 +905,7 @@ $(document).ready(function()	{
 		$('#flowerWallWidthQuote').text(makModel.build_data.componentValues['Wall Width']);
 		$('#flowerWallNumbersQuote').text(makModel.build_data.componentValues['flowersJSON']['flowers'].length);
 
-		$('#flowerWallModalPriceQuote').text(makModel.build_data['price']);
+		$('#flowerWallModalPriceQuote').text('$ '+makModel.build_data['price']);
 
 	});
 
@@ -939,7 +939,7 @@ $(document).ready(function()	{
 		$('#finWallRippleYQuote').text(makModel.build_data.componentValues['Ripple Center Location (Left-Right) (%)']);
 		$('#finWallPanelTypeQuote').text(panelTypes[makModel.build_data.componentValues['Panels Type']]);
 
-		$('#finWallModalPriceQuote').text(makModel.build_data['price']);
+		$('#finWallModalPriceQuote').text('$ '+makModel.build_data['price']);
 	});
 
 
@@ -963,7 +963,7 @@ $(document).ready(function()	{
 		$('#backlitWaveDepthQuote').text(makModel.build_data.componentValues['Waves Depth']);
 		$('#backlitQuote').text(makModel.build_data.componentValues['']);
 
-		$('#backlitModalPriceQuote').text(makModel.build_data['price']);
+		$('#backlitModalPriceQuote').text('$ '+makModel.build_data['price']);
 	});
 
 
@@ -989,7 +989,7 @@ $(document).ready(function()	{
 		$('#facetedLRotQuote').text(makModel.build_data.componentValues['Panel L Rotation']);
 		$('#facetedMRotQuote').text(makModel.build_data.componentValues['Panel M Rotation']);
 
-		$('#facetedModalPriceQuote').text(makModel.build_data['price']);
+		$('#facetedModalPriceQuote').text('$ '+makModel.build_data['price']);
 	});
 
 
@@ -1014,7 +1014,7 @@ $(document).ready(function()	{
 		$('#panelQuote').text(makModel.build_data.componentValues['']);
 		$('#panelQuote').text(makModel.build_data.componentValues['']);
 
-		$('#panelModalPriceQuote').text(makModel.build_data['price']);
+		$('#panelModalPriceQuote').text('$ '+makModel.build_data['price']);
 	});
 
 

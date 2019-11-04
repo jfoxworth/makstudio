@@ -33,7 +33,7 @@
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td></td>Length of Wall<td id="backlitLengthQuote"></td>
+						<td>Length of Wall</td><td id="backlitLengthQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
