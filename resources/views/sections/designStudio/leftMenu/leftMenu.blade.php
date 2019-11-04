@@ -65,7 +65,7 @@
 
 					<div class="hoverMe col_one_fifth center designType nobottommargin "
 						 id="flowerHolder"
-						 data-toggle="tooltip" data-placement="bottom" title="Flower Wall">
+						 data-toggle="tooltip" data-placement="top" title="Flower Wall">
 						<img id="flower" src="/images/icons/MAKICONS-10.png" width="48px">
 					</div>
 
@@ -77,7 +77,7 @@
 
 					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="panelHolder"
-						 data-toggle="tooltip" data-placement="bottom" title="3D Wall Panels">
+						 data-toggle="tooltip" data-placement="top" title="3D Wall Panels">
 						<img id="panel" src="/images/icons/MAKICONS-02.png" width="48px">
 					</div>
 
@@ -93,7 +93,7 @@
 
 					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="finWallHolder"
-						 data-toggle="tooltip" data-placement="top" title="Slat Wall">
+						 data-toggle="tooltip" data-placement="left" title="Slat Wall">
 						<img id="finWall" src="/images/icons/MAKICONS-07.png" width="48px">
 					</div>
 
@@ -106,7 +106,7 @@
 
 					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="planterHolder"
-						 data-toggle="tooltip" data-placement="bottom" title="Planter Wall">
+						 data-toggle="tooltip" data-placement="right" title="Planter Wall">
 						<img id="planter" src="/images/icons/MAKICONS-04.png" width="48px">
 					</div>
 
@@ -123,7 +123,7 @@
 
 					<div class="hoverMe col_one_fifth center designType nobottommargin"
 						 id="benchHolder"
-						 data-toggle="tooltip" data-placement="top" title="Planter Bench">
+						 data-toggle="tooltip" data-placement="bottom" title="Planter Bench">
 						<img id="bench" src="/images/icons/MAKICONS-05.png" width="48px">
 					</div>
 
