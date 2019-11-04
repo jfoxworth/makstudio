@@ -6,7 +6,9 @@
 	 aria-labelledby="exampleModalLabel" 
 	 aria-hidden="true">
 
-	<div class="modal-dialog" role="document">
+	<div class="modal-dialog" 
+		 role="document"
+		 style="width:600px">
 
 		<div class="modal-content">
 
@@ -19,18 +21,43 @@
 				</button>
 			</div>
 	
-			<div class="modal-body">
+			<div class="modal-body"
+				 style="width:600px">
 				
-				<table class="modalTable">
+				<table class="modalTable center"
+					   style="width:500px">
 
 					<tr>
-						<th>Quantity</th>
+						<th style="width:400px">Quantity</th>
 						<th>Amount</th>
 					</tr>
 
 					<tr>
-						<td>Length of Left Side of Bench</td>
-						<td id="leftBenchLength"></td>
+						<td>Left Seating Length</td><td id="leftBenchLength"></td>
+					</tr>
+
+					<tr>
+						<td>Right Seating Length</td><td id="rightBenchLength"></td>
+					</tr>
+
+					<tr>
+						<td>Bench Depth</td><td id="benchDepth"></td>
+					</tr>
+
+					<tr>
+						<td>Bench Height</td><td id="benchHeight"></td>
+					</tr>
+
+					<tr>
+						<td>Twisth Length</td><td id="benchTwistLength"></td>
+					</tr>
+
+					<tr>
+						<td>Right Planter</td><td id="benchRightPlanter"></td>
+					</tr>
+
+					<tr>
+						<td>Left Planter</td><td id="benchLeftPlanter"></td>
 					</tr>
 
 				</table>

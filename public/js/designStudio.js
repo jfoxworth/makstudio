@@ -871,8 +871,24 @@ $(document).ready(function()	{
 	// Change the rotation
 	$(document).on('click', '#benchModalCall', function(e)
 	{	
+
+		var planterValues = {
+			0 : 'No Planter',
+			1 : 'Quarter Planter',
+			2 : 'Half Planter',
+			3 : 'Three Quarter Planter',
+			4 : 'Full Planter'
+		};
+
+
 		$('#benchQuoteModal').modal('show');
-		$('#leftBenchLength').val(makModel.build_data.componentValues['Left Seating Length']);
+		$('#leftBenchLength').text(makModel.build_data.componentValues['Left Seating Length']);
+		$('#rightBenchLength').textl(makModel.build_data.componentValues['Right Seating Length']);
+		$('#benchDepth').text(makModel.build_data.componentValues['Bench Depth']);
+		$('#benchHeight').text(makModel.build_data.componentValues['Bench Height']);
+		$('#benchTwistLength').text(makModel.build_data.componentValues['Twist Length']);
+		$('#benchRightPlanter').text(planterValues[makModel.build_data.componentValues['Right Planter']]);
+		$('#benchLeftPlanter').text(planterValues[makModel.build_data.componentValues['Left Planter']]);
 	});
 
 
