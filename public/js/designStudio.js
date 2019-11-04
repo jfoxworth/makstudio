@@ -909,6 +909,39 @@ $(document).ready(function()	{
 
 
 
+	// Fin Wall Modal
+	$(document).on('click', '#finWallModalCall', function(e)
+	{	
+		var materialTypes = {
+			0 : 'Baltic Birch',
+			1 : 'Baltic Birch Laminate',
+			2 : 'Colored MDF'
+		};
+
+		var panelTypes = {
+			0 : 'Curved',
+			1 : 'Angled'
+		};
+
+
+		$('#finWallQuoteModal').modal('show');
+		$('#finWallHeightQuote').text(makModel.build_data.componentValues['Height of Wall']);
+		$('#finWallLengthQuote').text(makModel.build_data.componentValues['Lenght of Wall']);
+		$('#finWallShowLogoQuote').text(makModel.build_data.componentValues['Logo?']);
+		$('#finWallMaterialQuote').text(materialTypes[makModel.build_data.componentValues['Material']]);
+		$('#finWallXQuote').text(makModel.build_data.componentValues['Position X Logo (%)']);
+		$('#finWallYQuote').text(makModel.build_data.componentValues['Position Y Logo (%)']);
+		$('#finWallDepthQuote').text(makModel.build_data.componentValues['Wall Depth']);
+		$('#finWallSpacingQuote').text(makModel.build_data.componentValues['Spacing of Fins']);
+		$('#finWallRippleXQuote').text(makModel.build_data.componentValues['Ripple Center Location (Down - Up) (%)']);
+		$('#finWallRippleYQuote').text(makModel.build_data.componentValues['Ripple Center Location (Left-Right) (%)']);
+		$('#finWallPanelTypeQuote').text(panelTypes[makModel.build_data.componentValues['Panels Type']]);
+
+	});
+
+
+
+
 });
 
 
