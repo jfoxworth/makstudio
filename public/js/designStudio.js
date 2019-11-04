@@ -1855,9 +1855,16 @@ function setDragDrop( )
 
 	while ( model_api.scene === undefined )
 	{
+		console.log('Loop');
 
 		setTimeout(function () 
 		{
+
+		}, 1000);
+
+	}
+
+	console.log('Moving On');
 
 			if ( MakDesignType == "flower" )
 			{
@@ -2072,9 +2079,8 @@ function setDragDrop( )
 
 			}
 
-		}, 1000);
 
-	}
+	
 
 }
 
