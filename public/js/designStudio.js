@@ -883,7 +883,7 @@ $(document).ready(function()	{
 
 		$('#benchQuoteModal').modal('show');
 		$('#leftBenchLength').text(makModel.build_data.componentValues['Left Seating Length']);
-		$('#rightBenchLength').textl(makModel.build_data.componentValues['Right Seating Length']);
+		$('#rightBenchLength').text(makModel.build_data.componentValues['Right Seating Length']);
 		$('#benchDepth').text(makModel.build_data.componentValues['Bench Depth']);
 		$('#benchHeight').text(makModel.build_data.componentValues['Bench Height']);
 		$('#benchTwistLength').text(makModel.build_data.componentValues['Twist Length']);
