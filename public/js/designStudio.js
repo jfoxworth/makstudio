@@ -1872,6 +1872,8 @@ function setDragDrop( )
 					}
 				};
 
+				console.log('Here 1');
+
 				//flowers in the scene should be hoverable and draggable
 				var flowersGroup = {
 					id: "flowers_group",
@@ -1883,13 +1885,19 @@ function setDragDrop( )
 					selectionEffect: hoverSelectDragEffect
 				};
 
+				console.log('Here 2');
+
 				//add interaction group to the scene
 				model_api.scene.updateInteractionGroups([flowersGroup]);
 
 
+				console.log('Here 3');
+
 				//get 3D assets
 				var assets = model_api.scene.get(null, "CommPlugin_1").data;
 
+
+				console.log('Here 4');
 
 				//look for flowers and panels assets
 				for (var i = 0; i < assets.length; ++i) 
@@ -1908,6 +1916,8 @@ function setDragDrop( )
 				}
 
 
+				console.log('Here 5');
+
 				//update flowers 3D asset to make it draggable and hoverable
 				model_api.scene.updatePersistentAsync({
 					id: flowersID,
@@ -1916,6 +1926,7 @@ function setDragDrop( )
 					dragPlaneNormal: { x: 0, y: 1, z: 0 }
 				}, 'CommPlugin_1');
 
+				console.log('Here 6');
 
 				//add event listener to detect flower dragging
 				model_api.scene.addEventListener(model_api.scene.EVENTTYPE.DRAG_END, function (res) {
@@ -1955,6 +1966,9 @@ function setDragDrop( )
 						});
 					}
 				});
+
+				console.log('Here 7');
+
 
 				//add event listener to detect flower selection
 				model_api.scene.addEventListener(model_api.scene.EVENTTYPE.SELECT_ON, function (res) {
