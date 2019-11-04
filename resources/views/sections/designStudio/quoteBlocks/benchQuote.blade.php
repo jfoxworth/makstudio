@@ -1,5 +1,5 @@
 <!-- Bench Quote Modal -->
-<div class="modal fade btn-primary" 
+<div class="modal fade" 
 	 id="benchQuoteModal" 
 	 tabindex="-1" 
 	 role="dialog" 
@@ -33,31 +33,31 @@
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Left Seating Length</td><td id="leftBenchLength"></td>
+						<td>Left Seating Length</td><td id="leftBenchLengthQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Right Seating Length</td><td id="rightBenchLength"></td>
+						<td>Right Seating Length</td><td id="rightBenchLengthQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Bench Depth</td><td id="benchDepth"></td>
+						<td>Bench Depth</td><td id="benchDepthQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Bench Height</td><td id="benchHeight"></td>
+						<td>Bench Height</td><td id="benchHeightQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Twisth Length</td><td id="benchTwistLength"></td>
+						<td>Twisth Length</td><td id="benchTwistLengthQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Right Planter</td><td id="benchRightPlanter"></td>
+						<td>Right Planter</td><td id="benchRightPlanterQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Left Planter</td><td id="benchLeftPlanter"></td>
+						<td>Left Planter</td><td id="benchLeftPlanterQuote"></td>
 					</tr>
 
 				</table>

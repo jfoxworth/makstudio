@@ -882,13 +882,13 @@ $(document).ready(function()	{
 
 
 		$('#benchQuoteModal').modal('show');
-		$('#leftBenchLength').text(makModel.build_data.componentValues['Left Seating Length']);
-		$('#rightBenchLength').text(makModel.build_data.componentValues['Right Seating Length']);
-		$('#benchDepth').text(makModel.build_data.componentValues['Bench Depth']);
-		$('#benchHeight').text(makModel.build_data.componentValues['Bench Height']);
-		$('#benchTwistLength').text(makModel.build_data.componentValues['Twist Length']);
-		$('#benchRightPlanter').text(planterValues[makModel.build_data.componentValues['Right Planter']]);
-		$('#benchLeftPlanter').text(planterValues[makModel.build_data.componentValues['Left Planter']]);
+		$('#leftBenchLengthQuote').text(makModel.build_data.componentValues['Left Seating Length']);
+		$('#rightBenchLengthQuote').text(makModel.build_data.componentValues['Right Seating Length']);
+		$('#benchDepthQuote').text(makModel.build_data.componentValues['Bench Depth']);
+		$('#benchHeightQuote').text(makModel.build_data.componentValues['Bench Height']);
+		$('#benchTwistLengthQuote').text(makModel.build_data.componentValues['Twist Length']);
+		$('#benchRightPlanterQuote').text(planterValues[makModel.build_data.componentValues['Right Planter']]);
+		$('#benchLeftPlanterQuote').text(planterValues[makModel.build_data.componentValues['Left Planter']]);
 	});
 
 
