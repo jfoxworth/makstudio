@@ -975,7 +975,7 @@ function initializeNewModel( modelName )
 	setTimeout(function () {
 		setDefaultModelData(modelName);
 		setPrice(modelName);
-	}, 5000);
+	}, 3000);
 
 
 }
