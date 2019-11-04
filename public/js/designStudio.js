@@ -1081,6 +1081,7 @@ function setDefaultModelData( modelName )
 
 	console.log('The model name is '+modelName);
 
+	console.log(model_api);
 
 	while ( model_api.scene === undefined )
 	{
