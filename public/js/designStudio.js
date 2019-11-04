@@ -1082,8 +1082,20 @@ function setDefaultModelData( modelName )
 	console.log('The model name is '+modelName);
 
 
+	while ( model_api.scene === undefined )
+	{
+		console.log('Waiting');
+		setTimeout(
+			function() 
+			{
+				console.log('here');
+			}, 1000);
+
+	}
+
 	// Pull the values from the shape diver ticket
 	thisData = model_api.parameters.get();
+	console.log('The api parameters are ...');
 	console.log(thisData);
 
 
