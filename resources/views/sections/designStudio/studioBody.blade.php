@@ -146,4 +146,6 @@
 @include('sections.designStudio.quoteBlocks.benchQuote')
 @include('sections.designStudio.quoteBlocks.flowerQuote')
 @include('sections.designStudio.quoteBlocks.finWallQuote')
+@include('sections.designStudio.quoteBlocks.backlitQuote')
+@include('sections.designStudio.quoteBlocks.facetedQuote')
 

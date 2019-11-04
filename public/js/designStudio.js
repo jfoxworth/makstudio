@@ -932,7 +932,7 @@ $(document).ready(function()	{
 		$('#finWallShowLogoQuote').text(makModel.build_data.componentValues['Logo?']);
 		$('#finWallMaterialQuote').text(materialTypes[makModel.build_data.componentValues['Material']]);
 		$('#finWallXQuote').text(makModel.build_data.componentValues['Position X Logo (%)']);
-		$('#finWallYQuote').text(makModel.build_data.componentValues['Position Y Logo (%)']);
+		$('#finWallYQuote').text(makModel.build_data.componentValues['Position Z Logo (%)']);
 		$('#finWallDepthQuote').text(makModel.build_data.componentValues['Wall Depth']);
 		$('#finWallSpacingQuote').text(makModel.build_data.componentValues['Spacing of Fins']);
 		$('#finWallRippleXQuote').text(makModel.build_data.componentValues['Ripple Center Location (Down - Up) (%)']);
