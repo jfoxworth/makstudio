@@ -28,7 +28,7 @@
 					   style="width:500px; margin-left:25px">
 
 					<tr style="height:35px; border-bottom:1px solid #ccc; font-weight:bold">
-						<th style="width:400px">Quantity</th>
+						<th style="width:300px">Quantity</th>
 						<th>Amount</th>
 					</tr>
 

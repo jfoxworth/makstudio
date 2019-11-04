@@ -3,7 +3,7 @@
 	 id="flowerQuoteModal" 
 	 tabindex="-1" 
 	 role="dialog" 
-	 aria-labelledby="" 
+	 aria-labelledby="exampleModalLabel" 
 	 aria-hidden="true">
 
 	<div class="modal-dialog" 
