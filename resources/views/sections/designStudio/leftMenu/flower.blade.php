@@ -102,8 +102,20 @@
 	<div class="white-section divcenter" style="margin:20px 0px">
 		<label>Estimated Cost (US)</label>
 
-		<div class="divcenter priceBox">
-			$ <span id="flowerPrice"></span>
+		<div class="row">
+
+			<div class="divcenter priceBox">
+				$ <span id="flowerPrice"></span>
+			</div>
+
+			<i id="flowerModalCall"
+			   class="nomargin nopadding i-circled i-small icon-dollar hoverMe"
+			   data-toggle="toottip"
+			   data-placement="top"
+			   title="Get Full Price Quote" >
+				
+			</i>
+
 		</div>
 
 	</div>

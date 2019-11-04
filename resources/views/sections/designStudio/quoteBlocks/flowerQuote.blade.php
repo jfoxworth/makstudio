@@ -1,9 +1,9 @@
 <!-- Bench Quote Modal -->
 <div class="modal fade" 
-	 id="benchQuoteModal" 
+	 id="flowerQuoteModal" 
 	 tabindex="-1" 
 	 role="dialog" 
-	 aria-labelledby="exampleModalLabel" 
+	 aria-labelledby="" 
 	 aria-hidden="true">
 
 	<div class="modal-dialog" 
@@ -33,35 +33,15 @@
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Left Seating Length</td><td id="leftBenchLengthQuote"></td>
+						<td>Wall Height</td><td id="flowerWallHeightQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Right Seating Length</td><td id="rightBenchLengthQuote"></td>
+						<td>Wall Width</td><td id="flowerWallWidthQuote"></td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Bench Depth</td><td id="benchDepthQuote"></td>
-					</tr>
-
-					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Bench Height</td><td id="benchHeightQuote"></td>
-					</tr>
-
-					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Twisth Length</td><td id="benchTwistLengthQuote"></td>
-					</tr>
-
-					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Right Planter</td><td id="benchRightPlanterQuote"></td>
-					</tr>
-
-					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Left Planter</td><td id="benchLeftPlanterQuote"></td>
-					</tr>
-
-					<tr style="height:30px; background-color:#888; color:#fff">
-						<td>Price</td><td id="benchModalPriceQuote"></td>
+						<td>Number of FLowers</td><td id="flowerWallNumbersQuote"></td>
 					</tr>
 
 				</table>
