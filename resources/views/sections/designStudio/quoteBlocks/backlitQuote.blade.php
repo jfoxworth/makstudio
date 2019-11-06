@@ -82,8 +82,11 @@
 
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Send Me Quote</button>
-			</div>
+				@guest
+				@else
+					<button type="button" class="btn btn-primary">Send Me Quote</button>
+				@endguest
+		</div>
 	
 		</div>
 	

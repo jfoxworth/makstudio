@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Instance;
+use App\Build;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Events\NewInstance;
+use App\Events\NewBuild;
 
 
 class InstanceController extends Controller
@@ -40,15 +42,25 @@ class InstanceController extends Controller
     {
 
 
-        $thisModel = $request['model'];
+        $thisData = $request['model'];
 
         $thisInstance = new Instance;
-        $thisInstance->design_type = $thisModel['build_num'];
+        $thisInstance->design_type = $thisData['build_num'];
         $thisInstance->user_id = Auth::id();
         $thisInstance->stage = 0;
         $thisInstance->save();
 
         event(new NewInstance($thisInstance));
+
+
+		$thisBuild = new Build;
+		$thisBuild->build_id = $thisData['build_id'];
+		$thisBuild->build_data = json_encode($thisData['build_data']);
+		$thisBuild->user_id = Auth::id();
+		$thisBuild->save();
+
+		event(new NewBuild($thisInstance, $thisBuild));
+
 
         return $thisInstance->id;
     }
