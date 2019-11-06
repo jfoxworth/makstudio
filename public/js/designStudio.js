@@ -166,7 +166,6 @@ $(document).ready(function()	{
 	// top line to save a model design
 	$('#designSave').click(function(event)	
 	{	
-		$('#modelNameModal').modal('show');
 		amplitude.getInstance().logEvent('DS Save Design');
 
 		$.ajax({

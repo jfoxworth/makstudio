@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Instance;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class InstanceController extends Controller
 {
