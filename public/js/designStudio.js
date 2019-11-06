@@ -179,7 +179,7 @@ $(document).ready(function()	{
 		}).done(function(data) 
 		{
 			console.log(data);
-			window.location.href = "/designStudio/"+data.id;
+//			window.location.href = "/designStudio/"+data.id;
 
 		});
 		
