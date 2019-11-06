@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Instance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Events\NewInstance;
 
 
 class InstanceController extends Controller
