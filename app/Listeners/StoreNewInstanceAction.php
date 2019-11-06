@@ -36,11 +36,11 @@ class StoreNewInstanceAction
 
 
 		$thisAction = new Action;
-		$thisAction->design_type = $event->build->design_type;
+		$thisAction->design_type = $event->instance->design_type;
 		$thisAction->instance_id = $event->instance->id;
 		$thisAction->user_id = Auth::id();
 		$thisAction->action = 'New Instance Created';
-		$thisAction->info = json_encode(array('build_id' => $event->build->id));
+		$thisAction->info = '';
 		$thisAction->save();
 
 	}
