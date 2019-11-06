@@ -169,6 +169,18 @@ $(document).ready(function()	{
 		$('#modelNameModal').modal('show');
 		amplitude.getInstance().logEvent('DS Save Design');
 
+		$.ajax({
+			url : "/newInstance",
+			method :"PUT"
+
+		}).done(function(data) 
+		{
+			console.log(data);
+			window.location.href = "/designStudio/"+data.buildNum;
+
+		});
+		
+
 	});
 
 

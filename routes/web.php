@@ -108,10 +108,21 @@ Route::get('/allBuilds/{offset}', 'BuildController@indexAll');
 // Retrieve a builds
 Route::get('/buildData/{buildNum}', 'BuildController@buildData');
 
+
 // Retrieve builds for an instance
 Route::get('/getBuilds/{id}', 'BuildController@getBuilds');
 
+
 // Retrieve an instance
 Route::get('/getInstance/{id}', 'InstanceController@index');
+
+
+// New Instance
+Route::put('/newInstance', 'InstanceController@store');
+
+
+// New Build
+Route::put('/newBuild/{buildID}', 'BuildController@store');
+
 
 Auth::routes();

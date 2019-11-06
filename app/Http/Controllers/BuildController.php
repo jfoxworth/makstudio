@@ -61,6 +61,8 @@ class BuildController extends Controller
 		$thisInstance = Instance::findOrFail($thisBuild->instance_id);
 		event(new NewBuild($thisInstance, $thisBuild));
 
+		return $thisBuild;
+
 	}
 
 	/**

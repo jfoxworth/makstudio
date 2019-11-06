@@ -45,6 +45,8 @@ class InstanceController extends Controller
         $thisInstance->save();
 
         event(new NewInstance($thisInstance));
+
+        return $thisInstance->id;
     }
 
 
