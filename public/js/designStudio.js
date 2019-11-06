@@ -1696,63 +1696,59 @@ function reloadModel( modelID )
 	$("#modelDisplay").hide();
 
 
-	while ( model_api.scene === undefined )
+	setTimeout(function () 
 	{
 
-		setTimeout(function () 
+		for (nameComponent in makModel.build_data.componentNames )
 		{
+			if ( makModel['build_data']['componentValues'][nameComponent] !== undefined )
+			{	
+				//console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[nameComponent]);
+				model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[nameComponent] });
+			}
+		}
 
-			for (nameComponent in makModel.build_data.componentNames )
+
+
+		for (nameComponent in makModel.build_data.componentNames )
+		{
+			//console.log('Setting '+nameComponent+' - '+makModel.build_data.componentTypes[nameComponent]+' to '+makModel.build_data.componentValues[nameComponent]);
+			if ( makModel.build_data.componentTypes[nameComponent] == 'slider' )
 			{
-				if ( makModel['build_data']['componentValues'][nameComponent] !== undefined )
-				{	
-					//console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[nameComponent]);
-					model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[nameComponent] });
-				}
+				$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
+				$( "#"+makModel.build_data.componentNames[nameComponent] ).change();
 			}
 
-
-
-			for (nameComponent in makModel.build_data.componentNames )
+			if ( makModel.build_data.componentTypes[nameComponent] == 'dropdown' )
 			{
-				//console.log('Setting '+nameComponent+' - '+makModel.build_data.componentTypes[nameComponent]+' to '+makModel.build_data.componentValues[nameComponent]);
-				if ( makModel.build_data.componentTypes[nameComponent] == 'slider' )
-				{
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).change();
-				}
-
-				if ( makModel.build_data.componentTypes[nameComponent] == 'dropdown' )
-				{
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).change();
-				}
-
-				if ( makModel.build_data.componentTypes[nameComponent] == 'boolean' )
-				{
-					if ( makModel.build_data.componentValues[nameComponent] )
-					{
-						$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', true);
-						$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', true);
-					}else
-					{
-						$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', false);						
-						$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', false);						
-					}
-					$( "#"+makModel.build_data.componentNames[nameComponent] ).change();
-				}
+				$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
+				$( "#"+makModel.build_data.componentNames[nameComponent] ).change();
 			}
 
-			initializeComponents( makModel['build_id'] );
+			if ( makModel.build_data.componentTypes[nameComponent] == 'boolean' )
+			{
+				if ( makModel.build_data.componentValues[nameComponent] )
+				{
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', true);
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', true);
+				}else
+				{
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).prop('checked', false);						
+					$( "#"+makModel.build_data.componentNames[nameComponent] ).attr('checked', false);						
+				}
+				$( "#"+makModel.build_data.componentNames[nameComponent] ).change();
+			}
+		}
+
+		initializeComponents( makModel['build_id'] );
+		setTimeout(function () {
 			setPrice( modelID);
-			setTimeout(function () {
-				setDragDrop();
-			}, 3000);
-
-	
+			setDragDrop();
 		}, 3000);
 
-	}
+
+	}, 3000);
+
 
 
 }
@@ -2319,18 +2315,17 @@ function getBuilds( id )
 
 
 		// Load the first version if there is only one build
-		if ( data.length == 1 )
-		{
-			window['makModel'] = data[0];
-		
-			// Set the overall variable for the model type
-			window['MakDesignType'] = makModel.build_data.name;
+		window['makModel'] = buildData[buildData.length-1];
+	
+		// Set the overall variable for the model type
+		window['MakDesignType'] = makModel.build_data.name;
 
-			reloadModel();
-			setTimeout(function () {
-				setPrice( );
-			}, 1000);
-		}
+		reloadModel();
+		setTimeout(function () {
+			setPrice( );
+			setDragDrop();
+		}, 3000);
+
 
 
 
