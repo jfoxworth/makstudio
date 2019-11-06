@@ -492,8 +492,6 @@ $(document).ready(function()	{
 	// When the user selects one of the lights
 	$(document).on('change', '.blockDropdown', function(event)
 	{	
-		console.log('changed');
-		console.log(event.target.value);
 		$('.blockDetails').hide();
 		$('#lightGroup'+event.target.value).show();
 		amplitude.getInstance().logEvent('Lightgroup Select');
@@ -714,7 +712,6 @@ $(document).ready(function()	{
 	// view it
 	$(document).on('click', '.potenModel', function(event)
 	{	
-		console.log('click');
 		reloadModel( event.target.id );
 		amplitude.getInstance().logEvent('Load Model - '+event.target.id);
 	});
@@ -730,7 +727,6 @@ $(document).ready(function()	{
 	// with the intent to delete it
 	$(document).on('click', '.deleteModel', function(event)
 	{	
-		console.log(event);
 		$.ajax({
 			url : "/deleteModel/"+event.target.id,
 			method :"DELETE"
@@ -1263,15 +1259,9 @@ function setModelView( modelName )
 function setDefaultModelData( modelName )
 {
 
-	console.log('The model name is '+modelName);
-
-	
-
 
 	// Pull the values from the shape diver ticket
 	thisData = model_api.parameters.get();
-	console.log('The api parameters are ...');
-	console.log(thisData);
 
 
 	// Make the global variable holding the model
@@ -1305,10 +1295,10 @@ function setDefaultModelData( modelName )
 
 		for (componentName in makStudio.componentNames[modelName])
 		{
-			console.log('Comparing '+componentName+' to '+element.name);
+			//console.log('Comparing '+componentName+' to '+element.name);
 			if ( componentName == element.name )
 			{
-				console.log('The type is '+makStudio.componentTypes[modelName][componentName]);
+				//console.log('The type is '+makStudio.componentTypes[modelName][componentName]);
 				if ( makStudio.componentTypes[modelName][componentName] == 'slider' )
 				{
 					$( "#"+makStudio.componentNames[modelName][componentName] ).val(element.value);
@@ -1340,7 +1330,7 @@ function setDefaultModelData( modelName )
 
 				if ( makStudio.componentTypes[modelName][componentName] == 'dataPack' )
 				{
-					console.log('Setting '+componentName);
+					//console.log('Setting '+componentName);
 					if ( typeof( element.value ) == "string" )
 					{
 						makModel.build_data.componentValues[componentName]=JSON.parse(element.value);
@@ -1406,7 +1396,7 @@ function saveModel( modelName )
 			if ( nameComponent == typeComponent )
 			{
 
-				console.log('The name is '+nameComponent);
+				//console.log('The name is '+nameComponent);
 				if ( ( makModel.build_data.componentTypes[typeComponent] == "slider" ) ||
 					 ( makModel.build_data.componentTypes[typeComponent] == "dropdown" ) )
 				{
@@ -1542,7 +1532,6 @@ function retrieveModels(  )
 			"July", "August", "September", "October", "November", "December" ];
 
 
-		console.log(data);
 
 		window['userModelData'] = data;
 		$.each(userModelData, function(index, obj){
@@ -1717,7 +1706,7 @@ function reloadModel( modelID )
 			{
 				if ( makModel['build_data']['componentValues'][nameComponent] !== undefined )
 				{	
-					console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[nameComponent]);
+					//console.log('Setting '+nameComponent+' to '+makModel.build_data.componentValues[nameComponent]);
 					model_api.parameters.updateAsync({name: nameComponent, value: makModel.build_data.componentValues[nameComponent] });
 				}
 			}
@@ -1726,7 +1715,7 @@ function reloadModel( modelID )
 
 			for (nameComponent in makModel.build_data.componentNames )
 			{
-				console.log('Setting '+nameComponent+' - '+makModel.build_data.componentTypes[nameComponent]+' to '+makModel.build_data.componentValues[nameComponent]);
+				//console.log('Setting '+nameComponent+' - '+makModel.build_data.componentTypes[nameComponent]+' to '+makModel.build_data.componentValues[nameComponent]);
 				if ( makModel.build_data.componentTypes[nameComponent] == 'slider' )
 				{
 					$( "#"+makModel.build_data.componentNames[nameComponent] ).val(makModel.build_data.componentValues[nameComponent]);
@@ -1978,8 +1967,6 @@ function setModelGroups( )
 function bundleBlock( bundleName )
 {
 
-	console.log('In bundle block');
-
 	for (thisItem in makModel['build_data']['componentTypes'])
 	{
 		if ( makModel['build_data']['componentTypes'][thisItem] == 'dataPack' )
@@ -1987,10 +1974,6 @@ function bundleBlock( bundleName )
 
 			for (thisGroup in makModel['build_data']['componentValues'][thisItem]['groups'])
 			{
-				console.log('The item and group are ...');
-				console.log(thisItem);
-				console.log(thisGroup);
-				console.log($( "#"+thisItem+''+thisGroup+'angle' ).val( ));
 				makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['angle'] = $( "#"+thisItem+''+thisGroup+'angle' ).val( );
 				makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][0] = $( "#"+thisItem+''+thisGroup+'X' ).val( );
 				makModel['build_data']['componentValues'][thisItem]['groups'][thisGroup]['loc'][1] = $( "#"+thisItem+''+thisGroup+'Y' ).val( );
@@ -2032,25 +2015,13 @@ function bundleBlock( bundleName )
 function setDragDrop( )
 {
 
-	console.log('In set drag drop');
-
-	console.log(model_api)
-
-	console.log('Moving On');
 
 			if ( MakDesignType == "flower" )
 			{
 
-				console.log('Setting Flowers');
-
 				var flowersID;
 				var panelsScenePath;
 				var flowersJSON = makModel.build_data.componentValues.flowersJSON;
-
-				console.log('The flowers json is');
-				console.log(flowersJSON);
-
-
 
 				//define effects for selectable, hoverable and draggable flowers
 				var hoverSelectDragEffect = {
@@ -2061,8 +2032,6 @@ function setDragDrop( )
 						}
 					}
 				};
-
-				console.log('Here 1');
 
 				//flowers in the scene should be hoverable and draggable
 				var flowersGroup = {
@@ -2075,19 +2044,13 @@ function setDragDrop( )
 					selectionEffect: hoverSelectDragEffect
 				};
 
-				console.log('Here 2');
 
 				//add interaction group to the scene
 				model_api.scene.updateInteractionGroups([flowersGroup]);
 
-
-				console.log('Here 3');
-
 				//get 3D assets
 				var assets = model_api.scene.get(null, "CommPlugin_1").data;
 
-
-				console.log('Here 4');
 
 				//look for flowers and panels assets
 				for (var i = 0; i < assets.length; ++i) 
@@ -2096,7 +2059,6 @@ function setDragDrop( )
 					{
 						if (assets[i].name == "Flowers") 
 						{
-							console.log('Here');
 							flowersID = assets[i].id;
 						
 						}else if (assets[i].name == "Panels") 
@@ -2106,9 +2068,6 @@ function setDragDrop( )
 					}
 				}
 
-				console.log('The flowers ID is '+flowersID);
-				console.log('Here 5');
-
 				//update flowers 3D asset to make it draggable and hoverable
 				model_api.scene.updatePersistentAsync({
 					id: flowersID,
@@ -2117,13 +2076,9 @@ function setDragDrop( )
 					dragPlaneNormal: { x: 0, y: 1, z: 0 }
 				}, 'CommPlugin_1');
 
-				console.log('Here 6');
 
 				//add event listener to detect flower dragging
 				model_api.scene.addEventListener(model_api.scene.EVENTTYPE.DRAG_END, function (res) {
-					
-					console.log('In add event listener');
-					console.log(res);
 
 					var draggedScenePath = res.scenePath.split(".");
 
@@ -2157,8 +2112,6 @@ function setDragDrop( )
 						});
 					}
 				});
-
-				console.log('Here 7');
 
 
 				//add event listener to detect flower selection

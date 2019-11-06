@@ -55,6 +55,7 @@ class InstanceController extends Controller
 
 		$thisBuild = new Build;
 		$thisBuild->build_id = $thisData['build_id'];
+		$thisBuild->instance_id = $thisInstance->id;
         $thisBuild->design_type = $thisData['build_num'];
 		$thisBuild->build_data = json_encode($thisData['build_data']);
 		$thisBuild->user_id = Auth::id();

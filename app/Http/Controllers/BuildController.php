@@ -55,6 +55,7 @@ class BuildController extends Controller
 
 		$thisBuild = new Build;
 		$thisBuild->build_id = $thisData['build_id'];
+		$thisBuild->instance_id = $thisData['instance_id'];
 		$thisBuild->build_data = json_encode($thisData['build_data']);
         $thisBuild->design_type = $thisData['build_num'];
 		$thisBuild->user_id = Auth::id();
