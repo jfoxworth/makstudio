@@ -57,6 +57,10 @@ class BuildController extends Controller
 		$thisBuild->build_data = json_encode($thisData['build_data']);
 		$thisBuild->user_id = Auth::id();
 		$thisBuild->save();
+
+		$thisInstance = Instance::findOrFail($thisBuild->instance_id);
+		event(new NewBuild($thisInstance, $thisBuild));
+
 	}
 
 	/**

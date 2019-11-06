@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Instance;
+use App\Action;
 use Illuminate\Http\Request;
 
-class InstanceController extends Controller
+class ActionController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index( $id )
+    public function index()
     {
-        return Instance::findOrFail( $id );
+        //
     }
 
     /**
@@ -35,26 +35,16 @@ class InstanceController extends Controller
      */
     public function store(Request $request)
     {
-
-        $thisData = $request['instance'];
-
-        $thisInstance = new Instance;
-        $thisInstance->design_type = $request['design_type'];
-        $thisInstance->user_id = Auth::id();
-        $thisInstance->stage = 0;
-        $thisInstance->save();
-
-        event(new NewInstance($thisInstance));
+        //
     }
-
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Instance  $instance
+     * @param  \App\Action  $action
      * @return \Illuminate\Http\Response
      */
-    public function show(Instance $instance)
+    public function show(Action $action)
     {
         //
     }
@@ -62,10 +52,10 @@ class InstanceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Instance  $instance
+     * @param  \App\Action  $action
      * @return \Illuminate\Http\Response
      */
-    public function edit(Instance $instance)
+    public function edit(Action $action)
     {
         //
     }
@@ -74,10 +64,10 @@ class InstanceController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Instance  $instance
+     * @param  \App\Action  $action
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Instance $instance)
+    public function update(Request $request, Action $action)
     {
         //
     }
@@ -85,10 +75,10 @@ class InstanceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Instance  $instance
+     * @param  \App\Action  $action
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Instance $instance)
+    public function destroy(Action $action)
     {
         //
     }

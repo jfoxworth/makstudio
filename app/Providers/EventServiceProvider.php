@@ -11,39 +11,59 @@ class EventServiceProvider extends ServiceProvider
 {
 
 
-    /**
-     * The subscriber classes to register.
-     *
-     * @var array
-     */
-    protected $subscribe = [
-        //'App\Listeners\ActionListener',
-    ];
+	/**
+	 * The subscriber classes to register.
+	 *
+	 * @var array
+	 */
+	protected $subscribe = [
+		//'App\Listeners\ActionListener',
+	];
 
 
 
-    /**
-     * The event listener mappings for the application.
-     *
-     * @var array
-     */
-    protected $listen = [
-        Registered::class => [
-            SendEmailVerificationNotification::class,
-        ],
+	/**
+	 * The event listener mappings for the application.
+	 *
+	 * @var array
+	 */
+	protected $listen = [
+		Registered::class => [
+			SendEmailVerificationNotification::class,
+		],
 
 
-    ];
+		// Price Quote Request is Made
+		'App\Events\QuoteRequest' => [
+			'App\Listeners\SendQuoteEmail',
+			'App\Listeners\StoreQuoteAction',
+		],
 
-    /**
-     * Register any events for your application.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        parent::boot();
 
-        //
-    }
+		// New instance is made
+		'App\Events\NewInstance' => [
+			'App\Listeners\StoreNewInstanceAction',
+		],
+
+
+		// New build is made
+		'App\Events\NewBuild' => [
+			'App\Listeners\StoreNewBuildAction',
+		]
+
+
+
+	];
+
+	/**
+	 * Register any events for your application.
+	 *
+	 * @return void
+	 */
+	public function boot()
+	{
+		parent::boot();
+
+		//
+	}
 }
