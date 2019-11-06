@@ -92,6 +92,9 @@ $(document).ready(function()	{
 
 	// Initialize data to global variable
 	makStudio = initializeData( );
+
+
+	makBuildNums = {'bench':2, 'finWall':3, 'backlit':4, 'faceted':5, 'light':6, 'desk':7, 'planter':8, 'panel':9, 'flower':12 }
 	
 
 	// Initialize the new or old model
@@ -170,7 +173,8 @@ $(document).ready(function()	{
 
 		$.ajax({
 			url : "/newInstance",
-			method :"PUT"
+			method :"PUT",
+			data : { 'model' : makModel }
 
 		}).done(function(data) 
 		{
@@ -1261,7 +1265,7 @@ function setDefaultModelData( modelName )
 
 	console.log('The model name is '+modelName);
 
-	console.log(model_api);
+	
 
 
 	// Pull the values from the shape diver ticket
@@ -1277,6 +1281,7 @@ function setDefaultModelData( modelName )
 		'modified_at' : '',
 		'user_id' : '',
 		'build_id' : modelName,
+		'build_num' : makBuildNums[modelName],
 		'build_data' : {
 			'name' : 'Unsaved Model',
 			'componentNames' : makStudio.componentNames[modelName],

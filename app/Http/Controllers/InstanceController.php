@@ -38,10 +38,11 @@ class InstanceController extends Controller
     public function store(Request $request)
     {
 
-        $thisData = $request['instance'];
+
+        $thisModel = $request['model'];
 
         $thisInstance = new Instance;
-        $thisInstance->design_type = $request['design_type'];
+        $thisInstance->design_type = $thisModel['build_num'];
         $thisInstance->user_id = Auth::id();
         $thisInstance->stage = 0;
         $thisInstance->save();
