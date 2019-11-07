@@ -9,7 +9,7 @@
 
 
 				<!-- Options for a defined model to make new build and select desired build -->
-				<div class="row bottommargin buildOption">
+				<div class="row nobottommargin buildOption">
 				    <div id="newBuild" class="button divcenter">Create New Build</div>
 				</div>
 

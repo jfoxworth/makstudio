@@ -2320,8 +2320,10 @@ function getBuilds( id )
 		// Set the overall variable for the model type
 		window['MakDesignType'] = makModel.build_data.name;
 
+
 		reloadModel();
 		setTimeout(function () {
+			setModelGroups( )
 			setPrice( );
 			setDragDrop();
 		}, 3000);
