@@ -2271,6 +2271,21 @@ function setTimeline( )
 		window['timelineData'] = data;
 
 
+		// Populate the timeline page
+		var timeLineNum = 1;
+		var td = '';
+		timelineData.forEach(function(obj) 
+		{
+			td=td+'<div class="row">';
+				td=td+'<div style="width=100px">'+timeLineNum+'</div>';
+				td=td+'<div style="width=300px">'+obj['action']+'</div>';
+				td=td+'<div style="width=200px">'+obj['created_at']+'</div>';
+			td=td+'</div>';
+
+		});
+
+
+
 	});
 
 }
