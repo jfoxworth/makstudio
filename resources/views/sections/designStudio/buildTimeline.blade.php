@@ -5,13 +5,15 @@
 <h1>Model Timeline</h1> 
 
 <!-- If the user is building a model, is logged in, and is looking at multiple builds, etc -->
-<div class="buildOption" style="min-height:400px">
+<div class="buildOption" 
+	 id="timeLineData"
+	 style="min-height:400px">
 
 
 </div>
 
 
-<!-- If the user is logged in -->
+<!-- If the user is looking at different designs -->
 <div class="designOption" style="min-height:400px">
 
 	<div class="">
@@ -23,3 +25,5 @@
 	</div>
 
 </div>
+
+
