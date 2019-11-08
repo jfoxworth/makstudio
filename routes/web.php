@@ -125,4 +125,8 @@ Route::put('/newInstance', 'InstanceController@store');
 Route::put('/newBuild/{buildID}', 'BuildController@store');
 
 
+// Get Actions
+Route::get('/getActions/{instanceID}', 'ActionController@index');
+
+
 Auth::routes();

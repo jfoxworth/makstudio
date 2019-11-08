@@ -179,12 +179,38 @@ $(document).ready(function()	{
 		}).done(function(data) 
 		{
 			console.log(data);
-//			window.location.href = "/designStudio/"+data.id;
+			window.location.href = "/designStudio/"+data;
 
 		});
 		
 
 	});
+
+
+
+
+
+
+
+	// Creating a new build on an existing
+	$('#newBuild').click(function(event)	
+	{	
+		amplitude.getInstance().logEvent('New Build');
+
+		$.ajax({
+			url : "/newBuild",
+			method :"PUT",
+			data : { 'model' : makModel }
+
+		}).done(function(data) 
+		{
+			console.log(data);
+			reloadModel( data.id );
+		});
+		
+
+	});
+
 
 
 
@@ -2225,6 +2251,29 @@ function setDragDrop( )
 
 
 
+/*------------------------------------------------------------*
+
+	This function gets the timeline data for an instance
+
+/*------------------------------------------------------------*/
+function setTimeline( )
+{
+
+	$.ajax({
+		url : "/getActions/"+makModel['instance_id'],
+		method :"get"
+
+	}).done(function(data) 
+	{
+
+		console.log('The time line data is');
+		console.log(data);
+		window['timelineData'] = data;
+
+
+	});
+
+}
 
 
 /*------------------------------------------------------------*
@@ -2292,7 +2341,6 @@ function getBuilds( id )
 	}).done(function(data) 
 	{
 
-		console.log(data);
 		var newOptions = {};
 
 		data.forEach(function(obj) 
@@ -2319,6 +2367,10 @@ function getBuilds( id )
 	
 		// Set the overall variable for the model type
 		window['MakDesignType'] = makModel.build_data.name;
+
+
+		// Set the timeline data
+		setTimeline();
 
 
 		reloadModel();
