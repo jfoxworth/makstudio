@@ -44,7 +44,7 @@
 			<label>Wall Height (inches)</label>
 			<div class="row" style="width:100%">
 				<div style="width:70%">
-					<input class="fossilHeightSlider modelSlider" id="fossilHeigthSlider"/>
+					<input class="fossilHeightSlider modelSlider" id="fossilHeightSlider"/>
 				</div>
 				<div style="width:20%; margin:0px 0px 0px 10%">
 					<input id="fossilHeightInput" class="textParameterInput" style="width:100%; text-align:center"/>
@@ -93,19 +93,18 @@
 	<div class="white-section center divcenter" style="margin:20px 0px">
 		<label>Estimated Cost (US)</label>
 
-		<div class="row">
 
-			<div class="divcenter priceBox">
-				$ <span id="fossilPrice"></span>
-			</div>
-
-			<div class="divcenter"
-				 id="fossilModalCall"
-				 class="nomargin nopadding hoverMe">
-				Get Price Quote
-			</div>
-
+		<div class="divcenter priceBox">
+			$ <span id="fossilPrice"></span>
 		</div>
+
+		<div class="divcenter button"
+			 id="fossilModalCall"
+			 class=""
+			 style="background-color:#ccc; border:#1px solid #000; color:#000">
+			Get Price Quote
+		</div>
+
 
 	</div>
 

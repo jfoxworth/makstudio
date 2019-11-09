@@ -2864,7 +2864,7 @@ function initializeComponents( modelName )
 			step: 1
 		});
 
-		$(".fossilHeightSlider").ionRangeSlider({
+		$(".fossilFactorSlider").ionRangeSlider({
 			grid: false,
 			min: 0,
 			max: 0.01,
