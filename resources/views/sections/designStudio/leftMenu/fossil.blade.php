@@ -2,7 +2,7 @@
 
 
 <!-- All options for the backlit walls -->
-<div id="backlitSection" class="optionSection">
+<div id="fossilSection" class="optionSection">
 
 
 	<!-- Options for a slat wall -->
