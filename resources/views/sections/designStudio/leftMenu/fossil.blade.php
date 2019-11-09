@@ -1,7 +1,7 @@
 
 
 
-<!-- All options for the backlit walls -->
+<!-- All options for the fossil walls -->
 <div id="fossilSection" class="optionSection">
 
 

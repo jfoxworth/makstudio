@@ -157,6 +157,7 @@
 				@include('sections.designStudio.leftMenu.panel')
 				@include('sections.designStudio.leftMenu.planter')
 				@include('sections.designStudio.leftMenu.flower')
+				@include('sections.designStudio.leftMenu.fossil')
 
 			</div>
 
