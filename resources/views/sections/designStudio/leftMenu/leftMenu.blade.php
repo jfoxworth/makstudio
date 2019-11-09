@@ -61,27 +61,30 @@
 
 				<div class="row divcenter designOption">
 
-					<div class="col_one_fifth nobottommargin"></div>
-
-					<div class="hoverMe col_one_fifth center designType nobottommargin "
+					<div class="hoverMe col_one_fourth center designType nobottommargin "
 						 id="flowerHolder"
 						 data-toggle="tooltip" data-placement="top" title="Flower Wall">
 						<img id="flower" src="/images/icons/MAKICONS-10.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="backlitHolder"
 						 data-toggle="tooltip" data-placement="top" title="Backlit Wall">
 						<img id="backlit" src="/images/icons/MAKICONS-08.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="panelHolder"
 						 data-toggle="tooltip" data-placement="top" title="3D Wall Panels">
 						<img id="panel" src="/images/icons/MAKICONS-02.png" width="48px">
 					</div>
 
-					<div class="col_one_fifth nobottommargin col_last"></div>
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
+						 id="fossilHolder"
+						 data-toggle="tooltip" data-placement="top" title="Fossil Wall">
+						<img id="fossil" src="/images/icons/MAKICONS-11.png" width="48px">
+					</div>
+
 
 				</div>
 
@@ -89,28 +92,26 @@
 
 				<div class="row divcenter designOption ">
 
-					<div class="col_one_fifth nobottommargin "></div>
-
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="finWallHolder"
 						 data-toggle="tooltip" data-placement="left" title="Slat Wall">
 						<img id="finWall" src="/images/icons/MAKICONS-07.png" width="48px">
 					</div>
 
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="facetedHolder"
 						 data-toggle="tooltip" data-placement="top" title="Faceted Wall">
 						<img id="faceted" src="/images/icons/MAKICONS-06.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="planterHolder"
 						 data-toggle="tooltip" data-placement="right" title="Planter Wall">
 						<img id="planter" src="/images/icons/MAKICONS-04.png" width="48px">
 					</div>
 
-					<div class="col_one_fifth nobottommargin col_last"></div>
+					<div class="col_one_fourth nobottommargin col_last"></div>
 
 				</div>
 
@@ -118,30 +119,30 @@
 
 				<div class="row divcenter designOption bottommargin-sm">
 
-					<div class="col_one_fifth nobottommargin "></div>
+					<div class="col_one_fourth nobottommargin "></div>
 
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="benchHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Planter Bench">
 						<img id="bench" src="/images/icons/MAKICONS-05.png" width="48px">
 					</div>
 
-					<div class="hoverMe col_one_fifth center designType nobottommargin"
+					<div class="hoverMe col_one_fourth center designType nobottommargin"
 						 id="deskHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Custom Desk">
 						<img id="desk" src="/images/icons/MAKICONS-09.png" width="48px">
 					</div>
 
 					<!--
-					<div class="hoverMe col_one_fifth center designType nobottommargin col_last"
+					<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
 						 id="lightHolder"
 						 data-toggle="tooltip" data-placement="bottom" title="Light Fixture Wall">
 						<img id="light" src="/images/icons/MAKICONS-01.png" width="48px">
 					</div>
 				-->
 
-					<div class="col_one_fifth nobottommargin col_last"></div>
+					<div class="col_one_fouth nobottommargin col_last"></div>
 
 				</div>
 

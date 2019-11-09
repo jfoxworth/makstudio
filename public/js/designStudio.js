@@ -205,7 +205,8 @@ $(document).ready(function()	{
 		}).done(function(data) 
 		{
 			console.log(data);
-			reloadModel( data.id );
+			buildData = data;
+			reloadModel( buildData[buildData.length-1] );
 		});
 		
 
@@ -2276,10 +2277,10 @@ function setTimeline( )
 		var td = '';
 		timelineData.forEach(function(obj) 
 		{
-			td=td+'<div class="row">';
-				td=td+'<div style="width=100px">'+timeLineNum+'</div>';
-				td=td+'<div style="width=300px">'+obj['action']+'</div>';
-				td=td+'<div style="width=200px">'+obj['created_at']+'</div>';
+			td=td+'<div class="row divcenter" style="width:600px; margin:5px 0px;">';
+				td=td+'<div style="width:100px">'+timeLineNum+'</div>';
+				td=td+'<div style="width:300px">'+obj['action']+'</div>';
+				td=td+'<div style="width:200px">'+obj['created_at']+'</div>';
 			td=td+'</div>';
 
 		});
@@ -2877,7 +2878,8 @@ function initializeData()
 			'backlit' 	: 'b377b948d7f72cee5db1184551e10c1e9f8a34cae0323283b7f5f8831cedc2e26986531436453d00bbce7556061713170f148b9d879fc7e6b2454fce26e030c1c8fb9782aeaaa1fa73ed74ce6059e6daba4a3b682e769ebfe82ee516dfc6b2a0fe3fc30c2fab53476e8f1f82c895f1781fa1746ebd15-b63fe0ed951441432130ea48fe327cf7',
 			'faceted' 	: '6a4bbceb3a6a94c8d65543ebfa9d3d5fea7e02d3947dd4d34c6ff5eac325b91da4dcbf461588290b2867aedf44bc773a1b4d0d6f966dd2c8aa83d7a7a0caf6e1c2a2874c6d1ca9c45e245360bb14be9666bf0aad53f1758cf24a5fe9fa880416c71a33f184b47fef9295faa30e99ae1bb05a70f67352-2801291baf32cfcf605d4d7b00d78132',
 			'light'		: '3c0d469228cf4904f47b4487932978fd1e9438f83df58a8cd7b7381aaca3472a8d58ca75f16450b90ee4d234b383c365389b9655cd5960ec0aedf3369a4cced2702642506c9c9660e66fcee31493cd15c591b4fa98eaa39c68385fafaf3bd5d2e1abc03562e26930bfa8dd6887b7057de7dad4a704be-6991cd00af723d0ec78fdad4cc0404de',
-			'flower' 	: 'fa24b0f9a09bc2d807c18f497c0648139252bafe91f25f34cc6f9ba4803e683b534b8128f20de886175a18a1bda701b8e6a000b355d563384f6ff24540da3acaeb96364ed298426d3aec295df658af80af441819d8d396de29d2c23ae6336df139f7fefcdc65a7d134a11deccd1884c6bdd17e873694-2165b253880c6c6053afe2f457ff3564'
+			'flower' 	: 'fa24b0f9a09bc2d807c18f497c0648139252bafe91f25f34cc6f9ba4803e683b534b8128f20de886175a18a1bda701b8e6a000b355d563384f6ff24540da3acaeb96364ed298426d3aec295df658af80af441819d8d396de29d2c23ae6336df139f7fefcdc65a7d134a11deccd1884c6bdd17e873694-2165b253880c6c6053afe2f457ff3564',
+			'fossil'	: '7019da5b0f90ff981a4f31158f569b0610e8830eaff1869d307fe028998872c344dcf40cb02346f3f1c05ccbf8a37ee97c9deaf1dd9f4b8aef78f40d607012084211f315bb0dcc14506a4e7777d9a927df88e8ff3ad7173b4e64f1a419dad8aaf803ca95f126f3acce4ba1d947f8e7733c55a643adb5-3fdabea628a53bf1247d5651fa0ef504'
 		},
 
 
@@ -2887,7 +2889,8 @@ function initializeData()
 			'backlit' : 125,
 			'faceted' : 0,
 			'light' : 125,
-			'flower' : 115
+			'flower' : 115,
+			'fossil' : 100
 		},
 
 		'priceType' : {
@@ -2896,7 +2899,8 @@ function initializeData()
 			'backlit' : 'square',
 			'faceted' : 'square',
 			'light' : 'square',
-			'flower' : 'linear'
+			'flower' : 'square',
+			'fossil' : 'square'
 		},
 
 		'containerNames' :{
@@ -2908,7 +2912,8 @@ function initializeData()
 			'backlit' : 'currentModelDisplay',
 			'finWall' : 'currentModelDisplay',
 			'light' : 'currentModelDisplay',
-			'flower' : 'currentModelDisplay'
+			'flower' : 'currentModelDisplay',
+			'fossil' : 'currentModelDisplay'
 		},
 
 		'sideMenus' :{
@@ -2920,7 +2925,8 @@ function initializeData()
 			'faceted' : 'facetedSection',
 			'panel' : 'panelSection',
 			'light' : 'lightSection',
-			'flower' : 'flowerSection'
+			'flower' : 'flowerSection',
+			'fossil' : 'fossilSection'
 		},
 
 		'componentNames' : {
@@ -3032,11 +3038,18 @@ function initializeData()
 
 
 			'flower' : {
+				'Wall Width' : 'fossilWidthSlider',
+				'Wall Height' : 'fossilHeightSlider',
+				'flowersJSON' : 'flowersJSON'
+			},
+
+
+			'fossil' : {
 				'Wall Width' : 'flowerWallWidthSlider',
 				'Wall Height' : 'flowerWallHeightSlider',
-				'flowersJSON' : 'flowersJSON'
+				'Shape Count' : 'fossilShapeCountSlider',
+				'Factor' : 'fossilFactorSlider'
 			}
-
 
 		},
 
@@ -3151,6 +3164,15 @@ function initializeData()
 				'Wall Width' : 'slider',
 				'Wall Height' : 'slider',
 				'flowersJSON' : 'dataPack'
+			}
+
+
+
+			'fossil' : {
+				'Wall Width' : 'slider',
+				'Wall Height' : 'slider',
+				'Shape Count' : 'slider',
+				'Factor' : 'slider'
 			}
 
 

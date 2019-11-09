@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Build;
+use App\Instance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Events\NewBuild;
@@ -133,6 +134,32 @@ class BuildController extends Controller
 	}
 
 
+
+	/**
+	 * Store a newly created resource in storage.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function newBuild(Request $request)
+	{
+
+		$thisData = $request['model'];
+
+		$thisBuild = new Build;
+		$thisBuild->build_id = $thisData['build_id'];
+		$thisBuild->instance_id = $thisData['instance_id'];
+		$thisBuild->build_data = json_encode($thisData['build_data']);
+        $thisBuild->design_type = $thisData['build_num'];
+		$thisBuild->user_id = Auth::id();
+		$thisBuild->save();
+
+		$thisInstance = Instance::findOrFail($thisBuild->instance_id);
+		event(new NewBuild($thisInstance, $thisBuild));
+
+		return Build::where( 'instance_id', '=', $thisBuild->instance_id )->orderBy('created_at')->get();
+
+	}
 
 
 
