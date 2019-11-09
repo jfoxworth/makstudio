@@ -3164,7 +3164,7 @@ function initializeData()
 				'Wall Width' : 'slider',
 				'Wall Height' : 'slider',
 				'flowersJSON' : 'dataPack'
-			}
+			},
 
 
 
