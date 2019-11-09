@@ -94,7 +94,7 @@ $(document).ready(function()	{
 	makStudio = initializeData( );
 
 
-	makBuildNums = {'bench':2, 'finWall':3, 'backlit':4, 'faceted':5, 'light':6, 'desk':7, 'planter':8, 'panel':9, 'flower':12 }
+	makBuildNums = {'bench':2, 'finWall':3, 'backlit':4, 'faceted':5, 'light':6, 'desk':7, 'planter':8, 'panel':9, 'flower':12, 'fossil':13 }
 	
 
 	// Initialize the new or old model
@@ -276,7 +276,7 @@ $(document).ready(function()	{
 		$('#'+event.target.id).parent().addClass('currentItem');
 
 		if ( ( MakDesignType == "finWall" ) || ( MakDesignType == "backlit" ) || ( MakDesignType == "faceted" ) ||
-			 ( MakDesignType == "bench") || (MakDesignType == "light") || (MakDesignType == "flower") )
+			 ( MakDesignType == "bench") || (MakDesignType == "light") || (MakDesignType == "flower") || (MakDesignType == "fossil") )
 		{
 			$('#modelNameContainer').show();
 			$('#currentModelDisplay').show();
@@ -1230,7 +1230,8 @@ function setModelView( modelName )
 
 	// Name of the file
 	$('#modelName').parent().hide();
-	if ( ( modelName == 'bench' ) || ( modelName == 'finWall' ) || ( modelName == 'backlit' ) || ( modelName == 'faceted' )|| ( modelName == 'flower' ) )
+	if ( ( modelName == 'bench' ) || ( modelName == 'finWall' ) || ( modelName == 'backlit' ) || 
+		 ( modelName == 'faceted' ) || ( modelName == 'flower' ) || ( modelName == 'fossil' ) )
 	{
 		$('#modelName').parent().show();
 	}
@@ -1852,6 +1853,13 @@ function setPrice( modelName )
 		$('#flowerPrice').html( modelPrice );
 	}
 
+	if ( modelName == 'fossil' )
+	{
+		var totalSpace = parseInt( makModel['build_data']['componentValues']['Wall Height'] ) * 
+						 parseInt( makModel['build_data']['componentValues']['Wall Width'] );
+		modelPrice = Math.round(makStudio['modelPrices'][modelName] * totalSpace / 144);
+		$('#fossilPrice').html( modelPrice );
+	}
 
 	makModel['build_data']['price'] = modelPrice;
 
