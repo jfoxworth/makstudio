@@ -2839,6 +2839,43 @@ function initializeComponents( modelName )
 
 	}
 
+
+	if ( modelName == "fossil" )
+	{
+		$(".fossilWidthSlider").ionRangeSlider({
+			grid: false,
+			min: 1,
+			max: 120,
+			step: 1
+		});
+
+		$(".fossilHeightSlider").ionRangeSlider({
+			grid: false,
+			min: 1,
+			max: 144,
+			step: 1
+		});
+
+		$(".fossilShapeCountSlider").ionRangeSlider({
+			grid: false,
+			min: 5,
+			max: 18,
+			step: 1
+		});
+
+		$(".fossilHeightSlider").ionRangeSlider({
+			grid: false,
+			min: 0,
+			max: 0.01,
+			step: 2
+		});
+	}
+
+
+				'Shape Count' : 'fossilShapeCountSlider',
+				'Factor' : 'fossilFactorSlider'
+
+
 }
 
 
@@ -3046,15 +3083,15 @@ function initializeData()
 
 
 			'flower' : {
-				'Wall Width' : 'fossilWidthSlider',
-				'Wall Height' : 'fossilHeightSlider',
+				'Wall Width' : 'flowerWallWidthSlider',
+				'Wall Height' : 'flowerWallHeightSlider',
 				'flowersJSON' : 'flowersJSON'
 			},
 
 
 			'fossil' : {
-				'Wall Width' : 'flowerWallWidthSlider',
-				'Wall Height' : 'flowerWallHeightSlider',
+				'Wall Width' : 'fossilWidthSlider',
+				'Wall Height' : 'fossilHeightSlider',
 				'Shape Count' : 'fossilShapeCountSlider',
 				'Factor' : 'fossilFactorSlider'
 			}
