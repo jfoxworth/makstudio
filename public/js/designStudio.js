@@ -1124,7 +1124,8 @@ function setEnvironment( )
 		{
 			if ( (designType == 'bench') || (designType == 'finWall') || (designType == 'backlit') ||
 				 (designType == 'faceted') || (designType == 'light') || (designType == 'planter') ||
-				 (designType == 'desk') || (designType == 'panel') || (designType == 'flower') )
+				 (designType == 'desk') || (designType == 'panel') || (designType == 'flower') ||
+				 (designType == 'fossil') )
 			{
 				window['MakDesignType'] = designType; 
 			}else
