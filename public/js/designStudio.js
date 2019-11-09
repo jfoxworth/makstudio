@@ -2872,9 +2872,6 @@ function initializeComponents( modelName )
 	}
 
 
-				'Shape Count' : 'fossilShapeCountSlider',
-				'Factor' : 'fossilFactorSlider'
-
 
 }
 
