@@ -2867,8 +2867,8 @@ function initializeComponents( modelName )
 		$(".fossilFactorSlider").ionRangeSlider({
 			grid: false,
 			min: 0,
-			max: 0.01,
-			step: 2
+			max: 2,
+			step: 0.01
 		});
 	}
 
