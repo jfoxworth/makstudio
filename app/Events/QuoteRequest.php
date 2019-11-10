@@ -22,11 +22,11 @@ class QuoteRequest
 	 *
 	 * @return void
 	 */
-	public function __construct(Build $build)
+	public function __construct(Instance $instance, Build $build)
 	{
 
 		$this->build = $build;
-
+		$this->instance = $instance;
 	}
 
 	/**

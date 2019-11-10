@@ -192,8 +192,8 @@ class BuildController extends Controller
 
 		$thisData = $request['model'];
 
-		$thisBuild = Build::findOrFail($thisData['id']);
-		$thisInstance = Instance::findOrFail($thisBuild->instance_id);
+		$thisBuild = Build::where( 'id', '=', $thisData['id'] );
+		$thisInstance = Instance::where( 'id', '=', $thisData['instance_id'] );
 		event(new QuoteRequest($thisInstance, $thisBuild));
 
 		return;
