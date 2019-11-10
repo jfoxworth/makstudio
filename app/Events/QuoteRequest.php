@@ -25,8 +25,13 @@ class QuoteRequest
 	public function __construct($instance, $build)
 	{
 
+		echo('In the event');
+
 		$this->build = $build;
 		$this->instance = $instance;
+
+		echo('At end of event');
+
 	}
 
 	/**

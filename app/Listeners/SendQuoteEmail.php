@@ -29,6 +29,8 @@ class SendQuoteEmail
     public function handle(QuoteRequest $event)
     {
 
+    	echo('In event listener'); 
+
 		$request_body = json_decode('{
 		  "personalizations": [
 		    {
@@ -59,5 +61,6 @@ class SendQuoteEmail
 		echo $response->body();
 		echo $response->headers();
 
+    	echo('End of event listener'); 
     }
 }
