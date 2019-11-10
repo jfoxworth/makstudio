@@ -124,7 +124,7 @@ Route::put('/newInstance', 'InstanceController@store');
 Route::put('/newBuild', 'BuildController@newBuild');
 
 // Send Quote
-Route::put('/getQuote', 'BuildController@getQuote');
+Route::post('/getQuote', 'BuildController@getQuote');
 
 
 // Get Actions
