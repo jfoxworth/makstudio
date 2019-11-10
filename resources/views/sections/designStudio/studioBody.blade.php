@@ -148,4 +148,5 @@
 @include('sections.designStudio.quoteBlocks.finWallQuote')
 @include('sections.designStudio.quoteBlocks.backlitQuote')
 @include('sections.designStudio.quoteBlocks.facetedQuote')
+@include('sections.designStudio.quoteBlocks.fossilQuote')
 

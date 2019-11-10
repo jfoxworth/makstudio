@@ -113,23 +113,19 @@
 
 
 	<!-- Price box for bench -->
-	<div class="white-section divcenter" style="margin:20px 0px">
+	<div class="white-section center divcenter" style="margin:20px 0px">
 		<label>Estimated Cost (US)</label>
 
-		<div class="row">
 
-			<div class="divcenter priceBox">
-				$ <span id="benchPrice"></span>
-			</div>
+		<div class="divcenter priceBox">
+			$ <span id="benchPrice"></span>
+		</div>
 
-			<i id="benchModalCall"
-			   class="nomargin nopadding i-circled i-small icon-dollar hoverMe"
-			   data-toggle="toottip"
-			   data-placement="top"
-			   title="Get Full Price Quote" >
-				
-			</i>
-
+		<div class="divcenter button topmargin-sm"
+			 id="benchModalCall"
+			 class=""
+			 style="background-color:#ccc; border:#1px solid #000; color:#000">
+			Get Price Quote
 		</div>
 
 	</div>

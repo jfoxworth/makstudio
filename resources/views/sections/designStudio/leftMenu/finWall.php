@@ -330,23 +330,19 @@
 		<label>Estimated Cost (US)</label>
 
 
-		<div class="row">
+		<div class="divcenter priceBox">
+			$ <span id="finWallPrice"></span>
+		</div>
 
-			<div class="divcenter priceBox">
-				$ <span id="finWallPrice"></span>
-			</div>
-
-			<i id="finWallModalCall"
-			   class="nomargin nopadding i-circled i-small icon-dollar hoverMe"
-			   data-toggle="toottip"
-			   data-placement="top"
-			   title="Get Full Price Quote" >
-				
-			</i>
-
+		<div class="divcenter button topmargin-sm"
+			 id="finWallModalCall"
+			 class=""
+			 style="background-color:#ccc; border:#1px solid #000; color:#000">
+			Get Price Quote
 		</div>
 
 	</div>
+
 
 
 </div>

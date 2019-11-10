@@ -1,4 +1,4 @@
-<!-- Bench Quote Modal -->
+<!-- fossil Quote Modal -->
 <div class="modal fade" 
 	 id="fossilQuoteModal" 
 	 tabindex="-1" 

@@ -17,7 +17,7 @@
 
 		<div class="hoverMe col_one_fifth col_last center nobottommargin"
 			 data-toggle="tooltip" data-placement="top" title="Fossil Pattern Settings">
-			<i id="fossilFactorButton" class="icon-line-target h3 parameterSelect"></i>
+			<i id="fossilFactorButton" class="icon-leaf h3 parameterSelect"></i>
 		</div>
 
 	</div>
