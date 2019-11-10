@@ -1075,6 +1075,29 @@ $(document).ready(function()	{
 
 
 
+
+
+	// Request quote
+	$(document).on('click', '.getQuote', function(e)
+	{	
+
+		console.log('Getting a quote');
+
+
+		$.ajax({
+			url : "/getQuote",
+			method :"POST",
+			data :  { 'model' : makModel }
+
+		}).done(function() 
+		{
+			console.log('I sent a quote email');
+		});
+
+	});
+
+
+
 });
 
 

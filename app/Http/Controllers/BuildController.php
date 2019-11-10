@@ -7,6 +7,7 @@ use App\Instance;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Events\NewBuild;
+use App\Events\QuoteRequest;
 
 
 class BuildController extends Controller
@@ -175,5 +176,30 @@ class BuildController extends Controller
 		$thisBuild = Build::findOrFail($id);
 		$thisBuild ->delete(); 
 	}
+
+
+
+
+
+	/**
+	 * Store a newly created resource in storage.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function getQuote(Request $request)
+	{
+
+		$thisData = $request['model'];
+
+		$thisBuild = Build::findOrFail($thisData->id);
+		$thisInstance = Instance::findOrFail($thisBuild->instance_id);
+		event(new QuoteRequest($thisInstance, $thisBuild));
+
+		return;
+
+	}
+
+
 
 }

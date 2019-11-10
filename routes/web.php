@@ -123,6 +123,8 @@ Route::put('/newInstance', 'InstanceController@store');
 // New Build
 Route::put('/newBuild', 'BuildController@newBuild');
 
+// Send Quote
+Route::put('/getQuote', 'BuildController@getQuote');
 
 
 // Get Actions
