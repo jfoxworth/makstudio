@@ -1033,6 +1033,21 @@ $(document).ready(function()	{
 
 
 
+	// Fossil Modal
+	$(document).on('click', '#fossilModalCall', function(e)
+	{	
+
+		$('#fossilQuoteModal').modal('show');
+		$('#fossilWidthQuote').text(makModel.build_data.componentValues['Wall Width']);
+		$('#fossilHeightQuote').text(makModel.build_data.componentValues['Wall Height']);
+		$('#fossilShapeCountQuote').text(makModel.build_data.componentValues['Shape Count']);
+		$('#fossilFactorQuote').text(makModel.build_data.componentValues['Factor']);
+
+		$('#fossilModalPriceQuote').text('$ '+makModel.build_data['price']);
+	});
+
+
+
 
 
 

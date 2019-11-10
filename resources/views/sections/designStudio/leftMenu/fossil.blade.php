@@ -98,7 +98,7 @@
 			$ <span id="fossilPrice"></span>
 		</div>
 
-		<div class="divcenter button"
+		<div class="divcenter button topmargin-sm"
 			 id="fossilModalCall"
 			 class=""
 			 style="background-color:#ccc; border:#1px solid #000; color:#000">
