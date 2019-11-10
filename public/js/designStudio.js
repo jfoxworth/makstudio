@@ -1084,6 +1084,14 @@ $(document).ready(function()	{
 		console.log('Getting a quote');
 
 
+		// Set CSRF Token
+		$.ajaxSetup({
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
+		});
+
+
 		$.ajax({
 			url : "/getQuote",
 			method :"POST",
@@ -1095,6 +1103,8 @@ $(document).ready(function()	{
 		});
 
 	});
+
+
 
 
 
