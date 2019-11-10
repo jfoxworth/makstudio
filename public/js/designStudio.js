@@ -1337,6 +1337,7 @@ function setDefaultModelData( modelName )
 		'created_at' : '',
 		'modified_at' : '',
 		'user_id' : '',
+		'instance_id' : '',
 		'build_id' : modelName,
 		'build_num' : makBuildNums[modelName],
 		'build_data' : {
