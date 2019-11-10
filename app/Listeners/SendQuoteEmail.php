@@ -6,7 +6,6 @@ use App\Events\QuoteRequest;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-require 'vendor/autoload.php';
 
 class SendQuoteEmail
 {
