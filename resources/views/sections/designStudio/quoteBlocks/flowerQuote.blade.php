@@ -41,7 +41,7 @@
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Number of FLowers</td><td id="flowerWallNumbersQuote"></td>
+						<td>Number of Flowers</td><td id="flowerWallNumbersQuote"></td>
 					</tr>
 
 				</table>

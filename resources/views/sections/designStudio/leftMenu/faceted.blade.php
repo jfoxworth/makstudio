@@ -194,7 +194,7 @@
 			 id="facetedModalCall"
 			 class=""
 			 style="background-color:#ccc; border:#1px solid #000; color:#000">
-			Get Price Quote
+			Finish Quote
 		</div>
 
 	</div>
