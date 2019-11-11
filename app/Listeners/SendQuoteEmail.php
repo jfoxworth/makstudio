@@ -75,7 +75,7 @@ class SendQuoteEmail
 			$flowerText = '';
 			$flowerIndex = 1;
 
-			foreach ($event->build['build_data']['componentValues']['flowerJSON']['flowers'] as $key => $value)
+			foreach ($event->build['build_data']['componentValues']['flowersJSON']['flowers'] as $key => $value)
 			{
 				$flowerText = $flowerText+'<tr>';
 					$flowerText = $flowerText+'<td>'.$flowerIndex.'</td>';
