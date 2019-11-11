@@ -1107,6 +1107,12 @@ $(document).ready(function()	{
 		}).done(function() 
 		{
 			console.log('I sent a quote email');
+			$('#backlitQuoteModal').modal('toggle');
+			$('#fossilQuoteModal').modal('toggle');
+			$('#facetedQuoteModal').modal('toggle');
+			$('#finWallQuoteModal').modal('toggle');
+			$('#flowerQuoteModal').modal('toggle');
+			$('#benchQuoteModal').modal('toggle');
 
 		});
 
