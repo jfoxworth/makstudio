@@ -5,7 +5,7 @@ namespace App\Listeners;
 use App\Events\QuoteRequest;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
-
+use SendGrid;
 
 class SendQuoteEmail
 {
