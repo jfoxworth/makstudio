@@ -59,7 +59,7 @@ class StoreQuoteAction
 		}
 
 		$thisAction = new Action;
-		$thisAction->design_type = $event->build->build_num;
+		$thisAction->design_type = $event->build['build_num'];
 		$thisAction->instance_id = $thisInstanceID;
 		$thisAction->user_id = Auth::id();
 		$thisAction->action = 'Quote Requested';

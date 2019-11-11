@@ -65,6 +65,7 @@ class SendQuoteEmail
 
     	}
 
+    	echo($emailText);
 
 		$request_body = json_decode('{
 		  "personalizations": [
