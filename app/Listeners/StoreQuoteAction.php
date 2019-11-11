@@ -44,7 +44,7 @@ class StoreQuoteAction
 
 		if (isset($event->build)) 
 		{
-			$thisBuildID = $event->build;
+			$thisBuild = $event->build;
 		}else
 		{
 			$thisBuild = '';
