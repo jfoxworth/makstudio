@@ -48,6 +48,13 @@
 
 			</div>
 
+			@guest
+				<div class="divcenter center">
+					<h4>Enter the email for the quote</h4>
+					<input id="guestEmail" style="width:100%; margin-bottom:20px">
+				</div>
+			@endguest
+
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				<button type="button" class="btn btn-primary getQuote">Send Me Quote</button>

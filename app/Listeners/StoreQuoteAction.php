@@ -63,7 +63,7 @@ class StoreQuoteAction
 			$userID = Auth::id();
 		}else
 		{
-			$userID = 'Anonymous';
+			$userID = 0;
 		}
 
 		$thisAction = new Action;
