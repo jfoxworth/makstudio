@@ -83,7 +83,7 @@ class SendQuoteEmail
 		  "content": [
 		    {
 		      "type": "text/plain",
-		      "value": '.$emailText.'
+		      "value": "'.$emailText.'"
 		    }
 		  ]
 		}');
