@@ -28,7 +28,7 @@ class SendQuoteEmail
     public function handle(QuoteRequest $event)
     {
 
-    	if ( $event->build['build_id'] = "fossil" )
+    	if ( $event->build['build_id'] == "fossil" )
     	{
 
 				$emailText = '<table class="modalTable center"
@@ -59,7 +59,7 @@ class SendQuoteEmail
 						<td>Price</td><td id="fossilModalPriceQuote">'.$event->build['build_data']['price'].'</td>
 					</tr>
 
-				</table>'
+				</table>';
 
     	}
 
