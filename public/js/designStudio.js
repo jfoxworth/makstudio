@@ -1083,6 +1083,8 @@ $(document).ready(function()	{
 
 		console.log('Getting a quote');
 
+		amplitude.getInstance().logEvent('Quote Requested - '+makModel['build_id']);
+
 
 		// Set CSRF Token
 		$.ajaxSetup({
