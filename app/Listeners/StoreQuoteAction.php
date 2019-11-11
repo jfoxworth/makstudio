@@ -34,13 +34,28 @@ class StoreQuoteAction
 	public function handle(QuoteRequest $event)
 	{
 
+		if (isset($event->build->id)) 
+		{
+			$thisBuildID = $event->build->id;
+		}else
+		{
+			$thisBuildID = '';
+		}
+
+		if (isset($event->build)) 
+		{
+			$thisBuildID = $event->build;
+		}else
+		{
+			$thisBuild = '';
+		}
 
 		$thisAction = new Action;
 		$thisAction->design_type = $event->build->design_type;
 		$thisAction->instance_id = $event->instance->id;
 		$thisAction->user_id = Auth::id();
 		$thisAction->action = 'Quote Requested';
-		$thisAction->info = json_encode(array('build_id' => $event->build->id; 'build' => $event->build ));
+		$thisAction->info = json_encode(array('build_id' => $thisBuildID; 'build' => $thisBuild ));
 		$thisAction->save();
 
 	}

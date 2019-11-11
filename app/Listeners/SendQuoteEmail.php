@@ -28,7 +28,41 @@ class SendQuoteEmail
     public function handle(QuoteRequest $event)
     {
 
-    	echo('In event listener'); 
+    	if ( $event->build['build_id'] = "fossil" )
+    	{
+
+				$emailText = '<table class="modalTable center"
+					   style="width:500px; margin-left:25px">
+
+					<tr style="height:35px; border-bottom:1px solid #ccc; font-weight:bold">
+						<th style="width:300px">Quantity</th>
+						<th>Amount</th>
+					</tr>
+
+					<tr style="height:30px; border-bottom:1px solid #ccc">
+						<td>Width of Wall</td><td id="fossilWidthQuote">'.$event->build['build_data']['component_values']['Wall Width'].'</td>
+					</tr>
+
+					<tr style="height:30px; border-bottom:1px solid #ccc">
+						<td>Height of Wall</td><td id="fossilHeightQuote">'.$event->build['build_data']['component_values']['Wall Height'].'</td>
+					</tr>
+
+					<tr style="height:30px; border-bottom:1px solid #ccc">
+						<td>Fossil Shape Count</td><td id="fossilShapeCountQuote">'.$event->build['build_data']['component_values']['Shape Count'].'</td>
+					</tr>
+
+					<tr style="height:30px; border-bottom:1px solid #ccc">
+						<td>Fossil Factor</td><td id="fossilFactorQuote">'.$event->build['build_data']['component_values']['Factor'].'</td>
+					</tr>
+
+					<tr style="height:30px; background-color:#888; color:#fff">
+						<td>Price</td><td id="fossilModalPriceQuote">'.$event->build['build_data']['price'].'</td>
+					</tr>
+
+				</table>'
+
+    	}
+
 
 		$request_body = json_decode('{
 		  "personalizations": [
@@ -38,7 +72,7 @@ class SendQuoteEmail
 		          "email": "jfoxworth@cadwolf.com"
 		        }
 		      ],
-		      "subject": "Hello World from the SendGrid PHP Library!"
+		      "subject": "Your quote from the Mak Studio"
 		    }
 		  ],
 		  "from": {
@@ -47,7 +81,7 @@ class SendQuoteEmail
 		  "content": [
 		    {
 		      "type": "text/plain",
-		      "value": "Hello, Email!"
+		      "value": '.$emailText.'
 		    }
 		  ]
 		}');
@@ -60,6 +94,5 @@ class SendQuoteEmail
 		echo $response->body();
 		echo $response->headers();
 
-    	echo('End of event listener'); 
     }
 }

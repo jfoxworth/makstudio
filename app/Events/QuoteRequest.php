@@ -22,15 +22,14 @@ class QuoteRequest
 	 *
 	 * @return void
 	 */
-	public function __construct($instance, $build)
+	public function __construct($build)
 	{
-
-		echo('In the event');
 
 		$this->build = $build;
 		$this->instance = $instance;
 
-		echo('At end of event');
+		echo('The build is ');
+		var_dump($build);
 
 	}
 
