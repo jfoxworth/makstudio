@@ -55,7 +55,7 @@ class StoreQuoteAction
 		$thisAction->instance_id = $event->instance->id;
 		$thisAction->user_id = Auth::id();
 		$thisAction->action = 'Quote Requested';
-		$thisAction->info = json_encode(array('build_id' => $thisBuildID; 'build' => $thisBuild ));
+		$thisAction->info = json_encode(array('build_id' => $thisBuildID, 'build' => $thisBuild));
 		$thisAction->save();
 
 	}
