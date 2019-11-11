@@ -71,6 +71,7 @@ class SendQuoteEmail
     	}
 
 
+    	echo($event->email)
 
 		$from = new SendGrid\Email(null, "quotes@makstudio.us");
 		$subject = "Your quote from Mak Studio";
