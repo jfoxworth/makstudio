@@ -28,14 +28,10 @@ class SendQuoteEmail
     public function handle(QuoteRequest $event)
     {
 
-    	echo('The build id is');
-    	echo($event->build['build_id']);
-
     	$emailText =  "sup sucka";
 
     	if ( $event->build['build_id'] == "fossil" )
     	{
-    			echo('Here');
 
 				$emailText = '<table class="modalTable center"
 					   style="width:500px; margin-left:25px">
@@ -86,7 +82,7 @@ class SendQuoteEmail
 		  },
 		  "content": [
 		    {
-		      "type": "text/plain",
+		      "type": "application/json",
 		      "value": '.$emailText.'
 		    }
 		  ]

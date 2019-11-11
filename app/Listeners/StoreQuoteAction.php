@@ -50,9 +50,17 @@ class StoreQuoteAction
 			$thisBuild = '';
 		}
 
+		if (isset($event->build['instance_id']) ) 
+		{
+			$thisInstanceID = $event->build['instance_id'];
+		}else
+		{
+			$thisInstanceID = '';
+		}
+
 		$thisAction = new Action;
-		$thisAction->design_type = $event->build->design_type;
-		$thisAction->instance_id = $event->instance->id;
+		$thisAction->design_type = $event->build->build_num;
+		$thisAction->instance_id = $thisInstanceID;
 		$thisAction->user_id = Auth::id();
 		$thisAction->action = 'Quote Requested';
 		$thisAction->info = json_encode(array('build_id' => $thisBuildID, 'build' => $thisBuild));
