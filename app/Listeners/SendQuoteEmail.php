@@ -71,20 +71,10 @@ class SendQuoteEmail
     	}
 
 
-    	// Set the email
-    	if ( Auth::check() )
-    	{
-    		$userEmail = Auth::email();
-    	}else
-    	{
-    		$userEmai = $event->email;
-    	}
-
-    	echo($userEmail);
 
 		$from = new SendGrid\Email(null, "quotes@makstudio.us");
 		$subject = "Your quote from Mak Studio";
-		$to = new SendGrid\Email(null, $userEmail);
+		$to = new SendGrid\Email(null, $event->email);
 		$content = new SendGrid\Content("text/html", $emailText);
 		$mail = new SendGrid\Mail($from, $subject, $to, $content);
 
