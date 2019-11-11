@@ -40,19 +40,19 @@ class SendQuoteEmail
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Width of Wall</td><td id="fossilWidthQuote">'.$event->build['build_data']['component_values']['Wall Width'].'</td>
+						<td>Width of Wall</td><td id="fossilWidthQuote">'.$event->build['build_data']['componentValues']['Wall Width'].'</td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Height of Wall</td><td id="fossilHeightQuote">'.$event->build['build_data']['component_values']['Wall Height'].'</td>
+						<td>Height of Wall</td><td id="fossilHeightQuote">'.$event->build['build_data']['componentValues']['Wall Height'].'</td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Fossil Shape Count</td><td id="fossilShapeCountQuote">'.$event->build['build_data']['component_values']['Shape Count'].'</td>
+						<td>Fossil Shape Count</td><td id="fossilShapeCountQuote">'.$event->build['build_data']['componentValues']['Shape Count'].'</td>
 					</tr>
 
 					<tr style="height:30px; border-bottom:1px solid #ccc">
-						<td>Fossil Factor</td><td id="fossilFactorQuote">'.$event->build['build_data']['component_values']['Factor'].'</td>
+						<td>Fossil Factor</td><td id="fossilFactorQuote">'.$event->build['build_data']['componentValues']['Factor'].'</td>
 					</tr>
 
 					<tr style="height:30px; background-color:#888; color:#fff">
