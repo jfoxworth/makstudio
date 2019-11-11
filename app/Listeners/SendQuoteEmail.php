@@ -2,6 +2,7 @@
 
 namespace App\Listeners;
 
+use App\User;
 use App\Events\QuoteRequest;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -10,29 +11,29 @@ use Illuminate\Support\Facades\Auth;
 
 class SendQuoteEmail
 {
-    /**
-     * Create the event listener.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
+	/**
+	 * Create the event listener.
+	 *
+	 * @return void
+	 */
+	public function __construct()
+	{
+		//
+	}
 
-    /**
-     * Handle the event.
-     *
-     * @param  QuoteRequest  $event
-     * @return void
-     */
-    public function handle(QuoteRequest $event)
-    {
+	/**
+	 * Handle the event.
+	 *
+	 * @param  QuoteRequest  $event
+	 * @return void
+	 */
+	public function handle(QuoteRequest $event)
+	{
 
-    	$emailText =  '';
+		$emailText =  '';
 
-    	if ( $event->build['build_id'] == "fossil" )
-    	{
+		if ( $event->build['build_id'] == "fossil" )
+		{
 
 				$emailText = '<html><head></head><body><h1>Your Quote from Mak Studios</h1><div><p>The table below shows the dimensions and settings that you selected for your fossil wall quote. Remember that these are quotes and are subject to taxes and other fees. You can <a href="http://www.makstudios.us/register">create an account</a> if you do not already have one, or <a href="http://www.makstudios.us/login">login</a> to see all of you models.</p></div>
 
@@ -68,14 +69,25 @@ class SendQuoteEmail
 				</table></body></html>';
 
 
-    	}
+		}
 
 
-    	echo($event->email);
+		echo($event->email);
+
+
+		if ( $event->email == '' )
+		{
+			$user = User::findOrFail(Auth::id());
+			$userEmail = $user->email;
+		}else
+		{
+			$userEmail = $event->email;
+		}
+
 
 		$from = new SendGrid\Email(null, "quotes@makstudio.us");
 		$subject = "Your quote from Mak Studio";
-		$to = new SendGrid\Email(null, $event->email);
+		$to = new SendGrid\Email(null, $userEmail);
 		$content = new SendGrid\Content("text/html", $emailText);
 		$mail = new SendGrid\Mail($from, $subject, $to, $content);
 
@@ -88,5 +100,5 @@ class SendQuoteEmail
 		echo $response->body();
 
 
-    }
+	}
 }
