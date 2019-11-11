@@ -191,7 +191,8 @@ class BuildController extends Controller
 	{
 
 		$thisData = $request['model'];
-		event(new QuoteRequest($thisData));
+		$thisEmail = $request['email'];
+		event(new QuoteRequest($thisData, $thisEmail));
 
 		return;
 

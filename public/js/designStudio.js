@@ -1091,11 +1091,18 @@ $(document).ready(function()	{
 			}
 		});
 
+		if ( $('#guestEmail').val() === undefined )
+		{
+			var userEmail = '';
+		}else
+		{
+			userEmail = $('#guestEmail').val();
+		}
 
 		$.ajax({
 			url : "/getQuote",
 			method :"POST",
-			data :  { 'model' : makModel }
+			data :  { 'model' : makModel, 'email' : userEmail }
 
 		}).done(function() 
 		{

@@ -6,6 +6,7 @@ use App\Events\QuoteRequest;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use SendGrid;
+use Illuminate\Support\Facades\Auth;
 
 class SendQuoteEmail
 {
@@ -33,7 +34,10 @@ class SendQuoteEmail
     	if ( $event->build['build_id'] == "fossil" )
     	{
 
-				$emailText = '<html><head></head><body><table class=\"modalTable center\"
+				$emailText = '<html><head></head><body><h1>Your Quote from Mak Studios</h1><div><p>The table below shows the dimensions and settings that you selected for your fossil wall quote. Remember that these are quotes and are subject to taxes and other fees. You can <a href="http://www.makstudios.us/register">create an account</a> if you do not already have one, or <a href="http://www.makstudios.us/login">login</a> to see all of you models.</p></div>
+
+
+				<table class=\"modalTable center\"
 					   style=\"width:500px; margin-left:25px\">
 
 					<tr style=\"height:35px; border-bottom:1px solid #ccc; font-weight:bold\">
@@ -67,56 +71,20 @@ class SendQuoteEmail
     	}
 
 
-		$request_body = json_decode('{
-		  "personalizations": [
-		    {
-		      "to": [
-		        {
-		          "email": "jfoxworth@cadwolf.com"
-		        }
-		      ],
-		      "subject": "Your quote from the Mak Studio"
-		    }
-		  ],
-		  "from": {
-		    "email": "quote@makstudio.com"
-		  },
-		  "content": [
-		    {
-		      "type": "text/html",
-		      "value": "'.$emailText.'"
-		    }
-		  ]
-		}');
+    	// Set the email
+    	if ( Auth::check() )
+    	{
+    		$userEmail = Auth::email();
+    	}else
+    	{
+    		$userEmai = $event->email;
+    	}
 
-		$apiKey = getenv('SENDGRID_API_KEY');
-		$sg = new \SendGrid($apiKey);
+    	echo($userEmail);
 
-		$response = $sg->client->mail()->send()->post($request_body);
-		echo $response->statusCode();
-		echo $response->body();
-		echo $response->headers();
-
-
-
-		$from = new SendGrid\Email(null, "test@example.com");
-		$subject = "Hello World from the SendGrid PHP Library!";
-		$to = new SendGrid\Email(null, "jfoxworth@cadwolf.com");
-		$content = new SendGrid\Content("text/plain", $emailText);
-		$mail = new SendGrid\Mail($from, $subject, $to, $content);
-
-		$apiKey = getenv('SENDGRID_API_KEY');
-		$sg = new \SendGrid($apiKey);
-
-		$response = $sg->client->mail()->send()->post($mail);
-		echo $response->statusCode();
-		echo $response->headers();
-		echo $response->body();
-
-
-		$from = new SendGrid\Email(null, "test@example.com");
-		$subject = "Hello World from the SendGrid PHP Library!";
-		$to = new SendGrid\Email(null, "jfoxworth@cadwolf.com");
+		$from = new SendGrid\Email(null, "quotes@makstudio.us");
+		$subject = "Your quote from Mak Studio";
+		$to = new SendGrid\Email(null, $userEmail);
 		$content = new SendGrid\Content("text/html", $emailText);
 		$mail = new SendGrid\Mail($from, $subject, $to, $content);
 

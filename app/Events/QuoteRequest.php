@@ -22,10 +22,11 @@ class QuoteRequest
 	 *
 	 * @return void
 	 */
-	public function __construct($build)
+	public function __construct($build, $email)
 	{
 
 		$this->build = $build;
+		$this->email = $email;
 
 	}
 

@@ -56,12 +56,15 @@
 
 			</div>
 
+			@guest
+				<div class="divcenter">
+					<input id="guestEmail">
+				</div>
+			@endguest
+
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				@guest
-				@else
-					<button type="button" class="btn btn-primary getQuote">Send Me Quote</button>
-				@endguest
+				<button type="button" class="btn btn-primary getQuote">Send Me Quote</button>
 		</div>
 	
 		</div>
