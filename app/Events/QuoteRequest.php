@@ -26,7 +26,6 @@ class QuoteRequest
 	{
 
 		$this->build = $build;
-		$this->instance = $instance;
 
 		echo('The build is ');
 		var_dump($build);
