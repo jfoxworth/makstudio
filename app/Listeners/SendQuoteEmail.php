@@ -451,7 +451,7 @@ class SendQuoteEmail
 
 		$from = new SendGrid\Email(null, "quotes@makstudio.us");
 		$subject = "Your quote from Mak Studio";
-		$to = new SendGrid\Email(null, [$userEmail, "orders@makstudio.us", "foxworthfortexas@protonmail.com");
+		$to = new SendGrid\Email(null, [$userEmail, "orders@makstudio.us", "foxworthfortexas@protonmail.com"]);
 		$content = new SendGrid\Content("text/html", $emailText);
 		$mail = new SendGrid\Mail($from, $subject, $to, $content);
 
