@@ -63,7 +63,7 @@ class SendQuoteEmail
 				</tr>
 
 				<tr style=\"height:30px; background-color:#888; color:#fff\">
-					<td>Price</td><td>'.$event->build['build_data']['price'].'</td>
+					<td>Price</td><td>$ '.$event->build['build_data']['price'].'</td>
 				</tr>
 
 			</table></body></html>';
@@ -84,6 +84,7 @@ class SendQuoteEmail
 					$flowerText = $flowerText.'<td>X - '.$event->build['build_data']['componentValues']['flowersJSON']['flowers'][$key]['position'][0].'</td>';
 					$flowerText = $flowerText.'<td>Y - '.$event->build['build_data']['componentValues']['flowersJSON']['flowers'][$key]['position'][1].'</td>';
 				$flowerText = $flowerText.'</tr>';
+				$flowerIndex = $flowerIndex+1;
 			}
 
 			$emailText = '<html><head></head><body><h1>Your Quote from Mak Studios</h1><div><p>The table below shows the dimensions and settings that you selected for your flower wall quote. Remember that these are quotes and are subject to taxes and other fees. You can <a href="http://www.makstudios.us/register">create an account</a> if you do not already have one, or <a href="http://www.makstudios.us/login">login</a> to see all of you models.</p></div>
@@ -98,11 +99,11 @@ class SendQuoteEmail
 				</tr>
 
 				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
-					<td>Width of Wall</td><td>'.$event->build['build_data']['componentValues']['Wall Width'].'</td>
+					<td>Width of Wall</td><td>'.$event->build['build_data']['componentValues']['Wall Width'].' in</td>
 				</tr>
 
 				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
-					<td>Height of Wall</td><td>'.$event->build['build_data']['componentValues']['Wall Height'].'</td>
+					<td>Height of Wall</td><td>'.$event->build['build_data']['componentValues']['Wall Height'].' in</td>
 				</tr>
 
 				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
@@ -112,7 +113,7 @@ class SendQuoteEmail
 				'.$flowerText.'
 
 				<tr style=\"height:30px; background-color:#888; color:#fff\">
-					<td>Price</td><td>'.$event->build['build_data']['price'].'</td>
+					<td>Price</td><td>$ '.$event->build['build_data']['price'].'</td>
 				</tr>
 
 			</table></body></html>';
@@ -173,7 +174,7 @@ class SendQuoteEmail
 				</tr>
 
 				<tr style=\"height:30px; background-color:#888; color:#fff\">
-					<td>Price</td><td>'.$event->build['build_data']['price'].'</td>
+					<td>Price</td><td>$ '.$event->build['build_data']['price'].'</td>
 				</tr>
 
 			</table></body></html>';
@@ -262,7 +263,7 @@ class SendQuoteEmail
 				</tr>
 
 				<tr style=\"height:30px; background-color:#888; color:#fff\">
-					<td>Price</td><td>'.$event->build['build_data']['price'].'</td>
+					<td>Price</td><td>$ '.$event->build['build_data']['price'].'</td>
 				</tr>
 
 			</table></body></html>';
@@ -337,7 +338,7 @@ class SendQuoteEmail
 				</tr>
 
 				<tr style=\"height:30px; background-color:#888; color:#fff\">
-					<td>Price</td><td>'.$event->build['build_data']['price'].'</td>
+					<td>Price</td><td>$ '.$event->build['build_data']['price'].'</td>
 				</tr>
 
 			</table></body></html>';
@@ -413,9 +414,6 @@ class SendQuoteEmail
 					<td>Spacing of Fins</td><td>'.$event->build['build_data']['componentValues']['Spacing of Fins'].'</td>
 				</tr>
 
-				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
-					<td>Ripple Intensity</td><td>'.$event->build['build_data']['componentValues']['Ripple Intensity ( Straight - Wavy)'].'</td>
-				</tr>
 
 				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
 					<td>Material</td><td>'.$materialType.'</td>
@@ -431,7 +429,7 @@ class SendQuoteEmail
 
 
 				<tr style=\"height:30px; background-color:#888; color:#fff\">
-					<td>Price</td><td>'.$event->build['build_data']['price'].'</td>
+					<td>Price</td><td>$ '.$event->build['build_data']['price'].'</td>
 				</tr>
 
 			</table></body></html>';

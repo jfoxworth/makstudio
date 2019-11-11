@@ -1107,6 +1107,7 @@ $(document).ready(function()	{
 		}).done(function() 
 		{
 			console.log('I sent a quote email');
+
 		});
 
 	});
