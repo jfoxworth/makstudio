@@ -72,7 +72,7 @@
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				@guest
 				@else
-					<button type="button" class="btn btn-primary">Send Me Quote</button>
+					<button type="button" class="btn btn-primary getQuote">Send Me Quote</button>
 				@endguest
 			</div>
 	

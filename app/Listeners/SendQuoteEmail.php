@@ -121,6 +121,63 @@ class SendQuoteEmail
 		}elseif ( $event->build['build_id'] == "backlit" )
 		{
 
+			$emailText = '<html><head></head><body><h1>Your Quote from Mak Studios</h1><div><p>The table below shows the dimensions and settings that you selected for your backlit wall quote. Remember that these are quotes and are subject to taxes and other fees. You can <a href="http://www.makstudios.us/register">create an account</a> if you do not already have one, or <a href="http://www.makstudios.us/login">login</a> to see all of you models.</p></div>
+
+
+			<table class=\"modalTable center\"
+				   style=\"width:500px; margin-left:25px\">
+
+				<tr style=\"height:35px; border-bottom:1px solid #ccc; font-weight:bold\">
+					<th style=\"width:300px\">Quantity</th>
+					<th>Amount</th>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Length of Wall</td><td>'.$event->build['build_data']['componentValues']['LENGTH OF WALL'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Height of Wall</td><td>'.$event->build['build_data']['componentValues']['Height of Wall'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Show Logo</td><td>'.$event->build['build_data']['componentValues']['Logo?'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Logo Scale</td><td>'.$event->build['build_data']['componentValues']['Logo Scale'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Logo X Location</td><td>'.$event->build['build_data']['componentValues']['Logo X Location'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Logo Z Location</td><td>'.$event->build['build_data']['componentValues']['Logo Z Location'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Create Flat Area</td><td>'.$event->build['build_data']['componentValues']['Create Flat Area?'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Wave Metalness</td><td>'.$event->build['build_data']['componentValues']['Wave Metalness'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Wave Roughness</td><td>'.$event->build['build_data']['componentValues']['Wave Roughness'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
+					<td>Wave Amplitude</td><td>'.$event->build['build_data']['componentValues']['Wave Amplitude'].'</td>
+				</tr>
+
+				<tr style=\"height:30px; background-color:#888; color:#fff\">
+					<td>Price</td><td>'.$event->build['build_data']['price'].'</td>
+				</tr>
+
+			</table></body></html>';
+
 		}elseif ( $event->build['build_id'] == "bench" )
 		{
 
