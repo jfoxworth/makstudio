@@ -60,6 +60,8 @@ class SendQuoteEmail
 
 				</table>';
 
+				$emailText = 'Wall Width - '.$event->build['build_data']['componentValues']['Wall Width'];
+
     	}
 
     	echo($emailText);
@@ -80,7 +82,7 @@ class SendQuoteEmail
 		  },
 		  "content": [
 		    {
-		      "type": "application/json",
+		      "type": "text/plain",
 		      "value": '.$emailText.'
 		    }
 		  ]
