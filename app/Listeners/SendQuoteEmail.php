@@ -79,10 +79,10 @@ class SendQuoteEmail
 			{
 				$flowerText = $flowerText.'<tr>';
 					$flowerText = $flowerText.'<td>'.$flowerIndex.'</td>';
-					$flowerText = $flowerText.'<td>Size -'.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['size'].'</td>';
-					$flowerText = $flowerText.'<td>Rotation - '.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['rotation'].'</td>';
-					$flowerText = $flowerText.'<td>X - '.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['position'][0].'</td>';
-					$flowerText = $flowerText.'<td>Y - '.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['position'][1].'</td>';
+					$flowerText = $flowerText.'<td>Size -'.$event->build['build_data']['componentValues']['flowersJSON']['flowers'][$key]['size'].'</td>';
+					$flowerText = $flowerText.'<td>Rotation - '.$event->build['build_data']['componentValues']['flowersJSON']['flowers'][$key]['rotation'].'</td>';
+					$flowerText = $flowerText.'<td>X - '.$event->build['build_data']['componentValues']['flowersJSON']['flowers'][$key]['position'][0].'</td>';
+					$flowerText = $flowerText.'<td>Y - '.$event->build['build_data']['componentValues']['flowersJSON']['flowers'][$key]['position'][1].'</td>';
 				$flowerText = $flowerText.'</tr>';
 			}
 
