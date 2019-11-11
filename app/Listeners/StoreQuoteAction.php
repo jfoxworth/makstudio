@@ -58,7 +58,7 @@ class StoreQuoteAction
 			$thisInstanceID = 0;
 		}
 
-		if (isset(Auth::id()))
+		if (null !== Auth::id())
 		{
 			$userID = Auth::id();
 		}else
