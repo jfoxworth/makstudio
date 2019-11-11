@@ -77,13 +77,13 @@ class SendQuoteEmail
 
 			foreach ($event->build['build_data']['componentValues']['flowersJSON']['flowers'] as $key => $value)
 			{
-				$flowerText = $flowerText+'<tr>';
-					$flowerText = $flowerText+'<td>'.$flowerIndex.'</td>';
-					$flowerText = $flowerText+'<td>Size -'.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['size'].'</td>';
-					$flowerText = $flowerText+'<td>Rotation - '.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['rotation'].'</td>';
-					$flowerText = $flowerText+'<td>X - '.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['position'][0].'</td>';
-					$flowerText = $flowerText+'<td>Y - '.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['position'][1].'</td>';
-				$flowerText = $flowerText+'</tr>';
+				$flowerText = $flowerText.'<tr>';
+					$flowerText = $flowerText.'<td>'.$flowerIndex.'</td>';
+					$flowerText = $flowerText.'<td>Size -'.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['size'].'</td>';
+					$flowerText = $flowerText.'<td>Rotation - '.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['rotation'].'</td>';
+					$flowerText = $flowerText.'<td>X - '.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['position'][0].'</td>';
+					$flowerText = $flowerText.'<td>Y - '.$event->build['build_data']['componentValues']['flowerJSON']['flowers'][$key]['position'][1].'</td>';
+				$flowerText = $flowerText.'</tr>';
 			}
 
 			$emailText = '<html><head></head><body><h1>Your Quote from Mak Studios</h1><div><p>The table below shows the dimensions and settings that you selected for your flower wall quote. Remember that these are quotes and are subject to taxes and other fees. You can <a href="http://www.makstudios.us/register">create an account</a> if you do not already have one, or <a href="http://www.makstudios.us/login">login</a> to see all of you models.</p></div>
