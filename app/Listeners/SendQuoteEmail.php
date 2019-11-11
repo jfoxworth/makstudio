@@ -353,7 +353,7 @@ class SendQuoteEmail
 
 			}else
 			{
-				$colorMDF = "NA"
+				$colorMDF = "NA";
 			}
 			
 			if (isset( $event->build['build_data']['componentValues']['Back Panel Color'] )) 
@@ -362,7 +362,7 @@ class SendQuoteEmail
 
 			}else
 			{
-				$colorBack = "NA"
+				$colorBack = "NA";
 			}
 
 
