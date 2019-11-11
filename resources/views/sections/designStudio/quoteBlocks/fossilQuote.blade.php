@@ -57,8 +57,9 @@
 			</div>
 
 			@guest
-				<div class="divcenter">
-					<input id="guestEmail">
+				<div class="divcenter center">
+					<h4>Enter the email for the quote</h4>
+					<input id="guestEmail" style="width:100%; margin-bottom:20px">
 				</div>
 			@endguest
 

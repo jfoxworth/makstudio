@@ -58,10 +58,18 @@ class StoreQuoteAction
 			$thisInstanceID = 0;
 		}
 
+		if (isset(Auth::id()))
+		{
+			$userID = Auth::id();
+		}else
+		{
+			$userID = 'Anonymous';
+		}
+
 		$thisAction = new Action;
 		$thisAction->design_type = (int)$event->build['build_num'];
 		$thisAction->instance_id = $thisInstanceID;
-		$thisAction->user_id = Auth::id();
+		$thisAction->user_id = $userID;
 		$thisAction->action = 'Quote Requested';
 		$thisAction->info = json_encode(array('build_id' => $thisBuildID, 'build' => $thisBuild));
 		$thisAction->save();
