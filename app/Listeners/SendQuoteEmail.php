@@ -161,13 +161,6 @@ class SendQuoteEmail
 					<td>Create Flat Area</td><td>'.$event->build['build_data']['componentValues']['Create Flat Area?'].'</td>
 				</tr>
 
-				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
-					<td>Wave Roughness</td><td>'.$event->build['build_data']['componentValues']['Wave Roughness'].'</td>
-				</tr>
-
-				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
-					<td>Wave Amplitude</td><td>'.$event->build['build_data']['componentValues']['Wave Amplitude'].'</td>
-				</tr>
 
 				<tr style=\"height:30px; background-color:#888; color:#fff\">
 					<td>Price</td><td>$ '.$event->build['build_data']['price'].'</td>

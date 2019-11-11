@@ -1107,12 +1107,12 @@ $(document).ready(function()	{
 		}).done(function() 
 		{
 			console.log('I sent a quote email');
-			$('#backlitQuoteModal').modal('toggle');
-			$('#fossilQuoteModal').modal('toggle');
-			$('#facetedQuoteModal').modal('toggle');
-			$('#finWallQuoteModal').modal('toggle');
-			$('#flowerQuoteModal').modal('toggle');
-			$('#benchQuoteModal').modal('toggle');
+			$('#backlitQuoteModal').modal('hide');
+			$('#fossilQuoteModal').modal('hide');
+			$('#facetedQuoteModal').modal('hide');
+			$('#finWallQuoteModal').modal('hide');
+			$('#flowerQuoteModal').modal('hide');
+			$('#benchQuoteModal').modal('hide');
 
 		});
 
