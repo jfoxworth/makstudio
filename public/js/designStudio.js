@@ -1091,12 +1091,13 @@ $(document).ready(function()	{
 			}
 		});
 
-		if ( $('#guestEmail').val() === undefined )
+
+		if ( $('#'+makModel['build_id']+'GuestEmail').val() === undefined )
 		{
 			var userEmail = '';
 		}else
 		{
-			userEmail = $('#guestEmail').val();
+			userEmail = $('#'+makModel['build_id']+'GuestEmail').val();
 		}
 
 		$.ajax({
