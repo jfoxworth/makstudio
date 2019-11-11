@@ -471,7 +471,7 @@ class SendQuoteEmail
 		// Send email to make studio
 		$from = new SendGrid\Email(null, "quotes@makstudio.us");
 		$subject = "Your quote from Mak Studio";
-		$to = new SendGrid\Email(null, "foxworthfortexas@protonmail.com");
+		$to = new SendGrid\Email(null, "orders@makstudio.us");
 		$content = new SendGrid\Content("text/html", $emailText);
 		$mail = new SendGrid\Mail($from, $subject, $to, $content);
 
