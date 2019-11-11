@@ -162,10 +162,6 @@ class SendQuoteEmail
 				</tr>
 
 				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
-					<td>Wave Metalness</td><td>'.$event->build['build_data']['componentValues']['Wave Metalness'].'</td>
-				</tr>
-
-				<tr style=\"height:30px; border-bottom:1px solid #ccc\">
 					<td>Wave Roughness</td><td>'.$event->build['build_data']['componentValues']['Wave Roughness'].'</td>
 				</tr>
 
@@ -347,6 +343,21 @@ class SendQuoteEmail
 
 		}elseif ( $event->build['build_id'] == "finWall" )
 		{
+
+			if ( $event->build['build_data']['componentValues']['Material'] == 0 )
+			{
+				$materialType = "Baltic Birch";
+			
+			}elseif ( $event->build['build_data']['componentValues']['Material'] == 1 )
+			{
+				$materialType = "Baltic Birch Laminate";
+
+			}elseif ( $event->build['build_data']['componentValues']['Material'] == 2 )
+			{
+				$materialType = "Colored MDF";
+			}
+
+
 
 			if (isset( $event->build['build_data']['componentValues']['Colored MDF'] )) 
 			{
