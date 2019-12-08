@@ -2104,6 +2104,7 @@ function bundleBlock( bundleName )
 
 
 
+
 /*--------------------------------------------------------*
 
 	This function sets the items to be dragged and
