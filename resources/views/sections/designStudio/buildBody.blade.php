@@ -41,7 +41,7 @@
 
 			<div class="tab-content clearfix" id="tabs-4">
 
-				@include('sections.designStudio.selectModel')
+				@include('sections.buildStudio.selectModel')
 
 			</div>
 
