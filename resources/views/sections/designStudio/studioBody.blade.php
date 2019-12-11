@@ -17,6 +17,12 @@
 
 				<!-- The main area for the three.js model -->
 				<div class="col_last col_three_fourth notopmargin nobottommargin">
+					<div class="row">
+						<h2 id="modelDisplayName"></h2>
+						<i class="icon-pencil h4 leftmargin-sm" id="editModelName"></i>
+				        <input type="text" class="form-control" id="modelNameInput">
+
+					</div>
 					<div id="currentModelDisplay" style="width:900px; height:600px;"></div>
 				</div>
 

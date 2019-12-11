@@ -334,6 +334,43 @@ $(document).ready(function()	{
 
 	/* -------------------------------------- *
 
+			  Edit Model Name
+
+	/* ---------------------------------------*/
+
+	$('#editModelName').click(function()	
+	{			
+		$('#editModelName').hide();
+		$('#modelNameInput').show();
+		$('#modelNameInput').text(makModel.build_data.name);
+
+	});
+
+
+	$('#modelNameInput').on('keypress',function(e) {
+		if(e.which == 13) {
+
+			makModel.build_data.name = $('#modelNameInput').text();
+			$('#modelNameInput').hide();
+			$('#editModelName').show();
+		}
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* -------------------------------------- *
+
 			  API Calls
 
 		User interacting with the sliders, 
@@ -2458,7 +2495,11 @@ function getBuilds( id )
 		window['makModel'] = buildData[buildData.length-1];
 	
 		// Set the overall variable for the model type
-		window['MakDesignType'] = makModel.build_data.name;
+		window['MakDesignType'] = makModel.build_id;
+
+
+		// Set the title
+		$('#modelDisplayName').text(makModel.build_data.name);
 
 
 		// Set the timeline data
