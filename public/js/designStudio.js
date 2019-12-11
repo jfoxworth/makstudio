@@ -341,6 +341,7 @@ $(document).ready(function()	{
 	$('#editModelName').click(function()	
 	{			
 		$('#editModelName').hide();
+		$('#modelDisplayName').hide();
 		$('#modelNameInput').show();
 		$('#modelNameInput').text(makModel.build_data.name);
 
@@ -353,6 +354,7 @@ $(document).ready(function()	{
 			makModel.build_data.name = $('#modelNameInput').text();
 			$('#modelNameInput').hide();
 			$('#editModelName').show();
+			$('#modelDisplayName').show();
 		}
 	});
 
@@ -1394,6 +1396,7 @@ function setDefaultModelData( modelName )
 	// Pull the values from the shape diver ticket
 	thisData = model_api.parameters.get();
 
+	var tempDate = new Date().toUTCString();
 
 	// Make the global variable holding the model
 	window['makModel'] = {
@@ -1405,7 +1408,7 @@ function setDefaultModelData( modelName )
 		'build_id' : modelName,
 		'build_num' : makBuildNums[modelName],
 		'build_data' : {
-			'name' : 'Unsaved Model',
+			'name' : 'New '+modelName+' - '+tempDate,
 			'componentNames' : makStudio.componentNames[modelName],
 			'componentTypes' : makStudio.componentTypes[modelName],
 			'ticket' : makStudio.modelTickets[modelName],
@@ -1416,7 +1419,7 @@ function setDefaultModelData( modelName )
 
 
 	// Set the file name to the un named value
-	$("#modelName").text( 'Unsaved Model' );
+	$("#modelName").text( 'New '+modelName+' - '+tempDate );
 
 
 
