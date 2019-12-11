@@ -343,7 +343,7 @@ $(document).ready(function()	{
 		$('#editModelName').hide();
 		$('#modelDisplayName').hide();
 		$('#modelNameInput').show();
-		$('#modelNameInput').text(makModel.build_data.name);
+		$('#modelNameInput').val(makModel.build_data.name);
 
 	});
 
@@ -351,7 +351,7 @@ $(document).ready(function()	{
 	$('#modelNameInput').on('keypress',function(e) {
 		if(e.which == 13) {
 
-			makModel.build_data.name = $('#modelNameInput').text();
+			makModel.build_data.name = $('#modelNameInput').val();
 			$('#modelNameInput').hide();
 			$('#editModelName').show();
 			$('#modelDisplayName').text(makModel.build_data.name);

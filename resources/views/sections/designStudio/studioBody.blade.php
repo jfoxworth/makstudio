@@ -19,7 +19,7 @@
 				<div class="col_last col_three_fourth notopmargin nobottommargin">
 					<div class="row">
 						<h2 id="modelDisplayName"></h2>
-						<i class="icon-pencil h4 leftmargin-sm" id="editModelName"></i>
+						<i class="icon-pencil h4 leftmargin-sm hoverMe" id="editModelName"></i>
 				        <input type="text" class="form-control" id="modelNameInput">
 
 					</div>
