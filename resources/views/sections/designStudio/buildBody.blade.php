@@ -8,6 +8,7 @@
 			<li><a href="#tabs-1">Build Specifics</a></li>
 			<li><a href="#tabs-2">Model Properties</a></li>
 			<li><a href="#tabs-3">Timeline for Builds</a></li>
+			<li><a href="#tabs-4">Select Another Model</a></li>
 		</ul>
 
 		<div class="tab-container">
@@ -34,6 +35,13 @@
 			<div class="tab-content clearfix" id="tabs-3">
 
 				@include('sections.buildStudio.buildTimeline')
+
+			</div>
+
+
+			<div class="tab-content clearfix" id="tabs-4">
+
+				@include('sections.buildStudio.selectModel')
 
 			</div>
 

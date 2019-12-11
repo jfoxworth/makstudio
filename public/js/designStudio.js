@@ -354,6 +354,7 @@ $(document).ready(function()	{
 			makModel.build_data.name = $('#modelNameInput').text();
 			$('#modelNameInput').hide();
 			$('#editModelName').show();
+			$('#modelDisplayName').text(makModel.build_data.name);
 			$('#modelDisplayName').show();
 		}
 	});
@@ -2430,6 +2431,7 @@ function getInstance( id )
 
 
 		$('.optionSection').hide();
+		$('#modelNameInput').hide();
 
 		var designType='';
 		if ( data.design_type == 2 ){ $('#benchSection').show(); 		window['MakDesignType']='bench'; }
