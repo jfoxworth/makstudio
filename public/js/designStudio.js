@@ -365,6 +365,68 @@ $(document).ready(function()	{
 
 
 
+	/* -------------------------------------- *
+
+			  Edit Build Name
+
+	/* ---------------------------------------*/
+
+	$('#editBuildName').click(function()	
+	{			
+		$('#editBuildName').hide();
+		$('#buildDisplayName').hide();
+		$('#buildNameInput').show();
+		$('#buildNameInput').val(makModel.build_data.name);
+
+	});
+
+
+	$('#buildNameInput').on('keypress',function(e) {
+		if(e.which == 13) {
+
+			
+			// Show / hide the appropriate things
+			makModel.build_data.name = $('#buildNameInput').val();
+			$('#buildNameInput').hide();
+			$('#editBuildName').show();
+			$('#buildDisplayName').text(makModel.build_data.name);
+			$('#buildDisplayName').show();
+
+
+			// Update the build data
+			buildData.forEach(function(obj) 
+			{
+				if ( obj.id == makModel.id )
+				{
+					obj.build_data.name = JSON.parse(JSON.stringify(makModel.build_data.name));
+				}
+			});
+
+
+			// Reset the name of the dropdowns
+			var newOptions = {};
+			builData.forEach(function(obj) 
+			{
+				obj.build_data = JSON.parse(obj.build_data);
+				newOptions[obj.id] = obj.build_data.name;
+			});
+
+			var $el = $("#buildID");
+			$el.empty(); // remove old options
+			$.each(newOptions, function(key,value) {
+			  $el.append($("<option></option>")
+			     .attr("value", key).text(value));
+			});
+
+
+		}
+	});
+
+
+
+
+
+
 
 
 
