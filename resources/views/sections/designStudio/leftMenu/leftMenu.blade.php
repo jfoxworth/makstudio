@@ -148,7 +148,7 @@
 						<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
 							 id="uniqueHolder"
 							 data-toggle="tooltip" data-placement="bottom" title="Unique Item">
-							<img id="desk" src="/images/makTextBlack.png" width="48px">
+							<img id="unique" src="/images/makTextBlack.png" width="48px">
 						</div>
 
 					
@@ -182,6 +182,7 @@
 				@include('sections.designStudio.leftMenu.planter')
 				@include('sections.designStudio.leftMenu.flower')
 				@include('sections.designStudio.leftMenu.fossil')
+				@include('sections.designStudio.leftMenu.unique')
 
 			</div>
 
