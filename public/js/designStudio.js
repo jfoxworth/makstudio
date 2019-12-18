@@ -1580,9 +1580,11 @@ function setDefaultModelData( modelName )
 function saveModel( modelName )
 {
 	// Place the name given in the popup in the name
-	makModel['build_data']['name']=modelName;
-	$("#modelName").text( modelName );
-
+	if ( ( modelName != '' ) && ( modelName !== undefined ) )
+	{
+		makModel['build_data']['name']=modelName;
+		$("#modelName").text( modelName );
+	}
 
 
 	// For every entry saved in the array, get that value
