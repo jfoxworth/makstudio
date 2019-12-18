@@ -94,7 +94,7 @@ $(document).ready(function()	{
 	makStudio = initializeData( );
 
 
-	makBuildNums = {'bench':2, 'finWall':3, 'backlit':4, 'faceted':5, 'light':6, 'desk':7, 'planter':8, 'panel':9, 'flower':12, 'fossil':13 }
+	makBuildNums = {'bench':2, 'finWall':3, 'backlit':4, 'faceted':5, 'light':6, 'desk':7, 'planter':8, 'panel':9, 'flower':12, 'fossil':13, 'unique':14 }
 	
 
 	// Initialize the new or old model
@@ -276,7 +276,8 @@ $(document).ready(function()	{
 		$('#'+event.target.id).parent().addClass('currentItem');
 
 		if ( ( MakDesignType == "finWall" ) || ( MakDesignType == "backlit" ) || ( MakDesignType == "faceted" ) ||
-			 ( MakDesignType == "bench") || (MakDesignType == "light") || (MakDesignType == "flower") || (MakDesignType == "fossil") )
+			 ( MakDesignType == "bench") || (MakDesignType == "light") || (MakDesignType == "flower") || 
+			 (MakDesignType == "fossil") || (MakDesignType == "unique") )
 		{
 			$('#modelNameContainer').show();
 			$('#currentModelDisplay').show();
@@ -1339,7 +1340,7 @@ function setEnvironment( )
 			if ( (designType == 'bench') || (designType == 'finWall') || (designType == 'backlit') ||
 				 (designType == 'faceted') || (designType == 'light') || (designType == 'planter') ||
 				 (designType == 'desk') || (designType == 'panel') || (designType == 'flower') ||
-				 (designType == 'fossil') )
+				 (designType == 'fossil') || (designType == 'unique') )
 			{
 				window['MakDesignType'] = designType; 
 			}else
@@ -1464,7 +1465,8 @@ function setModelView( modelName )
 	// Name of the file
 	$('#modelName').parent().hide();
 	if ( ( modelName == 'bench' ) || ( modelName == 'finWall' ) || ( modelName == 'backlit' ) || 
-		 ( modelName == 'faceted' ) || ( modelName == 'flower' ) || ( modelName == 'fossil' ) )
+		 ( modelName == 'faceted' ) || ( modelName == 'flower' ) || ( modelName == 'fossil' ) ||
+		 ( modelName == 'unique' ) )
 	{
 		$('#modelName').parent().show();
 	}
