@@ -165,9 +165,19 @@
 
 				<!-- Lock a build or a model -->	
 				<div id="lockBuildContainer" 
-					 class="row buildOption">
-				    <div id="lockBuild" class="btn btn-warning divcenter">Lock This Build</div>
+					 class="row buildOption bottommargin-sm">
+				    <div id="lockBuild" class="btn btn-secondary divcenter">Lock This Build</div>
 				</div>
+
+
+
+
+				<!-- Display that the build is locked -->	
+				<div id="" 
+					 class="row lockedOption bottommargin-sm">
+				    <p>This build has been locked. It can no longer be edited, but a new build can be created.</p>
+				</div>
+
 
 
 

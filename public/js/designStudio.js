@@ -436,6 +436,41 @@ $(document).ready(function()	{
 
 
 
+
+	/* -------------------------------------- *
+
+			  Lock the Build
+
+	/* ---------------------------------------*/
+
+	$('#lockBuild').click(function()	
+	{			
+
+		instanceData['locked'] = true;
+		updateInstance();
+
+
+		// Hide the design and build options and show the locked option
+		$('.buildOption').hide();
+		$('.designOption').hide();
+		$('.lockedOption').show();
+
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/* -------------------------------------- *
 
 			  API Calls
@@ -1398,6 +1433,24 @@ function setModelView( modelName )
 	{
 		$('.designOption').hide();
 		$('.buildOption').show();
+	}
+
+
+	// Handle the locked item 
+	$('.lockedOption').hide();
+	if ( instanceData !== undefined )
+	{
+		if ( instanceData.locked !== undefined )
+		{
+			if ( instanceData.locked )
+			{
+				$('.buildOption').hide();
+				$('.designOption').hide();
+				$('.lockedOption').show();
+
+			}
+		}
+
 	}
 
 
@@ -3147,7 +3200,7 @@ function initializeData()
 			'light'		: '3c0d469228cf4904f47b4487932978fd1e9438f83df58a8cd7b7381aaca3472a8d58ca75f16450b90ee4d234b383c365389b9655cd5960ec0aedf3369a4cced2702642506c9c9660e66fcee31493cd15c591b4fa98eaa39c68385fafaf3bd5d2e1abc03562e26930bfa8dd6887b7057de7dad4a704be-6991cd00af723d0ec78fdad4cc0404de',
 			'flower' 	: 'fa24b0f9a09bc2d807c18f497c0648139252bafe91f25f34cc6f9ba4803e683b534b8128f20de886175a18a1bda701b8e6a000b355d563384f6ff24540da3acaeb96364ed298426d3aec295df658af80af441819d8d396de29d2c23ae6336df139f7fefcdc65a7d134a11deccd1884c6bdd17e873694-2165b253880c6c6053afe2f457ff3564',
 			'fossil'	: '7019da5b0f90ff981a4f31158f569b0610e8830eaff1869d307fe028998872c344dcf40cb02346f3f1c05ccbf8a37ee97c9deaf1dd9f4b8aef78f40d607012084211f315bb0dcc14506a4e7777d9a927df88e8ff3ad7173b4e64f1a419dad8aaf803ca95f126f3acce4ba1d947f8e7733c55a643adb5-3fdabea628a53bf1247d5651fa0ef504',
-			'unique' 	: '03aee60cced54eadca82056ee7e7c9ee1c4b468607d59afd1dcd291704db23a1b83341932090c58e240792e0b70578e0da7aad4dde5d46694816903df457c6f693c1c4e55610648ebb2897bfcdbb17c657e150a6992302efcfdeadaac24eeae07bb23aae37c70d6ee428b3ed327ad3601352733b6090763aa074df4b39f35412984a520906a2b7'
+			'unique' 	: '03aee60cced54eadca82056ee7e7c9ee1c4b468607d59afd1dcd291704db23a1b83341932090c58e240792e0b70578e0da7aad4dde5d46694816903df457c6f693c1c4e55610648ebb2897bfcdbb17c657e150a6992302efcfdeadaac24eeae07bb23aae37c70d6ee428b3ed327ad3601352733b6090763aa074df4b39f35412984a520906a2b7-5b7da6c07148a0d485d633511e54ac6a'
 		},
 
 
