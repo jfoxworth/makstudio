@@ -408,7 +408,6 @@ $(document).ready(function()	{
 			var newOptions = {};
 			buildData.forEach(function(obj) 
 			{
-				obj.build_data = JSON.parse(obj.build_data);
 				newOptions[obj.id] = obj.build_data.name;
 			});
 
@@ -2499,6 +2498,7 @@ function getInstance( id )
 
 		$('.optionSection').hide();
 		$('#modelNameInput').hide();
+		$('#buildNameInput').hide();
 
 		var designType='';
 		if ( data.design_type == 2 ){ $('#benchSection').show(); 		window['MakDesignType']='bench'; }
