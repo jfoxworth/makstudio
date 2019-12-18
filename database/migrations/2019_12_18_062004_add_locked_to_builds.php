@@ -15,8 +15,9 @@ class AddLockedToBuilds extends Migration
     {
         Schema::table('builds', function (Blueprint $table) {
 
-            $table->boolean('locked')->default(0);  // If locked (1) then no more changes can be made
 
+            $table->boolean('locked')->default(0);  // If locked (1) then no more changes can be made - model is approved
+            //
         });
     }
 
@@ -28,7 +29,7 @@ class AddLockedToBuilds extends Migration
     public function down()
     {
         Schema::table('builds', function (Blueprint $table) {
-
+            //
         });
     }
 }

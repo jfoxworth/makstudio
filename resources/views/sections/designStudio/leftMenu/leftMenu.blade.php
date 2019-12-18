@@ -10,7 +10,7 @@
 
 				<!-- Options for a defined model to make new build and select desired build -->
 				<div class="row nobottommargin buildOption">
-				    <div id="newBuild" class="button divcenter">Create New Build</div>
+				    <div id="newBuild" class="btn btn-primary divcenter">Create New Build</div>
 				</div>
 
 				<h4 class="center buildOption" style="margin-bottom:5px; margin-top:10px">Select Build</h4>
@@ -142,9 +142,32 @@
 					</div>
 				-->
 
-					<div class="col_one_fouth nobottommargin col_last"></div>
+					@if( Auth::user()->id==1 )
+					
+						<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
+							 id="uniqueHolder"
+							 data-toggle="tooltip" data-placement="bottom" title="Unique Item">
+							<img id="desk" src="/images/makTextBlack.png" width="48px">
+						</div>
+
+					
+					@else
+					
+						<div class="col_one_fouth nobottommargin col_last"></div>
+
+					@endif
+
 
 				</div>
+
+
+
+				<!-- Lock a build or a model -->	
+				<div id="lockBuildContainer" 
+					 class="row nobottommargin buildOption">
+				    <div id="lockBuild" class="btn btn-warning divcenter">Lock This Build</div>
+				</div>
+
 
 
 				<!-- Left menu options for the various design types -->
