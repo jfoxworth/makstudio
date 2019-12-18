@@ -142,8 +142,9 @@
 					</div>
 				-->
 
-					@if( Auth::user()->id==1 )
-					
+					@if( Auth::user()->id=="1" )
+						
+
 						<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
 							 id="uniqueHolder"
 							 data-toggle="tooltip" data-placement="bottom" title="Unique Item">
@@ -153,7 +154,7 @@
 					
 					@else
 					
-						<div class="col_one_fouth nobottommargin col_last"></div>
+						<div class="col_one_fouth nobottommargin col_last">{{Auth::user()->id}}</div>
 
 					@endif
 
