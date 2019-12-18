@@ -120,6 +120,11 @@ Route::get('/getInstance/{id}', 'InstanceController@index');
 // New Instance
 Route::put('/newInstance', 'InstanceController@store');
 
+
+// Update an instance
+Route::put('/updateInstance', 'InstanceController@update');
+
+
 // New Build
 Route::put('/newBuild', 'BuildController@newBuild');
 

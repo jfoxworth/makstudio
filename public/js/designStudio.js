@@ -343,7 +343,7 @@ $(document).ready(function()	{
 		$('#editModelName').hide();
 		$('#modelDisplayName').hide();
 		$('#modelNameInput').show();
-		$('#modelNameInput').val(makModel.build_data.name);
+		$('#modelNameInput').val(instanceData.name);
 
 	});
 
@@ -351,10 +351,10 @@ $(document).ready(function()	{
 	$('#modelNameInput').on('keypress',function(e) {
 		if(e.which == 13) {
 
-			makModel.build_data.name = $('#modelNameInput').val();
+			instanceData.name = $('#modelNameInput').val();
 			$('#modelNameInput').hide();
 			$('#editModelName').show();
-			$('#modelDisplayName').text(makModel.build_data.name);
+			$('#modelDisplayName').text(instanceData.name);
 			$('#modelDisplayName').show();
 		}
 	});
@@ -382,9 +382,10 @@ $(document).ready(function()	{
 
 
 	$('#buildNameInput').on('keypress',function(e) {
-		if(e.which == 13) {
+		
+		if(e.which == 13) 
+		{
 
-			
 			// Show / hide the appropriate things
 			makModel.build_data.name = $('#buildNameInput').val();
 			$('#buildNameInput').hide();
@@ -405,7 +406,7 @@ $(document).ready(function()	{
 
 			// Reset the name of the dropdowns
 			var newOptions = {};
-			builData.forEach(function(obj) 
+			buildData.forEach(function(obj) 
 			{
 				obj.build_data = JSON.parse(obj.build_data);
 				newOptions[obj.id] = obj.build_data.name;
@@ -418,6 +419,8 @@ $(document).ready(function()	{
 			     .attr("value", key).text(value));
 			});
 
+
+			updateModel($('#modalModelName').val() );			
 
 		}
 	});
@@ -1657,9 +1660,11 @@ function saveModel( modelName )
 function updateModel( modelName )
 {
 	// Place the name given in the popup in the name
-	makModel['build_data']['name']=modelName;
-	$("#modelName").text( modelName );
-
+	if ( modelName !== undefined )
+	{
+		makModel['build_data']['name']=modelName;
+		$("#modelName").text( modelName );
+	}
 
 
 	// For every entry saved in the array, get that value
@@ -2521,6 +2526,36 @@ function getInstance( id )
 
 
 
+
+/*-------------------------------------------*
+
+	This function updates the instance - this
+	is used when the model name is updated
+
+/*-------------------------------------------*/
+function updateInstance( )
+{
+
+
+	$.ajax({
+		url : "/updateInstance",
+		method :"PUT",
+		data :  { 'instance' : instanceData }
+
+	}).done(function() 
+	{
+
+		amplitude.getInstance().logEvent('Instance Name Update - '+makModel.id);
+
+	});
+
+}
+
+
+
+
+
+
 /*------------------------------------------------------------*
 
 	This function gets all of the builds for a given instance
@@ -2566,7 +2601,8 @@ function getBuilds( id )
 
 
 		// Set the title
-		$('#modelDisplayName').text(makModel.build_data.name);
+		$('#modelDisplayName').text(instanceData.name);
+		$('#buildDisplayName').text(makModel.build_data.name);
 
 
 		// Set the timeline data

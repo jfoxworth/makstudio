@@ -99,6 +99,10 @@ class InstanceController extends Controller
      */
     public function update(Request $request, Instance $instance)
     {
+        $thisData = $request['instance'];
+        $thisInstance = Instance::findOrFail($thisData['id']);
+        $thisInstance['name'] = $thisInstance['name'];
+        $thisInstance['info'] = $thisInstance['info'];
         //
     }
 
