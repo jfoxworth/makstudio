@@ -419,7 +419,7 @@ $(document).ready(function()	{
 			});
 
 
-			updateModel($('#modalModelName').val() );			
+			updateModel( );			
 
 		}
 	});
@@ -1580,7 +1580,7 @@ function setDefaultModelData( modelName )
 function saveModel( modelName )
 {
 	// Place the name given in the popup in the name
-	if ( ( modelName != '' ) && ( modelName !== undefined ) )
+	if ( ( modelName != "" ) && ( modelName !== undefined ) )
 	{
 		makModel['build_data']['name']=modelName;
 		$("#modelName").text( modelName );
@@ -1661,7 +1661,7 @@ function saveModel( modelName )
 function updateModel( modelName )
 {
 	// Place the name given in the popup in the name
-	if ( modelName !== undefined )
+	if ( ( modelName !== "" ) && ( modelName !== undefined ) )
 	{
 		makModel['build_data']['name']=modelName;
 		$("#modelName").text( modelName );
