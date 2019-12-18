@@ -2518,6 +2518,8 @@ function getInstance( id )
 		$('#instanceDate').text(instanceData.created_at);
 		$('#instanceStatus').text(instanceData.stage);
 
+		$('#modelDisplayName').text(instanceData.name);
+
 	});
 
 }
@@ -2601,7 +2603,6 @@ function getBuilds( id )
 
 
 		// Set the title
-		$('#modelDisplayName').text(instanceData.name);
 		$('#buildDisplayName').text(makModel.build_data.name);
 
 
