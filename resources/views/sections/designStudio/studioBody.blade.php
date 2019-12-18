@@ -17,14 +17,16 @@
 
 				<!-- The main area for the three.js model -->
 				<div class="col_last col_three_fourth notopmargin nobottommargin">
-					<div class="row">
+					<div class="row"
+						 id="modelNameRow">
 						<h2>Model Name - </h2>
 						<h2 id="modelDisplayName"></h2>
 						<i class="icon-pencil h4 leftmargin-sm hoverMe" id="editModelName"></i>
 				        <input type="text" class="form-control" id="modelNameInput">
 
 					</div>
-					<div class="row">
+					<div class="row"
+						 id="buildNameRow">
 						<h4>Build Name - </h4>
 						<h4 id="buildDisplayName"></h4>
 						<i class="icon-pencil h4 leftmargin-sm hoverMe" id="editBuildName"></i>

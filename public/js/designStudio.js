@@ -330,8 +330,6 @@ $(document).ready(function()	{
 
 
 
-
-
 	/* -------------------------------------- *
 
 			  Edit Model Name
@@ -356,6 +354,8 @@ $(document).ready(function()	{
 			$('#editModelName').show();
 			$('#modelDisplayName').text(instanceData.name);
 			$('#modelDisplayName').show();
+
+			updateInstance();
 		}
 	});
 
@@ -1265,6 +1265,11 @@ $(document).ready(function()	{
 function setEnvironment( )  
 {
 
+	// Hide the inputs
+	$('#modelNameInput').hide();
+	$('#buildNameInput').hide();
+
+
 	// Set the overall variable for the model type
 	var designType = window.location.href.replace('http://www.makstudio.us/designStudio/','').replace('http://www.makstudio.us/designStudio','').replace(/\/$/, "");
 
@@ -1281,6 +1286,11 @@ function setEnvironment( )
 	// If not a number, continue investigating type but set view to new
 	}else
 	{
+		
+		// This is a blank design, so hide the name editors
+		$('#modelNameRow').hide();
+		$('#buildNameRow').hide();
+
 		window['MakViewType'] = 0;
 
 		// If no model is indicated, set default to bench
