@@ -142,7 +142,7 @@
 					</div>
 				-->
 
-					@if( Auth::user()->id=="1" )
+					@if( Auth::user()->id==2 )
 						
 
 						<div class="hoverMe col_one_fourth center designType nobottommargin col_last"
@@ -154,7 +154,7 @@
 					
 					@else
 					
-						<div class="col_one_fouth nobottommargin col_last">{{Auth::user()->id}}</div>
+						<div class="col_one_fouth nobottommargin col_last"></div>
 
 					@endif
 
@@ -165,7 +165,7 @@
 
 				<!-- Lock a build or a model -->	
 				<div id="lockBuildContainer" 
-					 class="row nobottommargin buildOption">
+					 class="row buildOption">
 				    <div id="lockBuild" class="btn btn-warning divcenter">Lock This Build</div>
 				</div>
 
