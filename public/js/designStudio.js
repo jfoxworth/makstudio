@@ -1438,7 +1438,7 @@ function setModelView( modelName )
 
 	// Handle the locked item 
 	$('.lockedOption').hide();
-	if ( instanceData !== undefined )
+	if ( window['instanceData'] !== undefined )
 	{
 		if ( instanceData.locked !== undefined )
 		{
