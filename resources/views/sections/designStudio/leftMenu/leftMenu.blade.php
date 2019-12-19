@@ -142,6 +142,8 @@
 					</div>
 				-->
 
+
+					<!--
 					@if( Auth::user()->id==2 )
 						
 
@@ -157,6 +159,7 @@
 						<div class="col_one_fouth nobottommargin col_last"></div>
 
 					@endif
+				-->
 
 
 				</div>
