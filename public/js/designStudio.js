@@ -1926,7 +1926,7 @@ function reloadModel( modelID )
 
 		buildData.forEach(function(build) 
 		{
-			if ( element.id == modelID )
+			if ( build.id == modelID )
 			{
 				makModel = build;
 			}
