@@ -1463,7 +1463,7 @@ function setModelView( modelName )
 	{
 		if ( instanceData.locked !== undefined )
 		{
-			if ( instanceData.locked )
+			if ( (instanceData.locked ) || ( makModel.locked ) )
 			{
 				$('.buildOption').hide();
 				$('.designOption').hide();
