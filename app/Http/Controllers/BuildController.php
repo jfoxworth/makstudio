@@ -105,6 +105,7 @@ class BuildController extends Controller
 		$thisData = $request['model'];
 		$thisBuild = Build::findOrFail($thisData['id']);
 		$thisBuild['build_data'] = json_encode($thisData['build_data']);
+		$thisBuild->save();
 	}
 
 

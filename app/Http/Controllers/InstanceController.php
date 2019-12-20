@@ -103,6 +103,7 @@ class InstanceController extends Controller
         $thisInstance = Instance::findOrFail($thisData['id']);
         $thisInstance['name'] = $thisInstance['name'];
         $thisInstance['info'] = $thisInstance['info'];
+        $thisInstance->save();
         //
     }
 
