@@ -1478,9 +1478,9 @@ function setModelView( modelName )
 
 	// Name of the file
 	$('#modelName').parent().hide();
-	if ( ( modelName == 'bench' ) || ( modelName == 'finWall' ) || ( modelName == 'backlit' ) || 
-		 ( modelName == 'faceted' ) || ( modelName == 'flower' ) || ( modelName == 'fossil' ) ||
-		 ( modelName == 'unique' ) )
+	if ( ( ( modelName == 'bench' ) || ( modelName == 'finWall' ) || ( modelName == 'backlit' ) || 
+		   ( modelName == 'faceted' ) || ( modelName == 'flower' ) || ( modelName == 'fossil' ) ||
+		   ( modelName == 'unique' ) ) && ( !makModel['locked'] ) )
 	{
 		$('#modelName').parent().show();
 	}
@@ -1525,7 +1525,10 @@ function setModelView( modelName )
 
 function setLockedOptions()
 {
-	// Handle the locked item 
+	$('#editBuildName').show();
+	$('#editModelName').show();
+	$('.optionSection').show();
+
 	$('.lockedOption').hide();
 	if ( window['instanceData'] !== undefined )
 	{
@@ -2703,7 +2706,7 @@ function getBuilds( id )
 		// If the build is locked, set the side 
 		setLockedOptions();
 
-			
+
 		// Set the overall variable for the model type
 		window['MakDesignType'] = makModel.build_id;
 
