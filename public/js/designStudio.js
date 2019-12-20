@@ -1466,25 +1466,8 @@ function setModelView( modelName )
 	}
 
 
-	// Handle the locked item 
-	$('.lockedOption').hide();
-	if ( window['instanceData'] !== undefined )
-	{
-		if ( instanceData.locked !== undefined )
-		{
-			if ( (instanceData.locked ) || ( makModel.locked ) )
-			{
-				$('.buildOption').hide();
-				$('.designOption').hide();
-				$('.lockedOption').show();
-				$('.optionSection').hide();
-				$('#editBuildName').hide();
-				$('#editModelName').hide();
-			}
-		}
-
-	}
-
+	// Set locked option
+	setLockedOptions();
 
 	// Hide all models
 	for (thisContainer in makStudio.containerNames)
@@ -1540,7 +1523,28 @@ function setModelView( modelName )
 
 
 
+function setLockedOptions()
+{
+	// Handle the locked item 
+	$('.lockedOption').hide();
+	if ( window['instanceData'] !== undefined )
+	{
+		if ( instanceData.locked !== undefined )
+		{
+			if ( (instanceData.locked ) || ( makModel.locked ) )
+			{
+				$('.buildOption').hide();
+				$('.designOption').hide();
+				$('.lockedOption').show();
+				$('.optionSection').hide();
+				$('#editBuildName').hide();
+				$('#editModelName').hide();
+				$('#buildSelect').show();
+			}
+		}
+	}
 
+}
 
 
 
@@ -2697,17 +2701,9 @@ function getBuilds( id )
 		window['makModel'] = buildData[buildData.length-1];
 
 		// If the build is locked, set the side 
-		$('.optionSection').show();
-		$('#editBuildName').show();
-		if ( makModel['locked'] )
-		{
-			$('.buildOption').hide();
-			$('.designOption').hide();
-			$('.lockedOption').show();
-			$('.optionSection').hide();
-			$('#editBuildName').hide();
-		}
-	
+		setLockedOptions();
+
+			
 		// Set the overall variable for the model type
 		window['MakDesignType'] = makModel.build_id;
 

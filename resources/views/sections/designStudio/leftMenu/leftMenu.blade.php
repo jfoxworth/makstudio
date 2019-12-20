@@ -13,9 +13,11 @@
 				    <div id="newBuild" class="btn btn-primary divcenter">Create New Build</div>
 				</div>
 
-				<h4 class="center buildOption" style="margin-bottom:5px; margin-top:10px">Select Build</h4>
+				<h4 class="center buildOption" 
+					style="margin-bottom:5px; margin-top:10px">Select Build</h4>
 
-				<div class="row divcenter buildOption" style="width:75%">
+				<div id="buildSelect"
+					 class="row divcenter buildOption" style="width:75%">
 					<select id="buildID"
 							class="notopmargin"
 							style="width:100%; height:35px; margin:20px 0px">
