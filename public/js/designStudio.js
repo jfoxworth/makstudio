@@ -1466,9 +1466,6 @@ function setModelView( modelName )
 	}
 
 
-	// Set locked option
-	setLockedOptions();
-
 	// Hide all models
 	for (thisContainer in makStudio.containerNames)
 	{
@@ -1477,6 +1474,7 @@ function setModelView( modelName )
 
 
 	// Name of the file
+	/*
 	$('#modelName').parent().hide();
 	if ( ( ( modelName == 'bench' ) || ( modelName == 'finWall' ) || ( modelName == 'backlit' ) || 
 		   ( modelName == 'faceted' ) || ( modelName == 'flower' ) || ( modelName == 'fossil' ) ||
@@ -1484,6 +1482,7 @@ function setModelView( modelName )
 	{
 		$('#modelName').parent().show();
 	}
+	*/
 
 	// Hide the list of models in case
 	$('#modelDisplay').hide();
@@ -1513,6 +1512,10 @@ function setModelView( modelName )
 	// Shade the current item
 	$('.designType').removeClass('currentItem');
 	$('#'+MakDesignType).parent().addClass('currentItem');
+
+
+	// Set locked option
+	setLockedOptions();
 
 
 	$( '#saveMessageAlert' ).hide( );
@@ -2615,6 +2618,7 @@ function getInstance( id )
 		if ( data.design_type == 8 ){ $('#planterWallSection').show(); 	window['MakDesignType']='planter'; }
 		if ( data.design_type == 9 ){ $('#panelWallSection').show(); 	window['MakDesignType']='panel'; }
 		if ( data.design_type == 12 ){ $('#flowerSection').show(); 		window['MakDesignType']='flower'; }
+		if ( data.design_type == 13 ){ $('#uniqueSection').show(); 		window['MakDesignType']='unique'; }
 
 
 		// Place this data into the properties page
@@ -2624,6 +2628,8 @@ function getInstance( id )
 		$('#instanceStatus').text(instanceData.stage);
 
 		$('#modelDisplayName').text(instanceData.name);
+
+		setLockedOptions();
 
 	});
 
