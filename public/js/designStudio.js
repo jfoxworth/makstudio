@@ -438,6 +438,8 @@ $(document).ready(function()	{
 			  $el.append($("<option></option>")
 			     .attr("value", key).text(value));
 			});
+			$("#buildID").val(makModel['id']);
+
 
 
 			updateModel( );			
@@ -2707,6 +2709,7 @@ function getBuilds( id )
 
 		// Load the first version if there is only one build
 		window['makModel'] = buildData[buildData.length-1];
+		$("#buildID").val(makModel['id']);
 
 		// If the build is locked, set the side 
 		setLockedOptions();
