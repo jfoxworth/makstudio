@@ -1530,7 +1530,6 @@ function setLockedOptions()
 {
 	$('#editBuildName').show();
 	$('#editModelName').show();
-	$('.optionSection').show();
 
 	$('.lockedOption').hide();
 	if ( window['instanceData'] !== undefined )
