@@ -447,8 +447,8 @@ $(document).ready(function()	{
 	$('#lockBuild').click(function()	
 	{			
 
-		instanceData['locked'] = true;
-		updateInstance();
+		makModel['locked'] = true;
+		updateModel();
 
 
 		// Hide the design and build options and show the locked option
@@ -2664,6 +2664,14 @@ function getBuilds( id )
 
 		// Load the first version if there is only one build
 		window['makModel'] = buildData[buildData.length-1];
+
+		// If the build is locked, set the side 
+		if ( makModel['locked'] )
+		{
+			$('.buildOption').hide();
+			$('.designOption').hide();
+			$('.lockedOption').show();
+		}
 	
 		// Set the overall variable for the model type
 		window['MakDesignType'] = makModel.build_id;

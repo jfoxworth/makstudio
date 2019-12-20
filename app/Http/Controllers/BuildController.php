@@ -60,6 +60,7 @@ class BuildController extends Controller
 		$thisBuild->instance_id = $thisData['instance_id'];
 		$thisBuild->build_data = json_encode($thisData['build_data']);
         $thisBuild->design_type = $thisData['build_num'];
+        $thisBuild->locked = $thisData['locked'];
 		$thisBuild->user_id = Auth::id();
 		$thisBuild->save();
 
@@ -145,8 +146,16 @@ class BuildController extends Controller
 	public function newBuild(Request $request)
 	{
 
+		// Pull the data from the request
 		$thisData = $request['model'];
 
+
+		// Make sure that all other builds for this instance are locked
+		Build::where( 'instance_id', '=', $thisBuild->instance_id )
+		->update(['locked' => 1]);
+
+
+		// Create a new build and save it
 		$thisBuild = new Build;
 		$thisBuild->build_id = $thisData['build_id'];
 		$thisBuild->instance_id = $thisData['instance_id'];
