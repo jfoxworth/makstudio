@@ -475,6 +475,9 @@ $(document).ready(function()	{
 		$('.buildOption').hide();
 		$('.designOption').hide();
 		$('.lockedOption').show();
+		$('.optionSection').hide();
+		$('#editBuildName').hide();
+
 
 	});
 
@@ -1450,10 +1453,16 @@ function setModelView( modelName )
 	{
 		$('.buildOption').hide();
 		$('.designOption').show();
+		$('.optionSection').show();
+		$('#editBuildName').show();
+		$('#editModelName').show();
 	}else
 	{
 		$('.designOption').hide();
 		$('.buildOption').show();
+		$('.optionSection').show();
+		$('#editBuildName').show();
+		$('#editModelName').show();
 	}
 
 
@@ -1468,7 +1477,9 @@ function setModelView( modelName )
 				$('.buildOption').hide();
 				$('.designOption').hide();
 				$('.lockedOption').show();
-
+				$('.optionSection').hide();
+				$('#editBuildName').hide();
+				$('#editModelName').hide();
 			}
 		}
 
@@ -2686,11 +2697,15 @@ function getBuilds( id )
 		window['makModel'] = buildData[buildData.length-1];
 
 		// If the build is locked, set the side 
+		$('.optionSection').show();
+		$('#editBuildName').show();
 		if ( makModel['locked'] )
 		{
 			$('.buildOption').hide();
 			$('.designOption').hide();
 			$('.lockedOption').show();
+			$('.optionSection').hide();
+			$('#editBuildName').hide();
 		}
 	
 		// Set the overall variable for the model type
