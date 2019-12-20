@@ -216,6 +216,26 @@ $(document).ready(function()	{
 
 
 
+
+
+	// Changing the build being looked at
+	$('#buildID').change(function(event)	
+	{	
+		amplitude.getInstance().logEvent('Build Select');
+
+		// Load the build desired
+		reloadModel( $('#buildID').val() );
+
+	});
+
+
+
+
+
+
+
+
+
 	// Clicking on the login
 	$('#designLogin').click(function(event)	
 	{	

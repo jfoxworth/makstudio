@@ -155,6 +155,10 @@ class BuildController extends Controller
 		->update(['locked' => 1]);
 
 
+		// Update the name of the new build
+		$thisData['build_data']['name'] = "New Build";
+
+
 		// Create a new build and save it
 		$thisBuild = new Build;
 		$thisBuild->build_id = $thisData['build_id'];
