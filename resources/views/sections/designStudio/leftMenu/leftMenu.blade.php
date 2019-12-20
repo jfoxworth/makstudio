@@ -144,7 +144,7 @@
 
 
 
-					@isset( Auth )
+					@isset( null !== Auth )
 
 						@if( Auth::user()->id==2 )
 							
