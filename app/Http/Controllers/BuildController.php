@@ -151,7 +151,7 @@ class BuildController extends Controller
 
 
 		// Make sure that all other builds for this instance are locked
-		Build::where( 'instance_id', '=', $thisBuild->instance_id )
+		Build::where( 'instance_id', '=', $thisData['instance_id'] )
 		->update(['locked' => 1]);
 
 
