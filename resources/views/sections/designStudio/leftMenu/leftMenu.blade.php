@@ -144,7 +144,7 @@
 
 
 
-					@isset( null !== Auth )
+					@if( null !== Auth )
 
 						@if( Auth::user()->id==2 )
 							
@@ -162,7 +162,7 @@
 
 						@endif
 
-					@endisset
+					@endif
 
 
 				</div>
