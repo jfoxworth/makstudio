@@ -168,7 +168,7 @@
 	<div class="container clearfix">
 
 		<div class="col_half nobottommargin center">
-			<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelsDemo.jpg" alt="Wall Panels" >
+			<img src="https://makstudio.s3.us-east-2.amazonaws.com/wallPanelFossil.jpg" alt="Wall Panels" >
 		</div>
 
 		<div class="col_half nobottommargin col_last">
