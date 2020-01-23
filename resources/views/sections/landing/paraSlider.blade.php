@@ -226,9 +226,9 @@
 
 
 				<!-- SLIDE  -->
-				<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/makStudioFossilWall.jpg" data-delay="12000"  data-saveperformance="off" data-title="Fossil Wall">
+				<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg" data-delay="12000"  data-saveperformance="off" data-title="Fossil Wall">
 					<!-- MAIN IMAGE -->
-					<img src="https://makstudio.s3.us-east-2.amazonaws.com/makStudioFossilWall.jpg"  alt="kenburns1"  data-bgposition="center center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
+					<img src="https://makstudio.s3.us-east-2.amazonaws.com/ARM3.jpg"  alt="kenburns1"  data-bgposition="center center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
 					<!-- LAYERS -->
 
 					<!-- LAYER NR. 2 -->
