@@ -61,13 +61,24 @@ Route::get('/admin', function () { return view('layouts.admin'); });
 Route::get('/messages', function () { return view('layouts.messages'); });
  
 
+// design and Build studio in progress
+Route::get('/designStudio/{designID}', function () { return view('layouts.comingSoon');  });
+Route::get('/designStudio', function () { return view('layouts.comingSoon');  });
+Route::get('/buildStudio/{buildID}', function () { return view('layouts.comingSoon');  });
+
+Route::get('/designStudioDemo', function () { return view('layouts.designStudio');  });
+
+
+
 // Design Studio
-Route::get('/designStudio/{designID}', function () { return view('layouts.designStudio');  });
-Route::get('/designStudio', function () { return view('layouts.designStudio');  });
+//Route::get('/designStudio/{designID}', function () { return view('layouts.designStudio');  });
+//Route::get('/designStudio', function () { return view('layouts.designStudio');  });
 
 
 // Build Studio
-Route::get('/buildStudio/{buildID}', function () { return view('layouts.buildStudio');  });
+//Route::get('/buildStudio/{buildID}', function () { return view('layouts.buildStudio');  });
+
+
 
 
 // Individual build page
