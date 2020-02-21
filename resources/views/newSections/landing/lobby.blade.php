@@ -12,7 +12,7 @@
 
 				<div class="cardText">A fit and finish for an impressive lobby experience in any interior</div>
 
-				<div class="cardButton">Completed Projects</div>
+				<button type="button" class="cardButton">Completed Projects</button>
 
 			</div>
 		</div>

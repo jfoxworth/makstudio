@@ -1,0 +1,23 @@
+.cardTitle {
+	font-family : Roboto;
+	font-weight : bold;
+	font-size:21px;
+	text-transform:uppercase;
+	letter-spacing: 0.84px;
+}
+
+
+.cardText {
+	font-family : Roboto, Light;
+	font-size:55px;
+	letter-spacing: 2.2px;
+}
+
+
+.cardButton {
+	font-family : Roboto;
+	font-size:21px;
+	text-transform:uppercase;
+	letter-spacing: 0.84px;
+}
+
