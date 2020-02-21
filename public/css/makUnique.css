@@ -39,3 +39,31 @@
 	padding:12px;
 }
 
+
+
+.cardHalfTitle {
+	font-family : Roboto;
+	font-weight : bold;
+	font-size:21px;
+	text-transform:uppercase;
+	letter-spacing: 0.84px;
+	margin-bottom:50px;
+}
+
+
+.cardHalfText {
+	font-family : Roboto, Light;
+	font-size:34px;
+	letter-spacing: 1.36px;
+	font-weight:200;
+	margin-bottom:50px;
+}
+
+
+.cardHalfButton {
+	font-family : Roboto;
+	font-size:21px;
+	text-transform:uppercase;
+	letter-spacing: 0.84px;
+	padding:12px;
+}
