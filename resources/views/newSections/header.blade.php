@@ -24,7 +24,7 @@
 
 
 
-            @include('newSections.headermenu')
+            @include('newSections.headerMenu')
 
 
         </div>
