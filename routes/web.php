@@ -19,6 +19,7 @@
 
 // Landing page (eventually)
 Route::get('/', function () { return view('layouts.landing'); });
+Route::get('/new', function () { return view('layouts.landingNew'); });
 
 
 // First Landing Option
