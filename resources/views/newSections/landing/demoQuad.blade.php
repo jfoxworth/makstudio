@@ -9,7 +9,7 @@
 
 
 
-			<div class="card_half cardHalf" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/flower_solid_surface_feature_wall.jpg')">
+			<div class="col_half cardHalf" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/flower_solid_surface_feature_wall.jpg')">
 
 
 				<div class="vertical-middle" style="margin-top:-50px">
@@ -26,23 +26,19 @@
 			</div>
 
 
-			<div class="card_half cardHalf col_last" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/flower_solid_surface_feature_wall.jpg')">
+			<div class="col_half cardHalf col_last" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/flower_solid_surface_feature_wall.jpg')">
 
 
-				<div class="card_half">
+				<div class="vertical-middle" style="margin-top:-50px">
 
 					<div class="cardHalfTitle">Reception Desks</div>
 
-					<div class="cardHalfText">Make the most of your reception area with desks that fit perfectly</div>
+					<div class="cardHalfText">Make the most of your reception area with desks that fit perfectly.</div>
 
-					<div class="cardHalfButton">Learn More</div>
-
-				</div>
-
-
-				<div class="card_half col_last">
+					<button type="button" class="cardHalfButton">Learn More</button>
 
 				</div>
+
 
 			</div>
 
