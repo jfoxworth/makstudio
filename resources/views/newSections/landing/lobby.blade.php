@@ -1,6 +1,6 @@
 <div id="mainLobby" class="center page-section nobottommargin notopmargin">
 
-	<div class="container clearfix"
+	<div class="container-wide clearfix"
 		 style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/fin_feature_wall_eldridge.jpg')">
 
 

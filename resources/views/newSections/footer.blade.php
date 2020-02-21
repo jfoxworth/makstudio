@@ -32,6 +32,18 @@
 
 					<div class="col_half col_last tright">
 						<div class="fright clearfix">
+
+
+							<a href="https://www.instagram.com/makstudio_us/?hl=en" class="social-icon si-small si-borderless si-instagram">
+								<i class="icon-instagram"></i>
+								<i class="icon-instagram"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+
 							<a href="https://www.facebook.com/makstudiotx/" class="social-icon si-small si-borderless si-facebook">
 								<i class="icon-facebook"></i>
 								<i class="icon-facebook"></i>
@@ -43,10 +55,6 @@
 							</a>
 
 
-							<a href="https://www.instagram.com/makstudio_us/?hl=en" class="social-icon si-small si-borderless si-instagram">
-								<i class="icon-instagram"></i>
-								<i class="icon-instagram"></i>
-							</a>
 
 					<!--
 
