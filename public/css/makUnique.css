@@ -1,9 +1,24 @@
+#logo {
+	margin-left : 4%;
+}
+
+
+#primary-menu {
+	margin-right : 4%;
+}
+
+
+.makCard {
+	margin-top:-50px;
+}
+
 .cardTitle {
 	font-family : Roboto;
 	font-weight : bold;
 	font-size:21px;
 	text-transform:uppercase;
 	letter-spacing: 0.84px;
+	margin-bottom:50px;
 }
 
 
@@ -11,6 +26,8 @@
 	font-family : Roboto, Light;
 	font-size:55px;
 	letter-spacing: 2.2px;
+	font-weight:200;
+	margin-bottom:50px;
 }
 
 
@@ -19,5 +36,6 @@
 	font-size:21px;
 	text-transform:uppercase;
 	letter-spacing: 0.84px;
+	padding:12px;
 }
 
