@@ -3,7 +3,7 @@
 <html dir="ltr" lang="en-US">
 <head>
 
-    @include('sections.head')
+    @include('newSections.head')
 
     <!-- Document Title
     ============================================= -->
@@ -17,9 +17,6 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-        @include('sections.landing.slider')
-
-        @include('sections.header')
 
         <!-- Content
         ============================================= -->
@@ -27,12 +24,16 @@
 
             <div class="">
 
+                @include('newSections.landing.lobby')
+                @include('newSections.landing.demoQuad')
+                @include('newSections.landing.aboutLine')
+
 
             </div>
 
         </section><!-- #content end -->
 
-        @include('sections.footer')
+        @include('newSections.footer')
 
     </div><!-- #wrapper end -->
 
@@ -40,7 +41,7 @@
     ============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
 
-    @include('sections.javasfiles')
+    @include('newSections.javasfiles')
 
 </body>
 </html>
