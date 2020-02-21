@@ -1,6 +1,6 @@
 <!-- Header
 ============================================= -->
-<header id="header" class="full-header border-full-header transparent-header dark static-sticky" data-sticky-class="not-dark">
+<header id="header" class="full-header border-full-header transparent-header static-sticky" data-sticky-class="not-dark">
 
     <div id="header-wrap">
 
@@ -24,7 +24,7 @@
 
 
 
-            @include('sections.headermenu')
+            @include('newSections.headermenu')
 
 
         </div>

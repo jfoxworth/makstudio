@@ -17,7 +17,7 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-        @include('sections.header')
+        @include('newSections.header')
 
         <!-- Content
         ============================================= -->
