@@ -26,7 +26,7 @@
 			</div>
 
 
-			<div class="col_half makCardHalf col_last" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/flower_solid_surface_feature_wall.jpg')">
+			<div class="col_half makCardHalf col_last" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/lobby_reception_desk_nova_chem.jpg')">
 
 
 				<div class="vertical-middle" style="margin-top:-50px; margin-left:10%;">
