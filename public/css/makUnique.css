@@ -41,6 +41,10 @@
 
 
 
+.makCardHalf {
+	min-height:500px;
+}
+
 .cardHalfTitle {
 	font-family : Roboto;
 	font-weight : bold;
