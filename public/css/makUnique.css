@@ -13,7 +13,7 @@
 }
 
 .cardTitle {
-	font-family : Roboto;
+	font-family : Roboto Slab;
 	font-weight : bold;
 	font-size:1.3em;
 	text-transform:uppercase;
@@ -41,24 +41,24 @@
 
 
 .makCardHalfHolder {
-	min-height:500px;
+	min-height:650px;
 	background-position-x : left;
 	background-position-y : bottom;
 }
 
 
 .makCardHalf {
-	min-height:500px;
+	min-height:650px;
 	background: #00000040 0% 0% no-repeat padding-box;
 }
 
 .makCardHalfDark {
-	min-height:500px;
+	min-height:650px;
 	background: #000000BF 0% 0% no-repeat padding-box;
 }
 
 .cardHalfTitle {
-	font-family : Roboto;
+	font-family : Roboto Slab;
 	font-weight : bold;
 	font-size:1.3em;
 	text-transform:uppercase;
@@ -91,4 +91,69 @@
 	position:absolute;
 	bottom:75px;
 	left:50px;
+}
+
+
+
+
+
+.aboutTitle {
+	font-family : Roboto Slab;
+	font-weight : bold;
+	font-size:1em;
+	text-transform:uppercase;
+	letter-spacing: 0.84px;
+	margin-bottom:50px;
+}
+
+.aboutText {
+	font-family : Roboto, Light;
+	font-size:1.5em;
+	letter-spacing: 1.36px;
+	font-weight:300;
+	margin-bottom:50px;
+	width:95%;
+}
+
+.aboutButton {
+	font-family : Roboto;
+	font-size:1em;
+	text-transform:uppercase;
+	letter-spacing: 0.84px;
+
+}
+
+
+
+.aboutImage {
+	height:130px;
+	width:130px;
+	border-radius : 65px;
+}
+
+
+.aboutName {
+	font-family : Roboto;
+	font-size:0.85em;
+	letter-spacing: 0.84px;
+	width:150px;
+	text-align:left;
+	margin-top:15px;
+	line-height:18px;
+}
+
+.boldName {
+	font-weight:800;
+	float:left;
+}
+
+
+
+
+.footerText {
+	font-family : Roboto;
+	color:#FFFFFF;
+	font-size:0.8em;
+	letter-spacing:0.7px;
+	font-weight:100;
 }

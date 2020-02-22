@@ -1,6 +1,6 @@
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark">
+		<footer id="footer" class="dark nomargin" style="background-color:#696969;">
 
 			<!-- Copyrights
 			============================================= -->
@@ -11,17 +11,17 @@
 
 					<div class="col_half">
 
-						<div class="col_one_third">
+						<div class="col_one_third footerText">
 							&copy; 2020 Mak Studios, Inc<br>
 							2019 All Rights Reserved
 						</div>
 
-						<div class="col_one_third">
+						<div class="col_one_third footerText">
 							305 Velasco St.<br>
 							Houston, TX 77003
 						</div>
 
-						<div class="col_one_third col_last">
+						<div class="col_one_third col_last footerText">
 							info@makstudio.us<br>
 							713.505.1234
 						</div>
