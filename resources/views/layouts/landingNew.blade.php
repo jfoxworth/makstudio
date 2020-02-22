@@ -23,14 +23,12 @@
         ============================================= -->
         <section id="content">
 
-            <div class="">
 
                 @include('newSections.landing.lobby')
                 @include('newSections.landing.demoQuad')
                 @include('newSections.landing.aboutLine')
 
 
-            </div>
 
         </section><!-- #content end -->
 
