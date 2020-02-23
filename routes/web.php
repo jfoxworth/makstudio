@@ -20,6 +20,12 @@
 // Landing page (eventually)
 Route::get('/', function () { return view('layouts.landing'); });
 Route::get('/new', function () { return view('layouts.landingNew'); });
+Route::get('/ourWorkNew', function () { return view('layouts.ourworkNew'); });
+Route::get('/productsNew', function () { return view('layouts.productsNew'); });
+Route::get('/servicesNew', function () { return view('layouts.servicesNew'); });
+Route::get('/aboutUsNew', function () { return view('layouts.aboutUsNew'); });
+Route::get('/contactNew', function () { return view('layouts.contactNew'); });
+
 
 
 // First Landing Option

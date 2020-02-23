@@ -1,6 +1,6 @@
 <!-- Slider
 ============================================= -->
-<section id="aboutUs" class="section clearfix">
+<section id="aboutUs" class="section clearfix notopmargin nobottommargin">
 
 		<div class="container clearfix">
 

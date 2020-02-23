@@ -3,15 +3,17 @@
 	<nav id="primary-menu" class="dark">
 
 		<ul>
-			<li><a href="/ourWork"><div>OUR WORK</div></a></li>
+			<li><a href="/ourWorkNew"><div>OUR WORK</div></a></li>
 
-			<li><a href="/products"><div>PRODUCTS</div></a></li>
+			<li><a href="/productsNew"><div>PRODUCTS</div></a></li>
 
-			<li><a href="/products"><div>SERVICES</div></a></li>
+			<li><a href="/servicesNew"><div>SERVICES</div></a></li>
 
-			<li><a href="/aboutUs"><div>ABOUT</div></a></li>
+			<li><a href="/aboutUsNew"><div>ABOUT</div></a></li>
 
-			<li><a href="/contact"><div>CONTACT</div></a></li>
+			<li><a href="/contactNew"><div>CONTACT</div></a></li>
+
+
 
 			
 			<!-- Right Side Of Navbar -->
