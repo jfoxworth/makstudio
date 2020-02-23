@@ -1,7 +1,7 @@
 
 <!-- Slider
 ============================================= -->
-<section id="cultureRow" class="section whiteBreak nobottompadding nobottommargin">
+<section id="cultureRow" class="section nobottompadding nobottommargin" style="background-color:#FFF">
 
 	<div class="nopadding nomargin noborder">
 

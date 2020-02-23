@@ -25,6 +25,7 @@ Route::get('/productsNew', function () { return view('layouts.productsNew'); });
 Route::get('/servicesNew', function () { return view('layouts.servicesNew'); });
 Route::get('/aboutUsNew', function () { return view('layouts.aboutUsNew'); });
 Route::get('/contactNew', function () { return view('layouts.contactNew'); });
+Route::get('/seatingNew', function () { return view('layouts.seatingNew'); });
 
 
 
