@@ -26,6 +26,11 @@ Route::get('/servicesNew', function () { return view('layouts.servicesNew'); });
 Route::get('/aboutUsNew', function () { return view('layouts.aboutUsNew'); });
 Route::get('/contactNew', function () { return view('layouts.contactNew'); });
 Route::get('/seatingNew', function () { return view('layouts.seatingNew'); });
+Route::get('/jacobwhite', function () { return view('layouts.jacobwhite'); });
+Route::get('/houstonsfirst', function () { return view('layouts.houstonsfirst'); });
+Route::get('/arm', function () { return view('layouts.arm'); });
+Route::get('/daikin', function () { return view('layouts.daikin'); });
+Route::get('/ramada', function () { return view('layouts.ramada'); });
 
 
 

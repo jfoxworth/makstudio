@@ -13,7 +13,7 @@
 
 				<div class="cardText">A fit and finish for an<br>impressive lobby experience in<br>any interior</div>
 
-				<button type="button" class="cardButton">Completed Projects</button>
+				<button type="button" class="cardButton" onclick="location.href='/projectsNew';">Completed Projects</button>
 
 			</div>
 

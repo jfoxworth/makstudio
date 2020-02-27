@@ -12,8 +12,8 @@
 					<div class="col_half">
 
 						<div class="col_one_third footerText">
-							&copy; 2020 Mak Studios, Inc<br>
-							2019 All Rights Reserved
+							&copy; 2020 Mak Studio, Inc<br>
+							All Rights Reserved
 						</div>
 
 						<div class="col_one_third footerText">
@@ -39,7 +39,7 @@
 								<i class="icon-instagram"></i>
 							</a>
 
-							<a href="#" class="social-icon si-small si-borderless si-linkedin">
+							<a href="https://www.linkedin.com/company/m%C4%81k-studio/" class="social-icon si-small si-borderless si-linkedin">
 								<i class="icon-linkedin"></i>
 								<i class="icon-linkedin"></i>
 							</a>

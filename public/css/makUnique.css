@@ -26,7 +26,7 @@
 	font-family : Roboto, Light;
 	font-size:3em;
 	letter-spacing: 2.2px;
-	font-weight:200;
+	font-weight:300;
 	margin-bottom:50px;
 }
 
@@ -44,12 +44,17 @@
 	min-height:650px;
 	background-position-x : left;
 	background-position-y : bottom;
+	float:left;
 }
 
 
 .makCardHalf {
 	min-height:650px;
 	background: #00000040 0% 0% no-repeat padding-box;
+}
+
+.makCardHalf:hover {
+	 background: #000000BF 0% 0% no-repeat padding-box;
 }
 
 .makCardHalfDark {
@@ -366,3 +371,78 @@
 
 }
 
+
+
+
+
+
+
+
+/* Project Description Section */
+.sectionTitle {
+	font-size : 1em;
+	font-family : Roboto Slab;
+	font-weight:800;
+	text-transform: uppercase;
+}
+
+
+.sectionText {
+	font-size : 1.5em;
+	font-family : Roboto;
+	font-weight:300;
+}
+
+
+.sectionLabel {
+	font-size : 1.75em;
+	font-family : Roboto;
+	font-weight:300;
+
+}
+
+.sectionDesc {
+	font-size : 1.5em;
+	font-family : Roboto;
+	font-weight:300;
+
+}
+
+
+.listTitle {
+	font-size : 1em;
+	font-family : Roboto;
+	font-weight:600;
+	margin-bottom:20px;
+}
+
+
+.listSection {
+	font-size : 1em;
+	font-family : Roboto;
+
+}
+
+
+.listItem {
+	padding : 2px;	
+	border-bottom : 1px solid #ccc;
+	font-size:0.9em;
+}
+
+
+.descHeader {
+	font-size : 1.6em;
+	margin-bottom:50px;
+	font-weight:100;
+}
+
+.descText {
+	font-size:1.6em;
+	font-weight:100;
+}
+
+
+.descText > ul {
+	margin-left:30px;
+}

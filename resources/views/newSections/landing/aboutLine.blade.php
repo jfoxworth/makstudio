@@ -12,7 +12,7 @@
 
 					<div class="aboutText">We design, build, and manufacture beautiful spaces, functional objects, furniture, and surfaces tailored to your unique vision and brand.</div>
 
-					<div class="aboutButton">Learn More</div>
+					<div class="aboutButton"><a href="/aboutUsNew">Learn More</a></div>
 
 				</div>
 
@@ -26,7 +26,7 @@
 
 					<img class="aboutImage" src='https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Liz+and+Jose+Picture/jose_mak.jpg' height="130px" width="130px">
 
-					<div class="aboutName"><div class="boldName">Jose Aguilar</div>, AIA<br>Co-Founder, Fabrication<br>jose@makstudio.us</div>
+					<div class="aboutName"><div class="boldName">Jose Aguilar</div>, AIA<br>Co-Founder<br>jose@makstudio.us</div>
 
 				</div>
 
@@ -34,7 +34,7 @@
 
 					<img class="aboutImage" src='https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Liz+and+Jose+Picture/liz_mak.jpg'  height="130px" width="130px" >
 
-					<div class="aboutName"><div class="boldName">Liz Cordill</div>, AIA<br>Co-Founder, Designer<br>liz@makstudio.us</div>
+					<div class="aboutName"><div class="boldName">Liz Cordill</div>, AIA<br>Co-Founder<br>liz@makstudio.us</div>
 
 				</div>
 

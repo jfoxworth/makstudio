@@ -1,9 +1,9 @@
 
 <!-- Slider
 ============================================= -->
-<section id="collPlan" class="section notopmargin stepGifLine">
+<section id="collPlan" class="section notopmargin" style="background-color:#FFFFFF">
 
-	<div class="container noborder">
+	<div class="container clearfix whiteBreak">
 
 		<div class="col_one_third">
 
@@ -30,9 +30,9 @@
 
 
 
-<section id="collPlan" class="section notopmargin stepGifLine">
+<section id="collPlan" class="section notopmargin" style="background-color:#FFFFFF">
 
-	<div class="container noborder">
+	<div class="container clearfix whiteBreak">
 
 		<div class="col_one_third">
 
@@ -65,9 +65,9 @@
 
 
 
-<section id="collPlan" class="section notopmargin stepGifLine">
+<section id="collPlan" class="section notopmargin" style="background-color:#FFFFFF">
 
-	<div class="container noborder">
+	<div class="container clearfix whiteBreak">
 
 		<div class="col_one_third">
 
@@ -97,9 +97,9 @@
 
 
 
-<section id="collPlan" class="section notopmargin stepGifLineLast">
+<section id="collPlan" class="section notopmargin " style="background-color:#FFFFFF">
 
-	<div class="container noborder">
+	<div class="container clearfix whiteBreak">
 
 		<div class="col_one_third">
 

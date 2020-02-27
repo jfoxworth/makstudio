@@ -2,13 +2,13 @@
 
 <section id="featureQuad" class="">
 
-	<div class="section nopadding nomargin noborder" style="background: url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/fin_feature_wall_eldridge.jpg') bottom center no-repeat; background-size: cover;">
+	<div class="section nopadding nomargin noborder">
 
 	
 		<div class="container-wide clearfix dark">
 
 
-			<div class="col_half nomargin makCardHalfHolder" style="width:50%; background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/flower_solid_surface_feature_wall.jpg')">
+			<div class="col_md-6 col_lg-6 col-sm-6 col-xs-12 nomargin nopadding makCardHalfHolder" style=" background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/flower_solid_surface_feature_wall.jpg')">
 
 				<div class="makCardHalf">
 
@@ -29,7 +29,7 @@
 			</div>
 
 
-			<div class="col_half nomargin makCardHalfHolder col_last" style="width:50%; background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/lobby_reception_desk_nova_chem.jpg')">
+			<div class="col_md-6 col_lg-6 col-sm-6 col-xs-12 nomargin nopadding makCardHalfHolder" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/lobby_reception_desk_nova_chem.jpg')">
 
 				<div class="makCardHalf">
 
@@ -50,9 +50,9 @@
 
 
 
-			<div class="col_half nomargin makCardHalfHolder" style="width:50%; background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/lobby_bench_alley.jpg')">
+			<div class="col_md-6  col_lg-6 col-sm-6 col-xs-12 nomargin nopadding  makCardHalfHolder" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/lobby_bench_alley.jpg')">
 
-				<div class="makCardHalfDark">
+				<div class="makCardHalf">
 
 					<div class="" style="">
 
@@ -70,7 +70,7 @@
 			</div>
 
 
-			<div class="col_half nomargin makCardHalfHolder col_last" style="width:50%; background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/breakroom_island_firmspace.jpg')">
+			<div class="col_md-6  col_lg-6 col-sm-6 col-xs-12 nomargin nopadding  makCardHalfHolder" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/breakroom_island_firmspace.jpg')">
 
 				<div class="makCardHalf">
 
