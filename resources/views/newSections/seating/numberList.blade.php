@@ -19,7 +19,9 @@
 
 			<div class="col_three_fourth col_last">
 
-				<div class="rightText">From simple shapes to complex and integrated arrangements, we guide you through options that will determine the appropriate style suited to your environment.</div>
+				<div class="servicesGifBlock"><img src="https://makstudio.s3.us-east-2.amazonaws.com/seating/1.+Style.gif"></div>
+
+				<div class="featureText">From simple shapes to complex and integrated arrangements, we guide you through options that will determine the appropriate style suited to your environment.</div>
 
 			</div>
 
@@ -42,7 +44,9 @@
 
 			<div class="col_three_fourth col_last">
 
-				<div class="rightText">From freestanding seating for one person, to winding rows of fully integrated benches, we base our decision on size from the desired outcome expected use of space.</div>
+				<div class="servicesGifBlock"><img src="https://makstudio.s3.us-east-2.amazonaws.com/seating/2.+Size.gif"></div>
+
+				<div class="featureText">From freestanding seating for one person, to winding rows of fully integrated benches, we base our decision on size from the desired outcome expected use of space.</div>
 
 			</div>
 
@@ -67,7 +71,9 @@
 
 			<div class="col_three_fourth col_last">
 
-				<div class="rightText">Natural wood, stone, fabric, metal, or composite, we guide you through available options in material and colors to make a critical design decision tailored to your unique needs and budget.</div>
+				<div class="servicesGifBlock"><img src="https://makstudio.s3.us-east-2.amazonaws.com/seating/3.+Material%26Color.gif"></div>
+
+				<div class="featureText">Natural wood, stone, fabric, metal, or composite, we guide you through available options in material and colors to make a critical design decision tailored to your unique needs and budget.</div>
 
 			</div>
 
@@ -94,7 +100,9 @@
 
 			<div class="col_three_fourth col_last">
 
-				<div class="rightText">Choose from a variety of opportunities including custom branding, integrated greenery, and unique machining and finishes that will take your design to the next level.</div>
+				<div class="servicesGifBlock"><img src="https://makstudio.s3.us-east-2.amazonaws.com/seating/4.+Add+ons.gif"></div>
+
+				<div class="featureText">Choose from a variety of opportunities including custom branding, integrated greenery, and unique machining and finishes that will take your design to the next level.</div>
 
 			</div>
 
@@ -104,28 +112,6 @@
 
 
 
-
-
-
-
-		<div class="container clearfix whiteBreak topmargin">
-
-			<div class="col_one_fourth">
-
-				<div class="leftTitle">
-					<div class="titleNumber">05</div>
-					<div class="titleLabel">Contact</div>
-				</div>
-
-			</div>
-
-			<div class="col_three_fourth col_last">
-
-				<div class="rightText">Just call 713.505.1234 or email info@makstudio.us to schedule your free consultation. Let’s begin the process of creating something unique and memorable together.</div>
-
-			</div>
-
-		</div>
 
 
 

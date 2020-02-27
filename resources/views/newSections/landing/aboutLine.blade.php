@@ -12,7 +12,7 @@
 
 					<div class="aboutText">We design, build, and manufacture beautiful spaces, functional objects, furniture, and surfaces tailored to your unique vision and brand.</div>
 
-					<div class="aboutButton"><a href="/aboutUsNew">Learn More</a></div>
+					<div class="aboutButton"><a href="/aboutUs">Learn More</a></div>
 
 				</div>
 

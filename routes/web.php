@@ -19,13 +19,13 @@
 
 // Landing page (eventually)
 Route::get('/', function () { return view('layouts.landing'); });
-Route::get('/new', function () { return view('layouts.landingNew'); });
-Route::get('/ourWorkNew', function () { return view('layouts.ourworkNew'); });
-Route::get('/productsNew', function () { return view('layouts.productsNew'); });
-Route::get('/servicesNew', function () { return view('layouts.servicesNew'); });
-Route::get('/aboutUsNew', function () { return view('layouts.aboutUsNew'); });
-Route::get('/contactNew', function () { return view('layouts.contactNew'); });
-Route::get('/seatingNew', function () { return view('layouts.seatingNew'); });
+Route::get('/old', function () { return view('layouts.landingOld'); });
+Route::get('/ourWork', function () { return view('layouts.ourwork'); });
+Route::get('/products', function () { return view('layouts.products'); });
+Route::get('/services', function () { return view('layouts.services'); });
+Route::get('/aboutUs', function () { return view('layouts.aboutUs'); });
+Route::get('/contact', function () { return view('layouts.contact'); });
+Route::get('/seating', function () { return view('layouts.seating'); });
 Route::get('/jacobwhite', function () { return view('layouts.jacobwhite'); });
 Route::get('/houstonsfirst', function () { return view('layouts.houstonsfirst'); });
 Route::get('/arm', function () { return view('layouts.arm'); });

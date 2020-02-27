@@ -3,11 +3,11 @@
 <html dir="ltr" lang="en-US">
 <head>
 
-    @include('newSections.head')
+    @include('sections.head')
 
     <!-- Document Title
     ============================================= -->
-    <title>Mak Studios</title>
+    <title>Mak Studios - Products</title>
 
 </head>
 
@@ -17,22 +17,24 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-        @include('newSections.header')
+        @include('sections.secondHeader')
+
+        @include("sections.products.splashImage")
+
 
         <!-- Content
         ============================================= -->
         <section id="content">
 
+            <div class="content-wrap">
 
-                @include('newSections.landing.lobby')
-                @include('newSections.landing.demoQuad')
-                @include('newSections.landing.aboutLine')
+                @include("sections.products.productList")
 
-
+            </div>
 
         </section><!-- #content end -->
 
-        @include('newSections.footer')
+        @include('sections.footer')
 
     </div><!-- #wrapper end -->
 
@@ -40,7 +42,10 @@
     ============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
 
-    @include('newSections.javasfiles')
+    @include('sections.javasfiles')
 
 </body>
 </html>
+
+
+

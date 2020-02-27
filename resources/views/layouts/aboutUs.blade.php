@@ -3,7 +3,7 @@
 <html dir="ltr" lang="en-US">
 <head>
 
-    @include('sections.head')
+    @include('newSections.head')
 
     <!-- Document Title
     ============================================= -->
@@ -17,24 +17,25 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-        @include('sections.secondHeader')
-
-        @include("sections.aboutUs.splashImage")
+        @include('newSections.header')
 
 
         <!-- Content
         ============================================= -->
         <section id="content">
 
-            <div class="content-wrap">
+            <div class="content-wrap nomargin nopadding">
 
-                @include("sections.aboutUs.teamList")
+                @include("newSections.aboutUs.topImage")
+                @include("newSections.aboutUs.cultureBreak")
+                @include("newSections.aboutUs.clientBreak")
+                @include("newSections.aboutUs.relatedBreaks")
 
             </div>
 
         </section><!-- #content end -->
 
-        @include('sections.footer')
+        @include('newSections.footer')
 
     </div><!-- #wrapper end -->
 

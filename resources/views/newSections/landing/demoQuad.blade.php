@@ -19,7 +19,7 @@
 
 						<div class="cardHalfText">From features to accents, our walls are designed to impress.</div>
 
-						<button type="button" class="cardHalfButton">Learn More</button>
+						<button type="button" class="cardHalfButton"  onclick="location.href='/walls';">Learn More</button>
 
 					</div>
 
@@ -39,7 +39,7 @@
 
 						<div class="cardHalfText">Make the most of your reception area with desks that fit perfectly.</div>
 
-						<button type="button" class="cardHalfButton">Learn More</button>
+						<button type="button" class="cardHalfButton" onclick="location.href='/desks';">Learn More</button>
 
 					</div>
 
@@ -60,7 +60,7 @@
 
 						<div class="cardHalfText">Customized seating products to suit any environment</div>
 
-						<button type="button" class="cardHalfButton">Learn More</button>
+						<button type="button" class="cardHalfButton" onclick="location.href='/seating';">Learn More</button>
 
 					</div>
 
@@ -80,7 +80,7 @@
 
 						<div class="cardHalfText">Bring it all together with communal pieces meant to be shared</div>
 
-						<button type="button" class="cardHalfButton">Learn More</button>
+						<button type="button" class="cardHalfButton" onclick="location.href='/islands';">Learn More</button>
 
 					</div>
 

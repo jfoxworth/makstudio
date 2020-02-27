@@ -13,7 +13,7 @@
 
 				<div class="cardText">Mixed materials create texture<br>and welcome visitors in this<br>one-of-a-kind lobby.</div>
 
-				<button type="button" class="cardButton">View Project</button>
+				<button type="button" class="cardButton" onclick="location.href='/arm';">View Project</button>
 
 			</div>
 
@@ -37,7 +37,7 @@
 
 				<div class="cardText">Curves, lighting and tailored<br>messaging complete this<br>custom lobby.</div>
 
-				<button type="button" class="cardButton">View Project</button>
+				<button type="button" class="cardButton" onclick="location.href='/daikin';">View Project</button>
 
 			</div>
 
@@ -64,7 +64,7 @@
 
 				<div class="cardText">Impressive entries and<br>lounges with branded features<br>at every turn.</div>
 
-				<button type="button" class="cardButton">View Project</button>
+				<button type="button" class="cardButton" onclick="location.href='/ramada';">View Project</button>
 
 			</div>
 
@@ -91,7 +91,7 @@
 
 				<div class="cardText">A 3Dimensional feature wall<br>brings interest to a functional<br>lobby space.</div>
 
-				<button type="button" class="cardButton">View Project</button>
+				<button type="button" class="cardButton" onclick="location.href='/houstonsfirst';">View Project</button>
 
 			</div>
 
@@ -117,7 +117,7 @@
 
 				<div class="cardText">Intricately carved surfaces<br>programmable lighting make<br>this corporate interior shine.</div>
 
-				<button type="button" class="cardButton">View Project</button>
+				<button type="button" class="cardButton" onclick="location.href='/jacobwhite';">View Project</button>
 
 			</div>
 
