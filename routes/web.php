@@ -25,7 +25,12 @@ Route::get('/products', function () { return view('layouts.products'); });
 Route::get('/services', function () { return view('layouts.services'); });
 Route::get('/aboutUs', function () { return view('layouts.aboutUs'); });
 Route::get('/contact', function () { return view('layouts.contact'); });
+
 Route::get('/seating', function () { return view('layouts.seating'); });
+Route::get('/walls', function () { return view('layouts.walls'); });
+Route::get('/desks', function () { return view('layouts.desks'); });
+Route::get('/islands', function () { return view('layouts.islands'); });
+
 Route::get('/jacobwhite', function () { return view('layouts.jacobwhite'); });
 Route::get('/houstonsfirst', function () { return view('layouts.houstonsfirst'); });
 Route::get('/arm', function () { return view('layouts.arm'); });
