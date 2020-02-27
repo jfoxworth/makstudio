@@ -24,7 +24,7 @@
         <section id="content">
 
 
-                @include('newSections.ourwork.main')
+                @include('newSections.ourWork.main')
 
 
 
