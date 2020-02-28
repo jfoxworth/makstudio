@@ -13,7 +13,7 @@
 
 					<div class="relatedText">Wall surfaces designed to impress.</div>
 
-					<div class="relatedButton">Explore Walls</div>
+					<div class="relatedButton"><a href="/walls">Explore Walls</a></div>
 
 				</div>
 
@@ -28,7 +28,7 @@
 
 					<div class="relatedText">Desks designed with purpose.</div>
 
-					<div class="relatedButton">Explore Desks</div>
+					<div class="relatedButton"><a href="/desks">Explore Desks</a></div>
 
 				</div>
 
