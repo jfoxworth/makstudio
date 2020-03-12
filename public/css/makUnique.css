@@ -5,8 +5,16 @@
 
 #primary-menu {
 	margin-right : 4%;
+	font-family : Roboto;
+	font-size:1em;
 }
 
+
+#primary-menu ul li a {
+	font-family : Roboto;
+	font-size:1em;
+	font-weight:normal;	
+}
 
 .makCard {
 	margin-top:-50px;
@@ -33,11 +41,17 @@
 
 .cardButton {
 	font-family : Roboto;
-	font-size:1.3em;
+	font-size:1em;
 	text-transform:uppercase;
 	letter-spacing: 0.84px;
 	padding:12px;
+	border-radius:5px;
 }
+
+.cardButton:hover {
+	background-color:#ccc;
+}
+
 
 
 .makCardHalfHolder {
@@ -78,7 +92,7 @@
 	font-family : Roboto, Light;
 	font-size:1.5em;
 	letter-spacing: 1.36px;
-	font-weight:200;
+	font-weight:100;
 	margin-bottom:50px;
 	width:60%;
 	position:absolute;
@@ -91,11 +105,15 @@
 	font-family : Roboto;
 	font-size:1em;
 	text-transform:uppercase;
-	letter-spacing: 0.84px;
 	padding:12px;
 	position:absolute;
 	bottom:75px;
 	left:50px;
+	border-radius:5px;
+}
+
+.cardHalfButton:hover {
+	background-color:#ccc;
 }
 
 
@@ -462,5 +480,15 @@
 	
 }
 
+
+.underLined:before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    bottom: -10px;
+    left: 0%;
+    border-bottom: 2px solid #000;
+}
 
 
