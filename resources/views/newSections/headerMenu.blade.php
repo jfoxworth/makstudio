@@ -2,16 +2,17 @@
 	============================================= -->
 	<nav id="primary-menu" class="dark">
 
-		<ul>
-			<li><a href="/ourWork"><div>OUR WORK</div></a></li>
+		<ul class="sf-js-enabled">
 
-			<li><a href="/products"><div>PRODUCTS</div></a></li>
+			<li class="submenu"><a href="/ourWork"><div>OUR WORK</div></a></li>
 
-			<li><a href="/services"><div>SERVICES</div></a></li>
+			<li class="submenu"><a href="/products"><div>PRODUCTS</div></a></li>
 
-			<li><a href="/aboutUs"><div>ABOUT</div></a></li>
+			<li class="submenu"><a href="/services"><div>SERVICES</div></a></li>
 
-			<li><a href="/contact"><div>CONTACT</div></a></li>
+			<li class="submenu"><a href="/aboutUs"><div>ABOUT</div></a></li>
+
+			<li class="submenu"><a href="/contact"><div>CONTACT</div></a></li>
 
 
 

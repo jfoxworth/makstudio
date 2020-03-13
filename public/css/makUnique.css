@@ -50,6 +50,7 @@
 
 .cardButton:hover {
 	background-color:#ccc;
+	opacity:0.75;
 }
 
 
@@ -114,6 +115,7 @@
 
 .cardHalfButton:hover {
 	background-color:#ccc;
+	opacity:0.75;
 }
 
 
@@ -149,7 +151,6 @@
 
 
 .aboutImage {
-	height:130px;
 	width:130px;
 	border-radius : 65px;
 }
@@ -212,7 +213,7 @@
 
 .servicesStepTitle {
 	font-family : Roboto;
-	font-weight:300;
+	font-weight:100;
 	font-size:2.0em;
 	margin-left:50px;
 	width:75%;
@@ -232,7 +233,7 @@
 
 .servicesGifText{
 	font-family : Roboto;
-	font-weight:300;
+	font-weight:100;
 	font-size:1.6em;
 
 }
@@ -481,7 +482,7 @@
 }
 
 
-.underLined:before{
+.underLined:after{
     content: "";
     position: absolute;
     width: 50px;
