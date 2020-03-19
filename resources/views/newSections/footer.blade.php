@@ -12,7 +12,7 @@
 					<div class="col_half">
 
 						<div class="col_one_third footerText">
-							&copy; 2020 Mak Studio, Inc<br>
+							&copy; 2020 Mak Studio, LLC<br>
 							All Rights Reserved
 						</div>
 
@@ -22,12 +22,11 @@
 						</div>
 
 						<div class="col_one_third col_last footerText">
-							info@makstudio.us<br>
+							<a class="" href="mailto:liz@makstudio.us">info@makstudio.us</a><br>
 							713.505.1234
 						</div>
 
 					</div>
-
 
 
 					<div class="col_half col_last tright">

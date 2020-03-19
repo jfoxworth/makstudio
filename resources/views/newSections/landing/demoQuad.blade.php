@@ -58,7 +58,7 @@
 
 						<div class="cardHalfTitle">Seating</div>
 
-						<div class="cardHalfText">Customized seating products to suit any environment</div>
+						<div class="cardHalfText">Customized seating products to suit any environment.</div>
 
 						<button type="button" class="cardHalfButton" onclick="location.href='/seating';">Learn More</button>
 
@@ -78,7 +78,7 @@
 
 						<div class="cardHalfTitle">Islands</div>
 
-						<div class="cardHalfText">Bring it all together with communal pieces meant to be shared</div>
+						<div class="cardHalfText">Bring it all together with communal pieces meant to be shared.</div>
 
 						<button type="button" class="cardHalfButton" onclick="location.href='/islands';">Learn More</button>
 
