@@ -16,6 +16,8 @@
     <script type="text/javascript" src="/js/navigations.js"></script>
     <script type="text/javascript" src="/js/parallax.js"></script>
 
+    <script type="text/javascript" src="/js/makStandard.js"></script>
+
 
     <!-- Google Map JavaScripts
     ============================================= --

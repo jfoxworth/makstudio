@@ -24,7 +24,7 @@
         <section id="content">
 
 
-                @include('newSections.landing.lobby')
+                @include('newSections.landing.topSlider')
                 @include('newSections.landing.demoQuad')
                 @include('newSections.landing.aboutLine')
 

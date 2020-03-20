@@ -130,8 +130,6 @@ $(document).ready(function()	{
 
 
 
-
-
 	/*------------------------------------------------------------------------------
 
 								Response to user actions
@@ -1291,14 +1289,6 @@ $(document).ready(function()	{
 
 
 });
-
-
-
-
-
-
-
-
 
 
 

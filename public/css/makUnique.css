@@ -546,3 +546,27 @@
     border-bottom: 2px solid #FFF;
 }
 
+
+
+
+
+/* Items to underline the top menu */
+.submenu > a {
+	border-bottom:2px solid #FFF;
+}
+
+.submenu > a:hover {
+	border-bottom:2px solid #000;
+}
+
+.currentNav:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    bottom: 30px;
+    left: 12%;
+    border-bottom: 2px solid #000;
+}
+
+

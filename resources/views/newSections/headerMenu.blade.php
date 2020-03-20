@@ -1,18 +1,18 @@
 	<!-- Primary Navigation
 	============================================= -->
-	<nav id="primary-menu" class="dark">
+	<nav id="primary-menu" class="not-dark">
 
 		<ul class="sf-js-enabled">
 
-			<li class="submenu"><a href="/ourWork"><div>OUR WORK</div></a></li>
+			<li class="submenu"><a href="/ourWork"><div id="workOption" class="navOption">OUR WORK</div></a></li>
 
-			<li class="submenu"><a href="/products"><div>PRODUCTS</div></a></li>
+			<li class="submenu"><a href="/products"><div id="productOption" class="navOption">PRODUCTS</div></a></li>
 
-			<li class="submenu"><a href="/services"><div>SERVICES</div></a></li>
+			<li class="submenu"><a href="/services"><div id="servicesOption" class="navOption">SERVICES</div></a></li>
 
-			<li class="submenu"><a href="/aboutUs"><div>ABOUT</div></a></li>
+			<li class="submenu"><a href="/aboutUs"><div id="aboutOption" class="navOption">ABOUT</div></a></li>
 
-			<li class="submenu"><a href="/contact"><div>CONTACT</div></a></li>
+			<li class="submenu"><a href="/contact"><div id="contactOption" class="navOption">CONTACT</div></a></li>
 
 
 

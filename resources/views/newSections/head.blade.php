@@ -43,6 +43,7 @@
 	<link rel="stylesheet" href="/css/shapeDiver1.css" type="text/css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'nano' theme -->
 	<link rel="stylesheet" href="/css/makUnique.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,600,800,bold,bolder,black&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,600,800,bold,bolder,black&display=swap" rel="stylesheet">

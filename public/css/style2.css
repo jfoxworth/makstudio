@@ -3173,6 +3173,52 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 .slider-arrow-bottom-sm:hover { background-color: rgba(0,0,0,0.6) !important; }
 
 
+
+
+.flex-next,.flex-prev,.slider-arrow-bottom-sm,.slider-arrow-left,.slider-arrow-right,.slider-arrow-top-sm {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    top: 50%;
+    left: 0;
+    margin-top: -26px;
+    background-color: rgba(0,0,0,.3);
+    width: 52px;
+    height: 52px;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    -webkit-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out
+}
+
+
+.flex-next i,.flex-prev i,.slider-arrow-bottom-sm i,.slider-arrow-left i,.slider-arrow-right i,.slider-arrow-top-sm i {
+    line-height: 50px;
+    width: 34px;
+    height: 52px;
+    color: #ddd;
+    color: rgba(255,255,255,.8);
+    text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    font-size: 34px;
+    text-align: center;
+    margin-left: 7px
+}
+
+
+.flex-next:hover,.flex-prev:hover,.slider-arrow-bottom-sm:hover,.slider-arrow-left:hover,.slider-arrow-right:hover,.slider-arrow-top-sm:hover {
+    background-color: rgba(0,0,0,.6)!important
+}
+
+.flex-next,.slider-arrow-right,.slider-element .owl-next {
+    left: auto;
+    right: 0;
+    border-radius: 3px 0 0 3px
+}
+
+
+
+
 /* Slide Number
 -----------------------------------------------------------------*/
 
