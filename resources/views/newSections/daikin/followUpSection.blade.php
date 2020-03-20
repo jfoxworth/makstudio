@@ -13,7 +13,7 @@
 
 		<div class="col_two_third col_last">
 
-			<div class="sectionText">This showroom and lobby created in collaboration with GSC Architects in Austin, Texas, reflect the innovative nature of ARM Technologies. The wood and greenery add warmth to a technical showroom and create a memorable visitor experience.</div>
+			<div class="sectionText">Fluid solid surface wrap a lobby rotunda for this global air conditioning company, Daikin’s US headquarters. The walls, created in collaboration with Houston-based Inventure Design, represent the movement of air, the foundation of the company.</div>
 
 		</div>
 

@@ -1,7 +1,7 @@
 
 <!-- Slider
 ============================================= -->
-<section id="mainProjects" class="slider-element full-screen" style="background: url('https://makstudio.s3.us-east-2.amazonaws.com/Services/CNC_routers.png') bottom center no-repeat; background-size: cover;">
+<section id="mainProjects" class="slider-element full-screen" style="background: url('https://makstudio.s3.us-east-2.amazonaws.com/Services/digital_fabrication_cnc.jpg') bottom center no-repeat; background-size: cover;">
 
 	<div class="full-screen section nopadding nomargin noborder darkCover">
 

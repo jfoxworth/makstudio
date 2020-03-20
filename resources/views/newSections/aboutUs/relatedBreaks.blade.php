@@ -13,7 +13,10 @@
 
 					<div class="relatedText">Walls with a sensory experience.</div>
 
-					<div class="relatedButton"><a href="/walls">Explore Walls</a></div>
+					<div class="relatedButton">
+						<a href="/walls">Explore Walls</a>
+						<div class="underLinedWhite"></div>
+					</div>
 
 				</div>
 
@@ -28,7 +31,10 @@
 
 					<div class="relatedText">Comfortable, custom seating.</div>
 
-					<div class="relatedButton"><a href="/seating">Explore Seating</a></div>
+					<div class="relatedButton">
+						<a href="/seating">Explore Seating</a>
+						<div class="underLinedWhite"></div>
+					</div>
 
 				</div>
 

@@ -16,7 +16,7 @@
 
 			<div class="col_two_third col_last">
 
-				<div class="rightText">We are a diverse team of professionals made up of architects, interior designers, industrial designs and master carpenters who love to tackle the hard projects. We are proud to make design happen for these and many other clients, in the highest quality, on time and on budget.</div>
+				<div class="rightText">We are a diverse team of professionals made up of architects, interior designers, industrial designers and master carpenters who love to tackle the hard projects. We are proud to make design happen for these and many other clients, in the highest quality, on time and on budget.</div>
 
 			</div>
 

@@ -1,7 +1,7 @@
 
 <!-- Slider
 ============================================= -->
-<section id="collPlan" class="section notopmargin" style="background-color:#FFFFFF">
+<section id="collPlan" class="section nobottommargin" style="background-color:#FFFFFF">
 
 	<div class="container clearfix whiteBreak">
 
@@ -14,7 +14,7 @@
 
 		<div class="col_two_third col_last">
 
-			<div class="servicesGifText">We guide you through a free consultation on feasibiilty and pricing for your custom concepts.</div>
+			<div class="servicesGifText">We guide you through a free consultation on feasibilty and pricing for your custom concepts.</div>
 
 		</div>
 
@@ -28,7 +28,7 @@
 
 
 
-<section id="collPlan" class="section notopmargin" style="background-color:#FFFFFF">
+<section id="collPlan" class="section nomargin notoppadding" style="background-color:#FFFFFF">
 
 	<div class="container clearfix whiteBreak">
 
@@ -61,7 +61,7 @@
 
 
 
-<section id="collPlan" class="section notopmargin" style="background-color:#FFFFFF">
+<section id="collPlan" class="section nomargin notoppadding" style="background-color:#FFFFFF">
 
 	<div class="container clearfix whiteBreak">
 
@@ -91,7 +91,7 @@
 
 
 
-<section id="collPlan" class="section notopmargin " style="background-color:#FFFFFF">
+<section id="collPlan" class="section nomargin notoppadding" style="background-color:#FFFFFF">
 
 	<div class="container clearfix whiteBreak">
 

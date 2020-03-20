@@ -15,7 +15,7 @@
 			
 			<div class="descText">
 
-				Simple materials and complex forms Applying a complex form to a simple building material creates:<br><br> 
+				Applying a complex form to a simple building material creates:<br><br> 
 
 				<ul>
 					<li>Tactile experiences</li>

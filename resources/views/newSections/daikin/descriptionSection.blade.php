@@ -32,8 +32,8 @@
 				In a fast-paced manufacturing facility, durability is important in the public spaces. People and equipment move up and down corridors many times each day. Solid surface was chosen for a number of reasons:<br><br>
 
 				<ul>
-					<li>can be shaped into the sinuous forms to represent air</li>
-					<li>easily cleanable and repairable</li> 
+					<li>Can be shaped into the sinuous forms to represent air</li>
+					<li>Easily cleanable and repairable</li> 
 					<li>With proper techniques, joints can appear seamless</li> 
 				</ul><br><br> 
 

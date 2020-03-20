@@ -4,7 +4,7 @@
 
 	<div class="container clearfix">
 
-		<div class="col_half" style="background: url('https://makstudio.s3.us-east-2.amazonaws.com/Our+Work+-+Arm+Technologies/armBenchClose.png') bottom center no-repeat; background-size: cover; height:600px">
+		<div class="col_half" style="background: url('https://makstudio.s3.us-east-2.amazonaws.com/Our+Work+-+Arm+Technologies/armWall.png') bottom center no-repeat; background-size: cover; height:600px">
 
 		</div>
 
@@ -25,7 +25,7 @@
 
 		<div class="col_half ">
 
-			<div class="descHeader">Modern, Innovative Details</div>
+			<div class="descHeader">Malleable Materials</div>
 			
 			<div class="descText">
 				
@@ -45,7 +45,7 @@
 
 		</div>
 
-		<div class="col_half col_last" style="background: url('https://makstudio.s3.us-east-2.amazonaws.com/Our+Work+-+Arm+Technologies/armWall.png') bottom center no-repeat; background-size: cover; height:600px">
+		<div class="col_half col_last" style="background: url('https://makstudio.s3.us-east-2.amazonaws.com/Our+Work+-+Arm+Technologies/armBenchClose.png') bottom center no-repeat; background-size: cover; height:600px">
 
 		</div>
 
