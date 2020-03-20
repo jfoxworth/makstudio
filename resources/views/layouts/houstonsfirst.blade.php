@@ -7,7 +7,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Mak Studios - Houston First</title>
+    <title>Mak Studio - Houston's First Baptist Church</title>
 
 </head>
 

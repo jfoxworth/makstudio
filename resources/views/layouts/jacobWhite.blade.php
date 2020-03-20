@@ -7,7 +7,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Mak Studios - Jacob White</title>
+    <title>Mak Studio - Jacob White</title>
 
 </head>
 

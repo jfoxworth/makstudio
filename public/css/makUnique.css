@@ -34,7 +34,7 @@
 	font-family : Roboto, Light;
 	font-size:3em;
 	letter-spacing: 2.2px;
-	font-weight:300;
+	font-weight:100;
 	margin-bottom:50px;
 }
 
@@ -52,6 +52,15 @@
 	background-color:#ccc;
 	opacity:0.75;
 }
+
+
+.cardTopButton {
+	font-family : Roboto;
+	font-size:1em;
+	text-transform:uppercase;
+	letter-spacing: 0.84px;
+}
+
 
 
 
@@ -148,6 +157,10 @@
 
 }
 
+.aboutButton > a:hover {
+	border-bottom:2px solid #000;
+	padding-bottom: 11px;
+}
 
 
 .aboutImage {
@@ -182,6 +195,9 @@
 	font-weight:100;
 }
 
+.footerText > a {
+	color:#FFFFFF;
+}
 
 
 .icon-instagram, .icon-facebook, .icon-pinterest, .icon-linkedin { color:#FFFFFF; font-size:20px; }
@@ -223,12 +239,7 @@
 	font-family : Roboto;
 	font-weight:300;
 	font-size:2em;
-	height:250px;
-	width:250px;
-	border:1px solid #000;
-	margin-bottom:40px;
 	text-align:center;
-	margin-left:35%;
 }
 
 .servicesGifText{
@@ -313,6 +324,7 @@
 	margin-left:50px;
 }
 
+
 .relatedButton {
 	font-family : Roboto;
 	font-size:1em;
@@ -321,6 +333,19 @@
 	margin-left:50px;
 
 }
+
+
+.relatedButton > a {
+	color : #ffffff;
+	
+}
+
+.relatedButton>a:hover {
+	border-bottom:2px solid #FFF;
+	padding-bottom:5px;
+}
+
+
 
 .relatedBreak {
 	height:300px;
@@ -379,23 +404,21 @@
 
 
 .titleNumber {
-	float:left;
-	width:75px;
-	font-size:0.8em;
+	font-size:2em;
+	font-weight:100;
 }
 
 .titleLabel {
-	float:left;
-	width:100px;
-	font-size:0.8em;
+	height:50px;
+	margin-bottom:50px;
+	font-size:2em;
+	font-weight:100;
 
 }
 
 .featureText {
-	font-size:1.25em;
-	font-weight:200;
-	width:90%;
-	margin-left:5%;
+	font-size:1.5em;
+	font-weight:100;
 }
 
 
@@ -475,32 +498,6 @@
 
 
 
-/* Related breaks links */
-.relatedButton > a {
-	color : #ffffff;
-	
-}
-
-.underLined:after{
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    bottom: -10px;
-    left: 0%;
-    border-bottom: 2px solid #FFF;
-}
-
-
-.underLined:after:hover{
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 2px;
-    bottom: -10px;
-    left: 0%;
-    border-bottom: 2px solid #FFF;
-}
 
 
 
@@ -516,4 +513,36 @@
     border-bottom: 2px solid #000;
 }
 
+
+.underLinedWhiteContainer{
+
+}
+
+
+.underLinedWhite:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    border-bottom: 2px solid #FFF;
+}
+
+.underLinedWhiteContainer:hover > .underLinedWhite:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+
+
+.buttonUnderLinedWhite:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    bottom: -10px;
+    left: 0%;
+    border-bottom: 2px solid #FFF;
+}
 

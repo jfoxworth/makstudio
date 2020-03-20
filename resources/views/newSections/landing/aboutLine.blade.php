@@ -22,7 +22,7 @@
 
 			<div class="col_half col_last center">
 
-				<div class="col_half aboutMe aboutImage" style="margin-left:10%">
+				<div class="col_half aboutMe aboutImage" style="margin-left:10%; margin-top:10%;">
 
 					<div class="col">
 						<img class="aboutImage" src='https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Liz+and+Jose+Picture/jose_mak.jpg' height="130px" width="130px">
@@ -38,7 +38,7 @@
 
 				</div>
 
-				<div class="col_half col_last aboutMe aboutImage"  style="margin-left:10%">
+				<div class="col_half col_last aboutMe aboutImage"  style="margin-left:30%; margin-top:10%;">
 
 					<div class="col">
 						<img class="aboutImage" src='https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Liz+and+Jose+Picture/liz_mak.jpg'  height="130px" width="130px" >

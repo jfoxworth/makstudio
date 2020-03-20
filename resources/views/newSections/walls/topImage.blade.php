@@ -7,13 +7,13 @@
 
 		<div class="container dark full-screen">
 
-			<div class="vertical-middle">
+			<div class="vertical-middle" style="left:-10%">
 
 				<div class="cardTitle">Walls</div>
 
 				<div class="cardText">Our elastic geometries can be<br>transformed into any shape,<br>color, material or texture.</div>
 
-				<button type="button" class="cardButton">Scroll to Begin</button>
+				<div class="cardTopButton"><span class="buttonUnderLinedWhite">Scroll to Begin</span></div>
 
 			</div>
 

@@ -13,7 +13,10 @@
 
 					<div class="relatedText">Walls with a sensory experience.</div>
 
-					<div class="relatedButton"><a href="/walls">Explore Walls</a></div>
+					<div class="relatedButton underLinedWhiteContainter">
+						<a href="/walls">Explore Walls</a>
+						<div class="underLinedWhite"></div>
+					</div>
 
 				</div>
 
@@ -28,7 +31,11 @@
 
 					<div class="relatedText">Landmarks and memorable moments.</div>
 
-					<div class="relatedButton"><a href="/ourWork">Explore Our Work</a></div>
+					<div class="relatedButton underLinedWhiteContainter">
+						<a href="/ourWork">Explore Our Work</a>
+						<div class="underLinedWhite"></div>
+					</div>
+
 
 				</div>
 

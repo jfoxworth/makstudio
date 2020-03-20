@@ -7,7 +7,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Mak Studios</title>
+    <title>Mak Studio - Desks</title>
 
 </head>
 
@@ -26,6 +26,7 @@
 
                 @include('newSections.desks.topImage')
                 @include('newSections.desks.numberList')
+                @include('newSections.desks.contact')
                 @include('newSections.desks.relatedBreaks')
 
 

@@ -7,7 +7,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Mak Studios - ARM</title>
+    <title>Mak Studio - ARM</title>
 
 </head>
 

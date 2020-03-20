@@ -8,7 +8,7 @@
 		<div class="container-wide clearfix dark">
 
 
-			<div class="col_md-6 col_lg-6 col-sm-6 col-xs-12 nomargin nopadding makCardHalfHolder" style=" background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/flower_solid_surface_feature_wall.jpg')">
+			<div class="col_md-6 col_lg-6 col-sm-6 col-xs-12 nomargin nopadding makCardHalfHolder" style=" background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Flower+Wall.png'); background-position:center bottom;">
 
 				<div class="makCardHalf">
 
@@ -29,7 +29,7 @@
 			</div>
 
 
-			<div class="col_md-6 col_lg-6 col-sm-6 col-xs-12 nomargin nopadding makCardHalfHolder" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/lobby_reception_desk_nova_chem.jpg')">
+			<div class="col_md-6 col_lg-6 col-sm-6 col-xs-12 nomargin nopadding makCardHalfHolder" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/lobby_reception_desk_nova_chem.jpg'); background-position:center bottom;">
 
 				<div class="makCardHalf">
 
@@ -50,7 +50,7 @@
 
 
 
-			<div class="col_md-6  col_lg-6 col-sm-6 col-xs-12 nomargin nopadding  makCardHalfHolder" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/lobby_bench_alley.jpg')">
+			<div class="col_md-6  col_lg-6 col-sm-6 col-xs-12 nomargin nopadding  makCardHalfHolder" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/lobby_bench_alley.jpg'); background-position:center;">
 
 				<div class="makCardHalf">
 
@@ -70,7 +70,7 @@
 			</div>
 
 
-			<div class="col_md-6  col_lg-6 col-sm-6 col-xs-12 nomargin nopadding  makCardHalfHolder" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/breakroom_island_firmspace.jpg')">
+			<div class="col_md-6  col_lg-6 col-sm-6 col-xs-12 nomargin nopadding  makCardHalfHolder" style="background-image:url('https://makstudio.s3.us-east-2.amazonaws.com/Homepage/Product+Images/breakroom_island_firmspace.jpg'); background-position:center;">
 
 				<div class="makCardHalf">
 

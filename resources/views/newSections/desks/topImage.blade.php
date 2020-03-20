@@ -7,13 +7,13 @@
 
 		<div class="container dark full-screen">
 
-			<div class="vertical-middle">
+			<div class="vertical-middle" style="left:-10%">
 
 				<div class="cardTitle">Reception Desk</div>
 
 				<div class="cardText">Individual or multi-user,<br>straight or curved, outfit your<br>lobby to match your aesthetic</div>
 
-				<button type="button" class="cardButton">Scroll to Begin</button>
+				<div class="cardTopButton"><span class="buttonUnderLinedWhite">Scroll to Begin</span></div>
 
 			</div>
 

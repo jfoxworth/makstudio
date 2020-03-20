@@ -22,7 +22,7 @@
 						</div>
 
 						<div class="col_one_third col_last footerText">
-							<a class="" href="mailto:liz@makstudio.us">info@makstudio.us</a><br>
+							<a class="" href="mailto:info@makstudio.us">info@makstudio.us</a><br>
 							713.505.1234
 						</div>
 

@@ -32,13 +32,10 @@
 
 				<div class="listSection">
 					
-					<div class="listItem">Architectural Design</div>
-					<div class="listItem">3D Modeling</div>
-					<div class="listItem">Project Management</div>
-					<div class="listItem">AutoCAD / BIM Integration</div>
-					<div class="listItem">Construction Documentation</div>
-					<div class="listItem">Construction Administration</div>
-					<div class="listItem">Fabrication & Installation</div>
+					<div class="listItem">Collaborative Planning</div>
+					<div class="listItem">Design and Technical Assistance</div>
+					<div class="listItem">Digital Fabrication</div>
+					<div class="listItem">Installation</div>
 
 				</div>
 

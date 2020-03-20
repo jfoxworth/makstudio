@@ -7,7 +7,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Mak Studios - Daikin</title>
+    <title>Mak Studio - Daikin</title>
 
 </head>
 
