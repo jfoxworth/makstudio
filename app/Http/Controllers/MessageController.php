@@ -48,7 +48,13 @@ class MessageController extends Controller
 
 		$thisMessage = new Message;
 		$thisMessage->message_data = json_encode($request['message']);
-		$thisMessage->user_id = Auth::id();
+		if (Auth::check()) 
+		{
+			$thisMessage->user_id = Auth::id();
+		}else
+		{
+			$thisMessage->user_id = "NA";			
+		}
 		$thisMessage->save();
 		
 	}
