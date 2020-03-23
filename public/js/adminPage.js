@@ -58,7 +58,7 @@ function retrieveMessages( )
 
 
 	$.ajax({
-		url : "/messages/0",
+		url : "/messages/0/0",
 		method :"GET"
 
 	}).done(function(data) 

@@ -124,7 +124,7 @@ Route::delete('/deleteModel/{id}', 'BuildController@destroy');
 
 
 // Retrieve Messages
-Route::get('/messages/{offset}', 'MessageController@index');
+Route::get('/messages/{offset}/{type}', 'MessageController@index');
 
 // Save a Message
 Route::post('/messages', 'MessageController@store');

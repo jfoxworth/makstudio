@@ -14,7 +14,7 @@ class MessageController extends Controller
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function index( $offset )
+	public function index( $offset, $type )
 	{
 		if ( $type == 0 )
 		{
