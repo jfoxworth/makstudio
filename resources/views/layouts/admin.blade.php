@@ -3,7 +3,7 @@
 <html dir="ltr" lang="en-US">
 <head>
 
-    @include('sections.head')
+    @include('newSections.head')
 
     <!-- Document Title
     ============================================= -->
@@ -17,9 +17,9 @@
     ============================================= -->
     <div id="wrapper" class="clearfix">
 
-        @include('sections.thirdHeader')
+        @include('newSections.thirdHeader')
 
-        @include("sections.admin.title")
+        @include("newSections.admin.title")
 
 
         <!-- Content
@@ -28,13 +28,13 @@
 
             <div class="content-wrap">
 
-                @include("sections.admin.mainAdmin")
+                @include("newSections.admin.mainAdmin")
 
             </div>
 
         </section><!-- #content end -->
 
-        @include('sections.footer')
+        @include('newSections.footer')
 
     </div><!-- #wrapper end -->
 
@@ -42,7 +42,7 @@
     ============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
 
-    @include('sections.javasfiles')
+    @include('newSections.javasfiles')
 
     <script type="text/javascript" src="/js/adminPage.js"></script>
 

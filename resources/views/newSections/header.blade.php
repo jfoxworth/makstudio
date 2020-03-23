@@ -6,8 +6,6 @@
 
         <div class="container clearfix">
 
-            <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
             <!-- Logo
             ============================================= -->
             <div id="logo">
@@ -25,6 +23,9 @@
 
 
             @include('newSections.headerMenu')
+
+
+            <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
 
         </div>
