@@ -18,7 +18,7 @@
 
 		<div class="col_one_third">
 
-			<div class="sectionLabel">Undulating waves make this hotel lobby ceiling stand out</div>
+			<div class="sectionLabel">Undulating waves make this hotel lobby feature ceiling stand out.</div>
 
 		</div>
 

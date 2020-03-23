@@ -18,7 +18,7 @@
 
 		<div class="col_one_third">
 
-			<div class="sectionLabel">A faceted lobby feature wall makes a great landmark</div>
+			<div class="sectionLabel">A facet wall in this lobby makes a great landmark.</div>
 
 		</div>
 

@@ -11,7 +11,7 @@
 
 				<div class="cardTitle">Islands</div>
 
-				<div class="cardText">Balance form and function to<br>create the ultimate meeting<br>place in your space.</div>
+				<div class="cardText">Balance form and function with<br>our selection of breakroom<br>islands that create the ultimate<br>meeting place in your space.</div>
 
 				<div class="cardTopButton"><span class="buttonUnderLinedWhite">Scroll to Begin</span></div>
 

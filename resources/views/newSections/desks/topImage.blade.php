@@ -11,7 +11,7 @@
 
 				<div class="cardTitle">Reception Desk</div>
 
-				<div class="cardText">Individual or multi-user,<br>straight or curved, outfit your<br>lobby to match your aesthetic</div>
+				<div class="cardText">Individual or multi-user, straight<br>or curved, choose a reception desk<br>to match your aesthetic.</div>
 
 				<div class="cardTopButton"><span class="buttonUnderLinedWhite">Scroll to Begin</span></div>
 

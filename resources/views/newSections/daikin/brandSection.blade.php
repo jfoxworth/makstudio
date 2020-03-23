@@ -25,7 +25,7 @@
 
 		<div class="col_two_third col_last">
 
-			<div class="sectionText">Impressive lobbies and public spaces reflecting the values and brand of a global company are achievable using the right techniques and materials.</div>
+			<div class="sectionText">Impressive solid surface walls creating public spaces that reflect the values and brand of a global company are achievable using the right techniques and materials.</div>
 
 		</div>
 

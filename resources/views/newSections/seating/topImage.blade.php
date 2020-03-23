@@ -11,7 +11,7 @@
 
 				<div class="cardTitle">Seating</div>
 
-				<div class="cardText">Choose from our growing<br>catalog of elastic geometries<br>to create custom seating.</div>
+				<div class="cardText">Choose from our growing<br>catalog of customizable<br>lobby seating designs.</div>
 
 				<div class="cardTopButton"><span class="buttonUnderLinedWhite">Scroll to Begin</span></div>
 

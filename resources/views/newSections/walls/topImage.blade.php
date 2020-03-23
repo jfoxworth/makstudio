@@ -11,7 +11,7 @@
 
 				<div class="cardTitle">Walls</div>
 
-				<div class="cardText">Our elastic geometries can be<br>transformed into any shape,<br>color, material or texture.</div>
+				<div class="cardText">Create feature walls in any<br>shape, color, material, or texture.</div>
 
 				<div class="cardTopButton"><span class="buttonUnderLinedWhite">Scroll to Begin</span></div>
 

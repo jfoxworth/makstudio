@@ -25,7 +25,7 @@
 
 		<div class="col_two_third col_last">
 
-			<div class="sectionText">With a mixed use of natural and malleable materials, we guided Arm Technologies through available options in material and colors to make critical design decisions tailored to their unique needs and budget.</div>
+			<div class="sectionText">With a mixed use of natural and malleable materials, we guided ARM Technologies through available options in material and colors to make critical design decisions for their unique feature wall tailored to their needs and budget.</div>
 
 		</div>
 

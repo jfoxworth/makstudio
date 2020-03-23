@@ -18,7 +18,7 @@
 
 		<div class="col_one_third">
 
-			<div class="sectionLabel">Branded lobby feature wall</div>
+			<div class="sectionLabel">Branded back lighting wall.</div>
 
 		</div>
 

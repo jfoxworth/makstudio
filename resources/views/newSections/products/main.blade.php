@@ -11,7 +11,7 @@
 
 				<div class="cardTitle">Walls</div>
 
-				<div class="cardText">Our elastic geometries can be<br>transformed into any shape,<br>color, material or texture</div>
+				<div class="cardText">Create a single piece or a<br>package of lobby furniture<br>for your unique project.</div>
 
 				<button type="button" class="cardButton" onclick="location.href='/walls';">Step-by-Step Guide</button>
 
