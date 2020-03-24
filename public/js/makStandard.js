@@ -16,6 +16,12 @@ $(document).ready(function()	{
 
 
 
+	// Log an amplitude hit on this page
+	amplitude.getInstance().logEvent(  );
+
+
+
+
 
 	/*---------------------------------------------------
 
