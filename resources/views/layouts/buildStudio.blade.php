@@ -13,7 +13,7 @@
 
 <body class="stretched">
 
-    @include('gtag')
+    @include('newSections.gtag')
 
 	<!-- Document Wrapper
 	============================================= -->
