@@ -13,6 +13,8 @@
 
 <body class="stretched">
 
+    @include('gtag')
+
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">

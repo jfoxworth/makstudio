@@ -1402,7 +1402,7 @@ function initializeNewModel( modelName )
 		// instantly show the 3D scene 
 		showSceneMode: SDVApp.constants.showSceneModes.INSTANT, 
 		// ticket for a ShapeDiver model 
-		ticket: makStudio['modelTickets'][modelName], 
+		ticket: 'b377b948d7f72cee5db1184551e10c1e9f8a34cae0323283b7f5f8831cedc2e26986531436453d00bbce7556061713170f148b9d879fc7e6b2454fce26e030c1c8fb9782aeaaa1fa73ed74ce6059e6daba4a3b682e769ebfe82ee516dfc6b2a0fe3fc30c2fab53476e8f1f82c895f1781fa1746ebd15-b63fe0ed951441432130ea48fe327cf7', 
 		modelViewUrl : 'eu-central-1'
 	}; 
 
