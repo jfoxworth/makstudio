@@ -16,7 +16,11 @@
 
 			<div class="col_two_third col_last">
 
-				<div class="greyText">Just call 713.505.1234 or email info@makstudio.us to schedule your free consultation. Let’s begin the process of creating something unique and memorable together.</div>
+				<div class="greyText">Let’s begin the process of creating something unique and memorable together.</div>
+
+				<div style="width:60%; margin:20px 20%; text-align:right;"> 
+					<button type="button" class="btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">SCHEDULE A CALL</button>
+				</div>
 
 			</div>
 
