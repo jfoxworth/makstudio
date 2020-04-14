@@ -19,7 +19,9 @@
 
 
 
-		<div class="col_one_third"></div>
+		<div class="col_one_third">
+			<button type="button" class="primary" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
+		</div>
 
 
 		<div class="col_two_third col_last">

@@ -75,7 +75,18 @@
 
 
 
-					<div class="contactInput">713.505.1234<br>info@makstudio.us</div>
+					<div layout="row">
+	
+						<div class="col_half">
+							<div class="contactInput">713.505.1234<br>info@makstudio.us</div>
+						</div>
+
+
+						<div class="col_half col_last">
+							<button type="button" class="primary" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
+						</div>
+
+					</div>
 
 				
 				</div>
