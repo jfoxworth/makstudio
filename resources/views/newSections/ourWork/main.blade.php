@@ -15,7 +15,7 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/arm';">View Project</button>
 
-				<button type="button" class="primary" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
+				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
 
 			</div>
 
@@ -41,7 +41,7 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/daikin';">View Project</button>
 
-				<button type="button" class="primary" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
+				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
 
 			</div>
 
@@ -70,7 +70,7 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/ramada';">View Project</button>
 
-				<button type="button" class="primary" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
+				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
 
 			</div>
 
@@ -99,7 +99,7 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/houstonsfirst';">View Project</button>
 
-				<button type="button" class="primary" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
+				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
 
 			</div>
 
@@ -127,7 +127,7 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/jacobwhite';">View Project</button>
 
-				<button type="button" class="primary" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
+				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
 
 			</div>
 

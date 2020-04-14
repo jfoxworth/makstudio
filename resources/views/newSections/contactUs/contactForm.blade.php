@@ -83,7 +83,7 @@
 
 
 						<div class="col_half col_last">
-							<button type="button" class="primary" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
+							<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
 						</div>
 
 					</div>

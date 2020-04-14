@@ -20,7 +20,7 @@
 
 
 		<div class="col_one_third">
-			<button type="button" class="primary" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
+			<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">Schedule a call</button>
 		</div>
 
 

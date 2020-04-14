@@ -15,6 +15,8 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/walls';">Step-by-Step Guide</button>
 
+				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
+
 			</div>
 
 		</div>
@@ -38,6 +40,8 @@
 				<div class="cardText">Individuals or multi-user,<br>straight or curved, outfit your<br>lobby to match your aesthetic.</div>
 
 				<button type="button" class="cardButton" onclick="location.href='/desks';">Step-by-Step Guide</button>
+
+				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
 
 			</div>
 
@@ -66,6 +70,8 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/seating';">Step-by-Step Guide</button>
 
+				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
+
 			</div>
 
 		</div>
@@ -92,6 +98,8 @@
 				<div class="cardText">Balance form and function to<br>create the ultimate meeting<br>place in your space.</div>
 
 				<button type="button" class="cardButton" onclick="location.href='/islands';">Step-by-Step Guide</button>
+
+				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
 
 			</div>
 

@@ -48,6 +48,15 @@
 	border-radius:5px;
 }
 
+.scheduleButton {
+	font-family : Roboto;
+	font-size:1em;
+	text-transform:uppercase;
+	letter-spacing: 0.84px;
+	padding:12px;
+	border-radius:5px;
+}
+
 .cardButton:hover {
 	background-color:#ccc;
 	opacity:0.75;
@@ -568,6 +577,9 @@
     left: 12%;
     border-bottom: 2px solid #000;
 }
+
+
+
 
 
 
