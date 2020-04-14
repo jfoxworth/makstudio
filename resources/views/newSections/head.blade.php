@@ -30,6 +30,7 @@
 	</script>
 -->
 
+	<meta name="p:domain_verify" content="65dda95924f1ea4d6c6cd86266ec8092"/>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Joshua Foxworth" />
 
