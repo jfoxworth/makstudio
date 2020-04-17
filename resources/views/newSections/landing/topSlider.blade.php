@@ -1,3 +1,8 @@
+<section id="tempLink">
+	
+	<h1 style="font-family:Roboto; font-weight:300; margin:25px 0px; text-align:center">We are open for business. Read our COVID-19 response : <button type="button" class="btn btn-primary"><a href="https://makstudio.lpages.co/covid-19/" style="color:#FFF; font-size:1.2em">mak response</a></button></h1>
+</section>
+
 <section id="slider" class="slider-element full-screen force-full-screen with-header not-dark swiper_wrapper page-section clearfix">
 
 	<div class="slider-parallax-inner">
