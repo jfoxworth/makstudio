@@ -15,8 +15,6 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/arm';">View Project</button>
 
-				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
-
 			</div>
 
 		</div>
@@ -40,8 +38,6 @@
 				<div class="cardText">Curves, lighting and tailored<br>messaging complete this<br>custom lobby.</div>
 
 				<button type="button" class="cardButton" onclick="location.href='/daikin';">View Project</button>
-
-				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
 
 			</div>
 
@@ -70,8 +66,6 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/ramada';">View Project</button>
 
-				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
-
 			</div>
 
 		</div>
@@ -99,8 +93,6 @@
 
 				<button type="button" class="cardButton" onclick="location.href='/houstonsfirst';">View Project</button>
 
-				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
-
 			</div>
 
 		</div>
@@ -126,8 +118,6 @@
 				<div class="cardText">Intricately carved surfaces<br>programmable lighting make<br>this corporate interior shine.</div>
 
 				<button type="button" class="cardButton" onclick="location.href='/jacobwhite';">View Project</button>
-
-				<button type="button" class="ml-5 btn btn-primary scheduleButton" onclick="location.href='https://meetings.hubspot.com/polli';">GET A FREE CONSULTATION</button>
 
 			</div>
 
