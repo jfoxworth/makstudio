@@ -7,7 +7,7 @@
 	<!-- End Google Tag Manager -->
 
 	<meta property="og:title" content="Mak Studio">
-	<meta property="og:image" content="">
+	<meta property="og:image" content="/Images/logoBlack.png">
 	<meta property="og:description" content="Mak Studio designs ...">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
