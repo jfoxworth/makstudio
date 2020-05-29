@@ -1,6 +1,12 @@
 <section id="tempLink">
 	
-	<h1 style="font-family:Roboto; font-weight:300; margin:25px 0px; text-align:center">Check out our new future of work products: <button type="button" class="btn btn-primary"><a href="https://makstudio.lpages.co/sanitationkiosk/" style="color:#FFF; font-size:1.2em">Learn More</a></button></h1>
+	<h1 style="font-family:Roboto; font-weight:300; margin:25px 0px; text-align:center">
+		Check out our new future of work products: 
+		<button type="button" class="btn btn-primary">
+			<a href="https://makstudio.us/collections/post-covid-19-products" style="color:#FFF; font-size:1.2em">Learn More</a>
+		</button>
+	</h1>
+
 </section>
 
 <section id="slider" class="slider-element full-screen force-full-screen with-header not-dark swiper_wrapper page-section clearfix">
