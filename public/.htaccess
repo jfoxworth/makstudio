@@ -22,6 +22,6 @@
 
     RewriteEngine On
     RewriteCond %{HTTP_HOST} ^www.makstudio.us [NC]
-    RewriteRule ^(.*)$ http://makstudio.us/$1 [L,R=301]
+    RewriteRule ^(.*)$ makstudio.us/$1 [L,R=301]
 
 </IfModule>
