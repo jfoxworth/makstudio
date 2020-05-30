@@ -20,8 +20,8 @@
     RewriteRule ^ index.php [L]
 
     RewriteEngine On
-    RewriteCond %{HTTP_HOST} ^www.yourdomain.com [NC]
-    RewriteRule ^(.*)$ http://yourdomain.com/$1 [L,R=301]
+    RewriteCond %{HTTP_HOST} ^makstudio.com.com [NC]
+    RewriteRule ^(.*)$ http://www.makstudio.com/$1 [L,R=301]
 
 
 </IfModule>
