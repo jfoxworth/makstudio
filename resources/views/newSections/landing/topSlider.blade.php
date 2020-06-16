@@ -1,11 +1,11 @@
 <section id="tempLink">
 	
-	<h1 style="font-family:Roboto; font-weight:300; margin:25px 0px; text-align:center">
+	<h3 style="font-family:Roboto; font-weight:300; margin:25px 0px; text-align:center">
 		Check out our new future of work products: 
 		<button type="button" class="btn btn-primary">
 			<a href="https://shop.makstudio.us/collections/post-covid-19-products" style="color:#FFF; font-size:1.2em">Learn More</a>
 		</button>
-	</h1>
+	</h3>
 
 </section>
 
@@ -30,7 +30,7 @@
 
 								<div class="cardTitle">Our Work</div>
 
-								<div class="cardText">A fit and finish for an<br>impressive lobby experience in<br>any interior.</div>
+								<h1 class="cardText">An impressive lobby experience<br>in any interior.</h1>
 
 								<button type="button" class="cardButton" onclick="location.href='/ourWork';">Completed Projects</button>
 
