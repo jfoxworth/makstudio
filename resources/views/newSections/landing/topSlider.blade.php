@@ -55,7 +55,7 @@
 
 								<div class="cardTitle">Our Work</div>
 
-								<div class="cardText">A fit and finish for an<br>impressive lobby experience in<br>any interior.</div>
+								<div class="cardText">An impressive lobby experience<br>in any interior.</div>
 
 								<button type="button" class="cardButton" onclick="location.href='/ourWork';">Completed Projects</button>
 
@@ -80,7 +80,7 @@
 
 								<div class="cardTitle">Our Work</div>
 
-								<div class="cardText">A fit and finish for an<br>impressive lobby experience in<br>any interior.</div>
+								<div class="cardText">An impressive lobby experience<br>in any interior.</div>
 
 								<button type="button" class="cardButton" onclick="location.href='/ourWork';">Completed Projects</button>
 
@@ -105,7 +105,7 @@
 
 								<div class="cardTitle">Our Work</div>
 
-								<div class="cardText">A fit and finish for an<br>impressive lobby experience in<br>any interior.</div>
+								<div class="cardText">An impressive lobby experience<br>in any interior.</div>
 
 								<button type="button" class="cardButton" onclick="location.href='/ourWork';">Completed Projects</button>
 
@@ -130,7 +130,7 @@
 
 								<div class="cardTitle">Our Work</div>
 
-								<div class="cardText">A fit and finish for an<br>impressive lobby experience in<br>any interior.</div>
+								<div class="cardText">An impressive lobby experience<br>in any interior.</div>
 
 								<button type="button" class="cardButton" onclick="location.href='/ourWork';">Completed Projects</button>
 
@@ -156,7 +156,7 @@
 
 								<div class="cardTitle">Our Work</div>
 
-								<div class="cardText">A fit and finish for an<br>impressive lobby experience in<br>any interior.</div>
+								<div class="cardText">An impressive lobby experience<br>in any interior.</div>
 
 								<button type="button" class="cardButton" onclick="location.href='/ourWork';">Completed Projects</button>
 
@@ -183,7 +183,7 @@
 
 								<div class="cardTitle">Our Work</div>
 
-								<div class="cardText">A fit and finish for an<br>impressive lobby experience in<br>any interior.</div>
+								<div class="cardText">An impressive lobby experience<br>in any interior.</div>
 
 								<button type="button" class="cardButton" onclick="location.href='/ourWork';">Completed Projects</button>
 
@@ -211,7 +211,7 @@
 
 								<div class="cardTitle">Our Work</div>
 
-								<div class="cardText">A fit and finish for an<br>impressive lobby experience in<br>any interior.</div>
+								<div class="cardText">An impressive lobby experience<br>in any interior.</div>
 
 								<button type="button" class="cardButton" onclick="location.href='/ourWork';">Completed Projects</button>
 
